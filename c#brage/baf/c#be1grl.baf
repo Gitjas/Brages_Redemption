@@ -1,0 +1,18 @@
+
+IF	
+	InParty("C#Brage") 
+	!StateCheck("C#Brage",CD_STATE_NOTVALID)
+	Range("C#Brage",20)
+	Global("C#BE_NashkelGirl","GLOBAL",1)
+THEN
+	RESPONSE #100
+		Dialogue("C#Brage")
+END
+
+
+IF
+	Global("C#BE_NashkelGirl","GLOBAL",2)
+THEN
+	RESPONSE #100
+		EscapeAreaDestroy(3)
+END

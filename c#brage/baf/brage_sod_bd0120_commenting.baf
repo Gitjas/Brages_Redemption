@@ -1,0 +1,71 @@
+/* bd0120_commenting.baf
+In Korlasz's crypt: NPC state their plans after the last follower of Sarevok 2ill be defeated.
+This will be patched to both bd0120.bcs and bd0130.bcs. */
+
+/* First comment: before Korlasz will be defeated. */
+IF
+	Global("C#BE_SoDleavingcomment","global",0)
+	CombatCounter(0)
+	GlobalGT("bd_leaving_ot","GLOBAL",0)
+	GlobalLT("bd_leaving_ot","GLOBAL",7)
+	IsValidForPartyDialogue("C#Brage")  
+	GlobalTimerExpired("bd_leaving_ot_timer","global")
+	!Dead("bdkorlas")  // Korlasz
+	!Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+THEN
+	RESPONSE #200
+		Continue()
+	RESPONSE #100
+		IncrementGlobal("bd_leaving_ot","global",1)
+		SetGlobal("C#BE_SoDleavingcomment","global",1)
+		SetGlobalTimerRandom("bd_leaving_ot_timer","global",TWENTY_MINUTES,THIRTY_MINUTES)
+		DisplayStringHead("C#Brage",@3)
+END
+
+/* Second comment: after Korlasz defeated: Ajantis in party */
+IF
+	GlobalLT("C#BE_SoDleavingcomment","global",2)
+	CombatCounter(0)
+	GlobalGT("bd_leaving2_ot","GLOBAL",0)
+	GlobalLT("bd_leaving2_ot","GLOBAL",7)
+	IsValidForPartyDialogue("C#Brage") 
+	IsValidForPartyDialogue("Ajantis")   
+	GlobalTimerExpired("bd_leaving2_ot_timer","global")
+	OR(2)
+		Dead("bdkorlas")  // Korlasz
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+THEN
+	RESPONSE #200
+		Continue()
+	RESPONSE #100
+		BanterBlockTime(100)
+		IncrementGlobal("bd_leaving2_ot","global",1)
+		SetGlobal("C#BE_SoDleavingcomment","global",2)
+		SetGlobalTimerRandom("bd_leaving2_ot_timer","global",EIGHT_MINUTES,THIRTEEN_MINUTES)
+		DisplayStringWait("C#Brage",@6)
+		DisplayStringWait("C#Brage",@4)
+		DisplayStringWait("Ajantis",@5)  
+END
+
+/* Second comment: after Korlasz defeated: no Ajantis in party */
+IF
+	GlobalLT("C#BE_SoDleavingcomment","global",2)
+	CombatCounter(0)
+	GlobalGT("bd_leaving2_ot","GLOBAL",0)
+	GlobalLT("bd_leaving2_ot","GLOBAL",7)
+	IsValidForPartyDialogue("C#Brage") 
+	!IsValidForPartyDialogue("Ajantis")   
+	GlobalTimerExpired("bd_leaving2_ot_timer","global")
+	OR(2)
+		Dead("bdkorlas")  // Korlasz
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+THEN
+	RESPONSE #200
+		Continue()
+	RESPONSE #100
+		BanterBlockTime(100)
+		IncrementGlobal("bd_leaving2_ot","global",1)
+		SetGlobal("C#BE_SoDleavingcomment","global",2)
+		SetGlobalTimerRandom("bd_leaving2_ot_timer","global",EIGHT_MINUTES,THIRTEEN_MINUTES)
+		DisplayStringWait("C#Brage",@6)
+END

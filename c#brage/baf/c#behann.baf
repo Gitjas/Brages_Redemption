@@ -1,0 +1,27 @@
+
+IF	
+	Global("C#BE_GraveIncident","GLOBAL",11)
+	Range("C#Brage",20)
+THEN
+	RESPONSE #100
+		StartDialogNoSet("C#Brage")
+END
+
+IF	
+	Global("C#BE_GraveIncident","GLOBAL",11)
+	InMyArea("C#Brage")
+	!Range("C#Brage",10)
+THEN
+	RESPONSE #100
+		MoveToObject("C#Brage")
+END
+
+
+
+
+IF
+	Global("C#BE_GraveIncident","GLOBAL",12)
+THEN
+	RESPONSE #100
+		EscapeAreaDestroy(3)
+END

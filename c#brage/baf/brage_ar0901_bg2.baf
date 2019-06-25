@@ -1,0 +1,42 @@
+/* move Brage into temple of Helm after Unseeing Eye incident */
+	
+
+/* GlobalGT("C#BE_SpawnBrage","GLOBAL",0): continuous game from BG1 / SoD */
+
+IF 
+	!InMyArea("C#Brage")
+	!Dead("C#Brage")
+	GlobalGT("C#BE_SpawnBrage","GLOBAL",4)
+	GlobalLT("C#BE_SpawnBrage","GLOBAL",10)
+	OR(2)
+		GlobalGT("BeholderPlot","GLOBAL",0)
+		Global("NoHelpBeholder","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BE_SpawnBrage","GLOBAL",10)
+		MoveGlobal("AR0901","C#Brage",[1174.350])
+	   	ActionOverride("C#Brage",Face(0))
+		ReallyForceSpellRES("SPWM168","C#Brage") //Heal 
+	   	ActionOverride("C#Brage",SetDialog("c#brage2")
+		ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+	    	ActionOverride("C#Brage",ChangeAIScript("c#brage2",OVERRIDE))
+		ActionOverride("C#Brage",SetGlobal("C#BE_LevelUp","LOCALS",0))
+END
+
+
+/* new game: Global("C#BE_SpawnBrage","GLOBAL",0) */
+
+
+IF 
+	Global("C#BE_SpawnBrage","GLOBAL",0)
+	OR(2)
+		GlobalGT("BeholderPlot","GLOBAL",0)
+		Global("NoHelpBeholder","GLOBAL",1)	
+THEN
+	RESPONSE #100
+            	SetGlobal("C#BE_SpawnBrage","GLOBAL",10)
+	    	CreateCreature("c#brage2",[1174.350],0)
+		ActionOverride("C#Brage",MakeGlobal())
+	   	ActionOverride("C#Brage",SetDialog("c#brage2")
+	    	ActionOverride("C#Brage",ChangeAIScript("c#brage2",OVERRIDE))
+END

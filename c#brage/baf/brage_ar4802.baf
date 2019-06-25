@@ -1,0 +1,31 @@
+/* detection:  */
+
+IF
+	InMyArea(Player1)
+	InMyArea("Brage")
+	InMyArea("NALIN")
+	!Detect([ENEMY])
+	CombatCounter(0)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck("Brage",CD_STATE_NOTVALID)
+	!StateCheck("NALIN",CD_STATE_NOTVALID)
+	GlobalTimerExpired("C#BE_SpawnBrageT","GLOBAL")
+	Global("C#BE_SpawnBrage","GLOBAL",1)
+	GlobalGT("C#Q13_BragesSwordQuest","GLOBAL",3) 
+	!Global("C#q13Brage_NalinVouch","GLOBAL",4)
+THEN
+  RESPONSE #100
+		SetGlobal("C#BE_SpawnBrage","GLOBAL",2)
+		ActionOverride("NALIN",StartDialogNoSet(Player1))
+END
+
+IF
+	!Dead("C#Brage")
+	!InParty("C#Brage")
+	Global("C#BE_GraveIncident","GLOBAL",4)
+	CombatCounter(0)
+THEN
+  RESPONSE #100
+		SetGlobal("C#BE_GraveIncident","GLOBAL",9)
+		MoveGlobal("%Nashkel_TempleofHelm%","C#Brage",[345.465])
+END

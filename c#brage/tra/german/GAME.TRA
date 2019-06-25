@@ -1,0 +1,142 @@
+@0  = ~Nein! NEIN!! Nie wieder werde ich dieses verfluchte Schwert in die Hände nehmen, <CHARNAME> - zwingt mich nicht dazu!~
+@1  = ~Als Ihr BRAGE nach seiner Vergangenheit fragt, räuspert er sich und zögert einen kurzen Moment, bevor er seine Herkunft aus Atkatla erwähnt, die Hauptstadt Amns. Er erzählt über sein Leben in der Amnischen Garde und seine Stationierung als Hauptmann in Nashkell. "Ich fand die liebste Frau und hatte zwei wunderbare Töchter - bis ich das verfluchte Schwert in die Hände nahm. Den Den Rest kennt Ihr, <CHARNAME>. Zwingt mich bitte nicht, es noch einmal zu erzählen."~
+@2  = ~<CHARNAME>, es ist Zeit, Lebewohl zu sagen. Wir haben große Taten vollbracht, einen sich anbahnenden Krieg verhindert und vielen Unschuldigen das Leben gerettet. Dies ist der Moment, an dem ich mich verabschieden werde. Ich werde eigene Schritte gehen, den Schmied des verfluchten Schwertes suchen, Gold für die Familien verdienen, die durch mich Leid erfahren haben. Vor allem werde ich selbstbestimmt in meine Heimat zurückkehren. Lebt wohl, und mögen die Götter Euch behüten... So die Götter wollen, werden wir uns wiedersehen.~
+@3  = ~Wenn wir hier fertig sind, dann werde ich mich auf die Suche nach dem Hersteller des verfluchten Schwertes begeben. Ich werde nach Tiefwasser reisen und meine Untersuchungen beim Schmied des eigentlichen Schwertes beginnen - die Fälschung trug immerhin sein Siegel. Nicht, dass ich wirklich erwarte, dort etwas zu finden, aber ich muss dieser Spur nachgehen.~
+@4  = ~Ajantis, wenn Euch Eure Schritte ebenfalls nach Tiefwasser führen, dann könnten wir zusammen reisen.~
+@5  = ~Das ist eine großartige Idee, Brage. Ich schätze Eure Gesellschaft auf dem Weg dorthin.~
+@6  = ~Nun, da wir fertig sind, werde ich nach Tiefwasser aufbrechen.~
+
+
+
+
+
+
+@110  = ~Brages Schwert~
+@111  = ~Brages Zweihänder +1~
+/* unidentified description bg1:totsc */
+@112  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
+
+Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klinge)
+Gewicht: 12
+Initiativefaktor: 10
+Mindeststärke: 14
+Fertigkeit: Zweihänder
+Typ: 2-händig
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern~
+/* identified description bg1:totsc */
+@113  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
+
+Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 1W10 +1 (Klinge)
+ETW0-Bonus: -1
+Gewicht: 12
+Initiativefaktor: 9
+Mindeststärke: 13
+Fertigkeit: Zweihänder
+Typ: 2-händig
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern~
+/* unidentified description tutu / bgt */
+@114  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
+
+Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klinge)
+Gewicht: 12
+Initiativefaktor: 10
+Mindeststärke: 14
+Fertigkeit: Zweihänder
+Typ: 2-händig
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern~
+/* identified description tutu / bgt */
+@115  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
+
+Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 1W10 +1 (Klinge)
+ETW0-Bonus: -1
+Gewicht: 12
+Initiativefaktor: 9
+Mindeststärke: 13
+Fertigkeit: Zweihänder
+Typ: 2-händig
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern~
+/* identified description bgee / eet */
+@116  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
+
+Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 +1 (Klinge)
+ETW0-Bonus: -1
+Gewicht: 12
+Initiativefaktor: 9
+Mindeststärke: 13
+Fertigkeit: Zweihänder
+Typ: 2-händig~
+@117  = ~Hick~
+@118  = ~Mein Diener Mulahey,
+
+Eure unbeschreibliche Nachlässigkeit hat D. veranlasst, einzugreifen. Der Hauptmann von Nashkell hat nun eine nette Überraschung in Form eines neuen Schwerts erhalten, das etwas spezieller war, als er erwartet hatte. Die Amnische Garde sollte nun zu geschwächt sein, um in die tieferen Minenebenen vordringen. Nichtsdestotrotz solltet Ihr Euch nicht allzu sehr in Sicherheit wiegen, da die Sichtung Eurer dummen Kobolde alle möglichen anderen Möchtegerns angezogen hat, die die Vorgänge untersuchen wollen. 
+Versagt nicht noch einmal.
+
+Tazok~
+@119  = ~Borda,
+
+es interessiert uns nicht, dass Ihr der Meinung seid, alles wie vereinbart erledigt zu haben. Es ist nicht unser Problem, dass der Hauptmann selbst den Vorfall untersuchen gegangen ist und daher das Schwert alleine auf der Straße und nicht umgeben von seinen Soldaten in der Garnison erhalten hat. Es ist Euch anzulasten, dass der ganze Plan beinahe geplatzt wäre. Euer Glück, dass der Narr überhaupt zurück nach Nashkell gegangen ist, und das Gold für das Schwert mit dem besonderen Fluch nicht gänzlich umsonst war! Nein, Ihr werdet den zweiten Teil des Goldes nicht erhalten. Wir haben Euch das Schwert gelassen, das Brage eigentlich erhalten sollte. Das ist genug Entschädigung! Seid froh, dass wir Euch nicht zur Strecke bringen.
+
+Tazok~
+@120  = ~Tazok,
+
+ich verlange, dass mir die zweite Hälfte des vereinbarten Goldes ausgezahlt wird! Dass der Hauptmann nur seine Familie und nicht seine halbe Garnison gemetzelt hat ist nicht meine Schuld. Die Garde in Nashkell ist geschwächt, und darin bestand die Vereinbarung! Ihr könnt Antworten an mich zu meinem Kontakt beim Jahrmarkt schicken. Einer der Händler war verzweifelt genug, um einige meiner Tränke in sein Sortiment zu nehmen, er wird Briefe an mich weiterleiten.
+
+Borda~
+@121  = ~Botschaft an Kapitän Tollar Kieres~
+@122  = ~Dieser Brief trägt das offizielle Siegel der Händlerliga von Baldurs Tor.
+Er wurde Euch von Aldeth Sashenstar übergeben und ist für Kapitän Kieres bestimmt, der sich momentan im Zählhaus der Händlerliga im nordöstlichen Teil der Stadt aufhält.~ 
+
+@123  =  ~Siegelring der Händlerliga~
+@124  =  ~Ringe wie dieser gelten innerhalb der Händlerliga als Erkennungszeichen und werden nur von Mitgliedern der Liga oder von Personen getragen, die das Vertrauen der Liga genießen. 
+Dieser Siegelring garantiert Euch Einlass und freies Geleit im Zählhaus der Händlerliga, wo sonst nicht jeder beliebige Zugang hat. 
+Nicht wenige behaupten, die Händlerliga verdankt ihren Erfolg diesen Ringen, da sie angeblich mit speziellen Verzauberungen versehen sind.
+
+Besondere Fähigkeiten:
+
+Glück 3x täglich
+Personen bezaubern 3x täglich~
+@125  =  ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
+
+Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
+
+EIGENSCHAFTEN:
+
+Schaden: 1W10 +1 (Klinge)
+ETW0-Bonus: -1
+Gewicht: 12
+Initiativefaktor: 9
+Mindeststärke: 13
+Fertigkeit: Zweihänder
+Typ: 2-händig~

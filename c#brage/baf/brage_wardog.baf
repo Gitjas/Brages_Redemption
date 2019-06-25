@@ -1,0 +1,12 @@
+IF
+	AreaCheck("%NashkelMines_Cabin%")
+	InParty("C#Brage")
+	Global("C#BE_TameDogsNashkel","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		IncrementGlobal("C#BE_TameDogsNashkel","GLOBAL",1) //need this for Brage
+		SetGlobal("C#BE_TameDogsNashkel","LOCALS",1)
+END

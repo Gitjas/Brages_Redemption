@@ -1,0 +1,54 @@
+/* Brage is in party: he is no longer available for summoning */
+
+IF
+	InPartyAllowDead("C#Brage")
+	Global("C#BrageSummoned","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BrageSummoned","GLOBAL",4)
+		Continue()
+END
+
+
+/* GlobalGT("C#BE_SpawnBrage","GLOBAL",0): continuous game from SoA */
+
+IF 
+	!InMyArea("C#Brage")
+	!Dead("C#Brage")
+	GlobalGT("C#BE_SpawnBrage","GLOBAL",10)
+	GlobalLT("C#BE_SpawnBrage","GLOBAL",15)
+	Global("C#BrageSummoned","GLOBAL",1)
+THEN
+	RESPONSE #100
+            	SetGlobal("C#BrageSummoned","GLOBAL",2)
+		CreateVisualEffect("SPPORTAL",[1999.1218])
+		Wait(2)
+		MoveGlobal("AR0901","C#Brage",[1999.1218])
+	   	ActionOverride("C#Brage",Face(0))
+		ReallyForceSpellRES("SPWM168","C#Brage") //Heal 
+		SmallWait(1)
+	   	ActionOverride("C#Brage",SetDialog("c#brag25")
+		ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+	    	ActionOverride("C#Brage",ChangeAIScript("c#brag25",OVERRIDE))
+		ActionOverride("C#Brage",SetGlobal("C#BE_LevelUp","LOCALS",0))
+		Continue()
+END
+
+
+/* new game: Global("C#BE_SpawnBrage","GLOBAL",0) */
+
+
+IF 
+	Global("C#BE_SpawnBrage","GLOBAL",0)
+	Global("C#BrageSummoned","GLOBAL",1)	
+THEN
+	RESPONSE #100
+            	SetGlobal("C#BrageSummoned","GLOBAL",2)
+		CreateVisualEffect("SPPORTAL",[1999.1218])
+		Wait(2)
+	    	CreateCreature("c#brageT",[1999.1218],0)
+		ActionOverride("C#Brage",MakeGlobal())
+	   	ActionOverride("C#Brage",SetDialog("c#brag25")
+	    	ActionOverride("C#Brage",ChangeAIScript("c#brag25",OVERRIDE))
+		Continue()
+END

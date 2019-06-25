@@ -1,0 +1,621 @@
+/*
+	Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga
+*/
+
+BACKUP ~c#brage/backup~
+AUTHOR ~jastey@web.de~  
+
+
+VERSION ~Beta 1~ 
+
+README ~c#brage/readme.c#brage.%LANGUAGE%.html~ ~readme.c#brage.english.html~
+
+
+AUTO_TRA ~c#brage/tra/%s~
+
+ALWAYS
+
+
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+
+//CamDawgs CD_STATE_NOTVALID 
+    APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+
+    /* BGII:EE, EET - formatted texts etc. */
+    ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
+
+    ACTION_DEFINE_ARRAY fl#reload BEGIN game END
+
+      LAF HANDLE_CHARSETS
+        INT_VAR
+          infer_charsets = 1
+        STR_VAR
+          tra_path = EVAL ~c#brage/Tra~
+          noconvert_array = fl#noconvert
+          reload_array = fl#reload
+      END
+
+  ACTION_IF GAME_IS ~tob~ AND NOT GAME_IS ~bgt~ BEGIN
+    OUTER_SPRINT ~IT_IS_BG2~ ~~
+  END
+
+  ACTION_IF GAME_IS ~bgt~ BEGIN
+    INCLUDE ~c#brage/lib/g3_bgt_cpmvars.tpa~
+    OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
+
+	/* EET naming convention */
+	OUTER_SPRINT "eet_var" ""
+  END
+
+  ACTION_IF GAME_IS ~bgee~ BEGIN
+    INCLUDE ~c#brage/lib/g3_bgee_cpmvars.tpa~
+    OUTER_SPRINT ~IT_IS_BG2~ ~False()~
+  END
+
+  ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
+    OUTER_SPRINT ~BGT_VAR~ ~False()~
+    OUTER_SPRINT ~IT_IS_BG2~ ~~
+  END
+
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+    OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
+  END
+
+  INCLUDE ~c#brage/lib/useful_functions.tpa~
+
+/* dummy dlg for non-ee games */
+
+/* do not use this. Use IF_FILE_EXISTS instead */
+
+ ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+	OUTER_SPRINT ~NEERA_JOINED~ ~NeeraJ~
+	OUTER_SPRINT ~RASAAD_JOINED~ ~RasaadJ~
+	OUTER_SPRINT ~DORN_JOINED~ ~DornJ~
+	OUTER_SPRINT ~BAELOTH_JOINED~ ~BaelothJ~
+  END
+
+  ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+	OUTER_SPRINT ~NEERA_JOINED~ ~BGEEFAKE~
+	OUTER_SPRINT ~RASAAD_JOINED~ ~BGEEFAKE~
+	OUTER_SPRINT ~DORN_JOINED~ ~BGEEFAKE~
+	OUTER_SPRINT ~BAELOTH_JOINED~ ~BGEEFAKE~
+  END
+
+
+END //ALWAYS
+
+
+
+
+LANGUAGE ~English~
+         ~english~   
+         ~c#brage/tra/english/setup.tra~
+         ~c#brage/tra/english/game.tra~
+
+LANGUAGE ~Deutsch~
+         ~german~   
+         ~c#brage/tra/german/setup.tra~
+         ~c#brage/tra/german/game.tra~
+
+
+BEGIN @9000 /* ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga~ */
+
+/* do not use this. Use IF_FILE_EXISTS instead */
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+<<<<<<<< ...inlined/bgeefake.d
+BEGIN BGEEFAKE
+>>>>>>>>
+COMPILE ~...inlined/bgeefake.d~
+END
+
+
+ADD_JOURNAL TITLE (@55) @2 @10 @50 USING ~c#brage/tra/%LANGUAGE%/nashkel_graveyard_bg1.tra~
+
+
+
+COPY ~c#brage/creatures/C#BRAGE1.cre~ ~override~
+SAY NAME1 #6225 // Brage
+SAY NAME2 #6225 // Brage
+SAY MORALE ~~ [c#brag30]   
+SAY HAPPY ~~ [c#brag29] 
+SAY UNHAPPY_ANNOYED ~~ //[c#brag21]  
+SAY UNHAPPY_SERIOUS ~~ //[c#brag01]  
+SAY UNHAPPY_BREAKING ~~ [c#brag02]  
+SAY LEADER  ~~ [c#brag08] 
+SAY TIRED ~~ [c#brag09]  
+SAY BORED ~~ [c#brag10]  
+SAY BATTLE_CRY1 ~~ [c#brag03]  
+SAY BATTLE_CRY2 ~~ [c#brag05]  
+SAY BATTLE_CRY3 ~~ [c#brag06]  
+SAY BATTLE_CRY4 ~~ [c#brag07]  
+SAY BATTLE_CRY5 ~~ [c#brag04]  
+SAY DAMAGE ~~ [c#brag25]
+SAY DYING ~~ [c#brag22]
+SAY HURT ~~ [c#brag24]  
+SAY AREA_FOREST ~~  
+SAY AREA_CITY ~~  
+SAY AREA_DUNGEON ~~  
+SAY AREA_DAY ~~ 
+SAY AREA_NIGHT ~~ 
+SAY SELECT_COMMON1 ~~ [c#brag11]  
+SAY SELECT_COMMON2 ~~ [c#brag12]  
+SAY SELECT_COMMON3 ~~ [c#brag14]
+SAY SELECT_COMMON4 ~~ [c#brag26]
+SAY SELECT_COMMON5 ~~ [c#brag27]
+SAY SELECT_COMMON6 ~~ [c#brag28]
+SAY SELECT_ACTION1 ~~ [c#brag15]  
+SAY SELECT_ACTION2 ~~ [c#brag13] 
+SAY SELECT_ACTION3 ~~ [c#brag16] 
+SAY SELECT_ACTION4 ~~ [c#brag17]  
+SAY SELECT_ACTION5 ~~ [c#brag18]  
+SAY SELECT_ACTION6 ~~ [c#brag19]  
+SAY SELECT_ACTION7 ~~ [c#brag20] 
+SAY SELECT_RARE1 ~~ [c#brag31]  
+SAY SELECT_RARE2 ~~ [c#brag32]   
+SAY REACT_TO_DIE_GENERAL ~~ [c#brag23] 
+
+
+/* general */
+
+<<<<<<<< ...inlined/brage_c#bragedlg.d
+
+BEGIN C#BRAGEJ
+BEGIN C#BRAGEB
+
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/brage_c#bragedlg.d~
+
+
+/* BG1 */
+
+ACTION_IF GAME_IS ~bgt bgee eet~ THEN BEGIN
+
+
+COPY ~c#brage/spl/c#be1rcu.spl~ ~override~ //silent remove curse
+
+/* give items to cre */
+
+COPY_EXISTING ~C#BRAGE1.cre~ ~override~
+SAY BIO @1
+  ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~SW2H02~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
+  ADD_CRE_ITEM ~XBOW01~ #0 #0 #0 ~IDENTIFIED~ ~weapon2~ 
+  ADD_CRE_ITEM ~BOLT01~ #40 #0 #0 ~IDENTIFIED~ ~quiver1~
+  ADD_CRE_ITEM ~BOLT01~ #40 #0 #0 ~IDENTIFIED~ ~quiver2~
+  ADD_CRE_ITEM ~POTN08~ #3 #0 #0 ~IDENTIFIED~ ~qitem1~
+
+
+
+/* older bgqe is installed: detect "Brage's Sword" quest */
+ACTION_IF (MOD_IS_INSTALLED ~setup-bgqe.tp2~ ~11~) OR (FILE_EXISTS_IN_GAME ~c#q13brn.dlg~) THEN BEGIN
+
+/* identify the correct dialogue state of "Brage's Sword" of bgqe */
+OUTER_SET brage_state = STATE_WHICH_SAYS 44 IN ~bgqe/tra/%s/BRAGES_SWORD.tra~ FROM ~BRAGE.dlg~
+
+<<<<<<<< ...inlined/brage_bg1_add.d
+
+ADD_TRANS_ACTION BRAGE BEGIN %brage_state% END BEGIN END ~SetGlobal("C#BE_SpawnBrage","GLOBAL",1)
+SetGlobalTimer("C#BE_SpawnBrageT","GLOBAL",600)~
+
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/brage_bg1_add.d~
+
+END ELSE BEGIN
+
+/* bgqe not installed - install quest */
+
+INCLUDE ~c#brage/tpa/brages_sword.tpa~
+
+END
+
+
+/* Nalin will talk to the PC */
+EXTEND_BOTTOM ~%Nashkel_TempleofHelm%.bcs~ ~c#brage/baf/brage_ar4802.baf~ EVALUATE_BUFFER
+
+/* spawn Brage in front of temple */
+EXTEND_BOTTOM ~%Nashkel%.bcs~ ~c#brage/baf/brage_ar4800.baf~ EVALUATE_BUFFER 
+
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brage1.baf~
+EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/baf/c#_lvl_once.baf~ EVALUATE_BUFFER
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+  EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/baf/c#brage_ee.baf~ EVALUATE_BUFFER 
+END 
+
+/* last BG1 dialogue - needs to be triggered differently for BG:EE */
+INCLUDE ~c#brage/tpa/last_bg1_dialogue.tpa~
+EXTEND_BOTTOM ~c#brage1.bcs~ ~...inlined/last_bg1_dialogue.baf~ EVALUATE_BUFFER 
+EXTEND_BOTTOM ~c#brage1.bcs~ ~...inlined/last_bg1_dialogue_2.baf~ EVALUATE_BUFFER 
+
+/* Brage's Dream Script (for rest banters) */
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#braged.baf~
+
+
+/* BG1 joining dialogue */
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg1.d~
+
+/* more BG1 dialogue and banter */
+
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/bg1.d~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/cursed_items_bg1.d~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/npcbanter_bg1.d~
+
+/* girl will iniciate dialogue */
+/* cre */
+COPY_EXISTING ~GIRBA3_A.cre~ ~override/c#be1grl.cre~ EVALUATE_BUFFER 
+    WRITE_ASCII 0x280 ~c#be1grl~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#be1grl~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x250 ~c#be1grl~ #8   // Class script
+
+/* initiate dialogue */
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#be1grl.baf~
+
+/* add script block to wardogs in cabin */
+EXTEND_TOP ~wardog.bcs~ ~c#brage/baf/brage_wardog.baf~ EVALUATE_BUFFER
+
+
+/* quest - sort of: graveyard incident */
+
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#be1001.baf~
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#behann.baf~
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#be1cu1.baf~
+
+COPY_EXISTING ~GLANMA.cre~ ~override/c#be1001.cre~ EVALUATE_BUFFER 
+SAY NAME1 #9429 // Commoner (female)
+SAY NAME2 #9429 // Commoner
+    WRITE_ASCII 0x280 ~c#be1001~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#be1001~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#be1001~ #8   // Override script
+
+COPY_EXISTING ~FTOWN2.cre~ ~override/c#be1002.cre~ EVALUATE_BUFFER 
+    WRITE_ASCII 0x280 ~c#be1002~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#be1002~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#be1001~ #8   // Override script
+
+COPY_EXISTING ~MTOB2.cre~ ~override/c#be1003.cre~ EVALUATE_BUFFER 
+    WRITE_ASCII 0x280 ~c#be1003~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#be1003~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#be1001~ #8   // Override script
+
+COPY_EXISTING ~MTBE5.cre~ ~override/c#be1004.cre~ EVALUATE_BUFFER 
+    WRITE_ASCII 0x280 ~c#be1004~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#be1004~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#be1001~ #8   // Override script
+
+COPY_EXISTING ~FTOBE3.cre~ ~override/c#behann.cre~ EVALUATE_BUFFER 
+SAY NAME1 ~Hannah~
+SAY NAME2 ~Hannah~
+    WRITE_ASCII 0x280 ~c#behann~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#behann~ #8 // set dialogue file
+WRITE_EVALUATED_ASCII 0x248 ~c#behann~ #8   // Override script
+
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/nashkel_graveyard_bg1.d~
+
+/* area patches: give caravan site detection trigger (AR4100 Archaeological Site) */
+COPY_EXISTING ~%ArchaeologicalSite%.are~ ~override~
+  LPF ~fj_are_structure~
+    INT_VAR
+    fj_type         = 0    //trap
+    fj_box_left    = 3618  //kleinstes x
+    fj_box_top     = 2087   //kleinstes y
+    fj_box_right   = 3827  //größtes x 
+    fj_box_bottom  = 2240 //größtes y
+    fj_loc_x       = 3700
+    fj_loc_y       = 2100
+    fj_vertex_0    = 3690 + (2240 << 16) 
+    fj_vertex_1    = 3805 + (2236 << 16)
+    fj_vertex_2    = 3827 + (2129 << 16)
+    fj_vertex_3    = 3722 + (2087 << 16)
+    fj_vertex_4    = 3618 + (2185 << 16) 
+    STR_VAR
+    fj_structure_type   = region
+    fj_trap_detect      = 100
+    fj_trap_active      = 1
+    fj_trap_status      = 0
+    fj_name             = c#becara
+//    fj_reg_script   = c#becara
+  END
+
+
+END //BG1 content
+
+
+/* SoD */
+
+ACTION_IF GAME_INCLUDES ~sod~ THEN BEGIN
+//##  COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_sod.d~
+
+//##  COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brageS.baf~
+  EXTEND_BOTTOM ~C#BrageS.bcs~ ~c#brage/baf/c#_lvl_once.baf~ EVALUATE_BUFFER 
+  EXTEND_BOTTOM ~C#BrageS.bcs~ ~c#brage/baf/c#brage_ee.baf~ EVALUATE_BUFFER 
+
+/* after Korlasz is defeated: DisplayStringHead of his further plans. 
+Same script blocks get patched to both area scripts of Korlasz's crypt */
+EXTEND_BOTTOM ~bd0120.bcs~ ~%MOD_FOLDER%/baf/brage_sod_bd0120_commenting.baf~
+  EVALUATE_BUFFER
+EXTEND_BOTTOM ~bd0130.bcs~ ~%MOD_FOLDER%/baf/brage_sod_bd0120_commenting.baf~
+  EVALUATE_BUFFER	
+
+END
+
+
+/* Transition to BGII: BGT */
+
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+
+<<<<<<<< ...inlined/brage_bgt_transition.d
+
+I_C_T ~BELTBRD~ 12 C#Brandock_BGTTOBG2
+== C#BrageJ IF ~InParty("C#Brage")
+InMyArea("C#Brage")
+!StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @2 
+DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",8)
+SetGlobal("Kickout","GLOBAL",1)
+ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+ActionOverride("C#Brage",SetLeavePartyDialogFile())
+ActionOverride("C#Brage",LeaveParty())
+ActionOverride("C#Brage",EscapeAreaDestroy(3)~
+END
+
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/brage_bgt_transition.d~
+
+END
+
+
+
+/* BGII */
+
+ACTION_IF GAME_IS ~tob bg2ee eet~ THEN BEGIN //includes BGT
+
+/* joining dialogue */
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg2.d~
+
+/* other dialogues */
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/bg2.d~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/npcbanter_bg2.d~
+
+
+/* for a new SoA game, we need better equipped cre */
+COPY_EXISTING ~C#BRAGE1.cre~ ~override/C#BRAGE2.cre~
+SAY BIO ~##~
+/* items: */
+  ADD_CRE_ITEM ~PLAT14~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~SW2H11~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
+  ADD_CRE_ITEM ~XBOW01~ #0 #0 #0 ~IDENTIFIED~ ~weapon2~ 
+  ADD_CRE_ITEM ~BOLT02~ #40 #0 #0 ~IDENTIFIED~ ~quiver1~
+  ADD_CRE_ITEM ~BOLT02~ #40 #0 #0 ~IDENTIFIED~ ~quiver2~
+  ADD_CRE_ITEM ~BOLT03~ #5 #0 #0 ~IDENTIFIED~ ~quiver3~
+  ADD_CRE_ITEM ~POTN52~ #3 #0 #0 ~IDENTIFIED~ ~qitem1~
+BUT_ONLY_IF_IT_CHANGES
+
+/* ToB */
+/* for a new ToB game, we need even better equipped cre */
+COPY_EXISTING ~C#BRAGE1.cre~ ~override/C#BRAGET.cre~
+SAY BIO ~##~
+/* items: */
+  ADD_CRE_ITEM ~PLAT14~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~SW2H20~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
+  ADD_CRE_ITEM ~XBOW07~ #0 #0 #0 ~IDENTIFIED~ ~weapon2~ 
+  ADD_CRE_ITEM ~BOLT02~ #40 #0 #0 ~IDENTIFIED~ ~quiver1~
+  ADD_CRE_ITEM ~BOLT06~ #40 #0 #0 ~IDENTIFIED~ ~quiver2~
+  ADD_CRE_ITEM ~BOLT03~ #20 #0 #0 ~IDENTIFIED~ ~quiver3~
+  ADD_CRE_ITEM ~POTN52~ #5 #0 #0 ~IDENTIFIED~ ~qitem1~
+BUT_ONLY_IF_IT_CHANGES
+
+
+/* spawn Brage in Temple of Helm (Temple District) */
+EXTEND_BOTTOM ~ar0901.bcs~ ~c#brage/baf/brage_ar0901_bg2.baf~
+
+/* script */
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brage2.baf~
+EXTEND_BOTTOM ~C#Brage2.bcs~ ~c#brage/baf/c#_lvl_once.baf~ EVALUATE_BUFFER 
+
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  EXTEND_BOTTOM ~C#Brage2.bcs~ ~c#brage/baf/c#brage_ee.baf~ EVALUATE_BUFFER 
+END
+
+/* ToB */
+/* spawn Brage via fate spirit */
+EXTEND_TOP ~ar4500.bcs~ ~c#brage/baf/brage_ar4500_bg2.baf~
+
+
+/* tob joining dialogue */
+  COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_tob.d~
+
+/* tob script */
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brag25.baf~
+EXTEND_BOTTOM ~C#Brag25.bcs~ ~c#brage/baf/c#_lvl_once.baf~ EVALUATE_BUFFER 
+
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  EXTEND_BOTTOM ~C#Brag25.bcs~ ~c#brage/baf/c#brage_ee.baf~ EVALUATE_BUFFER 
+END
+
+/* fate spirit summoning */
+ACTION_IF GAME_IS ~eet~ BEGIN
+  INCLUDE ~EET/other/EET_functions.tph~
+     LAF ~EET_NPC_TRANSITION~
+       INT_VAR
+         type = 3
+         default_ToB = 1
+       STR_VAR
+         dv = "C#Brage"
+         override_BG1 = "C#Brage1"
+         override_SoD = "C#BrageS"
+         override_SoA = "C#Brage2"
+         override_ToB = "C#Brag25"
+         dialog_ToB = "C#Brag25"
+         cre_ToB = "C#BrageT"
+         traFile = "C#Brage/tra/%LANGUAGE%/fatesp.tra"
+         string = "@0"
+         stringPosDV = "Baeloth"
+  END
+END ELSE BEGIN
+  COMPILE ~c#brage/dialogue/fatesp.d~ 
+END
+
+
+
+  //epilogue: 
+EXTEND_TOP ~AR6200.bcs~ ~c#brage/baf/brage_ar6200_bg2.baf~
+
+  /* goodhood */
+  COPY ~c#brage/2da/c#beepxx.2da~ ~override/c#beep01.2da~
+  REPLACE ~99999~ ~##~
+
+  /* no goodhood */
+  COPY ~c#brage/2da/c#beepxx.2da~ ~override/c#beep02.2da~
+  REPLACE ~99999~ ~##~
+
+END //BGII
+
+
+
+/* all games */
+
+
+/* pid */
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/pid.d~
+
+/* potrait - by Acifer! */
+/* CamDawgs cool portrait-copy-function */
+INCLUDE ~c#brage/lib/cd_portrait_copy.tph~
+LAF cd_portrait_npc STR_VAR source = ~c#brage~ source_path = ~c#brage/portraits~ END
+
+/* sounds */
+
+/* this is a protagonist soundset from IWD: HoW_Male_2 */
+
+COPY ~c#brage/sound/%LANGUAGE%~ ~override~
+
+/* assign dialogue files to .2das */
+
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+
+/* BG:EE */
+APPEND ~pdialog.2da~
+~C#Brage 	C#BrageP 	C#BrageJ 	C#BrageD~
+UNLESS ~C#Brage~
+
+
+APPEND ~interdia.2da~
+~C#Brage 	C#BrageB~
+UNLESS ~C#Brage~
+
+END
+
+/* SoD */
+
+ACTION_IF (GAME_IS ~bgee eet~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+APPEND ~bddialog.2da~
+~C#Brage 	C#BragSP 	C#BrageJ 	C#BrageD~
+UNLESS ~C#Brage~
+
+
+
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~BDBANTER.2DA~) BEGIN
+
+	APPEND ~bdbanter.2da~
+		~C#Brage 	C#BragSB~
+	UNLESS ~C#Brage~
+        
+END ELSE BEGIN 
+
+<<<<<<<< .../BDBANTER.2DA
+2DA      V1.0
+NONE
+         FILE
+KIVAN    BDKIVANB
+ALORA    BDALORAB
+MINSC    BDMINSCB
+DYNAHEIR BDDYNAHB
+YESLICK  BDYESLIB
+CORAN    BDCORANB
+AJANTIS  BDAJANTB
+KHALID   BDKHALIB
+JAHEIRA  BDJAHEIB
+GARRICK  BDGARRIB
+SAFANA   BDSAFANB
+FALDORN  BDFALDOB
+BRANWEN  BDBRANWB
+QUAYLE   BDQUAYLB
+XAN      BDXANB
+SKIE     BDSKIEB
+ELDOTH   BDELDOTB
+XZAR     BDXZARB
+MONTARON BDMONTAB
+TIAX     BDTIAXB
+KAGAIN   BDKAGAIB
+SHARTEEL BDSHARTB
+EDWIN    BDEDWINB
+VICONIA  BDVICONB
+IMOEN2   BDIMOENB
+NEERA    BDNEERAB
+DORN     BDDORNB
+RASAAD   BDRASAAB
+BAELOTH  BDBAELOB
+VOGHILN  BDVOGHIB
+MKHIIN   BDMKHIIB
+CORWIN   BDCORWIB
+GLINT    BDGLINTB
+C#Brage 	C#BrageB
+>>>>>>>>
+
+	COPY ~.../BDBANTER.2DA~ ~override~ 
+END
+
+
+END
+
+/* BG1:EET */
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+APPEND ~bgdialog.2da~
+~C#Brage 	C#BrageP 	C#BrageJ 	C#BrageD~
+UNLESS ~C#Brage~
+
+APPEND ~bgbanter.2da~
+~C#Brage 	C#BrageB~
+UNLESS ~C#Brage~
+
+END
+
+/* BGT, BGII, BGII:EE */
+
+ACTION_IF GAME_IS ~tob bg2ee bgt eet~ THEN BEGIN
+
+APPEND ~pdialog.2da~
+~C#Brage 	C#BrageP 	C#BrageJ 	C#BrageD 	C#Bra25P 	C#BrageJ 		C#Brg25D 	C#Brag25~
+UNLESS ~C#Brage~
+
+
+APPEND ~interdia.2da~
+~C#Brage 	C#BrageB      C#Bra25B~
+UNLESS ~C#Brage~
+
+END
+
+
+
+/////////////////////////////////////////////////////////////////
+// Assign the mod's portrait to the original Brage in game
+/////////////////////////////////////////////////////////////////
+BEGIN @9001 /* ~Assign the mod's portrait to the original Brage in game~ */
+REQUIRE_COMPONENT ~c#brage.tp2~ 0 @9002 /* ~Brage's Redemption mod main component needs to be installed.~ */
+REQUIRE_PREDICATE (GAME_IS ~bgt eet bgee~) ~This component makes only sense for BG1.~
+
+COPY_EXISTING ~brage.cre~ ~override~ ~brage2.cre~ ~override~
+  WRITE_ASCII 0X34 ~c#brages~ #8 //small portrait
+
+

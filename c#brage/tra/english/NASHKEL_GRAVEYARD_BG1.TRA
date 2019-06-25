@@ -1,0 +1,62 @@
+@0    = ~<CHARNAME>, when I joined your cause, I wanted to leave Nashkel as fast as possible. I wanted to get away from the memories... from the pain they are causing, from the stares of the town's people - but also from my guilt.~
+@1    = ~I... I wasn't at their funeral, <CHARNAME>. My wife and my daughters where buried while I was still "missing" - striking the lands under the influence of that cursed sword. Please, if we are near Nashkel again - let us pass by the graveyard. Just to see the grave... just to see the grave once, that would be my uttermost wish.~
+@2    = ~Brage wants to visit his family grave in Nashkel
+
+Brage asked for a visit to his family's grave in Nashkel. He did not sound very insistent, but if our path would go to Nashkel graveyard in the nearer future, I think he would appreciate it very much.~
+@3    = ~Nashkel! Please, <CHARNAME>, let our path go past the graveyard.~
+@4    = ~You don't have to drag us along for such a personal visit, Brage. Just go ahead, we will meet you later.~
+@5    = ~Of course, Brage. We will go there at once.~
+@6    = ~Yes, but I need to do something else first. We'll be there when we will be there, Brage.~
+@7    = ~I don't have the nerve to wait beside the tombstones. You go on your own.~
+@8    = ~I thank you.~
+@9    = ~Gladly. You will find me inside the temple.~
+@10   = ~Brage wants to visit his family grave in Nashkel
+
+Brage went to the graveyard. He said he will be inside the Temple of Helm afterwards.~
+@11   = ~Here we are... after all the time that passed.~
+@12   = ~Brage? Eh, that's Brage! Over there!~
+@13   = ~What is *he* doing here?~
+@14   = ~Well, his family is here, too...~
+@15   = ~One would think he would show some respect, and stay away from the graves he filled! What do you come here and disturb our mourning, you murderer!~
+@16   = ~Good woman... I do not deny what my hands did, but do not call me a murderer.~
+@17   = ~Indeed. Brage is not guilty of what that sword made him do.~
+@18   = ~Anyone up for trouble?~
+@19   = ~(Say nothing.)~
+@20   = ~Uh, brought yourseld a bodyguard, eh?~
+@21   = ~That "cursed sword" still your lame excuse for what you did?~
+@22   = ~Come on, everyone knows it was a cursed sword. Priest Nalin confirmed it and all.~
+@23   = ~You are not welcome here, Brage.~
+@24   = ~Good people... I beg you. My beloved family is buried here...~
+@25   = ~Butchered by you just like our Tamien. Don't you dare go near our Tamien's grave, you murderer!~
+@26   = ~Come on, give the man some rest. He had a proper trial and all.~
+@27   = ~Proper trial, my ass. Does that make my Tamien alive again?~
+@28   = ~Come on, you shouldn't upset yourself so much, Marlene. Let us go.~
+@29   = ~I... I didn't make it to the grave, <CHARNAME>. There were people there... They accused me of being a murderer, of not belonging here.~
+@30   = ~All that hatred... But they are right. I shouldn't befoul the graves of the ones I killed by coming here. I... I will visit the graves another time. Later, when more time has passed...~
+@31   = ~Brage, no. There were just as much voices in your favor. Didn't you notice those?~
+@32   = ~I am sure those people did not talk for all of Nashkel, Brage. They are just the loudest, as always.~
+@33   = ~It's your family's grave, you have a right to be here, Brage.~
+@34   = ~What are you, a punshbag for unfair people? Let them lament all they want.~
+@35   = ~Well, that was your one chance, Brage. We don't have more time to linger, anyway.~
+@36   = ~I appreciate your kind words, but...~
+@37   = ~(clenches his teeth) Let us go. There is nothing for me, here.~
+@38   = ~Brage! Brage, is that you?~
+@39   = ~By the mercy of the gods. Does it not stop?~
+@40   = ~...Hannah? Please, not you, too. I grieve, Hannah. I did not kill them out of my free will. I will repent. I swear to you, I will repent!~
+@41   = ~I know you didn't do it on purpose, Brage. Everyone knows it. Some are just so angry. They do not understand why it happened. They need someone to blame. They lost a loved one, and in some cases the bread-earner, as well. It is not your fault, but it happened.~
+@42   = ~I... I am asking myself the same questions. I feel guilty, Hannah.~
+@43   = ~I know you do. But you don't need to hide, Brage. You have friends here, who will still welcome you, you know. Betty was happy with you. She was lucky to have you. Yes, lucky! Don't object, Brage, you are a good man. She knew this. I am sure she would forgive you for what happened.~
+@44   = ~Hannah, I... I thank you. Thank you!~
+@45   = ~Farewell, Brage. May the gods watch over you.~
+@46   = ~That was Hannah, our neighbor and my wife's best friend. Those words - from her... I feel like my wife had spoken to me...~
+@47   = ~I changed my mind. I need to see that grave now. Be near my wife, just for a moment... It won't take long, <CHARNAME>. I will be back in an instant.~
+@48   = ~(exhales) Here I am. It's... it's a good tombstone. And someone planted poppies... Excuse me, I have something in my eye...~
+@49   = ~I thank you for taking me here, <CHARNAME>. It was... different than what I expected. But it was good I was here. What a day - I feel like I was cursed and blessed at the same time.~
+@50   = ~Brage wants to visit his family grave in Nashkel
+
+Brage's visit to his family's grave was overshadowed by towns poeple who still blame him for the killings, but there are also friends who support him. I think he found some peace here today.~
+@51   = ~What Hannah said made me ponder... I did swear I would support the families I hurt, and I already did so with what I had - my house is not my house any more, and I do not have any gold left other than what I might need for my everyday life. I went on a mission to bring those who did this to justice. And I thought... I thought that this would propitiate the people - but I missed the fact that as noble as this might be, it doesn't help them with their everydays' needs...~
+@52   = ~Was I full of myself - again?! Did I expect their appreciation, their... gratitude? I have to live with the fact that this might never happen - yet I need to stay focussed on my path to seek redemption: I shall not hate myself, and I shall not accuse the gods. I shall take it out on people, because that is the only reasonable way.~
+@53   = ~This will be two-fold: I will go after and bring to justice those who caused this or similar deeds. And I will try and provide for those who suffered a loss of a loved one, a bread-earner due to my doings - without expecting to gain their forgiveness.~
+@54   = ~I thank you, <CHARNAME>, for the clear path you helped me to find. I will always mourn the loss of my beloved and our daughters. And I will always feel guilty for what I did. But it will be my motivation to seek redemption - before both the gods and the people I hurt.~
+@55   = ~Brage wants to visit his family grave in Nashkel~

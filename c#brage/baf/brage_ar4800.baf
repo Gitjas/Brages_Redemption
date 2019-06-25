@@ -1,0 +1,22 @@
+/* spawn joinable Brage in front of the temple */
+
+IF
+	Global("C#BE_SpawnBrage","GLOBAL",4)
+THEN
+  RESPONSE #100
+		CreateCreature("C#Brage1",[2584.1075],11)
+		ActionOverride("C#Brage",SetGlobal("C#BE_LevelUp","LOCALS",0))
+		ActionOverride("C#Brage",MakeGlobal())
+		SetGlobal("C#BE_SpawnBrage","GLOBAL",5)
+END
+
+IF
+	InParty("C#Brage") 
+	InMyArea("C#Brage") 
+	!StateCheck("C#Brage",CD_STATE_NOTVALID)
+	Global("C#BE_NashkelGirl","GLOBAL",0)
+THEN
+  RESPONSE #100
+		CreateCreature("c#be1grl",[3099.1862],11)
+		SetGlobal("C#BE_NashkelGirl","GLOBAL",1)
+END
