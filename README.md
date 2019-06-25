@@ -1,4 +1,4 @@
-# Brages_Redemption
+# Brage's Redemption
 Brage NPC for Baldur's Gate
 
 Brage's Redemption is a Quest Mod for BG1 and an NPC Mod for the whole Baldur's Gate Epic. It is natively compatible with BG:EE, SoD, BGII, BGT, BGII:EE, EET. No Tutu.
