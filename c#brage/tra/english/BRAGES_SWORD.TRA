@@ -42,6 +42,7 @@
 @41   = ~Well... There are still a lot of bandits out there, aren't they? I could... I could protect the weak on the road...~
 @42   = ~No, I will not sell it. I will not profit from a sword. I lay it into your hands, <CHARNAME>, because it will be of more use there.~
 @43   = ~Fine, if this is your last wish, then I thank you.~
+/* do not change line 44, it needs to be the same as in bgqe */
 @44   = ~It's an intriguing thought, but I do not have the self-confidence and trust to do this just now. I will... I will take the sword. Helm give me the strength! I know your words are true, but I am... I am not ready to face it just now. I will remain here and do as much as I can... for now.~
 @45   = ~I thank you, <CHARNAME>.~
 @46   = ~So, you brought in Brage alive. I care not about the tears the others shed over this 'Commander'. All this talk about Brage's honor and righteousness and the suspicions about a foul magic having to be involved!~

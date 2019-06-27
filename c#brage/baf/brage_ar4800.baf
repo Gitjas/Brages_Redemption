@@ -1,13 +1,23 @@
+/* prepare Brage spawn: if player leaves temple once and returns, Brage will be ready to join */
+
+IF
+	InMyArea(Player1)
+	Global("C#BE_SpawnBrage","GLOBAL",1)
+THEN
+  RESPONSE #100
+		SetGlobal("C#BE_SpawnBrage","GLOBAL",2)
+END
+
 /* spawn joinable Brage in front of the temple */
 
 IF
-	Global("C#BE_SpawnBrage","GLOBAL",4)
+	Global("C#BE_SpawnBrage","GLOBAL",5)
 THEN
   RESPONSE #100
 		CreateCreature("C#Brage1",[2584.1075],11)
 		ActionOverride("C#Brage",SetGlobal("C#BE_LevelUp","LOCALS",0))
 		ActionOverride("C#Brage",MakeGlobal())
-		SetGlobal("C#BE_SpawnBrage","GLOBAL",5)
+		SetGlobal("C#BE_SpawnBrage","GLOBAL",6)
 END
 
 IF

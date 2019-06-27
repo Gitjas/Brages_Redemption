@@ -251,13 +251,13 @@ LAF extend_area_script STR_VAR area="%Nashkel%" top="c#brage/bragesword/q13_ar48
 
 LAF extend_area_script STR_VAR area="%XvartVillage%" top="c#brage/bragesword/q13_ar4700.baf"   END
 
-/* Hick: Amnish soldier inside Barracks. He will wait outside for a follow-up. This has to be before the compilation of the brages_sword.d, or the added dialogue for Hick will be patched, too. */
-
 /* count: PC investigated inside the Lotus tent */
 LAF extend_area_script STR_VAR area="%NashkelCarnival_LotusTent%" bottom="c#brage/bragesword/q13_ar4902.baf"   END
 
 /* spawn Borda a second time at Nashkel Carnival */
 LAF extend_area_script STR_VAR area="%NashkelCarnival%" top="c#brage/bragesword/q13_ar4900.baf"   END
+
+/* Hick: Amnish soldier inside Barracks. He will wait outside for a follow-up. This has to be before the compilation of the brages_sword.d, or the added dialogue for Hick will be patched, too. */
 
 COPY_EXISTING ~hick.dlg~ ~override~
 /* BG1, BG:EE, TUTU */

@@ -1,6 +1,6 @@
 IF
 	See(Player1)
-	Global("C#BE_SpawnBrage","GLOBAL",5)
+	Global("C#BE_SpawnBrage","GLOBAL",6)
 THEN
 	RESPONSE #100
 		Dialogue([PC])

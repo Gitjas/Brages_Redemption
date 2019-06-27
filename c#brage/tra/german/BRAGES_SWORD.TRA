@@ -6,7 +6,7 @@
 @5    = ~Ich stehe vor Euch in meiner Schuld. So viele Leben habe ich beendet... und das ohne zu wissen, warum ich es tat. Ich werde Euch folgen. Ich bin bereit, die gerechte Strafe für die entsetzlichen Verbrechen zu erhalten, die ich begangen habe.~
 @6    = ~Brage, was ist in der Nacht geschehen?~
 @7    = ~Lebt wohl.~
-@8    = ~Wird darüber noch nicht genug gesprochen? Habt Ihr es nicht bereits in der Kaserne und den Tavernen erfahren, hat Oublek Euch nicht bereits berichtet, was ich mit diesen meinen Händen tat? Warum wollt Ihr mich zwingen, Euch zu erzählen, wie ich meine Familie niedermetzelte... Meine geliebte Frau und Töchter. Wie ich meine Kameraden erschlug, als sie zu meiner Rettung kamen! Wie ich eine ganze Reisegruppe ermordete und ihren Ochsenwagen zertrümmerte, nachdem sie es gerade so geschafft hatten, die Banditen zu vermeiden? Wie ich sogar... wie ich selbst auf einen bereits toten Mann einschlug, bis nichts mehr von ihm übrig war...~
+@8    = ~Wird darüber noch nicht genug gesprochen? Habt Ihr es nicht bereits in der Kaserne und den Tavernen erfahren, hat Oublek Euch nicht bereits berichtet, was ich mit diesen meinen Händen tat? Warum wollt Ihr mich zwingen, Euch zu erzählen, wie ich meine Familie niedermetzelte... Meine geliebte Frau und Töchter. Wie ich meine Kameraden erschlug, als sie zu meiner Rettung kamen! Wie ich eine ganze Reisegruppe ermordete und ihren Pferdewagen zertrümmerte, nachdem sie es gerade so geschafft hatten, die Banditen zu vermeiden? Wie ich sogar... wie ich selbst auf einen bereits toten Mann einschlug, bis nichts mehr von ihm übrig war...~
 @9    = ~Fragt Ihr Euch nicht selbst, was Euch dazu getrieben hat? Habt Ihr nicht auch den Verdacht, dass es mehr war als nur ein Kontrollverlust durch Euch selbst?~
 @10   = ~Äh, ich meinte bevor das alles geschah.~
 @11   = ~Irgend etwas hat Euch wie einen Berserker die Kontrolle verlieren lassen. Erinnert Ihr Euch an irgendetwas davor?~
@@ -21,7 +21,7 @@
 @20   = ~Und sonst erinnert Ihr Euch an nichts? Irgendwas besonderes? Einen Hinweis, was diesem Händler zugestoßen sein könnte?~
 @21   = ~Ihr sagtet, der Händler hätte seine Ware noch bei sich gehabt. Durch was ist er dann gestorben?~
 @22   = ~Ich glaube nicht, dass das irgendwas bringt. Lebt wohl.~
-@23   = ~Freunde, wenn Ihr all' das getan hättet und Euch daran erinnern könntet... An die Angst und das Entsetzen in den Augen derer, die Ihr liebt, am ihre Schreie, während Ihr sie erschlagt! Es besteht kein Zweifel, dass ich es war, der dies getan hat, und ich erinnere mich an alles... klar und deutlich...~
+@23   = ~Freunde, wenn Ihr all' das getan hättet und Euch daran erinnern könntet... An die Angst und das Entsetzen in den Augen derer, die Ihr liebt, an ihre Schreie, während Ihr sie erschlagt! Es besteht kein Zweifel, dass ich es war, der dies getan hat, und ich erinnere mich an alles... klar und deutlich...~
 @24   = ~Verflucht... Es ändert nichts an den schrecklichen Erinnerungen in meinem Kopf, und auch nicht an meinen Taten, von denen sie sprechen.~
 @25   = ~Ja, dass ich dieses Schwert geschwunden habe ist das, was mit ihm nicht in Ordnung war!~
 @26   = ~Durch die ganzen Banditenüberfälle ist eine Leiche am Straßenrand nichts außergewöhnliches, leider. Aber daneben der Handkarren voll mit Waren... Das war in der Tat besonders. Zuerst vermutete ich einen Angriff eines wilden Tieres, aber dann sah ich, dass es eine Klinge war, die die tödlichen Verletzungen zugefügt hatte. Der Händler wurde von Räubern getötet, aber sie nahmen die Waren nicht mit.~
@@ -42,6 +42,7 @@
 @41   = ~Nun... Es gibt noch immer viele Banditen da draußen, nicht wahr? Ich könnte... ich könnte die Reisenden auf den Straßen beschützen...~
 @42   = ~Nein, ich werde es nicht verkaufen. Ich werde von keinem Schwert profitieren. Ich gebe es Euch, <CHARNAME>, weil es bei Euch bessere Dienste verrichten wird.~
 @43   = ~Nun gut, wenn das Euer letztes Wort ist, dann behalte ich es.~
+/* Zeile 44 nicht verändern, muss wortgleich mit der in bgqe sein */
 @44   = ~Was für ein wunderbarer Gedanke, er elektrisiert mich geradezu... aber ich traue es mir nicht zu, meinen Mitmenschen so zu dienen - noch nicht. Ich werde... ich werde das Schwert an mich nehmen. Helm stehe mir bei! Ich weiß, dass Ihr wahre Worte sprecht, aber ich bin noch nicht bereit, sie umzusetzen. Ich werde hier bleiben und so viel tun, wie ich kann... Für's erste.~
 @45   = ~Ich danke Euch, <CHARNAME>.~
 @46   = ~Ihr habt also Brage eingefangen, und das lebendig. Ich gebe nichts auf das ganze Gerede davon, dass bei seiner Ehre und Rechtschaffenheit ein fauler Zauber für sein Verhalten verantwortlich sein muss. All' die Tränen, die in der Stadt für diesen Mörder vergossen werden!~
@@ -115,7 +116,7 @@
 @114  = ~Dann werde ich es für Euch sagen, Brage. Ihr seid hiermit von dem Vorwurf befreit, die Morde absichtlich und bei vollem Verstand begangen zu haben. Die Tod den Strick ist hiermit hinfällig.~
 @115  = ~Nein... nein, nach allem, was ich getan habe, wie soll ich weiterleben mit dieser Schuld...~
 @116  = ~Die Taten habt Ihr begangen, in der Tat. Mit der mir verliehenen Autorität verurteile ich Euch dazu, Entschädigungen zu zahlen für die Leben die Ihr nahmt und den Schaden, den Ihr angerichtet habt. Ihr werdet unehrenvoll aus der Armee entlassen und verliert alle Eure Titel und Bezüge. Ihr könnt als freier Mann dieses Haus verlassen, Brage, doch ich fürchte, dass Ihr ein armer und gebrochener Mann sein werdet. Ihr habt mein Mitgefühl.~
-@117  = ~Ja. Wie von Priester Nalin bestätigt, war das Schwert, das der Beschuldigte verwendete, ein völlig normaer Zweihänder. Kein böser Zauber führte die Hände dieses Mörders!~
+@117  = ~Ja. Wie von Priester Nalin bestätigt, war das Schwert, das der Beschuldigte verwendete, ein völlig normaler Zweihänder. Kein böser Zauber führte die Hände dieses Mörders!~
 @118  = ~(seufz) Dann ist es jetzt amtlich. Brage, mit der mir verliehenen Autorität verurteile ich Euch zum Tode am Galgen. Es tut mir sehr leid, was geschehen ist.~
 @119  = ~Ich... ich danke Euch. Dies wird die gerechte Strafe sein... meine arme Familie.~
 @120  = ~Ich bin beeindruckt, mit welcher Hartnäckigkeit Ihr die Beweise für die Unschuld unseres Hauptmanns gesammelt habt. Dafür steht nicht nur er sondern die ganze Stadt in Eurer Schuld. Die Kameraden sind sehr viel ruhiger geworden, nachdem nun klar ist, dass es sich um eine Intrige handelte - wenigstens das. Wir sind trotzdem weiter sehr wachsam, natürlich. Nashkell scheint viele Feinde zu haben.~

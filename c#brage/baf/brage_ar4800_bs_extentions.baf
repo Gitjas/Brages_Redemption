@@ -1,0 +1,24 @@
+/* remove journal entry from Nalin's hint if PC got the quest */
+
+IF
+	InMyArea(Player1)
+	GlobalGT("C#q13Brage_NalinVouch","GLOBAL",0)
+	GlobalGT("C#BE_NalinHint","GLOBAL",0)	
+	GlobalLT("C#BE_NalinHint","GLOBAL",3)
+THEN
+  RESPONSE #100
+		SetGlobal("C#BE_NalinHint","GLOBAL",3) 
+		EraseJournalEntry(@1022)
+END
+
+/* Oublek will initiate dialogue if Brage was brought to him - there is no "See(Player1)" check because this assumes that Brage was just brought to Oublek and the PC is still near Oublek!*/
+IF
+	Global("OublekBounty1","GLOBAL",1)
+	Global("BrageRiddle","GLOBAL",5)
+	Global("C#Q13_BragesSwordQuest","GLOBAL",1)
+	InMyArea("Oublek")
+	!Dead("Oublek")
+THEN
+	RESPONSE #100
+		ActionOverride("OUblek",StartDialogNoSet(Player1))
+END

@@ -1,4 +1,4 @@
-/* detection:  */
+/* Nalin talks to the PC when Brage is ready to join:  */
 
 IF
 	InMyArea(Player1)
@@ -9,13 +9,12 @@ IF
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 	!StateCheck("Brage",CD_STATE_NOTVALID)
 	!StateCheck("NALIN",CD_STATE_NOTVALID)
-	GlobalTimerExpired("C#BE_SpawnBrageT","GLOBAL")
-	Global("C#BE_SpawnBrage","GLOBAL",1)
+	Global("C#BE_SpawnBrage","GLOBAL",2)
 	GlobalGT("C#Q13_BragesSwordQuest","GLOBAL",3) 
 	!Global("C#q13Brage_NalinVouch","GLOBAL",4)
 THEN
   RESPONSE #100
-		SetGlobal("C#BE_SpawnBrage","GLOBAL",2)
+		SetGlobal("C#BE_SpawnBrage","GLOBAL",3)
 		ActionOverride("NALIN",StartDialogNoSet(Player1))
 END
 

@@ -40,7 +40,7 @@ IF ~Global("BeholderPlot","GLOBAL",1)~ THEN + 24
 /* joining dialogue */
 
 BEGIN C#Brage2
-IF ~Global("C#BE_SpawnBrage","GLOBAL",10)~ THEN joinbg2
+IF ~Global("C#BE_SpawnBrage","GLOBAL",20)~ THEN joinbg2
 SAY ~Greetings. Yes, I already heard about the "Unseeing Eye" cult and... <CHARNAME>?! Is it you? What a pleasant surprise! So you did find your way to Athkatla. But... you do not look well, <CHARNAME>. Not at all!~
 ++ ~Hello Brage. No, indeed. I was held prisoner and being tortured the last months by a powerful mage I need to persue now.~ + joinbg2_01
 ++ ~Brage! It is nice to see you. I need to raise a lot of gold to get to where the Cowled Wizards hold their prisoners!~ + joinbg2_02
@@ -70,7 +70,7 @@ END
 
 IF ~~ THEN joinbg2_05
 SAY ~Return here if I can be of service to you. Farewell.~
-IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",11)~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",21)~ EXIT
 END
 
 CHAIN
@@ -80,7 +80,7 @@ IF ~~ THEN C#Brage2 joinbg2_06
 == C#Brage2 IF ~Dead("UnseeingEye")~ THEN ~You already clinsed the city of the "Unseeing Eye" cult, as I see. This leaves me with no more obligations to the temples.~
 == C#Brage2 IF ~Exists("OISIG")~ THEN ~Please, take me to High Watcher Oisig, so I can tell him my farewell.~
 END
-IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",12) SetGlobal("C#BE_BrageTalksBG2","GLOBAL",1) RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",1600) JoinParty()~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",22) SetGlobal("C#BE_BrageTalksBG2","GLOBAL",1) RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",1600) JoinParty()~ EXIT
 
 
 CHAIN
@@ -102,7 +102,7 @@ SAY ~Of course! I will not stand in the way of saving our dear friend. I have so
 ++ ~No, I don't have a use for you yet.~ + joinbg2_04
 END
 
-IF ~Global("C#BE_SpawnBrage","GLOBAL",11)~ THEN joinbg2_09
+IF ~Global("C#BE_SpawnBrage","GLOBAL",21)~ THEN joinbg2_09
 SAY ~Greetings, <CHARNAME>.~
 ++ ~Hello Brage. Would you accompany me once more?~ + joinbg2_06
 ++ ~I was just passing by.~ + joinbg2_05

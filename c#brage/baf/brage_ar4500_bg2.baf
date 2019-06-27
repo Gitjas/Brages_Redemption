@@ -15,8 +15,7 @@ END
 IF 
 	!InMyArea("C#Brage")
 	!Dead("C#Brage")
-	GlobalGT("C#BE_SpawnBrage","GLOBAL",10)
-	GlobalLT("C#BE_SpawnBrage","GLOBAL",15)
+	GlobalGT("C#BE_SpawnBrage","GLOBAL",20)
 	Global("C#BrageSummoned","GLOBAL",1)
 THEN
 	RESPONSE #100

@@ -10,7 +10,7 @@ SmallWait(1) and Continue() are taken from the original game. */
 IF
 Global("StartEndBios","AR6200",1)
 !Dead("C#Brage")
-Global("C#BE_SpawnBrage","GLOBAL",12) //Brage joined
+GlobalGT("C#BE_SpawnBrage","GLOBAL",21) //Brage joined in SoA
 Global("PlayerChoseEssence","GLOBAL",1)
 Global("C#BE_BrageEpilog","GLOBAL",0)
 THEN
@@ -25,7 +25,7 @@ END
 IF
 Global("StartEndBios","AR6200",1)
 !Dead("C#Brage")
-Global("C#BE_SpawnBrage","GLOBAL",12) //Brage joined
+GlobalGT("C#BE_SpawnBrage","GLOBAL",21) //Brage joined in SoA
 !Global("PlayerChoseEssence","GLOBAL",1)
 Global("C#BE_BrageEpilog","GLOBAL",0)
 THEN

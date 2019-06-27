@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~jastey@web.de~  
 
 
-VERSION ~Beta 1~ 
+VERSION ~Beta 2~ 
 
 README ~c#brage/readme.c#brage.%LANGUAGE%.html~ ~readme.c#brage.english.html~
 
@@ -197,27 +197,38 @@ SAY BIO @1
 
 
 
-/* older bgqe is installed: detect "Brage's Sword" quest */
-ACTION_IF (MOD_IS_INSTALLED ~setup-bgqe.tp2~ ~11~) OR (FILE_EXISTS_IN_GAME ~c#q13brn.dlg~) THEN BEGIN
-
-/* identify the correct dialogue state of "Brage's Sword" of bgqe */
-OUTER_SET brage_state = STATE_WHICH_SAYS 44 IN ~bgqe/tra/%s/BRAGES_SWORD.tra~ FROM ~BRAGE.dlg~
-
-<<<<<<<< ...inlined/brage_bg1_add.d
-
-ADD_TRANS_ACTION BRAGE BEGIN %brage_state% END BEGIN END ~SetGlobal("C#BE_SpawnBrage","GLOBAL",1)
-SetGlobalTimer("C#BE_SpawnBrageT","GLOBAL",600)~
-
->>>>>>>>
-COMPILE EVALUATE_BUFFER ~...inlined/brage_bg1_add.d~
-
-END ELSE BEGIN
+/* older bgqe installed? detect "Brage's Sword" quest */
+ACTION_IF NOT (MOD_IS_INSTALLED ~setup-bgqe.tp2~ ~11~) OR (FILE_EXISTS_IN_GAME ~c#q13brn.dlg~) THEN BEGIN
 
 /* bgqe not installed - install quest */
 
 INCLUDE ~c#brage/tpa/brages_sword.tpa~
 
 END
+
+
+/* identify the correct dialogue state of "Brage's Sword" (so I can leave the original one untouched) */
+OUTER_SET brage_state = STATE_WHICH_SAYS 44 IN ~c#brage/tra/%s/BRAGES_SWORD.tra~ FROM ~BRAGE.dlg~
+
+<<<<<<<< ...inlined/brage_bg1_add.d
+
+ADD_TRANS_ACTION BRAGE BEGIN %brage_state% END BEGIN END ~SetGlobal("C#BE_SpawnBrage","GLOBAL",1)~
+
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/brage_bg1_add.d~
+
+/* some improvements to the quest */
+/* Nalin gives a hint after Brage was brought in */
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/bragesword_extentions.d~
+EXTEND_BOTTOM ~%Nashkel_TempleofHelm%.bcs~ ~c#brage/baf/brage_ar4802_bs_extentions.baf~ EVALUATE_BUFFER
+ADD_JOURNAL TITLE (@1021) @1022 USING ~c#brage/tra/%LANGUAGE%/brages_sword.tra~
+
+/* remove journal entry from Nalin's hint after sword quest was received; let Oublek initiate dialogue after Brage was brought to him */
+EXTEND_BOTTOM ~%Nashkel%.bcs~ ~c#brage/baf/brage_ar4800_bs_extentions.baf~ EVALUATE_BUFFER
+
+/* Hick won't be longer in the baracks after Brage was brought in */
+EXTEND_BOTTOM ~%Nashkel_Garrison%.bcs~ ~c#brage/baf/brage_ar4810_bs_extentions.baf~ EVALUATE_BUFFER 
+
 
 
 /* Nalin will talk to the PC */
@@ -359,7 +370,7 @@ I_C_T ~BELTBRD~ 12 C#Brandock_BGTTOBG2
 == C#BrageJ IF ~InParty("C#Brage")
 InMyArea("C#Brage")
 !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @2 
-DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",8)
+DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
 SetGlobal("Kickout","GLOBAL",1)
 ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
 ActionOverride("C#Brage",SetLeavePartyDialogFile())
@@ -605,7 +616,6 @@ APPEND ~interdia.2da~
 UNLESS ~C#Brage~
 
 END
-
 
 
 /////////////////////////////////////////////////////////////////

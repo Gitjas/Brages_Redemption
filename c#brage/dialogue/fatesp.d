@@ -16,7 +16,7 @@ Global("C#BrageSummoned","GLOBAL",0)~ THEN REPLY @0 DO ~SetGlobal("C#BrageSummon
 ~ GOTO 10    /* ~I cannot do as you ask, child of Bhaal. The one you seek is dead and thus forever beyond my reach. His thread no longer connects with yours.~ */
 
 /* conti game: Brage spawned in BGII */
-  IF ~GlobalGT("C#BE_SpawnBrage","GLOBAL",9)
+  IF ~GlobalGT("C#BE_SpawnBrage","GLOBAL",19)
 !Dead("C#Brage")
 !InMyArea("C#Brage")
 Global("C#BrageSummoned","GLOBAL",0)~ THEN 
@@ -25,7 +25,7 @@ Global("C#BrageSummoned","GLOBAL",0)~ THEN
 
 /* conti game: Brage did not spawn in BGII */
   IF ~GlobalGT("C#BE_SpawnBrage","GLOBAL",0)
-GlobalLT("C#BE_SpawnBrage","GLOBAL",10)
+GlobalLT("C#BE_SpawnBrage","GLOBAL",20)
 !Dead("C#Brage")
 !InMyArea("C#Brage")
 Global("C#BrageSummoned","GLOBAL",0)~ THEN 

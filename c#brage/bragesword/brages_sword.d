@@ -233,9 +233,7 @@ END
 
 IF ~~ THEN take_sword_06
 SAY @44
-IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",1)
-SetGlobalTimer("C#BE_SpawnBrageT","GLOBAL",600) 
-TakePartyItem("c#q13swd") DestroyItem("c#q13swd")~ + take_sword_07
+IF ~~ THEN DO ~TakePartyItem("c#q13swd") DestroyItem("c#q13swd")~ + take_sword_07
 END
 
 IF ~~ THEN take_sword_07

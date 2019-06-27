@@ -6,14 +6,14 @@
 IF 
 	!InMyArea("C#Brage")
 	!Dead("C#Brage")
-	GlobalGT("C#BE_SpawnBrage","GLOBAL",4)
-	GlobalLT("C#BE_SpawnBrage","GLOBAL",10)
+	GlobalGT("C#BE_SpawnBrage","GLOBAL",7)
+	GlobalLT("C#BE_SpawnBrage","GLOBAL",20)
 	OR(2)
 		GlobalGT("BeholderPlot","GLOBAL",0)
 		Global("NoHelpBeholder","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("C#BE_SpawnBrage","GLOBAL",10)
+		SetGlobal("C#BE_SpawnBrage","GLOBAL",20)
 		MoveGlobal("AR0901","C#Brage",[1174.350])
 	   	ActionOverride("C#Brage",Face(0))
 		ReallyForceSpellRES("SPWM168","C#Brage") //Heal 
@@ -34,7 +34,7 @@ IF
 		Global("NoHelpBeholder","GLOBAL",1)	
 THEN
 	RESPONSE #100
-            	SetGlobal("C#BE_SpawnBrage","GLOBAL",10)
+            	SetGlobal("C#BE_SpawnBrage","GLOBAL",20)
 	    	CreateCreature("c#brage2",[1174.350],0)
 		ActionOverride("C#Brage",MakeGlobal())
 	   	ActionOverride("C#Brage",SetDialog("c#brage2")
