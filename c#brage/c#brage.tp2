@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~jastey@web.de~  
 
 
-VERSION ~Beta 2~ 
+VERSION ~Beta 3~ 
 
 README ~c#brage/readme.c#brage.%LANGUAGE%.html~ ~readme.c#brage.english.html~
 
@@ -198,17 +198,23 @@ SAY BIO @1
 
 
 /* older bgqe installed? detect "Brage's Sword" quest */
-ACTION_IF NOT (MOD_IS_INSTALLED ~setup-bgqe.tp2~ ~11~) OR (FILE_EXISTS_IN_GAME ~c#q13brn.dlg~) THEN BEGIN
+ACTION_IF NOT ((MOD_IS_INSTALLED ~setup-bgqe.tp2~ ~11~) OR (FILE_EXISTS_IN_GAME ~c#q13brn.dlg~)) THEN BEGIN
 
 /* bgqe not installed - install quest */
 
 INCLUDE ~c#brage/tpa/brages_sword.tpa~
 
-END
-
-
 /* identify the correct dialogue state of "Brage's Sword" (so I can leave the original one untouched) */
 OUTER_SET brage_state = STATE_WHICH_SAYS 44 IN ~c#brage/tra/%s/BRAGES_SWORD.tra~ FROM ~BRAGE.dlg~
+
+END ELSE BEGIN
+
+/* quest is installed via bgqe */
+
+/* identify the correct dialogue state of "Brage's Sword" (so I can leave the original one untouched) */
+OUTER_SET brage_state = STATE_WHICH_SAYS 44 IN ~bgqe/tra/%s/BRAGES_SWORD.tra~ FROM ~BRAGE.dlg~
+
+END
 
 <<<<<<<< ...inlined/brage_bg1_add.d
 
