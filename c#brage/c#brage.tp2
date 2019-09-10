@@ -1,4 +1,20 @@
 /*
+
+Changes beta 4:
+-(BGT) erase all journal entries after transition to BGII
+
+-Improved fight for Borda the merchant of cursed items (by Acifer)
+
+-second component now assigns the mod's soundset to the original game cre, as well (except the very first greetings dialogue if met the first time)
+
+-added info to readmes about the second component
+
+-crossmod to bgqe added (Nashkel Monster, Family Quest, Babysitting, Noober, Fallen Paladin)
+
+
+*/
+
+/*
 	Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga
 */
 
@@ -6,7 +22,8 @@ BACKUP ~c#brage/backup~
 AUTHOR ~jastey@web.de~  
 
 
-VERSION ~Beta 3~ 
+VERSION ~Beta 4 pre~ 
+
 
 README ~c#brage/readme.c#brage.%LANGUAGE%.html~ ~readme.c#brage.english.html~
 
@@ -223,18 +240,55 @@ ADD_TRANS_ACTION BRAGE BEGIN %brage_state% END BEGIN END ~SetGlobal("C#BE_SpawnB
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~...inlined/brage_bg1_add.d~
 
-/* some improvements to the quest */
+
+
+ACTION_IF NOT (FILE_EXISTS_IN_GAME ~c#bgqe_21.mrk~) THEN BEGIN
+
+
+/* some improvements to the bgqe quest */
+/* (I can't incorporate these because players might use older versions of bgqe's "Brage's Sword" quest) */
+
+ADD_JOURNAL TITLE (@1021) @1022 @1023 @1024 USING ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~
+
+
 /* Nalin gives a hint after Brage was brought in */
-COMPILE EVALUATE_BUFFER ~c#brage/dialogue/bragesword_extentions.d~
-EXTEND_BOTTOM ~%Nashkel_TempleofHelm%.bcs~ ~c#brage/baf/brage_ar4802_bs_extentions.baf~ EVALUATE_BUFFER
-ADD_JOURNAL TITLE (@1021) @1022 USING ~c#brage/tra/%LANGUAGE%/brages_sword.tra~
+COMPILE EVALUATE_BUFFER ~c#brage/bragesword_extended/bragesword_extentions.d~
+
+
+EXTEND_BOTTOM ~%Nashkel_TempleofHelm%.bcs~ ~c#brage/bragesword_extended/brage_ar4802_bs_extentions.baf~ EVALUATE_BUFFER
 
 /* remove journal entry from Nalin's hint after sword quest was received; let Oublek initiate dialogue after Brage was brought to him */
-EXTEND_BOTTOM ~%Nashkel%.bcs~ ~c#brage/baf/brage_ar4800_bs_extentions.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~%Nashkel%.bcs~ ~c#brage/bragesword_extended/brage_ar4800_bs_extentions.baf~ 
+EVALUATE_BUFFER
+USING ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~ 
 
 /* Hick won't be longer in the baracks after Brage was brought in */
-EXTEND_BOTTOM ~%Nashkel_Garrison%.bcs~ ~c#brage/baf/brage_ar4810_bs_extentions.baf~ EVALUATE_BUFFER 
+EXTEND_BOTTOM ~%Nashkel_Garrison%.bcs~ ~c#brage/bragesword_extended/brage_ar4810_bs_extentions.baf~ EVALUATE_BUFFER 
 
+
+
+/* add journal entries if quest items from Borda are picked up */
+EXTEND_BOTTOM ~%NashkelCarnival%.bcs~ ~c#brage/bragesword_extended/brage_ar4900_bs_extentions.baf~ 
+EVALUATE_BUFFER USING ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~ 
+EXTEND_BOTTOM ~%XvartVillage%.bcs~ ~c#brage/bragesword_extended/brage_ar4700_bs_extentions.baf~ 
+EVALUATE_BUFFER USING ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~ 
+
+
+/* Patch Borda, the merchant for cursed items: mage faighting script, changed resistances, quest items */
+
+COMPILE ~c#brage/bragesword_extended/c#q13bor.baf~
+
+COPY ~c#brage/bragesword_extended/Borda.cre~ ~override/Borda.cre~
+
+/* custom Borda */
+COPY ~c#brage/bragesword_extended/Borda.cre~ ~override/c#q13bor.CRE~
+SAY INITIAL_MEETING ~~
+    WRITE_ASCII 0x280 ~c#q13bor~ #32 // set DV
+WRITE_EVALUATED_ASCII 0x2cc ~c#q13bor~ #8
+WRITE_EVALUATED_ASCII 0x248 ~c#q13bor~ #8   // custom Override script
+
+
+END /* -- end of bgqe quest improvements */
 
 
 /* Nalin will talk to the PC */
@@ -369,6 +423,11 @@ END
 /* Transition to BGII: BGT */
 
 ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+
+WITH_TRA ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~ BEGIN  
+/* erase journal entries from journal */
+  EXTEND_TOP ~AR0602.bcs~ ~c#brage/baf/brage_ar0602_bgt.baf~ USING ~c#brage/tra/%LANGUAGE%/nashkel_graveyard_bg1.tra~
+END
 
 <<<<<<<< ...inlined/brage_bgt_transition.d
 
@@ -624,14 +683,108 @@ UNLESS ~C#Brage~
 END
 
 
+////////////////////////////////////////////////////////
+/* crossmod */
+
+/* BG1 */
+
+ACTION_IF GAME_IS ~bgee bgt eet~ THEN BEGIN
+
+/* bgqe - need to check every component individually */
+
+/* bgqe - babysitting quest */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q03008.dlg~ THEN BEGIN 
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_babysitting.d~
+  EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_babysitting.baf~ EVALUATE_BUFFER
+END //babysitting quest
+
+/* bgqe - Nashkell Monster */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q04004.dlg~ THEN BEGIN 
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_nashkelmonster.d~
+  EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_nashkelmonster.baf~ EVALUATE_BUFFER
+USING ~c#brage/tra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
+
+
+  /* more content for bgqe v21 and higher */
+  ACTION_IF FILE_EXISTS_IN_GAME ~c#bgqe_21.mrk~ THEN BEGIN
+	<<<<<<<< ...inlined/brage_nashkelmonster_add.d
+	I_C_T C#Q04007 3 C#BE_C#Q04007_3
+	== ~c#bragej~ IF ~InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN ~So it turns out to be an artefact of which we are warned that it could be dangerous... We should heed his warning and bring it to a magical skilled person.~
+	END
+	>>>>>>>>
+	COMPILE ~...inlined/brage_nashkelmonster_add.d~
+  END
+END //Nashkell Monster
+
+
+/* bgqe - Warm place for Noober */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#LCNOOB.dlg~ THEN BEGIN 
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_noober.d~
+  EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_noober.baf~ EVALUATE_BUFFER
+END //Warm place for Noober
+
+/* bgqe - Fallen Paladin */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q05001.dlg~ THEN BEGIN 
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_fallenpaladin.d~
+  EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_fallenpaladin.baf~ EVALUATE_BUFFER
+END //Warm place for Noober
+
+
+
+
+END //BG1
+
+
+
+
+
+
+
 /////////////////////////////////////////////////////////////////
-// Assign the mod's portrait to the original Brage in game
+// Assign the mod's portrait and soundset to the original Brage in game
 /////////////////////////////////////////////////////////////////
-BEGIN @9001 /* ~Assign the mod's portrait to the original Brage in game~ */
+BEGIN @9001 /* ~Assign the mod's portrait and soundset to the original Brage in game~ */
 REQUIRE_COMPONENT ~c#brage.tp2~ 0 @9002 /* ~Brage's Redemption mod main component needs to be installed.~ */
 REQUIRE_PREDICATE (GAME_IS ~bgt eet bgee~) ~This component makes only sense for BG1.~
 
 COPY_EXISTING ~brage.cre~ ~override~ ~brage2.cre~ ~override~
   WRITE_ASCII 0X34 ~c#brages~ #8 //small portrait
+SAY MORALE ~~ [c#brag30]   
+SAY HAPPY ~~ [c#brag29] 
+SAY UNHAPPY_ANNOYED ~~ //[c#brag21]  
+SAY UNHAPPY_SERIOUS ~~ //[c#brag01]  
+SAY UNHAPPY_BREAKING ~~ [c#brag02]  
+SAY LEADER  ~~ [c#brag08] 
+SAY TIRED ~~ [c#brag09]  
+SAY BORED ~~ [c#brag10]  
+SAY BATTLE_CRY1 ~~ [c#brag03]  
+SAY BATTLE_CRY2 ~~ [c#brag05]  
+SAY BATTLE_CRY3 ~~ [c#brag06]  
+SAY BATTLE_CRY4 ~~ [c#brag07]  
+SAY BATTLE_CRY5 ~~ [c#brag04]  
+SAY DAMAGE ~~ [c#brag25]
+SAY DYING ~~ [c#brag22]
+SAY HURT ~~ [c#brag24]  
+SAY AREA_FOREST ~~  
+SAY AREA_CITY ~~  
+SAY AREA_DUNGEON ~~  
+SAY AREA_DAY ~~ 
+SAY AREA_NIGHT ~~ 
+SAY SELECT_COMMON1 ~~ [c#brag11]  
+SAY SELECT_COMMON2 ~~ [c#brag12]  
+SAY SELECT_COMMON3 ~~ [c#brag14]
+SAY SELECT_COMMON4 ~~ [c#brag26]
+SAY SELECT_COMMON5 ~~ [c#brag27]
+SAY SELECT_COMMON6 ~~ [c#brag28]
+SAY SELECT_ACTION1 ~~ [c#brag15]  
+SAY SELECT_ACTION2 ~~ [c#brag13] 
+SAY SELECT_ACTION3 ~~ [c#brag16] 
+SAY SELECT_ACTION4 ~~ [c#brag17]  
+SAY SELECT_ACTION5 ~~ [c#brag18]  
+SAY SELECT_ACTION6 ~~ [c#brag19]  
+SAY SELECT_ACTION7 ~~ [c#brag20] 
+SAY SELECT_RARE1 ~~ [c#brag31]  
+SAY SELECT_RARE2 ~~ [c#brag32]   
+SAY REACT_TO_DIE_GENERAL ~~ [c#brag23] 
 
 

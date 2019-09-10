@@ -66,8 +66,8 @@
 @65   = ~Here we are. Here I am... How I wished to have the time to investigate the mines! The thought about the miners and soldiers being in trouble without being able to help them was unbearable. Now I am here, and I wished... I wished my wish wouldn't have come true, because the reason I have time to be here now is coming directly from the nine hells!~
 @66   = ~We did it, <CHARNAME>! We cleared the evil from the Nashkel mines. I thank you for making me part of this. It is... a small repayment for what grieves I have caused the town.~
 @67   = ~It seems the search for who is behind the doings is not over, though. If you would guide our steps further into investigating this, I would be more than grateful, but I will follow you onto the search of the murderers of your foster-father, just as well.~
-@68   = ~(sigh) We destroyed the bandits' hideout... Only to learn that there is more...~
-@69   = ~No! This is no reason to despair. We did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~
+@68   = ~Ah, this does not feel like a victory. I kept my mouth shut and followed your lead in confronting him because I am well aware that this Tazok is but another minion and not the one who initiated the sword to be sent to me. Yet, his escape leaves a foul taste in the mouth nontheless.~
+@69   = ~Or maybe it is a chance - a chance to pursue him and catch him at the side of his masters. New names we learned today - "Davaeorn", is he the "D." Tazok mentioned in the letter you found with the vendor of cursed items? And who is "Sarevok"?~
 @70   = ~You... you would be a child of Bhaal?~
 @71   = ~So it seems, yes...~
 @72   = ~I can't believe it myself.~
@@ -153,7 +153,7 @@
 @152  = ~The caravan was mere bad luck... There were so few travelers on the roads those days!~
 @153  = ~The probability of running into bandits should have been much higher! But *nothing* went as it should have on that cursed day!~
 @154  = ~The bandits thought I would receive the sword inside the barracks, that I would slaughter half the garrison as a result. Fools! Had I received the sword when it was due and between all my men, they would have taken me down easily... and before I could go home...~
-@155  = ~Had it gone otherwise... The difference would have been - the difference would have been that *I* would have been dead, most likely, and not *them*! To know that it was my love for them that killed them... Ach, these are cursed thoughts, and poinsonous. I need to get fresh air, <CHARNAME>, let us travel on!~
+@155  = ~Had it gone otherwise... The difference would have been - the difference would have been that *I* would have been dead, most likely, and not *them*! To know that it was my love for them that killed them... Ach, these are cursed thoughts, and poisonous. I need to get fresh air, <CHARNAME>, let us travel on!~
 @156  = ~You didn't know her! You didn't... But you are right, I cannot be sure of that. But don't you see?~
 @157  = ~I see it now... I see why what happened was my fault.~
 @158  = ~Your fault? I thought it is clear that it most definitely wasn't. You were tricked into taking that sword!~
@@ -267,8 +267,39 @@
 @266  = ~Alright.~
 @267  = ~I thank you.~
 @268  = ~I chose well when I picked you as my leader.~
-/*
-@269  = 
+@269  = ~We destroyed the bandits' hideout... Only to learn that there is even more to do before we stop the threat and find the ones behind the cursed sword. Still, we did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~
 
-@270  = 
+@270  = ~<CHARNAME>... my heart bleeds by the thought of this monster going unpunished, but I see he is but a minion in what seems to be a deep levelled conspiracy. I bow to your decision how to deal with this culprit.~
+@271  = ~You... you detestable scoundrel! So this Tazok is not here to find? You are but another minion in this cascade of horror? We will bring you to justice, and we will find your master, and we will find this "D." who sent the cursed sword my way!~
+@272  = ~Never would I have imagined to come to Baldur's Gate as a civilian... I dreaded to come here as a military force not so long ago.~
+@273  = ~It is interesting to meet the Second-in-Command Scar in person. I know his name well from his military achievements in Maztica, but I am very sure he doesn't know me as the Amnian Captain I was. I suggest we leave it at that, no need to raise suspicion.~
+@274  = ~Scar was in Maztica?~
+@275  = ~Sure, let's get on moving.~
+@276  = ~Yes, Baldur's Gate and Amn both fought for influence there then. The Flaming Fist is not only active in Baldur's Gate and surrounding lands. They also have bases in Chult and Anchorome, as well as far as Tethyr.~
+@277  = ~Scar seems like a respectable, honorable man. I am glad I do not have to meet him as a member of another land's military force, and I hope we won't ever have to confront him as an enemy.~
+@278  = ~Davaeorn! Would he be the mysterious "D." behind all this?!~
+@279  = ~No, you are no guards at all! Aaaaaaaahh!~
+@280  = ~Well, I'll make sure you will not find out!~
+@281  = ~No idea who you are looking for! I'll be on my way!~
+@282  = ~Probably. Make sure you give him my "greetings" when you meet him, will you?~
+@283  = ~Davaeorn! Long have we searched for you! in the name of my beloved wife and children, it was your doing it came to this! You will pay for what you did!~
+@284  = ~And who would be you? It matters not. You will die today!~
+@285  = ~Dead! He is dead! The man who sent the cursed sword to me as a "diversion" for the Nashkel Guard! The man who regarded my life, and with it my family, my comrades, innocents as disposable pawns in his game for power and riches.~
+@286  = ~I will cherish this moment, <CHARNAME>. Just for a short moment... And then we will march on, to the next level of this conspiracy.~
+@287  = ~Mulahey, Tazok, Davaeorn, Sarevok - and now Rieltar... More names on our list, <CHARNAME>. (clenches his teeth) Let us continue on our pursuit!~
+@288  = ~Scar is... is murdered?~
+@289  = ~And Lord Eltan is dying? This reaks of conspiracy, <CHARNAME>.~
+@290  = ~For the sake of preventing the upcoming war with my home land! We need to clear our name and prove it is not Amn's doing!~
+@291  = ~I totally agree with you, Brage. I could rage and wail about Scar's death, he was such a good man!~
+@292  = ~We'll see what we can do.~
+@293  = ~Whatever. I really wished people could deal with their own problems for once.~
+@294  = ~That he was indeed...~
+@295  = ~Let's go and prevent this war - never would I have thought it would come this close.~
+@296  = ~<CHARNAME>, I must warn you - the Shadow Thieves are a powerful organisation who spread their poisonous influence all over Amn. The members are shady as they are evil, I would not trust this man, regardless of how much it aches me that this crime is blamed upon Amn.~
+@297  = ~Well, now I do feel offended. We Shadow Thieves are shady and evil, but we do have a code of honor. I told you what I know, and it is the truth.~
+/*
+@298  = 
+@299  = 
+@300  = 
 */
+

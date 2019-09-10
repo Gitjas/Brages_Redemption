@@ -20,5 +20,17 @@ IF
 	!Dead("Oublek")
 THEN
 	RESPONSE #100
-		ActionOverride("OUblek",StartDialogNoSet(Player1))
+		ActionOverride("Oublek",StartDialogNoSet(Player1))
+END
+
+/* remove other journal entries after letter was handed to Oublek */
+IF
+	InMyArea(Player1)
+	GlobalGT("C#Q13_BragesSwordQuest","GLOBAL",2)
+	Global("C#BE_JournalRemoval4800","MYAREA",0)
+THEN
+  RESPONSE #100
+		SetGlobal("C#BE_JournalRemoval4800","MYAREA",1) 
+		EraseJournalEntry(@1023) 
+		EraseJournalEntry(@1024)
 END

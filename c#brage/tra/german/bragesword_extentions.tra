@@ -1,2 +1,14 @@
 @0   = ~<CHARNAME>, Ihr habt Brage zurück zur Stadt gebracht und ihn den Stadtoberen übergeben. Jedoch, der ganze tragische Vorfall erweckt stark den Eindruck von böser Magie, die darin involviert sein musste. Ich bitte Euch, fragt bei Oublek an, welche weiteren Untersuchungen hierzu geplant sind. Es wäre ein Jammer, diesen aufrichtigen Mann als Mörder zu verurteilen, ohne seine eindeutige Schuld überprüft zu haben.~
 @1   = ~<CHARNAME>, dank Euch ist Brage nun erst einmal im Tempel in Sicherheit. Jedoch, der ganze tragische Vorfall erweckt stark den Eindruck von böser Magie, die darin involviert sein musste. Ich bitte Euch, fragt bei Oublek an, welche weiteren Untersuchungen hierzu geplant sind. Es wäre ein Jammer, diesen aufrichtigen Mann als Mörder zu verurteilen, ohne seine eindeutige Schuld überprüft zu haben.~
+
+@1021 = ~Captain Brages Schuld~
+@1022 = ~Captain Brages Schuld
+
+Nalin ist der Meinung, dass der Vorfall um Brages Morge näher untersucht werden müsste, weil er stark vermutet, dass böse Magie im Spiel war. Er bittet mich, Oublek zu fragen, was die Stadtoberen diesbezüglich planen.~
+//##
+@1023 = ~Captain Brage's Guilt
+
+I confronted a mearchant of cursed items and found a letter stating clues about a conspiracy to switch the sword of the Nashkel Commander, along with a two-handed sword that seems to be the one the commander was supposed to receive originally. These two items look like they are very important with regard to the commander's guilt and I should hold on to them until I figured out how they could be of use in the whole affair.~ 
+@1024 = ~Captain Brage's Guilt
+
+I confronted a mearchant of cursed items and found a letter stating clues about a conspiracy to switch Brage's sword, along with a two-handed sword that seems to be the one the commander was supposed to receive originally. These two items look like they are very important with regard to the commander's guilt.~ 

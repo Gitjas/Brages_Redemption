@@ -213,11 +213,26 @@ Global("C#BE_AMNIS4","GLOBAL",0)~ THEN AMNIS4 greeting
 @58 DO ~SetGlobal("C#BE_AMNIS4","GLOBAL",1)~
 == C#BrageJ @59
 EXIT
+
+
+
+/* Mulahey */
+I_C_T2 MULAHE 1 C#BE_MULAHE_1
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @270 /* ~<CHARNAME>... my heart bleeds by the thought of this monster going unpunished, but I see he is but a minion in what seems to be a deep levelled conspiracy. I bow to your decision how to deal with this culprit.~ */
+END
+
+I_C_T2 MULAHE 2 C#BE_MULAHE_2
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @271 /* ~You... you detestable scoundrel! So this Tazok is not here to find? You are but another minion in this cascade of horror? We will bring you to justice, and we will find your master, and we will find this "D." who sent the cursed sword my way!~ */
+END
+
+I_C_T2 MULAHE 6 C#BE_MULAHE_2 //will only play if it didn't before
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @271 /* ~You... you detestable scoundrel! So this Tazok is not here to find? You are but another minion in this cascade of horror? We will bring you to justice, and we will find your master, and we will find this "D." who sent the cursed sword my way!~ */
+END
+
+
  
 APPEND C#BrageJ
 
-
-/* Brage - PC dialogues */
 
 
 /* reactions and interjections */
@@ -257,15 +272,178 @@ IF ~~ THEN DO ~SetGlobal("C#BE_BrageNashkelMines","GLOBAL",2)~ EXIT
 END
 
 
+/* Tazok... */
 /* bandit camp cleared */
 
 IF ~Global("C#BE_BrageClearedBanditCamp","GLOBAL",1)~ THEN cleared_nashkelmines
-SAY @68
-= @69
-IF ~~ THEN DO ~SetGlobal("C#BE_BrageClearedBanditCamp","GLOBAL",2)~ EXIT
+SAY @68 /* ~Ah, this does not feel like a victory. I kept my mouth shut and followed your lead in confronting this Tazok because I am well aware that he is but another minion and not the one who initiated the sword to be sent to me. Yet, his escape leaves a foul taste in the mouth nontheless.~ */
+= @69 /* ~Or maybe it is a chance - a chance to pursue him and catch him at the side of his masters. New names we learned today - "Davaeorn", is he the "D." Tazok mentioned in the letter you found with the vendor of cursed items? And who is "Sarevok"?~ */
+= @269 /* ~We destroyed the bandits' hideout... Only to learn that there is even more to do before we stop the threat and find the ones behind the cursed sword. Still, we did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~ */
+IF ~~ THEN DO ~SetGlobal("C#BE_BrageClearedBanditCamp","GLOBAL",2) SetGlobal("C#BE_KnowsDavaeornsName","GLOBAL",1)~ EXIT
+END
+
+
+/* inside Baldur's Gate */
+IF ~Global("C#BE_InsideBaldursGate","GLOBAL",1)~ THEN inside_bg
+SAY @272 /* ~Never would I have imagined to come to Baldur's Gate as a civilian... I dreaded to come here as a military force not so long ago.~ */
+= @273 /* ~It is interesting to meet the Second-in-Command Scar in person. I know his name well from his military achievements in Maztica, but I am very sure he doesn't know me as the Amnian Captain I was. I suggest we leave it at that, no need to raise suspicion.~ */
+++ @274 /* ~Scar was in Maztica?~ */ + inside_bg_01
+++ @275 /* ~Sure, let's get on moving.~ */ + inside_bg_02
+END
+
+IF ~~ THEN inside_bg_01
+SAY @276 /* ~Yes, Baldur's Gate and Amn both fought for influence there then. The Flaming Fist is not only active in Baldur's Gate and surrounding lands. They also have bases in Chult and Anchorome, as well as far as Tethyr.~ */
+IF ~~ THEN + inside_bg_02
+END
+
+IF ~~ THEN inside_bg_02
+SAY @277 /* ~Scar seems like a respectable, honorable man. I am glad I do not have to meet him as a member of another land's military force, and I hope we won't ever have to confront him as an enemy.~ */
+IF ~~ THEN DO ~SetGlobal("C#BE_InsideBaldursGate","GLOBAL",2)~ EXIT
 END
 
 END //APPEND
+
+
+/* Davaeorn */
+/* upon learning the name inside the mine */
+I_C_T CANTIC 0 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+END
+
+I_C_T FABER 0 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+== FABER IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN 
+@279 /* ~No, you are no guards at all! Aaaaaaaahh!~ */
+END
+
+I_C_T IRON5 1 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+== IRON5 IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN 
+@280 /* ~Well, I'll make sure you will not find out!~ */
+END
+
+I_C_T IRON5 2 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+== IRON5 IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN 
+@280 /* ~Well, I'll make sure you will not find out!~ */
+END
+
+I_C_T IRON5 3 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+END
+
+I_C_T IRON9 2 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+END
+
+I_C_T IRON9 3 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+END
+
+I_C_T MINEC3 0 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+END
+
+I_C_T MINEC4 2 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+END
+
+I_C_T PHAERS 1 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+== PHAERS IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN 
+@281 /* ~No idea who you are looking for! I'll be on my way!~ */
+END
+
+I_C_T TIPIAN 2 C#BE_KnowsDavaeornsName
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @278 /* ~Davaeorn! Would he be the mysterious "D." behind all this?!~ */
+== TIPIAN IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN 
+@282 /* ~Probably. Make sure you give him my "greetings" when you meet him, will you?~ */
+END
+
+/* Davaeorn confronting */
+I_C_T DAVAEO 0 C#BE_DAVAEO_0
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @283 /* ~Davaeorn! Long have we searched for you! in the name of my beloved wife and children, it was your doing it came to this! You will pay for what you did!~ */
+== DAVAEO IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN 
+@284 /* ~And who would be you? It matters not. You will die today!~ */
+END
+
+APPEND C#BrageJ
+
+/* Davaeorn defeated */
+IF ~Global("C#BE_DefeatedDavaeorn","GLOBAL",1)~ THEN davaeorn_dead
+SAY @285 /* ~Dead! He is dead! The man who sent the cursed sword to me as a "diversion" for the Nashkel Guard! The man who regarded my life, and with it my family, my comrades, innocents as disposable pawns in his game for power and riches.~ */
+= @286 /* ~I will cherish this moment, <CHARNAME>. Just for a short moment... And then we will march on, to the next level of this conspiracy.~ */
+IF ~~ THEN DO ~SetGlobal("C#BE_DefeatedDavaeorn","GLOBAL",2)~ EXIT
+END
+
+
+/* learning the name Rieltar from various letters */
+/* "SCRLDRA" "SCRL2S" "SCRL2T" "SCRL2U" */
+
+IF ~Global("C#BE_KnowRieltarsName","GLOBAL",1)~ THEN rieltars_name
+SAY @287 /* ~Mulahey, Tazok, Davaeorn, Sarevok - and now Rieltar... More names on our list, <CHARNAME>. (clenches his teeth) Let us continue on our pursuit!~ */
+IF ~~ THEN DO ~SetGlobal("C#BE_KnowRieltarsName","GLOBAL",2)~ EXIT
+END
+
+END //APPEND
+
+
+/* Scar is murdered */
+
+ADD_TRANS_ACTION ~DELTHY~ BEGIN 5 END BEGIN END
+~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
+
+ADD_TRANS_ACTION ~HUSAM~ BEGIN 20 END BEGIN END
+~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
+
+ADD_TRANS_ACTION ~HUSAM2~ BEGIN 6 END BEGIN END
+~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
+
+ADD_TRANS_ACTION ~JHASSO~ BEGIN 11 END BEGIN END
+~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
+
+ADD_TRANS_ACTION ~KOLVAR~ BEGIN 6 10 END BEGIN END
+~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
+
+ADD_TRANS_ACTION ~NEB~ BEGIN 3 END BEGIN END
+~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
+
+ADD_TRANS_ACTION ~TAMOKO~ BEGIN 3 6 7 END BEGIN END
+~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
+
+CHAIN
+IF ~Global("C#BE_ScarMurderTalk","GLOBAL",1)~ THEN C#BrageJ scar_murder
+@288 /* ~Scar is... is murdered?~ */
+== C#BrageJ IF ~Global("RescuedEltan","GLOBAL",0)~ THEN @289 /* ~And Lord Eltan is dying? This reaks of conspiracy, <CHARNAME>.~ */
+== C#BrageJ @290 /* ~For the sake of preventing the upcoming war with my home land! We need to clear our name and prove it is not Amn's doing!~ */
+END
+++ @291 /* ~I totally agree with you, Brage. I could rage and wail about Scar's death, he was such a good man!~ */ + scar_murder_01
+++ @292 /* ~We'll see what we can do.~ */ + scar_murder_02
+++ @293 /* ~Whatever. I really wished people could deal with their own problems for once.~ */ + scar_murder_02
+
+APPEND C#BrageJ
+
+IF ~~ THEN scar_murder_01
+SAY @294 /* ~That he was indeed...~ */
+IF ~~ THEN + scar_murder_02
+END
+
+IF ~~ THEN scar_murder_02
+SAY @295 /* ~Let's go and prevent this war - never would I have thought it would come this close.~ */
+IF ~~ THEN DO ~SetGlobal("C#BE_ScarMurderTalk","GLOBAL",2)~ EXIT
+END
+
+END //APPEND
+
+
+/* working with Husam */
+
+I_C_T HUSAM2 6 C#BE_HUSAM2_6
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @296 /* ~<CHARNAME>, I must warn you - the Shadow Thieves are a powerful organisation who spread their poisonous influence all over Amn. The members are shady as they are evil, I would not trust this man, regardless of how much it aches me that this crime is blamed upon Amn.~ */
+== HUSAM2 IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN 
+@297 /* ~Well, now I do feel offended. We Shadow Thieves are shady and evil, but we do have a code of honor. I told you what I know, and it is the truth.~ */
+END
+
 
 /* Bhaal heritage: detection after Tamoko's dialogue */
 

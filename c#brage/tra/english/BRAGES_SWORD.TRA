@@ -230,4 +230,6 @@ Brage is a free man! Nashkel authorities accepted the evidence I found that prov
 @1020 = ~Captain Brage's Guilt
 
 Brage was hanged! I think I did this rather well. It's always nice to see 'justice' take its turn. And above all - that fool Brage was thankful for it! I should watch out, or the warm feeling in my belly will give me a hickup.~
+
+/* needs to be the exact same wording as in bragesword_extentions.tra */
 @1021 = ~Captain Brage's Guilt~

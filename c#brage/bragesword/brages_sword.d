@@ -889,8 +889,10 @@ EXTEND_BOTTOM ~%tutu_var%BORDA~ 0
 /* PC heard from Laryssa about merchant of cursed items but didn't talk to MYSMER at Carneval and just tries his luck */
 + ~Global("C#q13Brage_FakeMerchant","GLOBAL",4)~ + @136 + confrontation_01
 
+/*
 /* PC spoke to MYSMER and confronts Borda */
 + ~Global("C#q13Brage_FakeMerchant","GLOBAL",6)~ + @137 + confrontation_02
+*/
 END
 
 APPEND ~%tutu_var%BORDA~
@@ -903,13 +905,14 @@ EraseJournalEntry(@1009)
 Enemy()~ UNSOLVED_JOURNAL @1012 EXIT
 END
 
-IF ~~ THEN confrontation_02
+IF WEIGHT #-1
+~Global("C#q13Brage_FakeMerchant","GLOBAL",6)~ THEN confrontation_02
 SAY @139
 IF ~~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",10) 
 EraseJournalEntry(@1002)
 EraseJournalEntry(@1003) 
 EraseJournalEntry(@1009)
-EraseJournalEntry(@1016) Enemy() Attack([PC])~ UNSOLVED_JOURNAL @1012 EXIT
+EraseJournalEntry(@1016) Enemy()~ UNSOLVED_JOURNAL @1012 EXIT
 END
 
 END
@@ -922,7 +925,7 @@ IF ~~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",10)
 EraseJournalEntry(@1002)
 EraseJournalEntry(@1003)
 EraseJournalEntry(@1016)
-EraseJournalEntry(@1017) Enemy() Attack([PC])~ UNSOLVED_JOURNAL @1011 EXIT
+EraseJournalEntry(@1017) Enemy()~ UNSOLVED_JOURNAL @1011 EXIT
 END
 
 
