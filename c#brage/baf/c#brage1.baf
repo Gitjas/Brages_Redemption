@@ -325,7 +325,7 @@ OR(3)
   Global("P#KnowBhaal","GLOBAL",1) //if BG1NPC is installed
   PartyHasItem("%tutu_var%SCRL2J")
   Global("C#BE_KnowOfBhaal","GLOBAL",1) //from Tamoko
-!Global("C#BE_KnowOfBhaal","GLOBAL",2)
+GlobalLT("C#BE_KnowOfBhaal","GLOBAL",2)
 THEN
  RESPONSE #100
  SetGlobal("C#BE_KnowOfBhaal","GLOBAL",2)

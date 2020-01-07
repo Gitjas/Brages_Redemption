@@ -1,28 +1,12 @@
 /*
-
-Changes beta 4:
--(BGT) erase all journal entries after transition to BGII
-
--Improved fight for Borda the merchant of cursed items (by Acifer)
-
--second component now assigns the mod's soundset to the original game cre, as well (except the very first greetings dialogue if met the first time)
-
--added info to readmes about the second component
-
--crossmod to bgqe added (Nashkel Monster, Family Quest, Babysitting, Noober, Fallen Paladin)
-
-
-*/
-
-/*
 	Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga
 */
 
 BACKUP ~c#brage/backup~
-AUTHOR ~jastey@web.de~  
+AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~Beta 4 pre~ 
+VERSION ~Beta 4~ 
 
 
 README ~c#brage/readme.c#brage.%LANGUAGE%.html~ ~readme.c#brage.english.html~

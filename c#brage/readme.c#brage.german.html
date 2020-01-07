@@ -22,7 +22,6 @@
   <p><strong><a href="https://www.baldurs-gate.de/index.php">Eine Kerzenburgforum-Modifikation</a><br />  </strong>
     Text und Coding: jastey<br />
 	Portrait: Acifer<br />
-  <p><strong>Version Beta 3</a></strong><br />
     <strong> Sprachen:</strong> Deutsch, Englisch<br />
     <strong>Platform: </strong>Windows</p> 
   <p>Brage's Redemption ist eine Questmod f&uuml;r BG1 und eine NSC Mod f&uuml;r das ganze Baldur's Gate Epos. Direkt kompatibel mit BG:EE, SoD, BGII, BGT, BGII:EE, EET. Nicht mit Tutu.</p>
@@ -34,6 +33,12 @@
 <div class="section">
   <ol>
     <li><a href="#install">Installation</a></li>
+      <ul> 
+		<li><a href="#eegames">Notes to modding EE games</a> </li>
+        <li><a href="#windows">Windows</a> </li>
+		<li><a href="#osx">Mac OS X</a> </li>
+		<li><a href="#linux">Linux</a> </li>
+      </ul> 
     <li><a href="#compat">Kompatiblit&auml;t mit anderen Mods</a></li>
     <li><a href="#content">Modinhalte</a>
       <ul> 
@@ -52,8 +57,28 @@
 
 <h1><a name="install" id="install">Installation</a></h1>
 <div class="section">
-Entpackt den Ordner "c#brage" und die "setup-c#brage.exe" in Euer Spielverzeichnis (BG:EE/SOD/BG2/BGT/BGII:EE/EET), startet die exe durch Doppelklick und folgt den Anweisungen auf dem Bildschirm. Das Spiel darf w&auml;hrend der Installation nicht bereits laufen.
-</div>
+
+NOTE: If you've previously installed the mod, remove it before extracting a new version. To do this, uninstall all previously installed components and delete the mod folder and executables. 
+<br />
+Das Spiel darf w&auml;hrend der Installation nicht bereits laufen.<br />
+When installing or uninstalling, do not close the DOS window by clicking on the X button! Instead, press the Enter key when instructed to do so.<br />
+
+<h2> <a name="eegames" id="quest">Notes to modding EE games</a></h2>
+If you use SoD from GOG or Steam, you need to prepare your game with DLC Merger or modmerge before installing any mods:<br />
+<a href="https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game">argent77's DLC Merger</a><br />
+<a href="https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1">modmerge</a>(if in doubt, use the DLC Merger instead)<br />
+For Enhanced Edition it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+<br />
+The EE games are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update as even after reinstalling the mods, you might not be able to continue with your old savegames. 
+<h2> <a name="windows" id="quest">Windows</a></h2>
+Entpackt den Ordner "c#brage" und die "setup-c#brage.exe" in Euer Spielverzeichnis (BG:EE/SOD/BG2/BGT/BGII:EE/EET). On successful extraction, there should be an c#brage folder and a setup-c#brage.exe file in your game folder. Um zu installieren, tartet die exe durch Doppelklick und folgt den Anweisungen auf dem Bildschirm.<br />
+Run setup-c#brage.exe in your game folder to reinstall, uninstall or otherwise change components.<br />
+<h2> <a name="osx" id="quest">Mac OS X</a></h2>
+The Tweak Pack is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the folder into your game folder (the folder which contains the CHITIN.KEY file). If properly extracted, you should have a "c#brage" folder, setup-c#brage, and setup-c#brage.command in your game folder. To install, simply double-click setup-c#brage.command and follow the instructions on screen.
+<br />
+<h2> <a name="linux" id="quest">Linux</a></h2>
+Extract the contents of the mod to the folder of the game you wish to modify. Download the latest version of WeiDU for Linux from https://github.com/WeiDUorg/weidu/releases and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal and cd to your BG2 installation directory, run 'tolower' and answer Y to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. If you're unsure, running tolower and choosing both options is the safe bet.<br />
+Run WeInstall c#brage in your game folder to install the mod. Then run wine BGMain.exe and start playing. <br />
 
 <h1><a name="compat" id="compat">Kompatiblit&auml;t mit anderen Mods</a></h1>
 <div class="section">
@@ -144,6 +169,21 @@ This mod is also not developed, supported, or endorsed by BioWare, Black Isle St
 
 <h1><a name="version" id="version">Versionshistorie</a></h1>
 <div class="section">
+Version 1:</br>
+- Germen version completed<br />
+- typo corrections<br />
+- small changes in dialogues<br />
+- Kickout in BGII should not give BG1 dialogue<br />
+<br />
+Version Beta 4:</br>
+- (BGT) erase all journal entries after transition to BGII
+- Improved fight for Borda the merchant of cursed items (by Acifer)<br />
+- second component now assigns the mod's soundset to the original game cre, as well (except the very first greetings dialogue if met the first time)<br />
+- added info to readmes about the second component<br />
+- crossmod to bgqe added (Nashkel Monster, Family Quest, Babysitting, Noober, Fallen Paladin)<br />
+- carnival dialogue triggers for BGT<br />
+- Bhaaltalk will not stutter<br />
+<br />
 Version Beta 3:</br>
 - Installation nach bgqe sollte nun immer fehlerfrei funktionieren.<br />
 <br />

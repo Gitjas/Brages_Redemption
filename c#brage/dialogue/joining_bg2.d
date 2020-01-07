@@ -116,10 +116,11 @@ END //APPEND
 
 BEGIN C#Brag2P
 
-IF ~Global("Kickout","LOCALS",0)~ THEN kickout
+IF ~Global("Kickout","LOCALS",0)
+%IT_IS_BG2%~ THEN kickout
 SAY ~You want me to wait?~
 ++ ~Yes, please wait here. I'll be back for you.~ + kickout_01
-++ ~Actually, I need us to part ways, at least for now.~ + kickout_02
++ ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)~ + ~Actually, I need us to part ways, at least for now.~ + kickout_02
 ++ ~No, I changed my mind. Please come along.~ + kickout_03
 END
 

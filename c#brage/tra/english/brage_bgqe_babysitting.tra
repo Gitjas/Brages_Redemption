@@ -10,7 +10,7 @@
 @9    = ~We don't have time for that now.~
 @10   = ~Don't get me wrong, but... I don't think your friends would like to take care of my children. I wish you a good day.~
 @11   = ~I am sorry, Mrs Blackwood. Maybe we will find the time later. Have a good day.~
-@12   = ~Hello Brage, I am so glad to see you walking free! I am *so* sorry about Becky and the girls. How do you manage?~
+/* 12   = */
 @13   = ~Farewell, Mrs Blackwood. Goodbye, Sarah, Tom. I wish you well!~
 @14   = ~Why are we doing this? Why are we bullying this poor mother? <CHARNAME>, I know this woman well. She needs help, not hostility!~
 @15   = ~Come here, Tom. Let me have a look... Ah, it's just water, it'll dry in no time.~
@@ -18,10 +18,10 @@
 @17   = ~Tessa... and Linda are gone, Sarah, yes. I am so sorry...~
 @18   = ~So, they can't come and play tomorrow?~
 @19   = ~No... no, they can't.~
-@20   = ~But tell them they'll have to come to the fair on Sunday. The sweet almonds are larger on Sundays!~
-@21   = ~I... I will try to, Sarah. I am sure they would like to go.~
-@22   = ~'eets!~
-@23   = ~Tom, I am talking about the *fair* on *Sunday*. Ewwww, stay away! You are wet!~
+@20   = ~That's so unfair! Linda said she would give me her dolly to play. I gave her mine, too!~
+@21   = ~I... I am sorry, Sarah. I am sure Linda wanted to do that.~
+@22   = ~'olly!~
+@23   = ~Tom, I am talking about the *dolly* from *Linda*. Ewwww, stay away! You are wet!~
 @24   = ~Thank you for taking care of Mrs Blackwoods children.~
 @25   = ~My pleasure. She looked like she needed help.~
 @26   = ~Yes, that was a blast!~

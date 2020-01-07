@@ -79,7 +79,8 @@ END
 
 BEGIN C#BrageP
 
-IF ~Global("Kickout","LOCALS",0)~ THEN kickout
+IF ~Global("Kickout","LOCALS",0)
+%BGT_VAR%~ THEN kickout
 SAY @19
 ++ @20 + kickout_01
 ++ @21 + kickout_02
