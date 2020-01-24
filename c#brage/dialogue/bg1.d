@@ -448,7 +448,7 @@ END
 /* Bhaal heritage: detection after Tamoko's dialogue */
 
 ADD_TRANS_ACTION ~TAMOKO~ BEGIN 14 15 16 17 18 END BEGIN END
-~SetGlobal("C#BE_KnowOfBhaal","GLOBAL",1)~
+~SetGlobal("C#BE_KnowOfBhaalTamoko","GLOBAL",1)~
 
 
 APPEND C#BrageJ
@@ -507,16 +507,16 @@ END
 
 /* Final Dialoge BG1 */
 
-/* BGT, SoD: after Sarevok is defeated. */
+/* BGT, SoD: after Sarevok is defeated (for BG:EE with EBG1 this dialogue will trigger after Sarevok is dead). */
 IF ~Global("C#BE_LastBG1Dialogue","GLOBAL",1)
-!AreaCheck("%Undercity%")~ THEN final
+Dead("Sarevok")~ THEN final
 SAY @83
 IF ~~ THEN + final_01
 END
 
-/* BG:EE: in the Undercity */
+/* BG:EE without EBG1: in the Undercity before confronting Sarevok */
 IF ~Global("C#BE_LastBG1Dialogue","GLOBAL",1)
-AreaCheck("%Undercity%")~ THEN final_bgee
+!Dead("Sarevok")~ THEN final_bgee
 SAY @84
 IF ~~ THEN + final_01
 END

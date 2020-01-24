@@ -6,6 +6,7 @@ ACTION_IF GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~ THEN BEGIN
 
 IF
 	InParty(Myself) 
+	Global("C#EndlessBG1","GLOBAL",0) //no EBG1
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 	!StateCheck(Myself,CD_STATE_NOTVALID)
 	See(Player1)
@@ -21,15 +22,9 @@ THEN
 		SetGlobal("C#BE_LastBG1Dialogue","GLOBAL",1)
 END
 
->>>>>>>>
-END //BG:EE
-
-
-ACTION_IF GAME_INCLUDES ~sod~ THEN BEGIN
-
-<<<<<<<< ...inlined/last_bg1_dialogue.baf
 IF
 	InParty(Myself) 
+	Global("C#EndlessBG1","GLOBAL",1) //with EBG1
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 	!StateCheck(Myself,CD_STATE_NOTVALID)
 	See(Player1)
@@ -38,16 +33,40 @@ IF
 	!Range([NEUTRAL],10)
 	CombatCounter(0)
 	Dead("Sarevok")
-	!AreaCheck("%Undercity_TempleofBhaal%") /* will trigger in bd0120, but this way it will be compatible with a "delay SoD transition after Sarevok's death" tweak (note to Arthas: no, I'm not really planning on writing one. ;) )*/
-	AreaCheck("bd0120")
+	!See("Sarevok")
 	Global("C#BE_LastBG1Dialogue","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("C#BE_LastBG1Dialogue","GLOBAL",1)
 END
 
-/* switch to SoD override scrit after last dialogue fired. I will just use the same variable for this. */
+>>>>>>>>
+END //BG:EE
+
+
+ACTION_IF GAME_INCLUDES ~sod~ THEN BEGIN
+
+<<<<<<<< ...inlined/last_bg1_dialogue.baf
 IF
+	%BGT_VAR%
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Dead("Sarevok")
+	!See("Sarevok")
+	Global("C#BE_LastBG1Dialogue","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BE_LastBG1Dialogue","GLOBAL",1)
+END
+
+/* switch to SoD override script after last dialogue fired. I will just use the same variable for this. */
+IF
+	%BGT_VAR%
 	InParty(Myself) 
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 	!StateCheck(Myself,CD_STATE_NOTVALID)
@@ -55,7 +74,7 @@ IF
 	!Detect([ENEMY])
 	CombatCounter(0)
 	AreaCheck("bd0120")
-	Global("C#BE_LastBG1Dialogue","GLOBAL",2)
+	GlobalLT("C#BE_LastBG1Dialogue","GLOBAL",2)
 THEN
 	RESPONSE #100
 		SetGlobal("C#BE_LastBG1Dialogue","GLOBAL",3)
@@ -70,6 +89,7 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
 
 <<<<<<<< ...inlined/last_bg1_dialogue.baf
 IF
+	%BGT_VAR%
 	InParty(Myself) 
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 	!StateCheck(Myself,CD_STATE_NOTVALID)
@@ -78,7 +98,7 @@ IF
 	!Detect([EVILBUTBLUE])
 	CombatCounter(0)
 	Dead("Sarevok")
-	!AreaCheck("%Undercity_TempleofBhaal%") //after stepping out of the temple
+	!See("Sarevok")
 	Global("C#BE_LastBG1Dialogue","GLOBAL",0)
 THEN
 	RESPONSE #100
@@ -93,6 +113,7 @@ END //BGT
 
 /* initiate */
 IF 
+	%BGT_VAR%
 	InParty(Myself) 
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 	!StateCheck(Myself,CD_STATE_NOTVALID)

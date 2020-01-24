@@ -311,6 +311,7 @@ THEN
 END
 
 
+
 /* know Bhaal: detection */
 /* Activate: Bhaal heritage dialogue */
 IF 
@@ -324,8 +325,12 @@ IF
 OR(3)
   Global("P#KnowBhaal","GLOBAL",1) //if BG1NPC is installed
   PartyHasItem("%tutu_var%SCRL2J")
-  Global("C#BE_KnowOfBhaal","GLOBAL",1) //from Tamoko
-GlobalLT("C#BE_KnowOfBhaal","GLOBAL",2)
+  Global("C#BE_KnowOfBhaalTamoko","GLOBAL",1) //from Tamoko
+OR(2)
+  Global("X#GorionTalkingLetter","GLOBAL",4) //if BG1NPC is installed
+  !AreaCheck("%Candlekeep_Library_L5%")
+!AreaCheck("%Candlekeep_Library_L6%")
+Global("C#BE_KnowOfBhaal","GLOBAL",0)
 THEN
  RESPONSE #100
  SetGlobal("C#BE_KnowOfBhaal","GLOBAL",2)

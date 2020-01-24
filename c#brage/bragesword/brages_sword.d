@@ -473,7 +473,8 @@ EraseJournalEntry(@1005)~ UNSOLVED_JOURNAL @1008 EXIT
 BEGIN c#q13lar 
 
 CHAIN
-IF ~OR(2)
+IF ~OR(3)
+Dead("BORDA")
 Global("C#q13Brage_FakeMerchant","GLOBAL",2)
 Global("C#q13Brage_FakeMerchant","GLOBAL",3)~ THEN c#q13lar help
 @80
@@ -483,7 +484,8 @@ Global("C#q13Brage_FakeMerchant","GLOBAL",3)~ THEN c#q13lar help
 END
 IF ~Global("C#q13Brage_NalinVouch","GLOBAL",4) Global("BrageRiddle","GLOBAL",5)~ THEN + brage_guilty
 IF ~Global("C#q13Brage_NalinVouch","GLOBAL",4) !Global("BrageRiddle","GLOBAL",5)~ THEN + brage_guilty_temple
-IF ~!Dead("BORDA") !Global("C#q13Brage_NalinVouch","GLOBAL",4)~ THEN + merchant
+IF ~!Dead("BORDA") !Global("C#q13Brage_NalinVouch","GLOBAL",4)
+GlobalLT("C#q13Brage_FakeMerchant","GLOBAL",4)~ THEN + merchant
 IF ~Dead("BORDA") !Global("C#q13Brage_NalinVouch","GLOBAL",4)~ THEN + help_01
 
 
@@ -855,21 +857,32 @@ IF ~~ THEN ~%tutu_var%MYSMER~ talk_01
 == ~%tutu_var%MYSMER~ IF ~Global("C#q13Brage_FakeMerchant","GLOBAL",4)~ THEN @131
 == ~%tutu_var%MYSMER~ @132
 END
+
 /* Borda was not met yet */
-IF ~Global("C#q13Brage_FakeMerchant","GLOBAL",4)~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",6) EraseJournalEntry(@1009)~ UNSOLVED_JOURNAL @1016 EXIT
-IF ~Global("C#q13Brage_FakeMerchant","GLOBAL",4) Global("BoughtPotions","GLOBAL",0)~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",6) EraseJournalEntry(@1009)~ UNSOLVED_JOURNAL @1016 + talk_02
+IF ~OR(2)
+	Global("C#q13Brage_FakeMerchant","GLOBAL",0) /* PC came with third letter fromTazok's tent */
+	Global("C#q13Brage_FakeMerchant","GLOBAL",4)~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",6) EraseJournalEntry(@1009)~ UNSOLVED_JOURNAL @1016 EXIT
+IF ~OR(2)
+	Global("C#q13Brage_FakeMerchant","GLOBAL",0)
+	Global("C#q13Brage_FakeMerchant","GLOBAL",4) 
+Global("BoughtPotions","GLOBAL",0)~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",6) EraseJournalEntry(@1009)~ UNSOLVED_JOURNAL @1016 + talk_02
 
 
 /* Borda was already met */
-IF ~Global("C#q13Brage_FakeMerchant","GLOBAL",5)~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",7) EraseJournalEntry(@1009)~ UNSOLVED_JOURNAL @1017 EXIT
-IF ~Global("C#q13Brage_FakeMerchant","GLOBAL",5) Global("BoughtPotions","GLOBAL",0)~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",7) EraseJournalEntry(@1009)~ UNSOLVED_JOURNAL @1017 + talk_02
+IF ~OR(2)
+	Global("C#q13Brage_FakeMerchant","GLOBAL",1)
+	Global("C#q13Brage_FakeMerchant","GLOBAL",5)~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",7) EraseJournalEntry(@1009)~ UNSOLVED_JOURNAL @1017 EXIT
+IF ~OR(2)
+	Global("C#q13Brage_FakeMerchant","GLOBAL",1)
+	Global("C#q13Brage_FakeMerchant","GLOBAL",5) 
+Global("BoughtPotions","GLOBAL",0)~ THEN DO ~SetGlobal("C#q13Brage_FakeMerchant","GLOBAL",7) EraseJournalEntry(@1009)~ UNSOLVED_JOURNAL @1017 + talk_02
 
 APPEND ~%tutu_var%MYSMER~
 
 IF ~~ THEN talk_02
 SAY @133
 ++ @134 EXIT
-COPY_TRANS MYSMER 0
+COPY_TRANS %tutu_var%MYSMER 0
 END
 
 IF ~~ THEN talk_03

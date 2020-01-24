@@ -113,7 +113,7 @@ Global("C#BE_NaliaCondolences","GLOBAL",1)~ THEN ~C#BrageB~ bragenalia_df
 ~Lady Nalia, it grieves me to hear about the death of your father and how it came to pass.~
 DO ~SetGlobal("C#BE_NaliaCondolences","GLOBAL",2)~
 == BNALIA ~I... I thank you, Brage. Life goes on, I guess. He had to pass eventually and will live on in our hearts - all those sayings that are meant to make us feel better, but it doesn't really work.~
-== C#BrageB ~You did what you could, Nalia, Never let yourself think otherwise.~
+== C#BrageB ~You did what you could, Nalia. Never let yourself think otherwise.~
 == BNALIA ~Well... I was too late...~
 == C#BrageB ~No, Nalia! Don't go there. You did what you could!~
 EXIT
@@ -218,7 +218,7 @@ Global("C#BE_BrageAnomenBG2","GLOBAL",1)~ THEN ~BANOMEN~ brage_anomen_2
 
 == BANOMEN IF ~!Global("AnomenIsNotKnight","GLOBAL",0)~ THEN ~Seemed like a plan that worked, then.~
 == C#BrageB IF ~!Global("AnomenIsNotKnight","GLOBAL",0)~ THEN ~(inhales audibly) Yes, Anomen, it "worked". Do you want me to elaborate on the details so you could use this tactic yourself one day?~
-== BANOMEN IF ~!Global("AnomenIsNotKnight","GLOBAL",0)~ THEN ~(grins) That sounds great, but something tells you won't, for some reason.~
+== BANOMEN IF ~!Global("AnomenIsNotKnight","GLOBAL",0)~ THEN ~(grins) That sounds great, but something tells me you won't, for some reason.~
 EXIT
 
 
