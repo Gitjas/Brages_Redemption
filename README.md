@@ -7,3 +7,6 @@ The mod introduces a quest extention to the Brage quest in the game (BG1). Brage
 To gain Brage as a joinable NPC, the PC needs to prove his innocence as well as give him back his real sword. A day after that, Brage can be visited inside the temple of Helm in Nashkel and will offer to join the PC.
 
 So far, only the BG1 content of the mod is finished.
+
+##Copyright
+This mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC. This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners. 
