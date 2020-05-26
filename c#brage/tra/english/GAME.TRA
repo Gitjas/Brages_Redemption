@@ -1,7 +1,7 @@
 @0  = ~No! NO!! I will not touch this cursed sword again, <CHARNAME> - don't make me do this!~
 @1  = ~When asked about his past, BRAGE clears his throat and hesitates for a short moment. Then he tells about his origins from Athkatla in Amn, his life in the Amnish Guard, and his time as captain in Nashkel. "I found the lovliest wife and had the two most wonderful daughters - until I picked up a sword that was cursed. You know the rest, <CHARNAME>. Please do not make me tell it again.~
-@2  = ~<CHARNAME>, it is time to say farewell. We did a great deed. We stopped an upcoming war and saved a lot of lives. But I will take this as my moment to leave. I need to walk own steps now, search for the smithy of that sword, earn gold for the families I hurt - return to my home on my own terms. Farewell, and may the gods bless you... If the gods will, we will meet again.~
-@3  = ~When we are finished here, I'll go and search for the one who made that cursed sword. I will start in Waterdeep with the smithy of my real sword - the fake bore its seal, and although I assume it will not be the case, I will see whether I can find any knowledge there.~
+@2  = ~<CHARNAME>, it is time to say farewell. We've done a great deed. We stopped an impending war and saved a lot of lives. But I will take this as my cue to leave. I need to walk own steps now, search for the smithy of that sword, earn gold for the families I hurt - return to my home on my own terms. Farewell, and may the gods bless you... If the gods will allow it, we will meet again.~
+@3  = ~When we are finished here, I'll go and search for the one who made that cursed sword. I will start in Waterdeep with the smithy of my real sword - the fake one bore its seal. I do not think it will not be the case, but I will see what I can there.~
 @4  = ~Ajantis, if your steps guide you back to Waterdeep, we could travel together.~
 @5  = ~That is an excellent idea, Brage. I would appreciate your company on the travels.~
 @6  = ~Now that we are done, I will leave for Waterdeep.~
@@ -105,30 +105,20 @@ Weight: 12~
 @117  = ~Hick~
 @118  = ~My servant Mulahey,
 
-your stupid carelessness has made D. to interfere. He sent a nice surprise to the Nashkel Commander, who found his new sword to be more special than he expected. Amnish forces are weakened for now and will not come into the deeper mine levels. Nevertheless, prepare for intruders, as numerous forces feel oblidged to investigate the sightings of your stupid kobolds. Do not fail me again. 
+Your stupid carelessness has required D. to interfere. He sent a nice surprise to the Nashkel Commander, who has found his new sword to be more special than he expected. Amnish forces are weakened for now and will not come into the deeper mine levels. Nevertheless, prepare for intruders, as numerous forces feel oblidged to investigate the sightings of your stupid kobolds. Do not fail me again. 
 
 TAZOK~
 @119  = ~Borda,
 
-we don't care whether you put all your effort into the task we ordered you to do. It's not our fault that the Commander went alone on his investigation and therefore found the new sword while being alone on the road instead of being inside the barracks. It is your oversight the whole thing nearly failed. You are lucky as it is that this fool went back to Nashkel at all, so the gold we spent on this blade with its special curse is not lost alltogether. No, you will not receive the second amount of the payment. You can still keep the original sword that Brage was supposed to receive. That is enough compensation. Be glad we don't hunt you down.
+We do not care if you have put every effort into the task we ordered you to do. It is not our fault that the Commander went alone on his investigation, and therefore found the new sword while alone on the road instead of in the barracks as he should have been. It is your oversight the whole thing nearly failed. You are lucky that this fool went back to Nashkel at all, and that the gold we spent on this blade with its special curse was not lost altogether. So, no, you will not receive the second installment of your payment. You may keep the original sword that Brage was supposed to receive. That is compensation enough. Be glad we don't hunt you down.
 
 TAZOK~
 @120  = ~Tazok,
 
-I demand you pay me the second half of what we agreed upon - the Commander only butchering his own family and not half of the garrison is not my fault. The Nashkel forces are weakened and that was the deal! You can send any letters for me to my contact at Nashkel Carnival. I found a merchant desperate enough to buy some of my special potions, he will pass on any letters, as well.
+I demand you pay me the second half of what we agreed upon. That the Commander butchered his own family instead of half the garrison is not my fault. The Nashkel forces are weakened and that was the deal! You can send any letters for me to my contact at Nashkel Carnival. I found a merchant desperate enough to buy some of my special potions. He will pass on any letters as well.
 
 Borda~
-@121  = ~Letter to Captain Tollar Kieres~
-@122  = ~This letter bears the official signet of the Merchants' League of Baldur's Gate. It was handed to you by Aldeth Sashenstar and is addressed to Captain Kieres who currently resides in the League's Counting House in the north-eastern part of town.~ 
 
-@123  =  ~Signet Ring of the Merchants' League~
-@124  =  ~These rings are only handed to people who enjoy the full trust of the Merchants' League. They serve as identification and should grant you free and full access to the normally restricted Counting House. 
-Rumors are that these rings are one of the reasons for the League's success, apparently being enchanted in some way.
-
-STATISTICS:
-
-Luck 3 times per day
-Charm Person 3 times per day~
 @125  = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This one is particularly good at its job as it has been enchanted with a few magical properties.
 
 This is the sword Brage ordered in Waterdeep.

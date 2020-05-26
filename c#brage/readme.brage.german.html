@@ -23,7 +23,7 @@
     Text und Coding: jastey<br />
 	Portrait: Acifer<br />
     <strong> Sprachen:</strong> Deutsch, Englisch<br />
-    <strong>Platform: </strong>Windows</p> 
+    <strong> Betriebssysteme: </strong>Windows, OSX, Linux</p> 
   <p>Brage's Redemption ist eine Questmod f&uuml;r BG1 und eine NSC Mod f&uuml;r das ganze Baldur's Gate Epos. Direkt kompatibel mit BG:EE, SoD, BGII, BGT, BGII:EE, EET. Nicht mit Tutu.</p>
     <img src="readme/bragepromo.png"><br /><br />
 </div>
@@ -34,7 +34,7 @@
   <ol>
     <li><a href="#install">Installation</a></li>
       <ul> 
-		<li><a href="#eegames">Notes to modding EE games</a> </li>
+		<li><a href="#eegames">Hinweise zum Modden der EE-Spiele</a> </li>
         <li><a href="#windows">Windows</a> </li>
 		<li><a href="#osx">Mac OS X</a> </li>
 		<li><a href="#linux">Linux</a> </li>
@@ -58,27 +58,28 @@
 <h1><a name="install" id="install">Installation</a></h1>
 <div class="section">
 
-NOTE: If you've previously installed the mod, remove it before extracting a new version. To do this, uninstall all previously installed components and delete the mod folder and executables. 
+HINWEIS: Wenn Ihr eine vorherige Version der Mod installiert habt, muss diese erst vollst&auml;ndig entfernt werden. Daf&uuml;r wird diese fr&uuml;here Version vollst&auml;ndig deinstalliert und alle Ressourcen (Modordner, Installationsprogramm) aus dem Spielordner entfernt. 
 <br />
 Das Spiel darf w&auml;hrend der Installation nicht bereits laufen.<br />
-When installing or uninstalling, do not close the DOS window by clicking on the X button! Instead, press the Enter key when instructed to do so.<br />
+Bei Installation oder Uninstallation darf das Installationsfenster NICHT &uuml;ber Dr&uuml;cken des "X"-Kn&ouml;pfchens beendet werden. Das Schlie&szlig;en des Installationsfensters erfolgt &uuml;ber das Dr&uuml;cken der ENTER-Taste, wenn dazu die Aufforderung erscheint.<br />
 
-<h2> <a name="eegames" id="quest">Notes to modding EE games</a></h2>
-If you use SoD from GOG or Steam, you need to prepare your game with DLC Merger or modmerge before installing any mods:<br />
-<a href="https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game">argent77's DLC Merger</a><br />
-<a href="https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1">modmerge</a>(if in doubt, use the DLC Merger instead)<br />
-For Enhanced Edition it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+<h2> <a name="eegames" id="quest">Hinweise zum Modden der EE-Spiele</a></h2>
+Wenn Ihr SoD von GOG oder Steam verwendet, m&uuml;sst Ihr das Spiel erst vorbereiten, bevor Ihr Mods installieren k&ouml;nnt. Hierf&uuml;r gibt es  
+<a href="https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game">argent77's DLC Merger</a> oder das &auml;ltere Tool 
+<a href="https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1">Modmerge</a>.<br />
+Bei den Spielen der Enhanced Edition ist es wichtig, dass die Mod in die richtige Spiel-Sprachversion installiert wird (damit ist die Sprache gemeint, in der Ihr das Spiel spielen wollt, diese ist nicht von der Sprache, in der Ihr die Mod installieren wollt, abh&auml;ngig). Ansonsten seht Ihr nicht die Modtexte im Spiel, sondern Fehlermeldungen. Die Spiel-Sprache, die gemoddet wird, ist in der Datei weidu.conf in Eurem Spielordner vermerkt. Wenn Ihr die Spiel-Sprache, die gemoddet werden soll, &auml;ndern wollt, dann deinstalliert alle Mods und l&ouml;scht die Datei weidu.conf. Bei der Installation der n&auml;chsten (ersten) Mod wird die zu verwendende Spiel-Sprache dann wieder abgefragt.
 <br />
-The EE games are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update as even after reinstalling the mods, you might not be able to continue with your old savegames. 
+Die EE-Spiele sind aktiv supportete Spiele, f&uuml;r die es ab und zu Patchupdates gibt. Bitte bedenkt, dass jedes Spielupdate Eure Spieldaten wieder bereinigt! Wenn Ihr gerade ein gemoddetes Spiel spielt, dann k&ouml;nnt Ihr nach einem Spielpatch Eure Savegames nicht mehr verwenden. Eine M&ouml;glichkeit, dies zu verhindern ist es, den gesamten Spieleordner vor dem Modden in ein anderes Verzeichnis zu kopieren. Dieses Spiel kann dann unabh&auml;ngig gemoddet und &uuml;ber die BGMain.exe direkt gestartet werden.
 <h2> <a name="windows" id="quest">Windows</a></h2>
-Entpackt den Ordner "c#brage" und die "setup-c#brage.exe" in Euer Spielverzeichnis (BG:EE/SOD/BG2/BGT/BGII:EE/EET). On successful extraction, there should be an c#brage folder and a setup-c#brage.exe file in your game folder. Um zu installieren, tartet die exe durch Doppelklick und folgt den Anweisungen auf dem Bildschirm.<br />
-Run setup-c#brage.exe in your game folder to reinstall, uninstall or otherwise change components.<br />
+Entpackt den Ordner "c#brage" und die "setup-c#brage.exe" in Euer Spielverzeichnis (BG:EE/SOD/BG2/BGT/BGII:EE/EET, enth&auml;lt die CHITIN.KEY Datei). Bei erfolgreichem Entpacken solltet Ihr einen Ordner "c#brage" und eine ausf&uuml;hrbare Datei "setup-c#brage.exe" in Eurem Spielordner vorfinden. Lasst die "setup-c#brage.exe" &uuml;ber Doppelklick laufen. W&auml;hlt Eure Sprache und best&auml;tigt die Installation. Es sollten nun alle ben&ouml;tigten Dateien kopiert und die Installation durchgef&uuml;hrt werden. Das Installationsfenster durch das Dr&uuml;cken der ENTER-Taste schlie&szlig;en, wenn die Aufforderung dazu erscheint.<br />
+&Uuml;ber erneutes Laufenlassen der setup-c#brage.exe in Eurem Spielordner kann die Mod auch deinstalliert oder reinstalliert werden.<br />
 <h2> <a name="osx" id="quest">Mac OS X</a></h2>
-The Tweak Pack is packaged and installed with WeiDU. To install, extract the mod archive, then copy of the contents of the folder into your game folder (the folder which contains the CHITIN.KEY file). If properly extracted, you should have a "c#brage" folder, setup-c#brage, and setup-c#brage.command in your game folder. To install, simply double-click setup-c#brage.command and follow the instructions on screen.
+Entpackt den Inhalt des Modpakets und kopiert den Inhalt in Euer Spieleordner (BG:EE/SOD/BG2/BGT/BGII:EE/EET, enth&auml;lt die CHITIN.KEY Datei). Korrekt extrahiert, sollten sich in Eurem Spiel-Hauptverzeichnis ein Ordner "c#brage", setup-c#brage, und setup-c#brage.command befinden. Zum Installieren einfach die setup-c#brage.command doppelklicken und den Instruktionen folgen. Das Installationsfenster durch das Dr&uuml;cken der ENTER-Taste schlie&szlig;en, wenn die Aufforderung dazu erscheint.<br />
+&Uuml;ber erneutes Laufenlassen der setup-c#brage.command in Eurem Spielordner kann die Mod auch deinstalliert oder reinstalliert werden.
 <br />
 <h2> <a name="linux" id="quest">Linux</a></h2>
-Extract the contents of the mod to the folder of the game you wish to modify. Download the latest version of WeiDU for Linux from https://github.com/WeiDUorg/weidu/releases and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal and cd to your BG2 installation directory, run 'tolower' and answer Y to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. If you're unsure, running tolower and choosing both options is the safe bet.<br />
-Run WeInstall c#brage in your game folder to install the mod. Then run wine BGMain.exe and start playing. <br />
+Entpackt den Inhalt des Modpakets und kopiert den Inhalt in Euer Spieleordner (BG:EE/SOD/BG2/BGT/BGII:EE/EET, enth&auml;lt die CHITIN.KEY Datei). Ladet die neueste Version von WeiDU f&uuml;r Linux von https://github.com/WeiDUorg/weidu/releases und kopiert WeiDU und WeInstall nach /usr/bin. &Ouml;ffnet nun ein Terminal, cd zu Eurem BG Installationsordner, und lasst 'tolower' laufen, mit der Antwort Y auf beide Nachfragen. Die zweite Option (linux.ini) k&ouml;nnt Ihr auslassen, wenn Ihr dies bereits einmal in Eurem Verzeichnis ausgef&uuml;hrt habt. Falls Ihr Euch nicht sicher seid, ist das Ausf&uuml;hren von tolower mit beiden Optionen der sichere Weg.<br />
+Lasst WeInstall c#brage in Euren Spielordner laufen, um die Modifikation zu installieren. F&uuml;hrt wine BGMain.exe aus, um das Spiel zu starten.<br />
 
 <h1><a name="compat" id="compat">Kompatiblit&auml;t mit anderen Mods</a></h1>
 <div class="section">
@@ -169,6 +170,11 @@ This mod is also not developed, supported, or endorsed by BioWare, Black Isle St
 
 <h1><a name="version" id="version">Versionshistorie</a></h1>
 <div class="section">
+Version 3:</br>
+- English version proof read by Athies.<br />
+- Renamed readme to readme.brage.%LANGUAGE%.html<br />
+- Installation instructions in German readme translated.<br />
+<br />
 Version 2:</br>
 - compatibility with Endless BG1 Mod added: for EE + EBG1, Brage will wait with his final Sarevok speech until after Sarevok is dead (always for BGT).<br />
 - (BGII) added a second comment if Brage wields Lilarcor for some time<br />
@@ -178,7 +184,7 @@ Version 2:</br>
 - added folder libiconv-1.9.2-1-src.7z with iconv licence info<br />
 <br />
 Version 1:</br>
-- Germen version completed<br />
+- German version completed<br />
 - typo corrections<br />
 - small changes in dialogues<br />
 - Kickout in BGII should not give BG1 dialogue<br />
