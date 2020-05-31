@@ -77,7 +77,7 @@ END
 
 /* Kickout dialogue BG1 */
 
-BEGIN C#BrageP
+APPEND C#BragP
 
 IF ~Global("Kickout","LOCALS",0)
 %BGT_VAR%~ THEN kickout
@@ -107,3 +107,5 @@ SAY @26
 ++ @27 DO ~SetGlobal("Kickout","LOCALS",0)~ + kickout_03
 ++ @28 + kickout_01
 END
+
+END //APPEND
