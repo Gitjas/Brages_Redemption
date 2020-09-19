@@ -1,0 +1,16 @@
+/* brage_bd0120_commenting_et.baf
+This is a comment in bd0120.are (Korlasz's crypt) after defeating the first enemies.
+Some NPCs commment on the fight, some on the dungeon. */
+IF
+	Global("bd_plot","global",10)
+	GlobalGT("bd_mdd000te_ot","bd0120",0)
+	Global("C#Brage_bd_mdd000te_ot","bd0120",0) 
+	IsValidForPartyDialogue("C#Brage")  
+THEN
+	RESPONSE #200
+		Continue()
+	RESPONSE #100
+		SetGlobal("C#Brage_bd_mdd000te_ot","bd0120",1)
+		DisplayStringHead("C#Brage",@1001)
+		Wait(5)
+END

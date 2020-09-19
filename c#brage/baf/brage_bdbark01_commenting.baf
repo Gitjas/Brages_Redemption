@@ -1,0 +1,13 @@
+/* bage_bdbark01_commenting.baf */
+/* Comment in Dragonspear Castle Exterior */
+IF
+	Name("bark_mdd1246a",Myself)
+	Global("C#Brage_bd_mdd1246a_ot","bd4000",0)  
+	Range("C#Brage",35)  
+	Global("chapter","global",11)
+	IfValidForPartyDialog("C#Brage")  
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_bd_mdd1246a_ot","bd4000",1)  
+		DisplayStringHead("C#Brage",@1017)
+END

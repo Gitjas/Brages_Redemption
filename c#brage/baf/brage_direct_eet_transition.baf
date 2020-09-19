@@ -1,0 +1,24 @@
+/* K#TelBGT.bcs */
+IF
+	Global("C#Brage_EETTransit","LOCALS",0)
+	InMyArea("C#Brage")  
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		DisableAI("C#Brage",FALSE)  
+		SetGlobal("C#Brage_EETTransit","LOCALS",1)
+		ApplySpellRES("bdresurr","C#Brage")  
+		SmallWait(10)
+		ApplySpellRES("K#UNREST","C#Brage")  
+		SmallWait(10)
+		ApplySpellRES("bdrejuve","C#Brage")  
+		SmallWait(10)
+		ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+		ActionOverride("C#Brage",LeaveParty())
+		SmallWait(10)
+		ActionOverride("C#Brage",SetGlobal("bd_joined","locals",0))
+		ActionOverride("C#Brage",SetGlobal("Kickout","LOCALS",1))
+		ActionOverride("C#Brage",DestroySelf())
+		SetInterrupt(TRUE)
+		Continue()
+END

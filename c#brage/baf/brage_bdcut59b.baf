@@ -1,0 +1,28 @@
+/* brage_bdcut59b.baf:
+Global("C#Brage_kicked_bd4700","global",1): Brage was left standing in hell dimension - make sure he's coming back to the castle, too */
+
+IF
+  Global("C#Brage_kicked_bd4700","global",1) //set in C#BrageP.dlg
+  !Dead("C#Brage")
+  !InParty("C#Brage")
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveGlobal("bd4300","C#Brage",[738.292]) 
+    ActionOverride("C#Brage",Face(SW))
+END
+
+/* This moves Brage into the castle in case he was left standing somewhere else (not in hell dimension) because the other areas cannot be visited again (for plain SoD) */
+IF
+  Global("C#Brage_kicked_bd4700","global",0)
+  !Dead("C#Brage")
+  !InParty("C#Brage")
+  OR(2) //One of the 2 following conditions needs to be true
+	BeenInParty("C#Brage") //this is true if Brage was in party before
+	GlobalGT("C#BE_SpawnBrage","GLOBAL",8)
+THEN
+  RESPONSE #100
+  CutSceneId(Player1)
+  MoveGlobal("bd4300","C#Brage",[1720.1123]) 
+  ActionOverride("C#Brage",Face(NW))
+END

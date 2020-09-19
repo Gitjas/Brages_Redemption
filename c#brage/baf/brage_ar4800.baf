@@ -11,13 +11,13 @@ END
 /* spawn joinable Brage in front of the temple */
 
 IF
-	Global("C#BE_SpawnBrage","GLOBAL",5)
+	Global("C#BE_SpawnBrage","GLOBAL",6)
 THEN
   RESPONSE #100
 		CreateCreature("C#Brage1",[2584.1075],11)
 		ActionOverride("C#Brage",SetGlobal("C#BE_LevelUp","LOCALS",0))
 		ActionOverride("C#Brage",MakeGlobal())
-		SetGlobal("C#BE_SpawnBrage","GLOBAL",6)
+		SetGlobal("C#BE_SpawnBrage","GLOBAL",7)
 END
 
 IF

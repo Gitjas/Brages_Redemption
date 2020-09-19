@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~4~ 
+VERSION ~5pre~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -28,6 +28,7 @@ ALWAYS
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
   END
 
+
 //CamDawgs CD_STATE_NOTVALID 
     APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
@@ -48,6 +49,13 @@ ALWAYS
 
   ACTION_IF GAME_IS ~tob~ AND NOT GAME_IS ~bgt~ BEGIN
     OUTER_SPRINT ~IT_IS_BG2~ ~~
+    OUTER_SPRINT ~BGT_VAR~ ~False()~
+  END
+
+/* this is valid for BGII and bgt */
+  ACTION_IF GAME_IS ~tob~ THEN BEGIN
+    OUTER_SPRINT ~IT_IS_SOD~ ~False()~
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
   END
 
   ACTION_IF GAME_IS ~bgt~ BEGIN
@@ -61,16 +69,22 @@ ALWAYS
   ACTION_IF GAME_IS ~bgee~ BEGIN
     INCLUDE ~c#brage/lib/g3_bgee_cpmvars.tpa~
     OUTER_SPRINT ~IT_IS_BG2~ ~False()~
+    OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("BD_PLOT","GLOBAL",0)~
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("BD_PLOT","GLOBAL",0)~
   END
 
   ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
     OUTER_SPRINT ~BGT_VAR~ ~False()~
     OUTER_SPRINT ~IT_IS_BG2~ ~~
+    OUTER_SPRINT ~IT_IS_SOD~ ~False()~
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
   END
 
   ACTION_IF GAME_IS ~eet~ BEGIN
     INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
     OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1)~
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("ENDOFBG1","GLOBAL",0)~
   END
 
   INCLUDE ~c#brage/lib/useful_functions.tpa~
@@ -125,7 +139,7 @@ ADD_JOURNAL TITLE (@55) @2 @10 @50 USING ~c#brage/tra/%LANGUAGE%/nashkel_graveya
 
 
 
-COPY ~c#brage/creatures/C#BRAGE1.cre~ ~override~
+COPY ~c#brage/creatures/C#BRAGE0.cre~ ~override/C#BRAGE0.cre~
 SAY NAME1 #6225 // Brage
 SAY NAME2 #6225 // Brage
 SAY MORALE ~~ [c#brag30]   
@@ -173,10 +187,13 @@ SAY REACT_TO_DIE_GENERAL ~~ [c#brag23]
 
 BEGIN C#BRAGEJ
 BEGIN C#BRAGEB
-BEGIN C#BragP
 
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~...inlined/brage_c#bragedlg.d~
+
+/* kickout dialogue - one file for all games */
+
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/kickout.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
 
 
 /* BG1 */
@@ -188,7 +205,7 @@ COPY ~c#brage/spl/c#be1rcu.spl~ ~override~ //silent remove curse
 
 /* give items to cre */
 
-COPY_EXISTING ~C#BRAGE1.cre~ ~override~
+COPY_EXISTING ~C#BRAGE0.cre~ ~override/c#brage1.cre~
 SAY BIO @1
   ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
   ADD_CRE_ITEM ~SW2H02~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
@@ -298,7 +315,7 @@ COMPILE EVALUATE_BUFFER ~c#brage/baf/c#braged.baf~
 
 
 /* BG1 joining dialogue */
-COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg1.d~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg1.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
 
 /* more BG1 dialogue and banter */
 
@@ -387,22 +404,198 @@ END //BG1 content
 
 
 /* SoD */
-
 ACTION_IF GAME_INCLUDES ~sod~ THEN BEGIN
-//##  COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_sod.d~
 
-//##  COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brageS.baf~
+/* for a new SoD game, we need better equipped cre */
+COPY_EXISTING ~C#BRAGE0.cre~ ~override/C#BRAGES.cre~
+SAY BIO ~##~
+WRITE_EVALUATED_ASCII 0x2cc ~C#BRAGES~ #8
+WRITE_EVALUATED_ASCII 0x248 ~C#BRAGES~ #8   // custom Override script
+/* items: */
+  ADD_CRE_ITEM ~PLAT10~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
+  ADD_CRE_ITEM ~SW2H02~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
+  ADD_CRE_ITEM ~XBOW01~ #0 #0 #0 ~IDENTIFIED~ ~weapon2~ 
+  ADD_CRE_ITEM ~BOLT02~ #40 #0 #0 ~IDENTIFIED~ ~quiver1~
+  ADD_CRE_ITEM ~BOLT02~ #40 #0 #0 ~IDENTIFIED~ ~quiver2~
+  ADD_CRE_ITEM ~POTN08~ #5 #0 #0 ~IDENTIFIED~ ~qitem1~
+BUT_ONLY_IF_IT_CHANGES
+
+COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brageS.baf~
   EXTEND_BOTTOM ~C#BrageS.bcs~ ~c#brage/baf/c#_lvl_once.baf~ EVALUATE_BUFFER 
   EXTEND_BOTTOM ~C#BrageS.bcs~ ~c#brage/baf/c#brage_ee.baf~ EVALUATE_BUFFER 
 
+/* transition from BG:EE to SoD: change Brage's Joined dialogue and OVERRIDE script -> Brage consinues with C#BrageJ, and his script will be changed in last_bg1_dialogue.tpa, and also in bd0103 (although it is not really needed there as it will be set in bd0121.bcs). */
+
 /* after Korlasz is defeated: DisplayStringHead of his further plans. 
 Same script blocks get patched to both area scripts of Korlasz's crypt */
-EXTEND_BOTTOM ~bd0120.bcs~ ~%MOD_FOLDER%/baf/brage_sod_bd0120_commenting.baf~
+EXTEND_BOTTOM ~bd0120.bcs~ ~%MOD_FOLDER%/baf/brage_bd0120_commenting.baf~
   EVALUATE_BUFFER
-EXTEND_BOTTOM ~bd0130.bcs~ ~%MOD_FOLDER%/baf/brage_sod_bd0120_commenting.baf~
+EXTEND_BOTTOM ~bd0130.bcs~ ~%MOD_FOLDER%/baf/brage_bd0120_commenting.baf~
   EVALUATE_BUFFER	
 
-END
+/* after Korlasz is defeated: PC is moved to Ducal Palace. Joined NPCs leave */
+EXTEND_TOP ~bd0103.bcs~ ~%MOD_FOLDER%/baf/brage_bd0103.baf~
+  EVALUATE_BUFFER
+
+/* let Brage reappear inside Sorcerous Sundries */
+EXTEND_BOTTOM ~bd0121.bcs~ ~%MOD_FOLDER%/baf/brage_bd0121.baf~ EVALUATE_BUFFER
+
+/* Brage is in front of Ducal Palace if told to wait - or Player marches onto the battle without recruiting NPCs in Baldur' Gate: Brage will be in front of the palace, too */
+EXTEND_BOTTOM ~bd0101.bcs~ ~%MOD_FOLDER%/baf/brage_bd0101.baf~
+  EVALUATE_BUFFER
+
+/* Brage moves to war camp in bd1000.are */
+EXTEND_TOP ~bd1000.bcs~ ~%MOD_FOLDER%/baf/brage_bd1000.baf~
+  EVALUATE_BUFFER
+
+	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd1000.bcs) */
+COPY_EXISTING ~bd1000.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(SetGlobal("bd_move_npcs","bd1000",1)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("C#Brage_MoveCamp","MYAREA",1)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+/* and the same for the next camp in bd7100.are: */
+EXTEND_TOP ~bd7100.bcs~ ~%MOD_FOLDER%/baf/brage_bd7100.baf~
+  EVALUATE_BUFFER
+
+	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd7100.bcs) */
+COPY_EXISTING ~bd7100.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(SetGlobal("bd_move_npcs","bd7100",1)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("C#Brage_MoveCamp","MYAREA",1)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+/* Last camp is in bd3000.are. In case Brage was never in party or kicked out to wait somewhere else, he will also be back in the (last) camp. */
+EXTEND_TOP ~bd3000.bcs~ ~%MOD_FOLDER%/baf/brage_bd3000.baf~
+  EVALUATE_BUFFER
+
+	/* Patch your NPC's "Move Camp" variable to the original game's script block (bd3000.bcs) */
+COPY_EXISTING ~bd3000.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(SetGlobal("bd_move_npcs","bd3000",1)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("C#Brage_MoveCamp","MYAREA",1)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+		SPRINT textToReplace ~\(SetGlobal("bd_move_voghiln","bd3000",0)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 SetGlobal("C#Brage_MoveCamp","MYAREA",0)~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+/* return to camp if kicked out */
+EXTEND_TOP ~bdparty.bcs~ ~%MOD_FOLDER%/baf/brage_bdparty.baf~
+  EVALUATE_BUFFER
+
+/* Brage is kicked in hell dimension - teleport to last hell area bd4400.are */
+EXTEND_TOP ~bdcut58.bcs~ ~%MOD_FOLDER%/baf/brage_bdcut58.baf~
+  EVALUATE_BUFFER
+
+/* Brage is kicked in hell dimension or was waiting elsewhere- teleport to Dragonspear Castle interior (bd4300.are) after PC returns from Avernus */
+EXTEND_TOP ~bdcut59b.bcs~ ~%MOD_FOLDER%/baf/brage_bdcut59b.baf~
+  EVALUATE_BUFFER
+
+/* comment after defeating the first enemies in Korlasz's crypt */
+EXTEND_TOP ~bd0120.bcs~ ~%MOD_FOLDER%/baf/brage_bd0120_commenting_et.baf~
+  EVALUATE_BUFFER
+
+/*  March out of BG city: make Biff move when the coalition start marching out of BG city */
+EXTEND_TOP ~bdcut08.bcs~ ~%MOD_FOLDER%/baf/brage_bdcut08.baf~
+  EVALUATE_BUFFER
+
+/* React in case crusaders in cages are killed by spikes (bd7230.are) */
+//bdlever2.BCS
+COPY_EXISTING ~bdlever2.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(Kill("bdkharmy")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#Brage_UsedSpikes","bd7230",1) \1~ 
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+/* (T3) PC gave Bridgefort Castle to the crusaders */
+/* & Battle at Bridgefort starts */
+EXTEND_BOTTOM ~bd2000.bcs~ ~%MOD_FOLDER%/baf/brage_bd2000_commenting.baf~
+  EVALUATE_BUFFER
+
+/* Move NPC to entrance of the Allied Siege Camp (Crusade battle) */
+EXTEND_BOTTOM ~bdasc3.bcs~ ~%MOD_FOLDER%/baf/brage_bdasc3.baf~
+  EVALUATE_BUFFER
+
+/* Comment in random area (Canyon Ambush) bd0063.are */
+EXTEND_BOTTOM ~bd0063.bcs~ ~%MOD_FOLDER%/baf/brage_bd0063.baf~
+EVALUATE_BUFFER
+
+/* (T3) Comment after killing the Rhinoceros Beetle in bd0114.are */
+EXTEND_BOTTOM ~bd0114.bcs~ ~%MOD_FOLDER%/baf/brage_bd0114.baf~
+EVALUATE_BUFFER
+
+/* Comments in bd4300.are (Bridgefort Castle interior and Avernus portal) */
+EXTEND_TOP ~bd4300.bcs~ ~%MOD_FOLDER%/baf/brage_bd4300_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment upon entering Avernus */
+EXTEND_TOP ~bd4400.bcs~ ~%MOD_FOLDER%/baf/brage_bd4400_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment in the Avernus Elevator */
+EXTEND_TOP ~bd4601.bcs~ ~%MOD_FOLDER%/baf/brage_bd4601_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment before entering the Cave with the blind Wyrmlings (bd5100aw.bcs) */
+EXTEND_BOTTOM ~bd5100aw.bcs~ ~%MOD_FOLDER%/baf/brage_bd5100aw_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment when battle starts in Kanaglym (bd5300.are, Underground River) */
+EXTEND_BOTTOM ~bd5300.bcs~ ~%MOD_FOLDER%/baf/brage_bd5300_commenting.baf~
+EVALUATE_BUFFER
+
+/* Comment in Dragonspear Castle Exterior */
+EXTEND_BOTTOM ~bdbark01.bcs~ ~%MOD_FOLDER%/baf/brage_bdbark01_commenting.baf~
+EVALUATE_BUFFER
+
+/* Move the PC in the cutscene of the plotting nobles in Three Old Kegs (bdc116d.bcs) */
+EXTEND_BOTTOM ~bdc116d.bcs~ ~%MOD_FOLDER%/baf/brage_bdc116d.baf~
+EVALUATE_BUFFER
+
+/* Comment on closed vault door (to portal) in Dragonspear Castle Interior */
+EXTEND_BOTTOM ~bdvaultd.bcs~ ~%MOD_FOLDER%/baf/brage_bdvaultd.baf~
+EVALUATE_BUFFER
+
+
+/* SoD dialogue */
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_sod.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/sod.d~
+
+END //SoD
 
 
 /* Transition to BGII: BGT */
@@ -416,10 +609,10 @@ END
 
 <<<<<<<< ...inlined/brage_bgt_transition.d
 
-I_C_T ~BELTBRD~ 12 C#Brandock_BGTTOBG2
+I_C_T ~BELTBRD~ 12 C#Brage_BGTTOBG2
 == C#BrageJ IF ~InParty("C#Brage")
 InMyArea("C#Brage")
-!StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @2 
+!StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @0 
 DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
 SetGlobal("Kickout","GLOBAL",1)
 ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
@@ -429,18 +622,24 @@ ActionOverride("C#Brage",EscapeAreaDestroy(3)~
 END
 
 >>>>>>>>
-COMPILE EVALUATE_BUFFER ~...inlined/brage_bgt_transition.d~
+COMPILE EVALUATE_BUFFER ~...inlined/brage_bgt_transition.d~ USING 
+~c#brage/tra/%LANGUAGE%/sod.tra~
 
 END
 
-
+/* Transition to BGII: EET. this is for the case that the player skips SoD (partly or completely) in EET. Transition from normal SoD will be done after the return from Avernus via dialogue. 
+This is to make sure the NPC doesn't count as "dead" if he was upon transition. */
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  EXTEND_TOP ~K#TELBGT.bcs~ ~c#brage/baf/brage_direct_eet_transition.baf~ 
+EVALUATE_BUFFER
+END
 
 /* BGII */
 
 ACTION_IF GAME_IS ~tob bg2ee eet~ THEN BEGIN //includes BGT
 
 /* joining dialogue */
-COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg2.d~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg2.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
 
 /* other dialogues */
 COMPILE EVALUATE_BUFFER ~c#brage/dialogue/bg2.d~
@@ -448,8 +647,10 @@ COMPILE EVALUATE_BUFFER ~c#brage/dialogue/npcbanter_bg2.d~
 
 
 /* for a new SoA game, we need better equipped cre */
-COPY_EXISTING ~C#BRAGE1.cre~ ~override/C#BRAGE2.cre~
+COPY_EXISTING ~C#BRAGE0.cre~ ~override/C#BRAGE2.cre~
 SAY BIO ~##~
+WRITE_EVALUATED_ASCII 0x2cc ~c#brage2~ #8
+WRITE_EVALUATED_ASCII 0x248 ~c#brage2~ #8   // custom Override script
 /* items: */
   ADD_CRE_ITEM ~PLAT14~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
   ADD_CRE_ITEM ~SW2H11~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
@@ -462,8 +663,10 @@ BUT_ONLY_IF_IT_CHANGES
 
 /* ToB */
 /* for a new ToB game, we need even better equipped cre */
-COPY_EXISTING ~C#BRAGE1.cre~ ~override/C#BRAGET.cre~
+COPY_EXISTING ~C#BRAGE0.cre~ ~override/C#BRAGET.cre~
 SAY BIO ~##~
+WRITE_EVALUATED_ASCII 0x2cc ~c#brag25~ #8
+WRITE_EVALUATED_ASCII 0x248 ~c#brag25~ #8   // custom Override script
 /* items: */
   ADD_CRE_ITEM ~PLAT14~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
   ADD_CRE_ITEM ~SW2H20~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
@@ -492,7 +695,7 @@ EXTEND_TOP ~ar4500.bcs~ ~c#brage/baf/brage_ar4500_bg2.baf~
 
 
 /* tob joining dialogue */
-  COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_tob.d~
+  COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_tob.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
 
 /* tob script */
 COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brag25.baf~
@@ -579,7 +782,7 @@ END
 
 ACTION_IF (GAME_IS ~bgee eet~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
 APPEND ~bddialog.2da~
-~C#Brage 	C#BragSP 	C#BrageJ 	C#BrageD~
+~C#Brage 	C#BrageP 	C#BrageJ 	C#BrageD~
 UNLESS ~C#Brage~
 
 
@@ -657,7 +860,7 @@ END
 ACTION_IF GAME_IS ~tob bg2ee bgt eet~ THEN BEGIN
 
 APPEND ~pdialog.2da~
-~C#Brage 	C#BrageP 	C#BrageJ 	C#BrageD 	C#Bra25P 	C#BrageJ 		C#Brg25D 	C#Brag25~
+~C#Brage 	C#BrageP 	C#BrageJ 	C#BrageD 	C#BrageP 	C#BrageJ 		C#Brg25D 	C#Brag25~
 UNLESS ~C#Brage~
 
 
@@ -713,6 +916,18 @@ ACTION_IF FILE_EXISTS_IN_GAME ~C#Q05001.dlg~ THEN BEGIN
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_fallenpaladin.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_fallenpaladin.baf~ EVALUATE_BUFFER
 END //Warm place for Noober
+
+/* Transitions */
+
+ACTION_IF (MOD_IS_INSTALLED ~transitions/setup-transitions.tp2~ ~0~) THEN BEGIN
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_transitions.d~
+	USING ~c#brage/tra/%LANGUAGE%/sod.tra~
+  EXTEND_TOP ~c#brage1.bcs~ ~c#brage/crossmod/brage_transitions.baf~
+    EVALUATE_BUFFER /* Ajantis should not remain dead in case he was upon transition */
+  EXTEND_TOP ~#L_CUT09.bcs~ ~c#brage/crossmod/brage_transitions_eet.baf~ 
+    EVALUATE_BUFFER
+END
+
 
 
 

@@ -1,6 +1,6 @@
 @0  = ~No! NO!! I will not touch this cursed sword again, <CHARNAME> - don't make me do this!~
 @1  = ~When asked about his past, BRAGE clears his throat and hesitates for a short moment. Then he tells about his origins from Athkatla in Amn, his life in the Amnish Guard, and his time as captain in Nashkel. "I found the lovliest wife and had the two most wonderful daughters - until I picked up a sword that was cursed. You know the rest, <CHARNAME>. Please do not make me tell it again.~
-@2  = ~<CHARNAME>, it is time to say farewell. We've done a great deed. We stopped an impending war and saved a lot of lives. But I will take this as my cue to leave. I need to walk own steps now, search for the smithy of that sword, earn gold for the families I hurt - return to my home on my own terms. Farewell, and may the gods bless you... If the gods will allow it, we will meet again.~
+//@2  = ~##~
 @3  = ~When we are finished here, I'll go and search for the one who made that cursed sword. I will start in Waterdeep with the smithy of my real sword - the fake one bore its seal. I do not think it will not be the case, but I will see what I can there.~
 @4  = ~Ajantis, if your steps guide you back to Waterdeep, we could travel together.~
 @5  = ~That is an excellent idea, Brage. I would appreciate your company on the travels.~
@@ -135,3 +135,27 @@ Requires:
 
 Weight: 12~
 
+
+/* SoD */
+/* brage_bd0103.baf */
+@1000 = ~Today we will march against the Crusade. Never would I have thought to be on a military mission again, and so soon.~
+@1001 = ~This is an impressive chasm. I had no idea this crypt would reach so deep down.~
+@1002 = ~Such stupidity! The destroyed bridge is not only bad for us, it also cuts a chasm between here and the northers lands!~
+@1003 = ~This Caelar is a very charismatic woman. I understand why they follow her.~
+@1004 = ~It takes a certain mindset to kill a man by pulling a lever. I am unsettled to see that it came so easily to you.
+
+~
+@1005 = ~This saved us the fight, but it was a betrayal to those we call allies, <CHARNAME>.~
+@1006 = ~Be on your guard, <CHARNAME>. I do not like this canyon, as it gives good possibility for an ambush.~
+@1007 = ~I heard about Rhinoceros Beetles, but I've never seen one before.~
+@1008 = ~To arms!~
+@1009 = ~We were discovered! We need to leave, and quick.~
+@1010 = ~A... a portal to Avernus! This is madness!~
+@1011 = ~It was a useless attempt to fight us.~
+@1012 = ~We have no other choice than to seek for a way to close the portal - from the other side!~
+@1013 = ~This madness, at least, is over.~
+@1014 = ~Hell... I believed I belong here, but not the way we entered.~
+@1015 = ~We need to prepare for more atacks! Our presence will be known by now.~
+@1016 = ~Into the fight!~
+@1017 = ~This was a mighty beast that died here. I cannot start to imagine the effort it took to take it down.~
+@1018 = ~Those doors look intimidating - although I can't put my finger on it why they would shake me so.~

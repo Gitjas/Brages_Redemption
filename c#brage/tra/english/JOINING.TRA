@@ -18,7 +18,7 @@
 @17   = ~Farewell.~
 @18   = ~Here I am, ready to go... as much as I can be. I thank you for this opportunity.~
 @19   = ~You want me to wait?~
-@20   = ~Yes, please wait here. I'll be back for you.~
+@20   = ~Please wait here. I'll be back for you.~
 @21   = ~Actually, I need us to part ways, at least for now.~
 @22   = ~No, I changed my mind. Please come along.~
 @23   = ~As you wish. I'll be here.~
@@ -28,3 +28,19 @@
 @27   = ~Yes, please come along once more.~
 @28   = ~No, not yet.~
 @29   = ~<CHARNAME>, you have given Brage a lot to think on. I am sure he will be ready to talk to you again, but right now, allow him a moment of solitude to clear his thoughts and mind.~
+
+/* new for v5 */
+@30   = ~Please go back to the camp.~
+@31   = ~As you wish. I will meet you at the camp.~
+@32   = ~As you wish. I will wait in front of the Palace.~ 
+@33   = ~<CHARNAME>!~
+@34   = ~I would have questions for Halbazzar Drin - but there is no chance in posing them now, in this chaos and confusion!~
+@35   = ~They call you the hero of Baldur's Gate, there are rumors about you joining the coalition against the crusade. Would you need another sword arm?~
+@36   = ~I'd rather help these poor people by fighting the crusade than waste any more time here. Plus, I fear I can do nothing with regard to my investigation before the city will come to rest.~
+@37   = ~Please be ready. I'll be back for you.~
+@38   = ~My investigations concerning the cursed sword let me return to Baldur's Gate. And what turmoil I see the city in!~
+@39   = ~My investigations concerning the cursed sword let me all the way up to Waterdeep and back to Baldur's Gate, but the crusade of this Caelar let me come here for now.~
+@40   = ~I'm so not part of this coalition, but yes, I'd like you to join me.~
+@41   = ~Oh? Well, I am sure we will do a lot of good, nontheless.~
+@42   = ~As you wish. I will wait.~
+@43   = ~I will have your back, <CHARNAME>.~

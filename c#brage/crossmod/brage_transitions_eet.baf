@@ -1,0 +1,27 @@
+/* this script is used for the direct transition to BGII */
+
+/* #L_Cut09.bcs */
+
+IF
+	Global("C#Brage_EETTransit","MYAREA",0)
+	InPartyAllowDead("C#Brage")
+	
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([30.0],0)	
+		DisableAI("C#Brage",FALSE)
+		SetGlobal("C#Brage_EETTransit","MYAREA",1)
+		ApplySpellRES("bdresurr","C#Brage")
+		SmallWait(10)
+		ApplySpellRES("K#UNREST","C#Brage")
+		SmallWait(10)
+		ApplySpellRES("bdrejuve","C#Brage")
+		SmallWait(10)
+		ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+		ActionOverride("C#Brage",LeaveParty())
+		SmallWait(10)
+		ActionOverride("C#Brage",SetGlobal("bd_joined","locals",0))
+		ActionOverride("C#Brage",SetGlobal("Kickout","LOCALS",1))
+		ActionOverride("C#Brage",DestroySelf())
+END

@@ -38,7 +38,7 @@ IF ~~ THEN BRAGE join_request_01
 = @12
 == NALIN @13
 END
-IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",5) 
+IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",6) 
 ActionOverride("Brage",EscapeAreaDestroy(3))~ EXIT 
 
 
@@ -46,14 +46,14 @@ APPEND BRAGE
 
 IF ~~ THEN join_request_02
 SAY @14
-IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",8)~ EXIT 
+IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",5)~ EXIT 
 END
 
 END //APPEND
 
 
 EXTEND_BOTTOM ~BRAGE~ 9
-IF ~Global("C#BE_SpawnBrage","GLOBAL",8)~ THEN + joinlater
+IF ~Global("C#BE_SpawnBrage","GLOBAL",5)~ THEN + joinlater
 END
 
 APPEND ~BRAGE~
@@ -70,42 +70,8 @@ END //APPEND
 /* Abgang "Brage2.cre", Auftritt "C#Brage" (C#Brage1.cre) in front of the temple */
 
 BEGIN C#Brage1
-IF ~Global("C#BE_SpawnBrage","GLOBAL",6)~ THEN join
+IF ~Global("C#BE_SpawnBrage","GLOBAL",7)~ THEN join
 SAY @18 
-IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",7) SetGlobal("C#BE_BrageTalks","GLOBAL",1) RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",800) JoinParty()~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",8) SetGlobal("C#BE_BrageTalks","GLOBAL",1) RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",800) JoinParty()~ EXIT
 END
 
-/* Kickout dialogue BG1 */
-
-APPEND C#BragP
-
-IF ~Global("Kickout","LOCALS",0)
-%BGT_VAR%~ THEN kickout
-SAY @19
-++ @20 + kickout_01
-++ @21 + kickout_02
-++ @22 + kickout_03
-END
-
-IF ~~ THEN kickout_01
-SAY @23
-IF ~~ THEN DO ~SetGlobal("Kickout","LOCALS",1)~ EXIT
-END
-
-IF ~~ THEN kickout_02
-SAY @24
-IF ~~ THEN DO ~SetGlobal("Kickout","LOCALS",1) EscapeAreaMove("%Nashkel_TempleofHelm%",517,416,10)~ EXIT
-END
-
-IF ~~ THEN kickout_03
-SAY @25
-IF ~~ THEN DO ~JoinParty()~ EXIT
-END
-
-IF ~Global("Kickout","LOCALS",1)~ THEN rejoin
-SAY @26
-++ @27 DO ~SetGlobal("Kickout","LOCALS",0)~ + kickout_03
-++ @28 + kickout_01
-END
-
-END //APPEND

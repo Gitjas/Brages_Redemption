@@ -1,0 +1,38 @@
+/* brage_bd0103.baf:
+Brage will leave the group after clearing Korlasz's tomb */
+IF
+  OR(2)
+  InMyArea("C#Brage")
+  InPartyAllowDead("C#Brage")
+  GlobalLT("BD_PLOT","GLOBAL",51)
+THEN
+  RESPONSE #100
+    ApplySpellRES("bdresurr","C#Brage") //resurrection
+    SmallWait(1)
+    ActionOverride("C#Brage",ChangeAIScript("C#BrageS",OVERRIDE))
+    ActionOverride("PlayerChest00",TakeCreatureItems("C#Brage",BACKPACK))
+    SmallWait(1)
+    ActionOverride("C#Brage",LeaveParty())
+    SmallWait(1)
+    ActionOverride("C#Brage",DestroySelf())
+    Continue()
+END
+
+/* bd0103_commenting.baf
+after Skie woke the PC up on the day of departure */
+IF
+	Global("bd_plot","global",55)
+	Global("C#Brage_BD_PLAY_ONCE","BD0103",0)
+	Global("BD_OT_DELAY","BD0103",0)
+	IsValidForPartyDialog("C#Brage")  
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("BD_OT_DELAY","BD0103",1)
+		SetGlobal("C#Brage_BD_PLAY_ONCE","BD0103",1)
+		Wait(1)
+		DisplayStringWait("C#Brage",@1000)
+		SetGlobal("BD_OT_DELAY","BD0103",0)
+		SetInterrupt(TRUE)
+    		Continue()
+END	

@@ -18,7 +18,7 @@
 @17   = ~Lebt wohl.~
 @18   = ~Hier bin ich, zum Gehen breit... so sehr, wie ich nur sein kann. Ich danke Euch für die Möglicheiten, die Ihr mir damit ermöglicht.~
 @19   = ~Ihr wollt, dass ich warte?~
-@20   = ~Ja, bitte wartet hier. Ich komme zu Euch zurück.~
+@20   = ~Bitte wartet hier. Ich komme zu Euch zurück.~
 @21   = ~Wir müssten für eine Weile getrennte Wege gehen.~
 @22   = ~Nein, doch nicht. Kommt weiter mit.~
 @23   = ~Wie Ihr wollt. Ich werde hier sein.~
@@ -28,3 +28,19 @@
 @27   = ~Ja, kommt bitte wieder mit.~
 @28   = ~Nein, noch nicht.~
 @29   = ~<CHARNAME>, Ihr habt Brage viel zum Nachdenken gegeben. Ich bin sicher, dass er bald wieder mit Euch sprechen möchte, aber lasst ihm nun etwas Ruhe, um seine Gedanken zu ordnen.~
+
+/* new for v5 */
+@30   = ~Geht bitte zurück ins Lager.~
+@31   = ~Wie Ihr wollt. Ich werde im Lager warten.~
+@32   = ~Wie Ihr wollt. Ich werde vor dem Palast warten.~ 
+@33   = ~<CHARNAME>!~
+@34   = ~Ich müsste Halbazzar Drin ein paar Fragen stellen - aber da ist kein Durchkommen bei diesem Chaos und dieser Verwirrung!~
+@35   = ~Sie nennen Euch den Helden von Baldurs Tor, und es gibt Gerüchte, dass Ihr mit der Koalition gegen den Kreuzzug vorgeht. Hättet Ihr Verwendung für einen weiteren Schwertarm?~
+@36   = ~Ich helfe lieber diesen armen Leuten und ziehe gegen die feindliche Armee, als hier noch weiter Zeit zu vergeuden. Zumal ich hier wohl auch nichts ausrichten kann, bevor die Stadt nicht wieder zur Ruhe kommt.~
+@37   = ~Haltet Euch bereit. Ich komme zu Euch zurück.~
+@38   = ~Meine Nachforschungen zur Herkunft des verfluchten Schwertes führten mich zurück nach Baldurs Tor. Und in welchem Aufruhr finde ich die Stadt vor!~
+@39   = ~Meine Nachforschungen zur Herkunft des verfluchten Schwertes führten mich bis nach Tiefwasser und zurück nach Baldurs Tor, aber durch die Turbulenzen aufgrund Caelars Kreuzzug bin ich nun hier.~
+@40   = ~Ich bin überhaupt nicht Teil dieser Koalition, aber ja, ich hätte Euch gerne wieder dabei.~
+@41   = ~Oh? Nun, ich bin sicher, dass wir trotzdem Gutes tun werden.~
+@42   = ~Wie Ihr wollt. Ich werde hier warten.~
+@43   = ~Ich halte Euch den Rücken frei, <CHARNAME>.~

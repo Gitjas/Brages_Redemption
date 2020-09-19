@@ -268,7 +268,6 @@
 @267  = ~I thank you.~
 @268  = ~I chose well when I picked you as my leader.~
 @269  = ~We destroyed the bandits' hideout... Only to learn that there is even more to do before we stop the threat and find the ones behind the cursed sword. Still, we did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~
-
 @270  = ~<CHARNAME>... my heart bleeds at the thought of this monster going unpunished, but I see he is but a minion in what seems to be a deep levelled conspiracy. I bow to your decision on how to deal with this culprit.~
 @271  = ~You... you detestable scoundrel! So this Tazok is not here to find? You are but another minion in this cascading horror? We will bring you to justice and we will find your master. We will find this "D" who sent the cursed sword my way!~
 @272  = ~Never would I have imagined I would enter Baldur's Gate as a civilian... I dreaded to come here as a military force not so long ago.~
@@ -297,9 +296,32 @@
 @295  = ~Let's go and prevent this war - never would I have thought it would come this close.~
 @296  = ~<CHARNAME>, I must warn you - the Shadow Thieves are a powerful organisation who spread their poisonous influence all over Amn. The members are as shady as they are evil. I would not trust this man, regardless of how much it pains me that this crime is blamed upon Amn.~
 @297  = ~Well, now I do feel offended. We Shadow Thieves are shady and evil, but we do have a code of honor. I told you what I know, and it is the truth.~
+
+/* new for v5 */
+@298  = ~Woman! Be cautious with your words. There is fellow Amnians here, as well as sufficient fighting power to make you trouble indeed.~
+@299  = ~Pardon?! You might carry an influential name, but that does not give you right to any such behavior! <CHARNAME>, tread carefully - in Amn this name is well known, and hurting an Argrim family member will lead to unpleasant successions to be sure.  My lady, know that I am a former Amnian garrison commander, Brage my name. Do not provoke us further with your silly games or we will have to draw steel to defend us!~
+@300  = ~<CHARNAME>, this is the culprit who stole two emeralds from Nashkel. The whole affair was already placed into a bounty hunters' hands, though, so I would suggest we stay out of it.~
+@301  = ~Although it aches my heart to turn a deaf ear to this clearly driven man's pleas we cannot make us accomlices to such a theft, <CHARNAME>.~
+@302  = ~I have to insist. We should not stand against an officially hired bounty hunter.~
+@303  = ~Oho, don't I recognize you, "Commander" Brage. Your bounty I would have liked to collect for sure, but some <CHARNAME> got to you, first. Good for you, as I would not have cared to drag you to Nashkel alive!~
+@304  = ~Mister Greywolf, I am trying to keep my comrade from interfering with your business but you make it difficult to keep up sympathy for your cause!~
+@305  = ~We killed a bounty hunter officially hired by Nashkel authorities and protected a thief searched for by the very authorities.~
+@306  = ~We crossed a bounty hunter officially hired by Nashkel authorities and protected a thief searched for by the very authorities.~
+@307  = ~<CHARNAME>, I'm not sure that was a smart thing to do.~
+@308  = ~He was about to kill the man! He might have stolen emeralds, but that's no reason for killing!~
+@309  = ~I'm not so sure. This is a really nice sculpture. Are there no art lovers in Nashkel?~
+@310  = ~If you put it like that it feels much less thrilling to have helped an artist to complete his masterpiece.~
+@311  = ~I saw the desperation in the artist's eyes, Brage. I will not have a man killed just because he wants to finish his dream.~
+@312  = ~Relax, we can still return the emeralds to Oublek and solve the issue.~ 
+@313  = ~No, it wasn't, but what's done is done.~
+@314  = ~(sigh) I surely hope this will not turn out as a backlash for our dealings with the people in Nashkel. Let us collect the emeralds and quickly return them to Oublek so we can at least settle this matter.~
+@315  = ~Justice was served, but I'd rather it would have gone differently. I did not think much of it when Ghastkill put out the "we only care about the returned emeralds, not the artist" bounty for Prism, but knowing the details now it does feel harsh to kill a man because of two emeralds.~
 /*
-@298  = 
-@299  = 
-@300  = 
+@316  = 
+@317  = 
+@318  = 
+@319  = 
+@320  = 
 */
+
 

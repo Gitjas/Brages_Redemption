@@ -1,0 +1,12 @@
+/* brage_bd4400_commenting.baf */
+/* Comment upon entering Avernus */
+IF
+	GlobalLT("bd_plot","global",505)
+	IfValidForPartyDialog("C#Brage")  
+	Global("C#Brage_bd_avernus_bark","bd4400",0) 
+THEN
+	RESPONSE #100
+		DisplayStringWait("C#Brage",@1014) 
+	    SetGlobal("C#Brage_bd_avernus_bark","bd4400",0)  
+		SmallWait(8)
+END

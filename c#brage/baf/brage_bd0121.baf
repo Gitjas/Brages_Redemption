@@ -1,0 +1,47 @@
+/* brage_bd0121.baf
+
+Brage will be waiting insie Sorcerous Sundries */
+/* new SoD game */
+IF
+  Global("C#BE_SpawnBrage","GLOBAL",0) //true for a new game
+  Global("C#Brage_MoveCamp","bd0121",0) 
+THEN
+  RESPONSE #100
+    SetGlobal("C#Brage_MoveCamp","bd0121",1)
+    SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
+    CreateCreature("C#BRAGES",[475.600],S)  
+    ActionOverride("C#Brage",MakeGlobalOverride())
+    ChangeSpecifics("C#Brage",ALLIES)
+    ActionOverride("C#Brage",ChangeAIScript("C#Brages",OVERRIDE))
+    ActionOverride("C#Brage",ChangeAIScript("",CLASS))
+    ActionOverride("C#Brage",ChangeAIScript("",RACE))
+    ActionOverride("C#Brage",ChangeAIScript("",GENERAL))
+    ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+    ActionOverride("C#Brage",SetDialog("C#Brages")  //greeting dialogue in SoD
+END
+
+/* 2nd script block if Brage was in party before */
+IF
+  !Dead("C#Brage")
+  !InPartyAllowDead("C#Brage")
+  BeenInParty("C#Brage") //this variable is set automatically if Brage was in Party in BG1 or SoD
+  Global("C#Brage_MoveCamp","bd0121",0)  //so it happens only once
+THEN
+  RESPONSE #100
+    SetGlobal("C#Brage_MoveCamp","bd0121",1)
+    SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
+    MoveGlobal("bd0010","C#Brage",[475.600])
+    ActionOverride("C#Brage",Face(S))    //or any other direction depending on the coordinates
+    ApplySpellRES("bdrejuve","C#Brage")  //completely heals and removes all spell effects
+    ChangeEnemyAlly("C#Brage",NEUTRAL)
+    ChangeSpecifics("C#Brage",ALLIES)
+    ActionOverride("C#Brage",SetGlobal("bd_joined","locals",0))  //this is needed for kickout and moving to camps -> see below
+    ActionOverride("C#Brage",SetGlobal("bd_retreat","locals",0)) //this variable is used to toggle behavior of crusaders in the class-dependent GENERAL scripts also used for NPCs. It needs to be "0" for NPCs.
+    ActionOverride("C#Brage",SaveObjectLocation("LOCALS","bd_default_loc",Myself)) // used e.g. in bdshout.bcs which is set to RACE script by bdparty.bcs which uses MoveToSavedLocationn("bd_default_loc","LOCALS")
+    ActionOverride("C#Brage",ChangeAIScript("C#Brages",OVERRIDE)) //Brage's SoD override script
+    ActionOverride("C#Brage",ChangeAIScript("DEFAULT",CLASS))
+    ActionOverride("C#Brage",ChangeAIScript("",RACE))
+    ActionOverride("C#Brage",ChangeAIScript("",GENERAL))
+    ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+    ActionOverride("C#Brage",SetDialog("C#Brages")  //greeting dialogue in SoD
+END

@@ -1,0 +1,12 @@
+/* brage_bdcut08.baf
+march out of BG city: make Brage move when the coalition start marching out of BG city */
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("C#Brage")  
+		ApplySpellRES("BDSLOW",Myself)  // sets the movement rate to "6" for 15 realtime seconds
+		Wait(2)
+		SmallWait(109)
+		MoveToPoint([913.1113]) 
+END

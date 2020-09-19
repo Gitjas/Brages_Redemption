@@ -1,6 +1,6 @@
 @0  = ~Nein! NEIN!! Nie wieder werde ich dieses verfluchte Schwert in die Hände nehmen, <CHARNAME> - zwingt mich nicht dazu!~
 @1  = ~Als Ihr BRAGE nach seiner Vergangenheit fragt, räuspert er sich und zögert einen kurzen Moment, bevor er seine Herkunft aus Atkatla erwähnt, die Hauptstadt Amns. Er erzählt über sein Leben in der Amnischen Garde und seine Stationierung als Hauptmann in Nashkell. "Ich fand die liebste Frau und hatte zwei wunderbare Töchter - bis ich das verfluchte Schwert in die Hände nahm. Den Den Rest kennt Ihr, <CHARNAME>. Zwingt mich bitte nicht, es noch einmal zu erzählen."~
-@2  = ~<CHARNAME>, es ist Zeit, Lebewohl zu sagen. Wir haben große Taten vollbracht, einen sich anbahnenden Krieg verhindert und vielen Unschuldigen das Leben gerettet. Dies ist der Moment, an dem ich mich verabschieden werde. Ich werde eigene Schritte gehen, den Schmied des verfluchten Schwertes suchen, Gold für die Familien verdienen, die durch mich Leid erfahren haben. Vor allem werde ich selbstbestimmt in meine Heimat zurückkehren. Lebt wohl, und mögen die Götter Euch behüten... So die Götter wollen, werden wir uns wiedersehen.~
+//@2  = 
 @3  = ~Wenn wir hier fertig sind, dann werde ich mich auf die Suche nach dem Hersteller des verfluchten Schwertes begeben. Ich werde nach Tiefwasser reisen und meine Untersuchungen beim Schmied des eigentlichen Schwertes beginnen - die Fälschung trug immerhin sein Siegel. Nicht, dass ich wirklich erwarte, dort etwas zu finden, aber ich muss dieser Spur nachgehen.~
 @4  = ~Ajantis, wenn Euch Eure Schritte ebenfalls nach Tiefwasser führen, dann könnten wir zusammen reisen.~
 @5  = ~Das ist eine großartige Idee, Brage. Ich schätze Eure Gesellschaft auf dem Weg dorthin.~
@@ -129,3 +129,17 @@ Initiativefaktor: 9
 Mindeststärke: 13
 Fertigkeit: Zweihänder
 Typ: 2-händig~
+
+
+
+/* SoD */
+/* brage_bd0103.baf */
+@1000 = ~Today we will march against the Crusade. Never would I have thought to be on a military mission again, and so soon.~
+@1001 = ~This is an impressive chasm. I had no idea this crypt would reach so deep down.~
+@1002 = ~Such stupidity! The destroyed bridge is not only bad for us, it also cuts a chasm between here and the northers lands!~
+@1003 = ~This Caelar is a very charismatic woman. I understand why they follow her.~
+@1004 = ~It takes a certain mindset to kill a man by pulling a lever. I am unsettled to see that it came so easily to you.
+
+~
+@1005 = ~This saved us the fight, but it was a betrayal to those we call allies, <CHARNAME>.~
+

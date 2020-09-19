@@ -1,3 +1,43 @@
+/* Dorn
+
+~<CHARNAME>, I will not support a mass murder inside the Order headquarters. I expect you to stop this madness, now.~
+*/
+
+/* Hexxat */
+
+/* ~This... creature just killed one of our comrades! Why is she among us, and a travel companion no less?!~
+
+~I know you have a great heart, CHARNAME, you showed it when you helped me regain my honor. I also know that innocents' blood is on my hands, so I should be careful to speak up. But Hexxat is not a woman who went astray. She is an undead, driven by urges of evil and destruction older than mankind itself. I will tolerate her presence, for now, but I will not stand by and watch her kill another innocent again.~
+
+~[Brage] Hexxat, I detest your presence in this group. You are here because <CHARNAME> decided so and I will accept it, but I will watch you with all vigilance Helm has granted me.~
+~[Hexxat] Yes, I heard you quite perfectly, Brage.~
+
+~[Brage] <CHARNAME>? We tolerated this creature amongst us for long enough now. You know how she preseves her strength? You cannot be blind to this!~
+++ ~I'm not, but I trust Hexxat, Brage. I haven't noticed a wake of drained innocents along our path, so let her go and feed.~ + 
+++ ~Hexxat can feed where she want and on who she wants, Brage.~ + 
+++ ~I think it is high time you left this group, Brage. Do not bother any of my comrades again.~ + 
+++ ~Why? What does she do?~ + 
+
+~[Brage] Yes, you obviously do, <CHARNAME> - you trust her.~
+IF ~[rep LT 10]~ THEN ~Unfortunately, I do no longer trust you.~
+
+~I heard you loud and clear.~
+
+~Joining you was a mistake, I do not know what I was thinking. I nearly lost sight of my goals... [LeaveParty]~
+
+
+/* rest dialogue */
+~[Brage] No, Hexxat. You will not steal away to drink on innocents' blood. Not on my watch!~
+~[Hexxat] How about I will leave openly and promise to only drink from scoundrel, would that be better, hm?~
+~[Brage] Do not mock me, creature. I do not care whether it is urges of your nature or a self-chosen style of life - you will not go drink on people tonight.~
+~[Hexxat] If you don't eat, you'll get weak. If I don't eat, I'll get weak as well. I do not think <CHARNAME> wants me to be weak in our next fight. We need to get along if we are supposed to fight together. I will not drink from an innocent, if it pleases you, Brage.~
+
+
+*/
+
+
+
+
 /* banter and randomly triggered dialogues with PC */
 
 /* Anomen */
@@ -134,7 +174,7 @@ Global("C#BE_NaliaCondolences","GLOBAL",2)~ THEN ~BNALIA~ bragenalia_df_2
 DO ~SetGlobal("C#BE_NaliaCondolences","GLOBAL",3)~
 == C#BrageB ~No one but <CHARNAME>.~
 == BNALIA ~Yes, but <PRO_HESHE> was too late! I mean... I met <PRO_HIMHER> so late. If the others would have...~
-== C#BrageB ~Lady Nalia, I have full understanding for your anger. Believe me, I do... But it is not those people's fault your father died.~
+== C#BrageB ~Lady Nalia, I have full understanding for your rage and sorrow. Believe me, I do... But it is not those people's fault your father died.~
 == BNALIA ~But if they would have...~
 == C#BrageB ~Nalia, it is not *their* fault! It is good that you are angry. It is an important step for your wounds to heal. And it is a blessing that you are not angry at yourself. But focus on who is really responsible for what happened. Was it the drunkards and ruffians in the Copper Coronet?~
 == BNALIA ~Well... no, of course not. But *if* someone would have come sooner, maybe my father could have been saved...~

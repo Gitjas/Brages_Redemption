@@ -229,9 +229,86 @@ I_C_T2 MULAHE 6 C#BE_MULAHE_2 //will only play if it didn't before
 == C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @271 /* ~You... you detestable scoundrel! So this Tazok is not here to find? You are but another minion in this cascade of horror? We will bring you to justice, and we will find your master, and we will find this "D." who sent the cursed sword my way!~ */
 END
 
+/* Sendai */
+I_C_T ~%tutu_var%Sendai~ 0 C#BE_SENDAI_0
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @298
+END
+
+I_C_T ~%tutu_var%Sendai~ 3 C#BE_SENDAI_3
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @299
+END
+
+/* Prism */
+I_C_T ~%tutu_var%Prism~ 0 C#BE_PRISM_0
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @300
+END
+
+I_C_T ~%tutu_var%Prism~ 1 C#BE_PRISM_1
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @301
+END
+
+I_C_T ~%tutu_var%Prism~ 2 C#BE_PRISM_2
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @301
+END
+
+I_C_T ~%tutu_var%Greywo~ 2 C#BE_GREYWO_2
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @302
+== GREYWO IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @303
+== C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @304
+END
 
  
+
+
+/* Prism and Greywolf */
+
+/* 
+Global("C#Brage_PrismFinished","GLOBAL",1): Prism finished his work */
+
+ADD_TRANS_ACTION ~%tutu_var%Prism~ BEGIN 7 END BEGIN END ~SetGlobal("C#Brage_PrismFinished","GLOBAL",1)~
+
+/* 
+Global("C#Brage_GreywolfCharmed","GLOBAL",1): Greywold gave his charmed dialogue and left */
+
+ADD_TRANS_ACTION ~%tutu_var%Greywo~ BEGIN 7 END BEGIN END ~SetGlobal("C#Brage_GreywolfCharmed","GLOBAL",1)~
+
 APPEND C#BrageJ
+
+/* Greywolf dead */
+
+IF ~Dead("Greywolf") Global("C#Brage_KilledGreywolf","GLOBAL",1)~ THEN greywolf_dead
+SAY @305
+IF ~~ THEN + greywolf_01
+END
+
+/* Greywolf was charmed and left */
+
+IF ~!Dead("Greywolf") Global("C#Brage_KilledGreywolf","GLOBAL",1)~ THEN greywolf_charmed
+SAY @306
+IF ~~ THEN + greywolf_01
+END
+
+IF ~~ THEN greywolf_01
+SAY @307
+++ @308 + greywolf_02
+++ @309 + greywolf_02
+++ @310 + greywolf_02
+++ @311 + greywolf_02
+++ @312 + greywolf_02
+++ @313 + greywolf_02
+END
+
+IF ~~ THEN greywolf_02
+SAY @314
+IF ~~ THEN DO ~SetGlobal("C#Brage_KilledGreywolf","GLOBAL",2)~ EXIT
+END
+
+
+/* Prism was killed by Greywolf or PC */
+IF ~Global("C#Brage_KilledPrism","GLOBAL",1)~ THEN prism_dead
+SAY @315
+IF ~~ THEN DO ~SetGlobal("C#Brage_KilledPrism","GLOBAL",2)~ EXIT
+END
 
 
 

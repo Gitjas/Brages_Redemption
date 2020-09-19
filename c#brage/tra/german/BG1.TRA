@@ -267,7 +267,6 @@
 @266  = ~In Ordnung.~
 @267  = ~Ich danke Euch.~
 @268  = ~Ich habe eine gute Wahl getroffen, als ich Euch zu meinem Anführer wählte.~ ~Ich habe eine gute Wahl getroffen, als ich Euch zu meiner Anführerin wählte.~
-
 @269  = ~Wir haben das Versteck der Banditen zerstört... Nur um zu lernen, dass noch mehr zu tun ist bevor wir denen gegenüber stehen, die für das verfluchte Schwert verantwortlich sind. Es war trotzdem gut, was wir hier getan haben, <CHARNAME>. Wir haben durch die Vertreibung eines Hauptteils der Banditen von den Straßen vielen Leuten das Leben sehr erleichtert. Wir sind nur noch nicht fertig mit unserer Aufgabe, das ist alles.~
 @270  = ~<CHARNAME>... mir wird unwohl bei dem Gedanken, dass dieses Monster ohne Strafe davonkommen soll, aber ich verstehe, dass er nichts als ein kleines Rädchen war in einem tieferen Geflecht von Verschwörungen. Ich beuge mich Eurer Entscheidung in dieser Sache.~
 @271  = ~Ihr... Ihr verachtenswertes Scheusal! Also ist dieser Tazok nicht hier zu finden? Ihr seid nichts als ein weiterer Handlanger in diesem Konstrukt des Horrors? Wir werden Euch den Garaus machen, und wir werden diesen Tazok finden, und wir werden diesen "D." zur Strecke bringen, der das verfluchte Schwert zu mir schicken ließ!~
@@ -295,5 +294,25 @@
 @293  = ~Was auch immer. Ich wünschte wirklich, die Leute könnten einmal ihre Probleme selbst lösen.~
 @294  = ~Das war er in der Tat...~
 @295  = ~Lasst uns gehen und diesen Krieg verhindern - ich hätte mir nie träumen lassen, dass es mal so weit kommen würde.~
-@296  = ~<CHARNAME>, lasst mich Euch warnen - die Schattendiebe sind eine mächtige Gilde, die ihren verfluchten Einfluss über ganz Amn verteilen. Sie sind zwielichtig als auch böse. Egal wie sehr es mich grämt, dass meine Heimat dieses bösen Verbrechens bezichtigt wird - diesem Mann würde ich nicht trauen.~
-@297  = ~Na, jetzt fühl ich mich aber gekränkt. Wir Schattendiebe sind zwielichtig als auch böse, aber wir haben und befolgen einen Ehrenkodex. Ich habe Euch gesagt, was ich weiß, und es ist die Wahrheit.~
+@296  = ~<CHARNAME>, lasst mich Euch warnen - die Schattendiebe sind eine mächtige Gilde, die ihren verfluchten Einfluss über ganz Amn verteilen. Sie sind zwielichtig wie auch böse. Egal wie sehr es mich grämt, dass meine Heimat dieses bösen Verbrechens bezichtigt wird - diesem Mann würde ich nicht trauen.~
+@297  = ~Na, jetzt fühl ich mich aber gekränkt. Wir Schattendiebe sind zwielichtig wie auch böse, aber wir haben und befolgen einen Ehrenkodex. Ich habe Euch gesagt, was ich weiß, und es ist die Wahrheit.~
+
+/* new for v5 */
+@298  = ~Gute Frau! Wählt Eure Worte mit mehr Bedacht. Es befinden sich Amnische Landsleute unter uns, und auch unsere Kampfkraft ist groß genug, um Euch unangenehm zu werden.~
+@299  = ~Wie bitte?! <CHARNAME>, wählt Eure Reaktion mit Bedacht, dieser Name ist in Amn in der Tat weit bekannt und wird bei einer blutigen Auseinandersetzung sicher zu unangenehmen Folgen führen. Gute Frau, Ihr mögt einen einflussreichen Namen tragen, aber das berechtigt Euch mitnichten zu solch einem Verhalten! Wisset, dass ich einst Amnischer Hauptmann war, Brage mein Name. Provoziert uns nicht weiter mit Euren albernen Spielchen, oder wir werden uns mit unseren Schwertern zu verteidigen wissen!~
+@300  = ~<CHARNAME>, dies ist der Dieb, der zwei Smaragde aus Nashkell entwendet hat. Die ganze Angelegenheit ist bereits auf einen Kopfgeldjäger übertragen worden, daher rate ich, dass wir uns raushalten.~
+@301  = ~Obgleich es mir im Herzen weh tut, die Bitte dieses eindeutig getriebenen Mannes abzulehnen, so muss ich doch klarstellen, dass wir uns nicht zu Komplizen eines solchen Diebstahls machen können, <CHARNAME>.~
+@302  = ~Ich muss darauf bestehen - wir sollten uns nicht einem offiziell angeheuerten Kopfgeldjäger in den Weg stellen.~
+@303  = ~Oho, Euch kenne ich doch, "Hauptmann" Brage. Das Kopfgeld für Euch hätte ich auch gerne eingesammelt, aber da kam mir jemand namens <CHARNAME> zuvor. Was gut für Euch war, denn ich hätte mir sicher nicht die Mühe gemacht, Euch lebend nach Nashkell zu schleifen!~
+@304  = ~Herr Greywolf, ich versuche, meine Kameraden davon abzuhalten, sich in Eure Geschäfte einzumischen, aber Eure Worte machen es mir nicht leicht, weiterhin Sympathie für Eure Belange zu empfinden!~
+@305  = ~Wir haben ein offiziell von der Nashkeller Stadtverwaltung angeheuerten Kopfgeldjäger getötet, um einen Dieb zu beschützen, der von eben diesen offiziellen Stellen gesucht wird.~
+@306  = ~Wir haben ein offiziell von der Nashkeller Stadtverwaltung angeheuerten Kopfgeldjäger gestoppt, um einen Dieb zu beschützen, der von eben diesen offiziellen Stellen gesucht wird.~
+@307  = ~<CHARNAME>, ich halte das nicht für einen schlauen Schachzug.~
+@308  = ~Er wollte den Mann töten! Der hat vielleicht Smaragde gestohlen, aber das ist doch kein Grund, ihn zu töten!~
+@309  = ~Bin ich mir nicht so sicher. Das ist eine wirklich schöne Skulptur. Gibt es keine Kunstliebhaber in Nashkell?~
+@310  = ~Wenn Ihr das so sagt fühlt es sich gleich viel weniger erhebend an, einem Künster geholfen zu haben, sein Meisterwerk zu vollenden.~
+@311  = ~Ich habe die Verzweiflung in Prisms Augen gesehen, Brage. Ich lasse nicht zu, dass ein Mann zu Tode kommt, nur weil er seinen Traum beenden möchte.~
+@312  = ~Seid unbesorgt, wie können die Smaragde immer noch zu Oublek zurückbringen und die ganze Sache damit beilegen.~ 
+@313  = ~Ich auch nicht, aber nun ist es geschehen.~
+@314  = ~(seufz) Ich hoffe inständig, dass sich das nicht negativ auf unsere Beziehungen zu den Leuten in Nashkell auswirken wird. Lasst uns rasch die Smaragde einsammeln und sie zu Oublek bringen, so dass wir wenigstens diese Angelegenheit beilegen können.~
+@315  = ~Der Gerechtigkeit wurde gedient, aber ich wünschte, es wäre anders gelaufen. Ich hatte mir keine großen Gedanken gemacht, als Ghastkill das "uns interessieren nur die Smaragde, nicht der Künster" Kopfgeld gegen Prism ausgerufen hat, aber da ich nun die Details des Falles kenne, kommt es mir sehr extrem vor, einen Mann zu töten, nur weil er zwei Smaragde entwendet hat.~

@@ -9,7 +9,7 @@ SAY ~<CHARNAME>! Where are we? You did... summon me here? Do you need my help?~
 END
 
 IF ~~ THEN joinbg2_01
-SAY ~Gladly.~ 
+SAY @25 /* ~Gladly.~ */
 IF ~~ THEN DO ~SetGlobal("C#BrageSummoned","GLOBAL",4) SetGlobal("C#BE_BrageTalksToB","GLOBAL",1) RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",800) JoinParty()~ EXIT
 END
 
@@ -27,29 +27,3 @@ SAY ~Greetings, <CHARNAME>.~
 END
 
 
-/* Kickout dialogue ToB */
-
-
-BEGIN C#Bra25P
-
-IF ~Global("Kickout","LOCALS",0)~ THEN kickout
-SAY ~You want me to wait?~
-++ ~Yes, please wait here. I'll be back for you.~ + kickout_01
-++ ~No, I changed my mind. Please come along.~ + kickout_02
-END
-
-IF ~~ THEN kickout_01
-SAY ~As you wish. I'll be here.~
-IF ~~ THEN DO ~SetGlobal("Kickout","LOCALS",1)~ EXIT
-END
-
-IF ~~ THEN kickout_02
-SAY ~Gladly.~
-IF ~~ THEN DO ~JoinParty()~ EXIT
-END
-
-IF ~Global("Kickout","LOCALS",1)~ THEN rejoin
-SAY ~Hello, <CHARNAME>. You want us to join forces again?~
-++ ~Yes, please come along once more.~ DO ~SetGlobal("Kickout","LOCALS",0)~ + kickout_02
-++ ~No, not yet.~ + kickout_01
-END

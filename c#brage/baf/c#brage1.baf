@@ -1,6 +1,6 @@
 IF
 	See(Player1)
-	Global("C#BE_SpawnBrage","GLOBAL",6)
+	Global("C#BE_SpawnBrage","GLOBAL",7)
 THEN
 	RESPONSE #100
 		Dialogue([PC])
@@ -1156,6 +1156,85 @@ THEN
 	RESPONSE #100
 		StartDialogueNoSet(Player1)		
 END
+
+
+
+/* Killing Greywolf, Prism finished his masterpiece */
+/* activate */
+IF
+//?##	%BGT_VAR%
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#BE_GREYWO_2","GLOBAL",1) //Brage was there when Greywolf appeared
+	Global("C#Brage_PrismFinished","GLOBAL",1)
+	OR(2)
+		Dead("Greywolf")
+		Global("C#Brage_GreywolfCharmed","GLOBAL",1)
+	!See("Greywolf")
+	!See("Prism")
+	Global("C#Brage_KilledGreywolf","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_KilledGreywolf","GLOBAL",1)
+END
+/* initiate */
+IF 
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#Brage_KilledGreywolf","GLOBAL",1) 
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+		
+END
+
+/* Prism dead, not finished his masterpiece */
+/* activate */
+IF
+//?##	%BGT_VAR% 
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#BE_PRISM_0","GLOBAL",1) //Brage was there when group talked to Prism
+	!Global("C#Brage_PrismFinished","GLOBAL",1)
+	Dead("Prism")
+	!See("Prism")
+	Global("C#Brage_KilledPrism","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_KilledPrism","GLOBAL",1)
+END
+/* initiate */
+IF 
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#Brage_KilledPrism","GLOBAL",1) 
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+		
+END
+
+
 
 
 /* bad reputation warning */

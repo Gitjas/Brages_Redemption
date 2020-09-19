@@ -111,37 +111,3 @@ END
 END //APPEND
 
 
-/* Kickout dialogue BG2 */
-
-
-APPEND C#BragP
-
-IF ~Global("Kickout","LOCALS",0)
-%IT_IS_BG2%~ THEN kickout
-SAY ~You want me to wait?~
-++ ~Yes, please wait here. I'll be back for you.~ + kickout_01
-+ ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_7%)~ + ~Actually, I need us to part ways, at least for now.~ + kickout_02
-++ ~No, I changed my mind. Please come along.~ + kickout_03
-END
-
-IF ~~ THEN kickout_01
-SAY ~As you wish. I'll be here.~
-IF ~~ THEN DO ~SetGlobal("Kickout","LOCALS",1)~ EXIT
-END
-
-IF ~~ THEN kickout_02
-SAY ~I see. You will find me in the Temple District. I will return to the Temple of Helm.~
-IF ~~ THEN DO ~SetGlobal("Kickout","LOCALS",1) EscapeAreaMove("AR0901",1174,350,0)~ EXIT
-END
-
-IF ~~ THEN kickout_03
-SAY ~Gladly.~
-IF ~~ THEN DO ~JoinParty()~ EXIT
-END
-
-IF ~Global("Kickout","LOCALS",1)~ THEN rejoin
-SAY ~Hello, <CHARNAME>. You want us to join forces again?~
-++ ~Yes, please come along once more.~ DO ~SetGlobal("Kickout","LOCALS",0)~ + kickout_03
-++ ~No, not yet.~ + kickout_01
-END
-END //APPEND

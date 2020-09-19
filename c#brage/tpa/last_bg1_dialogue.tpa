@@ -57,7 +57,8 @@ IF
 	!Detect([EVILBUTBLUE])
 	CombatCounter(0)
 	Dead("Sarevok")
-	!See("Sarevok")
+	!InMyArea("Sarevok")
+	!AreaCheck("%Undercity_TempleofBhaal%")
 	Global("C#BE_LastBG1Dialogue","GLOBAL",0)
 THEN
 	RESPONSE #100
@@ -74,7 +75,8 @@ IF
 	!Detect([ENEMY])
 	CombatCounter(0)
 	AreaCheck("bd0120")
-	GlobalLT("C#BE_LastBG1Dialogue","GLOBAL",2)
+	!Global("#L_BG1SarevokDead","GLOBAL",1)
+	GlobalLT("C#BE_LastBG1Dialogue","GLOBAL",3)
 THEN
 	RESPONSE #100
 		SetGlobal("C#BE_LastBG1Dialogue","GLOBAL",3)
@@ -98,7 +100,8 @@ IF
 	!Detect([EVILBUTBLUE])
 	CombatCounter(0)
 	Dead("Sarevok")
-	!See("Sarevok")
+	!InMyArea("Sarevok")
+	!AreaCheck("%Undercity_TempleofBhaal%")
 	Global("C#BE_LastBG1Dialogue","GLOBAL",0)
 THEN
 	RESPONSE #100

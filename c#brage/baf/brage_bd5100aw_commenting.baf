@@ -1,0 +1,16 @@
+/* brage_bd5100aw_commenting.baf */
+/* Comment before entering the Cave with the blind Wyrmlings (bd5100aw.bcs). Will only fire if no original NPC gives their line. */
+IF
+	OR(3)
+		Entered([GOODCUTOFF])
+		IsOverMe([GOODCUTOFF])
+		WalkedToTrigger([GOODCUTOFF])
+	Range([PC],20)
+	Global("BD_SDD317_WYRMS","BD5100",0) //this is the original trigger variable which makes sure your NPC only speaks up if none of the original did. Remove if you want your NPC to speak up always. 
+	Global("C#Brage_BD_SDD317_WYRMS","BD5100",0)  
+	IfValidForPartyDialog("C#Brage")  
+THEN
+	RESPONSE #100
+	    SetGlobal("C#Brage_BD_SDD317_WYRMS","BD5100",1)  
+		ActionOverride("C#Brage",StartDialogNoSet(Player1))
+END

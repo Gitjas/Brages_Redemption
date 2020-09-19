@@ -1,0 +1,11 @@
+/* brage_bd0063.baf */
+
+IF
+	Global("BD_NPC02","MYAREA",0)
+	IfValidForPartyDialog("C#Brage")  
+	Delay(3)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_NPC02","MYAREA",1)
+		DisplayStringHead("C#Brage",@1006)  
+END
