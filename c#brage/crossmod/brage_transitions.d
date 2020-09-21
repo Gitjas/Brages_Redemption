@@ -27,7 +27,7 @@ END
 IF ~~ THEN timered_leave
 SAY @3 /* ~Is there something in my backpack that belongs to you? Please have a look now, before I will leave.~ */
 IF ~~ THEN DO ~SetGlobal("C#Brage_TransitionsLeave","GLOBAL",1)
-RealSetGlobalTimer("C#Brage_TransitionsLeaveTmr","GLOBAL",5)~ EXIT
+SetGlobalTimer("C#Brage_TransitionsLeaveTmr","GLOBAL",ONE_MINUTE)~ EXIT
 END
 
 /* Brage leaves */

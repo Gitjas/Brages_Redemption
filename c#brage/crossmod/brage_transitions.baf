@@ -58,7 +58,7 @@ END
 IF
 	IfValidForPartyDialog(Myself)
 	Global("C#Brage_TransitionsLeave","GLOBAL",1)
-	RealGlobalTimerExpired("C#Brage_TransitionsLeaveTmr","GLOBAL")
+	GlobalTimerExpired("C#Brage_TransitionsLeaveTmr","GLOBAL")
 THEN
 	RESPONSE #100
 		SetGlobal("C#Brage_TransitionsLeave","GLOBAL",2)
