@@ -12,7 +12,7 @@ VERSION ~5pre~
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
 
 
-AUTO_TRA ~c#brage/tra/%s~
+AUTO_TRA ~c#brage/tra/autotra/%s~
 
 ALWAYS
 
@@ -34,6 +34,15 @@ ALWAYS
 
 
     /* BGII:EE, EET - formatted texts etc. */
+
+    /* Copies tra files into the autotra-folder (to leave the originals untouched) */
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~c#brage/tra/english~  ~c#brage/tra/autotra/%LANGUAGE%~
+      COPY ~c#brage/tra/%LANGUAGE%~  ~c#brage/tra/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
     ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
 
     ACTION_DEFINE_ARRAY fl#reload BEGIN game END
@@ -42,10 +51,15 @@ ALWAYS
         INT_VAR
           infer_charsets = 1
         STR_VAR
-          tra_path = EVAL ~c#brage/Tra~
+          tra_path = EVAL ~c#brage/tra/autotra/~
           noconvert_array = fl#noconvert
           reload_array = fl#reload
       END
+
+   /* game TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version (for every running of installer!) - ALWAYS */
+
+  LOAD_TRA ~c#brage/tra/autotra/english/game.tra~
+  LOAD_TRA ~c#brage/tra/autotra/%LANGUAGE%/game.tra~
 
   ACTION_IF GAME_IS ~tob~ AND NOT GAME_IS ~bgt~ BEGIN
     OUTER_SPRINT ~IT_IS_BG2~ ~~
@@ -135,7 +149,7 @@ COMPILE ~...inlined/bgeefake.d~
 END
 
 
-ADD_JOURNAL TITLE (@55) @2 @10 @50 USING ~c#brage/tra/%LANGUAGE%/nashkel_graveyard_bg1.tra~
+ADD_JOURNAL TITLE (@55) @2 @10 @50 USING ~c#brage/tra/autotra/%LANGUAGE%/nashkel_graveyard_bg1.tra~
 
 
 
@@ -193,7 +207,7 @@ COMPILE EVALUATE_BUFFER ~...inlined/brage_c#bragedlg.d~
 
 /* kickout dialogue - one file for all games */
 
-COMPILE EVALUATE_BUFFER ~c#brage/dialogue/kickout.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/kickout.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/JOINING.TRA~
 
 
 /* BG1 */
@@ -220,24 +234,15 @@ SAY BIO @1
 ACTION_IF NOT ((MOD_IS_INSTALLED ~setup-bgqe.tp2~ ~11~) OR (FILE_EXISTS_IN_GAME ~c#q13brn.dlg~)) THEN BEGIN
 
 /* bgqe not installed - install quest */
+  INCLUDE ~c#brage/tpa/brages_sword.tpa~
+END 
 
-INCLUDE ~c#brage/tpa/brages_sword.tpa~
-
-/* identify the correct dialogue state of "Brage's Sword" (so I can leave the original one untouched) */
-OUTER_SET brage_state = STATE_WHICH_SAYS 44 IN ~c#brage/tra/%s/BRAGES_SWORD.tra~ FROM ~BRAGE.dlg~
-
-END ELSE BEGIN
-
-/* quest is installed via bgqe */
-
-/* identify the correct dialogue state of "Brage's Sword" (so I can leave the original one untouched) */
-OUTER_SET brage_state = STATE_WHICH_SAYS 44 IN ~bgqe/tra/%s/BRAGES_SWORD.tra~ FROM ~BRAGE.dlg~
-
-END
-
+/* Add needed variable */
 <<<<<<<< ...inlined/brage_bg1_add.d
-
-ADD_TRANS_ACTION BRAGE BEGIN %brage_state% END BEGIN END ~SetGlobal("C#BE_SpawnBrage","GLOBAL",1)~
+/* do not use REPLACE_ACTION_TEXT if you can help it */
+REPLACE_ACTION_TEXT BRAGE
+~DestroyItem("c#q13swd")~
+~DestroyItem("c#q13swd") SetGlobal("C#BE_SpawnBrage","GLOBAL",1)~
 
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~...inlined/brage_bg1_add.d~
@@ -250,7 +255,7 @@ ACTION_IF NOT (FILE_EXISTS_IN_GAME ~c#bgqe_21.mrk~) THEN BEGIN
 /* some improvements to the bgqe quest */
 /* (I can't incorporate these because players might use older versions of bgqe's "Brage's Sword" quest) */
 
-ADD_JOURNAL TITLE (@1021) @1022 @1023 @1024 USING ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~
+ADD_JOURNAL TITLE (@1021) @1022 @1023 @1024 USING ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~
 
 
 /* Nalin gives a hint after Brage was brought in */
@@ -262,7 +267,7 @@ EXTEND_BOTTOM ~%Nashkel_TempleofHelm%.bcs~ ~c#brage/bragesword_extended/brage_ar
 /* remove journal entry from Nalin's hint after sword quest was received; let Oublek initiate dialogue after Brage was brought to him */
 EXTEND_BOTTOM ~%Nashkel%.bcs~ ~c#brage/bragesword_extended/brage_ar4800_bs_extentions.baf~ 
 EVALUATE_BUFFER
-USING ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~ 
+USING ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~ 
 
 /* Hick won't be longer in the baracks after Brage was brought in */
 EXTEND_BOTTOM ~%Nashkel_Garrison%.bcs~ ~c#brage/bragesword_extended/brage_ar4810_bs_extentions.baf~ EVALUATE_BUFFER 
@@ -271,9 +276,9 @@ EXTEND_BOTTOM ~%Nashkel_Garrison%.bcs~ ~c#brage/bragesword_extended/brage_ar4810
 
 /* add journal entries if quest items from Borda are picked up */
 EXTEND_BOTTOM ~%NashkelCarnival%.bcs~ ~c#brage/bragesword_extended/brage_ar4900_bs_extentions.baf~ 
-EVALUATE_BUFFER USING ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~ 
+EVALUATE_BUFFER USING ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~ 
 EXTEND_BOTTOM ~%XvartVillage%.bcs~ ~c#brage/bragesword_extended/brage_ar4700_bs_extentions.baf~ 
-EVALUATE_BUFFER USING ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~ 
+EVALUATE_BUFFER USING ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~ 
 
 
 /* Patch Borda, the merchant for cursed items: mage faighting script, changed resistances, quest items */
@@ -315,7 +320,7 @@ COMPILE EVALUATE_BUFFER ~c#brage/baf/c#braged.baf~
 
 
 /* BG1 joining dialogue */
-COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg1.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg1.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/JOINING.TRA~
 
 /* more BG1 dialogue and banter */
 
@@ -592,7 +597,7 @@ EVALUATE_BUFFER
 
 
 /* SoD dialogue */
-COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_sod.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_sod.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/JOINING.TRA~
 COMPILE EVALUATE_BUFFER ~c#brage/dialogue/sod.d~
 
 END //SoD
@@ -602,9 +607,9 @@ END //SoD
 
 ACTION_IF GAME_IS ~bgt~ THEN BEGIN
 
-WITH_TRA ~c#brage/tra/%LANGUAGE%/bragesword_extentions.tra~ BEGIN  
+WITH_TRA ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~ BEGIN  
 /* erase journal entries from journal */
-  EXTEND_TOP ~AR0602.bcs~ ~c#brage/baf/brage_ar0602_bgt.baf~ USING ~c#brage/tra/%LANGUAGE%/nashkel_graveyard_bg1.tra~
+  EXTEND_TOP ~AR0602.bcs~ ~c#brage/baf/brage_ar0602_bgt.baf~ USING ~c#brage/tra/autotra/%LANGUAGE%/nashkel_graveyard_bg1.tra~
 END
 
 <<<<<<<< ...inlined/brage_bgt_transition.d
@@ -623,7 +628,7 @@ END
 
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~...inlined/brage_bgt_transition.d~ USING 
-~c#brage/tra/%LANGUAGE%/sod.tra~
+~c#brage/tra/autotra/%LANGUAGE%/sod.tra~
 
 END
 
@@ -639,7 +644,7 @@ END
 ACTION_IF GAME_IS ~tob bg2ee eet~ THEN BEGIN //includes BGT
 
 /* joining dialogue */
-COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg2.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg2.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/JOINING.TRA~
 
 /* other dialogues */
 COMPILE EVALUATE_BUFFER ~c#brage/dialogue/bg2.d~
@@ -695,7 +700,7 @@ EXTEND_TOP ~ar4500.bcs~ ~c#brage/baf/brage_ar4500_bg2.baf~
 
 
 /* tob joining dialogue */
-  COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_tob.d~ USING ~c#brage/tra/%LANGUAGE%/JOINING.TRA~
+  COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_tob.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/JOINING.TRA~
 
 /* tob script */
 COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brag25.baf~
@@ -720,7 +725,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
          override_ToB = "C#Brag25"
          dialog_ToB = "C#Brag25"
          cre_ToB = "C#BrageT"
-         traFile = "C#Brage/tra/%LANGUAGE%/fatesp.tra"
+         traFile = "C#Brage/tra/autotra/%LANGUAGE%/fatesp.tra"
          string = "@0"
          stringPosDV = "Baeloth"
   END
@@ -890,7 +895,7 @@ END //babysitting quest
 ACTION_IF FILE_EXISTS_IN_GAME ~C#Q04004.dlg~ THEN BEGIN 
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_nashkelmonster.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_nashkelmonster.baf~ EVALUATE_BUFFER
-USING ~c#brage/tra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
+USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
 
 
   /* more content for bgqe v21 and higher */
@@ -921,7 +926,7 @@ END //Warm place for Noober
 
 ACTION_IF (MOD_IS_INSTALLED ~transitions/setup-transitions.tp2~ ~0~) THEN BEGIN
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_transitions.d~
-	USING ~c#brage/tra/%LANGUAGE%/sod.tra~
+	USING ~c#brage/tra/autotra/%LANGUAGE%/sod.tra~
   EXTEND_TOP ~c#brage1.bcs~ ~c#brage/crossmod/brage_transitions.baf~
     EVALUATE_BUFFER /* Ajantis should not remain dead in case he was upon transition */
   EXTEND_TOP ~#L_CUT09.bcs~ ~c#brage/crossmod/brage_transitions_eet.baf~ 

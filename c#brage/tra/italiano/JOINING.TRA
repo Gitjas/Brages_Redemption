@@ -1,0 +1,47 @@
+@0    = ~Brage, <CHARNAME> è qui. Volevi chiedere qualcosa a <PRO_HIMHER>?~
+@1    = ~Io... beh, non intendo disturbarti, <CHARNAME>. Era solo un'idea e...~
+@2    = ~Brage?...~
+@3    = ~Beh, sì, ti sarei grato se venissi a parlare con me, <CHARNAME>.~
+@4    = ~*sorride* Ora, non è stato così difficile, vero? - <CHARNAME>, per favore parla con Brage. Ha qualcosa da dirti.~
+@5    = ~<CHARNAME>, ti ringrazio per aver parlato con me. Mi hai salvato e te ne sono grato. Non ho più niente da darti come ricompensa, perché è andato tutto alle famiglie che ho ferito... Ma desidero mostrarti la mia gratitudine.~
+@6    = ~Mi hai portato la mia spada e mi hai aiutato a capire che dovevo uscire e farci del bene aiutando e proteggendo le persone. Se ho imparato qualcosa, è che non dovrei combattere da solo... E che non dovrei più essere io a comandare.~
+@7    = ~Ho sentito che sei alla ricerca di ciò che affligge queste terre in questi tempi difficili. Posso... posso unirmi alla tua causa? La mia spada sarebbe tua. È tutto ciò che posso offrire, ma sono ancora un abile combattente.~
+@8    = ~L'unica richiesta è che eliminiamo il male nelle miniere, per il bene della città, ma anche perché sembra essere collegato all'aspetto di quella spada maledetta.~
+@9    = ~Sì, sembra fantastico. Andiamo, allora.~
+@10   = ~Non ho bisogno di te al momento.~
+@11   = ~Questo... è meraviglioso! Un uomo distrutto ti ringrazia, <CHARNAME>. Mi renderò utile... qualunque cosa tu dica. Fammi raccogliere le poche cose che ancora chiamo mie. Ci vediamo fuori.~
+@12   = ~Sacerdote Nalin, ti ringrazio profondamente per la misericordia che mi hai concesso. Non lo dimenticherò.~
+@13   = ~Spero che troverai pace e libertà, Brage. Helm sia con te. Ricorda che qui sarai sempre il benvenuto.~
+@14   = ~Naturalmente, era solo una debole speranza. Il destino non mi lascerà andare facilmente a quanto pare. Non merito nient'altro. Per ora resterò qui, a espiare i miei peccati, finché non avrò il coraggio di andare per conto mio. Addio.~
+@15   = ~Sento che la forza sta tornando in me, <CHARNAME>. Se c'è qualcosa che posso fare per te, fammelo sapere.~
+@16   = ~Avrei bisogno della tua spada adesso, Brage. Unisciti a me, come hai richiesto.~
+@17   = ~Addio.~
+@18   = ~Eccomi qui, pronto a partire... per quanto possa esserlo. Ti ringrazio per questa opportunità.~
+@19   = ~Vuoi che aspetti?~
+@20   = ~Sì, per favore aspetta qui. Tornerò da te.~
+@21   = ~In realtà, ho bisogno che ci separiamo, almeno per ora.~
+@22   = ~No, ho cambiato idea. Per favore, vieni.~
+@23   = ~Come desideri. Io sarò qui.~
+@24   = ~Capisco. Tornerò a Nashkel. Mi troverai nel tempio di Helm.~
+@25   = ~Con piacere.~
+@26   = ~Rieccoti, <CHARNAME>. Vuoi che uniamo di nuovo le nostre forze?~
+@27   = ~Sì, andiamo.~
+@28   = ~No, non ancora.~
+@29   = ~<CHARNAME>, hai dato a Brage molto su cui riflettere. Sono sicuro che sarà pronto a parlarti di nuovo, ma in questo momento, concedigli un momento di solitudine per schiarirsi i pensieri e la mente.~
+
+
+/* new for v5 */
+@30   = ~Please go back to the camp.~
+@31   = ~As you wish. I will meet you at the camp.~
+@32   = ~As you wish. I will wait in front of the Palace.~ 
+@33   = ~<CHARNAME>!~
+@34   = ~I would have questions for Halbazzar Drin - but there is no chance in posing them now, in this chaos and confusion!~
+@35   = ~They call you the hero of Baldur's Gate, there are rumors about you joining the coalition against the crusade. Would you need another sword arm?~
+@36   = ~I'd rather help these poor people by fighting the crusade than waste any more time here. Plus, I fear I can do nothing with regard to my investigation before the city will come to rest.~
+@37   = ~Please be ready. I'll be back for you.~
+@38   = ~My investigations concerning the cursed sword let me return to Baldur's Gate. And what turmoil I see the city in!~
+@39   = ~My investigations concerning the cursed sword let me all the way up to Waterdeep and back to Baldur's Gate, but the crusade of this Caelar let me come here for now.~
+@40   = ~I'm so not part of this coalition, but yes, I'd like you to join me.~
+@41   = ~Oh? Well, I am sure we will do a lot of good, nontheless.~
+@42   = ~As you wish. I will wait.~
+@43   = ~I will have your back, <CHARNAME>.~

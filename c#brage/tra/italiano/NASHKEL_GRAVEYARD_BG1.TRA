@@ -1,0 +1,63 @@
+@0    = ~<CHARNAME>, quando mi sono unito alla tua causa, volevo lasciare Nashkel il più velocemente possibile. Volevo allontanarmi dai ricordi... dal dolore che provocano e dagli sguardi della gente della città - ma anche dalla mia colpa.~
+@1    = ~Io... non ero al loro funerale, <CHARNAME>. Mia moglie e le mie figlie sono state sepolte mentre ero ancora "disperso", vagando per le terre  sotto l'influenza di quella spada maledetta. Per favore, se saremo di nuovo vicino a Nashkel, mi piacerebbe passare dal cimitero. Solo per vedere la tomba... solo per vedere la tomba una sola volta. Questo sarebbe il mio massimo desiderio.~
+@2    = ~Brage vuole visitare la tomba di famiglia a Nashkel
+ 
+Brage ha chiesto una visita alla tomba della sua famiglia a Nashkel. Non è sembrato troppo insistente, ma se il nostro cammino ci portasse al cimitero di Nashkel nel prossimo futuro, penso che lo apprezzerebbe molto.~
+@3    = ~Nashkel! Per favore, <CHARNAME>, lascia che il nostro percorso attraversi il cimitero.~
+@4    = ~Non devi trascinarci in una visita così personale, Brage. Vai pure avanti, ci vediamo più tardi.~
+@5    = ~Certamente, Brage. Ci andremo subito.~
+@6    = ~Sì, ma prima devo fare qualcos'altro. Andremo lì se ne avremo la possibilità, Brage.~
+@7    = ~Non ho la tempra per aspettare accanto a quelle lapidi. Vai pure da solo.~
+@8    = ~Ti ringrazio.~
+@9    = ~Con piacere. Mi troverai all'interno del tempio.~
+@10   = ~Brage vuole visitare la tomba di famiglia a Nashkel
+ 
+Brage è andato al cimitero. Ha detto che dopo potrò trovarlo all'interno del Tempio di Helm.~
+@11   = ~Eccoci qui... dopo tutto il tempo che è passato.~
+@12   = ~Brage? Ehi, quello è Brage! Laggiù!~
+@13   = ~Cosa ci fa *lui* qui?~
+@14   = ~Beh, anche la sua famiglia è qui...~
+@15   = ~Uno penserebbe che mostrasse un po' di rispetto e stesse lontano dalle tombe che ha aiutato a riempire! Per quale motivo vieni qui e turbi il nostro lutto, assassino?!~
+@16   = ~Brava donna... Non nego quello che hanno fatto le mie mani, ma non chiamarmi assassino.~
+@17   = ~Effettivamente. Brage non è colpevole di ciò che quella spada gli ha fatto fare.~
+@18   = ~Qualcuno è in cerca di guai?~
+@19   = ~*Non dire nulla*~
+@20   = ~Uh, ti sei portato una guardia del corpo, eh?~
+@21   = ~Quella "spada maledetta" è ancora la tua debole scusa per quello che hai fatto?~
+@22   = ~Andiamo, tutti sanno che era una spada maledetta. Il prete Nalin lo ha confermato e tutto il resto.~
+@23   = ~Non sei il benvenuto qui, Brage.~
+@24   = ~Brave persone... vi prego. La mia amata famiglia è sepolta qui...~
+@25   = ~Macellata da te proprio come il nostro Tamien. Non osare avvicinarti alla tomba del nostro Tamien, assassino!~
+@26   = ~Andiamo, lascia in pace quell'uomo. Ha avuto un processo equo e tutto il resto.~
+@27   = ~Processo equo, come no! E questo ha forse riportato in vita il mio Tamien?~
+@28   = ~Andiamo, non dovresti arrabbiarti così tanto, Marlene. Andiamo.~
+@29   = ~Io... non sono arrivato alla tomba, <CHARNAME>. C'erano delle persone lì... Mi hanno accusato di essere un assassino, di non appartenere a questo posto.~
+@30   = ~Tutto quell'odio... Ma hanno ragione. Non dovrei infangare le tombe di coloro che ho ucciso venendo qui. Io... visiterò le tombe un'altra volta. Più avanti, quando sarà passato più tempo...~
+@31   = ~Brage, no. C'erano altrettante voci che erano a tuo favore. Non le hai notate?~
+@32   = ~Sono sicuro che quelle persone non parlavano a nome di Nashkel, Brage. Sono solo le più rumorose, come sempre.~
+@33   = ~È la tomba della tua famiglia, hai il diritto di essere qui, Brage.~
+@34   = ~Cosa sei, un sacco da allenamento per persone ingiuste? Lascia che si lamentino quanto vogliono.~
+@35   = ~Beh, quella era la tua unica possibilità, Brage. Non abbiamo più tempo per indugiare, comunque.~
+@36   = ~Apprezzo le tue gentili parole, ma...~
+@37   = ~*Stringe i denti.* Andiamo. Non c'è niente per me, qui.~
+@38   = ~Brage! Brage, sei tu?~
+@39   = ~Per la misericordia degli dèi! Avrà mai fine?~
+@40   = ~... Hannah? Per favore, non anche tu. Sono profondamente addolorato, Hannah. Non li ho uccisi di mia spontanea volontà. Mi redimerò. Te lo giuro, lo farò!~
+@41   = ~So che non l'hai fatto apposta, Brage. Lo sanno tutti. Alcuni sono così arrabbiati. Non capiscono perché è successo e hanno bisogno di qualcuno da incolpare. Hanno perso una persona cara e, in alcuni casi, anche il loro unico capofamiglia. Non è stata colpa tua, ma è successo.~
+@42   = ~Io... mi pongo le stesse domande. Mi sento in colpa, Hannah.~
+@43   = ~Lo so che lo fai. Ma non devi nasconderti, Brage. Hai degli amici qui che ti accoglieranno ancora, lo sai. Betty era felice con te, ed è stata fortunata ad averti. Sì, fortunata! Non obiettare, Brage, sei un brav'uomo. E lei lo sapeva. Sono sicura che ti perdonerebbe per quello che è successo.~
+@44   = ~Hannah, io... ti ringrazio. Grazie davvero!~
+@45   = ~Addio, Brage. Possano gli dèi vegliare su di te.~
+@46   = ~Quella era Hannah, la nostra vicina e la migliore amica di mia moglie. A sentire quelle parole da lei... mi sento come se mia moglie mi avesse parlato...~
+@47   = ~Ho cambiato idea. Ho bisogno di vedere quella tomba adesso. Per stare vicino a mia moglie, solo per un momento... Non ci vorrà molto, <CHARNAME>. Tornerò in un istante.~
+@48   = ~*espira* Eccomi qui. È... è una bella lapide. E qualcuno ha piantato dei papaveri... Scusami, ho qualcosa negli occhi...~
+@49   = ~Ti ringrazio per avermi portato qui, <CHARNAME>. È stato... diverso da quello che mi aspettavo. Ma è stato bello venire qui. Che giornata! Mi sento come se fossi stato maledetto e benedetto allo stesso tempo.~
+@50   = ~Brage vuole visitare la tomba di famiglia a Nashkel
+ 
+La visita di Brage alla tomba della sua famiglia è stata oscurata dalla gente di città che lo incolpa ancora per gli omicidi, ma c'erano anche amici che lo sostengono. Penso che abbia trovato un po' di pace qui oggi.~
+@51   = ~Quello che ha detto Hannah mi ha fatto pensare... Ho giurato che avrei sostenuto le famiglie che ho ferito, e l'ho fatto con quello che avevo. La mia casa non è più la mia casa e non ho più oro oltre a quello di cui potrei aver bisogno per la vita quotidiana. Sono andato in missione per assicurare alla giustizia coloro che l'hanno fatto. E ho pensato... ho pensato che questo avrebbe aiutato le persone. Ma mi è sfuggito il fatto che per quanto nobile possa essere, non li aiuta con i loro bisogni quotidiani...~
+@52   = ~Ero pieno di me stesso, di nuovo?! Mi aspettavo il loro apprezzamento, la loro... gratitudine? Devo imparare a convivere con il fatto che questo potrebbe non accadere mai e rimanere concentrato sul mio cammino di ricerca della redenzione. Non odierò me stesso e non accuserò gli dèi. Mi rifarò sui nostri nemici, perché questo è l'unico modo ragionevole.~
+@53   = ~Perseguirò e consegnerò alla giustizia coloro che hanno causato tutto questo o simili atti di malvagità. E cercherò di provvedere a coloro che hanno subito la perdita di una persona cara, o di un capofamiglia, a causa dei miei crimini, senza aspettarmi il loro perdono.~
+@54   = ~Ti ringrazio, <CHARNAME>, per il percorso chiaro che mi hai aiutato a trovare. Piangerò sempre la perdita della mia amata e delle nostre figlie e mi sentirò sempre in colpa per quello che ho fatto. Ma saranno la mia motivazione per cercare la redenzione, dagli dèi e dalle persone che ho ferito.~
+@55   = ~Brage vuole visitare la tomba di famiglia a Nashkel~
+

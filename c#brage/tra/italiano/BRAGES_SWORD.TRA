@@ -1,0 +1,241 @@
+@0    = ~Saremo anche una guarnigione senza un Comandante ma non abbiamo perso la nostra abilità nel difendere questa città!~
+@1    = ~Wow, impressionante. *Sapevamo* che il nostro Comandante non era impazzito! Quel pover'uomo avrà molto da affrontare ora. Non vorrei continuare a vivere, sapendo di aver massacrato la mia famiglia! Tuttavia, grazie per aver raccolto le prove. Non dovrebbe essere ricordato come un pazzo assassino.~
+@2    = ~Wow, non avrei mai pensato che Brage avesse davvero perso la testa. Immagino che sarà ricordato come un pazzo assassino.~
+@3    = ~Mi dispiace per averti urlato contro. È solo a causa del nostro Comandante. Se non lo avessimo lasciato andare in quella missione da solo... Ma ha insistito, perché doveva essere solo un cadavere. Ma quando finalmente siamo arrivati, abbiamo trovato solo una carovana distrutta e la vecchia spada del Comandante abbandonata, quindi abbiamo pensato che fosse nei guai. E poi siamo tornati qui e... abbiamo trovato la sua famiglia e... Non dirai al nostro tenente delle mie urla, vero? Nessun rancore, eh?~
+@4    = ~Sei ricercato per omicidio, Comandante Brage. Sono qui per assicurarti alla tua legittima giustizia. Accompagnami presso le autorità di Nashkel, per ricevere il tuo giudizio finale.~
+@5    = ~Sono davanti a te con la mia colpa. Ho preso molte vite... e non so il perché. Concedimi la tua giustizia, sono pronto a ricevere l'unica vera punizione che ho portato su di me con le mie azioni malvagie.~
+@6    = ~Brage, cosa è successo quella notte?~
+@7    = ~Addio.~
+@8    = ~Le chiacchiere non hanno fornito dettagli a sufficienza? Non l'hai sentito dire in caserma, nelle locande, non ti ha detto Oublek cosa ho fatto con queste mani? Perché vuoi che ti dica come ho massacrato la mia famiglia, la mia cara moglie e le mie figlie... I miei compagni, che erano venuti in mio soccorso! Come ho massacrato e distrutto un'intera carovana, con persone innocenti che erano a malapena riuscite a evitare i banditi lungo la strada? Ho persino... ho persino fatto a pezzi un uomo già morto finché non è rimasto più nulla...~
+@9    = ~Non ti stai chiedendo cosa ti ha spinto a farlo? Non ti è venuto il sospetto che potrebbe esserci qualcosa sotto il tuo perdere il controllo?~
+@10   = ~Ehm, intendevo dire *prima* di quello.~
+@11   = ~Qualcosa ti ha fatto impazzire. Cosa ricordi di quello che è successo prima?~
+@12   = ~Ah, no, davvero, non ho bisogno di sentirlo di nuovo. Sei un assassino e sei fortunato che il tempio ti abbia accolto!~
+@13   = ~Non credo di volerlo più sentire.~
+@14   = ~Non perdete tempo con me, amici. Non valgo un secondo di respiro, se non per maledirmi per quello che ho fatto.~
+@15   = ~Prima? Non è successo niente di speciale prima. Un ubriaco ha denunciato un cadavere sulla strada. Ha detto che sembrava un mercante, con ancora tutte le merci addosso. Io… la cosa mi ha incuriosito e sono andato ad indagare. Se il cadavere non fosse stato davvero saccheggiato, allora non avrebbe potuto essere stato ucciso dai banditi. E se era il mercante che stavamo aspettando, dovevo almeno assicurarmi che la merce fosse al sicuro. Ho ordinato una nuova spada tempo fa. Sai, la crisi di ferro e tutto il resto, ho aspettato a lungo una spada affidabile dalla lontana Waterdeep.~
+@16   = ~E in effetti, era il mercante che stavamo aspettando. Ho controllato la merce e ho trovato una spada, indirizzata a me. L'ho presa...~
+@17   = ~Il resto è sfocato. Ricordo di aver fatto quello che ho fatto, ma il perché... perché non lo so.~
+@18   = ~Beh, sappiamo già che la spada era maledetta.~
+@19   = ~Beh, c'era qualcosa che non andava in quella spada, questo è certo.~
+@20   = ~Non ricordi nient'altro? Niente di speciale? Qualche indizio su cosa fosse successo a quel commerciante?~
+@21   = ~Hai detto che la merce era ancora su di lui. Cosa lo ha ucciso allora?~
+@22   = ~Non credo che questo porti da nessuna parte. Addio.~
+@23   = ~Ascolta, se anche tu ricordassi di aver fatto tutte queste cose... Vedere la paura negli occhi di coloro che ami, sentire le loro urla mentre li massacri! Non c'è dubbio che abbia *fatto* tutto questo, e ricordo tutto... chiaramente...~
+@24   = ~Maledetta dici... Non cambia gli orribili ricordi nella mia testa, né le azioni che ho compiuto.~
+@25   = ~Sì, io che brandivo quella spada era l'unica cosa che non andava!~
+@26   = ~Con tutte le attività dei banditi, trovare un cadavere non è niente di speciale al giorno d'oggi, sfortunatamente. Ma vedere il carretto ancora pieno di merce... Era davvero insolito. Per prima cosa ho pensato che fosse un attacco di animali. Ma è stata una lama a farlo. Questo mercante è stato ucciso dai banditi, ma hanno lasciato la sua merce intatta.~
+@27   = ~Beh, anche se c'erano, ora non più. La prima cosa che ho fatto dopo aver raccolto la spada è stata distruggere tutto ciò che si trovava su quella strada... Questo, amico mio, è tutto quello che posso dirti.~
+		~Beh, anche se c'erano, ora non più. La prima cosa che ho fatto dopo aver raccolto la spada è stata distruggere tutto ciò che si trovava su quella strada... Questo, amica mia, è tutto quello che posso dirti.~
+@28   = ~Per favore, lasciami stare. Ho bisogno di pentirmi per i miei peccati.~
+@29   = ~Non sprecare il tuo tempo su questo. La forca è ciò che mi sta aspettando, e non ci sarebbe posto migliore per un assassino come me.~
+@30   = ~Ti ringrazio, per aver creduto in me, <CHARNAME>. Ora vedo che è la punizione giusta: vivere con tutto il sangue sulle mie mani. Espierò le mie azioni. Molte sono le famiglie che hanno perso un padre... o una persona cara a causa delle mie azioni, e farò in modo che tutte ottengano almeno piccole quantità d'oro... quanto più possa raccoglierne. Nalin mi ha offerto un posto qui nel tempio, quindi rimarrò qui - per ora.~
+@31   = ~Ho a cuore la possibilità di lavorare per l'espiazione, ringrazio gli dèi per questa misericordia che mi hanno mostrato. E tu, <CHARNAME>. Possa il tuo percorso essere pacifico.~
+@32   = ~Lavorerò sodo per questo, e non dimenticherò mai lo sforzo che hai fatto per darmi questa possibilità.~
+@33   = ~Brage, ho trovato la spada che avresti dovuto ricevere. È una spada a due mani molto bella. Prendila, è tua.~
+@34   = ~Brage. Questa spada è tua, l'hai pagata. Prendila!~
+@35   = ~Brage. La spada è tua e voglio che tu la riprenda.~
+@36   = ~Cosa-? No. No, non prenderò mai più una spada tra le mani. Tienila pure tu,  <CHARNAME>. Ti sarà molto più utile che a me.~
+@37   = ~Non farmi vergognare, <CHARNAME>. Sicuramente capisci perché non posso più impugnare di nuovo una spada?! Vendila, se non ne hai bisogno. Io non la toccherò.~
+@38   = ~Ma... perché? Perché insisti su questo? Non è chiaro che non vorrò mai più impugnare una spada?~
+@39   = ~Hai detto che volevi guadagnare più oro possibile per pagare le vedove e gli orfani. Beh, combattere e proteggere le persone è tutto ciò che hai imparato, Brage. Immagino che pulire il tempio sia un compito molto importante, ma non credi che potresti raccogliere più oro lavorando come mercenario? O come guardia personale, se ti va meglio.~
+@40   = ~Bene, allora vendila, se non vuoi tenerla. Tuttavia, è tua.~
+@41   = ~Beh... Ci sono ancora molti banditi là fuori, vero? Potrei... Potrei proteggere i deboli sulla strada...~
+@42   = ~No, non la venderò. Non trarrò profitto da quella spada. La metto nelle tue mani, <CHARNAME>, perché lì sarà più utile.~
+@43   = ~Bene, se questo è il tuo ultimo desiderio, allora ti ringrazio.~
+/* non modificare la riga 44, deve essere la stessa di bgqe */
+@44   = ~È un pensiero intrigante, ma non ho la fiducia in me stesso e la confidenza per farlo in questo momento. Io... prenderò la spada. Helm dammi la forza! So che le tue parole sono vere, ma io sono... non sono pronto per affrontarlo in questo momento. Resterò qui e farò tutto ciò che posso... per ora.~
+@45   = ~Ti ringrazio, <CHARNAME>.~
+@46   = ~Quindi hai portato Brage vivo. Non m'importa delle lacrime che gli altri versano per questo "Comandante". Tutto questo parlare dell'onore e della rettitudine di Brage e dei sospetti che sia stato plagiato da qualche magia oscura!~
+@47   = ~La sentenza per questo assassino sarà facile e veloce, considerando che tutto punta alla sua colpa. È quasi un peccato che il processo di Brage debba aspettare un po', con la guardia così diradata e impegnata al momento. Beh, non importa, in questo modo quell'assassino avrà un più di tempo per "prepararsi" per il suo ultimo giorno!~
+@48   = ~Ah, ma perché l'hai lasciato nascondere nel tempio?!~
+@49   = ~Il sacerdote Nalin ha già confermato che non fosse sotto l'effetto di alcun incantesimo quando lo hai consegnato. Brage ha detto che ti ha dato la sua spada - Devo chiederti, per favore, di andare da Nalin e fargli confermare che non ci sia niente di strano in essa, così che queste chiacchiere sulla presunta innocenza di Brage possano finalmente finire. Voglio dire, cos'altro deve fare un uomo per dimostrare di essere un assassino, più del massacro che Brage ha commesso sulla sua stessa famiglia e sui suoi compagni?!~
+@50   = ~Ah, <CHARNAME>. Ho già sentito le notizie sui tuoi sforzi per dimostrare l'innocenza di Brage e ti sosterrò in ogni modo possibile. Fammi dare un'occhiata a quella spada.~
+@51   = ~*Mostra la spada giusta* Eccola.~
+@52   = ~Non ce l'ho con me.~
+@53   = ~Beh... ho la spada giusta e non ho alcun dubbio che ci sia qualcosa di molto sbagliato in essa. Ma perché dovrei mostrartela? Perché dovrei mostrarla a qualcuno? Cosa ci guadagno io?~
+@54   = ~*Mostra una spada a due mani diversa* Eccola.~
+@55   = ~Non adesso, prima ho bisogno dei tuoi servizi.~
+@56   = ~Per favore, portamela. Abbiamo tutti bisogno di sapere la verità.~
+@57   = ~Questa sarebbe la lama?~
+@58   = ~Oh, quanto sono maldestro! No non lo è. Questa qui è la spada. *Mostra la spada giusta.*~
+	~Oh, quanto sono maldestra! No non lo è. Questa qui è la spada. *Mostra la spada giusta.*~
+@59   = ~*Mostra ancora un'altra spada.* Assolutamente. Questa è la spada che Brage brandiva, e voglio che il tuo giudizio sia basato su questo.~
+@60   = ~Perché non rimandiamo tutto questo a un'altra volta? Addio.~
+@61   = ~Tu... razza di avvoltoio! È oro quello che vuoi? Stiamo parlando di prevenire la morte di un uomo d'onore e stai cercando di ricavarne qualcosa? Beh, immagino che ci siano persone che lavorano solo per l'oro. Ottimo. Raccogli le prove che Brage è innocente e ti pagherò altre 400 monete d'oro. 200 ora, 200 quando la sua innocenza sarà provata. Che ne dici?~
+@62   = ~*Mostra la spada giusta.* Sali ancora un pochino e ci sto.~
+@63   = ~*Mostra la spada giusta.* Suona bene. Ci sto.~
+@64   = ~Ci penserò.~
+@65   = ~Mmpf. E 500 monete d'oro siano, allora!~
+@66   = ~Ah, <CHARNAME>. Hai dimostrato l'innocenza di Brage e abbiamo concordato il pagamento. Rispettare i contratti è compito del clero di Helm.~
+@67   = ~Ecco le 200 monete d'oro mancanti. Possa Helm guidarti sempre.~
+@68   = ~Ecco le 250 monete d'oro mancanti. Possa Helm guidarti sempre.~
+@69   = ~... Questa è maledetta.~
+@70   = ~Una spada maledetta, Brage. Questo è ciò che è stato messo nelle tue mani fiduciose.~
+@71   = ~Ma... maledetta? Allora era un male diverso, quello che ha portato le mie mani e i miei pensieri verso il massacro? Ah, non suscitare una tale flebile speranza nel cuore di un guerriero caduto. Non con tutto il sangue sulle mie mani.~
+@72   = ~'Flebile'?!~
+@73   = ~Questo, amico mio, cambia * tutto *. Non sono stati i tuoi lunghi anni di combattimenti a renderti crudele e insensibile al dolore degli altri. Dovrai espiare ciò che è stato fatto, ma non il motivo per cui l'hai fatto. Non se <CHARNAME> riuscirà a dimostrare l'inganno!~
+@74   = ~Una spada maledetta è stata messa nelle mani fiduciose del Comandante Brage. Questo, amico mio, cambia tutto. Non sono stati lunghi anni di combattimenti che hanno reso un brav'uomo crudele e insensibile contro il dolore degli altri. Brage dovrà espiare ciò che ha fatto, ma non il motivo per cui l'ha fatto. Non se riesci a dimostrare l'inganno!~
+@75   = ~Beh... devo crederti sulla parola. Brage non ricorda la lama che stava brandendo e l'ha data a te, quindi...~
+@76   = ~*sospira* No, non c'è niente di speciale in questa lama. È una spada normale...~
+@77   = ~Devi fartene una ragione, chierico. Stai dando rifugio a un assassino. Se solo sapessi perché l'ho fatto...~
+@78   = ~Hai un posto qui nel tempio, ed è giusto che sia così. Espierai i tuoi crimini, Brage. Helm ti darà la forza per farlo.~
+@79   = ~Non c'è niente da aggiungere. È una spada normale e Brage è colpevole dei suoi crimini. Lo confermerò quando arriverà il processo.~
+@80   = ~Saluti. Ci siamo già conosciuti. Sono Laryssa, la cugina di Brage. Sei riuscito a prenderlo vivo - te ne sono così grata. L'ultima volta che ci siamo incontrati sono scappata, perché mi aspettavo che mio cugino venisse ucciso da te, o che lui ti uccidesse, e non volevo prendere parte a niente di tutto ciò.~
+		~Saluti. Ci siamo già conosciuti. Sono Laryssa, la cugina di Brage. Sei riuscita a prenderlo vivo - te ne sono così grata. L'ultima volta che ci siamo incontrati sono scappata, perché mi aspettavo che mio cugino venisse ucciso da te, o che lui ti uccidesse, e non volevo prendere parte a niente di tutto ciò.~
+@81   = ~Capisco... perché tu lo abbia consegnato alle autorità.~
+@82   = ~Io... ti ringrazio molto per averlo portato sotto la protezione del tempio e non averlo consegnato alle autorità.~
+@83   = ~Ha compiuto tutte quelle uccisioni, e per questo meriterebbe di essere impiccato. Ma la sua mente era offuscata. Se c'è qualcosa che so, è che era completamente fuori di testa. Il Brage che conosco è un uomo gentile, sincero e leale. Non alzerebbe mai un'arma contro deboli o innocenti. E soprattutto, non contro la sua stessa famiglia.~
+@84   = ~Sembra che non ci sia nulla che possa essere fatto per liberarlo ufficialmente dalla sua colpa. Ti ringrazio per i tuoi sforzi, però, e per la seconda possibilità che gli hai concesso. Che gli dèi ti benedicano.~
+@85   = ~Sembra che non ci sia nulla che possa essere fatto per salvarlo. Ti ringrazio per i tuoi sforzi, però. Che gli dèi ti benedicano.~
+@86   = ~Seguo le tue indagini con grande interesse, <CHARNAME>. Ho ritrovato la speranza per mio cugino. Che gli dèi ti benedicano.~
+@87   = ~Il che ci porta al motivo per cui sono qui. Ho notato che hai mostrato un certo... interesse nel provare l'innocenza di Brage. Puoi immaginare che questo sia anche il mio interesse. Ho fatto un po' di indagini e in effetti ho trovato qualcosa. Ho localizzato l'ubriaco che ha riferito di un cadavere non derubato per le strade e che ha dato inizio a tutto il calvario, e attraverso di lui ho identificato altri che erano in viaggio quella notte. Sembra che per le strade ci fosse un commerciante, uno con una reputazione molto losca.~
+@88   = ~Abbiamo trovato questa lettera su un falso mercante che afferma chiaramente che la spada ordinata da Brage è stata sostituita con una maledetta.~
+@89   = ~Abbiamo trovato questa lettera sui banditi nelle miniere. Afferma chiaramente che è stato pianificato di indebolire la Guarnigione di Nashkel attraverso l'inganno perpetrato tramite la spada di Brage.~
+@90   = ~Riguardo Brage...~
+@91   = ~Sì, che cosa?~
+@92   = ~Brage è in prigione, come sai. Sto indagando su cosa è successo e vorrei fargli alcune domande. Posso parlare con lui?~
+@93   = ~Il sacerdote Nalin del Tempio di Helm conferma la supposizione che la spada sia stata maledetta.~
+@94   = ~Niente, addio.~
+@95   = ~Beh, la guarnigione è stata senz'altro indebolita. E sì, la nuova spada di Brage ha avuto un impatto anche su questo - il modo in cui l'ha usata. Questo non prova che Brage non sia l'assassino che sembra essere, se questa era la tua intenzione.~
+@96   = ~Mmm, quindi la spada con cui Brage ha commesso i suoi crimini *è stata* maledetta, a quanto pare.~
+@97   = ~Tuttavia, questo non prova che il "Comandante" non abbia ordinato questa spada volontariamente - per fare il male che aveva intenzione di fare!~
+@98   = ~Mmm, sì, questo dimostra che era *pianificato* scambiare la spada di Brage con una maledetta.~
+@99   = ~Ma non prova che *fosse* una lama maledetta con cui il maledetto Brage ha iniziato a massacrare innocenti e i suoi compagni!~
+@100  = ~Questo significa che c'è la prova che Brage aveva una spada maledetta *e* è stato indotto a prenderla con l'inganno. Ne parlerò con il sindaco Gahstkill, anche se mi fa male il cuore che un assassino del genere possa liberarsi. Ottimo. Potrebbe benissimo essere che la prossima volta che verrai qui ci sarà un processo.~
+@101  = ~Oh, una spada maledetta adesso, vero? Sì, definirei una lama usata per uccidere innocenti tanto quanto questa "maledetta". Se ti riferisci alla stregoneria, beh, che peccato che non *abbiamo* né Brage né quella spada qui per provare qualcosa, non è vero?~
+@102  = ~Mmpf. Immagino che non ci sia motivo per impedirtelo. Ma ti avverto, non pensare di fare qualcosa di stupido. E - scegli bene le tue domande, perché non ci sarà un'altra possibilità.~
+@103  = ~Cosa...~
+@104  = ~<CHARNAME> ha alcune domande per te, Brage. Raccontagli quello che è successo.~
+@105  = ~Ah, <CHARNAME>. Il sindaco Ghastkill è pronto a sostenere il processo contro l'assassino Brage.~
+@106  = ~Considerando le buone possibilità, Nalin ha accettato che il processo si tenga e che quel codardo di Brage esca dal tempio.~
+@107  = ~Dato che è stato tuo compito raccogliere le prove, sei il benvenuto. Seguimi.~
+@108  = ~Ah, <CHARNAME>. Hai fatto un buon lavoro raccogliendo le prove contro quell'assassino Brage. Abbiamo sentito tutti le voci su una spada maledetta. C'è qualcosa che non va, hanno detto. No, niente del genere. Brage non è altro che un semplice assassino, e la città non lo dimenticherà. Questo puzzolente codardo potrà anche nascondersi nel tempio, ma saremo pronti quando uscirà, te lo assicuro.~
+@109  = ~Comandante Brage, le accuse mosse contro di te sono serie. Sei accusato di aver ucciso la tua famiglia, cinque dei nostri soldati e i viaggiatori di una carovana. Cosa hai da dire a tua difesa?~
+@110  = ~Colpevole di tutte le accuse.~
+@111  = ~Beh, <CHARNAME> ha raccolto prove sulla tua colpevolezza. Oublek, potresti riassumere i risultati?~
+@112  = ~Sì. Come confermato dal sacerdote Nalin, la spada usata dall'accusato per le uccisioni è stata maledetta. Questa lettera qui indica che la spada maledetta è stata intenzionalmente posta nelle mani del Comandante Brage, per indebolire la guarnigione di Nashkel.~
+@113  = ~Io... non so cosa dire.~
+@114  = ~Allora lo dirò io per te, Brage. Sei scagionato dall'accusa di aver commesso un omicidio intenzionalmente e per tua libera volontà. La condanna a morte è ora decaduta.~
+@115  = ~No... no, dopo quello che ho fatto, non c'è modo di vivere con questo senso di colpa...~
+@116  = ~La seduta è tolta. Con il potere che mi è stato conferito, ti obbligo a ripagare per le vite che hai preso e il danno che hai causato. Vieni privato di tutti i tuoi titoli e congedato dalle forze dell'Amn. Puoi andare come uomo libero, Brage, anche se temo sia uno povero e distrutto. Mi dispiace molto per quello che è successo.~
+@117  = ~Sì. Come confermato dal sacerdote Nalin, la spada usata dall'accusato per le uccisioni non aveva nulla di particolare. Nessuna forza maligna ha guidato le mani di questo assassino!~
+@118  = ~*sospira* Quindi è confermato. Brage, con il potere che mi è stato conferito, ti condanno a morte per impiccagione. Mi dispiace molto per quello che è successo.~
+@119  = ~Io... ti ringrazio. Giustizia è stata fatta... La mia povera famiglia.~
+@120  = ~Sono impressionato dai tuoi sforzi per dimostrare l'innocenza del Comandante. Non solo lui, ma l'intera città ti è debitrice. I soldati sono molto meno agitati ora che sappiamo che era un intrigo, almeno. Questo non significa che non siamo in allerta, ovviamente. Nashkel ha molti nemici, a quanto pare.~
+@121  = ~Grazie per aver aiutato il nostro Comandante. *sospira* Che storia triste. Il mio cuore si appesantisce quando penso alla sua famiglia. La guarnigione ha perso cinque uomini a causa di questa sporca magia... No, sei in totale, se conti anche il Comandante Brage!~
+@122  = ~E tutto questo era collegato ai banditi che occupavano le nostre miniere?!~
+@123  = ~Un intrigo per indebolire la nostra guarnigione! Incredibile!~
+@124  = ~Le autorità devono conoscere questi avvenimenti. Mi piacerebbe molto aiutarti a trovare i colpevoli dietro questo piano, ma non posso lasciare il mio posto - e neanche un soldato di Nashkel che indaghi sulla Costa della Spada sarebbe una buona idea. Non mi resta che augurarti buona fortuna nel rintracciare chi ci sia dietro a tutto questo.~
+@125  = ~Strane pozioni, eh? Vedi, sto cercando un contatto di un criminale e assassino - un "mercante abbastanza disperato" da comprare "pozioni speciali". Pensi che questa descrizione ti si addica?~
+@126  = ~Stiamo cercando un mercante che offra oggetti e pozioni maledette. È stato visto l'ultima volta qui al carnevale. Le tue pozioni ci assomigliano moltissimo, quindi è meglio che inizi a parlare, e in fretta.~
+@127  = ~Ah, fallo e vedremo chi porteranno con loro le guardie! Vedi qui, sto cercando un contatto di un criminale e assassino - un "mercante abbastanza disperato" da comprare "pozioni speciali". Pensi che questa descrizione ti si addica?~
+@128  = ~Vedi qui, sto cercando un contatto di un criminale e assassino - un "mercante abbastanza disperato" da comprare "pozioni speciali". Pensi che questa descrizione ti si addica?~
+@129  = ~Cosa?! Come ti permetti... Ah, ma sono più saggio che provocare persone così pesantemente armate come te. Sì, ho comprato le pozioni da un mercante itinerante che conosco appena... ma questo non fa di *me* un criminale! Le mie pozioni non sono maledette, sono solo, beh, speciali. Non conosco quell'uomo, lo giuro!~
+@130  = ~Beh, l'unica cosa che posso dirti è che è andato alla tenda del loto nero l'ultima volta che è stato qui, ma non so se per suo piacere o per cercare altri acquirenti.~
+@131  = ~Se n'è andato di nuovo, però, ed è partito verso ovest - ho delle mie risorse, specialmente per una cosa così delicata come una relazione d'affari. Le mie "fonti" hanno perso le tracce da qualche parte a ovest della città.~
+@132  = ~Se mai dovesse ritornare, te lo dirò, te lo prometto! Ma per ora, per favore, lascia la mia tenda.~
+@133  = ~A meno che tu non voglia provare una delle mie pozioni molto speciali, ovviamente. Come ho già detto prima, la viola ti renderà molto, molto forte.~
+@134  = ~No, grazie. Addio.~
+@135  = ~Non lo vedo da parecchio tempo, però. Giuro che le pozioni che offro non sono maledette! Se mai dovesse tornare, te lo dirò, te lo prometto! Ma per ora, per favore, lascia la mia tenda.~
+@136  = ~Mmm, un losco mercante, nascosto nel bosco! Sto cercando un commerciante di oggetti maledetti. Saresti tu?!~
+@137  = ~Tu! Sei tu quello che ha venduto una spada maledetta al Comandante della guarnigione di Nashkel!~
+@138  = ~Di cosa mi accusi?! Bene, bene, sembra che tu non sia un acquirente, dopotutto. Sembra che tu sia un fornitore! Sì, ci sarà da ripulire quando avrò finito con te.~
+@139  = ~Ah, ti sei dimenato in giro abbastanza a lungo, ficcando il naso in troppe cose che non ti riguardano! Hai cercato di trovarmi interrogando i miei contatti d'affari, eh? Bene, congratulazioni! Mi hai trovato. La cosa brutta: non sono del tutto *inerme*, sai?~
+		~Ah, ti sei dimenata in giro abbastanza a lungo, ficcando il naso in troppe cose che non ti riguardano! Hai cercato di trovarmi interrogando i miei contatti d'affari, eh? Bene, congratulazioni! Mi hai trovato. La cosa brutta: non sono del tutto *inerme*, sai?~
+@140  = ~L'uomo ha dichiarato di aver comprato da questo commerciante solo perché lo aveva notato prima al Carnevale di Nashkel. Ma la pergamena che ha comprato era maledetta! Sapendo che anche la nuova spada di Brage fosse maledetta, questo mercante mi sembra parecchio interessante. Cercherò di seguire questo indizio. Ma potrebbe anche darsi che mi sbagli, quindi è meglio che continui con le tue indagini. Ti ringrazio a nome di Brage per il tuo aiuto.~
+@141  = ~... Mmm, non c'è niente... Sei sicuro che questa fosse la lama che Brage brandiva quando ha commesso i crimini di cui è accusato?~
+	~... Mmm, non c'è niente... Sei sicura che questa fosse la lama che Brage brandiva quando ha commesso i crimini di cui è accusato?~
+/* Imoen */
+@142  = ~Psst, <CHARNAME>, non mi piace questo gioco. Sai che Brage verrà impiccato se mostri una semplice spada, sì?~
+/* Ajantis */
+@143  = ~No, sacerdote Nalin. Non è quella giusta. <CHARNAME>, non giocheremo con la vita di un uomo.~
+/* Rasaad */
+@144  = ~No, sacerdote Nalin. Non è quella giusto. <CHARNAME>, non puoi giocare così con la vita di un uomo!~
+/* Dynaheir */
+@145  = ~È un brutto scherzo? Questa non è la spada giusta, sacerdote Nalin.~
+/* Minsc */
+@146  = ~Minsc è confuso. Questa non era la spada che il Comandante ha dato a <CHARNAME>, vero Boo?~
+/* Jaheira */
+@147  = ~Cosa? No! <CHARNAME>, non ti permetterò di mostrare la spada sbagliata.~
+/* Khalid */
+@148  = ~Sono s-sicuro che questa non sia la spada che B-Brage ha dato a <CHARNAME>, sacerdote Nalin.~
+/* Yeslick */
+@149  = ~Giovane, questo non è un gioco, sai. Questa non è la spada giusta.~
+/* Kivan */
+@150  = ~Ho unito le forze con te per fermare i banditi, non per comportarmi come tale. Questa non è la spada usata da Brage.~
+@151  = ~Ascolta, non mi importa il motivo, non ti farò vedere la spada di Brage. Smettila di chiedermelo.~
+@152  = ~Capisco. È un peccato, ma accetteremo la tua decisione.~
+ 
+ 
+ 
+// ------------------
+ 
+ 
+@1000 = ~La Colpa del Capitano Brage
+ 
+Il tenente Bardolan ha accennato alla scomparsa del Comandante della guarnigione di Nashkel. Le strade sono piene di questa storia, sembra che sia successo qualcosa di brutto.~
+@1001 = ~La Colpa del Capitano Brage
+ 
+Uno dei soldati dell'Amn mi ha detto che il suo Comandante Brage è andato in missione da solo la notte in cui è impazzito. La cosa interessante era che non aveva la sua vecchia spada quando ha iniziato i suoi omicidi.~
+@1002 = ~La Colpa del Capitano Brage
+ 
+Sfortunatamente, nulla di ciò che mi ha detto Brage dà un indizio su chi potrebbe aver avuto interesse a incastrarlo.~
+@1003 = ~La Colpa del Capitano Brage
+ 
+Brage mi ha detto qualcosa di interessante sulla notte in cui è impazzito. Sembra che un mercante sia stato ucciso per strada per mano dei banditi, ma le sue merci non sono state toccate. O i banditi sono stati disturbati dopo averlo ucciso o l'intera faccenda è stata una messa in scena - in ogni caso, sto cercando un assassino che ha fatto un brutto scherzo alle guardie dell'Amn. Sfortunatamente, nulla di ciò che mi ha detto Brage dà un indizio su dove iniziare a cercare chiunque sia il responsabile.~
+@1004 = ~La Colpa del Capitano Brage
+ 
+Ho portato Brage alla Guarnigione in modo che possa ricevere il suo legittimo giudizio. Ma qualcosa sembra non funzionare. Le persone che lo conoscono sono convinte che ci debba essere di più nel cambiamento di Brage di quanto non sembri, come se fosse sotto un incantesimo di qualche tipo. Oublek mi ha chiesto di lasciare che Nalin controlli la spada di Brage per "provare che non c'è niente di strano". Bene, c'è sicuramente qualcosa che non va con la spada di Brage. Brage è in prigione ora, in attesa del processo. Ho l'impressione che sia mia la decisione su come finirà il processo, considerando che tutto dipende dal fatto che io presenti la spada giusta a Nalin...~
+@1005 = ~La Colpa del Capitano Brage
+ 
+Sembra giustificato che io abbia portato Brage al tempio di Helm invece che verso morte certa alla guarnigione. Qualcosa sembra non funzionare con quello che è successo con lui. Le persone che lo conoscono sono convinte che ci debba essere di più nel cambiamento di Brage di quanto non sembri, come se fosse sotto un incantesimo di qualche tipo. Oublek mi ha chiesto di lasciare che Nalin controlli la spada di Brage per "provare che non c'è niente di strano". Bene, c'è sicuramente qualcosa che non va con la spada di Brage. Adesso Brage trova rifugio nel tempio. Ho l'impressione che sia una mia decisione se Brage avrà la possibilità di trovare la sua pace lì - considerando che tutto dipende dal fatto che io presenti la spada giusta a Nalin...~
+@1006 = ~La Colpa del Capitano Brage
+ 
+Nalin ha garantito che la spada è maledetta!~
+@1007 = ~La Colpa del Capitano Brage
+ 
+Nalin ha garantito che la spada fosse assolutamente normale. Beh, mostrare la spada sbagliata potrebbe aver contribuito... ma a volte la "giustizia" deve essere aiutata con una piccola spinta. Brage andrà alla forca, dopotutto.~
+@1008 = ~La Colpa del Capitano Brage
+ 
+Nalin ha garantito che la spada fosse assolutamente normale. Beh, mostrare la spada sbagliata potrebbe aver contribuito... ma a volte la 'giustizia' deve essere aiutata con una piccola spinta.~
+@1009 = ~La Colpa del Capitano Brage
+ 
+Laryssa, la cugina di Brage, ha menzionato che un commerciante che vende oggetti maledetti è stato visto al Carnevale di Nashkel. Forse potrei dare un'occhiata lì intorno per vedere se trovo qualcuno che lo abbia visto - o forse contatti di qualche tipo. Con la vendita di oggetti maledetti non riesco a immaginare che avrebbe tentato un'azione troppo audace vicino alla città con tutti i soldati, ma forse ha tentato la fortuna con uno dei mercanti al Carnevale.~
+@1010 = ~La Colpa del Capitano Brage
+ 
+Ho detto a Oublek che Nalin garantisce che la spada di Brage sia stata maledetta, ma non è sufficiente per provare la sua innocenza. Ho bisogno di una prova che questa spada gli sia stata consegnata a sua insaputa.~
+@1011 = ~La Colpa del Capitano Brage
+ 
+Oh, molto conveniente. Il mercante di oggetti maledetti mi ha teso un'imboscata al Carnevale di Nashkel. Dovrei perquisirlo a fondo per qualsiasi prova riguardante la storia di Brage.~
+@1012 = ~La Colpa del Capitano Brage
+ 
+Ho trovato il mercante di oggetti maledetti di cui parlava Laryssa. Dovrei perquisirlo a fondo per qualsiasi prova riguardante la storia di Brage.~
+@1013 = ~La Colpa del Capitano Brage
+ 
+La nota che esplicita chiaramente che la spada di Brage è stata scambiata con una maledetta e che è stato tutto organizzato perché la raccogliesse non è una prova sufficiente per convincere Oublek. Pensa ancora che non sia una prova che Brage non avrebbe fatto quello che ha fatto anche con una spada normale. Devo mostrare a Nalin la spada se voglio provare che Brage era sotto un malefico incantesimo.~
+@1014 = ~La Colpa del Capitano Brage
+ 
+Ho raccolto tutte le prove necessarie per dimostrare l'innocenza di Brage! La prossima volta che sarò a Nashkel potrò assistere al suo processo.~
+@1015 = ~La Colpa del Capitano Brage
+ 
+La nota che esplicita chiaramente che la spada di Brage è stata scambiata con una maledetta e che è stato tutto organizzato perché la raccogliesse non è una prova sufficiente per convincere Oublek. Pensa ancora che non sia una prova che Brage non avrebbe fatto quello che ha fatto con una spada normale. Solo l'ormai ex Comandante può rispondere a questa domanda, se verrà trovato.~
+@1016 = ~La Colpa del Capitano Brage
+ 
+Al mercante di oggetti maledetti piace visitare la tenda del Loto Nero al Carnevale di Nashkel. È stato visto l'ultima volta a ovest della città.~
+@1017 = ~La Colpa del Capitano Brage
+ 
+Al mercante di oggetti maledetti piace visitare la tenda del Loto Nero al Carnevale di Nashkel.~
+@1018 = ~La Colpa del Capitano Brage
+ 
+Le autorità di Nashkel credono che Brage sia l'assassino che sembra essere. Beh, mostrare la spada sbagliata potrebbe aver contribuito... ma a volte la "giustizia" deve essere aiutata con una piccola spinta. Non posso evitare che Brage trovi rifugio nel tempio a meno che non segua un sentiero molto sanguinoso, ma almeno non sarà redento agli occhi dei cittadini.~
+@1019 = ~La Colpa del Capitano Brage
+ 
+Brage è un uomo libero! Le autorità di Nashkel hanno accettato le prove che ho scoperto che hanno dimostrato come l'intero incidente con la spada maledetta di Brage fosse un intrigo. L'ex Comandante ora è un uomo libero, ma considerando quello che è successo, dubito che sarà mai più felice. Nalin gli ha offerto un posto dove stare, quindi se voglio rivedere Brage immagino che il tempio di Nashkel sia dove potrei trovarlo.~
+@1020 = ~Colpa del capitano Brage
+
+Brage è stato impiccato! Penso di averlo fatto piuttosto bene. È sempre bello vedere la "giustizia" prendere il suo spazio. E soprattutto, quello sciocco di Brage me ne è stato grato! Dovrei stare attento, o la sensazione di calore nella mia pancia finirà per farmi venire il singhiozzo.~
+
+/* needs to be the exact same wording as in bragesword_extentions.tra */ 
+@1021 = ~La Colpa del Capitano Brage~
+

@@ -1,0 +1,175 @@
+@0  = ~No! NO!! Non toccherò più questa spada maledetta, <CHARNAME> - non costringermi a farlo!~
+@1  = ~Quando gli viene chiesto del suo passato, BRAGE si schiarisce la gola ed esita per un breve momento. Poi racconta le sue origini da Athkatla ad Amn, la sua vita nella Guardia dell'Amn e il suo periodo come capitano a Nashkel. "Ho trovato la moglie più adorabile e ho avuto due figlie meravigliose - finché non ho raccolto quella spada maledetta. Conosci il resto, <CHARNAME>. Per favore, non farmelo dire di nuovo".~
+//@2  = 
+@3  = ~Quando avremo finito qui, andrò a cercare colui che ha creato quella spada maledetta. Inizierò a Waterdeep alla fucina della mia vera spada: quella falsa portava il suo sigillo. Non penso che sarà determinante, ma vedrò cosa potrò fare da lì.~
+@4  = ~Ajantis, se i tuoi passi ti riportano verso Waterdeep, potremmo viaggiare insieme.~
+@5  = ~È un'idea eccellente, Brage. Apprezzerei la tua compagnia durante il viaggio.~
+@6  = ~Ora che abbiamo finito, partirò per Waterdeep.~
+
+
+@110  = ~La Spada di Brage~
+@111  = ~Spada a Due Mani di Brage +1~
+/* unidentified description bg1:totsc */
+@112  = ~La spada a due mani deriva dalla spada lunga. I fabbri hanno sempre cercato nuovi modi per migliorare le armi già esistenti. Nel tentativo di potenziare la spada lunga, la lama dell'arma venne allungata. Si rese così necessario rendere più grande l'impugnatura, e le due mani divennero indispensabili per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare coloro che combattono a dorso di un destriero e spezzare le formazioni armate di lance.
+
+Questa è la spada che Brage ha ordinato da Waterdeep.
+
+STATISTICHE:
+
+Danno: 1D10
+Tipo di danno:  tagliente
+Fattore-velocità: 10
+Tipo di Competenza: Spadone
+Tipo: A due mani
+
+Non utilizzabile da:
+ Druido
+ Chierico
+ Mago
+ Ladro~
+/* identified description bg1:totsc */
+@113  = ~La spada a due mani deriva dalla spada lunga. I fabbri hanno sempre cercato nuovi modi per migliorare le armi già esistenti. Nel tentativo di potenziare la spada lunga, la lama dell'arma venne allungata. Si rese così necessario rendere più grande l'impugnatura, e le due mani divennero indispensabili per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare coloro che combattono a dorso di un destriero e spezzare le formazioni armate di lance. Questa fa particolarmente bene il suo lavoro ed è stata incantata con alcune proprietà magiche.
+
+Questa è la spada che Brage ha ordinato da Waterdeep.
+
+STATISTICHE:
+
+THAC0: +1
+Danno: 1D10+1
+Tipo di danno:  tagliente
+Peso: 12
+Fattore-velocità: 9
+Tipo di Competenza: Spadone
+Tipo: A due mani
+Non utilizzabile da:
+ Druido
+ Chierico
+ Mago
+ Ladro~
+/* unidentified description tutu / bgt */
+@114  = ~La spada a due mani deriva dalla spada lunga. I fabbri hanno sempre cercato nuovi modi per migliorare le armi già esistenti. Nel tentativo di potenziare la spada lunga, la lama dell'arma venne allungata. Si rese così necessario rendere più grande l'impugnatura, e le due mani divennero indispensabili per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare coloro che combattono a dorso di un destriero e spezzare le formazioni armate di lance.
+
+Questa è la spada che Brage ha ordinato da Waterdeep.
+
+STATISTICHE:
+
+Danno: 1D10
+Tipo di danno:  tagliente
+Peso: 12
+Fattore-velocità: 10
+Tipo di Competenza: Spada a Due Mani
+Tipo: A due mani
+Richiede: Forza 14
+Non utilizzabile da:
+ Druido
+ Chierico
+ Mago
+ Ladro~
+/* identified description tutu / bgt */
+@115  = ~La spada a due mani deriva dalla spada lunga. I fabbri hanno sempre cercato nuovi modi per migliorare le armi già esistenti. Nel tentativo di potenziare la spada lunga, la lama dell'arma venne allungata. Si rese così necessario rendere più grande l'impugnatura, e le due mani divennero indispensabili per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare coloro che combattono a dorso di un destriero e spezzare le formazioni armate di lance. Questa fa particolarmente bene il suo lavoro ed è stata incantata con alcune proprietà magiche.
+
+Questa è la spada che Brage ha ordinato da Waterdeep.
+
+STATISTICHE:
+
+Danno: 1D10+1 
+THAC0: +1
+Tipo di danno:  tagliente
+Peso: 12
+Fattore-velocità: 9
+Tipo di Competenza: Spada a Due Mani
+Tipo: A due mani
+Richiede: Forza 14
+Non utilizzabile da:
+ Druido
+ Chierico
+ Mago
+ Ladro~
+/* identified description bgee / eet */
+@116  = ~La spada a due mani deriva dalla spada lunga. I fabbri hanno sempre cercato nuovi modi per migliorare le armi già esistenti. Nel tentativo di potenziare la spada lunga, la lama dell'arma venne allungata. Si rese così necessario rendere più grande l'impugnatura, e le due mani divennero indispensabili per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare coloro che combattono a dorso di un destriero e spezzare le formazioni armate di lance. 
+Questa fa paricolarmente bene il suo lavoro ed è stata incantata con alcune proprietà magiche.
+
+Questa è la spada che Brage ha ordinato da Waterdeep.
+
+STATISTICHE:
+
+THAC0: +1
+Danno: 1d10+1 (tagliente)
+Fattore-velocità: 9
+Tipo di Competenza: Spada a Due Mani
+Tipo: A due mani
+
+Richiede:
+Forza 14
+
+Peso: 12~
+@117  = ~Hick~
+@118  = ~Mio servitore Mulahey,
+
+la tua stupida sbadataggine ha fatto interferire D. Ha inviato una bella sorpresa al comandante di Nashkel, che ha trovato la sua nuova spada più speciale di quanto si aspettasse. Le forze dell'Amn per ora sono indebolite e non entreranno nei livelli più profondi delle miniere. Tuttavia, preparati a degli intrusi, poiché numerose forze si sentono in dovere di indagare sugli avvistamenti dei tuoi stupidi coboldi. Non deludermi di nuovo. 
+
+TAZOK~
+@119  = ~Borda,
+
+non ci interessa se hai dedicato tutto il tuo impegno al compito che ti abbiamo ordinato di svolgere. Non è colpa nostra se il Comandante è andato da solo a indagare e ha trovato la nuova spada mentre era solo per strada invece che dentro la caserma. È a causa della tua negligenza che l'intera operazione è quasi fallita. Sei fortunato perché questo pazzo è tornato a Nashkel, quindi l'oro che abbiamo speso per questa lama con la sua maledizione speciale non è andato perduto del tutto. No, non riceverai il secondo importo del pagamento. Puoi ancora conservare la spada originale che Brage avrebbe dovuto ricevere. È una compensazione sufficiente. Sii felice che non ti diamo la caccia.
+
+TAZOK~
+@120  = ~Tazok,
+
+pretendo il pagamento della seconda metà di quanto concordato: che il Comandante abbia massacrato solo la sua famiglia e non metà della guarnigione non è colpa mia. Le forze di Nashkel sono indebolite e questo era quanto prevedeva il nostro accordo! Puoi inviare qualsiasi lettera per me al mio contatto al Carnevale di Nashkel. Ho trovato un mercante abbastanza disperato da comprare alcune delle mie pozioni speciali, e trasmetterà qualsiasi lettera.
+
+Borda~
+@121  = ~Lettera al Capitano Tollar Kieres~
+@122  = ~Questa lettera porta il sigillo ufficiale della Lega dei Mercanti di Baldur's Gate. Ti è stata consegnata da Aldeth Sashenstar ed è indirizzata al Capitano Kieres che attualmente risiede nella Casa dei Conti della Lega nella parte nord-orientale della città.~ 
+
+@123  =  ~Anello con Sigillo della Lega dei Mercanti~
+@124  =  ~Questi anelli vengono consegnati solo a persone che godono della piena fiducia della Lega dei Mercanti. Servono come identificazione e dovrebbero garantirti un accesso libero e completo alla Casa dei Conti. 
+Si dice che questi anelli siano una delle ragioni del successo della Lega, e che siano in qualche modo incantati.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+ - Fortuna 3 volte al giorno
+ - Charmare Persone 3 volte al giorno~
+@125  = ~La spada a due mani deriva dalla spada lunga. I fabbri hanno sempre cercato nuovi modi per migliorare le armi già esistenti. Nel tentativo di potenziare la spada lunga, la lama dell'arma venne allungata. Si rese così necessario rendere più grande l'impugnatura, e le due mani divennero indispensabili per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare coloro che combattono a dorso di un destriero e spezzare le formazioni armate di lance. Questa fa particolarmente bene il suo lavoro ed è stata incantata con alcune proprietà magiche.
+
+Questa è la spada che Brage ha ordinato da Waterdeep.
+
+STATISTICHE:
+
+THAC0: +1
+Danno: 1d10+1 (tagliente)
+Fattore-velocità: 9
+Tipo di Competenza: Spada a Due Mani
+Tipo: A due mani
+
+Richiede:
+Forza 14
+
+Peso: 12~
+
+
+/* SoD */
+/* brage_bd0103.baf */
+@1000 = ~Today we will march against the Crusade. Never would I have thought to be on a military mission again, and so soon.~
+@1001 = ~This is an impressive chasm. I had no idea this crypt would reach so deep down.~
+@1002 = ~Such stupidity! The destroyed bridge is not only bad for us, it also cuts a chasm between here and the northers lands!~
+@1003 = ~This Caelar is a very charismatic woman. I understand why they follow her.~
+@1004 = ~It takes a certain mindset to kill a man by pulling a lever. I am unsettled to see that it came so easily to you.
+
+~
+@1005 = ~This saved us the fight, but it was a betrayal to those we call allies, <CHARNAME>.~
+@1006 = ~Be on your guard, <CHARNAME>. I do not like this canyon, as it gives good possibility for an ambush.~
+@1007 = ~I heard about Rhinoceros Beetles, but I've never seen one before.~
+@1008 = ~To arms!~
+@1009 = ~We were discovered! We need to leave, and quick.~
+@1010 = ~A... a portal to Avernus! This is madness!~
+@1011 = ~It was a useless attempt to fight us.~
+@1012 = ~We have no other choice than to seek for a way to close the portal - from the other side!~
+@1013 = ~This madness, at least, is over.~
+@1014 = ~Hell... I believed I belong here, but not the way we entered.~
+@1015 = ~We need to prepare for more atacks! Our presence will be known by now.~
+@1016 = ~Into the fight!~
+@1017 = ~This was a mighty beast that died here. I cannot start to imagine the effort it took to take it down.~
+@1018 = ~Those doors look intimidating - although I can't put my finger on it why they would shake me so.~
+

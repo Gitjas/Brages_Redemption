@@ -226,26 +226,3 @@ END //APPEND
 
 
 
-APPEND C#BrageJ
-
-/* ~Today we will march against the Crusade. Never would I have thought to be on a military mission again, and so soon.~ */
-
-/* Bringing back the dead... It is a tempting throught. Especially if one knows them to suffr in Avernus. I understand the sentiment... But that does not give one the right to walz the land with plundering and killing.~
-*/
-
-/* 
-~Caelar... such ego, such blindness... She did all this to free her uncle's soul - her uncle himself - from the grasps of Avernus. Where he came due to her foolishness... I... I understand her, <CHARNAME>. I... feel for her.~
-++ ~Brage, look at me. You are by *no* means in any way similar to her. Not in the slightest!~ + 
-
-++ ~Beg your pardon? Sie hat die ganze Schwertküste und noch weiter mit ihrer blutrünstigen "Crusade" überzogen, hat unzähligen Unschuldigen das Leben gekostet oder die Lebensgrundlage zerstört, hat unzähligen Menschen falsche hoffnungen gemacht, so dass sie für sie in den Tod gegangen sind - und alles für nichts! Für ihre eigenes egoistisches Ziel, für einen Menschen, ihren Onkel! Bitte sagt mir nicht, dass Ihr das gutheißt!~ + 
-
-
-
-SAY ~That is what I am hoping from the bottom of my heart, <CHARNAME>. That is what I am hoping... what I strive for, every day of my cursed life.~
-
-
-~Ich heiße es nicht gut, was sie getan hat. Nein, sie hat neue, große Schuld auf sich geladen mit dem, was sie getan hat.~
-
-~Aber, <CHARNAME>... Ich verstehe sie. Ich verstehe, warum sie es getan hat...~ */
-
-END //APPEND

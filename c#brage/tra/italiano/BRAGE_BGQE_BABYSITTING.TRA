@@ -1,0 +1,40 @@
+@0    = ~Salve Brage, sono così felice di vederti camminare libero! Mi dispiace *così* tanto per Betty e le ragazze. Come ti senti?~
+@1    = ~Ti ringrazio. Io... tiro avanti. Lui si rifiuta ancora di vedere i bambini?~
+@2    = ~(sospiro) Sì, esatto.~
+@3    = ~C'è qualcosa che possiamo fare per te?~
+@4    = ~Oh, non intendo appesantirti... voglio dire...~
+@5    = ~Beh, avrei bisogno di qualcuno che si prenda cura di questi due per un breve momento mentre vado a trovare il padre...~
+@6    = ~Il tuo amico mi ha già indicato una giovane donna al carnevale, ma... sembrava troppo inesperta.~
+		~La tua amica mi ha già indicato una giovane donna al carnevale, ma... sembrava troppo inesperta.~
+@7    = ~<CHARNAME>, la signora Blackwood è una mia cara amica. Potremmo dedicarle un po' del nostro tempo?~
+@8    = ~Era esattamente quello che avevo intenzione di fare.~
+@9    = ~Non abbiamo tempo per questo adesso.~
+@10   = ~Non fraintendermi, ma... non credo che i tuoi amici vorrebbero prendersi cura dei miei figli. Ti auguro una buona giornata.~
+@11   = ~Mi dispiace, signora Blackwood. Forse troveremo il tempo più tardi. Buona giornata.~
+/* 12 = */
+@13   = ~Addio, signora Blackwood. Arrivederci, Sarah, Tom. Vi auguro ogni bene!~
+@14   = ~Perché lo stiamo facendo? Perché maltrattiamo questa povera madre? <CHARNAME>, conosco bene questa donna. Ha bisogno di aiuto, non di ostilità!~
+@15   = ~Vieni qui, Tom. Fammi dare un'occhiata... Ah, è solo acqua, si asciugherà in un attimo.~
+@16   = ~Braaage, la mamma ha detto che Tessa è morta. Tessa è morta? E anche Linda?~
+@17   = ~Tessa... e Linda se ne sono andate, Sarah, sì. Mi dispiace tanto...~
+@18   = ~Quindi non possono venire a giocare domani?~
+@19   = ~No... no, non possono.~
+@20   = ~È così ingiusto! Linda ha detto che mi avrebbe dato la sua bambola per giocare. Le ho dato anche la mia!~
+@21   = ~Io... mi dispiace, Sarah. Sono sicuro che Linda voleva farlo.~
+@22   = ~'mbola!~
+@23   = ~Tom, sto parlando della *bambola* di *Linda*. Eek, stai lontano! Sei tutto bagnato!~
+@24   = ~Grazie per esserti preso cura dei figli della signora Blackwood.~
+		~Grazie per esserti presa cura dei figli della signora Blackwood.~
+@25   = ~Piacere mio. Sembrava avesse bisogno di aiuto.~
+@26   = ~Sì, è stato fantastico!~
+@27   = ~Non mi sono mai sentito così impotente in vita mia. I bambini sono sempre così?~
+		~Non mi sono mai sentita così impotente in vita mia. I bambini sono sempre così?~
+@28   = ~Conosci la signora Blackwood e i suoi figli?~
+@29   = ~Non ricordarmelo, per favore.~
+@30   = ~Ho sentito che ti sei preso cura dei figli della signora Blackwood. Ti ringrazio per aver aiutato quella povera donna.~
+		~Ho sentito che ti sei presa cura dei figli della signora Blackwood. Ti ringrazio per aver aiutato quella povera donna.~
+@31   = ~Lo ha fatto, davvero.~
+@32   = ~*sorridendo* I bambini sono adorabili ma anche le creature più estenuanti di questo mondo.~
+@33   = ~Betty... mia moglie faceva loro da babysitter. Ma con lei andata...~
+@34   = ~Potresti chiederti perché una madre non può portare i bambini a vedere il padre. Il padre... non crede che siano suoi. Lei ha negato qualsiasi infedeltà, ma lui non vuol sentire ragione.~
+@35   = ~I bambini sono adorabili. Spero... spero che siano al sicuro.~
