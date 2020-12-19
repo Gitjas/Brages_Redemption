@@ -137,6 +137,11 @@ LANGUAGE ~Deutsch~
          ~c#brage/tra/german/setup.tra~
          ~c#brage/tra/german/game.tra~
 
+LANGUAGE ~Italiano~
+         ~italiano~   
+         ~c#brage/tra/italiano/setup.tra~
+         ~c#brage/tra/italiano/game.tra~
+
 
 BEGIN @9000 /* ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga~ */
 
