@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~5pre~ 
+VERSION ~5~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -770,7 +770,11 @@ LAF cd_portrait_npc STR_VAR source = ~c#brage~ source_path = ~c#brage/portraits~
 
 /* this is a protagonist soundset from IWD: HoW_Male_2 */
 
-COPY ~c#brage/sound/%LANGUAGE%~ ~override~
+ACTION_IF FILE_EXISTS ~c#brage/sound/%LANGUAGE%/c#brag01.wav~ THEN BEGIN
+  COPY ~c#brage/sound/%LANGUAGE%~ ~override~
+END ELSE BEGIN
+  COPY ~c#brage/sound/english~ ~override~
+END
 
 /* assign dialogue files to .2das */
 
