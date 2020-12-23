@@ -134,24 +134,22 @@ Typ: 2-händig~
 
 /* SoD */
 /* brage_bd0103.baf */
-@1000 = ~Today we will march against the Crusade. Never would I have thought to be on a military mission again, and so soon.~
-@1001 = ~This is an impressive chasm. I had no idea this crypt would reach so deep down.~
-@1002 = ~Such stupidity! The destroyed bridge is not only bad for us, it also cuts a chasm between here and the northers lands!~
-@1003 = ~This Caelar is a very charismatic woman. I understand why they follow her.~
-@1004 = ~It takes a certain mindset to kill a man by pulling a lever. I am unsettled to see that it came so easily to you.
-
-~
-@1005 = ~This saved us the fight, but it was a betrayal to those we call allies, <CHARNAME>.~
-@1006 = ~Be on your guard, <CHARNAME>. I do not like this canyon, as it gives good possibility for an ambush.~
-@1007 = ~I heard about Rhinoceros Beetles, but I've never seen one before.~
-@1008 = ~To arms!~
-@1009 = ~We were discovered! We need to leave, and quick.~
-@1010 = ~A... a portal to Avernus! This is madness!~
-@1011 = ~It was a useless attempt to fight us.~
-@1012 = ~We have no other choice than to seek for a way to close the portal - from the other side!~
-@1013 = ~This madness, at least, is over.~
-@1014 = ~Hell... I believed I belong here, but not the way we entered.~
-@1015 = ~We need to prepare for more atacks! Our presence will be known by now.~
-@1016 = ~Into the fight!~
-@1017 = ~This was a mighty beast that died here. I cannot start to imagine the effort it took to take it down.~
-@1018 = ~Those doors look intimidating - although I can't put my finger on it why they would shake me so.~
+@1000 = ~Heute werden wir gegen diesen Kreuzzug marschieren. Ich hätte niemals geglaubt, überhaupt wieder Teil einer militärischen Aktion zu sein, und dann auch noch so bald.~
+@1001 = ~Dies ist eine beeindruckende Felsspalte. Ich hätte nicht gedacht, dass diese Crypta so weit in die Tiefen reicht.~
+@1002 = ~Solch Dummheit! Die zerstörte Brücke ist nicht nur schlecht für uns, sie schneidet auch den Weg für alle aus den nördlichen Gebieten ab!~
+@1003 = ~Caelar ist eine sehr charismatische Führerin. Ich verstehe, warum ihr so viele folgen.~
+@1004 = ~Um jemanden durch das Umlegen eines Schalters zu töten muss man besonders gestrickt sein. Es besorgt mich, dass es Euch so leicht gefallen ist.~
+@1005 = ~Eure Entscheidung erspart uns den Kampf, aber es war ein Verrat an denen, die wir unsere Verbündeten nennen, <CHARNAME>.~
+@1006 = ~Seid wachsam, <CHARNAME>. Mir behagt diese Schlucht nicht. Sie bietet gute Möglichkeiten für einen Hinterhalt.~
+@1007 = ~Ich habe von Riesenkäfern gehört, aber noch nie einen gesehen.~
+@1008 = ~Zu den Waffen!~
+@1009 = ~Wir wurden entdeck! Wir müssen gehen, und das schnell.~
+@1010 = ~Ein... ein Portal nach Avernus! Das ist Irrsinn!~
+@1011 = ~Uns bekämpfen zu wollen war ein fruchtloses Unterfangen.~
+@1012 = ~Wir haben keine andere Wahl, als zu versuchen, das Portal zu schließen - von der anderen Seite!~
+@1013 = ~Dieser Irrsinn ist jetzt wenigstens vorbei.~
+@1014 = ~Die Hölle... ich war überzeugt davon, hierher zu gehören, aber nicht auf die Art, wie wir hergekommen sind.~
+@1015 = ~Wir müssen uns auf weitere Angriffe einstellen! Unsere Anwesenheit dürfte sich mittlerweile herumgesprochen haben.~
+@1016 = ~Auf in den Kampf!~
+@1017 = ~Ein sehr mächtiges Wesen ist hier gestorben. Ich kann nicht ansatzweise erfassen, was es bedurfte, um es zu besiegen.~
+@1018 = ~Diese Türen wirken einschüchternd - und doch kann ich nicht begründen, warum sie mir so unangenehme Gefühle bereiten.~

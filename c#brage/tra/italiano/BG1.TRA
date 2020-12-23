@@ -302,23 +302,24 @@
 @297  = ~Bene, ora mi sento offeso. Noi Ladri dell'Ombra saremo anche loschi e malvagi, ma abbiamo un codice d'onore. Ti ho detto quello che so, ed è la verità.~
 
 /* new for v5 */
-@298  = ~Woman! Be cautious with your words. There is fellow Amnians here, as well as sufficient fighting power to make you trouble indeed.~
-@299  = ~Pardon?! You might carry an influential name, but that does not give you right to any such behavior! <CHARNAME>, tread carefully - in Amn this name is well known, and hurting an Argrim family member will lead to unpleasant successions to be sure.  My lady, know that I am a former Amnian garrison commander, Brage my name. Do not provoke us further with your silly games or we will have to draw steel to defend us!~
-@300  = ~<CHARNAME>, this is the culprit who stole two emeralds from Nashkel. The whole affair was already placed into a bounty hunters' hands, though, so I would suggest we stay out of it.~
-@301  = ~Although it aches my heart to turn a deaf ear to this clearly driven man's pleas we cannot make us accomlices to such a theft, <CHARNAME>.~
-@302  = ~I have to insist. We should not stand against an officially hired bounty hunter.~
-@303  = ~Oho, don't I recognize you, "Commander" Brage. Your bounty I would have liked to collect for sure, but some <CHARNAME> got to you, first. Good for you, as I would not have cared to drag you to Nashkel alive!~
-@304  = ~Mister Greywolf, I am trying to keep my comrade from interfering with your business but you make it difficult to keep up sympathy for your cause!~
-@305  = ~We killed a bounty hunter officially hired by Nashkel authorities and protected a thief searched for by the very authorities.~
-@306  = ~We crossed a bounty hunter officially hired by Nashkel authorities and protected a thief searched for by the very authorities.~
-@307  = ~<CHARNAME>, I'm not sure that was a smart thing to do.~
-@308  = ~He was about to kill the man! He might have stolen emeralds, but that's no reason for killing!~
-@309  = ~I'm not so sure. This is a really nice sculpture. Are there no art lovers in Nashkel?~
-@310  = ~If you put it like that it feels much less thrilling to have helped an artist to complete his masterpiece.~
-@311  = ~I saw the desperation in the artist's eyes, Brage. I will not have a man killed just because he wants to finish his dream.~
-@312  = ~Relax, we can still return the emeralds to Oublek and solve the issue.~ 
-@313  = ~No, it wasn't, but what's done is done.~
-@314  = ~(sigh) I surely hope this will not turn out as a backlash for our dealings with the people in Nashkel. Let us collect the emeralds and quickly return them to Oublek so we can at least settle this matter.~
-@315  = ~Justice was served, but I'd rather it would have gone differently. I did not think much of it when Ghastkill put out the "we only care about the returned emeralds, not the artist" bounty for Prism, but knowing the details now it does feel harsh to kill a man because of two emeralds.~
+@298  = ~Donna! Sii cauta con le tue parole. Ci sono altri Amniani qui, e con forza militare sufficiente per crearti parecchi problemi.~
+@299  = ~Come?! Potrai anche portare un nome influente, ma questo non ti dà diritto a un simile comportamento! <CHARNAME>, procedi con cautela: nell'Amn questo nome è ben noto e ferire un membro della famiglia Argrim porterebbe sicuramente a spiacevoli conseguenze. Mia signora, sappi che sono un ex comandante di una guarnigione dell'Amn, mi chiamo Brage. Non provocarci ulteriormente con i tuoi sciocchi giochi o dovremo estrarre le nostre armi e difenderci!~
+@300  = ~<CHARNAME>, questo è il tale che ha rubato due smeraldi a Nashkel. L'intera faccenda è già stata affidata a un cacciatore di taglie, quindi suggerirei di starne fuori.~
+@301  = ~Anche se mi fa male al cuore ignorare le suppliche di quest'uomo così chiaramente ispirato, non possiamo renderci complici di un simile furto, <CHARNAME>.~
+@302  = ~Devo insistere. Non dovremmo opporci a un cacciatore di taglie assunto ufficialmente.~
+@303  = ~Oh, guarda chi si vede, il "Comandante" Brage. Non mi sarebbe dispiaciuto raccogliere la tua taglia, ma <CHARNAME> ti ha trovato prima di me. Buon per te, perché io non mi sarei preoccupato di trascinarti fino a Nashkel vivo!~
+@304  = ~Greywolf, sto cercando di impedire al mio compagno di interferire con il tuo lavoro ma mi rendi difficile mantenere simpatia per la tua causa!~
+		~Greywolf, sto cercando di impedire alla mia compagna di interferire con il tuo lavoro ma mi rendi difficile mantenere simpatia per la tua causa!~
+@305  = ~Abbiamo ucciso un cacciatore di taglie ufficialmente assunto dalle autorità di Nashkel e protetto un ladro cercato da quelle stesse autorità.~
+@306  = ~Abbiamo incrociato un cacciatore di taglie ufficialmente assunto dalle autorità di Nashkel e protetto un ladro cercato da quelle stesse autorità.~
+@307  = ~<CHARNAME>, non sono sicuro che sia stata una cosa intelligente da fare.~
+@308  = ~Stava per uccidere quell'uomo! Potrebbe anche aver rubato degli smeraldi, ma non è un motivo sufficiente per uccidere!~
+@309  = ~Non ne sarei così sicuro. È davvero una bella scultura. Non ci sono amanti dell'arte a Nashkel?~
+@310  = ~Se la metti così, sembra molto meno sbagliato aver aiutato un artista a completare il suo capolavoro.~
+@311  = ~Ho visto la disperazione negli occhi di quell'artista, Brage. Non farò uccidere un uomo solo perché vuole vedere finito il suo sogno.~
+@312  = ~Rilassati, possiamo ancora restituire gli smeraldi a Oublek e risolvere il problema.~ 
+@313  = ~No, non lo era, ma quello che è fatto è fatto.~
+@314  = ~*sospira* Spero vivamente che questo non si rivelerà un contraccolpo per i nostri rapporti con la gente di Nashkel. Raccogliamo gli smeraldi e restituiamoli rapidamente a Oublek così da poter almeno risolvere la questione.~
+@315  = ~Giustizia è stata fatta, ma avrei preferito che fosse andata diversamente. Non ci ho pensato molto quando Ghastkill ha pubblicato la taglia su Prism "a noi interessano solo gli smeraldi, non l'artista", ma conoscendo i dettagli ora è difficile accettare che un uomo sia morto a causa di quei due smeraldi.~
 
 

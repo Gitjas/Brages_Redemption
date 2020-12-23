@@ -151,25 +151,23 @@ Peso: 12~
 
 /* SoD */
 /* brage_bd0103.baf */
-@1000 = ~Today we will march against the Crusade. Never would I have thought to be on a military mission again, and so soon.~
-@1001 = ~This is an impressive chasm. I had no idea this crypt would reach so deep down.~
-@1002 = ~Such stupidity! The destroyed bridge is not only bad for us, it also cuts a chasm between here and the northers lands!~
-@1003 = ~This Caelar is a very charismatic woman. I understand why they follow her.~
-@1004 = ~It takes a certain mindset to kill a man by pulling a lever. I am unsettled to see that it came so easily to you.
-
-~
-@1005 = ~This saved us the fight, but it was a betrayal to those we call allies, <CHARNAME>.~
-@1006 = ~Be on your guard, <CHARNAME>. I do not like this canyon, as it gives good possibility for an ambush.~
-@1007 = ~I heard about Rhinoceros Beetles, but I've never seen one before.~
-@1008 = ~To arms!~
-@1009 = ~We were discovered! We need to leave, and quick.~
-@1010 = ~A... a portal to Avernus! This is madness!~
-@1011 = ~It was a useless attempt to fight us.~
-@1012 = ~We have no other choice than to seek for a way to close the portal - from the other side!~
-@1013 = ~This madness, at least, is over.~
-@1014 = ~Hell... I believed I belong here, but not the way we entered.~
-@1015 = ~We need to prepare for more atacks! Our presence will be known by now.~
-@1016 = ~Into the fight!~
-@1017 = ~This was a mighty beast that died here. I cannot start to imagine the effort it took to take it down.~
-@1018 = ~Those doors look intimidating - although I can't put my finger on it why they would shake me so.~
+@1000 = ~Oggi marceremo contro la Crociata. Non avrei mai pensato di fare nuovamente parte di una missione militare, e certamente non così presto.~
+@1001 = ~Questo abisso è impressionante. Non avevo idea che questa cripta arrivasse così in profondità.~
+@1002 = ~Che stupidaggine! Il ponte distrutto non è un male solo per noi, ma scava un abisso tra qui e le terre del nord!~
+@1003 = ~Questa Caelar è una donna molto carismatica. Capisco perché la seguono.~
+@1004 = ~Ci vuole una certa mentalità per uccidere un uomo tirando una leva. Sono turbato dal vedere che ti sia stato così facile.~
+@1005 = ~Questo ci ha risparmiato la battaglia, ma è stato un tradimento nei confronti di coloro che chiamiamo alleati, <CHARNAME>.~
+@1006 = ~Stai in guardia, <CHARNAME>. Non mi piace questo canyon, sembra il luogo ideale per un'imboscata.~
+@1007 = ~Avevo sentito parlare di Scarabei Rinoceronte, ma non ne avevo mai visto uno prima.~
+@1008 = ~Alle armi!~
+@1009 = ~Siamo stati scoperti! Dobbiamo andarcene, e alla svelta.~
+@1010 = ~Un... un portale per l'Averno! Questa è follia!~
+@1011 = ~È stato un tentativo inutile combatterci.~
+@1012 = ~Non abbiamo altra scelta che cercare un modo per chiudere il portale - dall'altra parte!~
+@1013 = ~Questa follia, alla fine, è giunta a conclusione.~
+@1014 = ~Diavolo... Credevo di appartenere a questo posto, ma non da come ci siamo arrivati.~
+@1015 = ~Dobbiamo prepararci per altri attacchi! La nostra presenza sarà ormai nota.~
+@1016 = ~Alla battaglia!~
+@1017 = ~Questa era una bestia potente che è morta qui. Non riesco a immaginare lo sforzo necessario per abbatterla.~
+@1018 = ~Quelle porte mi intimidiscono, anche se non saprei dire esattamente il perché.~
 

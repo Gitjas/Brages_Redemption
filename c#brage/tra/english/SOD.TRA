@@ -1,5 +1,5 @@
 @0  = ~<CHARNAME>, it is time to say farewell. We've done a great deed. We stopped an impending war and saved a lot of lives. But I will take this as my cue to leave. I need to walk own steps now, search for the smithy of that sword, earn gold for the families I hurt - return to my home on my own terms. Farewell, and may the gods bless you... If the gods will allow it, we will meet again.~
-@1  = ~<CHARNAME>, if you are intended to turn your back on the sorrow of the people in Dragonspear Castle and the threat Caelar is posing to peacthe e on the Sword Coast it is your decision, but I will not follow you. I will stay and continue the fight... as a mercenary, if they have need of me.~
+@1  = ~<CHARNAME>, if you are intended to turn your back on the sorrow of the people in Dragonspear Castle and the threat Caelar is posing to the peace on the Sword Coast it is your decision, but I will not follow you. I will stay and continue the fight... as a mercenary, if they have need of me.~
 @2  = ~We've done great deeds together. We stopped an impending war and saved a lot of lives. But I will take this as my cue to leave. I need to walk own steps now, search for the smithy of that sword, earn gold for the families I hurt - return to my home on my own terms. Farewell, and may the gods bless you... If the gods will allow it, we will meet again.~
 @3  = ~Is there something in my backpack that belongs to you? Please have a look now, before I will leave.~ 
 @4  = ~Farewell, <CHARNAME>.~
@@ -13,6 +13,7 @@ Brage seems to be back in Baldur's Gate. He was seen at the Sorcerous Sundries.~
 @10  = ~You want Brage? Then he will be yours if I lose.~
 @11  = ~Brage is with me on a path of redemption. You will not get his soul.~ 
 @12  = ~He has his faults, but I'll not risk Brage's soul in so blithe a fashion. If I cannot answer your riddle, mine is the soul you will take. Agreed?~
+//#38914 SoD
 @13  = ~I'll feed you your own limbs if you don't let me into the tower, you wretched creature. I'm done playing games with you.~
 @14  = ~Thrix has marked your soul, desperate warrior. Your soul is mine!~ 
 @15  = ~Well, I guess that happens if we lose such a game. Sorry, Brage.~
@@ -22,7 +23,7 @@ Brage seems to be back in Baldur's Gate. He was seen at the Sorcerous Sundries.~
 @19  = ~<CHARNAME>! Why did you do that? Trading my soul to a fiend?!~  [c#ablank]
 @20  = ~I saved us all the fight. I didn't plan on losing that stupid game!~
 @21  = ~I saved us all the fight. Relax! I won in the end, right?~
-@22  = ~What would you have me do? Fight that thing? Give my own soul? (pout)~
+@22  = ~What would you have me do? Fight that thing? Give my own soul? (snort)~
 @23  = ~I am sorry if it upset you, but I expected to win, which I did. No harm done.~
 @24  = ~I am truly sorry. I thought I could outsmart it - I was a fool, and you'll have to pay the price.~
 @25  = ~So it was carelessness as well as arrogance?~

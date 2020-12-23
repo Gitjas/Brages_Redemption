@@ -18,7 +18,7 @@
 @17   = ~Addio.~
 @18   = ~Eccomi qui, pronto a partire... per quanto possa esserlo. Ti ringrazio per questa opportunità.~
 @19   = ~Vuoi che aspetti?~
-@20   = ~Sì, per favore aspetta qui. Tornerò da te.~
+@20   = ~Per favore aspetta qui. Tornerò da te.~
 @21   = ~In realtà, ho bisogno che ci separiamo, almeno per ora.~
 @22   = ~No, ho cambiato idea. Per favore, vieni.~
 @23   = ~Come desideri. Io sarò qui.~
@@ -31,17 +31,18 @@
 
 
 /* new for v5 */
-@30   = ~Please go back to the camp.~
-@31   = ~As you wish. I will meet you at the camp.~
-@32   = ~As you wish. I will wait in front of the Palace.~ 
+@30   = ~Per favore torna al campo.~
+@31   = ~Come desideri. Ci vediamo al campo.~
+@32   = ~Come desideri. Aspetterò davanti al palazzo.~ 
 @33   = ~<CHARNAME>!~
-@34   = ~I would have questions for Halbazzar Drin - but there is no chance in posing them now, in this chaos and confusion!~
-@35   = ~They call you the hero of Baldur's Gate, there are rumors about you joining the coalition against the crusade. Would you need another sword arm?~
-@36   = ~I'd rather help these poor people by fighting the crusade than waste any more time here. Plus, I fear I can do nothing with regard to my investigation before the city will come to rest.~
-@37   = ~Please be ready. I'll be back for you.~
-@38   = ~My investigations concerning the cursed sword let me return to Baldur's Gate. And what turmoil I see the city in!~
-@39   = ~My investigations concerning the cursed sword let me all the way up to Waterdeep and back to Baldur's Gate, but the crusade of this Caelar let me come here for now.~
-@40   = ~I'm so not part of this coalition, but yes, I'd like you to join me.~
-@41   = ~Oh? Well, I am sure we will do a lot of good, nontheless.~
-@42   = ~As you wish. I will wait.~
-@43   = ~I will have your back, <CHARNAME>.~
+@34   = ~Avrei delle domande per Halbazzer Drin - ma non c'è alcuna possibilità di porle ora, con tutto questo caos e confusione!~
+@35   = ~Ti chiamano eroe di Baldur's Gate e si dice che ti unirai alla coalizione contro la crociata. Potrebbe esserti utile un'altra spada?~
+		~Ti chiamano eroina di Baldur's Gate e si dice che ti unirai alla coalizione contro la crociata. Potrebbe esserti utile un'altra spada?~
+@36   = ~Preferisco aiutare questa povera gente combattendo la crociata piuttosto che perdere altro tempo qui. Inoltre, temo di non poter fare nulla riguardo alla mia indagine prima che la città si fermi di nuovo.~
+@37   = ~Sii pronto. Tornerò per te.~
+@38   = ~Le mie indagini sulla spada maledetta mi hanno permesso di tornare a Baldur's Gate. E in che tumulto ho trovato la città!~
+@39   = ~Le mie indagini sulla spada maledetta mi hanno permesso di arrivare fino a Waterdeep e di nuovo a Baldur's Gate, ma la crociata di questa Caelar mi conduce qui ora.~
+@40   = ~Non faccio propriamente parte di questa coalizione, ma sì, vorrei che ti unissi a me.~
+@41   = ~Oh? Ottimo, sono sicuro che faremo del bene, comunque.~
+@42   = ~Come desideri. Aspetterò.~
+@43   = ~Ti coprirò le spalle, <CHARNAME>.~
