@@ -57,9 +57,9 @@ See("%IMOEN_DV%") See(Player1)
 Global("C#BrageImoen_BG1","GLOBAL",0)~ THEN C#BrageB brageimoen1
 @3
 DO ~SetGlobal("C#BrageImoen_BG1","GLOBAL",1)~
-== %IMOEN_BANTER% @4
+== ~%IMOEN_BANTER%~ @4
 == C#BrageB @5
-== %IMOEN_BANTER% @6
+== ~%IMOEN_BANTER%~ @6
 = @7
 = @8
 == C#BrageB @9

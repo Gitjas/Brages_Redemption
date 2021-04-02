@@ -88,7 +88,7 @@ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN anomenromance_reaction_04
-SAY ~You are both adults and I will respect the decision of you both. Still, I feel... protective, even if Anomen himself would reject my sentiment with his whole heart. I thank you. I will not speak of it, again.~
+SAY ~You are both adults and I will respect the decision of you both. Still, I feel... protective, even if Anomen himself would reject my sentiment fiercely. I thank you. I will not speak of it, again.~
 IF ~~ THEN EXIT
 END
 
@@ -237,7 +237,7 @@ Global("C#BE_BrageNalia","GLOBAL",2)
 Dead("Torgal")~ THEN ~C#BrageB~ bragenalia
 ~Nalia, when recently we spoke, here is what I meant.~
 DO ~SetGlobal("C#BE_BrageNalia","GLOBAL",3)~
-= ~I was blinded by my own prowess and powers, by my believe to be a force of law. I lost oversight of what one man can do and achieve - realistically. I wanted to serve, I wanted to protect... but at the same time, I behaved like a megalomaniac in my own power. I looked down at people, Nalia, because I knew they wouldn't do as much good as I would, because they *couldn't* do as much good as I did.~
+= ~I was blinded by my own prowess and powers, by my believe to be a force of law. I lost sight of what one man can do and achieve - realistically. I wanted to serve, I wanted to protect... but at the same time, I behaved like a megalomaniac in my own power. I looked down at people, Nalia, because I knew they wouldn't do as much good as I would, because they *couldn't* do as much good as I did.~
 = ~I see the same pattern in you, Nalia. Do not lose sight of your own faults, of your limits as a mortal, your own smallness in the face of the gods. Do not belittle the people you want to help. They are not beneath you. They are even to you - maybe some of them even greater than you will ever be able to become, regardless of the profane lives they are living.~
 == BNALIA ~I would belittle people?! Am I not giving up the safety and comfort of the keep to help them? Do I not give up on my title to be here, on the streets, fighting evil for them?~
 == C#BrageB ~Oh, Nalia... And do you not expect their gratitude for it? Their worship, even? Do you not catch yourself with the thought that they cannot help themselves if you will not do it for them? That they cannot make the right decisions on their own but need your help for it, because it is your "destiny" to help them... even against their will, against their esplicit wishes because you would know better than them - better than the people themselves for whos lives you are making decisions for? Because you would know better what is good for them - because you would be the one *deciding* what is good?~

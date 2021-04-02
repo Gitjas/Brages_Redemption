@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~5~ 
+VERSION ~6~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -64,27 +64,41 @@ ALWAYS
   ACTION_IF GAME_IS ~tob~ AND NOT GAME_IS ~bgt~ BEGIN
     OUTER_SPRINT ~IT_IS_BG2~ ~~
     OUTER_SPRINT ~BGT_VAR~ ~False()~
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
+/* NextTriggerObject not known in BGII */
+    OUTER_SPRINT "NextTriggerObject_ff_camp" "False()"
   END
 
 /* this is valid for BGII and bgt */
   ACTION_IF GAME_IS ~tob~ THEN BEGIN
     OUTER_SPRINT ~IT_IS_SOD~ ~False()~
-    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
+/* NextTriggerObject not known in BGII */
+    OUTER_SPRINT "NextTriggerObject_ff_camp" "False()"
   END
 
   ACTION_IF GAME_IS ~bgt~ BEGIN
     INCLUDE ~c#brage/lib/g3_bgt_cpmvars.tpa~
     OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("endofbg1","GLOBAL",2)~
 
 	/* EET naming convention */
 	OUTER_SPRINT "eet_var" ""
   END
+
+  ACTION_IF (GAME_IS ~bgee~ AND NOT FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+    OUTER_SPRINT "NextTriggerObject_ff_camp" "False()"
+  END
+
+  ACTION_IF (GAME_IS ~bgee eet~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+    OUTER_SPRINT "NextTriggerObject_ff_camp" ~NextTriggerObject("ff_camp")~
+END
 
   ACTION_IF GAME_IS ~bgee~ BEGIN
     INCLUDE ~c#brage/lib/g3_bgee_cpmvars.tpa~
     OUTER_SPRINT ~IT_IS_BG2~ ~False()~
     OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("BD_PLOT","GLOBAL",0)~
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("BD_PLOT","GLOBAL",0)~
+    OUTER_SPRINT ~2~ ~~
   END
 
   ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
@@ -99,6 +113,7 @@ ALWAYS
     OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
     OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1)~
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("ENDOFBG1","GLOBAL",0)~
+    OUTER_SPRINT ~2~ ~2~
   END
 
   INCLUDE ~c#brage/lib/useful_functions.tpa~
@@ -144,6 +159,10 @@ LANGUAGE ~Italiano~
 
 
 BEGIN @9000 /* ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga~ */
+REQUIRE_PREDICATE GAME_IS ~bgt bgee eet~ @9003
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9004
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9004
+
 
 /* do not use this. Use IF_FILE_EXISTS instead */
 ACTION_IF GAME_IS ~bgt~ THEN BEGIN
@@ -573,7 +592,7 @@ EXTEND_TOP ~bd4300.bcs~ ~%MOD_FOLDER%/baf/brage_bd4300_commenting.baf~
 EVALUATE_BUFFER
 
 /* Comment upon entering Avernus */
-EXTEND_TOP ~bd4400.bcs~ ~%MOD_FOLDER%/baf/brage_bd4400_commenting.baf~
+EXTEND_BOTTOM ~bd4400.bcs~ ~%MOD_FOLDER%/baf/brage_bd4400_commenting.baf~
 EVALUATE_BUFFER
 
 /* Comment in the Avernus Elevator */
@@ -794,21 +813,18 @@ END
 
 /* SoD */
 
-ACTION_IF (GAME_IS ~bgee eet~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+ACTION_IF (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
 APPEND ~bddialog.2da~
 ~C#Brage 	C#BrageP 	C#BrageJ 	C#BrageD~
 UNLESS ~C#Brage~
 
-
-
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~BDBANTER.2DA~) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~BDBANTER.2DA~) BEGIN
 
 	APPEND ~bdbanter.2da~
-		~C#Brage 	C#BragSB~
+		~C#Brage 	C#BrageB~
 	UNLESS ~C#Brage~
         
-END ELSE BEGIN 
+  END ELSE BEGIN 
 
 <<<<<<<< .../BDBANTER.2DA
 2DA      V1.0
@@ -838,7 +854,7 @@ KAGAIN   BDKAGAIB
 SHARTEEL BDSHARTB
 EDWIN    BDEDWINB
 VICONIA  BDVICONB
-IMOEN2   BDIMOENB
+IMOEN    BDIMOENB
 NEERA    BDNEERAB
 DORN     BDDORNB
 RASAAD   BDRASAAB
@@ -851,10 +867,8 @@ C#Brage 	C#BrageB
 >>>>>>>>
 
 	COPY ~.../BDBANTER.2DA~ ~override~ 
-END
-
-
-END
+  END
+END //SoD
 
 /* BG1:EET */
 
@@ -867,7 +881,17 @@ APPEND ~bgbanter.2da~
 ~C#Brage 	C#BrageB~
 UNLESS ~C#Brage~
 
-END
+/* SoD:EET */
+
+APPEND ~bddialog.2da~
+~C#Brage 	C#BrageP 	C#BrageJ 	C#BrageD~
+UNLESS ~C#Brage~
+
+APPEND ~bdbanter.2da~
+~C#Brage 	C#BrageB~
+UNLESS ~C#Brage~
+
+END //eet
 
 /* BGT, BGII, BGII:EE */
 
@@ -892,6 +916,19 @@ END
 
 ACTION_IF GAME_IS ~bgee bgt eet~ THEN BEGIN
 
+/* bg1re - need to check every component individually */
+
+/* bg1re - necromancer's trouble */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#q11nec.dlg~ THEN BEGIN 
+// Get state for C#q11nec %C#q11nec_78% 
+/* ~Beth and I fell in love, she caught an incurable disease. I promised her to heal her - she died, since then I have been researching how to raise her... Raise her in good health.~ */
+OUTER_SET C#q11nec_78 = STATE_WHICH_SAYS 78 IN ~bg1re/tra/autotra/%s/necromancer.tra~ FROM ~C#q11nec~
+// Get state for C#q11nec %C#q11nec_264% 
+/* ~You will not stay with me, will you? No, you will not. (sob) Beth, oh Beth...~ */
+OUTER_SET C#q11nec_264 = STATE_WHICH_SAYS 264 IN ~bg1re/tra/autotra/%s/necromancer.tra~ FROM ~C#q11nec~
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bg1re_necromancer.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bg1re.tra~
+END //necromancer's trouble
+
 /* bgqe - need to check every component individually */
 
 /* bgqe - babysitting quest */
@@ -911,10 +948,10 @@ USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
   ACTION_IF FILE_EXISTS_IN_GAME ~c#bgqe_21.mrk~ THEN BEGIN
 	<<<<<<<< ...inlined/brage_nashkelmonster_add.d
 	I_C_T C#Q04007 3 C#BE_C#Q04007_3
-	== ~c#bragej~ IF ~InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN ~So it turns out to be an artefact of which we are warned that it could be dangerous... We should heed his warning and bring it to a magical skilled person.~
+	== ~c#bragej~ IF ~InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @15 /* ~So it turns out to be an artefact of which we are warned that it could be dangerous... We should heed his warning and bring it to a magical skilled person.~ */
 	END
 	>>>>>>>>
-	COMPILE ~...inlined/brage_nashkelmonster_add.d~
+	COMPILE ~...inlined/brage_nashkelmonster_add.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
   END
 END //Nashkell Monster
 
@@ -929,7 +966,18 @@ END //Warm place for Noober
 ACTION_IF FILE_EXISTS_IN_GAME ~C#Q05001.dlg~ THEN BEGIN 
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_fallenpaladin.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_fallenpaladin.baf~ EVALUATE_BUFFER
-END //Warm place for Noober
+END //Fallen Paladin
+
+/* bst */
+ACTION_IF FILE_EXISTS_IN_GAME ~bswellma.cre~ THEN BEGIN 
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bst.d~
+  EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bst.baf~ EVALUATE_BUFFER
+END //bst
+
+/* Northern Tales of the Sword Coast */
+ACTION_IF FILE_EXISTS_IN_GAME ~NTHASDAR.dlg~ THEN BEGIN 
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_ntotsc.d~
+END //ntotsc
 
 /* Transitions */
 
@@ -937,7 +985,9 @@ ACTION_IF (MOD_IS_INSTALLED ~transitions/setup-transitions.tp2~ ~0~) THEN BEGIN
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_transitions.d~
 	USING ~c#brage/tra/autotra/%LANGUAGE%/sod.tra~
   EXTEND_TOP ~c#brage1.bcs~ ~c#brage/crossmod/brage_transitions.baf~
-    EVALUATE_BUFFER /* Ajantis should not remain dead in case he was upon transition */
+    EVALUATE_BUFFER /* Brage should not remain dead in case he was upon transition */
+  EXTEND_TOP ~c#brages.bcs~ ~c#brage/crossmod/brage_transitions.baf~
+    EVALUATE_BUFFER /* Brage should not remain dead in case he was upon transition */
   EXTEND_TOP ~#L_CUT09.bcs~ ~c#brage/crossmod/brage_transitions_eet.baf~ 
     EVALUATE_BUFFER
 END

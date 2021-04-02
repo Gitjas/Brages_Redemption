@@ -58,15 +58,105 @@ I_C_T BDKHALIJ 33 C#Brage_betrayal_discussion
 == C#Bragej IF ~IsValidForPartyDialogue("C#Brage")~ THEN @1005
 END
 
-/* Comment before entering the Cave with the blind Wyrmlings (bd5100aw.bcs) */
+/* Elandro and the Feyr */
+
+I_C_T bdelandr 12 C#Brage_bdelandr_12
+== C#BrageJ IF ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @38 /* ~Man, get your hold together! You let your anxiety take you over like this, it will affect your comrades and dampen the spirit of the whole squad!~ */
+END
+
+EXTEND_BOTTOM bdelandr 13
++ ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ + @39 /* ~Brage, you were a commander, you know how to brace fearful soldiers for something like this. Any advice?~ */ EXTERN c#bragej calm_elandro
+END
+
 APPEND C#BrageJ
 
+IF ~~ THEN calm_elandro
+SAY @40 /* ~Soldier, being in a siege is never easy to bear. You are not alone in this. Noone of you is. You and your comrades are one unity, and you will fight together. You are stronger than your fear if you know this. Fear is good if it makes you wary. Acknowledge and accept your fear as a sign that you are aware of the danger and ready to fight if necessary. Your fear is what will keep you alive - if you learn to use it.~ */
+IF ~~ THEN EXTERN bdelandr 14
+END
+
+
+/* Comment before entering the Cave with the blind Wyrmlings (bd5100aw.bcs) */
 IF ~Global("C#Brage_BD_SDD317_WYRMS","BD5100",1)~ THEN blind_wyrm_comment
 SAY @8 /* ~These are strange noises coming out of that cave in front of us, <CHARNAME>. I am not sure what kind of animal would make those - we should be prepared when entering that cave.~ */
 IF ~~ THEN DO ~SetGlobal("C#Brage_BD_SDD317_WYRMS","BD5100",2)~ EXIT
 END
 
 END //APPEND
+
+/* coalition camp - training the recruits */
+/* Hester */
+EXTEND_BOTTOM BDHESTER 6
++ ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ + @41 /* ~Brage, you think you can teach this recruit to improve his skills?~ */ EXTERN C#BrageJ teach_hester
+END
+
+INTERJECT BDHESTER 5 C#BE_BDHESTER_5
+== C#BrageJ IF ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @42 /* ~Private, it seems your problem runs deeper than just the question of how to use the weapon. I feel your anxiety and the hesitation it leads to. Do you want it to kill you in battle?~ */
+END BDHESTER 6
+
+CHAIN
+IF ~~ THEN C#BrageJ teach_hester
+@43 /* ~[Brage]Private, being nervous or even afraid is only natural. You need to focus on *why* you are here. The only thing worth being afraid of is that your foe will overpower you - and not because of yourself, but because of your friends and the ones that depend on you! *They* are who you are here to protect. It's not to battle the foes. It's to battle them so they do not harm your loved ones!~ */
+== BDHESTER @44 /* ~[Hester]So - by focussing on why we're here, the injustices Caelar's wrought upon the Sword Coast, maybe I can ignore my nerves - or even turn them in anger against my foes?~ */
+== C#BrageJ @45 /* ~[Brage]Exactly! I see you caught the spirit. Keep it up, private! You can do this.~ */
+END
+IF ~~ THEN DO ~IncrementGlobal("BD_FIGHTERS_SKILL","BD3000",2)
+SetGlobal("bd_sdd301_hester_skill","global",2)
+~ EXTERN ~BDHESTER~ 10
+
+/* Clovis */
+EXTEND_BOTTOM BDCLOVIS 3
++ ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ + @46 /* ~[PC reply]Brage, as a commander I am sure you had smaller men in your guard, too. Any advice?~ */ EXTERN C#BrageJ teach_clovis
+END
+
+CHAIN
+IF ~~ THEN C#BrageJ teach_clovis
+@47 /* ~[Brage]You are doing very well, private. But you were trained by soldiers taller than you. You hit reaching upwards - which takes a lot of strength.~ */
+== BDCLOVIS #%2%48093 /* ~I do get fatigued pretty quickly during drills. I thought I needed more training.~ */
+== C#BrageJ @48 /* ~Focus on weak spots were you do not have to reach upwards. There are more than you might think - and the foes will fear you for it.~ */
+END
+IF ~~ THEN DO ~IncrementGlobal("BD_FIGHTERS_SKILL","BD3000",2)
+SetGlobal("bd_sdd301_clovista_skill","global",2)~ EXTERN BDCLOVIS 5
+
+/* Morlis */
+EXTEND_BOTTOM BDMORLIS 4
++ ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ + @49 /* ~Brage, did you have a fierceful fighter like this private under your command and can give some advice?~ */ EXTERN C#BrageJ teach_morlis
+END
+
+CHAIN
+IF ~~ THEN C#BrageJ teach_morlis
+@50 /* ~[Brage]You are strong and do not shy away from being hit. You need to focus that strength on the foe. Try to be in the first row. It is where your skill will be useful the most, as you do not have to watch out not to hit allies. And work on your techniques. Like this...~ */
+END
+IF ~~ THEN DO ~IncrementGlobal("BD_FIGHTERS_SKILL","BD3000",2)
+SetGlobal("bd_sdd301_morlis_skill","global",2)~ EXTERN BDMORLIS 8
+
+/* Taield */
+EXTEND_BOTTOM BDTAIELD 1
++ ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ + @51 /* ~Brage, as a former commander, can give this private some advice?~ */ EXTERN C#BrageJ teach_taield
+END
+
+CHAIN
+IF ~~ THEN C#BrageJ teach_taield
+@52 /* ~[Brage]You are good. You need more sparring with skilled opponents. Let us spar so I can show you some techniques.~ */
+END
+IF ~~ THEN DO ~IncrementGlobal("BD_FIGHTERS_SKILL","BD3000",2)
+SetGlobal("bd_sdd301_taield_skill","global",2)~ EXTERN BDTAIELD 2
+
+
+/* catapult at castle, bdheldmo.d */
+I_C_T bdheldmo 1 C#BE_bdheldmo_1
+== C#Bragej IF ~See([PC]) IsValidForPartyDialogue("C#Brage")~ THEN @54 /* ~<CHARNAME> - the catapult aims at the gates and that man is confused about his orders. You! Fire the catapult - now!~ */
+== bdheldmo IF ~See([PC]) IsValidForPartyDialogue("C#Brage")~ THEN @55 /* ~Yes, sir! Er... wait...~ */
+END
+
+
 
 /* Thrix's game */
 
@@ -223,6 +313,33 @@ IF ~~ THEN DO ~SetGlobal("C#Brage_SoDThrix","GLOBAL",9)~ EXIT
 END
 
 END //APPEND
+
+/* chicken in the well easter egg */
+I_C_T BDDOGW01 0 C#BE_BDDOGW01_0
+== C#Bragej IF ~IsValidForPartyDialogue("C#Brage")~ THEN @53 /* ~This might be an old well, but if you want to wash the chicken, taking out the water for it surely would have been the better option instead of putting the chicken inside.~ */
+END
+
+/* Torsin de Lancie, HC denied to poison the crusader provisions */
+I_C_T BDDELANC 25 C#BE_BDDELANC_25
+== C#Bragej IF ~IsValidForPartyDialogue("C#Brage")~ THEN @58 /* ~Would you do all in your power you would send the next squad to do the task, instead of tossing it all onto <CHARNAME>. It is up to *you* to make this happen, instead of blaming <PRO_HIMHER> for the casualties the undamped foe will cause!~ */
+== BDDELANC IF ~IsValidForPartyDialogue("C#Brage")~ THEN @59 /* ~And you would be who to tell me what I am supposed to do? We do not have men to spare. <CHARNAME> is denying this task for no reasons other than morale vanity! Hurting the foe when he rises the weapon is fine, but seeing to the foe not being able to rise the weapon at all would be evil? What twisted sense of "righteousness" is this!~ */
+== C#Bragej IF ~IsValidForPartyDialogue("C#Brage")~ THEN @60 /* ~I... am noone but a fighter with some experience in command. I see the benefit in this plan, sir. That is why I am surprised you toss it away just because one <PRO_MANWOMAN> refuses to do it - while rejecting responsibility for the outcome at the same time.~ */
+== BDDELANC IF ~IsValidForPartyDialogue("C#Brage")~ THEN @61 /* ~I will not repeat that I lack the capable soldiers to execute this. This is not a trivial task, that is why I requested <CHARNAME> to do it! And you lecture me with morale of leadership, "fighter with some experience in command". Better know your place and keep quiet next time!~ */
+END
+
+/* wall came down with the barrel of Bwoosh! */
+I_C_T BDDELANC 65 C#BE_BDDELANC_65
+== C#Bragej IF ~IsValidForPartyDialogue("C#Brage")~ THEN @62 /* ~That is the uncertainty of command. You can never be sure a plan works out the way it was meant to. The more satisfaction it brings if everything works like a clockwork.~ */
+END
+
+/* portal is open, talk to Torsin de Lancie through the closed door */
+I_C_T BDDELANC 75 C#BE_BDDELANC_75
+== C#Bragej IF ~IsValidForPartyDialogue("C#Brage")~ THEN @56 /* ~There is no other way than facing it onwards - may Helm help us.~ */
+END
+
+I_C_T BDDELANC 79 C#BE_BDDELANC_79
+== C#Bragej IF ~IsValidForPartyDialogue("C#Brage")~ THEN @57 /* ~We are back - and victorious! Never would I have believed it, had I heard this as a tale!~ */
+END
 
 
 

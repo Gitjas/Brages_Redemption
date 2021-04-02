@@ -1,3 +1,7 @@
 @9000  = ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate~ 
 @9001  = ~Assign the mod's portrait and soundset to the original Brage in game.~
 @9002  = ~Brage's Redemption mod main component needs to be installed.~
+
+/* new for v6 */
+@9003  = ~This mod is not compatible with this game.~
+@9004  = ~This mod needs to be installed before EET_End on your EET install.~

@@ -30,7 +30,7 @@ THEN
   RESPONSE #100
     SetGlobal("C#Brage_MoveCamp","bd0121",1)
     SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
-    MoveGlobal("bd0010","C#Brage",[475.600])
+    MoveGlobal("bd0121","C#Brage",[475.600])
     ActionOverride("C#Brage",Face(S))    //or any other direction depending on the coordinates
     ApplySpellRES("bdrejuve","C#Brage")  //completely heals and removes all spell effects
     ChangeEnemyAlly("C#Brage",NEUTRAL)

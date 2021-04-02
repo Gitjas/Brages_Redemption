@@ -1,3 +1,7 @@
 @9000  = ~Brage's Redemption - Brage NSC fuer Baldurs Gate~ 
 @9001  = ~Das Modportrait und das Soundset auch dem originalen Brage im Spiel geben.~
 @9002  = ~Die Hauptkomponente der Brage's Redemption Mod muss installiert sein.~
+
+/* new for v6 */
+@9003  = ~Die Mod ist nicht mit diesem Spiel kompatibel.~
+@9004  = ~Die Mod muss vor EET_End installiert werden.~

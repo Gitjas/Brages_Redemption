@@ -20,6 +20,7 @@ THEN
 	   	ActionOverride("C#Brage",SetDialog("c#brage2")
 		ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
 	    	ActionOverride("C#Brage",ChangeAIScript("c#brage2",OVERRIDE))
+		ActionOverride("C#Brage",SetGlobal("Kickout","LOCALS",0))
 		ActionOverride("C#Brage",SetGlobal("C#BE_LevelUp","LOCALS",0))
 END
 
@@ -39,4 +40,6 @@ THEN
 		ActionOverride("C#Brage",MakeGlobal())
 	   	ActionOverride("C#Brage",SetDialog("c#brage2")
 	    	ActionOverride("C#Brage",ChangeAIScript("c#brage2",OVERRIDE))
+		ActionOverride("C#Brage",SetGlobal("Kickout","LOCALS",0))
+		ActionOverride("C#Brage",SetGlobal("C#BE_LevelUp","LOCALS",0))
 END

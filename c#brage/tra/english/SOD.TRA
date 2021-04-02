@@ -20,7 +20,8 @@ Brage seems to be back in Baldur's Gate. He was seen at the Sorcerous Sundries.~
 @16  = ~No, you will not take his soul, devil. We will fight you!~
 @17  = ~There is nothing you could do to me physically that I am not already enduring everyday in my mind, fiend.~
 @18  = ~I will be waiting, but I will not come with you without a fight.~
-@19  = ~<CHARNAME>! Why did you do that? Trading my soul to a fiend?!~  [c#ablank]
+/* this should be valid in all cases - PC lost OR won Thrix game: */
+@19  = ~<CHARNAME>! Why did you do that? Gambling with a fiend for my soul?!~  [c#ablank]
 @20  = ~I saved us all the fight. I didn't plan on losing that stupid game!~
 @21  = ~I saved us all the fight. Relax! I won in the end, right?~
 @22  = ~What would you have me do? Fight that thing? Give my own soul? (snort)~
@@ -29,7 +30,8 @@ Brage seems to be back in Baldur's Gate. He was seen at the Sorcerous Sundries.~
 @25  = ~So it was carelessness as well as arrogance?~
 @26  = ~I do admit that I expect nothing else than my soul going into hell after I died - be it for one specific fiend or in a general manner will not make much of a difference.~
 @27  = ~I am speechless with the readiness you traded a companion's soul to that fiend. That was untainted, inherently evil. I do not know what I expected from you - after you helped me so selflessly, I did believe you are different, but I see now that the evil is stirring within you, and that makes me very sad to witness.~
-@28  = ~<CHARNAME>! Why did you do that? Trading a companions soul to a fiend?!~ [c#ablank]
+/* this should be valid in all cases - PC lost OR won Thrix game: */
+@28  = ~<CHARNAME>! Why did you do that? Gambling with a fiend for companions soul?!~ [c#ablank]
 @29  = ~Oh, but a lot of harm was done, <CHARNAME>.~
 @30  = ~You traded your own soul to that fiend.~  [c#ablank]
 @31  = ~I couldn't bet another one's soul! And I didn't want to fight the fiend. At least not now.~
@@ -39,8 +41,30 @@ Brage seems to be back in Baldur's Gate. He was seen at the Sorcerous Sundries.~
 @35  = ~I am deeply humbled and proud to be at your side, <CHARNAME>. This was an inherently selfless action. No matter what others might think, but I know that evil is not stirring within you, and if it does, it will not have a chance to influence your actions against your steady will.~
 @36  = ~Luckily, you won and the danger is over.~
 @37  = ~I hope the fiend comes to collect it's price while I am still at your side, so I can - and will! - help you fight it off.~
-/*
-@38  = 
-@39  = 
-@40  = 
-*/
+
+/* new for v6 */
+@38  = ~[Brage]Man, get your hold together! You let your anxiety take you over like this, it will affect your comrades and dampen the spirit of the whole squad!~
+@39  = ~[PC reply]Brage, you were a commander, you know how to brace fearful soldiers for something like this. Any advice?~
+@40  = ~[Brage]Soldier, being in a siege is never easy to bear. You are not alone in this. Noone of you is. You and your comrades are one unity, and you will fight together. You are stronger than your fear if you know this. Fear is good if it makes you wary. Acknowledge and accept your fear as a sign that you are aware of the danger and ready to fight if necessary. Your fear is what will keep you alive - if you learn to use it.~
+@41  = ~[PC reply]Brage, you think you can teach this recruit to improve his skills?~
+@42  = ~[Brage]Private, it seems your problem runs deeper than just the question of how to use the weapon. I feel your anxiety and the hesitation it leads to. Do you want it to kill you in battle?~
+@43  = ~[Brage]Private, being nervous or even afraid is only natural. You need to focus on *why* you are here. The only thing worth being afraid of is that your foe will overpower you - and not because of yourself, but because of your friends and the ones that depend on you! *They* are who you are here to protect. It's not to battle the foes. It's to battle them so they do not harm your loved ones!~
+@44  = ~[Hester]So - by focussing on why we're here, the injustices Caelar's wrought upon the Sword Coast, maybe I can ignore my nerves - or even turn them in anger against my foes?~
+@45  = ~[Brage]Exactly! I see you caught the spirit. Keep it up, private! You can do this.~
+@46  = ~[PC reply]Brage, as a commander I am sure you had smaller men in your guard, too. Any advice?~
+@47  = ~[Brage]You are doing very well, private. But you were trained by soldiers taller than you. You hit reaching upwards - which takes a lot of strength.~
+@48  = ~[Brage]Focus on weak spots were you do not have to reach upwards. There are more than you might think - and the foes will fear you for it.~
+@49  = ~[PC reply]Brage, did you have a fierceful fighter like this private under your command and can give some advice?~
+@50  = ~[Brage]You are strong and do not shy away from being hit. But you need to focus that strength on the foe. Try to be in the first row. It is where your skill will be useful the most, as you do not have to watch out not to hit allies. And work on your techniques. Like this...~
+@51  = ~[PC reply]Brage, as a former commander, can give this private some advice?~
+@52  = ~[Brage]You are good. You need more sparring with skilled opponents. Let us spar so I can show you some techniques.~
+@53  = ~[Brage]This might be an old well, but if you want to wash the chicken, taking out the water for it surely would have been the better option instead of putting the chicken inside and befoul the water.~
+@54  = ~[Brage]<CHARNAME> - the catapult aims at the gates and that man is confused about his orders. You! Fire the catapult - now!~
+@55  = ~[man at catapult]Yes, sir! Er... wait...~
+@56  = ~[Brage]There is no other way than facing it onwards - may Helm help us.~
+@57  = ~[Brage]We are back - and victorious! Never would I have believed it, had I heard this as a tale!~ 
+@58  = ~[Brage]Would you do all in your power you would send the next squad to do the task, instead of tossing it all onto <CHARNAME>. It is up to *you* to make this happen, instead of blaming <PRO_HIMHER> for the casualties the undamped foe will cause!~
+@59  = ~[De Lancie]And you would be who to tell me what I am supposed to do? We do not have men to spare. <CHARNAME> is denying this task for no reasons other than morale vanity! Hurting the foe when he rises the weapon is fine, but seeing to the foe not being able to rise the weapon at all would be evil? What twisted sense of "righteousness" is this!~
+@60  = ~[Brage]I... am noone but a fighter with some experience in command. I see the benefit in this plan, sir. That is why I am surprised you toss it away just because one <PRO_MANWOMAN> refuses to do it - while rejecting responsibility for the outcome at the same time.~
+@61  = ~[De Lancie]I will not repeat that I lack the capable soldiers to execute this. This is not a trivial task, that is why I requested <CHARNAME> to do it! And you lecture me with morale of leadership, "fighter with some experience in command". Better know your place and keep quiet next time!~
+@62  = ~[Brage]That is the uncertainty of command. You can never be sure a plan works out the way it was meant to. The more satisfaction it brings if everything works like a clockwork.~

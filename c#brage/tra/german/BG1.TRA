@@ -23,7 +23,7 @@
 @22   = ~Na, wenn das nicht unser ehemaliger Hauptmann ist! Ihr habt Euch schnell erholt, wie's scheint.~
 @23   = ~Seid gegrüßt, Olly.~
 @24   = ~Vielleicht haltet Ihr Euch für eine Weile noch etwas bedeckt. Nicht alle sind so erfreut darüber, dass Ihr freigesprochen wurdet. Also, ich schon! Ich freue mich da sehr drüber! Gegen böse Magie ist eben kein Kraut gewachsen. Ich wünschte, die Verhüllten Magier würden hier auch entsprechend durchgreifen, so wie es im Süden üblich ist.~
-@25   = ~Nun, Nashkel ist eben hoch im Norden... Ich wünsche Euch einen guten Tag, Olly.~
+@25   = ~Nun, Nashkell ist eben hoch im Norden... Ich wünsche Euch einen guten Tag, Olly.~
 @26   = ~Pff, Brage. Mit Euch möchte ich garantiert nicht sprechen.~
 @27   = ~Seid gegrüßt, Bren.~
 @28   = ~Ihr könnt Euch Eure Grüße hinstecken, wo sie Sonne nicht scheint. Oder Ihr könnte sie Josh ausrichten. Oh, Moment - nein, geht ja nicht, Josh ist ja tot - von Euch erschlagen! Und nun geht mir aus dem Weg, ich habe zu tun.~
@@ -36,7 +36,7 @@
 @35   = ~Ich sollte hier nicht sein... Wir alle sollten hier nicht drin sein. Die Kasernen sind kein Ort für Zivilisten.~
 @36   = ~Ich weiß, dass Leutnant Bardolan Euch eingeladen hat, also ist es für dieses eine mal in Ordnung.~
 @37   = ~Unterhaltung, ein bisschen Freude, Abwechslung, Ablenkung... und obendrein eine Möglichkeit, in diesen Zeiten ein bisschen was extra zu verdienen. Die Stadtoberen fanden es eine gute Idee, einen Rummel zu veranstalten. Ich teile diese Meinung zwar vom Prinzip her, aber wir haben auch so schon nicht genug Soldaten, um die Stadt richtig abzusichern, so einen Karneval erst recht nicht.~
-@38   = ~Nashkells Bürgermeister hat das richtige entschieden. Es ist von größter Bedeutung, dass die Leute nicht ihre gute Laune verlieren, besonders in Zeiten wie diesen.~
+@38   = ~Nashkells Bürgermeister hat das Richtige entschieden. Es ist von größter Bedeutung, dass die Leute nicht ihre gute Laune verlieren, besonders in Zeiten wie diesen.~
 @39   = ~Ich stimme dem zwar zu, aber nicht, wenn der Weg dorthin zu noch mehr Diebstählen und Schlägereien führt.~
 @40   = ~Manchmal ist dies das, was Leute zum Dampfablassen brauchen. Ich beneide nicht diejenigen, die hier für Ordnung sorgen sollen, das gebe ich gerne zu.~
 @41   = ~Ich sehe den Sinn eines solchen Karnevals nicht. Diese ganzen... Tricksereien und Gaukeleien, und wofür? Damit man die Sorgen des Alltags mal für eine Weile vergessen kann, anstatt anzupacken und Lösungen für die Probleme anzugehen!~
@@ -61,13 +61,13 @@
 @60   = ~Das zu sehen...~
 @61   = ~Brage, alles in Ordnung?~
 @62   = ~Ja, Ihr wart recht... gründlich.~
-@63   = ~Oh, schaut mal, eine zerstörte Karavane! Wer die wohl auf dem Gewissen hat?~
+@63   = ~Oh, schaut mal, eine zerstörte Karawane! Wer die wohl auf dem Gewissen hat?~
 @64   = ~(Brage spannt seine Kiefermuskeln an.) Lasst uns weitergehen, <CHARNAME>. Wir müssen noch eine Menge erledigen!~
 @65   = ~Hier sind wir. Hier bin ich... Wie sehr hatte ich mir gewünscht, Zeit für die Untersuchung der Mine zu haben. Zu wissen, dass die Minenarbeiter und Soldaten hier in Schwierigkeiten sind, ohne helfen zu können, war unerträglich. Nun bin ich hier, und wünschte... ich wünschte, mein Wunsch wäre nicht in Erfüllung gegangen, denn der Grund, warum ich nun hier sein kann, kam direkt aus den neun Höllen!~
 @66   = ~Wir haben es geschafft, <CHARNAME>! Wir haben die Minen von dem Übel befreit, das sich hier eingenistet hatte. Es ist... eine kleine Gutmachung für die Trauer, die ich über die Stadt gebracht habe.~
 @67   = ~Offensichtlich ist die Suche nach den eigentlichen Hintermännern noch nicht vorbei, wie es scheint. Wenn Ihr unsere Schritte weiter in Richtung der Drahtziehern lenkt, wäre ich davon sehr angetan, ich werde Euch aber genauso auf der Suche nach den Mördern Eures Ziehvaters unterstützen.~
-@68   = ~Ah, es fühlt sich nicht an wie ein Sieg. Ich bin Euch gefolgt und habe meinen Mund gehalten, als wir Tazok gegenüberstanden, weil ich weiß, dass er nur ein weiterer Handlanger für diejenigen ist, die das verfluchte Schwert zu mir schickten. Trotzdem stößt mir seine Flucht sauer auf.~
-@69   = ~Aber vielleicht wird es zu einer Chance - die Chance, durch seine Verfolgung die mit ihm zusammen zu stellen, die die Fäden ziehen. Wir haben neue Namen gelernt heute - "Davaeorn", ist dies der ominöse "D.", den Tazok in dem Brief erwähnte, den Ihr beim Händler verfluchter Gegenstände fandet? Und wer ist "Sarevok"?~
+@68   = ~Ah, es fühlt sich nicht an wie ein Sieg. Ich weiß, dass er nur ein weiterer Handlanger für diejenigen ist, die das verfluchte Schwert zu mir schickten. Trotzdem stößt mir seine Flucht sauer auf.~
+@69   = ~Aber vielleicht wird es zu einer Chance - die Chance, durch seine Verfolgung die mit ihm zusammen zu stellen, die die Fäden ziehen.~
 @70   = ~Ihr... Ihr wärt ein Kind des Bhaal?~
 @71   = ~Ja, so schint es...~
 @72   = ~Ich kann das selbst nicht glauben.~
@@ -131,7 +131,7 @@
 @130  = ~Natürlich. Ich wollte nicht aufdringlich sein.~
 @131  = ~Nein, eher weil ein weiser und mächtiger Magier normalerweise deshalb so weise und mächtig wird, weil er seine Zeit eben nicht mit dem Wechseln von Windeln sondern mit dem Studieren der Magie verbringt.~
 @132  = ~Verzeiht, falls ich Euch zu nahe getreten bin.~
-@133  = ~Ich danke Euch noch einmal dafür, dass Ihr mir die Möglichkeit gebt, die zu verfolgen, die Nashkel soviel Leid angetan haben. Wenn wir jemals Hinweise darauf finden, wer für den Tod Eures Ziehvaters verantwortlich ist, dann werde ich Euch freudig darin unterstützen, diesen nachzugehen und die Verbrecher der Gerichtbarkeit zuzuführen.~
+@133  = ~Ich danke Euch noch einmal dafür, dass Ihr mir die Möglichkeit gebt, die zu verfolgen, die Nashkell soviel Leid angetan haben. Wenn wir jemals Hinweise darauf finden, wer für den Tod Eures Ziehvaters verantwortlich ist, dann werde ich Euch freudig darin unterstützen, diesen nachzugehen und die Verbrecher der Gerichtbarkeit zuzuführen.~
 @134  = ~Ich... ich höre noch immer die Schreie und sehe ihre verzerrten Gesichter vor mir. Ich war in einer Art Trance, als ich das Schwert schwang, aber hinterher... hinterher erinnerte ich mich an alles, was geschehen war. Und ich tue es noch immer... Dass es böse Magie war, die mich dies tun ließ, sollte mich erleichtern, aber das tut es nicht.~
 @135  = ~Vergebt mir. Meine Gedanken kehren immer wieder hierhin zurück.~
 @136  = ~Ich kann mir nicht vorstellen, was Ihr durchmachen müsst.~
@@ -144,15 +144,15 @@
 @143  = ~Sprecht weiter, ich höre Euch zu.~
 @144  = ~Dann tut das bitte im Stillen, Brage.~
 @145  = ~Wie Ihr wünscht.~
-@146  = ~Als ich das Schwert schwang, da war ich nicht ich selbst - ich war nicht bei mir, aber ich erinnere mich, was ich gefühlt habe. Ich fühlte mich verloren, da war ein unbändiges Ziehen, hin zu etwas Vertrautem... und so leiteten mich meine Schritte nach hause, zu meiner Familie... und nachdem... nachdem ich dort war, war dieses Gefühl noch immer nicht weg, aber mein Zuhause war nicht mehr wiederzuerkennen, also ging ich weiter zur Kaserne, aber da war das Gefühl nicht stark genug, obwohl ich kurz im Schlafsaal stand. Vielleicht war es gut so, denn die Soldaten der Tagesschicht ohne Familie in Nashkell schliefen dort, aber vielleicht hätten sie mich stoppen können...~
+@146  = ~Als ich das Schwert schwang, da war ich nicht ich selbst - ich war nicht bei mir, aber ich erinnere mich, was ich gefühlt habe. Ich fühlte mich verloren, da war ein unbändiges Ziehen, hin zu etwas Vertrautem... und so leiteten mich meine Schritte nach Hause, zu meiner Familie... und nachdem... nachdem ich dort war, war dieses Gefühl noch immer nicht weg, aber mein Zuhause war nicht mehr wiederzuerkennen, also ging ich weiter zur Kaserne, aber da war das Gefühl nicht stark genug, obwohl ich kurz im Schlafsaal stand. Vielleicht war es gut so, denn die Soldaten der Tagesschicht ohne Familie in Nashkell schliefen dort, aber vielleicht hätten sie mich stoppen können...~
 @147  = ~Und nun kommt mir plötzlich der Gedanke: wäre mein Gefühl der Verbundenheit mit meiner Familie nicht so stark gewesen, wäre ich nicht ein Hauptmann gewesen, der sich um seine Soldaten sorgte... ich wäre vielleicht gar nicht zurück nach Nashkell gegangen...~
 @148  = ~Das könnt Ihr nicht sicher wissen, Brage.~
 @149  = ~Und hättet stattdessen noch mehr Reisende erschlagen, ja, klingt wie ein guter Plan.~
 @150  = ~Wie kommt Ihr eigentlich auf die Idee, dass sich Eure Frau nicht von Euch abgewendet hätte, wenn Ihr Eure Hauptmannsstelle verloren und lauter Leute auf dem Gewissen habt?~
 @151  = ~Ich möchte es doch nicht hören.~
-@152  = ~Dass die Karavane dort war, war einfach Pech... Es gab so wenig Reisende zu der Zeit!~
+@152  = ~Dass die Karawane dort war, war einfach Pech... Es gab so wenig Reisende zu der Zeit!~
 @153  = ~Die Wahrscheinlichkeit, Banditen zu begegnen, hätte viel höher sein müssen! Aber *nichts* lief so wie es eigentlich hätte sollen, an diesem verfluchten Tag!~
-@154  = ~Die Übeltäter dachten, dass ich das Schwert in der Kaserne erhalte, zwischen all meinen Soldaten, und ich die halbe Garnison in meinem Wahn niederstrecken würde. Welch Narren! Hätte ich das Schwert dort zwischen all meinen Männern erhalten, hätten sie mich leicht überwältigen können... und mich davon abhalten, nach hause zu gehen...~
+@154  = ~Die Übeltäter dachten, dass ich das Schwert in der Kaserne erhalte, zwischen all meinen Soldaten, und ich die halbe Garnison in meinem Wahn niederstrecken würde. Welch Narren! Hätte ich das Schwert dort zwischen all meinen Männern erhalten, hätten sie mich leicht überwältigen können... und mich davon abhalten, nach Hause zu gehen...~
 @155  = ~Wäre es anders gekommen... Wäre der Unterschied gewesen... der Unterschied wäre der gewesen, dass *ich* aller Wahrscheinlichkeit nach zu Tode gekommen wäre, und nicht *sie*! Zu wissen, dass es meine Liebe für sie war, die zu ihrem Tode führte... Ach, das sind Gedanken aus den neun Höllen, und sie vergiften meinen Verstand! Ich brauche frische Luft. <CHARNAME>, lasst uns weitergehen!~
 @156  = ~Ihr kanntet sie nicht! Ihr könnt nicht... Aber Ihr habt recht, ich kann mir nicht sicher sein. Aber versteht Ihr nicht?~
 @157  = ~Ich verstehe es nun... ich weiß nun, dass das Geschehene mein Fehler war.~
@@ -167,7 +167,7 @@
 @166  = ~Aber es war meine Überheblichkeit, die mich alleine zum Erkunden einer gesichteten Händlerleiche gehen ließ, in der Nacht, zwischen all den Banditen, mit einem Schwert, das jeden Moment brechen konnte.~
 @167  = ~Deshalb seid Ihr ja so begierig gewesen, dorthin zu gehen - weil Ihr ein besseres Schwert erwartet hattet.~
 @168  = ~Ich glaube jetzt ehrlich gesagt nicht, dass es sinnvoll ist, Euch die Schuld deswegen zu geben, weil Ihr ein guter Hauptmann für die Stadt und Eure Leute sein wolltet.~ 
-@169  = ~Vielleicht, aber vergesst nicht, zu welcher Zeit das geschehen war. Ihr und Eure Männer waren erschöpft bis zum Umfallen, und das ohne verlässliche Waffen.~
+@169  = ~Vielleicht, aber vergesst nicht, zu welcher Zeit das geschehen war. Ihr und Eure Männer wart erschöpft bis zum Umfallen, und das ohne verlässliche Waffen.~
 @170  = ~Hm, da ist ein Körnchen Wahrheit drin.~
 @171  = ~Wenn Ihr es darauf anlegt, dann könnt Ihr Euch für alles die Schuld geben. Es hängt von Eurer Perönlichkeit ab. Ihr müsst das aber nicht machen, wisst Ihr.~
 @172  = ~Ich finde es großartig, dass Ihr Euch besser verstehen lernt. Es interessiert mich aber nicht, davon zu hören.~
@@ -204,7 +204,7 @@
 @203  = ~Ich weiß. Ihr sprecht davon, immer schon vorher schlauer sein zu müssen. Aber das ist Blödsinn. Man ist *immer* erst hinterher schlauer. Außer vielleicht die Götter selbst.~
 @204  = ~Ich weiß, dass Ihr Euer bestes tun werdet, Brage. Gebt die Hoffnung nicht auf.~
 @205  = ~Ich danke Euch für Eure freundlichen Worte, <CHARNAME>.~
-@206  = ~<CHARNAME>, ich bin so erfüllt von Zorn, und weiß nicht, wohin ich ihn richten soll! Warum... warum war da niemand, der mich aufgehalten hat? Warum ist niemand eingeschritten? Warum haben sie nicht *richtig* nach mir gesucht. Sie hätten... die Karavane. Die Karavane hätten sie zumindest verhindern können! Es ist deren Schuld, dass ich alle Reisenden auf dieser Karavane erschlagen habe... und die Pferde. Es... es muss so sein!~
+@206  = ~<CHARNAME>, ich bin so erfüllt von Zorn, und weiß nicht, wohin ich ihn richten soll! Warum... warum war da niemand, der mich aufgehalten hat? Warum ist niemand eingeschritten? Warum haben sie nicht *richtig* nach mir gesucht. Sie hätten... die Karawane. Die Karawane hätten sie zumindest verhindern können! Es ist deren Schuld, dass ich alle Reisenden auf dieser Karawane erschlagen habe... und die Pferde. Es... es muss so sein!~
 @207  = ~Es ist gut, dass Ihr Eure Aggression nun nicht mehr auf Euch selbst richtet, Brage.~
 @208  = ~Diese Anschuldigung ist ungefähr genauso unsinnig wie die, dass alles Eure Schuld wäre.~
 @209  = ~Achso, nun sind also Eure Soldaten Schuld? Wie wär's wenn Ihr noch ein bisschen mit dem Fuß aufstampft, dann wird diese Anschuldigung sicher noch viel überzeugender!~
@@ -219,9 +219,9 @@
 @218  = ~Sie hätten... Sie... Nein, sie hätten es nicht, nicht wahr? Sie mussten sich auch so schon zwischen den Patrouillen in der Stadt und auf den Landstraßen aufteilen. Ihr Hauptmann war... verschwunden. Sie waren alle in Pein, wussten nicht, warum ich das tun würde - und ob es noch weitere Angriffe geben würde. Sie sandten einen Suchtrupp, und dann waren sie damit beschäftigt, den normalen Betrieb aufrecht zu erhalten und die Ordnung in der Stadt zu wahren. Es gibt viele Gründe, warum eine Patrouille lange fortbleibt. Wann erklärt man sie als verschollen und entsendet eine neue? Jemand muss diese Entscheidung fällen...~
 @219  = ~Bedauernswerter Leutnant Bardolan. Er ist ein guter Soldat, aber die Funktion eines Hauptmanns auszuführen ist etwas anderes als die eines Leutnants, und das auch bereits in friedlichen Zeiten. Er musste diese Stelle unvermittelt in all diesem Chaos und Tod antreten...~
 @220  = ~(Brage seufzt tief.) Ich habe mich gerade gründlich zum Narren gemacht, <CHARNAME>. Wie nur kann ich mit Fingern auf sie zeigen, nach allem, was sie geleistet haben? Ah, ich muss noch einen weiten Weg gehen, wie es scheint. Es wird nicht einfach werden... Aber das hat auch niemand behauptet.~
-@221  = ~Eure Worte... Eure Worte lassne mich wieder nüchtern denken.~
+@221  = ~Eure Worte... Eure Worte lassen mich wieder nüchtern denken.~
 @222  = ~Alle meine Überlegungen, wer denn nun Schuld an dem Vorgefallen wäre... Gibt es überhaupt den einen Schuldigen? Da war der Schmied, der das Schwert herstellte, der Magier, der es mit böser Magie versah. Da waren die Schurken, die es nahmen. Der Händler, der es hergebracht hat, der Mörder, der es mit dem anderen Schwert vertauschte...~
-@223  = ~Und so geht es weiter. Warum kam die Nachricht so spät am Abend - ich kenne den Mann, der den toten Händler gemeldet hat, daher denke ich nicht, dass dies geplant war. Warum bin ich alleine gegangen? Warum haben mich die anderen alleine gehen lassen, obwohl es gegen die gängige Praxis verstieß. Und dann... warum bin ich nach hause gegangen?...~
+@223  = ~Und so geht es weiter. Warum kam die Nachricht so spät am Abend - ich kenne den Mann, der den toten Händler gemeldet hat, daher denke ich nicht, dass dies geplant war. Warum bin ich alleine gegangen? Warum haben mich die anderen alleine gehen lassen, obwohl es gegen die gängige Praxis verstieß. Und dann... warum bin ich nach Hause gegangen?...~
 @224  = ~Ich frage mich ehrlich - waren es die Götter, die dies ausgelegt haben? Die dieses Schicksal bereitet haben, für meine geliebte Frau, für meine kleinen Töchter, für meine Soldaten, junge und ältere, ... für mich? Welcher Gott würde so etwas tun, sollte einer von uns bestraft werden? Oder war es nur eins von Garagos' verfluchten Spielchen?~
 @225  = ~Sind wir nichts als Spielfiguren für die Götter, mit denen sie sich in ihrem täglichen Kampf um mehr Macht amüsieren können?~
 @226  = ~Euren Zorn jetzt gegen die Götter zu richten, bringt glaube ich nicht weiter. Konzentriert Euch lieber auf die Schurken, die diese bösen Dinge tun, Brage.~
@@ -267,7 +267,7 @@
 @266  = ~In Ordnung.~
 @267  = ~Ich danke Euch.~
 @268  = ~Ich habe eine gute Wahl getroffen, als ich Euch zu meinem Anführer wählte.~ ~Ich habe eine gute Wahl getroffen, als ich Euch zu meiner Anführerin wählte.~
-@269  = ~Wir haben das Versteck der Banditen zerstört... Nur um zu lernen, dass noch mehr zu tun ist bevor wir denen gegenüber stehen, die für das verfluchte Schwert verantwortlich sind. Es war trotzdem gut, was wir hier getan haben, <CHARNAME>. Wir haben durch die Vertreibung eines Hauptteils der Banditen von den Straßen vielen Leuten das Leben sehr erleichtert. Wir sind nur noch nicht fertig mit unserer Aufgabe, das ist alles.~
+@269  = ~Wir haben das Versteck der Banditen zerstört... Nur um zu lernen, dass noch mehr zu tun ist bevor wir denen gegenüber stehen, die für das verfluchte Schwert verantwortlich sind.~
 @270  = ~<CHARNAME>... mir wird unwohl bei dem Gedanken, dass dieses Monster ohne Strafe davonkommen soll, aber ich verstehe, dass er nichts als ein kleines Rädchen war in einem tieferen Geflecht von Verschwörungen. Ich beuge mich Eurer Entscheidung in dieser Sache.~
 @271  = ~Ihr... Ihr verachtenswertes Scheusal! Also ist dieser Tazok nicht hier zu finden? Ihr seid nichts als ein weiterer Handlanger in diesem Konstrukt des Horrors? Wir werden Euch den Garaus machen, und wir werden diesen Tazok finden, und wir werden diesen "D." zur Strecke bringen, der das verfluchte Schwert zu mir schicken ließ!~
 @272  = ~Dass ich mal als Zivilist nach Baldurs Tor kommen würde, hätte ich mir nie träumen lassen... Es ist noch gar nicht so lange her, da fürchtete ich, dass ich hier als Hauptmann aufmaschieren müsste.~
@@ -316,3 +316,9 @@
 @313  = ~Ich auch nicht, aber nun ist es geschehen.~
 @314  = ~(seufz) Ich hoffe inständig, dass sich das nicht negativ auf unsere Beziehungen zu den Leuten in Nashkell auswirken wird. Lasst uns rasch die Smaragde einsammeln und sie zu Oublek bringen, so dass wir wenigstens diese Angelegenheit beilegen können.~
 @315  = ~Der Gerechtigkeit wurde gedient, aber ich wünschte, es wäre anders gelaufen. Ich hatte mir keine großen Gedanken gemacht, als Ghastkill das "uns interessieren nur die Smaragde, nicht der Künster" Kopfgeld gegen Prism ausgerufen hat, aber da ich nun die Details des Falles kenne, kommt es mir sehr extrem vor, einen Mann zu töten, nur weil er zwei Smaragde entwendet hat.~
+/* new for v6 */
+@316  = ~Verfluchte überhebliche Dummheit - wie der Herr, so der Diener - <CHARNAME>, ich habe mich Euch nicht angeschlossen, so dass wir einbrechen und die Bewohner in ihrem Zuhause niederstrecken, und seien sie noch so aggressiv in ihrem Gebaren. Wenn Ihr unbedingt in fremde Häusr eindringen müsst, dann gibt es bessere Arten, um ein Blutvergießen zu vermeiden!~
+@317  = ~Was... was für ein *Wahnsinn* ist das?!~
+@318  = ~Dieser Mann war komplett dem Bösen verfallen. Wie sehr kann ich das Verlangen, das Gefühl des *Zwanges* nachvollziehen, alles auf der Welt mögliche zu tun, um die geliebte Familie wieder am Leben zu sehen, vor allem, wenn man sich für ihren Tod verantwortlich fühlt. Aber dieser Mann Bassilus hat mit seinen Taten jegliche Menschlichkeit hinter sich gelassen. Menschen zu töten, um sie als Zombies seine "Familienangehörigen" spielen zu lassen! Keine Verzweiflung rechtfertigt solch böse Taten. Ich bin froh, dass wir dieses Monster gestoppt haben.~
+@319  = ~Wir haben neue Namen gelernt heute - "Davaeorn", ist dies der ominöse "D.", den Tazok in dem Brief erwähnte, den Ihr beim Händler verfluchter Gegenstände fandet? Und wer ist "Sarevok"?~
+@320  = ~Es war trotzdem gut, was wir hier getan haben, <CHARNAME>. Wir haben durch die Vertreibung eines Hauptteils der Banditen von den Straßen vielen Leuten das Leben sehr erleichtert. Wir sind nur noch nicht fertig mit unserer Aufgabe, das ist alles.~

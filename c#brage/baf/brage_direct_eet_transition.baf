@@ -1,7 +1,9 @@
 /* K#TelBGT.bcs */
+/* Brage is in party, but dead */
 IF
+	InPartyAllowDead("C#Brage")
+	Dead("C#Brage")
 	Global("C#Brage_EETTransit","LOCALS",0)
-	InMyArea("C#Brage")  
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)

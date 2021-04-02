@@ -72,6 +72,8 @@ END //APPEND
 BEGIN C#Brage1
 IF ~Global("C#BE_SpawnBrage","GLOBAL",7)~ THEN join
 SAY @18 
-IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",8) SetGlobal("C#BE_BrageTalks","GLOBAL",1) RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",800) JoinParty()~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",8) 
+SetGlobal("Kickout","LOCALS",0)
+SetGlobal("C#BE_BrageTalks","GLOBAL",1) RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",800) JoinParty()~ EXIT
 END
 

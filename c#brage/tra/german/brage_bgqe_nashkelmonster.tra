@@ -15,3 +15,6 @@
 
 //script
 @14  = ~Ein junger Lindwurm!... Innerhalb der Stadtgrenzen?! Das ist unmöglich. Alle bereit machen zum Kampf!~
+
+/* new for v6 */
+@15  = ~Also stellt es sich als ein magisches Artefakt heraus, vor dessen Gefährlichkeit wir explizit gewarnt wurden. Wir sollten seine Worte ernst nehmen und es zu einer magisch geschulten Person bringen.~

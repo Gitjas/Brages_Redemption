@@ -71,7 +71,7 @@ IF ~GlobalGT("bd_joined","locals",0) %IT_IS_SOD%~ THEN BEGIN kickout_sod
      GlobalLT("bd_npc_camp_chapter","global",5)
      OR(2)
        !Range("ff_camp",999)
-       NextTriggerObject("ff_camp")
+       %NextTriggerObject_ff_camp%
      !IsOverMe("C#Brage")~ + @30 /* ~Please go back to the camp.~ */ DO ~SetGlobal("bd_npc_camp","locals",1)~ + kickout_2_sod
   ++ @20 /* ~Please wait here. I'll be back for you.~ */ + kickout_1_sod
   ++ @22 /* ~No, I changed my mind. Please come along.~ */ + kickout_03

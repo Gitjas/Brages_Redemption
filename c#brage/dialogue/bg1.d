@@ -230,11 +230,11 @@ I_C_T2 MULAHE 6 C#BE_MULAHE_2 //will only play if it didn't before
 END
 
 /* Sendai */
-I_C_T ~%tutu_var%Sendai~ 0 C#BE_SENDAI_0
+I_C_T ~%tutu_scriptbg%Sendai%eet_var%~ 0 C#BE_SENDAIBG1_0
 == C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @298
 END
 
-I_C_T ~%tutu_var%Sendai~ 3 C#BE_SENDAI_3
+I_C_T ~%tutu_scriptbg%Sendai%eet_var%~ 3 C#BE_SENDAIBG1_3
 == C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @299
 END
 
@@ -337,7 +337,12 @@ SAY @65
 IF ~~ THEN DO ~SetGlobal("C#BE_InsideNashkelMines","GLOBAL",2)~ EXIT
 END
 
+/* Jardak & Delrik */
 
+IF ~Global("C#BE_KilledJARDAK","GLOBAL",1)~ THEN jardak
+SAY @316 /* ~Cursed stupidity - like master, like butler - <CHARNAME>, I did not join you to break into houses and kill the people inside, no matter how aggressive and bullheaded they react. If you have to sneak into houses that are not yours, there are means to do so without bloodshed!~ */
+IF ~~ THEN DO ~SetGlobal("C#BE_KilledJARDAK","GLOBAL",2)~ EXIT
+END
 
 
 /* Mulahey defeated with Brage */
@@ -348,14 +353,37 @@ SAY @66
 IF ~~ THEN DO ~SetGlobal("C#BE_BrageNashkelMines","GLOBAL",2)~ EXIT
 END
 
+END //APPEND
+
+/* Bassilus */
+I_C_T ~BASSIL~ 1 C#BE_BASSIL_1
+== ~C#BrageJ~ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @317 /* ~What... what *is* this madness?~ */
+END
+
+APPEND C#BrageJ
+
+/* Bassilus defeated */
+IF ~Global("C#BE_BASSIL_1","GLOBAL",3)~ THEN bassilus
+SAY @318 /* ~This man succumbed to evil. I do understand the desire, the *urge* to do anything to bring back a loved family to life, especially if one feels responsible for their deaths. But this man Bassilus left all humanity with what he did. Killing people to pretend the zombies were his kin! No despair or turmoil justifies such evil deeds. I am glad we stopped this monster.~ */
+IF ~~ THEN DO ~SetGlobal("C#BE_BASSIL_1","GLOBAL",4)~ EXIT
+END
+
 
 /* Tazok... */
 /* bandit camp cleared */
 
-IF ~Global("C#BE_BrageClearedBanditCamp","GLOBAL",1)~ THEN cleared_nashkelmines
-SAY @68 /* ~Ah, this does not feel like a victory. I kept my mouth shut and followed your lead in confronting this Tazok because I am well aware that he is but another minion and not the one who initiated the sword to be sent to me. Yet, his escape leaves a foul taste in the mouth nontheless.~ */
-= @69 /* ~Or maybe it is a chance - a chance to pursue him and catch him at the side of his masters. New names we learned today - "Davaeorn", is he the "D." Tazok mentioned in the letter you found with the vendor of cursed items? And who is "Sarevok"?~ */
-= @269 /* ~We destroyed the bandits' hideout... Only to learn that there is even more to do before we stop the threat and find the ones behind the cursed sword. Still, we did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~ */
+IF ~Global("C#BE_BrageClearedBanditCamp","GLOBAL",1)
+Global("BeatTazok","GLOBAL",1)~ THEN cleared_nashkelmines
+SAY @68 /* ~Ah, this does not feel like a victory. This... Tazok is but another minion, and not the one who sent the sword to me. But, his escape leaves a foul taste in the mouth even so.~ */
+= @69 /* ~Or maybe it is a chance - a chance to pursue him and catch him at the side of his masters.~ */
+IF ~~ THEN + cleared_nashkelmines_01
+END
+
+IF ~Global("C#BE_BrageClearedBanditCamp","GLOBAL",1)
+Global("BeatTazok","GLOBAL",0)~ THEN cleared_nashkelmines_01
+SAY @269 /* ~We destroyed the bandits' hideout... Only to learn that there is even more to do before we stop the threat and find the ones behind the cursed sword.~ */
+= @319 /* ~New names we learned today - "Davaeorn", is he the "D." Tazok mentioned in the letter you found with the vendor of cursed items? And who is "Sarevok"?~ */
+= @320 /* ~Still, we did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~ */
 IF ~~ THEN DO ~SetGlobal("C#BE_BrageClearedBanditCamp","GLOBAL",2) SetGlobal("C#BE_KnowsDavaeornsName","GLOBAL",1)~ EXIT
 END
 

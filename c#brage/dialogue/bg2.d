@@ -40,7 +40,7 @@ SAY ~(Brage clenches his teeth.) This bloodlusty, talking sword is a challenge t
 END
 
 IF ~~ THEN lilarcor_followup_01
-SAY ~(sigh) That it is.~
+SAY ~(sigh) I know.~
 IF ~~ THEN + lilarcor_followup_03
 END
 

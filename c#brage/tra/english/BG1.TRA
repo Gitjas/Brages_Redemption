@@ -66,8 +66,8 @@
 @65   = ~Here we are. Here I am... How I wished before, that I had the time to investigate the mines! The thought of these miners and soldiers in trouble without being able to help them was unbearable. Now I am here... And I wished...! I wish it wouldn't have come true at all, for its cause comes directly from the nine hells!~
 @66   = ~We did it, <CHARNAME>! We cleared the evil from the Nashkel mines. I thank you for making me part of this. It is... small recompense for what grieves I have caused the town.~
 @67   = ~But it appears the search for who is behind all this is not yet over. I would be grateful if you would guide us to investigate this further, but I will follow you on to your search for your foster-father's murderers just as well.~
-@68   = ~Ah, this does not feel like a victory. This... Tazok is but another minion, and not the one who sent the sword to me, so I kept my mouth shut and followed your lead in confronting him. But, his escape leaves a foul taste in the mouth even so.~
-@69   = ~Or maybe it is a chance - a chance to pursue him and catch him at the side of his masters. New names we learned today - "Davaeorn", is he the "D." Tazok mentioned in the letter you found with the vendor of cursed items? And who is "Sarevok"?~
+@68   = ~Ah, this does not feel like a victory. This... Tazok is but another minion, and not the one who sent the sword to me. But, his escape leaves a foul taste in the mouth even so.~
+@69   = ~Or maybe it is a chance - a chance to pursue him and catch him at the side of his masters.~
 @70   = ~You... you would be a child of Bhaal?~
 @71   = ~So it seems, yes...~
 @72   = ~I can't believe it myself.~
@@ -109,7 +109,7 @@
 @108  = ~I welcome your presence very much, Brage.~
 @109  = ~You are a good man, Brage. It's much easier for a good man to fall than it is for an evil man to accidentally perform a good deed.~
 @110  = ~You are here for your value as an experienced fighter. I surely hope your personal problems will not affect this.~
-@111  = ~My prowess in battle will not be diminished by my... mental preoccupations. You have my word of that.~
+@111  = ~My prowess in battle will not be diminished by my... mental preoccupations. I give you my word for that.~
 @112  = ~I know that my cousin, Laryssa, died by your hand. She was a good woman, but she shouldn't have protected me like this. (sigh) In the end, she is yet another death I caused.~
 @113  = ~I thank you for your kindness.~
 @114  = ~Ha!... There is truth in that...~
@@ -267,7 +267,7 @@
 @266  = ~Alright.~
 @267  = ~I thank you.~
 @268  = ~I chose well when I picked you as my leader.~
-@269  = ~We destroyed the bandits' hideout... Only to learn that there is even more to do before we stop the threat and find the ones behind the cursed sword. Still, we did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~
+@269  = ~We destroyed the bandits' hideout... Only to learn that there is even more to do before we stop the threat and find the ones behind the cursed sword.~
 @270  = ~<CHARNAME>... my heart bleeds at the thought of this monster going unpunished, but I see he is but a minion in what seems to be a deep levelled conspiracy. I bow to your decision on how to deal with this culprit.~
 @271  = ~You... you detestable scoundrel! So this Tazok is not here to find? You are but another minion in this cascading horror? We will bring you to justice and we will find your master. We will find this "D" who sent the cursed sword my way!~
 @272  = ~Never would I have imagined I would enter Baldur's Gate as a civilian... I dreaded to come here as a military force not so long ago.~
@@ -316,12 +316,13 @@
 @313  = ~No, it wasn't, but what's done is done.~
 @314  = ~(sigh) I surely hope this will not turn out as a backlash for our dealings with the people in Nashkel. Let us collect the emeralds and quickly return them to Oublek so we can at least settle this matter.~
 @315  = ~Justice was served, but I'd rather it would have gone differently. I did not think much of it when Ghastkill put out the "we only care about the returned emeralds, not the artist" bounty for Prism, but knowing the details now it does feel harsh to kill a man because of two emeralds.~
-/*
-@316  = 
-@317  = 
-@318  = 
-@319  = 
-@320  = 
-*/
+
+/* new for v6 */
+@316  = ~[Brage]Cursed stupidity - like master, like butler - <CHARNAME>, I did not join you to break into houses and kill the people inside, no matter how aggressive and bullheaded they react. If you have to sneak into houses that are not yours, there are means to do so without bloodshed!~
+@317  = ~[Brage]What... what *is* this madness?~
+@318  = ~[Brage]This man succumbed to evil. I do understand the desire, the *urge* to do anything to bring back a loved family to life, especially if one feels responsible for their deaths. But this man Bassilus left all humanity with what he did. Killing people to pretend the zombies were his kin! No despair or turmoil justifies such evil deeds. I am glad we stopped this monster.~
+@319  = ~[Brage]New names we learned today - "Davaeorn", is he the "D." Tazok mentioned in the letter you found with the vendor of cursed items? And who is "Sarevok"?~
+@320  = ~[Brage]Still, we did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~
+
 
 

@@ -66,8 +66,8 @@
 @65   = ~Eccoci qui. Eccomi qui... Come avrei voluto avere prima il tempo di indagare su queste miniere! Il pensiero di questi minatori e soldati in difficoltà senza poterli aiutare era insopportabile. Adesso sono qui... E vorrei...! Vorrei non essere qui affatto, perché il motivo proviene direttamente dai Nove Inferi!~
 @66   = ~Ce l'abbiamo fatta, <CHARNAME>! Abbiamo eliminato il male dalle miniere di Nashkel. Ti ringrazio per avermi reso parte di tutto questo. È... una piccola ricompensa per ciò che ho causato alla città.~
 @67   = ~Ma sembra che la ricerca di chi ci sia dietro a tutto questo non sia ancora finita. Ti sarei grato se ci guidassi a indagare ulteriormente, ma ti seguirò anche nella tua ricerca degli assassini del tuo padre adottivo.~
-@68   = ~Ah, questa non sembra una vittoria. Questo... Tazok non è che un altro servitore, e non quello che mi ha mandato la spada, quindi ho tenuto la bocca chiusa e ho seguito il tuo esempio nel confrontarmi con lui. Ma la sua fuga mi ha lasciato un sapore sgradevole in bocca.~
-@69   = ~O forse è un'opportunità - un'opportunità per inseguirlo e prenderlo al fianco dei suoi padroni. Ma almeno abbiamo imparato dei nuovi nomi - "Davaeorn", è lui il "D." che Tazok ha menzionato nella lettera che hai trovato sul venditore di oggetti maledetti? E chi è "Sarevok"?~
+@68   = ~Ah, questa non sembra una vittoria. Questo... Tazok non è che un altro servitore, e non quello che mi ha mandato la spada. Ma la sua fuga mi ha lasciato un sapore sgradevole in bocca.~
+@69   = ~O forse è un'opportunità - un'opportunità per inseguirlo e prenderlo al fianco dei suoi padroni.~
 @70   = ~Tu... saresti progenie di Bhaal?~
 @71   = ~Così sembra, sì...~
 @72   = ~Non posso crederci neanche io.~
@@ -270,7 +270,7 @@
 @266  = ~Va bene.~
 @267  = ~Ti ringrazio.~
 @268  = ~Ho scelto bene quando ho scelto te come mio leader.~
-@269  = ~Abbiamo distrutto il nascondiglio dei banditi... Solo per scoprire che c'è ancora molto da fare prima di fermare la minaccia e trovare quelli dietro la spada maledetta. Comunque, abbiamo fatto bene, <CHARNAME>. Abbiamo aiutato molte persone rimuovendo la maggior parte delle attività dei banditi dalle strade. Non abbiamo ancora finito, tutto qui.~
+@269  = ~Abbiamo distrutto il nascondiglio dei banditi... Solo per scoprire che c'è ancora molto da fare prima di fermare la minaccia e trovare quelli dietro la spada maledetta.~
  
 @270  = ~<CHARNAME>... il mio cuore sanguina al pensiero che questo mostro rimanga impunito, ma vedo che è solo un servitore in quella che sembra essere una cospirazione ramificata in profondità. Mi inchino alla tua decisione su come affrontare questo colpevole.~
 @271  = ~Tu... detestabile canaglia! Quindi questo Tazok non è qui? Non sei che un altro servitore in questo orrore senza fine? Ti consegneremo alla giustizia e troveremo il tuo padrone. Troveremo questo "D" che mi ha mandato la spada maledetta!~
@@ -321,5 +321,13 @@
 @313  = ~No, non lo era, ma quello che è fatto è fatto.~
 @314  = ~*sospira* Spero vivamente che questo non si rivelerà un contraccolpo per i nostri rapporti con la gente di Nashkel. Raccogliamo gli smeraldi e restituiamoli rapidamente a Oublek così da poter almeno risolvere la questione.~
 @315  = ~Giustizia è stata fatta, ma avrei preferito che fosse andata diversamente. Non ci ho pensato molto quando Ghastkill ha pubblicato la taglia su Prism "a noi interessano solo gli smeraldi, non l'artista", ma conoscendo i dettagli ora è difficile accettare che un uomo sia morto a causa di quei due smeraldi.~
+
+/* new for v6 */
+@316  = ~[Brage]Cursed stupidity - like master, like butler - <CHARNAME>, I did not join you to break into houses and kill the people inside, no matter how aggressive and bullheaded they react. If you have to sneak into houses that are not yours, there are means to do so without bloodshed!~
+@317  = ~[Brage]What... what *is* this madness?~
+@318  = ~[Brage]This man succumbed to evil. I do understand the desire, the *urge* to do anything to bring back a loved family to life, especially if one feels responsible for their deaths. But this man Bassilus left all humanity with what he did. Killing people to pretend the zombies were his kin! No despair or turmoil justifies such evil deeds. I am glad we stopped this monster.~
+
+@319 = ~[Brage]Ma almeno abbiamo imparato dei nuovi nomi - "Davaeorn", è lui il "D." che Tazok ha menzionato nella lettera che hai trovato sul venditore di oggetti maledetti? E chi è "Sarevok"?~
+@320 = ~[Brage]Comunque, abbiamo fatto bene, <CHARNAME>. Abbiamo aiutato molte persone rimuovendo la maggior parte delle attività dei banditi dalle strade. Non abbiamo ancora finito, tutto qui.~
 
 
