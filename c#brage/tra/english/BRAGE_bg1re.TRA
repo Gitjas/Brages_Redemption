@@ -2,7 +2,7 @@
 @1  = ~[Necromancer]Yes, I know I concentrated my work on how to restore her - the means were necessary...~
 @2  = ~[Brage]This necromancer, <CHARNAME> - the wish to bring the loved ones back to life, no matter the cost - I can relate to this man.~
 @3  = ~[Imoen]I'm glad we are out of that hell hole. (shudders) True love is supposed to be romantic - and smell of fresh roses! Not... corpses and... yuck.~
-@4  = ~[Ajantis]How much havoc this man created with bodies of loved ones stolen out of their graves! The rest of the dead should not be disturbed so. This man angered the natural order in more than one way.~
+@4  = ~[Ajantis]How much havoc this man created with bodies of loved ones stolen out of their graves! The rest of the dead should not be disturbed so.~
 @5  = ~[Brage]His means were wrong, but I can relate.~
 @6  = ~[PC reply]His means were wrong, oh yes.~
 @7  = ~[PC reply]I can relate, too. It was a harsh fate.~
@@ -19,7 +19,7 @@
 @18  = ~[Brage]What do you mean - collecting all the gold needed for such a resurrection instead of giving it to the living in need? If I'd do that I would be exactly how he was, <CHARNAME>!~
 @19  = ~[Brage](moans) I hope by the might of the gods I will never turn into this. Not after what I did with my hands. I left a wake of corpses - and they weren't already dead.~
 @20  = ~[Brage]I thank you for your kind words. I surely hope so...~
-@21  = ~[Brage]It's life's cruel irony - he wanted to give life to his love again - literally as well as figuratively, and yet all he did was surrounding himself by death and evil necromancy, hiding himself away in a cave, wasting the best years of his life...~
+@21  = ~[Brage]It's life's cruel irony. He wanted to give life to his love again - literally as well as figuratively, and yet all he did was surrounding himself by death and evil necromancy, hiding himself away in a cave, wasting the best years of his life...~
 @22  = ~[Brage](sigh) Yes, it is easy to lose oneself if the goal is too high and the willpower to achieve it is too strong. I can relate in more than one way with this man, <CHARNAME>.~
 @23  = ~[Brage]I feel that this will also serve as a warning - to me. Nothing will be gained if I lose myself in my goal to compensate for the losses I created and turn to unproper means to do so... I beg the gods to help me to spend my vigor wisely so I will not do harm while trying to make up - so what I'll do will not be so *completely* for naught like what this man did.~
 @24  = ~[Brage]Devotion? Yes, but it turned to madness...~
