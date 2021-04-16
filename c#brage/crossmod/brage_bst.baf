@@ -10,7 +10,7 @@ IF
 	!Detect([ENEMY])
 	!Detect([EVILBUTBLUE])
 	CombatCounter(0)
-	AreaCheck(bs1000)
+	AreaCheck("bs1000")
 	GlobalGT("bsCuriousChildWell","MYAREA",4)
 	!See("bswellma")
 	Global("C#BE_BST_1_CM","GLOBAL",0)
