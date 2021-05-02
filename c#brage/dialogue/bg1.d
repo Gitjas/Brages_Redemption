@@ -194,6 +194,15 @@ END
 
 END //APPEND
 
+/* Dandal Nashkel mine area */
+I_C_T DANDAL 0 C#BE_DANDAL_0
+== DANDAL IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @321 /* ~Oh, Brage! I - I didn't see you there.~ */
+END
+
+I_C_T DANDAL 3 C#BE_DANDAL_3
+== DANDAL IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @322 /* ~Well, or maybe he won't, seeing that Brage is with you.~ */
+END
+
 /* Amnish guards Nashkel mine entrance */
 I_C_T AMNIS3 0 C#BE_AMNIS3_0
 == AMNIS3 IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @55

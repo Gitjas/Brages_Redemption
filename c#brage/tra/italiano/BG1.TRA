@@ -329,4 +329,8 @@
 @319 = ~[Brage]Ma almeno abbiamo imparato dei nuovi nomi - "Davaeorn", è lui il "D." che Tazok ha menzionato nella lettera che hai trovato sul venditore di oggetti maledetti? E chi è "Sarevok"?~
 @320 = ~[Brage]Comunque, abbiamo fatto bene, <CHARNAME>. Abbiamo aiutato molte persone rimuovendo la maggior parte delle attività dei banditi dalle strade. Non abbiamo ancora finito, tutto qui.~
 
+/* new for v7 */
+@321  = ~Oh, Brage! I - I didn't see you there.~
+@322  = ~Well, or maybe he won't, seeing that Brage is with you.~
+
 

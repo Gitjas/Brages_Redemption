@@ -322,3 +322,7 @@
 @318  = ~Dieser Mann war komplett dem Bösen verfallen. Wie sehr kann ich das Verlangen, das Gefühl des *Zwanges* nachvollziehen, alles auf der Welt mögliche zu tun, um die geliebte Familie wieder am Leben zu sehen, vor allem, wenn man sich für ihren Tod verantwortlich fühlt. Aber dieser Mann Bassilus hat mit seinen Taten jegliche Menschlichkeit hinter sich gelassen. Menschen zu töten, um sie als Zombies seine "Familienangehörigen" spielen zu lassen! Keine Verzweiflung rechtfertigt solch böse Taten. Ich bin froh, dass wir dieses Monster gestoppt haben.~
 @319  = ~Wir haben neue Namen gelernt heute - "Davaeorn", ist dies der ominöse "D.", den Tazok in dem Brief erwähnte, den Ihr beim Händler verfluchter Gegenstände fandet? Und wer ist "Sarevok"?~
 @320  = ~Es war trotzdem gut, was wir hier getan haben, <CHARNAME>. Wir haben durch die Vertreibung eines Hauptteils der Banditen von den Straßen vielen Leuten das Leben sehr erleichtert. Wir sind nur noch nicht fertig mit unserer Aufgabe, das ist alles.~
+
+/* new for v7 */
+@321  = ~Oh, Brage! Ich - ich habe Euch zuerst gar nicht erkannt.~
+@322  = ~Oder vielleicht sagt er das auch nicht, wenn Brage Euch begleitet.~
