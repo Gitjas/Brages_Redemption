@@ -1,10 +1,10 @@
 /* formerly quest "Brage's Sword" of bgqe */
 
-ADD_JOURNAL TITLE (@1021) @1000 @1001 @1002 @1003 @1004 @1005 @1006 @1007 @1008 @1009 @1010 @1011 @1012 @1013 @1014 @1015 @1016 @1017 @1018 @1019 @1020 USING ~c#brage/tra/%LANGUAGE%/brages_sword.tra~
+ADD_JOURNAL TITLE (@1021) @1000 @1001 @1002 @1003 @1004 @1005 @1006 @1007 @1008 @1009 @1010 @1011 @1012 @1013 @1014 @1015 @1016 @1017 @1018 @1019 @1020 USING ~c#brage/tra/autotra/%LANGUAGE%/brages_sword.tra~
 
 /* BGT: Erase journal entries upon transition to BGII */
 ACTION_IF GAME_IS ~bgt~ THEN BEGIN
-  EXTEND_TOP ~AR0602.bcs~ ~c#brage/bragesword/c#q13_ar0602_bgt.baf~ EVALUATE_BUFFER USING ~c#brage/tra/%LANGUAGE%/brages_sword.tra~
+  EXTEND_TOP ~AR0602.bcs~ ~c#brage/bragesword/c#q13_ar0602_bgt.baf~ EVALUATE_BUFFER USING ~c#brage/tra/autotra/%LANGUAGE%/brages_sword.tra~
 END
 
 /* give oublek a DV */
@@ -292,7 +292,7 @@ ACTION_IF GAME_IS ~bgee eet~ BEGIN
  COMPILE EVALUATE_BUFFER 
    ~...inlined/identify_sword.d~ 
    ~c#brage/bragesword/brages_sword.d~
-   USING ~c#brage/tra/%s/brages_sword.tra~ //###
+   USING ~c#brage/tra/autotra/%s/brages_sword.tra~ //###
 
 END ELSE BEGIN
   COMPILE EVALUATE_BUFFER ~c#brage/bragesword/brages_sword.d~

@@ -6,6 +6,6 @@
 @9003  = ~Die Mod ist nicht mit diesem Spiel kompatibel.~
 @9004  = ~Die Mod muss vor EET_End installiert werden.~
 
-/* new */
+/* new for v6.2 */
 @9005  = ~You need to modmerge your SoD game before installing any mods.~
 @9006  = ~This component makes only sense for BG1.~
