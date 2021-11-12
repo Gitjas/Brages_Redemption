@@ -24,9 +24,7 @@ END
 
 /* BG1, BGII */
 IF ~Global("Kickout","LOCALS",0)
-OR(2)
-%BG1_BEFORE_TRANSITION%
-%IT_IS_BG2%~ THEN kickout
+%IT_IS_NOT_SOD%~ THEN kickout
 SAY @19 /* ~You want me to wait?~ */
 ++ @20 /* ~Please wait here. I'll be back for you.~ */ + kickout_01
 + ~%BG1_BEFORE_TRANSITION%~ + @21 /* ~Actually, I need us to part ways, at least for now.~ */ + kickout_02
@@ -55,9 +53,7 @@ IF ~~ THEN DO ~JoinParty()~ EXIT
 END
 
 IF ~Global("Kickout","LOCALS",1)
-OR(2)
-%BG1_BEFORE_TRANSITION%
-%IT_IS_BG2%~ THEN rejoin
+%IT_IS_NOT_SOD%~ THEN rejoin
 SAY @26 /* ~Hello, <CHARNAME>. You want us to join forces again?~ */
 ++ @27 /* ~Yes, please come along once more.~ */ DO ~SetGlobal("Kickout","LOCALS",0)~ + kickout_03
 ++ @28 /* ~No, not yet.~ */ + kickout_01

@@ -19,8 +19,7 @@ END
 
 CHAIN
 IF WEIGHT #-1
-~%BGT_VAR%
-InParty(Myself)
+~InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 See(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
@@ -30,9 +29,9 @@ Dead("C#q11nec")
 GlobalGT("C#BE_BrageTalks","GLOBAL",18) // after he went through most of his cycle
 Global("C#BE_C#q11nec_78","GLOBAL",1)~ THEN C#BrageB necromancer_followup
 @2 /* ~This necromancer, <CHARNAME> - the wish to bring the loved ones back to life, no matter the cost - I can relate to this man.~ */ DO ~SetGlobal("C#BE_C#q11nec_78","GLOBAL",2)~
-== ~%IMOEN_BANTER%~ IF ~InParty("%IMOEN_DV%") See("%IMOEN_DV%")
+== ~%IMOEN_BANTER%~ IF ~%BG1_BEFORE_TRANSITION% InParty("%IMOEN_DV%") See("%IMOEN_DV%")
 !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @3 /* ~[Imoen] I'm glad we are out of that hell hole. (shudders) True love is supposed to be romantic - and smell of fresh roses! Not... corpses and... yuck.~ */
-== ~%AJANTIS_BANTER%~ IF ~InParty("Ajantis") See("Ajantis")
+== ~%AJANTIS_BANTER%~ IF ~%BG1_BEFORE_TRANSITION% InParty("Ajantis") See("Ajantis")
 !StateCheck("Ajantis",CD_STATE_NOTVALID)~ THEN @4 /* ~[Ajantis] How much havoc this man created with bodies of loved ones stolen out of their graves! The rest of the dead should not be disturbed so. This man angered the natural order in more than one way.~ */
 == C#BrageB @5 /* ~[Brage] His means were wrong, but I can relate.~ */
 END

@@ -1229,7 +1229,6 @@ END
 /* Killing Greywolf, Prism finished his masterpiece */
 /* activate */
 IF
-//?##	%BGT_VAR%
 	InParty(Myself) 
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 	!StateCheck(Myself,CD_STATE_NOTVALID)
@@ -1268,7 +1267,6 @@ END
 /* Prism dead, not finished his masterpiece */
 /* activate */
 IF
-//?##	%BGT_VAR% 
 	InParty(Myself) 
 	!StateCheck(Player1,CD_STATE_NOTVALID)
 	!StateCheck(Myself,CD_STATE_NOTVALID)

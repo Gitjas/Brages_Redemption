@@ -1,3 +1,22 @@
+/* after Korlasz' tomb: Brandock will say his goodbyes upon transition to SoD / BGII */
+/* the actual leaving will be handled by bd0103.bcs */
+
+
+I_C_T bdimoen 53 C#Brage_BG1_bdimoen_53
+== C#Bragej IF ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)
+/* compatibility with EndlessBG1 "Korlasz Dungeon in BG1" + Transitions */
+!Global("SOD_fromimport","global",2)~ THEN @2
+END
+
+I_C_T bdimoen 54 C#Brage_BG1_bdimoen_54
+== C#Bragej IF ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)
+/* compatibility with EndlessBG1 "Korlasz Dungeon in BG1" + Transitions */
+!Global("SOD_fromimport","global",2)~ THEN @2
+END
+
+
 /* This goes into a .d file: Make Corwin mention Brage's whereabouts in BG city */
 EXTEND_BOTTOM bdschael 39
 IF ~!Dead("C#Brage") !InPartyAllowDead("C#Brage")

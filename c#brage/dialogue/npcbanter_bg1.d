@@ -4,7 +4,7 @@
 /* Brage - Minsc 1 */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("Minsc")
@@ -27,7 +27,7 @@ EXIT
 /* in case she wasn't in party when Brage bantered with Minsc */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("Dynaheir")
@@ -47,7 +47,7 @@ EXIT
 /* Brage - Imoen 1 */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("%IMOEN_DV%")
@@ -68,7 +68,7 @@ EXIT
 /* Brage - Eldoth */
 CHAIN
 IF WEIGHT #-1 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
@@ -89,7 +89,7 @@ EXIT
 /* Eldoth continues his teasing, Brage is annoyed */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("Eldoth")
@@ -110,7 +110,7 @@ EXIT
 /* Brage - Garrick 1 */
 CHAIN
 IF WEIGHT #-1 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
@@ -139,7 +139,7 @@ EXIT
 /* Brage - Ajantis 1 */
 CHAIN
 IF WEIGHT #-1 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
@@ -162,7 +162,7 @@ EXIT
 /* Brage - Montaron 1 */
 CHAIN
 IF WEIGHT #-1 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
@@ -182,7 +182,7 @@ EXIT
 /* Brage - Xzar 1 */
 CHAIN
 IF WEIGHT #-1 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
@@ -201,7 +201,7 @@ EXIT
 /* Brage - Xzar - Zombie ring (in case Xzar wasn't present when Brage started his dialogue) */
 CHAIN
 IF WEIGHT #-1 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
@@ -220,7 +220,7 @@ EXIT
 /* Brage - Xzar 2 */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
@@ -246,7 +246,7 @@ EXIT
 /* Brage - Yeslick 1 */
 CHAIN
 IF WEIGHT #-1 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
@@ -266,7 +266,7 @@ EXIT
 /* Brage - Ajantis 2 */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("Ajantis")
@@ -287,7 +287,7 @@ EXIT
 /* Brage - Minsc 2 */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("Minsc")
@@ -305,7 +305,7 @@ EXIT
 /* Brage - Imoen 2 */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("%IMOEN_DV%")
@@ -368,7 +368,7 @@ EXIT
 /* Brage - Minsc 3 */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("Minsc")
@@ -407,7 +407,7 @@ EXIT
 /* Brage - Imoen 3 */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY])
 InParty("%IMOEN_DV%")

@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~6.2~ 
+VERSION ~7pre~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -37,7 +37,7 @@ END
 
 /* reading in of variables */
   ACTION_IF GAME_IS ~tob~ AND NOT GAME_IS ~bgt~ BEGIN
-    OUTER_SPRINT ~IT_IS_BG2~ ~~
+    OUTER_SPRINT ~IT_IS_BG2~ ~True()~
     OUTER_SPRINT ~BGT_VAR~ ~False()~
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
 /* NextTriggerObject not known in BGII */
@@ -47,6 +47,7 @@ END
 /* this is valid for BGII and bgt */
   ACTION_IF GAME_IS ~tob~ THEN BEGIN
     OUTER_SPRINT ~IT_IS_SOD~ ~False()~
+    OUTER_SPRINT ~IT_IS_NOT_SOD~ ~True()~
 /* NextTriggerObject not known in BGII */
     OUTER_SPRINT "NextTriggerObject_ff_camp" "False()"
   END
@@ -71,9 +72,22 @@ END
   ACTION_IF GAME_IS ~bgee~ BEGIN
     INCLUDE ~c#brage/lib/g3_bgee_cpmvars.tpa~
     OUTER_SPRINT ~IT_IS_BG2~ ~False()~
-    OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("BD_PLOT","GLOBAL",0)~
-    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("BD_PLOT","GLOBAL",0)~
     OUTER_SPRINT ~2~ ~~
+
+ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("BD_PLOT","GLOBAL",41)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("bd_plot","global",40)~
+    OUTER_SPRINT ~IT_IS_NOT_SOD~ ~GlobalLT("BD_PLOT","GLOBAL",41)~
+END ELSE ACTION_IF (MOD_IS_INSTALLED ~transitions.tp2~ ~0~) BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("BD_PLOT","GLOBAL",41)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("bd_plot","global",40)~
+    OUTER_SPRINT ~IT_IS_NOT_SOD~ ~GlobalLT("BD_PLOT","GLOBAL",41)~
+END ELSE BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("BD_PLOT","GLOBAL",0)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~GlobalGT("BD_PLOT","GLOBAL",0)~
+    OUTER_SPRINT ~IT_IS_NOT_SOD~ ~Global("BD_PLOT","GLOBAL",0)~
+END
+
   END
 
   ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
@@ -81,14 +95,27 @@ END
     OUTER_SPRINT ~IT_IS_BG2~ ~~
     OUTER_SPRINT ~IT_IS_SOD~ ~False()~
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
+    OUTER_SPRINT ~IT_IS_NOT_SOD~ ~True()~
   END
 
   ACTION_IF GAME_IS ~eet~ BEGIN
     INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
     OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
-    OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1)~
-    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("ENDOFBG1","GLOBAL",0)~
     OUTER_SPRINT ~2~ ~2~
+
+ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~OR(2) Global("ENDOFBG1","GLOBAL",0) GlobalLT("BD_PLOT","GLOBAL",41)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1) GlobalGT("bd_plot","global",40)~
+    OUTER_SPRINT ~IT_IS_NOT_SOD~ ~OR(3) Global("ENDOFBG1","GLOBAL",0)Global("endofbg1","GLOBAL",2) GlobalLT("bd_plot","global",41)~ 
+END ELSE ACTION_IF (MOD_IS_INSTALLED ~transitions.tp2~ ~0~) BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~OR(2) Global("ENDOFBG1","GLOBAL",0) GlobalLT("BD_PLOT","GLOBAL",41)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1) GlobalGT("bd_plot","global",40)~
+    OUTER_SPRINT ~IT_IS_NOT_SOD~ ~OR(3) Global("ENDOFBG1","GLOBAL",0)Global("endofbg1","GLOBAL",2) GlobalLT("bd_plot","global",41)~ 
+END ELSE BEGIN
+    OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~Global("ENDOFBG1","GLOBAL",0)~
+    OUTER_SPRINT ~IT_IS_SOD~ ~Global("ENDOFBG1","GLOBAL",1)~
+    OUTER_SPRINT ~IT_IS_NOT_SOD~ ~OR(2) Global("ENDOFBG1","GLOBAL",0)Global("endofbg1","GLOBAL",2)~ 
+END
   END
 
   INCLUDE ~c#brage/lib/useful_functions.tpa~
@@ -468,7 +495,7 @@ COMPILE EVALUATE_BUFFER ~c#brage/baf/c#brageS.baf~
   EXTEND_BOTTOM ~C#BrageS.bcs~ ~c#brage/baf/c#_lvl_once.baf~ EVALUATE_BUFFER 
   EXTEND_BOTTOM ~C#BrageS.bcs~ ~c#brage/baf/c#brage_ee.baf~ EVALUATE_BUFFER 
 
-/* transition from BG:EE to SoD: change Brage's Joined dialogue and OVERRIDE script -> Brage consinues with C#BrageJ, and his script will be changed in last_bg1_dialogue.tpa, and also in bd0103 (although it is not really needed there as it will be set in bd0121.bcs). */
+/* transition from BG:EE to SoD: change Brage's Joined dialogue and OVERRIDE script -> Brage consinues with C#BrageJ, and his script will be changed in bd0103 (although it is not really needed there as it will be set in bd0121.bcs). */
 
 /* after Korlasz is defeated: DisplayStringHead of his further plans. 
 Same script blocks get patched to both area scripts of Korlasz's crypt */
@@ -935,6 +962,7 @@ ACTION_IF GAME_IS ~bgee bgt eet~ THEN BEGIN
 
 /* bg1re - necromancer's trouble */
 ACTION_IF FILE_EXISTS_IN_GAME ~C#q11nec.dlg~ THEN BEGIN 
+PRINT @9008 /* ~bg1re "necromancer's trouble" detected: Installing crossmod...~ */
 // Get state for C#q11nec %C#q11nec_78% 
 /* ~Beth and I fell in love, she caught an incurable disease. I promised her to heal her - she died, since then I have been researching how to raise her... Raise her in good health.~ */
 OUTER_SET C#q11nec_78 = STATE_WHICH_SAYS 78 IN ~bg1re/tra/autotra/%s/necromancer.tra~ FROM ~C#q11nec~
@@ -948,12 +976,14 @@ END //necromancer's trouble
 
 /* bgqe - babysitting quest */
 ACTION_IF FILE_EXISTS_IN_GAME ~C#Q03008.dlg~ THEN BEGIN 
+PRINT @9009 /* ~bg1re "babysitting quest" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_babysitting.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_babysitting.baf~ EVALUATE_BUFFER
 END //babysitting quest
 
 /* bgqe - Nashkell Monster */
 ACTION_IF FILE_EXISTS_IN_GAME ~C#Q04004.dlg~ THEN BEGIN 
+PRINT @9010 /* ~bg1re "Nashkell Monster" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_nashkelmonster.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_nashkelmonster.baf~ EVALUATE_BUFFER
 USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
@@ -973,30 +1003,85 @@ END //Nashkell Monster
 
 /* bgqe - Warm place for Noober */
 ACTION_IF FILE_EXISTS_IN_GAME ~C#LCNOOB.dlg~ THEN BEGIN 
+PRINT @9011 /* ~bg1re "Warm place for Noober" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_noober.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_noober.baf~ EVALUATE_BUFFER
 END //Warm place for Noober
 
 /* bgqe - Fallen Paladin */
-ACTION_IF FILE_EXISTS_IN_GAME ~C#Q05001.dlg~ THEN BEGIN 
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q05001.dlg~ THEN BEGIN  
+PRINT @9012 /* ~bg1re "Fallen Paladin in Baldur's Gate" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_fallenpaladin.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_fallenpaladin.baf~ EVALUATE_BUFFER
 END //Fallen Paladin
 
 /* bst */
-ACTION_IF FILE_EXISTS_IN_GAME ~bswellma.cre~ THEN BEGIN 
+ACTION_IF FILE_EXISTS_IN_GAME ~bswellma.cre~ THEN BEGIN  
+PRINT @9013 /* ~Balduran's Seatower detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bst.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bst.baf~ EVALUATE_BUFFER
 END //bst
 
+/* EndlessBG1 */
+ACTION_IF (GAME_INCLUDES ~sod~ AND FILE_EXISTS_IN_GAME ~c#stdstr.bcs~) THEN BEGIN 
+PRINT @9007 /* ~EndlessBG1 detected: Installing crossmod...~ */
+
+/* direct transition to BGII */
+// Get state @8 for BELT %BELT_ebg1_8% 
+/* ~I see. Still, the city is in your debt. Fare well, Hero of Baldur's Gate.~ */
+  OUTER_SET BELT_ebg1_8 = STATE_WHICH_SAYS 8 IN ~c#endlessbg1/translations/%s/DIALOGUES.TRA~ FROM ~BELT~
+<<<<<<<< ...inlined/brage_ebg1_bg1_transition.d
+I_C_T ~BELT~ %BELT_ebg1_8% C#Brage_EBG1_BG1TOBG2
+== C#BrageJ IF ~InParty("C#Brage")
+InMyArea("C#Brage")
+!StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @0 
+DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
+SetGlobal("Kickout","GLOBAL",1)
+ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+ActionOverride("C#Brage",SetLeavePartyDialogFile())
+ActionOverride("C#Brage",LeaveParty())
+ActionOverride("C#Brage",EscapeAreaDestroy(3)~
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/brage_ebg1_bg1_transition.d~ USING 
+~c#brage/tra/autotra/%LANGUAGE%/sod.tra~
+
+/* transition to SoD for "Korlasz Tomb is in BG1" */
+ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
+// Get state @215 for BELT %belt_ebg1_215%
+/* @215 /* ~A well earned rest. Make yourself at home on the top floor of the palace as much as you like.~ */ */
+  OUTER_SET belt_ebg1_215 = STATE_WHICH_SAYS 215 IN ~c#endlessbg1/translations/%s/DIALOGUES.TRA~ FROM ~BELT~
+  COMPILE EVALUATE_BUFFER ~C#Brandock/dialogue/c#brando_bg1end_sod.d~
+     USING ~C#Brandock/tra/autotra/%LANGUAGE%/brandock_sod.tra~
+<<<<<<<< ...inlined/brage_ebg1_sod_transition.d
+I_C_T ~BELT~ %belt_ebg1_215% C#Brage_EBG1_SODTOBG2
+== C#BrageJ IF ~InParty("C#Brage")
+InMyArea("C#Brage")
+!StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @2 
+DO ~SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
+SetGlobal("Kickout","GLOBAL",1)
+ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+ActionOverride("C#Brage",SetLeavePartyDialogFile())
+ActionOverride("C#Brage",LeaveParty())
+ActionOverride("C#Brage",EscapeAreaDestroy(3)~
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/brage_ebg1_sod_transition.d~ USING 
+~c#brage/tra/autotra/%LANGUAGE%/sod.tra~
+END //~c#endlessbg1.tp2~ ~14~
+
+END /* EndlessBG1 */
+
 /* Northern Tales of the Sword Coast */
 ACTION_IF FILE_EXISTS_IN_GAME ~NTHASDAR.dlg~ THEN BEGIN 
+PRINT @9014 /* ~Northern Tales of the Sword Coast detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_ntotsc.d~
 END //ntotsc
 
 /* Transitions */
 
-ACTION_IF (MOD_IS_INSTALLED ~transitions/setup-transitions.tp2~ ~0~) THEN BEGIN
+ACTION_IF (MOD_IS_INSTALLED ~transitions/setup-transitions.tp2~ ~0~) THEN BEGIN 
+PRINT @9015 /* ~Transitions mod detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_transitions.d~
 	USING ~c#brage/tra/autotra/%LANGUAGE%/sod.tra~
   EXTEND_TOP ~c#brage1.bcs~ ~c#brage/crossmod/brage_transitions.baf~
@@ -1006,10 +1091,6 @@ ACTION_IF (MOD_IS_INSTALLED ~transitions/setup-transitions.tp2~ ~0~) THEN BEGIN
   EXTEND_TOP ~#L_CUT09.bcs~ ~c#brage/crossmod/brage_transitions_eet.baf~ 
     EVALUATE_BUFFER
 END
-
-
-
-
 
 END //BG1
 

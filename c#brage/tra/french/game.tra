@@ -6,6 +6,8 @@
 @5  = ~That is an excellent idea, Brage. I would appreciate your company on the travels.~
 @6  = ~Now that we are done, I will leave for Waterdeep.~
 
+/* new for v6.2 */
+@7  = ~Hannah~
 
 @110  = ~L'épée de Brage~
 @111  = ~Épée à deux mains +1 de Brage~

@@ -13,7 +13,7 @@ EXIT
 /* cursed items - triggers randomly */
 CHAIN
 IF 
-~%BGT_VAR%
+~%BG1_BEFORE_TRANSITION%
 InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("Minsc")

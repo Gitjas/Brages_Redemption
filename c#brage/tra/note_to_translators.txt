@@ -1,0 +1,7 @@
+New for v7:
+
+changed lines:
+-sod.tra: @2, @3
+
+new lines:
+-setup.tra: @9007 - @9015

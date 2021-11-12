@@ -1,7 +1,11 @@
+/* BG1 -> BGII direct transition */
 @0  = ~<CHARNAME>, it is time to say farewell. We've done a great deed. We stopped an impending war and saved a lot of lives. But I will take this as my cue to leave. I need to walk own steps now, search for the smithy of that sword, earn gold for the families I hurt - return to my home on my own terms. Farewell, and may the gods bless you... If the gods will allow it, we will meet again.~
+/* SoD -> BGII transition - SoD is not finished (Transitions mod) */
 @1  = ~<CHARNAME>, if you are intended to turn your back on the sorrow of the people in Dragonspear Castle and the threat Caelar is posing to the peace on the Sword Coast it is your decision, but I will not follow you. I will stay and continue the fight... as a mercenary, if they have need of me.~
-@2  = ~We've done great deeds together. We stopped an impending war and saved a lot of lives. But I will take this as my cue to leave. I need to walk own steps now, search for the smithy of that sword, earn gold for the families I hurt - return to my home on my own terms. Farewell, and may the gods bless you... If the gods will allow it, we will meet again.~
-@3  = ~Is there something in my backpack that belongs to you? Please have a look now, before I will leave.~ 
+/* BG1 -> SoD transition */
+@2  = ~We've done great deeds together. We stopped an impending war and saved a lot of lives. But there is no place in the palace for me. I will make my own way, looking for clues who forged that cursed sword.~
+/* normal SoD -> BGII transition */
+@3  = ~<CHARNAME>, I will take this as my cue to leave. I need to walk own steps now, search for the smithy of that sword, earn gold for the families I hurt... If the gods will allow it, we will meet again. Farewell, and may the gods bless you.~ 
 @4  = ~Farewell, <CHARNAME>.~
 @5  = ~Brage
 
