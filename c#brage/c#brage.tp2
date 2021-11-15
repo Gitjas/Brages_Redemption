@@ -1051,8 +1051,6 @@ ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
 // Get state @215 for BELT %belt_ebg1_215%
 /* @215 /* ~A well earned rest. Make yourself at home on the top floor of the palace as much as you like.~ */ */
   OUTER_SET belt_ebg1_215 = STATE_WHICH_SAYS 215 IN ~c#endlessbg1/translations/%s/DIALOGUES.TRA~ FROM ~BELT~
-  COMPILE EVALUATE_BUFFER ~C#Brandock/dialogue/c#brando_bg1end_sod.d~
-     USING ~C#Brandock/tra/autotra/%LANGUAGE%/brandock_sod.tra~
 <<<<<<<< ...inlined/brage_ebg1_sod_transition.d
 I_C_T ~BELT~ %belt_ebg1_215% C#Brage_EBG1_SODTOBG2
 == C#BrageJ IF ~InParty("C#Brage")
