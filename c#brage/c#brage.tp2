@@ -210,6 +210,8 @@ LANGUAGE ~Italiano~
 
 
 BEGIN @9000 /* ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga~ */
+DESIGNATED 0
+LABEL BragesRedemption-main
 REQUIRE_PREDICATE GAME_IS ~tob bgt bgee bg2ee eet~ @9003
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9004
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9004
@@ -951,8 +953,66 @@ UNLESS ~C#Brage~
 END
 
 
+/////////////////////////////////////////////////////////////////
+// Assign the mod's portrait and soundset to the original Brage in game
+/////////////////////////////////////////////////////////////////
+BEGIN @9001 /* ~Assign the mod's portrait and soundset to the original Brage in game~ */
+DESIGNATED 1
+LABEL BragesRedemption-portrait_sound_original_Brage
+REQUIRE_COMPONENT ~c#brage.tp2~ 0 @9002 /* ~Brage's Redemption mod main component needs to be installed.~ */
+REQUIRE_PREDICATE (GAME_IS ~bgt eet bgee~) @9006
+
+COPY_EXISTING ~brage.cre~ ~override~ ~brage2.cre~ ~override~
+  WRITE_ASCII 0X34 ~c#brages~ #8 //small portrait
+SAY MORALE ~~ [c#brag30]   
+SAY HAPPY ~~ [c#brag29] 
+SAY UNHAPPY_ANNOYED ~~ //[c#brag21]  
+SAY UNHAPPY_SERIOUS ~~ //[c#brag01]  
+SAY UNHAPPY_BREAKING ~~ [c#brag02]  
+SAY LEADER  ~~ [c#brag08] 
+SAY TIRED ~~ [c#brag09]  
+SAY BORED ~~ [c#brag10]  
+SAY BATTLE_CRY1 ~~ [c#brag03]  
+SAY BATTLE_CRY2 ~~ [c#brag05]  
+SAY BATTLE_CRY3 ~~ [c#brag06]  
+SAY BATTLE_CRY4 ~~ [c#brag07]  
+SAY BATTLE_CRY5 ~~ [c#brag04]  
+SAY DAMAGE ~~ [c#brag25]
+SAY DYING ~~ [c#brag22]
+SAY HURT ~~ [c#brag24]  
+SAY AREA_FOREST ~~  
+SAY AREA_CITY ~~  
+SAY AREA_DUNGEON ~~  
+SAY AREA_DAY ~~ 
+SAY AREA_NIGHT ~~ 
+SAY SELECT_COMMON1 ~~ [c#brag11]  
+SAY SELECT_COMMON2 ~~ [c#brag12]  
+SAY SELECT_COMMON3 ~~ [c#brag14]
+SAY SELECT_COMMON4 ~~ [c#brag26]
+SAY SELECT_COMMON5 ~~ [c#brag27]
+SAY SELECT_COMMON6 ~~ [c#brag28]
+SAY SELECT_ACTION1 ~~ [c#brag15]  
+SAY SELECT_ACTION2 ~~ [c#brag13] 
+SAY SELECT_ACTION3 ~~ [c#brag16] 
+SAY SELECT_ACTION4 ~~ [c#brag17]  
+SAY SELECT_ACTION5 ~~ [c#brag18]  
+SAY SELECT_ACTION6 ~~ [c#brag19]  
+SAY SELECT_ACTION7 ~~ [c#brag20] 
+SAY SELECT_RARE1 ~~ [c#brag31]  
+SAY SELECT_RARE2 ~~ [c#brag32]   
+SAY REACT_TO_DIE_GENERAL ~~ [c#brag23] 
+
+
+
+
 ////////////////////////////////////////////////////////
 /* crossmod */
+////////////////////////////////////////////////////////
+
+BEGIN @9016 /* ~Brage's Redemption: Crossmod Content~ */ 
+DESIGNATED 10 
+LABEL BragesRedemption-Crossmod
+REQUIRE_COMPONENT ~c#brage.tp2~ 0 @9002 /* ~Brage's Redemption mod main component needs to be installed.~ */
 
 /* BG1 */
 
@@ -1091,58 +1151,4 @@ PRINT @9015 /* ~Transitions mod detected: Installing crossmod...~ */
 END
 
 END //BG1
-
-
-
-
-
-
-
-/////////////////////////////////////////////////////////////////
-// Assign the mod's portrait and soundset to the original Brage in game
-/////////////////////////////////////////////////////////////////
-BEGIN @9001 /* ~Assign the mod's portrait and soundset to the original Brage in game~ */
-REQUIRE_COMPONENT ~c#brage.tp2~ 0 @9002 /* ~Brage's Redemption mod main component needs to be installed.~ */
-REQUIRE_PREDICATE (GAME_IS ~bgt eet bgee~) @9006
-
-COPY_EXISTING ~brage.cre~ ~override~ ~brage2.cre~ ~override~
-  WRITE_ASCII 0X34 ~c#brages~ #8 //small portrait
-SAY MORALE ~~ [c#brag30]   
-SAY HAPPY ~~ [c#brag29] 
-SAY UNHAPPY_ANNOYED ~~ //[c#brag21]  
-SAY UNHAPPY_SERIOUS ~~ //[c#brag01]  
-SAY UNHAPPY_BREAKING ~~ [c#brag02]  
-SAY LEADER  ~~ [c#brag08] 
-SAY TIRED ~~ [c#brag09]  
-SAY BORED ~~ [c#brag10]  
-SAY BATTLE_CRY1 ~~ [c#brag03]  
-SAY BATTLE_CRY2 ~~ [c#brag05]  
-SAY BATTLE_CRY3 ~~ [c#brag06]  
-SAY BATTLE_CRY4 ~~ [c#brag07]  
-SAY BATTLE_CRY5 ~~ [c#brag04]  
-SAY DAMAGE ~~ [c#brag25]
-SAY DYING ~~ [c#brag22]
-SAY HURT ~~ [c#brag24]  
-SAY AREA_FOREST ~~  
-SAY AREA_CITY ~~  
-SAY AREA_DUNGEON ~~  
-SAY AREA_DAY ~~ 
-SAY AREA_NIGHT ~~ 
-SAY SELECT_COMMON1 ~~ [c#brag11]  
-SAY SELECT_COMMON2 ~~ [c#brag12]  
-SAY SELECT_COMMON3 ~~ [c#brag14]
-SAY SELECT_COMMON4 ~~ [c#brag26]
-SAY SELECT_COMMON5 ~~ [c#brag27]
-SAY SELECT_COMMON6 ~~ [c#brag28]
-SAY SELECT_ACTION1 ~~ [c#brag15]  
-SAY SELECT_ACTION2 ~~ [c#brag13] 
-SAY SELECT_ACTION3 ~~ [c#brag16] 
-SAY SELECT_ACTION4 ~~ [c#brag17]  
-SAY SELECT_ACTION5 ~~ [c#brag18]  
-SAY SELECT_ACTION6 ~~ [c#brag19]  
-SAY SELECT_ACTION7 ~~ [c#brag20] 
-SAY SELECT_RARE1 ~~ [c#brag31]  
-SAY SELECT_RARE2 ~~ [c#brag32]   
-SAY REACT_TO_DIE_GENERAL ~~ [c#brag23] 
-
 
