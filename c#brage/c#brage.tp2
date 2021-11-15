@@ -40,8 +40,6 @@ END
     OUTER_SPRINT ~IT_IS_BG2~ ~True()~
     OUTER_SPRINT ~BGT_VAR~ ~False()~
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
-/* NextTriggerObject not known in BGII */
-    OUTER_SPRINT "NextTriggerObject_ff_camp" "False()"
   END
 
 /* this is valid for BGII and bgt */
@@ -96,6 +94,8 @@ END
     OUTER_SPRINT ~IT_IS_SOD~ ~False()~
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
     OUTER_SPRINT ~IT_IS_NOT_SOD~ ~True()~
+/* NextTriggerObject not known in BGII */
+    OUTER_SPRINT "NextTriggerObject_ff_camp" "False()"
   END
 
   ACTION_IF GAME_IS ~eet~ BEGIN
@@ -210,7 +210,7 @@ LANGUAGE ~Italiano~
 
 
 BEGIN @9000 /* ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga~ */
-REQUIRE_PREDICATE GAME_IS ~bgt bgee eet~ @9003
+REQUIRE_PREDICATE GAME_IS ~tob bgt bgee bg2ee eet~ @9003
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9004
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9004
 
