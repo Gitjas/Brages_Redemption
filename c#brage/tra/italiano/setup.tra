@@ -7,17 +7,15 @@
 @9004  = ~Questa mod deve essere installata prima di EET_End nella tua installazione EET.~
 
 /* new for v7 */
-@9005  = ~You need to modmerge your SoD game before installing any mods.~
-@9006  = ~This component makes only sense for BG1.~
-
-/* new for v7 */
-@9007  = ~EndlessBG1 detected: Installing crossmod...~
-@9008  = ~bg1re "necromancer's trouble" detected: Installing crossmod...~
-@9009  = ~bg1re "babysitting quest" detected: Installing crossmod...~
-@9010  = ~bg1re "Nashkell Monster" detected: Installing crossmod...~
-@9011  = ~bg1re "Warm place for Noober" detected: Installing crossmod...~
-@9012  = ~bg1re "Fallen Paladin in Baldur's Gate" detected: Installing crossmod...~
-@9013  = ~Balduran's Seatower detected: Installing crossmod...~
-@9014  = ~Northern Tales of the Sword Coast detected: Installing crossmod...~
-@9015  = ~Transitions mod detected: Installing crossmod...~
-@9016  = ~Brage's Redemption: Crossmod Content~
+@9005  = ~La tua versione di SoD deve essere aggiornata con modmerge prima di installare qualsiasi mod~
+@9006  = ~Questo componente ha senso solo per BG1.~
+@9007 = ~Rilevato EndlessBG1: Installazione crossmod...~
+@9008 = ~Rilevato bg1re "Il Problema del Negromante": Installazione crossmod...~
+@9009 = ~Rilevato bgqe "La Cura dei Bambini": Installazione crossmod...~
+@9010 = ~Rilevato bgqe "Il Mostro di Nashkell": Installazione crossmod...~
+@9011 = ~Rilevato bgqe "Un Posto Caldo per Noober": Installazione crossmod...~
+@9012 = ~Rilevato bgqe "Un Paladino Decaduto a Baldur's Gate": Installazione crossmod...~
+@9013 = ~Rilevato Balduran's Seatower: Installazione crossmod...~
+@9014 = ~Rilevato Northern Tales of the Sword Coast: Installazione crossmod...~
+@9015 = ~Mod Transizioni rilevata: Installazione crossmod...~
+@9016 = ~La Redenzione di Brage: Contenuti Crossmod~
