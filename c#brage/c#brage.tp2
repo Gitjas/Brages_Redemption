@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~7.1~ 
+VERSION ~7.2~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -1083,7 +1083,7 @@ PRINT @9013 /* ~Balduran's Seatower detected: Installing crossmod...~ */
 END //bst
 
 /* EndlessBG1 */
-ACTION_IF (GAME_INCLUDES ~sod~ AND FILE_EXISTS_IN_GAME ~c#stdst2.bcs~) THEN BEGIN 
+ACTION_IF (GAME_INCLUDES ~sod~ AND MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~0~) THEN BEGIN 
 PRINT @9007 /* ~EndlessBG1 detected: Installing crossmod...~ */
 
 /* direct transition to BGII */

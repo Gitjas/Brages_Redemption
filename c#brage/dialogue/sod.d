@@ -107,15 +107,20 @@ END //APPEND
 
 /* coalition camp - training the recruits */
 /* Hester */
+I_C_T BDHESTER 5 C#BE_BDHESTER_5
+== C#BrageJ IF ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @42 /* ~Private, it seems your problem runs deeper than just the question of how to use the weapon. I feel your anxiety and the hesitation it leads to. Do you want it to kill you in battle?~ */
+END 
+
 EXTEND_BOTTOM BDHESTER 6
 + ~InParty("C#Brage") 
 InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ + @41 /* ~Brage, you think you can teach this recruit to improve his skills?~ */ EXTERN C#BrageJ teach_hester
 END
 
-INTERJECT BDHESTER 5 C#BE_BDHESTER_5
-== C#BrageJ IF ~InParty("C#Brage") 
-InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @42 /* ~Private, it seems your problem runs deeper than just the question of how to use the weapon. I feel your anxiety and the hesitation it leads to. Do you want it to kill you in battle?~ */
-END BDHESTER 6
+EXTEND_BOTTOM BDHESTER 7
++ ~InParty("C#Brage") 
+InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ + @41 /* ~Brage, you think you can teach this recruit to improve his skills?~ */ EXTERN C#BrageJ teach_hester
+END
 
 CHAIN
 IF ~~ THEN C#BrageJ teach_hester
