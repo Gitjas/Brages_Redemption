@@ -42,7 +42,13 @@
 @37   = ~Sii pronto. Tornerò per te.~
 @38   = ~Le mie indagini sulla spada maledetta mi hanno permesso di tornare a Baldur's Gate. E in che tumulto ho trovato la città!~
 @39   = ~Le mie indagini sulla spada maledetta mi hanno permesso di arrivare fino a Waterdeep e di nuovo a Baldur's Gate, ma la crociata di questa Caelar mi conduce qui ora.~
-@40   = ~Non faccio propriamente parte di questa coalizione, ma sì, vorrei che ti unissi a me.~
-@41   = ~Oh? Ottimo, sono sicuro che faremo del bene, comunque.~
-@42   = ~Come desideri. Aspetterò.~
-@43   = ~Ti coprirò le spalle, <CHARNAME>.~
+@40   = ~Come desideri. Aspetterò.~
+@41   = ~Ti coprirò le spalle, <CHARNAME>.~
+
+/* new for v8 */
+@42   = ~I see. You will find me in the Temple District in Athkatla. I will return to the Temple of Helm.~
+@43   = ~I thank you. I'll be where you'll expect me.~
+@44   = ~<CHARNAME>, I will finish the rescue of the missing girl while you don't need me, is that alright?~
+@45   = ~No, please just wait here. I'll be back in a moment and we can pursue the search together.~
+@46   = ~Yes, that sounds great. Do that.~
+@47   = ~That's fine by me, but I want you to return to the camp so I'll find you there.~

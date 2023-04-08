@@ -16,13 +16,14 @@ END
 /* 2 Portal is opened after Hephernaan's scheme */
 IF
 	AreaCheck("BD4300")
-	Global("bd_plot","bd4300",495)
+	Global("bd_plot","global",495)
 	Global("C#Brage_SoDPortalComment","bd4300",0) 
 	IfValidForPartyDialog("C#Brage")  
 THEN
 	RESPONSE #100
 		SetGlobal("C#Brage_SoDPortalComment","bd4300",1)
 		DisplayStringHead("C#Brage",@1010)  
+		SmallWait(8)
 		Continue()
 END
 
@@ -44,13 +45,15 @@ END
 
 /* 4 Comment after first wave of demons if PC lingers */
 IF
+	GlobalLT("bd_plot","global",499)
 	Global("bd_mdd1290d_ot","bd4300",1)  
 	Global("C#Brage_bd_mdd1290d_ot","bd4300",0)  
 	IfValidForPartyDialog("C#Brage")  
 THEN
 	RESPONSE #100
 		DisplayStringHead("C#Brage",@1012)  
-		SetGlobal("C#Brage_bd_mdd1290d_ot","bd4300",1)    
+		SetGlobal("C#Brage_bd_mdd1290d_ot","bd4300",1) 
+		SmallWait(8)   
 		Continue()
 END
 
@@ -65,5 +68,6 @@ THEN
 		SetGlobalTimer("bd_mdd1341a_ot_timer","bd4300",2)  // Dragonspear Castle Basement
 		SetGlobal("C#Brage_bd_ot2","bd4300",1)  
 		DisplayStringHead("C#Brage",@1013)  
+		SmallWait(8)
 		Continue()
 END

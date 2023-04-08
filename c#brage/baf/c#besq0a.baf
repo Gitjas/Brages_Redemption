@@ -1,0 +1,137 @@
+IF
+	OR(2)
+		GlobalGT("C#Brage_SoDQuest","GLOBAL",8)
+		GlobalGT("bd_plot","global",494) //SoD is over
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+/* attacked tree before talking to Tilda first time */
+IF
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	OR(6)
+		Range(Player1,20)
+		Range(Player2,20)
+		Range(Player3,20)
+		Range(Player4,20)
+		Range(Player5,20)
+		Range(Player6,20)
+	Global("C#Brage_SoDQuest","GLOBAL",3)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	CombatCounter(0)
+	GlobalLT("C#Brage_FirTalk","MYAREA",4)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_FirTalk","MYAREA",4)
+END
+
+/* attacked tree after talking to Tilda */
+IF
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	OR(6)
+		Range(Player1,20)
+		Range(Player2,20)
+		Range(Player3,20)
+		Range(Player4,20)
+		Range(Player5,20)
+		Range(Player6,20)
+	GlobalGT("C#Brage_SoDQuest","GLOBAL",3)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	CombatCounter(0)
+	GlobalLT("C#Brage_FirTalk","MYAREA",10)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_FirTalk","MYAREA",10)
+END
+
+IF
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	OR(6)
+		Range(Player1,20)
+		Range(Player2,20)
+		Range(Player3,20)
+		Range(Player4,20)
+		Range(Player5,20)
+		Range(Player6,20)
+	GlobalGT("C#Brage_SoDQuest","GLOBAL",2)
+	CombatCounter(0)
+	OR(3)
+		Global("C#Brage_FirTalk","MYAREA",3)
+		Global("C#Brage_FirTalk","MYAREA",4)
+		Global("C#Brage_FirTalk","MYAREA",10)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Myself)
+END
+
+IF
+	GlobalGT("C#BE_SoDQuestWaitTimer","MYAREA",0)	
+	GlobalLT("C#BE_SoDQuestWaitTimer","MYAREA",4)
+	RealGlobalTimerNotExpired("C#BE_SoDQuestTimer","GLOBAL")
+	!Range(Player1,20)
+	!Range(Player2,20)
+	!Range(Player3,20)
+	!Range(Player4,20)
+	!Range(Player5,20)
+	!Range(Player6,20)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BE_SoDQuestWaitTimer","MYAREA",5)
+END
+
+IF
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	OR(6)
+		Range(Player1,20)
+		Range(Player2,20)
+		Range(Player3,20)
+		Range(Player4,20)
+		Range(Player5,20)
+		Range(Player6,20)
+	GlobalLT("C#Brage_SoDQuest","GLOBAL",10)
+	RealGlobalTimerExpired("C#BE_SoDQuestTimer","GLOBAL")
+	CombatCounter(0)
+	OR(3)
+		Global("C#BE_SoDQuestWaitTimer","MYAREA",1)
+		Global("C#BE_SoDQuestWaitTimer","MYAREA",2)
+		Global("C#BE_SoDQuestWaitTimer","MYAREA",3)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Myself)
+END
+
+IF
+	GlobalLT("C#Brage_SoDQuest","GLOBAL",10)
+	!GlobalTimerNotExpired("C#Brage_SoDc#besq0atimer","bd7300")
+	AreaCheck("bd7300") 
+	InMyArea(Player1) 
+	OR(6)
+		Range(Player1,20)
+		Range(Player2,20)
+		Range(Player3,20)
+		Range(Player4,20)
+		Range(Player5,20)
+		Range(Player6,20)
+THEN
+	RESPONSE #10
+		SetGlobalTimer("C#Brage_SoDc#besq0atimer","bd7300",ONE_ROUND)
+		DisplayStringHead("c#besq0a",@1100)  
+	RESPONSE #10
+		SetGlobalTimer("C#Brage_SoDc#besq0atimer","bd7300",ONE_ROUND)
+		DisplayStringHead("c#besq0a",@1101) 
+	RESPONSE #10
+		SetGlobalTimer("C#Brage_SoDc#besq0atimer","bd7300",ONE_ROUND)
+		DisplayStringHead("c#besq0a",@1102)
+	RESPONSE #10
+		SetGlobalTimer("C#Brage_SoDc#besq0atimer","bd7300",ONE_ROUND)
+		DisplayStringHead("c#besq0a",@1102)  
+	RESPONSE #60
+		NoAction()
+END

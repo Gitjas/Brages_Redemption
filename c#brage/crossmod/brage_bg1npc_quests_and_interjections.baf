@@ -1,0 +1,50 @@
+/* Imoen created her tome */
+/* deactivate Brage's reaction in case he is not in party when Imoen creates it */
+IF
+  %BG1_BEFORE_TRANSITION%
+  !InParty(Myself)
+  CombatCounter(0)
+  Global("C#Brage_ImoenBG1NPCTome","GLOBAL",0)
+  PartyHasItem("X#TOME") //Imoen created her artifact
+THEN
+  RESPONSE #100
+    SetGlobal("C#Brage_ImoenBG1NPCTome","GLOBAL",3)  
+END
+
+
+/* activation */
+IF
+  %BG1_BEFORE_TRANSITION%
+  InParty(Myself)
+    See(Player1)
+    !Detect([ENEMY])
+  See("%IMOEN_DV%") 
+  !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  InParty("%IMOEN_DV%")
+  CombatCounter(0)
+  Global("C#Brage_ImoenBG1NPCTome","GLOBAL",0)
+  PartyHasItem("X#TOME") //Imoen created her artifact
+THEN
+  RESPONSE #100
+    SetGlobal("C#Brage_ImoenBG1NPCTome","GLOBAL",1)  
+END
+
+/* triggering */
+IF 
+  %BG1_BEFORE_TRANSITION%
+  InParty(Myself)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+  See("%IMOEN_DV%") 
+  !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+  InParty("%IMOEN_DV%")
+  CombatCounter(0)
+  Global("C#Brage_ImoenBG1NPCTome","GLOBAL",1)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",1800)
+		StartDialogueNoSet("%IMOEN_DV%")
+END

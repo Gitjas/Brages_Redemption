@@ -1,6 +1,7 @@
 /* brage_bd4601_commenting.baf */
 /* Comment in the Avernus Elevator */
 IF
+	GlobalGT("bd_plot","global",554)
 	Global("C#Brage_bd_hellevator_ot","bd4601",0)  
 	IfValidForPartyDialog("C#Brage")  
 	!GlobalTimerNotExpired("bd_hellevator_timer","bd4601")  
@@ -9,5 +10,5 @@ THEN
 	RESPONSE #100
 		SetGlobal("C#Brage_bd_hellevator_ot","bd4601",1)  // Avernus Elevator
 		SetGlobalTimer("bd_hellevator_timer","bd4601",7)  
-		DisplayStringHead("C#Brage",@1015)  
+		DisplayStringHead("C#Brage",@1015) 
 END

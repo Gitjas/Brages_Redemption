@@ -40,7 +40,13 @@
 @37   = ~Please be ready. I'll be back for you.~
 @38   = ~My investigations concerning the cursed sword let me return to Baldur's Gate. And what turmoil I see the city in!~
 @39   = ~My investigations concerning the cursed sword let me all the way up to Waterdeep and back to Baldur's Gate, but the crusade of this Caelar let me come here for now.~
-@40   = ~I'm so not part of this coalition, but yes, I'd like you to join me.~
-@41   = ~Oh? Well, I am sure we will do a lot of good, nontheless.~
-@42   = ~As you wish. I will wait.~
-@43   = ~I will have your back, <CHARNAME>.~
+@40   = ~As you wish. I will wait.~
+@41   = ~I will have your back, <CHARNAME>.~
+
+/* new for v8 */
+@42   = ~I see. You will find me in the Temple District in Athkatla. I will return to the Temple of Helm.~
+@43   = ~I thank you. I'll be where you'll expect me.~
+@44   = ~<CHARNAME>, I will finish the rescue of the missing girl while you don't need me, is that alright?~
+@45   = ~No, please just wait here. I'll be back in a moment and we can pursue the search together.~
+@46   = ~Yes, that sounds great. Do that.~
+@47   = ~That's fine by me, but I want you to return to the camp so I'll find you there.~

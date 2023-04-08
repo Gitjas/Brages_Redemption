@@ -10,9 +10,6 @@
 @7  = ~Hannah~
 
 
-
-
-
 @110  = ~Brages Schwert~
 @111  = ~Brages Zweihänder +1~
 /* unidentified description bg1:totsc */
@@ -132,9 +129,20 @@ Mindeststärke: 13
 Fertigkeit: Zweihänder
 Typ: 2-händig~
 
+/* new for v8 */
+@126  = ~Bei den Göttern! Was war das? Der Junge hat sich in einen Dämon verwandelt!~
+@127  = ~Nalins Notizen~
+@128  = ~Nalin hat alles, was er über das verfluchte Schwert herausfinden konnte, in ordentlicher Handschrift aufgeschrieben. Maße und Gewicht des Schwertes sind ebenso vermerkt wie alle Vermutungen, die Nalin zur Natur des Fluches hatte. Eine Skizze von Schwertgriff und -knauf zieren die Unterlagen.
+Ihr solltet sicherstellen, dass Brage diese Notizen bei sich behält, so dass er für seine anstehenden Untersuchungen zur Herkunft des verfluchten Schwertes auf sie zurückgreifen kann.~
+
 
 
 /* SoD */
+@500 = ~Tilda~
+@501 = ~Herr Gulliam~
+@502 = ~Stimme eines Mädchens~
+
+
 /* brage_bd0103.baf */
 @1000 = ~Heute werden wir gegen diesen Kreuzzug marschieren. Ich hätte niemals geglaubt, überhaupt wieder Teil einer militärischen Aktion zu sein, und dann auch noch so bald.~
 @1001 = ~Dies ist eine beeindruckende Felsspalte. Ich hätte nicht gedacht, dass diese Crypta so weit in die Tiefen reicht.~
@@ -155,3 +163,25 @@ Typ: 2-händig~
 @1016 = ~Auf in den Kampf!~
 @1017 = ~Ein sehr mächtiges Wesen ist hier gestorben. Ich kann nicht ansatzweise erfassen, was es bedurfte, um es zu besiegen.~
 @1018 = ~Diese Türen wirken einschüchternd - und doch kann ich nicht begründen, warum sie mir so unangenehme Gefühle bereiten.~
+
+/* brage_bd0101.baf */
+@1050 = ~Ich ziehe mit der Flammenden Faust...~
+@1051 = ~Ich freue mich, diesen Menschen helfen zu können - zumindest in gewisser Weise.~
+@1052 = ~Ja, das fühlt sich wie ein aufkommender Krieg an. (seufz)~
+
+/* quest bafs */
+@1100  = ~*schluchz*~
+@1101  = ~*gedämpfter Laut*~
+@1102  = ~*schnüff*~
+@1103  = ~Ihr könntet schwören können, Geräusche wie das Schluchzen eines Kindes aus der großen Tanne gehört zu haben. Um mehr herauszufinden müsst ihr genauer hinschauen.~
+@1104  = ~Ihr starrt in die Dunkelheit des Tannenbaums und seht endlich eine Bewegung in den Ästen.~
+@1105  = ~Ihr müsst näher herantreten, um hier etwas zu tun.~
+
+/* c#brages.baf */
+@1200  = ~[Brage]Seid Ihr sicher, diese Axt schwingen zu wollen? Die Chance für einen Berserkerrausch mag gering sein, aber wenn es passiert und ein geliebter Mensch neben Euch steht, könnte es sich zu einem Albtraum entwickeln.~
+@1201  = ~[Brage]Bitte, zwingt mich nicht, diese Axt zu schwingen. Die Chance für einen Berserkerrausch mag gering sein, aber wenn es passiert und eine Euch wichtige Person neben mir steht, könnte es sich zu einem Albtraum entwickeln.~
+
+/* new for v8 */
+/* lines used in several files */
+@200000 = ~Mein Kamerad Brage hier hat ein verfluchtes Schwert, das er Euch gerne zeigen würde. Bitte schaut es Euch an und sagt uns alles, was Ihr darüber wisst.~
+@200001   = ~Mein Kamerad Brage hier hat Informationen über ein verfluchtes Schwert, die er Euch gerne zeigen würde. Bitte schaut sie Euch an und sagt uns alles, was Ihr über das Schwert wisst.~

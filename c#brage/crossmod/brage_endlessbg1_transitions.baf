@@ -1,0 +1,36 @@
+/* Brage and Ajantis banter about leaving together for Waterdeep */
+/* activation */
+IF
+  %BG1_BEFORE_TRANSITION%
+  InParty(Myself)
+  !See([ENEMY])
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  See(Player1)
+  CombatCounter(0)
+	OR(2)
+		Dead("bdkorlas")  // Korlasz
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+  !AreaCheck("bd0120")
+  !AreaCheck("bd0130")
+  Global("C#BE_SoDleavingcomment","global",0)
+THEN
+  RESPONSE #100
+    SetGlobal("C#BE_SoDleavingcomment","global",1)  
+END
+
+/* triggering */
+IF 
+  %BG1_BEFORE_TRANSITION%
+  InParty(Myself)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+  CombatCounter(0)
+  Global("C#BE_SoDleavingcomment","global",1)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",1800)
+		StartDialogueNoSet(Player1)
+END

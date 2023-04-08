@@ -326,3 +326,40 @@
 /* new for v6.2 */
 @321  = ~Oh, Brage! Ich - ich habe Euch zuerst gar nicht erkannt.~
 @322  = ~Oder vielleicht sagt er das auch nicht, wenn Brage Euch begleitet.~
+
+/* new for v8.0 */
+@323  = ~<CHARNAME>, als ich mich Eurer Sache anschloss, fühlte ich mich wie ein Monster. Ein Mörder, der niedrigsten Sorte. Jetzt verstehe ich, dass ich ein unglücklicher Spielball der Götter war - dass auch ich ein... ein Opfer war. Ich werde nie leugnen, was meine Hände getan haben, nie das Gefühl meiner Schuld abschütteln, nie den Druck auf meiner Brust verlieren, der mir das freie Atmen erschwert. Aber ich werde lernen, mir wieder in die Augen sehen zu können, und das verdanke ich Euch.~
+@324  = ~Habt Dank für die freundlichen Worte, aber ich habe eigentlich nur ein Rätsel gelöst und Nalin ein Schwert gezeigt.~
+@325  = ~Ich habe Euch außer durch Zuhören nicht viel beim Verarbeiten Eurer Emotionen helfen können.~
+@326  = ~Es freut mich wirklich das zu hören, Brage.~
+@327  = ~Glaubt Ihr wirklich, Ihr wärt kein Mörder? Ihr habt eine Menge Leute getötet, Brage. Vergesst das nie.~
+@328  = ~Heißt das, Ihr seid fertig damit, dieses Thema immer wieder durchzukauen? Gut.~
+@329  = ~Den Göttern sei Dank! Endlich ein wenig Anerkennung dafür, dass ich Euch durchgehend bei Eurem Gejammer zugehört habe.~
+@330  = ~Brage, Ihr seid als Kämpfer an meiner Seite. Wenn Eure Worte bedeuten, dass Ihr nun nicht mehr mental so abgelenkt seid - schön, dann lasst uns weiterziehen.~
+@331  = ~Ich... ich bin mir dessen bewusst! Es war nicht meine Intention, leichtfertig über die Schuld zu sprechen, von der ich weiß, dass sie mich mein ganzes Leben lang begleiten wird.~
+@332  = ~Als ich es am meisten brauchte, <CHARNAME>. Nachdem Ihr Euch bemüht habt, meine Unschuld zu beweisen, und mich als Kampfgefährten aufgenommen habt, obwohl ich wirklich versucht habe, Euch zu verscheuchen. (lächelt).~
+@333  = ~Ihr habt viel auf Euch genommen, um meine Unschuld zu beweisen, und mich als Kampfgefährten aufgenommen, obwohl ich wirklich versucht habe, Euch zu verscheuchen... Und Ihr habt zugehört, <CHARNAME>, als ich es am meisten brauchte.~
+@334  = ~Nun, ich fürchte, das wird nie ganz der Fall sein - aber ich verstehe und werde jetzt still sein.~
+@335  = ~Ja, Ihr habt zugehört, <CHARNAME>, als ich es am dringensten brauchte.~
+@336  = ~Ich danke Euch, <CHARNAME>. Für alles.~
+@337  = ~Gern geschehen.~
+@338  = ~Ihr meint diese Schriftrolle? Diese *verfluchte* Schriftrolle? Ihr habt sie Schriftrolle der *Weisheit* genannt! Mann, haltet Euch besser von mir fern, bevor ich die Beherrschung verliere!~
+@339  = ~Wenn ich bedenke, dass ich mich Euch angeschlossen habe, um Wiedergutmachung und Entschädigung für die von mir zerstörten Familien zu erlangen, ist die derzeitige Situation mehr als bedauerlich.~ [c#ablank]
+@340  = ~Ich bin über unsere momentane Situation auch nicht glücklich, das kann ich Euch sagen.~
+@341  = ~Ist das eine Anschludigung? Was soll ich Eurer Meinung nach machen?~
+@342  = ~Ist nicht wirklich unsere Schuld, dass die bösen Kräfte, die wir zu Fall bringen wollen, die städtische Exekutive unter ihre Kontrolle gebracht hat, oder?~
+@343  = ~Natürlich weiß ich, dass sie uns Unrecht tun. Und die Götter sind mein Zeuge, dass ich Euch für keine der Geschehnisse verantwortlich mache.~
+@344  = ~Wir sind nicht aus triftigen Gründen hier, sondern nur aus falschen Anschuldigungen - eine Falle. Wir müssen von hier verschwinden und die Behörden davon überzeugen, dass wir nicht die Mörder sind, für die sie uns halten oder als die uns jemand versucht hinzustellen. Aber genau das werden wir erreichen, wenn wir den verräterischen Plan von Sarevok aufdecken. Hier zu sein ist ein schwerer Rückschlag, aber an unserem Ziel hat sich nichts geändert. Es ist nur viel dringlicher geworden - vor allem was unser persönliches Wohlergehen betrifft.~
+@345  = ~Eine harte Strafe für ein geringes Vergehen, und ein so sinnloser Tod... Ich fürchte jedoch, die Priesterinnen hatten das Recht so gehandelt, auch wenn sich mein Herz mit Wut füllt bei dem Gedanken, sein Kind so zu verlieren. Den Leichnam - vor allem den eines Kindes - nicht den Eltern zu übergeben ist jedoch kein akzeptables Verhalten, egal von welcher Kirche.~
+@346  = ~(seufz) Es tut mir im Herzen weh, zu wissen, dass dieser Junge verloren ist - im Wissen, dass er auf so einfache Weise hätte gerettet werden können, wenn sein Tod kürzer zurückgelegen hätte. Mein Beileid für Euren Verlust.~
+@347  = ~Mann - nehmt Euren Sohn in die Arme und preist Eure Göttin, die Euch die Macht gegeben hat, ihn auf so einfache Weise zurückzurufen! Was würde ich dafür geben, wieder mit meiner Familie sprechen zu können. Und Ihr seid hier und wisst nicht, welches Glück Euch geschenkt wurde.~
+@348  = ~Oh, ich erkenne das Glück sehr wohl. Und ER wird es auch einsehen! Hoch mit dir, los!~
+@349  = ~[Brage]<CHARNAME> - Ihr könnt wirklich nie ganz sicher sein, wie Eure Zauber ausfallen?~
+@350  = ~[PC Reply]Das ist so ungefähr das Prinzip von wilder Magie, ja.~
+@351  = ~[PC Reply]Nun, so schlimm ist es auch nicht. Meistens klappt es wie es soll.~
+@352  = ~[PC Reply]Ja, kann ich nicht. Habt Ihr damit ein Problem?~
+@353  = ~[PC Reply]Ich habe mich schon gefragt, wann Ihr das ansprecht, wenn man Eure schlechten Erfahrungen mit unkontrollierbarer Magie bedenkt.~
+@354  = ~[PC Reply]Geht, wenn Ihr damit nicht klarkommt.~
+@355  = ~[Brage]Ich gebe zu, dass mich der Gedanke daran... verstört. Und doch seid Ihr so weit gekommen, habt meine Unschuld bewiesen... und seid immer noch tatkräftig unterwegs. Ich vertraue darauf, dass Ihr wisst, was Ihr tut. Ich sollte Euch Anerkennung für Eure Leistungen zollen und nicht das Schlimmste annehmen. Ich *werde* Euch Anerkennung zollen und auf Eure Fähigkeiten vertrauen. Lasst uns weitergehen.~
+@356  = ~[Brage]Das ist nicht meine Absicht.~
+

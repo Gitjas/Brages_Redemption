@@ -1,3 +1,4 @@
+/* make him move to the table after wake-up in Place */
 IF
 	Global("bd_plot","global",55)
 	Global("C#Brage_bd_55","bd0103",0)
@@ -11,6 +12,7 @@ THEN
 		SetGlobal("C#Brage_bd_55","bd0103",1)
 END	
 
+/* switch to Brage's greetings dialogue if the PC didn't talk to him yet */
 IF
 	Global("C#Brage_MoveCamp","MYAREA",1)
 	!InParty(Myself)
@@ -21,11 +23,12 @@ THEN
     SetGlobal("C#Brage_MoveCamp","MYAREA",2)  
 END
 
-/* (T3) bd1000: Biff comments on the explosion on the bridge  */
+/* bd1000: comments on the explosion on the bridge  */
 IF
 	GlobalTimerNotExpired("bd_caelar_timer","bd1000")
 	AreaCheck("bd1000")
-	IsValidForPartyDialog(Myself)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
 	Detect(Player1)	
 	Global("C#Brage_SoDbridge","bd1000",0)
 THEN
@@ -38,8 +41,8 @@ END
 /* PC killed crusaders with the spikes */
 IF
 	InParty(Myself)
-	IsValidForPartyDialog(Myself)
-	See(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Detect(Player1)	
 	AreaCheck("bd7230")
 	Global("C#Brage_UsedSpikes","bd7230",1) //this variable is set by patching bdlever2.BCS via tp2
 	CombatCounter(0)
@@ -55,11 +58,11 @@ END
 
 /* PC offered Brage's soul */
 IF
-	IsValidForPartyDialogue(Myself)
-	See(Player1)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Detect(Player1)	
 	CombatCounter(0)
 	!See([ENEMY])
-	!StateCheck(Myself,CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	OR(2)
 		Global("C#Brage_SoDThrix","GLOBAL",2)
@@ -75,11 +78,11 @@ END
 
 /* PC offered someone else's soul */
 IF
-	IsValidForPartyDialogue(Myself)
-	See(Player1)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Detect(Player1)	
 	CombatCounter(0)
 	!See([ENEMY])
-	!StateCheck(Myself,CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	!Global("C#Brage_SoDThrix","GLOBAL",2)
 	!Global("C#Brage_SoDThrix","GLOBAL",3)
@@ -98,11 +101,11 @@ END
 /* PC offered own soul */
 
 IF
-	IsValidForPartyDialogue(Myself)
-	See(Player1)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Detect(Player1)	
 	CombatCounter(0)
 	!See([ENEMY])
-	!StateCheck(Myself,CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	!Global("C#Brage_SoDThrix","GLOBAL",2)
 	!Global("C#Brage_SoDThrix","GLOBAL",3)
@@ -119,11 +122,11 @@ END
 
 /* trigger */
 IF
-	IsValidForPartyDialogue(Myself)
-	See(Player1)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Detect(Player1)	
 	CombatCounter(0)
 	!See([ENEMY])
-	!StateCheck(Myself,CD_STATE_NOTVALID)
 	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
 	OR(4)
 		Global("C#Brage_SoDThrix","GLOBAL",8)
@@ -134,3 +137,309 @@ THEN
 	RESPONSE #100
 		StartDialogNoSet(Player1)
 END
+
+/* item reactions */
+/* bdax1h03 "Chill Axe", "– 2% chance per hit that the wielder will become berserk, losing control of <PRO_HISHER> actions for 3 rounds */
+
+IF
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	!HasItemEquiped("bdax1h03",Myself)
+	OR(6)
+		HasItemEquiped("bdax1h03",Player1)
+		HasItemEquiped("bdax1h03",Player2)
+		HasItemEquiped("bdax1h03",Player3)
+		HasItemEquiped("bdax1h03",Player4)
+		HasItemEquiped("bdax1h03",Player5)
+		HasItemEquiped("bdax1h03",Player6)
+	Detect(Player1)	
+	Global("C#Brage_SoDbdax1h03","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDbdax1h03","LOCALS",1)
+		DisplayStringHead(Myself,@1200)
+END
+
+IF
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	HasItemEquiped("bdax1h03",Myself)
+	Detect(Player1)	
+	Global("C#Brage_SoDbdax1h03","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDbdax1h03","LOCALS",1)
+		DisplayStringHead(Myself,@1201)
+END
+
+/* bdbrac02 "Jester's Bracers"
+"Equipped abilities:
+– Armor Class: 5
+– Charisma: -1 (except for Jesters)
+– Wearer is forced to tell corny jokes 
+– May only be removed with a Remove Curse spell" */
+IF
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	PartyHasItemIdentified("bdbrac02") 
+	Global("C#Brage_SoDbdbrac02","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDbdbrac02","GLOBAL",1)
+END
+
+/* trigger */
+IF
+  InParty(Myself) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+    CombatCounter(0)
+  Global("C#Brage_SoDbdbrac02","GLOBAL",1) 
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+/* bdchan04 "Commander's Chain Mail +3" */
+IF
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	HasItemEquiped("bdchan04",Myself) 
+	Global("C#Brage_SoDbdchan04","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDbdchan04","GLOBAL",1)
+END
+
+/* trigger */
+IF
+  InParty(Myself) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+    CombatCounter(0)
+  Global("C#Brage_SoDbdchan04","GLOBAL",1) 
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+/* bdsw1h05 Gift of the demon +5 (cursed) */
+IF
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	PartyHasItemIdentified("bdsw1h05") 
+	Global("C#Brage_SoDbdsw1h05","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDbdsw1h05","GLOBAL",1)
+END
+
+/* trigger */
+IF
+  InParty(Myself) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+    CombatCounter(0)
+  Global("C#Brage_SoDbdsw1h05","GLOBAL",1) 
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+/* bdsw1hx5 Gift of the Demon +1 (set variable to detect it in case it's already gone after a fight) */
+IF
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#Brage_SoDbdsw1hx5","GLOBAL",1) //set via bdbaldur.bcs
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDbdsw1hx5","GLOBAL",2)
+END
+/* trigger */
+IF
+  InParty(Myself) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+    See(Player1)
+    !Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+    CombatCounter(0)
+  Global("C#Brage_SoDbdsw1h05","GLOBAL",2) 
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+/* back from Avernus */
+
+/* activation */
+
+IF
+	InParty(Myself)
+	OR(2)
+		!RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+		See("BDDAZZO")
+	!See([ENEMY])
+	See(Player1) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	CombatCounter(0)
+	GlobalGT("bd_plot","global",586)
+	AreaCheck("bd4300")
+	Global("C#Brage_SoDEnd","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDEnd","GLOBAL",1)
+END
+
+/* trigger */
+IF
+	InParty(Myself)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(PLAYER1,CD_STATE_NOTVALID)
+	Global("C#Brage_SoDEnd","GLOBAL",1)	
+THEN
+	RESPONSE #100
+    		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",150)
+		StartDialogNoSet(Player1)
+END
+
+
+/* friendship dialogues, timered only */
+
+/* skip first FD if Caelar's plans are known */
+IF
+  InParty(Myself)
+  !See([ENEMY])
+  See(Player1) 
+  CombatCounter(0)
+  OR(2)
+	GlobalGT("bd_plot","global",169) //not after meeting Caelar at CWC
+	GlobalGT("C#RtD_CaelarPlan","GLOBAL",1) //not if Caelar's plans are known (with Road to Discovery
+  Global("C#Brage_SoDDialog","GLOBAL",0)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+		SetGlobal("C#Brage_SoDDialog","GLOBAL",2)
+END
+
+/* 1st FD, after joining, but only if Caelar's plans aren't known yet */
+/* activate */
+IF
+  InParty(Myself)
+  !RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+  !See([ENEMY])
+  See(Player1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  GlobalLT("bd_plot","global",170) //not after meeting Caelar at CWC
+  GlobalLT("C#RtD_CaelarPlan","GLOBAL",2) //not if Caelar's plans are known (with Road to Discovery
+  Global("C#Brage_SoDDialog","GLOBAL",0)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#Brage_SoDDialog","GLOBAL",1)
+END
+
+/* 2nd FD, after arriving at bd1000, first camp */
+/* activate */
+IF
+  InParty(Myself)
+  !RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+  !See([ENEMY])
+  See(Player1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !AreaType(DUNGEON)
+  GlobalGT("bd_plot","global",169) //after leaving BG city
+  Global("C#Brage_SoDDialog","GLOBAL",2)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#Brage_SoDDialog","GLOBAL",1)
+END
+
+/* 3rd FD, after meeting Caelar at CWC / knowing that they want to free souls from Avernus */
+/* skip this if Aun's story is already known */
+/* activate */
+IF
+  InParty(Myself)
+  !RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+  !See([ENEMY])
+  See(Player1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !AreaType(DUNGEON)
+  GlobalLT("C#RtD_CaelarPlan","GLOBAL",5)
+  OR(2)
+	GlobalGT("bd_plot","global",169) //after leaving BG city
+	Global("C#RtD_RoadToDiscovery","GLOBAL",1)
+  OR(2)
+	GlobalGT("C#RtD_CaelarPlan","GLOBAL",1)
+	Global("C#RtD_RoadToDiscovery","GLOBAL",0)
+  Global("C#Brage_SoDDialog","GLOBAL",4)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#Brage_SoDDialog","GLOBAL",1)
+END
+
+/* FP dialogue triggering: SoD */
+IF
+  InParty(Myself)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  !See([ENEMY])
+  See(Player1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  OR(3)
+    Global("C#Brage_SoDDialog","GLOBAL",1) //Caelar acquires a great army with unknown purpose
+    Global("C#Brage_SoDDialog","GLOBAL",3) //marching with the crusade
+    Global("C#Brage_SoDDialog","GLOBAL",5) //after knowing that the crusade is planning on freeing souls from Avernus
+THEN
+  RESPONSE #100
+    RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+    StartDialogNoSet(Player1)
+END
+

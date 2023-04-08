@@ -7,3 +7,21 @@
 @6  = ~[Brage]...Esattamente. Ora che l'hai detto davvero, non suona così frustrante come immaginavo. È solo vero. (sospira).~
 @7  = ~[Brage]Ah beh... non riesco più a vedere le mie ragazze, ma posso assicurarmi che altri bambini crescono senza paura e violenza!~
 @8  = ~[Brage]*Ora* ragiono così?! Beh, meglio tardi che mai, immagino.~
+
+/* new for v8 */
+@9  = ~[Master Shizell]Oh, who would make such a powerful sword and then give it such a curse... But it is such a special curse, there has to be some intention behind it. Such a specific curse doesn't just happen if an enchantment fails.~
+@10  = ~[Brage]Are you saying this sword might have been cursed for tricking someone unaware, specifically?~
+@11  = ~[Brage]Yes, we already heard the suspicion that this sword might have been cursed for tricking someone unaware, specifically.~
+@12  = ~[Master Shizell]It might be a possibility the curse was refined for the purpose. It is well possible that it already was a failed attempt of an enchantment before the current curse was put on it. They are not as rare as some might think - it happens more often than enchanters like to admit. Normally, such a failed attempt would be destroyed or corrected. Maybe it wasn't melted down dirctly because the curse hides so well, or it was spared with the intention of changing the curse to a useful enchantment, seeing what a very powerful sword it is.~
+@13  = ~[Brage]Or it was spared for spreading malice. I thank you for your insights, Master Shizell.~
+@14  = ~[Holger]A fine blade, but it is cursed, you say?~
+@15  = ~[Holger]No, I have never seen it before. We had a source for cursed objects, but they found their fate with a dissatisfied customer.~
+@16  = ~[Holger]Hmmm, I could still find a buyer for you if you are interested. It's not our normal range of wares, though - very little market.~
+@17  = ~[Holger]Cursed objects are not our normal range of wares - very little market.~
+@18  = ~[Holger]Doesn't mean we'd never do them, they are just not as sought after. Last we sold was over a year ago... not counting the cursed collar of domination we procured for a noble for his very private and very illegal...~
+@19  = ~[Brage]Spare us whatever sick details you wanted to give away!~
+@20  = ~[Holger]... Imp hearding project.~
+@21  = ~[Holger]If you don't want me to sell it, there is nothing I can do.~
+@22  = ~[Brage]No, we will not sell it!~
+@23  = ~[Brage]Your jovial approach to this appalls me, but what do I expect from a smuggler.~
+@24  = ~[Brage]Thank you for taking the time, I guess.~

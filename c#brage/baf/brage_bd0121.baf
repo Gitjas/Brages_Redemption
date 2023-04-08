@@ -1,12 +1,15 @@
 /* brage_bd0121.baf
 
-Brage will be waiting insie Sorcerous Sundries */
+Brage will be waiting inside Sorcerous Sundries */
 /* new SoD game */
 IF
+  !Dead("C#Brage")
+  !InPartyAllowDead("C#Brage")
   Global("C#BE_SpawnBrage","GLOBAL",0) //true for a new game
   Global("C#Brage_MoveCamp","bd0121",0) 
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     SetGlobal("C#Brage_MoveCamp","bd0121",1)
     SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
     CreateCreature("C#BRAGES",[475.600],S)  
@@ -18,6 +21,7 @@ THEN
     ActionOverride("C#Brage",ChangeAIScript("",GENERAL))
     ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
     ActionOverride("C#Brage",SetDialog("C#Brages")  //greeting dialogue in SoD
+    SetInterrupt(TRUE)
 END
 
 /* 2nd script block if Brage was in party before */
@@ -28,6 +32,7 @@ IF
   Global("C#Brage_MoveCamp","bd0121",0)  //so it happens only once
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     SetGlobal("C#Brage_MoveCamp","bd0121",1)
     SetGlobal("C#BE_SpawnBrage","GLOBAL",9)
     MoveGlobal("bd0121","C#Brage",[475.600])
@@ -44,4 +49,5 @@ THEN
     ActionOverride("C#Brage",ChangeAIScript("",GENERAL))
     ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
     ActionOverride("C#Brage",SetDialog("C#Brages")  //greeting dialogue in SoD
+    SetInterrupt(TRUE)
 END

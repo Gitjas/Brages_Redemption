@@ -1,0 +1,69 @@
+/* Leave area bd7300.are */
+IF
+	AreaCheck("bd7300") 
+	GlobalGT("C#Brage_SoDQuest","GLOBAL",2)
+THEN
+	RESPONSE #100
+		EscapeAreaDestroy(5)
+END
+
+/* Tilda is rescued. Make her spawn next to uncle */
+
+IF
+	AreaCheck("bd3000") 
+	!See([PC])
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	!Dead("c#besq02")
+	GlobalGT("C#Brage_SoDQuest","GLOBAL",10)
+	Global("C#BE_SoDQuestTildaSpwn","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		CreateCreature("c#besq01",[230.1328],E)
+		SetGlobal("C#BE_SoDQuestTildaSpwn","MYAREA",1)
+		MoveToPoint([243.1307])
+		Face(SE)
+		SetInterrupt(TRUE)
+END
+
+/* leave after quest is done */
+IF
+	AreaCheck("bd3000") 
+	Global("C#Brage_SoDQuest","GLOBAL",20)
+THEN
+	RESPONSE #100
+		EscapeAreaDestroy(5)
+END
+
+/* first meeting: move to Brage */
+IF
+	AreaCheck("bd7300")
+	InMyArea("C#Brage")
+	!Dead("C#Brage") 
+	!See("C#Brage") 
+	CombatCounter(0)
+	Global("C#Brage_SoDQuest","GLOBAL",2)
+THEN
+	RESPONSE #100
+		MoveToObject("C#Brage")
+END
+
+/* talk to PC */
+IF
+	AreaCheck("bd7300") 
+	See("C#Brage") 
+	CombatCounter(0)
+	Global("C#Brage_SoDQuest","GLOBAL",2)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet("C#Brage")
+END
+
+IF
+	GlobalGT("bd_plot","global",494) //SoD is over
+THEN
+	RESPONSE #100
+		DestroySelf()
+END

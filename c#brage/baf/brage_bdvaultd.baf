@@ -1,12 +1,12 @@
 /* brage_bdvaultd.baf */
 /* Comment on closed vault door (to portal) in Dragonspear Castle Interior */
 IF
-	Global("bd_MDD893a_ot","bd4300",0)  // Dragonspear Castle Basement
+	Global("C#BESoD_bd_MDD893a_ot","bd4300",0)  // Dragonspear Castle Basement
 	GlobalLT("bd_plot","global",400)
 	CombatCounter(0)
 	Range("C#Brage",25)  
 THEN
 	RESPONSE #100
-		SetGlobal("bd_MDD893a_ot","bd4300",1)  // Dragonspear Castle Basement
+		SetGlobal("C#BESoD_bd_MDD893a_ot","bd4300",1)  // Dragonspear Castle Basement
 		DisplayStringHead("C#Brage",@1018)  
 END

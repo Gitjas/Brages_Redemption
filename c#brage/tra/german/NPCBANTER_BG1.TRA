@@ -122,3 +122,40 @@ so war er nur noch R-A-G-E.~
 @117 = ~Ich beneide Euch wirklich um Eure Sicht auf diese Welt, Minsk. Ich fürchte, es ist jedoch nicht ganz so einfach.~
 @118 = ~Oh doch, das ist es! Stimmt's, Boo? Boo denkt das auch. Minsk wird Berserker, und Boo passt auf, dass Minsk die richtigen Hintern tritt!~
 @119 = ~Ich habe Zeit meines Lebens versucht niemals die Kontrolle zu verlieren. Ich beginne zu grübeln, ob Ihr den Zweihänder nicht besser hättet händeln können als ich, Minsk.~
+
+/* new for v1 */
+@120 = ~[Brage]Edwin, Ihr seid offensichtlich in Eurer Profession, der Magie, gut ausgebildet.~
+@121 = ~[Edwin]Ja, natürlich. (Endlich lobt mich einer der Schimpansen gebührend.)~
+@122 = ~[Brage]Und doch fühle ich mich unwohl, wenn ich mich auf Euch verlassen muss, wenn es um Magie geht. Ich vertraue nicht darauf, dass Ihr uns zum Beispiel vor Flüchen auf Gegenständen oder Schriftrollen warnen werdet, bevor wir sie benutzen würden.~
+@123 = ~[Edwin](seufz - Ich habe offensichtlich den Tag vor dem Abend gelobt. Diese Schimpansen ändern sich nie.) Und warum, bitte schön, glaubt Ihr, dass ich, Edwin Odesseiron, einen Fluch in einem Gegenstand nicht rechtzeitig erkennen würde, um Euch davor zu warnen?~
+@124 = ~[Brage]Oh, ich glaube, dass Ihr sie entdecken könntet. Ich bezog mich darauf, dass ich Euch nicht genug traue, Euch die Mühe zu machen uns zu warnen, solange Ihr nicht die Konsequenzen tragen müsst. Ich kann nur betonen, dass ich *erwarte*, dass Ihr für diese Gruppe von Wert seid, Edwin. Lasst mich nicht bereuen, dass ich Eure Anwesenheit in dieser Gruppe als unser Magier akzeptiere.~
+@125 = ~[Edwin]Zurück in die Reihe, Schimpanse! Oder ich zeige Euch, wie ich meine Rolle als Magier in dieser Gruppe auszufüllen gedenke. (Meine Kompetenz in Frage stellen, meine Loyalität zu <CHARNAME> anzweifeln - ich kann nicht glauben, wie tief mein Niveau gesunken ist, um in einer solchen Gruppe zu reisen!)~
+@126 = ~[Brage]Jaheira und Khalid, ich wollte Euch für Eure Bereitschaft danken, bei der Minenräumung zu helfen. Berrun sagte mir, dass er Euch erwartet.~
+@127 = ~[Brage]Jaheira, ich wollte Euch für Eure Bereitschaft danken, bei der Minenräumung zu helfen. Berrun sagte mir, dass er Euch erwartet.~
+@128 = ~[Jaheira]Ja, Khalid und ich meldeten uns sofort nach Erhalt seiner Nachricht. Wir wurden nur aufgehalten, weil wir... auf <CHARNAME> gewartet haben.~
+@129 = ~[Brage]Das dachte ich mir. Ihr könnt Euch meine Erleichterung nicht vorstellen, als er mir sagte, er habe Hilfe gefunden. Ich gebe zu, dass mir der Gedanke gegen den Strich ging, als er es mir zum ersten Mal erzählte - aber es war mein falscher Stolz als Kommandant, dass ich nicht in der Lage sei, meine Stadt angemessen zu schützen, und ich habe ihn sehr schnell überwunden. Nun, darüber muss ich nicht mehr nachdenken - zumindest nicht als Hauptmann.~ 
+@130 = ~[Brage]Ajantis, was für eine unerwartete Wendung der Ereignisse, uns beide an der Seite von <CHARNAME> zu sehen. Als Ihr durch Nashkel kamt, um die Bedrohung durch die Banditen zu untersuchen, hätte ich nie gedacht, dass ich einmal an Eurer Seite reisen würde, wie wir es jetzt tun.~
+@131 = ~[Ajantis]Ich gebe zu, dass ich ein wenig enttäuscht war, als ich Nashkell ohne weitere Hilfsangebote als etwas Essen und eine Unterkunft verließ und mir damals mehr Unterstützung gewünscht hätte. Aber niemals hätte ich mir vorstellen können, dass es sich so entwickeln würde. Was Euch geschehen ist ist unbeschreiblich, Brage. Niemand hätte damit gerechnet, dass Ihr Euer Kommando auf diese Art verlieren würdet.~
+@132 = ~[Brage]Die Götter haben manchmal unvorhersehbare Wege Wünsche zu erfüllen wie es scheint.~
+@133 = ~[Ajantis]In der tat. Ich bin froh, Euch jetzt als Reisebegleiter zu haben. - Natürlich nicht darüber, wie es dazu gekommen ist.~
+@134 = ~[Brage]Ich weiß, was Ihr meint. Ich bin auch froh, dass <CHARNAME> sich meiner angenommen hat.~
+@135 = ~[Neera]Was, ich soll aufhören, wilde Wogen zu erzeugen? Ihr wisst, dass ich keine andere Wahl habe!~
+@136 = ~[Brage]Ich weiß das. Ich meinte die Art und Weise, wie Ihr Magie verwendet.~
+@137 = ~[Neera]Ach, ich soll am besten ganz aufhören? Nur weil meine Magie manchmal unzuverlässig ist? Ihr seid ein Meister im Umgang mit dem Schwert, und doch trefft Ihr nicht immer so, wie Ihr es beabsichtigt.~
+@138 = ~[Brage]Das ist kein guter Vergleich, und das wisst Ihr. Wenn wir das vergleichen würden, würde das bedeuten, dass sich meine Waffe unkontrolliert in etwas anderes verwandeln würde.~
+@139 = ~[Neera]Nun, wir alle wissen, dass Ihr ein solches Schwert *hattet*, also rede nicht so hochtrabend über meine Magie.~
+@140 = ~[Brage]Das-das ist *exakt* der Grund, warum ich es tue! Ihr würdet Eure unzuverlässige Magie mit der Tragödie rechtfertigen, die mein ganzes Leben für immer zerstört hat? *Das* wäre Eure Rechtfertigung dafür, dass Ihr das Recht hättet, Eure unzuverlässige Magie weiterhin so zu wirken, wie Ihr es tut? Ihr braucht keinen verfluchten Gegenstand, um Verwüstung über die zu bringen, die Euch lieb und teuer sind!~
+@141 = ~[Neera]...Tut mir leid, das war ein schlechter Vergleich. Was ich meinte, war, dass niemand perfekt ist. Wir alle machen Fehler...~
+@142 = ~[Brage]"Fehler", ja. Ich schätze, es war zu erwarten, dass Ihr es so formulieren würdet. Ich schlage nicht vor, dass Ihr mit der Magie ganz aufhört, Neera, aber ich sehe, dass Ihr nicht versteht, worauf ich hinauswollte - was meinen Standpunkt nur umso mehr bestätigt.~
+@143 = ~[Neera]Brage, wenn Ihr nicht vorschlagt, dass ich aufhören soll, Magie zu benutzen, und Euch bewusst ist, dass ich die wilden Wogen nicht verhindern kann - was habt Ihr dann vorgeschlagen?~
+@144 = ~[Neera]Und zu <CHARNAME> habt Ihr auch noch nie ähnliches gesagt!~
+@145 = ~[Brage]Ich vertraue <CHARNAME>s Magie mehr als Eurer.~
+@146 = ~[Neera]Glaubt Ihr etwa, dass die Magie von <CHARNAME> zuverlässiger ist als meine? Das ist lächerlich.~
+@147 = ~[Brage]Nein, aber ich glaube, dass <CHARNAME> in der Lage ist, Verantwortung zu übernehmen, eine Eigenschaft, die ich bei Euch nicht so stark ausgeprägt sehe.~
+@148 = ~[Brage]Ich wünschte, Ihr würdet Eure Magie *vernünftiger* einsetzen. Ich sehe eine gewisse... Rücksichtslosigkeit in Eurem Verhalten, die ich nicht gutheiße.~
+@149 = ~[Neera]Rücksichtslos, was? Wenn Ihr meine Magie so sehr fürchtet, warum bittet Ihr dann nicht <CHARNAME>, mich loszuwerden?~
+@150 = ~[Brage]Ich spreche direkt mit Euch. Euch zurückzulassen mag uns helfen, aber nicht dem Nächsten auf Eurem Weg. Ich habe Euch lieber in meiner Nähe und versuche Euch zu überzeugen, verantwortungsvoller zu sein.~
+@151 = ~[Neera]Hört Ihr Euch selbst reden? Das ist, als ob *ich* sagen würde, dass ich über Euch wachen würde, damit Ihr nie wieder ein verfluchtes Schwert in die Hand nehmt!~
+@152 = ~[Brage]Und ich würde Euch aufrichtig danken, wenn Ihr das tun würdet, Neera. Versteht Ihr denn nicht? Ihr habt dieses Beispiel mit der Absicht verwendet, es wie eine Verhöhnung klingen zu lassen, ohne Euch der wahren Bedeutung bewusst zu sein. Ich denke, Ihr habt noch einen langen Weg vor Euch, bevor Ihr meinen Standpunkt versteht. Ich hoffe sehr, dass es keine Tragödie sein wird, die Euch die Augen öffnet.~
+@153 = ~[Brage]Neera, ich wünschte, Ihr würdet Magie nicht so praktizieren, wie Ihr es tut.~
+

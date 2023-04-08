@@ -1,0 +1,9 @@
+/* bdbaldur.bcs - detection variable for item reaction */
+IF
+	InParty("C#Brage") 
+	PartyHasItem("bdsw1hx5") 
+	Global("C#Brage_SoDbdsw1hx5","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDbdsw1hx5","GLOBAL",1)
+END

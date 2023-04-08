@@ -1,5 +1,18 @@
-/* brage_bd0101.baf
-1. It's a new soD game, or Brage wasn't spawned yet in SoD because the player went straight for the crusade */
+/* brage_bd0101.baf */
+
+/* Close the spawning/moving variable in case Brage is already in party */
+IF
+  Global("C#Brage_MoveCamp","bd0101",0)  
+  OR(2)
+    InPartyAllowDead("C#Brage")  
+    Dead("C#Brage")
+THEN
+  RESPONSE #100
+    SetGlobal("C#Brage_MoveCamp","bd0101",1)  
+    Continue()
+END
+
+/* 1. It's a new soD game, or Brage wasn't spawned yet in SoD because the player went straight for the crusade */
 IF
   !Dead("C#Brage")
   !InPartyAllowDead("C#Brage")
@@ -9,7 +22,7 @@ THEN
   RESPONSE #100
     SetGlobal("C#Brage_MoveCamp","bd0101",1)
     SetGlobal("C#BE_SpawnBrage","GLOBAL",10)
-    CreateCreature("C#BRAGES",[760.940],N)  
+    CreateCreature("C#BRAGES",[718.933],N)  
     ActionOverride("C#Brage",MakeGlobalOverride())
     ChangeSpecifics("C#Brage",ALLIES)
     ActionOverride("C#Brage",ChangeAIScript("C#Brages",OVERRIDE)) //Brage's SoD override script
@@ -18,6 +31,7 @@ THEN
     ActionOverride("C#Brage",ChangeAIScript("BDFIGH01",GENERAL)) 
     ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
     ActionOverride("C#Brage",SetDialog("C#BrageS")  
+		Continue()
 END
 
 /* 2+3: Brage was in party before (e.g. as a BG:EE NPC or in SoD beginning) OR he was spawned in SoD before */
@@ -33,7 +47,7 @@ THEN
     ActionOverride("C#Brage",SetDialog("C#BrageP")  
     SetGlobal("C#Brage_MoveCamp","bd0101",1)
     SetGlobal("C#BE_SpawnBrage","GLOBAL",10)
-    MoveGlobal("bd0101","C#Brage",[760.940])
+    MoveGlobal("bd0101","C#Brage",[718.933])
     ActionOverride("C#Brage",Face(N))    //or any other direction depending on the coordinates
     ApplySpellRES("bdrejuve","C#Brage")  //completely heals and removes all spell effects
     ChangeEnemyAlly("C#Brage",NEUTRAL)
@@ -46,4 +60,31 @@ THEN
     ActionOverride("C#Brage",ChangeAIScript("BDSHOUT",RACE))
     ActionOverride("C#Brage",ChangeAIScript("BDFIGH01",GENERAL)) 
     ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
+		Continue()
+END
+
+IF
+	Global("bd_mdd010z_ot","bd0101",1)
+	!GlobalTimerNotExpired("bd_mdd010z_ot_timer","bd0101")
+	InMyArea("C#Brage") 
+	!Dead("C#Brage") 
+	!InParty("C#Brage")  
+THEN
+	RESPONSE #10
+		SetGlobalTimer("bd_mdd010z_ot_timer","bd0101",ONE_ROUND)
+		SetGlobal("bd_mdd010z_ot","bd0101",0)
+		DisplayStringHead("C#Brage",@1050)  
+		Continue()
+	RESPONSE #10
+		SetGlobalTimer("bd_mdd010z_ot_timer","bd0101",ONE_ROUND)
+		SetGlobal("bd_mdd010z_ot","bd0101",0)
+		DisplayStringHead("C#Brage",@1051)   
+		Continue()
+	RESPONSE #10
+		SetGlobalTimer("bd_mdd010z_ot_timer","bd0101",ONE_ROUND)
+		SetGlobal("bd_mdd010z_ot","bd0101",0)
+		DisplayStringHead("C#Brage",@1052)  
+		Continue()
+	RESPONSE #160
+		Continue()
 END

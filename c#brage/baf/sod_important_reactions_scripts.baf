@@ -1,0 +1,306 @@
+/* NPC reactions to specific crucial knowledge about Caelar's plans */
+
+/* 1. Hephernaan's own plans */
+/* GlobalLT("bd_plot","global",485) //before the portal is opened */
+
+/* 1.1 General reaction to Hephernaan is betraying Caelar: knowledge gained BEFORE the portal scene at Dragonspear basement; PC does NOT know that he is working for a fiend yet. */
+/* This will only play with Road to Discovery installed. */
+IF
+/* activation */
+	InParty("C#Brage")
+	!RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!See("bdcaelar")
+	!See("bdhepher")
+	Global("C#RtD_HephernaanBetrayal","GLOBAL",2)
+	Global("C#RtD_HephernaanFiend","GLOBAL",0)
+	GlobalLT("bd_plot","global",485) //before portal scene
+	Global("C#Brage_HephernaanBetrayal","GLOBAL",0) 
+THEN 
+	RESPONSE #100
+		SetGlobal("C#Brage_HephernaanBetrayal","GLOBAL",1)
+END
+/* initiation */
+IF
+	InParty("C#Brage")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Brage_HephernaanBetrayal","GLOBAL",1)	
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+		StartDialogNoSet(Player1)
+END
+
+/* 1.2 General reaction to the knowledge that Hephernaan is working for a fiend BEFORE the portal scene */
+/* this dialogue only happens if the knowledge is gained through triggers from Road to Discovery */
+/* activation */
+IF
+	InParty("C#Brage")
+	!RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	GlobalGT("C#RtD_HephernaanFiend","GLOBAL",1)
+	GlobalLT("bd_plot","global",485) //before portal scene
+	OR(3) //not inside castle if crusaders still hold it
+		!AreaCheck("bd4300")
+		GlobalLT("bd_plot","GLOBAL",315)
+		GlobalGT("bd_plot","GLOBAL",380)
+	OR(2) //not inside the crusader camp near entrance 
+		!AreaCheck("bd5100")
+		!Range("TranBD5000",35) 
+	!AreaCheck("bd5200")
+	OR(2) //not inside the crusader camp near entrance 
+		!AreaCheck("bd5000")
+		!Range("TranBD5100",35) 
+	Global("C#Brage_HephernaanFiend","GLOBAL",0) 
+THEN 
+	RESPONSE #100
+		SetGlobal("C#Brage_HephernaanFiend","GLOBAL",1)
+END
+/* initiation */
+IF
+	InParty("C#Brage")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Brage_HephernaanFiend","GLOBAL",1)	
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+		StartDialogNoSet(Player1)
+END
+
+
+/* 2. Caelar's ulterior motive is to save her uncle Aun. */
+/* activation */
+IF
+	InParty("C#Brage")
+	!RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	GlobalGT("C#RtD_CaelarPlan","GLOBAL",4) //specualtes or knows it, from RtD
+	GlobalLT("bd_plot","global",485) //before the portal is opened
+	Global("C#Brage_AllForAun","GLOBAL",0) 
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_AllForAun","GLOBAL",2) //to 2 because "1" is used for interjection
+END
+/* initiation */
+IF
+	InParty("C#Brage")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Brage_AllForAun","GLOBAL",2)	
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+		StartDialogNoSet(Player1)
+END
+
+
+
+/* 5. Caelar wants to open a portal to Avernus. */
+/* activation */
+IF
+	InParty("C#Brage")
+	!RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	!See([ENEMY])
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0)
+	OR(3)
+		GlobalGT("C#RtD_CaelarPlan","GLOBAL",3) //from Road to Discovery
+  		GlobalGT("bd_plot","global",390) //after meeting with Caelar on Dead Man's Pass
+		Global("C#RtD_RoadToDiscovery","GLOBAL",1) //check for Road to Discovery
+	OR(2)
+		GlobalGT("C#RtD_CaelarPlan","GLOBAL",3) //from Road to Discovery
+		Global("C#RtD_RoadToDiscovery","GLOBAL",0) //broaden trigger if Road to Discovery is not installed
+	GlobalLT("bd_plot","global",485) //before the portal is opened
+	Global("C#Brage_PortalAvernus","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_PortalAvernus","GLOBAL",1)
+END
+/* initiation */
+IF
+	InParty("C#Brage")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Brage_PortalAvernus","GLOBAL",1)	
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+		StartDialogNoSet(Player1)
+END
+
+
+/* 6.2 Reaction after learning that Caelar needs the PC / PC's blood for something but does NOT know any specifics (BEFORE portal scene) */
+/* activation */
+IF
+	InParty("C#Brage")
+	!RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!See("bdcaelar")
+	!See("bdhepher")
+	GlobalLT("C#RtD_KnowsPortalBlood","GLOBAL",3)
+	GlobalLT("C#RtD_WantBhaalBlood","GLOBAL",2)
+	OR(3)
+		GlobalGT("C#RtD_CaelarWantsPC","GLOBAL",0)
+		Global("C#RtD_WantBhaalBlood","GLOBAL",1)
+		Global("C#Brage_SoDKidnapConclusion","GLOBAL",2)
+	GlobalLT("bd_plot","global",485) //before the portal is opened
+	Global("C#Brage_SoDCaelarWantsPC","GLOBAL",0)
+THEN 
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDCaelarWantsPC","GLOBAL",1)
+END
+/* initiation */
+IF
+	InParty("C#Brage")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Brage_SoDCaelarWantsPC","GLOBAL",1)	
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+		StartDialogNoSet(Player1)
+END
+
+
+/* 7. Caelar needs the PC's blood to open the portal. */
+
+/* 7.3 + 7.4 General reaction to the knowledge that Caelar needs the PC's blood to open the portal. (BEFORE portal betrayal scene) */
+/* activation */
+IF
+	InParty("C#Brage")
+	!RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	!See([ENEMY])
+	See(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0)
+	OR(2)
+		GlobalGT("C#RtD_KnowsPortalBlood","GLOBAL",2) //from Road to Discovery
+		Global("C#Brage_PortalPCBloodConclusion","GLOBAL",3)
+	GlobalLT("bd_plot","global",485) //before the portal is opened
+	Global("C#Brage_PortalPCBlood","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_PortalPCBlood","GLOBAL",1)
+END
+/* initiation */
+IF
+	InParty("C#Brage")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Brage_PortalPCBlood","GLOBAL",1)	
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+		StartDialogNoSet(Player1)
+END
+
+
+
+/* 4. Incident at Boareskyr Bridge. */
+/* after the sign incident at the Boareskyr bridge */
+/* activate - no The Boareskyr Bridge Scene mod installed */
+/* activation with TBBS see below */
+IF
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	See(Player1)
+	!See([ENEMY])
+	CombatCounter(0)
+	GlobalGT("bd_plot","global",294) //after it happened
+	GlobalLT("chapter","global",10) // not if game went on
+	AreaCheck("bd2000")
+	!InMyArea("bdireni")
+	!InMyArea("bdfist24")
+	Global("C#BE_c#stff24_10","GLOBAL",0) // no interjection from tbbs
+	Global("C#Brage_SoDBoareskyrBridgeScene","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDBoareskyrBridgeScene","GLOBAL",1)
+END
+/* initiate */
+IF
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C#Brage_SoDBoareskyrBridgeScene","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+/* after the sign incident at the Boareskyr bridge */
+/* activate - in case The Boareskyr Bridge mod run */
+IF
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!See([ENEMY])
+	CombatCounter(0)
+	RealGlobalTimerExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	!AreaType(DUNGEON)
+	GlobalGT("bd_plot","global",294) //after it happened
+	Global("C#BE_c#stff24_10","GLOBAL",1) // interjection from tbbs run
+	GlobalLT("C#Brage_SoDBoareskyrBridgeScene","GLOBAL",3)
+THEN
+	RESPONSE #100
+    		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+		SetGlobal("C#Brage_SoDBoareskyrBridgeScene","GLOBAL",3)
+END
+
+/* initiate */
+IF
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!See([ENEMY])
+	CombatCounter(0)
+	Global("C#Brage_SoDBoareskyrBridgeScene","GLOBAL",3)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END

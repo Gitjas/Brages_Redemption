@@ -16,17 +16,14 @@ AreaCheck("bd0101")~ THEN @38 /* ~My investigations concerning the cursed sword 
 == C#BrageS @35 /* ~They call you the hero of Baldur's Gate, there are rumors about you leading the coalition against the crusade. Would you need another sword arm?~ */
 = @36 /* ~I'd rather help these poor people by fighting the crusade than waste any more time here. Plus, I fear I can do nothing with regard to my investigation before the city will come to rest.~ */
 END
-  + ~GlobalGT("#L_Transitions","GLOBAL",0)
-Global("#L_PCArmyStatus","GLOBAL",2)
-~ + @40 /* ~I'm so not part of this coalition, but yes, I'd like you to join me.~ */ + sod_meeting_03
   ++ @27 /* ~Yes, please come along once more.~ */ + sod_meeting_01
   + ~AreaCheck("bd0121")~ + @28 /* ~No, not yet.~ */ + sod_meeting_02
-  + ~!AreaCheck("bd0121")~ + @28 /* ~No, not yet.~ */ + sod_meeting_04
+  + ~!AreaCheck("bd0121")~ + @28 /* ~No, not yet.~ */ + sod_meeting_03
 
 APPEND C#BrageS
 IF ~~ THEN sod_meeting_01
   SAY @25 /* ~Gladly.~ */
-  IF ~~ THEN DO ~JoinParty()~ EXIT
+  IF ~~ THEN DO ~RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",800) JoinParty()~ EXIT
 END
 
 IF ~~ THEN sod_meeting_02
@@ -36,12 +33,7 @@ IF ~~ THEN sod_meeting_02
 END
 
 IF ~~ THEN sod_meeting_03
-  SAY @41 /* ~Oh? Well, I am sure we will do a lot of good, nontheless.~ */
-  IF ~~ THEN DO ~JoinParty()~ EXIT
-END
-
-IF ~~ THEN sod_meeting_04
-  SAY @42 /* ~As you wish. I will wait.~ */
+  SAY @40 /* ~As you wish. I will wait.~ */
   IF ~~ THEN DO ~SetDialog("C#BrageP")~ EXIT
 END
 

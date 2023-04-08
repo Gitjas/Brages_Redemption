@@ -3,7 +3,7 @@
 @2  = ~[Brage]Questo negromante, <CHARNAME> - il suo desiderio di riportare in vita i propri cari, a qualunque costo - posso relazionarmi con quest'uomo.~
 @3  = ~[Imoen]Sono contenta di essere usciti da quel buco infernale. (rabbrividisce) Il vero amore dovrebbe essere romantico e odorare di rose fresche! Non... di cadaveri e... schifo.~
 @4  = ~[Ajantis]Quanta devastazione ha creato quest'uomo con i corpi dei propri cari rubati dalle loro tombe! Il riposo dei morti non dovrebbe essere disturbato così.~
-@5  = ~[Brage]I suoi mezzi erano sbagliati, ma posso comprenderlo.~
+@5  = ~[Brage]I suoi mezzi erano sbagliati, perché non si possono imbrogliare gli dei - i suoi mezzi erano sacrificare l'esatta cosa che voleva ripristinare, spostare il dolore su qualcun altro... Ma posso comprenderlo.~
 @6  = ~[PC reply]I suoi mezzi erano sbagliati, oh sì.~
 @7  = ~[PC reply]Anch'io posso relazionarmi. È stato un duro destino.~
 @8  = ~[PC reply]È sconvolgente come si possa perdere la cognizione di ciò che si sta facendo nel modo in cui è capitato a quell'uomo.~
@@ -24,3 +24,10 @@
 @23  = ~[Brage]Sento che questo servirà anche come avvertimento - per me. Non si otterrà nulla se mi perdo nel mio obiettivo di compensare le perdite che ho creato e mi rivolgo a mezzi non appropriati per farlo ... Prego gli dei di aiutarmi a spendere saggiamente il mio vigore in modo da non fare del male mentre cerco di rimediare - in modo che quello che farò non sarà così *completamente* vano come quello che ha fatto quest'uomo.~
 @24  = ~[Brage]Devozione? Sì, ma si è trasformata in follia...~
 @25  = ~[Brage]È stata davvero riportata in vita, ma non ha potuto sopportare il peso di come è stato fatto. Non esiste un modo semplice per noi mortali di ottenere ciò che vogliamo...~
+
+/* new for v8 */
+@26  = ~[Brage]What are you talking, man? Life for a life? Killing a beloved to restore a beloved? This is what you get when you think you could turn around the natural order of arcane and divine magic, to grant live in flesh and blood and sane mind whithout the help of the gods! I don't know whether to laugh at you or rise my sword at such foolish thoughts! Losing a loved one - loved ones - is a hard and cruel fate. Who are you to decide which loved ones are to live and which should die?!~
+@27  = ~[Brage]What are you talking, man? Life for a life? Killing a beloved to restore a beloved? This is exactly what I feared when the other necromancer posed the request to bring him bodies for *his* resurrection studies! Who are you to decide which loved ones are to live and which should die?!~
+@28  = ~[Necromancer]But - but it doesn't necessarily have to be a *person*! The creature just needs to be... loved...~
+@29  = ~[Brage]I heard you freed Nashkel from the ghosts that lingered near the bridge.~
+@30  = ~[Brage]To learn that it was unhappy lovers who came to their deaths here seems heart breaking. Not that I could judge how much a ghost can feel suffering, but it was surely a good deed to put them to rest. The Guard had calls repeatedly because of them. The inn keeper might be the only one who will miss the extra coins from occasional curious tourists attracted by the tale of roaming ghosts, but apart from that, I assume Naskel's citizens are grateful the spook is gone.~

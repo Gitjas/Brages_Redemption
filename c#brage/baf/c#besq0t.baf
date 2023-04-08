@@ -1,0 +1,91 @@
+/* Player inspects the tree for first time */
+
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	InMyArea("c#besq0a")
+	OR(6)
+		Range(Player1,20)
+		Range(Player2,20)
+		Range(Player3,20)
+		Range(Player4,20)
+		Range(Player5,20)
+		Range(Player6,20)
+	Global("C#Brage_SoDQuest","GLOBAL",3)
+	Global("C#Brage_FirTalk","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_FirTalk","MYAREA",1)
+		DisplayStringHead(Myself,@1103)
+END
+
+/*
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	InMyArea("c#besq0a")
+	OR(6)
+		TriggerOverride("c#besq0a",See(Player1))
+		TriggerOverride("c#besq0a",See(Player2))
+		TriggerOverride("c#besq0a",See(Player3))
+		TriggerOverride("c#besq0a",See(Player4))
+		TriggerOverride("c#besq0a",See(Player5))
+		TriggerOverride("c#besq0a",See(Player6))
+	Global("C#Brage_SoDQuest","GLOBAL",3)
+	Global("C#Brage_FirTalk","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_FirTalk","MYAREA",1)
+		DisplayStringHead(Myself,@1103)
+END
+*/
+
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	InMyArea("c#besq0a")
+	OR(6)
+		Range(Player1,20)
+		Range(Player2,20)
+		Range(Player3,20)
+		Range(Player4,20)
+		Range(Player5,20)
+		Range(Player6,20)
+	Global("C#Brage_SoDQuest","GLOBAL",3)
+	Global("C#Brage_FirTalk","MYAREA",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1104)
+		Wait(1)
+		SetGlobal("C#Brage_FirTalk","MYAREA",3) //legacy reasons
+END
+
+
+IF
+	Clicked([ANYONE])
+	InMyArea(Player1)
+	InMyArea("c#besq0a")
+	OR(6)
+		Range(Player1,20)
+		Range(Player2,20)
+		Range(Player3,20)
+		Range(Player4,20)
+		Range(Player5,20)
+		Range(Player6,20)
+	GlobalGT("C#Brage_SoDQuest","GLOBAL",3)
+	GlobalLT("C#Brage_SoDQuest","GLOBAL",10)
+	Global("C#Brage_FirTalk","MYAREA",5)
+THEN
+	RESPONSE #100
+		ActionOverride("c#besq0a",StartDialognoSet([PC]))
+END
+
+
+/* If no other conditions are true */
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1105)
+END
+

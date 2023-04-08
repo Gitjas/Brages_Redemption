@@ -1,0 +1,26 @@
+IF
+	OR(2)
+		GlobalGT("C#Brage_SoDQuest","GLOBAL",8)
+		GlobalGT("bd_plot","global",494) //SoD is over
+	Global("C#Brage_SoDQuestDeact","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("c#besq0t",FALSE)		
+		SetGlobal("C#Brage_SoDQuestDeact","MYAREA",1)
+END
+
+IF
+	Global("C#Brage_SoDQuest","GLOBAL",9)
+THEN
+	RESPONSE #100
+		CreateCreature("c#besq01",[1037.325],S)
+		SetGlobal("C#Brage_SoDQuest","GLOBAL",10)
+END
+
+IF
+	Global("C#Brage_SoDQuest","GLOBAL",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("c#besq0t",FALSE)
+		SetGlobal("C#Brage_SoDQuest","GLOBAL",1)
+END

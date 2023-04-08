@@ -1,0 +1,28 @@
+/* Ascalon's Questpack */
+/* Snakes of Abathor */
+@0  = ~[Emerson]Brage, our former commander! I almost took you for an intruder.~
+@1  = ~[Brage]The mines are in trouble once again? <CHARNAME>, let us help the city. The mines shall not be a breeding ground of evil troubles again!~
+@2  = ~[Emerson]And I also recognize who is with you.~
+@3  = ~[Brage]Please, <CHARNAME>. The guard is still thinned out by what happened with the bandits. Let us not turn our backs to the troubles in the mines - Nashkel needs help.~
+@4  = ~[Emerson]Brage, we also thank you deeply for your committment to this city. Although we turned our backs on you in your sorrow, it is clear that you still feel obliged to protect Nashkel, and we can only thank you for that.~ 
+@5  = ~[Brage]Thank you, Emerson. I appreciate it. Nashkel and their safety are indeed still very important to me.~
+@6  = ~[Brage]Here we are, ready to free the mines from an infestation of evil one more time. I thank you that we are doing this, <CHARNAME>.~
+@7  = ~[Brage]We are victorious. Once again you free the Nashkell mines from evil invaders. I thank you for taking this on, <CHARNAME>. Knowing that the mines, the city are safe is important to me - I am glad that I could be part of it.~
+@8  = ~[Brage]Greetings, Emerson.~
+@9  = ~[Brage]We heard about troubles in the mines?~
+@10  = ~[Emerson]You heard right.~
+@11  = ~[Brage]Poor Aaron Brunnstein, to lose his love at the day he wanted to propose to her... (sigh) Why is the youth so reckless. Going on a picknick unprotected - ah, I shouldn't throw stones now, their sorrow is true enough.~
+@12  = ~[PC Reply]No, you shouldn't throw stones, indeed.~
+@13  = ~[PC Reply]I understand the sentiment, though. It arises from the fruitless wish to be able change their fates.~
+@14  = ~[PC Reply]Poor Marina - to die on the day her love wanted to propose to her.~
+@15  = ~[PC Reply]Well, you have a point, though. Going on a *picknick* in these times was, well, a bad idea.~
+@16  = ~[PC Reply]Aaron surely proved that he's not able to protect Marina. They would have learned that eventually anyway, so maybe this way it was quicker and less painful in the end.~
+@17  = ~[Brage]I couldn't help but think about how I proposed to my wife. It was a sunny day, and we were outside just like this couple, but it was clearly much safer... Or maybe we were just as reckless and just didn't realize how lucky we were.~
+@18  = ~[Brage]I am tempted to scold you for a rather callous comment, but I can see there is some wisdom in it. (sigh) I wouldn't want to miss the time I had with Betty...~
+@19  = ~[Brage]...And for her parents to lose her like this, you are right.~
+@20  = ~[Brage]Although I was not acquinted with the Brunnsteins, for the sake of Nashkel I am glad we could help return this boy safely. At least him...~
+@21  = ~[Brage]Surely this was a jest, albeit a bad one. We will do no such thing, not as long as I am here and we are on the city's grounds. Accept the reward and let us go.~
+@22  = ~[Brage]<CHARNAME>! Was that really necessary?~
+@23  = ~[Brage]I-I am sure we will come back as soon as we cleared the premises. Just hold on a little longer.~
+@24  = ~[Brage]I... I am so sorry for your loss. There is no words for this...~
+@25  = ~[Brage]Especially now that the ore is not poisoned any more, it is needed more than ever.~

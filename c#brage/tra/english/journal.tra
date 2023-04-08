@@ -1,0 +1,63 @@
+/* SoD quest "missing refugee girl" */
+@100000 = ~Missing Girl at Dead Man's Pass~
+@100001 = ~Missing Girl at Dead Man's Pass
+
+I met a desparate uncle who is looking for his niece, Tilda. They were being chased by wild boars in the Dead Man's Pass and Tilda ran off, somewhere unknown. If we find her we should bring her to her uncle in the coalition camp. He should be near the healer tents.~
+@100002 = ~Missing Girl at Dead Man's Pass
+
+Tilda is sitting in a big fir tree, in the northwest of the Dead Man's Pass. She won't come with us - at least not as long as all we can do is ask nicely. I need to find a way to rescue her without scaring her, something to gain her trust - her uncle should be able to help with that. We should return to the coalition camp and ask him, he should be near the healers' tents. Or we don't care about being nice and find a way to force her down...~ 
+@100003 = ~Missing Girl at Dead Man's Pass
+
+I turned the plea of help of the uncle to rescue his missing niece down, but Brage offered his help. He said he will do it without me even noticing and the uncle will probably ask for help with the soldiers, so I guess this is settled.~
+@100004 = ~Missing Girl at Dead Man's Pass
+
+I refused to continue to help the uncle to rescue his niece, but he will probably ask for help with the soldiers, so I guess this is settled.~
+@100005 = ~Missing Girl at Dead Man's Pass
+
+The uncle suggested to sing Tilda an Amnian lullaby. Brage volunteered to do so - he knows the song from his own daughters.~
+@100006 = ~Missing Girl at Dead Man's Pass
+
+The uncle suggested to sing Tilda an Amnian lullaby. I don't know the song so I'd need someone who can. Wasn't Brage from Amn - and a father?~
+@100007 = ~Missing Girl at Dead Man's Pass
+
+I released Brage from the group and he will rescue the missing girl while he is not with me, so I guess this is settled.~
+@100008 = ~Missing Girl at Dead Man's Pass
+
+We managed to make Tilda climb down from the tree - and she went off into the bushes, to return to her uncle alone! I surely hope she will find her way unharmed. We should check for her next time we return to the coalition camp. She should be with her uncle near the healers' tents.~
+@100009 = ~Missing Girl at Dead Man's Pass
+
+Tilda is safely back with her uncle.~
+@100010 = ~Missing Girl at Dead Man's Pass
+
+We managed to make Tilda climb down from the tree - alright, maybe it was a bit mean to scare her like this, but it worked. She went off into the bushes, to return to her uncle alone! I surely hope she will find her way unharmed. We should check for her next time we return to the coalition camp. She should be with her uncle near the healers' tents.~
+
+/* "sword path" - BG1 */
+@100015 = ~Brage's Investigation about the Cursed Sword~
+@100016 = ~Brage's Investigation about the Cursed Sword
+
+Brage wants to learn as much as possible about the cursed sword, in the hopes to find the ones who forged and delivered it.~
+@100017 = ~Brage's Investigation about the Cursed Sword
+
+For his quest about the cursed sword, Brage wants to visit Nalin, the priest in the Nashel Tempel, to ask him about the notes he took about the cursed berserker sword when he investigated it.~
+@100018 = ~Brage's Investigation about the Cursed Sword
+
+To learn as much as possible about the cursed sword, Brage wants to seek out experts on magical weapons wherever we meet them. I would assume known mages, smiths, weapon merchants, and the priests in bigger temples should count as such.~
+@100019 = ~Brage's Investigation about the Cursed Sword
+
+The cursed sword is no longer in our possession, so Brage really wants to collect the notes Nalin, the priest in Nashkel Temple, took about it.~
+@100020 = ~Brage's Investigation about the Cursed Sword
+
+Brage decided not to pursue the search for the origins of the cursed sword while we are travelling the Sword Coast together.~
+@100021 = ~Brage's Investigation about the Cursed Sword
+
+Brage collected Nalin's notes about the cursed sword. These should be quite helpful for Brage's search, even without the sword.~
+@100022 = ~Brage's Investigation about the Cursed Sword
+
+Brage was content with our investigations about the cursed sword and does not expect us to ask around any more. I will do so nontheless - maybe there is a source that can us tell something we haven't heard yet. He will continue with his search for justice after our time together comes to an end.~
+@100023 = ~Brage's Investigation about the Cursed Sword
+
+Brage was content with our investigations about the cursed sword so I will stop with asking around. He will continue with his search for justice after our time together comes to an end.~
+/* "sword path" - SoD */
+@100024 = ~Brage's Investigation about the Cursed Sword
+
+Brage got a message with regard to his search for the ones who are responsible for the dealings with the cursed sword. He has a clue where to continue his search, but he will not pursue it until Caelar and her crusade is stopped.~

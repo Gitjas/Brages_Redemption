@@ -1,0 +1,96 @@
+/* SoD quest: missing refugee girl. */
+
+/* quest start: uncle calls for help. In bd7300.are, Dead Man's Pass */
+
+/* create uncle and invisible helper-cre */
+IF
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	AreaCheck("bd7300")
+	Range("Bdure6",30)
+	Global("C#Brage_SoDQuest","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#Brage_SoDQuest","GLOBAL",2)
+		CreateCreature("c#besq02",[785.3402],S)
+		CreateCreatureImpassable("c#besq0a",[1082.253],S)
+		TriggerActivation("c#besq0t",TRUE)
+		SetInterrupt(TRUE)
+END
+
+
+/* Brage ponders about missing girl - before knowing it wasn't him */
+/* 1st activate */
+IF
+  InParty(Myself)
+  !RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+  !See([ENEMY])
+  See(Player1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !AreaType(DUNGEON)
+  !AreaCheck("bd7300")
+  GlobalGT("C#Brage_SoDQuest","GLOBAL",2)
+  GlobalLT("C#Brage_SoDQuest","GLOBAL",20)
+  Global("C#Brage_SoDQuestDialog","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDQuestDialog","GLOBAL",1)
+END
+
+/* 2nd activate */
+IF
+  InParty(Myself)
+  !RealGlobalTimerNotExpired("C#BE_BrageDialogueTimer","GLOBAL")
+  !See([ENEMY])
+  See(Player1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !AreaType(DUNGEON)
+  Global("C#Brage_SoDQuest","GLOBAL",20)
+  GlobalLT("C#Brage_SoDQuestDialog","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Brage_SoDQuestDialog","GLOBAL",3)
+END
+
+/* trigger both */
+IF
+  InParty(Myself)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  !See([ENEMY])
+  See(Player1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  OR(2)
+    Global("C#Brage_SoDQuestDialog","GLOBAL",1)
+    Global("C#Brage_SoDQuestDialog","GLOBAL",3)
+THEN
+  RESPONSE #100
+    RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+    StartDialogNoSet(Player1)
+END
+
+/* Tilda went to camp alone - trigger dialogue */
+IF
+  InParty(Myself)
+  !StateCheck(Myself,CD_STATE_NOTVALID)
+  !See([ENEMY])
+  See(Player1) 
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !InMyArea("c#besq01")
+  Global("C#Brage_SoDQuest","GLOBAL",12)
+THEN
+  RESPONSE #100
+    RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",%TimerSpacing_SoD_normal%)
+    StartDialogNoSet(Player1)
+END

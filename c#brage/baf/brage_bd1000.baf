@@ -60,7 +60,7 @@ IF
 	Global("bd_plot","global",170) //after talking to Bence, this will be at Global("bd_plot","global",175) 
 	Global("C#Brage_bd_mdd016b","bd1000",0)
 	!GlobalTimerNotExpired("bd_mdd016b_timer","bd1000") //timer to space the NPC comments
-	IsValidForPartyDialog("xxBiff")  
+	IsValidForPartyDialog("C#Brage")  
 	TriggerOverride("C#Brage",Detect(Player1))
 THEN
 	RESPONSE #100

@@ -13,7 +13,7 @@ See("Minsc") See(Player1)
 !StateCheck("Minsc",CD_STATE_NOTVALID)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 Global("C#BrageMinsc_BG1","GLOBAL",0)~ THEN C#BrageB brageminsc1
-@69 /* ~Minsc, I am glad you found help for the rescue of your witch. I still remember my men telling me of the Rashemen warrior searching for help - but we were flooded with reports of bandit sightings and missing persons, and I went to investigate the killed merchant on the roads...~ */ DO ~setGlobal("C#BrageMinsc_BG1","GLOBAL",1)~
+@69 /* ~Minsc, I am glad you found help for the rescue of your witch. I still remember my men telling me of the Rashemen warrior searching for help - but we were flooded with reports of bandit sightings and missing persons, and I went to investigate the killed merchant on the roads...~ */ DO ~SetGlobal("C#BrageMinsc_BG1","GLOBAL",1)~
 == C#BrageB IF ~InParty("Dynaheir")
 See("Dynaheir") !StateCheck("Dynaheir",CD_STATE_NOTVALID)~ THEN @73
 DO ~SetGlobal("C#BrageDynaheir_BG1","GLOBAL",1)~
@@ -64,6 +64,48 @@ DO ~SetGlobal("C#BrageImoen_BG1","GLOBAL",1)~
 = @8
 == C#BrageB @9
 EXIT
+
+
+
+/* Brage - Jaheira and Khalid */
+CHAIN
+IF 
+~%BG1_BEFORE_TRANSITION%
+InParty(Myself)
+CombatCounter(0) !See([ENEMY]) 
+InParty("Jaheira")
+See("Jaheira") See(Player1)
+!StateCheck("Jaheira",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+InParty("Khalid")
+See("Khalid") !StateCheck("Khalid",CD_STATE_NOTVALID)
+Global("C#BrageJaheira_BG1","GLOBAL",0)~ THEN C#BrageB bragejaheira1_1
+@126 /* ~[Brage]Jaheira and Khalid, I wanted to thank you for your readiness to help with clearing the mines. Berrun told me he was expecting you.~ */
+END
+IF ~~ THEN DO ~SetGlobal("C#BrageJaheira_BG1","GLOBAL",1)~ EXTERN ~%JAHEIRA_BANTER%~ bragejaheira1_3
+
+CHAIN
+IF 
+~%BG1_BEFORE_TRANSITION%
+InParty(Myself)
+CombatCounter(0) !See([ENEMY]) 
+InParty("Jaheira")
+See("Jaheira") See(Player1)
+!StateCheck("Jaheira",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("C#BrageJaheira_BG1","GLOBAL",0)~ THEN C#BrageB bragejaheira1_2
+@127 /* ~[Brage]Jaheira, I wanted to thank you for your readiness to help with clearing the mines. Berrun told me he was expecting you.~ */
+END
+IF ~~ THEN DO ~SetGlobal("C#BrageJaheira_BG1","GLOBAL",1)~ EXTERN ~%JAHEIRA_BANTER%~ bragejaheira1_3
+
+
+CHAIN
+IF ~~ THEN ~%JAHEIRA_BANTER%~ bragejaheira1_3
+@128 /* Yes, Khalid and I volunteered as soon as we received his message. We were only delayed because we... waited for <CHARNAME>. */
+== C#BrageB @129 /* So I figured. You can't imagine my relief when he told me he found help. I admit I did not fully appreciate the thought when he first told me - but it was my false pride as a commander about not being able to protect my town appropriately and I swallowed it rather quickly. Well, I do not have to think about this any more - at least not as a commander. */
+EXIT
+
+
 
 /* Brage - Eldoth */
 CHAIN
@@ -262,6 +304,25 @@ DO ~SetGlobal("C#BrageYeslick_BG1","GLOBAL",1)~
 == C#BrageB @112
 EXIT
 
+/* Brage - Edwin 1 */
+CHAIN
+IF 
+~%BG1_BEFORE_TRANSITION%
+InParty(Myself)
+CombatCounter(0) !See([ENEMY]) 
+InParty("Edwin")
+See("Edwin") See(Player1)
+!StateCheck("Edwin",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("C#BrageEdwin_BG1","GLOBAL",0)~ THEN C#BrageB brageedwin1
+@120 /* [Brage]Edwin, you are obviously well trained in your profession of magic.~ */ 
+DO ~SetGlobal("C#BrageEdwin_BG1","GLOBAL",1)~
+== %EDWIN_BANTER% @121 /* ~[Edwin]Of course. (At last, one of the chimps praises me appropriately.)~ */
+== C#BrageB @122 /* ~[Brage]And yet, having to rely on you when it comes to magic makes me uncomfortable. I do not trust you enough to warn us about curses of objects or scrolls before we would use them, for example.~ */
+== %EDWIN_BANTER% @123 /* ~[Edwin](sigh - I counted my chickens before they hatched, obviously. These chimps never change.) And why, pray tell, do you think that I, Edwin Odesseiron, would not see a curse in an object in time to warn you about it?~ */
+== C#BrageB @124 /* ~[Brage]Oh, I do believe you would know how to find them. I said I do not trust you to spent the effort and do it, as long as you won't have to face the consequences. I can only stress that I do *expect* you to be of value to this group, Edwin. Don't make me regret accepting your presence in this group by not fulfilling your role as a mage.~ */
+== %EDWIN_BANTER% @125 /* ~[Edwin]Get back in line, chimp! Or I will show you how I plan on fulfilling my role as a mage in this group. (Doubting my competence, doubting my loyalty to <CHARNAME> - I can't believe how low my standards have sunken to travel in such a group!)~ */
+EXIT
 
 /* Brage - Ajantis 2 */
 CHAIN
@@ -343,7 +404,6 @@ DO ~SetGlobal("C#BrageAjantis_BG1","GLOBAL",3)~
 == C#BrageB @40
 EXIT
 
-
 /* Brage - Ajantis 4 */
 CHAIN
 IF 
@@ -354,15 +414,13 @@ See("Ajantis") See(Player1)
 !StateCheck("Ajantis",CD_STATE_NOTVALID)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 Global("C#BrageAjantis_BG1","GLOBAL",3)~ THEN C#BrageB brageajantis4
-@41 
+@130 /* Ajantis, what an unexpected turn of events to see us both at <CHARNAME>'s side now. When you came through Nashkel on your quest to investigate the bandit threat - never I would have thought I'd travel alongside you like we do now.~ */ 
 DO ~SetGlobal("C#BrageAjantis_BG1","GLOBAL",4)~
-== %AJANTIS_BANTER% @42
-== C#BrageB @43
-== %AJANTIS_BANTER% @44
-== C#BrageB @45
-= @46
+== %AJANTIS_BANTER% @131 /* I admit I was a little disappointed when I left Nashkel with no other offered help than some food and accomodation and wished for more support then. But never I would have imagined it would turn out like this, indeed. What happened to you is unbelievable, Brage. Noone would have expected you to - to lose your commandship like you did.~ */
+== C#BrageB @132 /* The gods have unforseeable ways to grant wishes at times, it seems.~ */
+== %AJANTIS_BANTER% @133 /* They do. I am glad to have you as a traveling companion now. - Not for how it came to pass, of course.~ */
+== C#BrageB @134 /* I know what you mean. I am glad to be part of <CHARNAME>'s group, as well.~ */
 EXIT
-
 
 
 /* Brage - Minsc 3 */
@@ -383,7 +441,7 @@ DO ~SetGlobal("C#BrageMinsc_BG1","GLOBAL",3)~
 EXIT
 
 
-/* Brage - Ajantis 3 */
+/* Brage - Minsc 3 */
 CHAIN
 IF WEIGHT #-1
 ~InParty(Myself)
@@ -399,9 +457,6 @@ DO ~SetGlobal("C#BrageMinsc_BG1","GLOBAL",4)~
 == %MINSC_BANTER% @118
 == C#BrageB @119
 EXIT
-
-
-
 
 
 /* Brage - Imoen 3 */
@@ -427,6 +482,25 @@ DO ~SetGlobal("C#BrageImoen_BG1","GLOBAL",3)~
 == C#BrageB @36
 EXIT
 
+
+/* Brage - Ajantis 5 */
+CHAIN
+IF 
+~InParty(Myself)
+CombatCounter(0) !See([ENEMY]) 
+InParty("Ajantis")
+See("Ajantis") See(Player1)
+!StateCheck("Ajantis",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("C#BrageAjantis_BG1","GLOBAL",4)~ THEN C#BrageB brageajantis5
+@41 
+DO ~SetGlobal("C#BrageAjantis_BG1","GLOBAL",5)~
+== %AJANTIS_BANTER% @42
+== C#BrageB @43
+== %AJANTIS_BANTER% @44
+== C#BrageB @45
+= @46
+EXIT
 
 
 

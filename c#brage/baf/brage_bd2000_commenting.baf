@@ -8,9 +8,10 @@ IF
 	IsValidForPartyDialogue("C#Brage")
 THEN
 	RESPONSE #100
-		SetGlobal("C#Brage_betrayal_discussion","bd2000",1)
+		SetGlobal("C#Brage_betrayal_discussion","GLOBAL",1)
 		SetGlobalTimer("bd_betrayal_discuss_timer","bd2000",ONE_MINUTE) //to space all the other NPC comments
 		DisplayStringHead("C#Brage",@1005)
+		Continue()
 END
 
 /* Battle at Bridgefort starts */
@@ -25,4 +26,5 @@ THEN
 		SetGlobalTimer("bd_mdd410z_ot_timer","bd2000",THREE_MINUTES)  // Boareskyr Bridge & Bridgefort
 		SetGlobal("C#Brage_bd_ot","bd2000",1)  // Boareskyr Bridge & Bridgefort
 		DisplayStringHead("C#Brage",@1008)  
+		Continue()
 END

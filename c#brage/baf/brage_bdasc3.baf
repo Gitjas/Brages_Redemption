@@ -5,7 +5,7 @@ IF
 	Global("bd_move_npcs","bd3000",1)  // Allied Siege Camp
 	Global("bd_move_to_entrance","locals",0)
 	Name("C#Brage",Myself)  
-	Global("C#Brage_bd_move","bd3000",1)  // same variable as used for moving Biff here
+	Global("C#Brage_bd_move","bd3000",1)  
 THEN
 	RESPONSE #100
 		SetGlobal("bd_move_to_entrance","locals",1)

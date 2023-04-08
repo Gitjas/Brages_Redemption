@@ -1,39 +1,18 @@
 /* brage_bd3000.baf
 Moves Brage into the Coalition Camp if he was not in party */
 
-/* 1. It's a new soD game, or Brage wasn't spawned yet in SoD because the player went straight for the crusade */
-IF
-  !Dead("C#Brage")
-  !InPartyAllowDead("C#Brage")
-  Global("C#BE_SpawnBrage","GLOBAL",0) //true for a new SoD game or if Brage wasn't spawned in SoD before
-  Global("C#Brage_MoveCamp","MYAREA",0) //so it happens only once
-THEN
-  RESPONSE #100
-    SetGlobal("C#Brage_MoveCamp","MYAREA",1)
-    SetGlobal("C#BE_SpawnBrage","GLOBAL",13)
-    CreateCreature("C#BRAGES",[1615.1685],N)  
-    ActionOverride("C#Brage",MakeGlobalOverride())
-    ChangeSpecifics("C#Brage",ALLIES)
-    ActionOverride("C#Brage",ChangeAIScript("C#Brages",OVERRIDE)) //Brage's SoD override script
-    ActionOverride("C#Brage",ChangeAIScript("C#Brages",OVERRIDE))
-    ActionOverride("C#Brage",ChangeAIScript("bdasc3",CLASS))
-    ActionOverride("C#Brage",ChangeAIScript("BDSHOUT",RACE))
-    ActionOverride("C#Brage",ChangeAIScript("BDFIGH01",GENERAL))
-    ActionOverride("C#Brage",ChangeAIScript("",DEFAULT))
-    ActionOverride("C#Brage",SetDialog("C#BrageS") 
-    Continue() 
-END
-
-/* 2+3: Brage was in party before (e.g. as a BG:EE NPC or in SoD beginning) OR he was spawned in SoD before */
+/* Brage was in party before (e.g. as a BG:EE NPC or in SoD beginning) OR he was spawned in SoD before */
 IF
   Global("C#Brage_MoveCamp","MYAREA",0)
   !Dead("C#Brage")
   !InPartyAllowDead("C#Brage")
+  OR(2) //One of the 2 following conditions needs to be true
+	BeenInParty("C#Brage") //this is true if Brage was in party before
+	GlobalGT("C#BE_SpawnBrage","GLOBAL",8)
 THEN
   RESPONSE #100
     ActionOverride("C#Brage",SetDialogue("C#BrageP"))
     SetGlobal("C#Brage_MoveCamp","MYAREA",1)
-    SetGlobal("C#BE_SpawnBrage","GLOBAL",13)
     MoveGlobal("bd3000","C#Brage",[1615.1685]) 
     ActionOverride("C#Brage",Face(N))
     ReallyForceSpellDeadRES("bdrejuve","C#Brage")

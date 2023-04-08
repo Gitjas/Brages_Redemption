@@ -1,0 +1,13 @@
+/* spawn uncle in camp */
+
+IF
+	!Dead("c#besq02")
+	GlobalGT("C#Brage_SoDQuest","GLOBAL",2)
+	CombatCounter(0)
+	Global("C#BE_SoDQuestUncleSpwn","MYAREA",0)
+THEN
+	RESPONSE #100
+		CreateCreature("c#besq02",[243.1307],SE)
+		SetGlobal("C#BE_SoDQuestUncleSpwn","MYAREA",1)
+END
+	

@@ -9,11 +9,11 @@ THEN
   RESPONSE #100
     ApplySpellRES("bdresurr","C#Brage") //resurrection
     SmallWait(1)
-    ActionOverride("C#Brage",ChangeAIScript("C#BrageS",OVERRIDE))
     ActionOverride("PlayerChest00",TakeCreatureItems("C#Brage",BACKPACK))
     SmallWait(1)
     ActionOverride("C#Brage",LeaveParty())
     SmallWait(1)
+    ActionOverride("C#Brage",ChangeAIScript("C#BrageS",OVERRIDE))
     ActionOverride("C#Brage",DestroySelf())
     Continue()
 END

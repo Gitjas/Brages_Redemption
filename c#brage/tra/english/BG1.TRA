@@ -324,6 +324,42 @@
 @319  = ~[Brage]New names we learned today - "Davaeorn", is he the "D." Tazok mentioned in the letter you found with the vendor of cursed items? And who is "Sarevok"?~
 @320  = ~[Brage]Still, we did good, <CHARNAME>. We helped a lot of people by removing most of the bandit activities from the roads. We're just not done yet, is all.~
 
-/* new for v6.2 */
-@321  = ~Oh, Brage! I - I didn't see you there.~
-@322  = ~Well, or maybe he won't, seeing that Brage is with you.~
+/* new for v7 */
+@321  = ~[DANDAL]Oh, Brage! I - I didn't see you there.~
+@322  = ~[DANDAL]Well, or maybe he won't, seeing that Brage is with you.~
+
+/* new for v8.0 */
+@323  = ~[Brage]<CHARNAME>, when I joined your cause, I felt like... like a monster. A murderer, the lowest kind. Now I undestand that I was an unfortunate plaything of the gods - a victim, too. I will never deny what my hands did, never shake the feeling of my guilt, never lose the pressure on my breast that makes it hard to breathe freely. But I will learn to be able to look me in the eye again, and it is thanks to you.~
+@324  = ~[PC Reply]I thank you for the kind words, but all I did was solve a riddle and show a sword to Nalin.~
+@325  = ~[PC Reply]I didn't help you much with going through your emotions, all I did was listen.~
+@326  = ~[PC Reply]I am truly glad to hear this, Brage.~
+@327  = ~[PC Reply]You really think you aren't a murderer? You killed a lot of people, Brage. Never forget that.~
+@328  = ~[PC Reply]Does it mean you are done with turning this topic round and round? Good.~
+@329  = ~[PC Reply]Thank goodness! Some sort of acknowledgement for the pain of listening to your constant whining.~
+@330  = ~[PC Reply]Brage, I need you as a fighter. I take it you aren't as mentally absent any more as you were - that's good, let's move on.~
+@331  = ~[Brage]I... I know! I did not intend to sound careless about the guilt I know will be mine for all my life.~
+@332  = ~[Brage]When I needed it most, <CHARNAME>. After going out of your way to prove my innocence, and taking me on as fighting comrade, although I really tried to shoo you away. (smiles).~
+@333  = ~[Brage]You have gone to great lengths to prove my innocence and took me on as fighting comrade, although I really tried to shoo you away... And you listened, <CHARNAME>, when I needed it most.~
+@334  = ~[Brage]Well, I fear that will never fully be the case - but I understand and will be quiet now.~
+@335  = ~[Brage]Yes, you listened, <CHARNAME>, when I needed it most.~
+@336  = ~[Brage]Thank you, <CHARNAME>. For everything.~
+@337  = ~You are welcome.~
+@338  = ~[Brage]You mean this scroll? This *cursed* scroll? You called it scroll of *Wisdom*! Man, you better keep away from me, before I lose my temper!~
+@339  = ~[Brage]Considering I joined your forces to seek redemption and compensation for the families I destroyed, the current situation is most unfortunate, indeed.~ [c#ablank]
+@340  = ~[PC Reply]I'm not happy about this, either.~
+@341  = ~[PC Reply]Is that an accusation? What would you have me do?~
+@342  = ~[PC Reply]Not our fault that the evil organization we are trying to expose took over the city's forces, is it?~
+@343  = ~[Brage]Of course I know they do us wrong. And gods know I do not blame you for anything that's happening.~
+@344  = ~[Brage]We are not here due to valid reasons. We need to get out of here, and convince the authorities we aren't the murderers they think we are or that someone wants us to appear to be. But we will achieve this by revealing the traiterous scheme of Sarevok. Being here is a serious setback, but nothing changed with respect to our goal. It just became much more urgent - regarding our personal wellbeing.~
+@345  = ~[Brage]A severe punishment for a minor offense, and such a useless death... I fear the priestesses were justified in doing so, although it makes my heart fill with rage upon the thought of losing one's child so. Not to hand over the body to the parents - especially that of a child - is not acceptable behavior however, no matter the church.~
+@346  = ~[Brage](sigh) It grieves my heart to know this boy lost - knowing he could have been saved so simple in a fashion, were his death been more recent. I am sorry for your loss.~
+@347  = ~[Brage]Man - take your son into your arms and praise your god who gave you the power to call him back in such simple a fasion! What would I give for talking to my family again. And here you are, not knowing the luck your Lady bestowed upon you.~
+@348  = ~[Tremain]Oh, I know very well the luck. And HE will know it, too! Up you go!~
+@349  = ~[Brage]<CHARNAME> - you really never know how your spells will turn out?~
+@350  = ~[PC Reply]That's kind of the concept of handling wild magic, yes.~
+@351  = ~[PC Reply]Well, it's not that bad. Most of the times it works.~
+@352  = ~[PC Reply]Yes, I don't. Do you have a problem with that?~
+@353  = ~[PC Reply]I was wondering when you'd ask about that, given your experiences with uncontrollable magic.~
+@354  = ~[PC Reply]If you can't handle it, leave.~
+@355  = ~[Brage]I admit I am... taken aback by the thought of it. And yet, you came this far, proved my innocence... and are still standing. I trust that you know what you are doing. I should give you credit for your achievements and not assume the worst. I *will* give you credit and trust in your abilities. Let us move on.~
+@356  = ~[Brage]That's not my intention.~

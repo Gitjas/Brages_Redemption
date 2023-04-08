@@ -7,6 +7,6 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringWait("C#Brage",@1014) 
-	    SetGlobal("C#Brage_bd_avernus_bark","bd4400",0)  
+	    SetGlobal("C#Brage_bd_avernus_bark","bd4400",1)  
 		SmallWait(8)
 END

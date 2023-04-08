@@ -13,4 +13,5 @@ THEN
 		SetGlobal("C#Brage_bd_mdd000te_ot","bd0120",1)
 		DisplayStringHead("C#Brage",@1001)
 		Wait(5)
+		Continue()
 END

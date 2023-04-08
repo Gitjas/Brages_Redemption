@@ -40,7 +40,14 @@
 @37   = ~Haltet Euch bereit. Ich komme zu Euch zurück.~
 @38   = ~Meine Nachforschungen zur Herkunft des verfluchten Schwertes führten mich zurück nach Baldurs Tor. Und in welchem Aufruhr finde ich die Stadt vor!~
 @39   = ~Meine Nachforschungen zur Herkunft des verfluchten Schwertes führten mich bis nach Tiefwasser und zurück nach Baldurs Tor, aber durch die Turbulenzen aufgrund Caelars Kreuzzug bin ich nun hier.~
-@40   = ~Ich bin überhaupt nicht Teil dieser Koalition, aber ja, ich hätte Euch gerne wieder dabei.~
-@41   = ~Oh? Nun, ich bin sicher, dass wir trotzdem Gutes tun werden.~
-@42   = ~Wie Ihr wollt. Ich werde hier warten.~
-@43   = ~Ich halte Euch den Rücken frei, <CHARNAME>.~
+@40   = ~Wie Ihr wollt. Ich werde hier warten.~
+@41   = ~Ich halte Euch den Rücken frei, <CHARNAME>.~
+
+/* new for v8 */
+@42   = ~Ich verstehe. Ihr werdet mich im Tempelbezirk in Athkatla finden. Ich werde zum Tempel des Helm zurückkehren.~
+@43   = ~Habt Dank. Ich werde sein, wo Ihr mich erwartet.~
+
+@44   = ~<CHARNAME>, ich werde die Rettung des vermissten Mädchens beenden, während Ihr mich nicht braucht, ist das in Ordnung?~
+@45   = ~Nein, bitte wartet einfach hier. Ich bin gleich wieder da und wir können die Suche gemeinsam fortsetzen.~
+@46   = ~Ja, das klingt gut. Tut das.~
+@47   = ~Das ist mir recht, aber ich möchte, dass Ihr ins Lager zurückkehrt, so dass ich Euch dort finden kann.~

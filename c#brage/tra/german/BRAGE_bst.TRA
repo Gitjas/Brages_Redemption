@@ -3,7 +3,28 @@
 @2  = ~[Brage]Imoen! Wie könnt Ihr das sagen - ja, ich habe immer viel gearbeitet, aber ich *habe* mit meinen Töchtern Ausflüge unternommen... wenn auch vielleicht nicht so häufig, wie ich mir wünschen würde!~
 @3  = ~[Imoen]Das hier ist *Baldurs Tor*! Ihr seid aus *Amn*! Niemals hättet Ihr mit Euren Töchter einen netten Nachmittag im Seeturm verbracht.~
 @4  = ~[Brage]Oh - Ihr meintet, dass ich nicht *hierher* mit ihnen gegangen wäre, wegen der politischen Spannungen und insbesondere als Hauptmann der Amnische Garde... Verzeiht, dass ich Euch angeherrscht habe, Imoen. Ich dachte, Ihr würdet Euch darauf beziehen, dass -~ 
-@5  = ~[Imoen]Dass Ihr ein alter Langweiler seid, der seine beruflichen Pflichten über seine Familie gestellt hat und erwartete, dass sie sich immer freuen, wenn sie Euch viel zu selten zu sehen bekamen?~
+@5  = ~[Imoen]Dass Ihr ein alter Langweiler seid, der seine beruflichen Pflichten über seine Familie gestellt hat und erwartete, dass sie sich immer freuten, wenn sie Euch viel zu selten zu sehen bekamen?~
 @6  = ~[Brage]...Genau das. Nachdem Ihr es nun ausgesprochen habt, klingt es gar nicht so verunglimpfend, wie ich dachte. Es beschreibt einfach nur die Wahrheit. (seufz)~
 @7  = ~[Brage]Wie dem auch sei... Meinen Mädchen kann ich nicht mehr das Leben zeigen, aber ich kann dafür sorgen, dass andere Kinder ohne Angst und Gewalt aufwachsen werden!~
 @8  = ~[Brage]*Jetzt* erfahre ich davon? Nun, besser spät als nie, vermute ich mal.~
+
+/* new for v8 */
+@9  = ~[Master Shizell]Oh, wer würde ein so mächtiges Schwert herstellen und es dann mit einem solchen Fluch belegen... Aber es ist ein so spezieller Fluch, da muss eine Absicht dahinterstecken. So ein spezieller Fluch entsteht nicht einfach, wenn eine Verzauberung fehlschlägt.~
+@10  = ~[Brage]Heißt das, Ihr glaubt, dass dieses Schwert explizit dafür verflucht worden sein könnte, um jemanden hereinzulegen?~
+@11  = ~[Brage]Ja, wir hatten bereits den Verdacht, dass dieses Schwert explizit mit einem Fluch belegt sein könnte, um jemanden hereinzulegen.~
+@12  = ~[Master Shizell]Es könnte auch sein, dass der Fluch zu diesem Zweck nur verfeinert wurde. Dass es also bereits ein gescheiterter Versuch einer Verzauberung war, bevor der aktuelle Fluch darauf gelegt wurde. Das ist gar nicht so selten, wie manche meinen - es kommt auf alle Fälle öfter vor, als Magier zugeben wollen. Normalerweise würde ein solcher Fehlversuch zerstört oder korrigiert werden - vielleicht wurde es nicht direkt eingeschmolzen, weil der Fluch so gut versteckt ist. Oder es wurde mit der Absicht verschont, den Fluch in eine nützliche Verzauberung umzuwandeln, da es ein sehr mächtiges Schwert ist.
+
+~
+@13  = ~[Brage]Oder es wurde genau dafür verschont, dass es Unheil anrichten kann. Ich danke Euch für Eure Einsichten, Meister Shizell.~
+@14  = ~[Holger]Eine gute Klinge. Aber sie ist verflucht, sagt Ihr?~
+@15  = ~[Holger]Nein, das habe ich noch nie gesehen. Wir hatten eine Quelle für verfluchte Gegenstände, aber sie erlag ihrem Schicksal durch einen unzufriedenen Kunden.~
+@16  = ~[Holger]Hmmm, ich könnte immer noch einen Käufer dafür finden, wenn Ihr interessiert seid. Es ist allerdings nicht unser normales Sortiment - zu wenig Absatz.~
+@17  = ~[Holger]Verfluchte Gegenstände sind nicht unser normales Sortiment - zu wenig Absatz.~
+@18  = ~[Holger]Das heißt nicht, dass wir sie nicht mit ihnen handeln würden, sie sind nur nicht so begehrt. Das letzte Mal haben wir eines vor über einem Jahr verkauft... Das Halsband der Dominanz nicht mitgezählt, das wir für einen Adligen für ein sehr privates und sehr illegales -~
+@19  = ~[Brage]Erspart uns irgendwelche kranken Details!~
+@20  = ~[Holger]... Projekt zum Halten von Teufelchen besorgt haben.~
+@21  = ~[Holger]Einen Käufer dafür zu finden ist das beste, was ich Euch hier als Hilfe anbieten kann.~
+@22  = ~[Brage]Nein, verkaufen werden wir es nicht!~
+@23  = ~[Brage]Eure geradezu fröhliche Herangehensweise an die Thematik verschlägt mir die Sprache, aber es geschieht mir wohl Recht, wenn ich einen Schmuggler um Rat frage.~
+@24  = ~[Brage]Ich sollte Euch wohl trotzdem dafür danken, dass Ihr es Euch angeschaut habt.~
+

@@ -1,0 +1,15 @@
+@0    = ~[Brage]Imoen, in Amn, every magic user has to go in training with a mage for several years before they are allowed to cast spells on their own. You stayed with Duke Jannath for some weeks and then decided that you would prefer to go with <CHARNAME> after Caelar.~
+@1    = ~[Imoen]Ugh, of course you would scold me for leaving her tutoring early.~
+@2    = ~[Imoen]You made it quite clear already that you do not approve of my "tinkering" with magic unless I get myself a capable teacher.~
+@3    = ~[Imoen]I understand your concern. I had a good teacher - a superb teacher, to be sure, one many mages would be only too happy to get a chance to learn from - and yet, here I am, prefering to travel with my friend...~
+@4    = ~[Brage]Going after the one who attacked you and <PRO_HIMHER>. Imoen, I very well understand the urge - the *need* to go after the ones who wronged you and the ones dear to you. But I also know that it is important to be prepared and ready to face them.~
+@5    = ~[Imoen]Ooh, I never looked at it that way! But you are right. Part of why I couldn't let <CHARNAME> go against Caelar without me was because it's *Caelar* and her crusade <PRO_HESHE> is going against. Yes, I think I wanted to be part of that.~
+@6    = ~[Imoen]Brage, do you think I'm not prepared to kick the crusaders' butts? Or are you scared I might do something stupid along the way?~
+@7    = ~[Brage]No, Imoen, neither. I just... wanted to stress that learning with Duke Jannath might have been a chance that won't come to you again, and I think - I think it would have suited you well to profit from it.~
+@8    = ~[Imoen]Because I am too impulsive and playful to handle magic properly without it, huh? Yeah, I get it. It's not like I'm hearing this for the first time.~
+@9    = ~[Brage]Because you would have deserved it, Imoen. You are young, and you are full of wit - and you have a good heart. I think you would make a good mage - once you get past the trial and error phase.~
+@10   = ~[Imoen]"Trial and error phase", huh? Are you concerned I could hurt us more than our enemies - wait, now I get it. You are worried about me! Brage is worried that little Imoen might gets hurt!~
+@11   = ~[Brage]...I am indeed, Imoen.~
+@12   = ~[Imoen]Wait, what?~
+@13   = ~[Brage]I was very relieved to see you recovered to full health - and I don't want to see you hurt again, especially not by a situation that arose because some magic was not strong enough to ward off enemies.~
+@14   = ~[Imoen]Aw, that was a nice thing to say. Thanks - "Dad". I'll make sure I'll stay behind you and your big sword then, so don't you worry about me. And I promise, if there'll be any trial and error, I'll make sure it's directed at our enemies, heheh.~

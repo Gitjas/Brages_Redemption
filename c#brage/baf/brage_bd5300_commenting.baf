@@ -2,13 +2,13 @@
 /* Comment when battle starts in Kanaglym (bd5300.are, Underground River) */
 IF
 	Global("BD_AREA_HOSTILE","BD5300",1)  // Kanaglym
-	!GlobalTimerNotExpired("bd_sdd350b_ot_timer","bd2000")  // This timer has the area code from Boareskyr Bridge & Bridgefort - I *think* this is a bug but I'll leave it for now. Needs to be checked for v2.6
+	!GlobalTimerNotExpired("bd_sdd350b_ot_timer","BD5300")
 	Global("C#Brage_bd_ot","bd5300",0)  // Kanaglym
 	IfValidForPartyDialog("C#Brage")  
 	TriggerOverride("C#Brage",Range([ENEMY.0.0.0.HOSTILES3],30))
 THEN
 	RESPONSE #100
-		SetGlobalTimer("bd_sdd350b_ot_timer","bd2000",THREE_MINUTES)  // ## see above
+		SetGlobalTimer("bd_sdd350b_ot_timer","BD5300",THREE_MINUTES)  
 		SetGlobal("C#Brage_bd_ot","bd5300",1)  // Kanaglym
 		DisplayStringHead("C#Brage",@1016)
 END

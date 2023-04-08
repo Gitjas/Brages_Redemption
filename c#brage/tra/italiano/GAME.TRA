@@ -151,8 +151,19 @@ Forza 14
 
 Peso: 12~
 
+/* new for v8 */
+@126  = ~By the gods! What was that? The boy turned into a fiend!~
+@127  = ~Nalin's Notes~
+@128  = ~Nalin wrote down everything he could distinguish about the cursed sword in neat hand writing. The length and weight of the sword is mentioned as well as what Nalin suspects to be the nature of the curse. The notes are adorned by a rough drawing of the sword hilt and pommel.
+You should make sure Brage can hold on to these notes for his further investigations about the cursed sword's origins.~
+
 
 /* SoD */
+@500 = ~Tilda~
+@501 = ~Mr. Gulliam~
+@502 = ~Girl's Voice~
+
+
 /* brage_bd0103.baf */
 @1000 = ~Oggi marceremo contro la Crociata. Non avrei mai pensato di fare nuovamente parte di una missione militare, e certamente non così presto.~
 @1001 = ~Questo abisso è impressionante. Non avevo idea che questa cripta arrivasse così in profondità.~
@@ -174,3 +185,25 @@ Peso: 12~
 @1017 = ~Questa era una bestia potente che è morta qui. Non riesco a immaginare lo sforzo necessario per abbatterla.~
 @1018 = ~Quelle porte mi intimidiscono, anche se non saprei dire esattamente il perché.~
 
+/* brage_bd0101.baf */
+@1050 = ~I'll be marching with the Flaming Fist...~
+@1051 = ~I'm looking foreward to being able to help these people - in a way.~
+@1052 = ~Yes, this smells of war. (sigh)~
+
+/* quest bafs */
+@1100  = ~*sob*~
+@1101  = ~*muffled sound*~
+@1102  = ~*sniff*~
+@1103  = ~You could have sworn you heard sounds coming from the big fir, like sobbing of a child. If you want to know where it comes from, you will need to look closer.~
+@1104  = ~You stare into the dark of the fir tree, finally seeing some movement up in the branches.~
+@1105  = ~You need to come closer to do anything here.~
+
+/* c#brages.baf */
+@1200  = ~[Brage]Are you sure you want to wield this axe? The chance of going berserk might sound slim, but when it happens and one who is dear to you will be standing next to you, you might wake up from a nightmare.~
+@1201  = ~[Brage]Please, do not make me wield this axe. The chance of going berserk might sound slim, but when it happens and one who is dear to you will be standing next to me - we might wake up from a nightmare.~
+@1202  = ~[Brage]I will not wear this for long, <CHARNAME>. This... "helmet" is a disgrace to any skillful warrior's pride.~
+
+
+/* lines used in several files */
+@200000 = ~My comrade Brage here has a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~
+@200001   = ~[PC Reply]My comrade Brage here has information about a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~

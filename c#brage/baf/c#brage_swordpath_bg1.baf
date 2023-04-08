@@ -1,0 +1,220 @@
+/* Working title "sword path": After going against the people who planned the sword swap (up to Davaeorn), Brage will start to broaden his path of justice and look for the ones who were behind the actual deed (smithy / sword dealer) and where it was created. Quest closes in SoA */
+/* BG1 part */
+
+/* first dialogue, kicks off the quest */
+/* activate */
+IF
+	InParty(Myself) 
+	RealGlobalTimerExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	!AreaType(DUNGEON)
+	GlobalGT("C#BE_DefeatedDavaeorn","GLOBAL",0)
+	Global("C#BE_BG1SwordPath","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BE_BG1SwordPath","GLOBAL",1)
+END
+/* initiate */
+IF 
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#BE_BG1SwordPath","GLOBAL",1) 
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",3200)
+		StartDialogueNoSet(Player1)
+		
+END
+
+/* sword wasn't there during the first dialogue, but it is now */
+/* this plays ONCE */
+/* activate */
+IF
+	InParty(Myself) 
+//##	RealGlobalTimerExpired("C#BE_BrageDialogueTimer","GLOBAL") //## change to shorter timer
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	!AreaType(DUNGEON)
+	PartyHasItem("SW2H03")
+	GlobalGT("C#BE_BG1SwordPath","GLOBAL",0)
+	GlobalLT("C#BE_BG1SwordPath","GLOBAL",30) //quest did not break
+	Global("C#BE_HasCursedSword","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BE_HasCursedSword","LOCALS",1)
+END
+/* initiate */
+IF 
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#BE_HasCursedSword","LOCALS",1) 
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",3200)
+		StartDialogueNoSet(Player1)
+		
+END
+
+/* Sword is gone after is was granted but Nalin's notes are not lost */
+/* [##did not collect notes from Nalin yet] OR [##has notes] */
+/* this plays ONCE */
+/* activate */
+IF
+	InParty(Myself) 
+//##	RealGlobalTimerExpired("C#BE_BrageDialogueTimer","GLOBAL") //## change to shorter timer
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	!AreaType(DUNGEON)
+	!PartyHasItem("SW2H03")
+	OR(2)
+		PartyHasItem("c#be1sp1") //has notes
+		GlobalLT("C#BE_BG1SwordPath","GLOBAL",4) //did not collect notes from Nalin yet
+	GlobalGT("C#BE_BG1SwordPath","GLOBAL",0)
+	GlobalLT("C#BE_BG1SwordPath","GLOBAL",30) //quest did not break
+	Global("C#BE_HasCursedSword","LOCALS",3)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BE_HasCursedSword","LOCALS",4)
+END
+/* initiate */
+IF 
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#BE_HasCursedSword","LOCALS",4) 
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",3200)
+		StartDialogueNoSet(Player1)
+		
+END
+
+/* Nalin's notes are gone, sword was lost already */
+/* activate */
+IF
+	InParty(Myself) 
+//##	RealGlobalTimerExpired("C#BE_BrageDialogueTimer","GLOBAL") //## change to shorter timer
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	!AreaType(DUNGEON)
+	!PartyHasItem("SW2H03")
+	!PartyHasItem("c#be1sp1") 
+//## insert: no 7th group member has the notes
+	GlobalGT("C#BE_BG1SwordPath","GLOBAL",4) //did collect notes from Nalin
+	GlobalLT("C#BE_BG1SwordPath","GLOBAL",30) //quest did not break
+	Global("C#BE_HasCursedSword","LOCALS",5)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BE_HasCursedSword","LOCALS",6)
+END
+/* initiate */
+IF 
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#BE_HasCursedSword","LOCALS",6) 
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",3200)
+		StartDialogueNoSet(Player1)
+		
+END
+
+/* final dialogue, closes the quest (for BG:EE); leaves it open for BG:SoD and or EET for small follow-up in SoD */
+/* activate */
+IF
+	InParty(Myself) 
+	RealGlobalTimerExpired("C#BE_BrageDialogueTimer","GLOBAL")
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	!AreaType(DUNGEON)
+	GlobalGT("C#BE_BG1SwordPath","GLOBAL",3) //notes from Nalin collected
+	GlobalLT("C#BE_BG1SwordPath","GLOBAL",20) 
+OR(4)
+	GlobalGT("C#BE_BG1SwordPathHalbazzer","GLOBAL",0) // - wasn't traded by Drin
+	GlobalGT("C#BE_BG1SwordPathBentley","GLOBAL",0) //- Bentley never saw it
+	GlobalGT("C#BE_BG1SwordPathAlatos","GLOBAL",1) //- wasn't traded by BG Thieves' Guild
+	GlobalGT("C#BE_BG1SwordPathbssmgl02","GLOBAL",0) //- wasn't traded by smugglers
+OR(5)
+	GlobalGT("C#BE_BG1SwordPathBART14","GLOBAL",0) //- shop in UB didn't trade it
+	GlobalGT("C#BE_BG1SwordPathSHOPKN","GLOBAL",0) //- wasn't traded by Nashkel shop
+	GlobalGT("C#BE_BG1SwordPathMALTZ","GLOBAL",0) //- wasn't traded by merchant in BG
+	GlobalGT("C#BE_BG1SwordPathMERCH5","GLOBAL",0) //- wasn't traded by Nashkel Carnival weapon merchant
+	GlobalGT("C#BE_BG1SwordPathAldeth","GLOBAL",0) //- wasn't traded by merchant's league
+OR(3) //Tethyrian style elements, but mixed with other styles so probably not from Tethyr
+	GlobalGT("C#BE_BG1SwordPathTaerom","GLOBAL",0)
+	GlobalGT("C#BE_BG1SwordPathAlatos","GLOBAL",1)
+	GlobalGT("C#BE_BG1SwordPathAldeth","GLOBAL",0)
+
+OR(2) //needs well versed mage for this, enchantment not trivial
+	GlobalGT("C#BE_BG1SwordPathThalantyr","GLOBAL",0)
+	GlobalGT("C#BE_BG1SwordPathElvenhair","GLOBAL",0)
+
+OR(2) //not trivial and expensive/rare ingredients needed
+	GlobalGT("C#BE_BG1SwordPathHalbazzer","GLOBAL",0)
+	GlobalGT("C#BE_BG1SwordPathElvenhair","GLOBAL",0)
+
+OR(4) //enchantment is hiding well, might have been refined for this purpose
+	GlobalGT("C#BE_BG1SwordPathPOGHM5","GLOBAL",0)
+	GlobalGT("C#BE_BG1SwordPathJalantha","GLOBAL",0)
+	GlobalGT("C#BE_BG1SwordPathKelddath","GLOBAL",0)
+	GlobalGT("C#BE_BG1SwordPathbstrmage","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#BE_BG1SwordPath","GLOBAL",20)
+END
+/* initiate */
+IF 
+	InParty(Myself) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See(Player1)
+	!Detect([ENEMY])
+	!Detect([EVILBUTBLUE])
+	CombatCounter(0)
+	Global("C#BE_BG1SwordPath","GLOBAL",20) 
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#BE_BrageDialogueTimer","GLOBAL",3200)
+		StartDialogueNoSet(Player1)
+		
+END

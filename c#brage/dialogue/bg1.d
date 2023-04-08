@@ -9,7 +9,7 @@
 CHAIN
 IF WEIGHT #-1
 ~NumTimesTalkedToGT(0)
-InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)
+InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)
 Global("C#BE_GreetBardolan","LOCALS",0)~ THEN %tutu_var%BARDOL bardolan
 @0
 == C#BrageJ @1
@@ -218,6 +218,7 @@ END
 CHAIN 
 IF WEIGHT #-1
 ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)
+GlobalLT("Chapter","GLOBAL",4)
 Global("C#BE_AMNIS4","GLOBAL",0)~ THEN AMNIS4 greeting
 @58 DO ~SetGlobal("C#BE_AMNIS4","GLOBAL",1)~
 == C#BrageJ @59
@@ -417,6 +418,36 @@ END
 
 END //APPEND
 
+/* Fahrington - cursed scroll of foolishness */
+I_C_T FAHRIN 1 C#B_FAHRIN_1
+== C#BrageJ IF ~PartyHasItemIdentified("SCRL12")
+InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @338 /* ~You mean this scroll? This *cursed* scroll? You called it scroll of *Wisdom*! Man, you better keep away from me, before I lose my temper!~ */
+END
+
+I_C_T FAHRIN 4 C#B_FAHRIN_1
+== C#BrageJ IF ~PartyHasItemIdentified("SCRL12")
+InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @338 /* ~You mean this scroll? This *cursed* scroll? You called it scroll of *Wisdom*! Man, you better keep away from me, before I lose my temper!~ */
+END
+
+I_C_T FAHRIN 7 C#B_FAHRIN_1
+== C#BrageJ IF ~PartyHasItemIdentified("SCRL12")
+InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @338 /* ~You mean this scroll? This *cursed* scroll? You called it scroll of *Wisdom*! Man, you better keep away from me, before I lose my temper!~ */
+END
+
+/* Tremain's son */
+I_C_T VARCI 8 C#BE_VARCI_8
+== c#bragej IF ~InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @345 /* ~A severe punishment for a minor offense, and such a useless death... I fear the priestesses were justified in doing so, although it makes my heart fill with rage upon the thought of losing one's child so. Not to hand over the body to the parents - especially that of a child - is not acceptable behavior however, no matter the church.~ */
+END
+
+I_C_T TREMAI 10 C#BE_TREMAI_10
+== c#bragej IF ~InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @346 /* ~(sigh) It grieves my heart to know this boy lost - knowing he could have been saved so simple in a fashion, were his death been more recent. I am sorry for your loss.~ */
+END
+
+I_C_T TREMAI 16 C#BE_TREMAI_16
+== c#bragej IF ~InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @347 /* ~Man - take your son into your arms and praise your god who gave you the power to call him back in such simple a fasion! What would I give for talking to my family again. And here you are, not knowing the luck your Lady bestowed upon you.~ */
+== TREMAI IF ~InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @348 /* ~Oh, I know very well the luck. And HE will know it, too! Up you go!~ */
+END
+
 
 /* Davaeorn */
 /* upon learning the name inside the mine */
@@ -609,6 +640,24 @@ SAY @81
 IF ~~ THEN DO ~SetGlobal("C#BE_KnowOfBhaal","GLOBAL",3)~ EXIT
 END
 
+/* being arrested for murder */
+IF ~Global("C#Brage_BG1Arrested","GLOBAL",1)~ THEN arrested
+SAY @339 /* ~Considering I joined your forces to seek redemption and compensation for the families I destroyed, the current situation is most unfortunate, indeed.~ [c#ablank] */
+++ @340 /* ~I'm not happy about this, either.~ */ + arrested_02
+++ @341 /* ~Is that an accusation? What would you have me do?~ */ + arrested_01
+++ @342 /* ~Not our fault that the evil organization we are trying to expose took over the city's forces, is it?~ */ + arrested_01
+END
+
+IF ~~ THEN arrested_01
+SAY @343 /* ~Of course I know they do us wrong. And gods know I do not blame you for anything that's happening.~ */
+IF ~~ THEN + arrested_02
+END
+
+IF ~~ THEN arrested_02
+SAY @344 /* ~We are not here due to valid reasons. We need to get out of here, and convince the authorities we aren't the murderers they think we are or that someone wants us to appear to be. But we will achieve this by revealing the traiterous scheme of Sarevok. Being here is a serious setback, but nothing changed with respect to our goal. It just became much more urgent regarding our personal wellbeing.~ */
+IF ~~ THEN DO ~SetGlobal("C#Brage_Arrested","GLOBAL",2)~ EXIT
+END
+
 
 //* after the scene in the Ducal Palace */
 
@@ -668,9 +717,43 @@ IF ~Global("C#BE_BadRepWarning","GLOBAL",1)~ THEN bad_rep
 SAY @92
 IF ~~ THEN DO ~SetGlobal("C#BE_BadRepWarning","GLOBAL",2)~ EXIT
 END 
-
+END //APPEND
 
 /* Brage - PC dialogues */
+
+/* PC is a wildmage... */
+CHAIN
+IF 
+~InParty(Myself)
+CombatCounter(0) !See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Kit(Player1,WILDMAGE)
+Global("C#BrageWildmagePC","GLOBAL",0)~ THEN C#BrageB wildmage_pc
+@349 /* ~<CHARNAME> - you really never know how your spells will turn out?~ */ DO ~SetGlobal("C#BrageWildmagePC","GLOBAL",1)~
+END
+++ @350 /* ~That's kind of the concept of handling wild magic, yes.~ */ + wildmage_pc_01
+++ @351 /* ~Well, it's not that bad. Most of the times it works.~ */ + wildmage_pc_01
+++ @352 /* ~Yes, I don't. Do you have a problem with that?~ */ + wildmage_pc_01
+++ @353 /* ~I was wondering when you'd ask about that, given your experiences with uncontrollable magic.~ */ + wildmage_pc_01
+++ @354 /* ~If you can't handle it, leave.~ */ + wildmage_pc_02
+
+APPEND C#brageB
+
+IF ~~ THEN wildmage_pc_01
+SAY @355 /* ~I admit I am... taken aback by the thought of it. And yet, you came this far, proved my innocence... and are still standing. I trust that you know what you are doing. I should give you credit for your achievements and not assume the worst. I *will* give you credit and trust in your abilities. Let us move on.~ */
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN wildmage_pc_02
+SAY @356 /* ~That's not my intention.~ */
+IF ~~ THEN + wildmage_pc_01
+END
+END //APPEND
+
+
+APPEND c#brageJ
 
 /* Poppies... */
 IF ~Global("C#BE_BrageTalkPoppies","GLOBAL",1)~ THEN poppies
@@ -680,8 +763,6 @@ SAY @93
 = @96
 IF ~~ THEN DO ~SetGlobal("C#BE_BrageTalkPoppies","GLOBAL",2)~ EXIT
 END
-
-
 
 /* rest talk: pictures of his family */
 IF ~Global("C#BE_BrageTalksBrooch","GLOBAL",1)~ THEN brooch
@@ -1169,7 +1250,47 @@ SAY @267
 ++ @260 + bettysface_06
 END
 
+IF ~Global("C#BE_BrageTalks","GLOBAL",24)~ THEN no_monster
+SAY @323 /* ~<CHARNAME>, when I joined your cause, I felt like... like a monster. A murderer, the lowest kind. Now I undestand that I was an unfortunate plaything of the gods - a victim, too. I will never deny what my hands did, never shake the feeling of my guilt, never lose the pressure on my breast that makes it hard to breathe freely. But I will learn to be able to look me in the eye again, and it is thanks to you.~ */
+++ @324 /* ~I thank you for the kind words, but all I did was solve a riddle and show a sword to Nalin.~ */ + no_monster_03
+++ @325 /* ~I didn't help you much with going through your emotions, all I did was listen.~ */ + no_monster_02
+++ @326 /* ~I am truly glad to hear this, Brage.~ */ + no_monster_03
+++ @327 /* ~You really think you aren't a murderer? You killed a lot of people, Brage. Never forget that.~ */ + no_monster_01
+++ @328 /* ~Does it mean you are done with turning this topic round and round? Good.~ */ + no_monster_04
+++ @337 /* ~You are welcome.~ */ + no_monster_03
+++ @329 /* ~Thank goodness! Some sort of acknowledgement for the pain of listening to your constant whining.~ */ + no_monster_05
+++ @330 /* ~Brage, I need you as a fighter. I take it you aren't as mentally absent any more as you were - that's good, let's move on.~ */ + no_monster_04
+END
 
+IF ~~ THEN no_monster_01
+SAY @331 /* ~I... I know! I did not intend to sound carless about the guilt I know will be mine for all my life.~ */
+IF ~~ THEN + no_monster_06
+END
+
+IF ~~ THEN no_monster_02
+SAY @332 /* ~When I needed it most, <CHARNAME>. After going out of your way to prove my innocence, and taking me on as fighting comrade, although I really tried to shoo you away. (smiles).~ */
+IF ~~ THEN + no_monster_06
+END
+
+IF ~~ THEN no_monster_03
+SAY @333 /* ~You went out of your way to prove my innocence and took me on as fighting comrade, although I really tried to shoo you away... And you listened, <CHARNAME>, when I needed it most.~ */
+IF ~~ THEN + no_monster_06
+END
+
+IF ~~ THEN no_monster_04
+SAY @334 /* ~Well, I fear that will never fully be the case - but I understand and will be quiet now.~ */
+IF ~~ THEN DO ~IncrementGlobal("C#BE_BrageTalks","GLOBAL",1)~ EXIT
+END
+
+IF ~~ THEN no_monster_05
+SAY @335 /* ~Yes, you listened, <CHARNAME>, when I needed it most.~ */
+IF ~~ THEN + no_monster_06
+END
+
+IF ~~ THEN no_monster_06
+SAY @336 /* ~Thank you, <CHARNAME>. For everything.~ */
+IF ~~ THEN DO ~IncrementGlobal("C#BE_BrageTalks","GLOBAL",1)~ EXIT
+END
 
 
 

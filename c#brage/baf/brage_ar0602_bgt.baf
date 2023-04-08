@@ -8,5 +8,12 @@ THEN
 		EraseJournalEntry(@10)
 		EraseJournalEntry(@50)
 		EraseJournalEntry(@1022)
+		EraseJournalEntry(@1023)
+		EraseJournalEntry(@1024)
+		EraseJournalEntry(@100016)
+		EraseJournalEntry(@100017)
+		EraseJournalEntry(@100018)
+		EraseJournalEntry(@100019)
+		EraseJournalEntry(@100021)
 		Continue()
 END

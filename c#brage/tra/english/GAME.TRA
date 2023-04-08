@@ -1,7 +1,7 @@
 @0  = ~No! NO!! I will not touch this cursed sword again, <CHARNAME> - don't make me do this!~
 @1  = ~When asked about his past, BRAGE clears his throat and hesitates for a short moment. Then he tells about his origins from Athkatla in Amn, his life in the Amnish Guard, and his time as captain in Nashkel. "I found the lovliest wife and had the two most wonderful daughters - until I picked up a sword that was cursed. You know the rest, <CHARNAME>. Please do not make me tell it again.~
-//@2  = ~##~
-@3  = ~When we are finished here, I'll go and search for the one who made that cursed sword. I will start in Waterdeep with the smithy of my real sword - the fake one bore its seal. I do not think it will not be the case, but I will see what I can there.~
+//@2  = 
+@3  = ~When we are done and part ways, I will go in search of the maker of the cursed sword. I will travel to Waterdeep and begin my investigation at the smith of the actual sword - the forgery bore their seal, after all. Not that I really expect to find anything there, but I need to follow up on this lead.~
 @4  = ~Ajantis, if your steps guide you back to Waterdeep, we could travel together.~
 @5  = ~That is an excellent idea, Brage. I would appreciate your company on the travels.~
 @6  = ~Now that we are done, I will leave for Waterdeep.~
@@ -137,8 +137,18 @@ Requires:
 
 Weight: 12~
 
+/* new for v8 */
+@126  = ~By the gods! What was that? The boy turned into a fiend!~
+@127  = ~Nalin's Notes~
+@128  = ~Nalin wrote down everything he could distinguish about the cursed sword in neat hand writing. The length and weight of the sword is mentioned as well as what Nalin suspects to be the nature of the curse. The notes are adorned by a rough drawing of the sword hilt and pommel.
+You should make sure Brage can hold on to these notes for his further investigations about the cursed sword's origins.~
 
 /* SoD */
+@500 = ~Tilda~
+@501 = ~Mr. Gulliam~
+@502 = ~Girl's Voice~
+
+
 /* brage_bd0103.baf */
 @1000 = ~Today we will march against the Crusade. Never would I have thought to be on a military mission again, and so soon.~
 @1001 = ~This is an impressive chasm. I had no idea this crypt would reach so deep down.~
@@ -159,3 +169,25 @@ Weight: 12~
 @1016 = ~Into the fight!~
 @1017 = ~This was a mighty beast that died here. I cannot start to imagine the effort it took to take it down.~
 @1018 = ~Those doors look intimidating - although I can't put my finger on it why they would shake me so.~
+
+
+/* brage_bd0101.baf */
+@1050 = ~I'll be marching with the Flaming Fist...~
+@1051 = ~I'm looking foreward to being able to help these people - in a way.~
+@1052 = ~Yes, this smells of war. (sigh)~
+
+/* quest bafs */
+@1100  = ~*sob*~
+@1101  = ~*muffled sound*~
+@1102  = ~*sniff*~
+@1103  = ~You could have sworn you heard sounds coming from the big fir, like sobbing of a child. If you want to know where it comes from, you will need to look closer.~
+@1104  = ~You stare into the dark of the fir tree, finally seeing some movement up in the branches.~
+@1105  = ~You need to come closer to do anything here.~
+
+/* c#brages.baf */
+@1200  = ~[Brage]Are you sure you want to wield this axe? The chance of going berserk might sound slim, but when it happens and one who is dear to you will be standing next to you, you might wake up from a nightmare.~
+@1201  = ~[Brage]Please, do not make me wield this axe. The chance of going berserk might sound slim, but when it happens and one who is dear to you will be standing next to me - we might wake up from a nightmare.~
+
+/* lines used in several files */
+@200000 = ~My comrade Brage here has a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~
+@200001   = ~[PC Reply]My comrade Brage here has information about a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~

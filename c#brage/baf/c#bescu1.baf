@@ -1,0 +1,13 @@
+// Tilda comes down the tree
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([20.0],0)
+        Wait(2)
+        ActionOverride("c#besq01",DestroySelf())
+        FadeFromColor([20.0],0)
+	EndcutSceneMode()
+END 

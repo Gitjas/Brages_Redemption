@@ -35,8 +35,8 @@
 @34   = ~You... Now you've caught me by surprise. I didn't notice!~
 @35   = ~Of *course* not. What kind of thief were I had you noticed? Pffff.~
 @36   = ~But then it is true, Imoen. You chose to spare me the embarassment of losing personal belongings to thieving out of respect for my mourning. I thank you.~
-@37   = ~Brage, you have said that you pray, but I have a feeling that you do not believe that he will return to you. Indeed, you have failed Helm, but he is not unforgiving. He will listen so long as he sees that you really try to return to the right path.~
-@38   = ~Do you really believe so? Helm is the god of duty, of vigilance... and of protection of the innocent. And I have failed in it all!~
+@37   = ~Brage, you have said that you pray, but I have a feeling that you do not believe that he will return to you. Indeed, you have failed Helm, but he is not unforgiving. He will listen as long as he sees that you really try to return to the right path.~
+@38   = ~Do you really believe so? Helm is the god of duty, of vigilance... and of protection of the innocent. And I have failed in all!~
 @39   = ~You did not give in to evil by choice. You made a mistake. It was a very grave and severe one in which many innocents died, but it was not by your own free will, Brage. If you truly repent, and are true to Helm's dogmas, he will not spite you with unforgiveness. He shan't!~
 @40   = ~You are right, it is good to have a brother in faith to talk to. I thank you for these words. They have stirred hope in me.~
 @41   = ~You were stationed in Athkatla with the Order of the Radiant Heart, Ajantis? Right at the headquarters.~
@@ -122,4 +122,40 @@ all the captain was, was "Rage".~
 @117 = ~I really do envy you for your view on this world, Minsc. I fear it's not that easy, though.~
 @118 = ~Oh yes, it is! Isn't it right, Boo? Boo thinks so, too. Minsc goes berserk, and Boo watches out for Minsc to kick the right butts!~
 @119 = ~I tried to never lose control. It makes me wonder whether you would have handled the curse of the sword better than I did, Minsc.~
+
+/* new for v8 */
+@120 = ~[Brage]Edwin, you are obviously well trained in your profession of magic.~
+@121 = ~[Edwin]Of course. (At last, one of the chimps praises me appropriately.)~
+@122 = ~[Brage]And yet, having to rely on you when it comes to magic makes me uncomfortable. I do not trust you enough to warn us about curses of objects or scrolls before we would use them, for example.~
+@123 = ~[Edwin](sigh - I counted my chickens before they hatched, obviously. These chimps never change.) And why, pray tell, do you think that I, Edwin Odesseiron, would not see a curse in an object in time to warn you about it?~
+@124 = ~[Brage]Oh, I do believe you would know how to find them. I said I do not trust you to spent the effort and do it, as long as you won't have to face the consequences. I can only stress that I do *expect* you to be of value to this group, Edwin. Don't make me regret accepting your presence in this group by not fulfilling your role as a mage.~
+@125 = ~[Edwin]Get back in line, chimp! Or I will show you how I plan on fulfilling my role as a mage in this group. (Doubting my competence, doubting my loyalty to <CHARNAME> - I can't believe how low my standards have sunken to travel in such a group!)~
+@126 = ~[Brage]Jaheira and Khalid, I wanted to thank you for your readiness to help with clearing the mines. Berrun told me he was expecting you.~
+@127 = ~[Brage]Jaheira, I wanted to thank you for your readiness to help with clearing the mines. Berrun told me he was expecting you.~
+@128 = ~[Jaheira]Yes, Khalid and I volunteered as soon as we received his message. We were only delayed because we... waited for <CHARNAME>.~
+@129 = ~[Brage]So I figured. You can't imagine my relief when he told me he found help. I admit I did not fully appreciate the thought when he first told me - but it was my false pride as a commander about not being able to protect my town appropriately and I swallowed it rather quickly. Well, I do not have to think about this any more - at least not as a commander.~ 
+@130 = ~[Brage]Ajantis, what an unexpected turn of events to see us both at <CHARNAME>'s side now. When you came through Nashkel on your quest to investigate the bandit threat - never I would have thought I'd travel alongside you like we do now.~
+@131 = ~[Ajantis]I admit I was a little disappointed when I left Nashkel with no other offered help than some food and accomodation and wished for more support then. But never I would have imagined it would turn out like this, indeed. What happened to you is unbelievable, Brage. Noone would have expected you to - to lose your commandship like you did.~
+@132 = ~[Brage]The gods have unforseeable ways to grant wishes at times, it seems.~
+@133 = ~[Ajantis]They do. I am glad to have you as a traveling companion now. - Not for how it came to pass, of course.~
+@134 = ~[Brage]I know what you mean. I am glad to be part of <CHARNAME>'s group, as well.~
+@135 = ~[Neera]What, you mean I should stop doing wild surges? You know I don't have a choice!~
+@136 = ~[Brage]I know that. I meant the way you are using it.~
+@137 = ~[Neera]Oh, you want me to stop using magic altogether? Just because it is unreliable at times? You are master of your sword, and yet you do not always hit like you intend to.~
+@138 = ~[Brage]That is not a good comparison, and you know it. If we were to compare this, it would mean that my weapon would turn into something else uncontrollably.~
+@139 = ~[Neera]Well, we all know you *had* such a sword, so don't talk so highty-mighty about my magic.~
+@140 = ~[Brage]That-that is *exactly* the reason why I do! You would justify your unreliable magic with the tragedy that destroyed my whole life forever? *This* would be your justification why you'd have the right to go on casting your unreliable magic the way you do? You don't need a cursed item to leash havoc onto the ones dear to you!~
+@141 = ~[Neera]I... I am sorry, it was a bad comparison. What I meant was, no one is perfect. We all do mistakes...~
+@142 = ~[Brage]"Mistakes", yes. I guess it's to be expected you would phrase it that way. I'm not suggesting you stop using magic altogether, Neera, but I see you can't understand what I was pointing at, which proves my point only the stronger.~
+@143 = ~[Neera]Brage, if you are not suggesting that I should stop using magic, and are aware of the fact that I can't prevent the wild surges - what were you suggesting, then?~
+@144 = ~[Neera]And you never told <CHARNAME> to stop, either!~
+@145 = ~[Brage]I trust <CHARNAME> with <PRO_HISHER> magic more than you.~
+@146 = ~[Neera]What, you think <PRO_HISHER> magic would be more reliable than mine? That's rediculous.~
+@147 = ~[Brage]No, but I believe that <CHARNAME> is capable of taking responsibility, a trait that I do not see as much developped in you.~
+@148 = ~[Brage]I wished you would use your magic more *reasonably*. I see a certain... recklessness in your ways I do not approve of.~
+@149 = ~[Neera]Recklessness, eh? If you fear my magic that much, why not ask <CHARNAME> to get rid of me?~
+@150 = ~[Brage]I am talking to you directly. Leaving you behind might help us, but not the next in your path. I prefer to have you around and try to convince you to be more responsible.~
+@151 = ~[Neera]Do you hear yourself talking? That's as if *I*'d say that I would watch over you so you'd never take up a cursed sword again!~
+@152 = ~[Brage]And I would sincerely thank you if you would, Neera. Don't you see? You used this example with the intend to let it sound like a mockery, oblivious to its real meaning. You still have a long way to go before you'll see my point, I wager. I clearly hope it will not be a tragedy that will open your eyes.~
+@153 = ~[Brage]Neera, I wished you wouldn't practice magic the way you do.~
 

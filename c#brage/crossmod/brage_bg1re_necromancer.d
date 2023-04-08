@@ -8,6 +8,17 @@ I_C_T ~C#q11nec~ %C#q11nec_78% C#BE_C#q11nec_78
 == C#q11nec IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @1 /* ~Yes, I know I concentrated my work on how to restore her - means were necessary...~ */
 END
 
+
+/* ~(sigh) Why not tell it. In the end it all comes down to this. I cannot do it without blood. Blood of a beloved, female, innocent creature. It has to be collected while the main magic potion is prepared... And the creature has to die while giving it.~ */
+I_C_T3 ~C#q11nec~ 40 C#BE_C#q11nec_40
+== C#BrageJ IF ~Global("C#BE_WASYLAR_4","GLOBAL",0)
+InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @26 /* ~What are you talking, man? Life for a life? Killing a beloved to restore a beloved? This is what you get when you think you could turn around the natural order of arcane and divine magic, to grant live in flesh and blood and sane mind whithout the help of the gods! I don't know whether to laugh at you or rise my sword at such foolish thoughts! Losing a loved one - loved ones - is a hard and cruel fate. Who are you to decide which loved ones are to live and which should die?!~ */
+== C#BrageJ IF ~Global("C#BE_WASYLAR_4","GLOBAL",1)
+InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @27 /* ~What are you talking, man? Life for a life? Killing a beloved to restore a beloved? This is exactly what I feared when the other necromancer posed the request to bring him bodies for *his* resurrection studies! Who are you to decide which loved ones are to live and which should die?!~ */
+== C#q11nec IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @28 /* ~But - but it doesn't necessarily have to be a *person*! The creature just needs to be... loved...~ */
+END
+
+
 /* @264  = ~You will not stay with me, will you? No, you will not. (sob) Beth, oh Beth...~ */
 I_C_T ~C#q11nec~ %C#q11nec_264% C#BE_C#q11nec_264
 == C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @25 /* ~She really was restored, but she couldn't bare the weight of how it was done. There is no easy way for us mortals to get what we want...~ */
@@ -33,7 +44,7 @@ Global("C#BE_C#q11nec_78","GLOBAL",1)~ THEN C#BrageB necromancer_followup
 !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @3 /* ~[Imoen] I'm glad we are out of that hell hole. (shudders) True love is supposed to be romantic - and smell of fresh roses! Not... corpses and... yuck.~ */
 == ~%AJANTIS_BANTER%~ IF ~%BG1_BEFORE_TRANSITION% InParty("Ajantis") See("Ajantis")
 !StateCheck("Ajantis",CD_STATE_NOTVALID)~ THEN @4 /* ~[Ajantis] How much havoc this man created with bodies of loved ones stolen out of their graves! The rest of the dead should not be disturbed so. This man angered the natural order in more than one way.~ */
-== C#BrageB @5 /* ~[Brage] His means were wrong, but I can relate.~ */
+== C#BrageB @5 /* ~[Brage]His means were wrong, because you can't cheat the gods - his means were to sacrifice the exact thing he wanted to restore, move the pain to someone else... But I can relate.~ */
 END
 ++ @6 /* ~His means were wrong, oh yes.~ */ + necromancer_followup_01
 ++ @7 /* ~I can relate, too. It was a harsh fate.~ */ + necromancer_followup_01
