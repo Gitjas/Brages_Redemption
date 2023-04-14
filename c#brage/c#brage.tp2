@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~8.0~ 
+VERSION ~8.1~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -1314,7 +1314,7 @@ OUTER_SET taerom_bg1ub_vial_23 = STATE_WHICH_SAYS 23 IN ~bg1ub/tra/%s/ubvial.tra
 OUTER_SET taerom_bg1ub_vial_26 = STATE_WHICH_SAYS 26 IN ~bg1ub/tra/%s/ubvial.tra~ FROM ~TAEROM~
 /* @30   = ~A remarkable compound. It must have taken a skilled alchemist to concoct this. I may be able to formulate an antidote to salvage some of the current iron stocks, although I doubt it will be sufficient to resolve the crisis. Leave it with me, and I will contact Taerom if I have any success.~ */
 OUTER_SET thalan_bg1ub_vial_30 = STATE_WHICH_SAYS 30 IN ~bg1ub/tra/%s/ubvial.tra~ FROM ~THALAN~
-  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bg1ub_vial.d~
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bg1ub_vial.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bg1ub.tra~ 
 END //bg1ub - The Mysterious Vial
 
 

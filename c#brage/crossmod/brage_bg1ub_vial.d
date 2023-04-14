@@ -1,5 +1,5 @@
-bg1ub vial:
-/* TAEROM
+/*bg1ub vial:
+ TAEROM
 @23   = ~Ah, excellent. But it is beyond my abilities to examine this. Take it to Thalantyr; he should have no trouble in discerning its properties. In the meantime, I will see what I can do to counteract the properties of this ore. I should be able to reduce the effects of the compound.~
 
 @26   = ~There is only so much I can do. If you are able to find a sample of the poison, take it to Thalantyr; he should have no trouble in discerning its properties. In the meantime, I will see what I can do to counteract the properties of this ore. I should be able to reduce the effects of the compound.~
