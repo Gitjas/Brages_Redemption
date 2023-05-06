@@ -380,6 +380,8 @@ APPEND RAMAZI
 IF WEIGHT #-1
 ~Global("HelpRamazith","GLOBAL",1)
 !PartyHasItem("MISC68")
+!Dead("Abela")
+!Global("AbelaNotExists","GLOBAL",1)
 GlobalGT("C#BE_BG1SwordPath","GLOBAL",0) GlobalLT("C#BE_BG1SwordPath","GLOBAL",30)
 Global("C#BE_BG1SwordPathRamazith","GLOBAL",0)
 OR(2) PartyHasItem("SW2H03") PartyHasItem("c#be1sp1")
