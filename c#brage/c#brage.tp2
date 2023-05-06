@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~8.1~ 
+VERSION ~8.2pre~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -55,7 +55,6 @@ END
     OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("endofbg1","GLOBAL",2)~
     OUTER_SPRINT ~FIREBE_Bookqueststate~ ~1~
-    OUTER_SPRINT ~CELLDOOR~ ~c#celldoor~
 
 	/* EET naming convention */
 	OUTER_SPRINT "eet_var" ""
@@ -75,7 +74,6 @@ END
     OUTER_SPRINT ~IT_IS_BG2~ ~False()~
     OUTER_SPRINT ~2~ ~~
     OUTER_SPRINT ~FIREBE_Bookqueststate~ ~3~
-    OUTER_SPRINT ~CELLDOOR~ ~CELLDOOR~
 
 ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~GlobalLT("BD_PLOT","GLOBAL",41)~
@@ -108,7 +106,6 @@ END
     OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
     OUTER_SPRINT ~2~ ~2~
     OUTER_SPRINT ~FIREBE_Bookqueststate~ ~3~
-    OUTER_SPRINT ~CELLDOOR~ ~CELLDOOR~
 
 ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~OR(2) Global("ENDOFBG1","GLOBAL",0) GlobalLT("BD_PLOT","GLOBAL",41)~
@@ -509,27 +506,6 @@ COPY_EXISTING ~%ArchaeologicalSite%.are~ ~override~
     fj_trap_status      = 0
     fj_name             = c#becara
 //    fj_reg_script   = c#becara
-  END
-BUT_ONLY
-
-/* add detection proximity trigger */
-/* this is the CELLDOOR info trigger from BG:EE. I just used the same coodinates because it's as good as any. */
-//proximity trigger
-COPY_EXISTING ~%SWBaldursGate_FlamingFistHQ_L1%.are~ ~override~
-  LPF ~fj_are_structure~
-    INT_VAR
-    fj_type         = 0    //proximity trigger
-    fj_box_left    = 1382
-    fj_box_top     = 215
-    fj_box_right   = 1425
-    fj_box_bottom  = 276
-    fj_vertex_0    = 1382 + (270 << 16) 
-    fj_vertex_1    = 1425 + (276 << 16)
-    fj_vertex_2    = 1425 + (222 << 16)
-    fj_vertex_3    = 1382 + (215 << 16)
-    STR_VAR
-    fj_structure_type   = region
-    fj_name             = c#celldoor
   END
 BUT_ONLY
 

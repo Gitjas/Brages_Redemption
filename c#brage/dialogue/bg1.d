@@ -655,7 +655,7 @@ END
 
 IF ~~ THEN arrested_02
 SAY @344 /* ~We are not here due to valid reasons. We need to get out of here, and convince the authorities we aren't the murderers they think we are or that someone wants us to appear to be. But we will achieve this by revealing the traiterous scheme of Sarevok. Being here is a serious setback, but nothing changed with respect to our goal. It just became much more urgent regarding our personal wellbeing.~ */
-IF ~~ THEN DO ~SetGlobal("C#Brage_Arrested","GLOBAL",2)~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#Brage_BG1Arrested","GLOBAL",2)~ EXIT
 END
 
 
