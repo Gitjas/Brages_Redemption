@@ -15,6 +15,11 @@ Global("C#BE_ACQMinesOverrun","GLOBAL",3)~ THEN @10 /* ~[Emerson]You heard right
 END
 IF ~~ THEN EXTERN ACQEMERS 16
 
+/* need workaround fix so transition works correctly here if Brage is around */
+EXTEND_BOTTOM ACQEMERS 16
+IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN + 18
+END
+
 
 I_C_T ACQEMERS 13 C#BE_ACQEMERS_13
 == C#BrageJ IF ~InParty("C#Brage") See("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @3 /* ~Please, <CHARNAME>. The guard is still thinned out by what happened with the bandits. Let us not turn our backs to the troubles in the mines - Nashkel needs help.~ */
