@@ -56,7 +56,7 @@ END
 IF WEIGHT #-1
 ~Global("C#BE_ACQClearingMines","MYAREA",1)~ THEN mines_cleared
 SAY @7 /* ~We are victorious. Once again you free the Nashkell mines from evil invaders. I thank you for taking this on, <CHARNAME>. Knowing that the mines, the city are safe is important to me - I am glad that I could be part of it.~ */
-IF ~~ THEN DO ~SetGlobal("C#BE_ACQClearingMines","MYAREA",1)~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#BE_ACQClearingMines","MYAREA",2)~ EXIT
 END
 END //APPEND
 
