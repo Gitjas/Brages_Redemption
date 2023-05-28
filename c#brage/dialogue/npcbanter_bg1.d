@@ -390,7 +390,8 @@ EXIT
 /* Brage - Ajantis 3 */
 CHAIN
 IF  
-~InParty(Myself)
+~%BG1_BEFORE_TRANSITION%
+InParty(Myself)
 CombatCounter(0) !See([ENEMY]) 
 InParty("C#Brage")
 See("C#Brage") See(Player1)
@@ -405,6 +406,7 @@ DO ~SetGlobal("C#BrageAjantis_BG1","GLOBAL",3)~
 EXIT
 
 /* Brage - Ajantis 4 */
+/* could also happen in SoD */
 CHAIN
 IF 
 ~InParty(Myself)
@@ -413,7 +415,7 @@ InParty("Ajantis")
 See("Ajantis") See(Player1)
 !StateCheck("Ajantis",CD_STATE_NOTVALID)
 !StateCheck(Myself,CD_STATE_NOTVALID)
-Global("C#BrageAjantis_BG1","GLOBAL",3)~ THEN C#BrageB brageajantis4
+GlobalLT("C#BrageAjantis_BG1","GLOBAL",4)~ THEN C#BrageB brageajantis4
 @130 /* Ajantis, what an unexpected turn of events to see us both at <CHARNAME>'s side now. When you came through Nashkel on your quest to investigate the bandit threat - never I would have thought I'd travel alongside you like we do now.~ */ 
 DO ~SetGlobal("C#BrageAjantis_BG1","GLOBAL",4)~
 == %AJANTIS_BANTER% @131 /* I admit I was a little disappointed when I left Nashkel with no other offered help than some food and accomodation and wished for more support then. But never I would have imagined it would turn out like this, indeed. What happened to you is unbelievable, Brage. Noone would have expected you to - to lose your commandship like you did.~ */
