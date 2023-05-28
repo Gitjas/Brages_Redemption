@@ -189,5 +189,5 @@ You should make sure Brage can hold on to these notes for his further investigat
 @1201  = ~[Brage]Please, do not make me wield this axe. The chance of going berserk might sound slim, but when it happens and one who is dear to you will be standing next to me - we might wake up from a nightmare.~
 
 /* lines used in several files */
-@200000 = ~My comrade Brage here has a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~
+@200000 = ~[PC Reply]My comrade Brage here has a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~
 @200001   = ~[PC Reply]My comrade Brage here has information about a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~
