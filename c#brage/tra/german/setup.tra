@@ -1,37 +1,29 @@
-@9000  = ~Brage's Redemption - Brage NSC fuer Baldurs Gate~ 
-@9001  = ~Das Modportrait und das Soundset auch dem originalen Brage im Spiel geben.~
-@9002  = ~Die Hauptkomponente der Brage's Redemption Mod muss installiert sein.~
-
-/* new for v6 */
-@9003  = ~Die Mod ist nicht mit diesem Spiel kompatibel.~
-@9004  = ~Die Mod muss vor EET_End installiert werden.~
-
-/* new for v6.2 */
-@9005  = ~You need to modmerge your SoD game before installing any mods.~
-@9006  = ~This component makes only sense for BG1.~
-
-/* new for v7 */
-@9007  = ~EndlessBG1 entdeckt: installiere Crossmod...~
-@9008  = ~bg1re "necromancer's trouble" entdeckt: installiere Crossmod...~
-@9009  = ~bgqe "babysitting quest" entdeckt: installiere Crossmod...~
-@9010  = ~bgqe "Nashkell Monster" entdeckt: installiere Crossmod...~
-@9011  = ~bgqe "Warm place for Noober" entdeckt: installiere Crossmod...~
-@9012  = ~bgqe "Fallen Paladin in Baldur's Gate" entdeckt: installiere Crossmod...~
-@9013  = ~Balduran's Seatower entdeckt: installiere Crossmod...~
-@9014  = ~Northern Tales of the Sword Coast entdeckt: installiere Crossmod...~
-@9015  = ~Transitions Mod entdeckt: installiere Crossmod...~
-@9016  = ~Brage's Redemption: Crossmodinhalte~
-
-/* new for v8 */
-@9017  = ~Die Szene auf der Eberfellbr�cke Modifikation entdeckt: installiere Crossmod...~
-@9018  = ~Thalantyr Item Upgrade Mod entdeckt: installiere Crossmod...~
-@9019  = ~Ascalons Questpack "Die Schlangen des Abathor" entdeckt: installiere Crossmod...~
-@9020  = ~Fink NPC entdeckt: installiere Crossmod...~
-@9021  = ~bgqe "Leichen fuer einen guten Zweck" entdeckt: installiere Crossmod...~
-@9022  = ~bgqe "Erweiterungen Haus der Dame und Haus der Wasserkoenigin"  entdeckt: installiere Crossmod...~
-@9023  = ~Ajantis SoD entdeckt: installiere Crossmod...~
-@9024  = ~Imoen 4 Ever SoD Komponente "Imoen erhaelt Dialog-Inhalte in Kapitel 8-12" entdeckt: installiere Crossmod...~
-@9025  = ~bg1npc "Quest and Interjections" entdeckt: installiere Crossmod...~
-@9026  = ~bg1ub "The Mysterious Vial" entdeckt: installiere Crossmod...~
-@9027  = ~bg1re "The Honest Lies of Two Riversides" entdeckt: installiere Crossmod...~
-@9028  = ~Ascalons Questpack "Ein Fest fuer die Gnolle" entdeckt: installiere Crossmod...~
+@9000 = ~Brage’s Redemption – Brage NSC fuer Baldur's Gate~
+@9001 = ~Das Mod-Portraet und das Soundset auch dem originalen Brage im Spiel geben.~
+@9002 = ~Die Hauptkomponente der Brage’s-Redemption-Mod muss installiert sein.~
+@9003 = ~Die Mod ist nicht mit diesem Spiel kompatibel.~
+@9004 = ~Die Mod muss vor EET_End installiert werden.~
+@9005 = ~Ihr müsst Euer SoD-Spiel modmergen, bevor Ihr irgendwelche Mods installiert.~
+@9006 = ~Diese Komponente ist nur für BG1 sinnvoll.~
+@9007 = ~EndlessBG1 entdeckt: Installiere Crossmod ...~
+@9008 = ~bg1re "Necromancer’s Trouble" entdeckt: Installiere Crossmod ...~
+@9009 = ~bgqe "Babysitting Quest" entdeckt: Installiere Crossmod ...~
+@9010 = ~bgqe "Nashkell Monster" entdeckt: Installiere Crossmod ...~
+@9011 = ~bgqe "Warm place for Noober" entdeckt: Installiere Crossmod ...~
+@9012 = ~bgqe "Fallen Paladin in Baldur’s Gate" entdeckt: Installiere Crossmod ...~
+@9013 = ~"Balduran’s Seatower" entdeckt: Installiere Crossmod ...~
+@9014 = ~"Northern Tales of the Sword Coast" entdeckt: Installiere Crossmod ...~
+@9015 = ~"Transitions"-Mod entdeckt: Installiere Crossmod ...~
+@9016 = ~Brage’s Redemption: Crossmod-Inhalte~
+@9017 = ~"The Boareskyr Bridge Scene"-Mod entdeckt: Installiere Crossmod ...~
+@9018 = ~"Thalantyr Item Upgrade"-Mod entdeckt: Installiere Crossmod ...~
+@9019 = ~Ascalons Questpack "Snakes of Abathor" entdeckt: Installiere Crossmod ...~
+@9020 = ~Fink NPC entdeckt: Installiere Crossmod ...~
+@9021 = ~bgqe "Bodies for a Good Cause" entdeckt: Installiere Crossmod ...~
+@9022 = ~bgqe "The House of the Lady and the Bitch Queen's Temple" entdeckt: Installiere Crossmod ...~
+@9023 = ~Ajantis SoD entdeckt: Installiere Crossmod ...~
+@9024 = ~"Imoen 4 Ever"-SoD-Komponente "Give Imoen dialogue content during chapters 8 to 12" entdeckt: Installiere Crossmod ...~
+@9025 = ~bg1npc "Quest and Interjections" entdeckt: Installiere Crossmod ...~
+@9026 = ~bg1ub "The Mysterious Vial" entdeckt: Installiere Crossmod ...~
+@9027 = ~bg1re "The Honest Lies of Two Riversides" entdeckt: Installiere Crossmod ...~
+@9028 = ~Ascalons Questpack "Feast for the Gnolls" entdeckt: Installiere Crossmod ...~

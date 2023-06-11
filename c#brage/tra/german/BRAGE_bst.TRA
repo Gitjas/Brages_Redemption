@@ -1,30 +1,25 @@
-@0  = ~[Brage](seufz) Der Anblick dieser neugierigen Kinder mit all' ihren Fragen macht mir das Herz schwer... Wie sehr wünschte ich mir, ich hätte meine Mädchen hier und könnte ihnen ebenfalls die Legende des Geistes im Brunnen erzählen...~
-@1  = ~[Imoen]Das hättet Ihr doch eh nicht getan!~
-@2  = ~[Brage]Imoen! Wie könnt Ihr das sagen - ja, ich habe immer viel gearbeitet, aber ich *habe* mit meinen Töchtern Ausflüge unternommen... wenn auch vielleicht nicht so häufig, wie ich mir wünschen würde!~
-@3  = ~[Imoen]Das hier ist *Baldurs Tor*! Ihr seid aus *Amn*! Niemals hättet Ihr mit Euren Töchter einen netten Nachmittag im Seeturm verbracht.~
-@4  = ~[Brage]Oh - Ihr meintet, dass ich nicht *hierher* mit ihnen gegangen wäre, wegen der politischen Spannungen und insbesondere als Hauptmann der Amnische Garde... Verzeiht, dass ich Euch angeherrscht habe, Imoen. Ich dachte, Ihr würdet Euch darauf beziehen, dass -~ 
-@5  = ~[Imoen]Dass Ihr ein alter Langweiler seid, der seine beruflichen Pflichten über seine Familie gestellt hat und erwartete, dass sie sich immer freuten, wenn sie Euch viel zu selten zu sehen bekamen?~
-@6  = ~[Brage]...Genau das. Nachdem Ihr es nun ausgesprochen habt, klingt es gar nicht so verunglimpfend, wie ich dachte. Es beschreibt einfach nur die Wahrheit. (seufz)~
-@7  = ~[Brage]Wie dem auch sei... Meinen Mädchen kann ich nicht mehr das Leben zeigen, aber ich kann dafür sorgen, dass andere Kinder ohne Angst und Gewalt aufwachsen werden!~
-@8  = ~[Brage]*Jetzt* erfahre ich davon? Nun, besser spät als nie, vermute ich mal.~
-
-/* new for v8 */
-@9  = ~[Master Shizell]Oh, wer würde ein so mächtiges Schwert herstellen und es dann mit einem solchen Fluch belegen... Aber es ist ein so spezieller Fluch, da muss eine Absicht dahinterstecken. So ein spezieller Fluch entsteht nicht einfach, wenn eine Verzauberung fehlschlägt.~
-@10  = ~[Brage]Heißt das, Ihr glaubt, dass dieses Schwert explizit dafür verflucht worden sein könnte, um jemanden hereinzulegen?~
-@11  = ~[Brage]Ja, wir hatten bereits den Verdacht, dass dieses Schwert explizit mit einem Fluch belegt sein könnte, um jemanden hereinzulegen.~
-@12  = ~[Master Shizell]Es könnte auch sein, dass der Fluch zu diesem Zweck nur verfeinert wurde. Dass es also bereits ein gescheiterter Versuch einer Verzauberung war, bevor der aktuelle Fluch darauf gelegt wurde. Das ist gar nicht so selten, wie manche meinen - es kommt auf alle Fälle öfter vor, als Magier zugeben wollen. Normalerweise würde ein solcher Fehlversuch zerstört oder korrigiert werden - vielleicht wurde es nicht direkt eingeschmolzen, weil der Fluch so gut versteckt ist. Oder es wurde mit der Absicht verschont, den Fluch in eine nützliche Verzauberung umzuwandeln, da es ein sehr mächtiges Schwert ist.
-
-~
-@13  = ~[Brage]Oder es wurde genau dafür verschont, dass es Unheil anrichten kann. Ich danke Euch für Eure Einsichten, Meister Shizell.~
-@14  = ~[Holger]Eine gute Klinge. Aber sie ist verflucht, sagt Ihr?~
-@15  = ~[Holger]Nein, das habe ich noch nie gesehen. Wir hatten eine Quelle für verfluchte Gegenstände, aber sie erlag ihrem Schicksal durch einen unzufriedenen Kunden.~
-@16  = ~[Holger]Hmmm, ich könnte immer noch einen Käufer dafür finden, wenn Ihr interessiert seid. Es ist allerdings nicht unser normales Sortiment - zu wenig Absatz.~
-@17  = ~[Holger]Verfluchte Gegenstände sind nicht unser normales Sortiment - zu wenig Absatz.~
-@18  = ~[Holger]Das heißt nicht, dass wir sie nicht mit ihnen handeln würden, sie sind nur nicht so begehrt. Das letzte Mal haben wir eines vor über einem Jahr verkauft... Das Halsband der Dominanz nicht mitgezählt, das wir für einen Adligen für ein sehr privates und sehr illegales -~
-@19  = ~[Brage]Erspart uns irgendwelche kranken Details!~
-@20  = ~[Holger]... Projekt zum Halten von Teufelchen besorgt haben.~
-@21  = ~[Holger]Einen Käufer dafür zu finden ist das beste, was ich Euch hier als Hilfe anbieten kann.~
-@22  = ~[Brage]Nein, verkaufen werden wir es nicht!~
-@23  = ~[Brage]Eure geradezu fröhliche Herangehensweise an die Thematik verschlägt mir die Sprache, aber es geschieht mir wohl Recht, wenn ich einen Schmuggler um Rat frage.~
-@24  = ~[Brage]Ich sollte Euch wohl trotzdem dafür danken, dass Ihr es Euch angeschaut habt.~
-
+@0 = ~[Brage](seufz) Der Anblick dieser neugierigen Kinder mit all ihren Fragen macht mir das Herz schwerÂ â€¦ Wie sehr wÃ¼nschte ich mir, ich hÃ¤tte meine MÃ¤dchen hier und kÃ¶nnte ihnen ebenfalls die Legende des Geistes im Brunnen erzÃ¤hlenÂ â€¦~
+@1 = ~[Imoen]Das hÃ¤ttet Ihr doch eh nicht getan!~
+@2 = ~[Brage]Imoen! Wie kÃ¶nnt Ihr das sagenÂ â€¦ Ja, ich habe immer viel gearbeitet, aber ich HABE mit meinen TÃ¶chtern AusflÃ¼ge unternommenÂ â€¦ wenn auch vielleicht nicht so hÃ¤ufig, wie ich mir gewÃ¼nscht hatte!~
+@3 = ~[Imoen]Das hier ist BALDURS TOR! Ihr seid aus AMN! Niemals hÃ¤ttet Ihr mit Euren TÃ¶chter einen netten Nachmittag im Seeturm verbracht.~
+@4 = ~[Brage]Oh, Ihr meintet, dass ich nicht HIERHER mit ihnen gegangen wÃ¤re, wegen der politischen Spannungen und insbesondere als Hauptmann der amnischen GardeÂ â€¦ Verzeiht, dass ich Euch angeherrscht habe, Imoen. Ich dachte, Ihr wÃ¼rdet Euch darauf beziehen, dassÂ â€¦~
+@5 = ~[Imoen]â€¦Â dass Ihr ein alter Langweiler seid, der seine beruflichen Pflichten Ã¼ber seine Familie gestellt und erwartet hat, dass sie sich immer freuten, wenn sie Euch viel zu selten zu sehen bekamen?~
+@6 = ~[Brage]â€¦Â Genau das. Nachdem Ihr es nun ausgesprochen habt, klingt es gar nicht so verunglimpfend, wie ich dachte. Es beschreibt einfach nur die Wahrheit. (seufz)~
+@7 = ~[Brage]Wie dem auch seiÂ â€¦ Meinen MÃ¤dchen kann ich nicht mehr das Leben zeigen, aber ich kann dafÃ¼r sorgen, dass andere Kinder ohne Angst und Gewalt aufwachsen werden!~
+@8 = ~[Brage]JETZT erfahre ich davon? Nun, besser spÃ¤t als nie, vermute ich mal.~
+@9 = ~[Master Shizell]Oh, wer wÃ¼rde ein so mÃ¤chtiges Schwert herstellen und es dann mit einem solchen Fluch belegenÂ â€¦ Aber es ist ein so spezieller Fluch, da muss eine Absicht dahinterstecken. So ein spezieller Fluch entsteht nicht einfach, wenn eine Verzauberung fehlschlÃ¤gt.~
+@10 = ~[Brage]HeiÃŸt das, Ihr glaubt, dass dieses Schwert explizit dafÃ¼r verflucht worden sein kÃ¶nnte, um jemanden hereinzulegen?~
+@11 = ~[Brage]Ja, wir hatten bereits den Verdacht, dass dieses Schwert explizit mit einem Fluch belegt sein kÃ¶nnte, um jemanden hereinzulegen.~
+@12 = ~[Master Shizell]Es kÃ¶nnte auch sein, dass der Fluch zu diesem Zweck nur verfeinert wurde. Dass es also bereits ein gescheiterter Versuch einer Verzauberung war, bevor der aktuelle Fluch darauf gelegt wurde. Das ist gar nicht so selten, wie manche meinenÂ â€“ es kommt auf alle FÃ¤lle Ã¶fter vor, als Magier zugeben wollen. Normalerweise wÃ¼rde ein solcher Fehlversuch zerstÃ¶rt oder korrigiert werdenÂ â€“ vielleicht wurde es nicht direkt eingeschmolzen, weil der Fluch so gut versteckt ist. Oder es wurde mit der Absicht verschont, den Fluch in eine nÃ¼tzliche Verzauberung umzuwandeln, da es ein sehr mÃ¤chtiges Schwert ist.~
+@13 = ~[Brage]Oder es wurde genau dafÃ¼r verschont, dass es Unheil anrichten kann. Ich danke Euch fÃ¼r Eure Einsichten, Meister Shizell.~
+@14 = ~[Holger]Eine gute Klinge. Aber sie ist verflucht, sagt Ihr?~
+@15 = ~[Holger]Nein, das habe ich noch nie gesehen. Wir hatten eine Quelle fÃ¼r verfluchte GegenstÃ¤nde, aber sie erlag ihrem Schicksal durch einen unzufriedenen Kunden.~
+@16 = ~[Holger]Hmmm, ich kÃ¶nnte immer noch einen KÃ¤ufer dafÃ¼r finden, wenn Ihr interessiert seid. Es ist allerdings nicht unser normales SortimentÂ â€“ zu wenig Absatz.~
+@17 = ~[Holger]Verfluchte GegenstÃ¤nde sind nicht unser normales SortimentÂ â€“ zu wenig Absatz.~
+@18 = ~[Holger]Das heiÃŸt nicht, dass wir sie nicht mit ihnen handeln wÃ¼rden, sie sind nur nicht so begehrt. Das letzte Mal haben wir eines vor Ã¼ber einem Jahr verkauftÂ â€¦ Das Halsband der Dominanz nicht mitgezÃ¤hlt, das wir fÃ¼r einen Adligen beschafft hatten, fÃ¼r ein sehr privates und sehr illegalesÂ â€¦~
+@19 = ~[Brage]Erspart uns irgendwelche kranken Details!~
+@20 = ~[Holger]â€¦Â Projekt zum Halten von Teufelchen.~
+@21 = ~[Holger]Einen KÃ¤ufer dafÃ¼r zu finden, ist das beste, was ich Euch hier als Hilfe anbieten kann.~
+@22 = ~[Brage]Nein, verkaufen werden wir es nicht!~
+@23 = ~[Brage]Eure geradezu frÃ¶hliche Herangehensweise an die Thematik verschlÃ¤gt mir die Sprache, aber es geschieht mir wohl Recht, wenn ich einen Schmuggler um Rat frage.~
+@24 = ~[Brage]Ich sollte Euch wohl trotzdem dafÃ¼r danken, dass Ihr es Euch angeschaut habt.~
