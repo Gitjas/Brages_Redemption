@@ -1,40 +1,40 @@
-@100000 = ~Missing Girl at Dead Man's Pass~
-@100001 = ~Missing Girl at Dead Man's Pass
+// File encoded in: cp1252
 
-I met a desparate uncle who is looking for his niece, Tilda. They were being chased by wild boars in the Dead Man's Pass and Tilda ran off, somewhere unknown. If we find her we should bring her to her uncle in the coalition camp. He should be near the healer tents.~
-@100002 = ~Missing Girl at Dead Man's Pass
+@100000 = ~Vermisstes Mädchen am Pass des toten Mannes~
+@100001 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-Tilda is sitting in a big fir tree, in the northwest of the Dead Man's Pass. She won't come with us - at least not as long as all we can do is ask nicely. I need to find a way to rescue her without scaring her, something to gain her trust - her uncle should be able to help with that. We should return to the coalition camp and ask him, he should be near the healers' tents. Or we don't care about being nice and find a way to force her down...~ 
-@100003 = ~Missing Girl at Dead Man's Pass
+Ich habe einen verzweifelten Onkel getroffen, der seine Nichte Tilda suchte. Sie wurden am Pass des toten Mannes von Wildschweinen gejagt, und Tilda ist weggelaufen – wer weiß, wohin. Wenn wir sie finden, sollten wir sie zu ihrem Onkel im Lager der Koalition bringen. Er sollte in der Nähe der Heilerzelte sein.~
+@100002 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-I turned the plea of help of the uncle to rescue his missing niece down, but Brage offered his help. He said he will do it without me even noticing and the uncle will probably ask for help with the soldiers, so I guess this is settled.~
-@100004 = ~Missing Girl at Dead Man's Pass
+Tilda sitzt in einer großen Tanne im Nordwesten des Pass des toten Mannes. Sie will nicht mit uns kommen – zumindest nicht, solange wir sie nur nett bitten können. Ich muss einen Weg finden, sie zu retten, ohne sie zu verängstigen … etwas, um ihr Vertrauen zu gewinnen. Ihr Onkel sollte dabei helfen können. Wir sollten zum Bündnislager zurückkehren und ihn fragen. Er sollte in der Nähe der Zelte der Heiler sein. Oder wir sind einfach nicht nett und finden einen Weg, sie zu zwingen …~
+@100003 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-I refused to continue to help the uncle to rescue his niece, but he will probably ask for help with the soldiers, so I guess this is settled.~
-@100005 = ~Missing Girl at Dead Man's Pass
+Ich habe die Bitte des Onkels um Hilfe bei der Rettung seiner vermissten Nichte abgelehnt, aber Brage hat seine Hilfe angeboten. Er sagte, er werde es tun, ohne dass ich es merke, und der Onkel wird wahrscheinlich um Hilfe bei den Soldaten bitten, also ist die Sache wohl erledigt.~
+@100004 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-The uncle suggested to sing Tilda an Amnian lullaby. Brage volunteered to do so - he knows the song from his own daughters.~
-@100006 = ~Missing Girl at Dead Man's Pass
+Ich habe mich geweigert, dem Onkel weiterhin bei der Rettung seiner Nichte zu helfen, aber er wird wahrscheinlich um Hilfe mit den Soldaten bitten, also ist die Sache wohl erledigt.~
+@100005 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-The uncle suggested to sing Tilda an Amnian lullaby. I don't know the song so I'd need someone who can. Wasn't Brage from Amn - and a father?~
-@100007 = ~Missing Girl at Dead Man's Pass
+Der Onkel schlug vor, Tilda ein amnisches Schlaflied vorzusingen. Brage meldete sich freiwillig – er kennt das Lied von seinen eigenen Töchtern.~
+@100006 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-I released Brage from the group and he will rescue the missing girl while he is not with me, so I guess this is settled.~
-@100008 = ~Missing Girl at Dead Man's Pass
+Der Onkel schlug vor, Tilda ein amnisches Schlaflied vorzusingen. Ich kenne das Lied nicht, ich bräuchte also jemanden, der es kann. War Brage nicht aus Amn – und ein Vater?~
+@100007 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-We managed to make Tilda climb down from the tree - and she went off into the bushes, to return to her uncle alone! I surely hope she will find her way unharmed. We should check for her next time we return to the coalition camp. She should be with her uncle near the healers' tents.~
-@100009 = ~Missing Girl at Dead Man's Pass
+Ich habe Brage aus der Gruppe entlassen, und er wird das vermisste Mädchen retten, solange er nicht bei mir ist, also ist die Sache wohl erledigt.~
+@100008 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-Tilda is safely back with her uncle.~
-@100010 = ~Missing Girl at Dead Man's Pass
+Wir konnten Tilda dazu bringen, vom Baum herunterzuklettern, und sie schlug sich in die Büsche, um allein zu ihrem Onkel zurückzukehren! Ich hoffe sehr, dass sie den Weg unversehrt finden wird. Wir sollten nach ihr suchen, wenn wir das nächste Mal zum Bündnislager zurückkehren. Sie sollte bei ihrem Onkel in der Nähe der Zelte der Heiler sein.~
+@100009 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-We managed to make Tilda climb down from the tree - alright, maybe it was a bit mean to scare her like this, but it worked. She went off into the bushes, to return to her uncle alone! I surely hope she will find her way unharmed. We should check for her next time we return to the coalition camp. She should be with her uncle near the healers' tents.~
+Tilda ist wieder sicher bei ihrem Onkel.~
+@100010 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-/* "sword path" - BG1 */
+Wir konnten Tilda dazu bringen, vom Baum herunterzuklettern. Gut, vielleicht war es ein bisschen gemein, sie so zu erschrecken, aber es hat funktioniert. Sie hat sich in die Büsche geschlagen, um allein zu ihrem Onkel zurückzukehren! Ich hoffe sehr, dass sie den Weg unbeschadet finden wird. Wir sollten nach ihr suchen, wenn wir das nächste Mal ins Bündnislager zurückkehren. Sie sollte bei ihrem Onkel in der Nähe der Heilerzelte sein.~
 @100015 = ~Brages Nachforschungen über das verfluchte Schwert~
 @100016 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Brage will so viel wie möglich über das verfluchte Schwert erfahren, in der Hoffnung, diejenigen zu finden die es geschmiedet und ausgeliefert haben.~
+Brage will so viel wie möglich über das verfluchte Schwert erfahren, in der Hoffnung, diejenigen zu finden, die es geschmiedet und ausgeliefert haben.~
 @100017 = ~Brages Nachforschungen über das verfluchte Schwert
 
 Für seine Suche nach dem verfluchten Schwert will Brage Nalin, den Priester im Nashkeller Tempel, aufsuchen, um ihn nach den Aufzeichnungen zu fragen, die er über das verfluchte Berserkerschwert gemacht hat, als er es untersuchte.~
@@ -52,14 +52,10 @@ Brage hat beschlossen, die Suche nach dem Ursprung des verfluchten Schwertes nic
 Brage ist nun im Besitz von Nalins Notizen über das verfluchte Schwert. Diese sollten unabhängig vom Schwert für Brages Suche recht hilfreich sein.~
 @100022 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Brage sagte, er wäre mit unseren Nachforschungen über das verfluchte Schwert zufrieden und erwarte nicht, dass wir uns noch weiter umhören. Ich werde es trotzdem tun - vielleicht gibt es eine Quelle, die uns etwas sagen kann, was wir noch nicht gehört haben. Brage wird seine Suche nach Gerechtigkeit alleine fortsetzen, wenn unsere gemeinsame Zeit vorbei ist.~
+Brage sagte, er wäre mit unseren Nachforschungen über das verfluchte Schwert zufrieden und erwarte nicht, dass wir uns noch weiter umhören. Ich werde es trotzdem tun – vielleicht gibt es eine Quelle, die uns etwas sagen kann, was wir noch nicht gehört haben. Brage wird seine Suche nach Gerechtigkeit alleine fortsetzen, wenn unsere gemeinsame Zeit vorbei ist.~
 @100023 = ~Brages Nachforschungen über das verfluchte Schwert
 
 Brage war zufrieden mit unseren Nachforschungen über das verfluchte Schwert, also werde ich aufhören, weiter herumzufragen. Er wird seine Suche nach Gerechtigkeit alleine fortsetzen, wenn unsere gemeinsame Zeit vorbei ist.~
-
-/* "sword path" - SoD */
 @100024 = ~Brages Nachforschungen über das verfluchte Schwert
 
 Brage hat eine Nachricht bezüglich seiner Suche nach denjenigen erhalten, die für das verfluchte Schwert verantwortlich sind. Er hat eine Ahnung, wo er seine Suche fortsetzen kann, aber er wird damit warten, bis Caelar und ihr Kreuzzug gestoppt sind.~
-
-

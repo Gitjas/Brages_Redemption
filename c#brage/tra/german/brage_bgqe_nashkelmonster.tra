@@ -1,20 +1,18 @@
-@0    = ~Es freut mich zu sehen, dass gesunder Menschenverstand noch immer in der Wache zur Anwendung kommt. Habt Dank, Brandon.~
-@1    = ~Danke, Hautm... Brage.~
-@2    = ~So also löst sich das Rätsel um das nach Nashkell falsch gelieferte Ei. Ich hätte nicht erwartet, dass wir das je ergründen. Und nun haben wir dieses eiförmige Artefakt, über das wir nicht das geringste wissen...~
-@3    = ~Habt Dank, dass Ihr Euch um den Lindwurm in Nashkell gekümmert habt, <CHARNAME>. Ich möchte mir gar nicht ausmalen, was er den Bewohnern hätte antun können, wenn er nicht so schnell gestoppt worden wäre.~
-@4    = ~Gerne. Wir hätten ihn ja schlecht auf die Dorfbewohner oder den Jungen losgehen lassen können.~
-@5    = ~Nun, da er uns sofort angegriffen hat, war das keine heroische Entscheidung, ihn zu töten.~
-@6    = ~Ja, lustige Schoßtiere haben Eure Leute da.~
-@7    = ~Scheint so, als müsste ich hinter anderen Leuten aufräumen, egal wohin ich gehe.~
-@8    = ~Schön, lasst uns weitergehen.~
-@9    = ~Manchmal enstammen heroische Taten aus der puren Notwendigkeit, dass sie getan werden müssen... So, wie Tragödien aus Fehlern resultieren können... Aber darauf wollte ich nicht hinaus.~
-@10   = ~Ich danke Euch, dass Ihr das so seht.~
-@11   = ~Nunja. Es gibt einen Grund, dass so etwas gesetzlich verboten ist.~
-@12   = ~Und dafür sollten sie dankbar sein.~
-@13   = ~Es ist gut zu sehen, dass die Stadt sicher ist auch ohne... auch ohne mich als Hauptmann. Ich fühle mich ihnen weiterhin verpfichtet, auch wenn ich nicht mehr in der Amnischen Wache bin.~
+// File encoded in: cp1252
 
-//script
-@14  = ~Ein junger Lindwurm!... Innerhalb der Stadtgrenzen?! Das ist unmöglich. Alle bereit machen zum Kampf!~
-
-/* new for v6 */
-@15  = ~Also stellt es sich als ein magisches Artefakt heraus, vor dessen Gefährlichkeit wir explizit gewarnt wurden. Wir sollten seine Worte ernst nehmen und es zu einer magisch geschulten Person bringen.~
+@0 = ~Es freut mich zu sehen, dass gesunder Menschenverstand noch immer in der Wache zur Anwendung kommt. Habt Dank, Brandon.~
+@1 = ~Danke, Hautm… Brage.~
+@2 = ~So also löst sich das Rätsel um das nach Nashkell falsch gelieferte Ei. Ich hätte nicht erwartet, dass wir das je ergründen. Und nun haben wir dieses eiförmige Artefakt, über das wir nicht das Geringste wissen …~
+@3 = ~Habt Dank, dass Ihr Euch um den Lindwurm in Nashkell gekümmert habt, <CHARNAME>. Ich möchte mir gar nicht ausmalen, was er den Bewohnern hätte antun können, wenn er nicht so schnell gestoppt worden wäre.~
+@4 = ~Gerne. Wir hätten ihn ja schlecht auf die Dorfbewohner oder den Jungen losgehen lassen können.~
+@5 = ~Nun, da er uns sofort angegriffen hat, war das keine heroische Entscheidung, ihn zu töten.~
+@6 = ~Ja, lustige Schoßtiere haben Eure Leute da.~
+@7 = ~Scheint so, als müsste ich hinter anderen Leuten aufräumen, egal wohin ich gehe.~
+@8 = ~Schön, lasst uns weitergehen.~
+@9 = ~Manchmal entstammen heroische Taten aus der puren Notwendigkeit, dass sie getan werden müssen … So, wie Tragödien aus Fehlern resultieren können … Aber darauf wollte ich nicht hinaus.~
+@10 = ~Ich danke Euch, dass Ihr das so seht.~
+@11 = ~(spöttisch) Nun ja. Es gibt einen Grund, dass so etwas gesetzlich verboten ist.~
+@12 = ~Und dafür sollten sie dankbar sein.~
+@13 = ~Es ist gut zu sehen, dass die Stadt sicher ist auch ohne … auch ohne mich als Hauptmann. Ich fühle mich ihnen weiterhin verpfichtet, auch wenn ich nicht mehr in der amnischen Wache bin.~
+@14 = ~Ein … ein junger Lindwurm! Innerhalb der Stadtgrenzen?! Das ist unmöglich. Alle bereitmachen zum Kampf!~
+@15 = ~Also stellt es sich als ein magisches Artefakt heraus, vor dessen Gefährlichkeit wir explizit gewarnt wurden. Wir sollten seine Worte ernst nehmen und es zu einer magisch geschulten Person bringen.~

@@ -1,19 +1,15 @@
-@0  = ~Nein! NEIN!! Nie wieder werde ich dieses verfluchte Schwert in die Hände nehmen, <CHARNAME> - zwingt mich nicht dazu!~
-@1  = ~Als Ihr BRAGE nach seiner Vergangenheit fragt, räuspert er sich und zögert einen kurzen Moment, bevor er seine Herkunft aus Atkatla erwähnt, die Hauptstadt Amns. Er erzählt über sein Leben in der Amnischen Garde und seine Stationierung als Hauptmann in Nashkell. "Ich fand die liebste Frau und hatte zwei wunderbare Töchter - bis ich das verfluchte Schwert in die Hände nahm. Den Rest kennt Ihr, <CHARNAME>. Zwingt mich bitte nicht, es noch einmal zu erzählen."~
-//@2  = 
-@3  = ~Wenn wir hier fertig sind, dann werde ich mich auf die Suche nach dem Hersteller des verfluchten Schwertes begeben. Ich werde nach Tiefwasser reisen und meine Untersuchungen beim Schmied des eigentlichen Schwertes beginnen - die Fälschung trug immerhin sein Siegel. Nicht, dass ich wirklich erwarte, dort etwas zu finden, aber ich muss dieser Spur nachgehen.~
-@4  = ~Ajantis, wenn Euch Eure Schritte ebenfalls nach Tiefwasser führen, dann könnten wir zusammen reisen.~
-@5  = ~Das ist eine großartige Idee, Brage. Ich schätze Eure Gesellschaft auf dem Weg dorthin.~
-@6  = ~Nun, da wir fertig sind, werde ich nach Tiefwasser aufbrechen.~
+// File encoded in: cp1252
 
-/* new for v6.2 */
-@7  = ~Hannah~
-
-
-@110  = ~Brages Schwert~
-@111  = ~Brages Zweihänder +1~
-/* unidentified description bg1:totsc */
-@112  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
+@0 = ~Nein! NEIN! Nie wieder werde ich dieses verfluchte Schwert in die Hände nehmen, <CHARNAME> – zwingt mich nicht dazu!~
+@1 = ~Als Ihr BRAGE nach seiner Vergangenheit fragt, räuspert er sich und zögert einen kurzen Moment, bevor er seine Herkunft aus Atkatla erwähnt, die Hauptstadt Amns. Er erzählt über sein Leben in der amnischen Garde und seine Stationierung als Hauptmann in Nashkell. „Ich fand die liebste Frau und hatte zwei wunderbare Töchter – bis ich das verfluchte Schwert in die Hände nahm. Den Rest kennt Ihr, <CHARNAME>. Zwingt mich bitte nicht, es noch einmal zu erzählen.“~
+@3 = ~Wenn wir hier fertig sind, dann werde ich mich auf die Suche nach dem Hersteller des verfluchten Schwertes begeben. Ich werde nach Tiefwasser reisen und meine Untersuchungen beim Schmied des eigentlichen Schwertes beginnen – die Fälschung trug immerhin sein Siegel. Nicht, dass ich wirklich erwarte, dort etwas zu finden, aber ich muss dieser Spur nachgehen.~
+@4 = ~Ajantis, wenn Euch Eure Schritte ebenfalls nach Tiefwasser führen, dann könnten wir zusammen reisen.~
+@5 = ~Das ist eine großartige Idee, Brage. Ich schätze Eure Gesellschaft auf dem Weg dorthin.~
+@6 = ~Nun, da wir fertig sind, werde ich nach Tiefwasser aufbrechen.~
+@7 = ~Hannah~
+@110 = ~Brages Schwert~
+@111 = ~Brages Zweihänder +1~
+@112 = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
 
 Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
 
@@ -29,8 +25,7 @@ Kann nicht verwendet werden von:
  Druiden
  Klerikern
  Magiern~
-/* identified description bg1:totsc */
-@113  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
+@113 = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
 
 Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
 
@@ -47,8 +42,7 @@ Kann nicht verwendet werden von:
  Druiden
  Klerikern
  Magiern~
-/* unidentified description tutu / bgt */
-@114  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
+@114 = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen.
 
 Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
 
@@ -64,8 +58,7 @@ Kann nicht verwendet werden von:
  Druiden
  Klerikern
  Magiern~
-/* identified description tutu / bgt */
-@115  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
+@115 = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
 
 Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
 
@@ -82,106 +75,87 @@ Kann nicht verwendet werden von:
  Druiden
  Klerikern
  Magiern~
-/* identified description bgee / eet */
-@116  = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
+@116 = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
 
 Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
 
 EIGENSCHAFTEN:
 
+ETW0-Bonus: –1
 Schaden: 1W10 +1 (Klinge)
-ETW0-Bonus: -1
-Gewicht: 12
 Initiativefaktor: 9
-Mindeststärke: 13
 Fertigkeit: Zweihänder
-Typ: 2-händig~
-@117  = ~Hick~
-@118  = ~Mein Diener Mulahey,
+Typ: 2-händig
+Mindeststärke: 13
 
-Eure unbeschreibliche Nachlässigkeit hat D. veranlasst, einzugreifen. Der Hauptmann von Nashkell hat nun eine nette Überraschung in Form eines neuen Schwerts erhalten, das etwas spezieller war, als er erwartet hatte. Die Amnische Garde sollte nun zu geschwächt sein, um in die tieferen Minenebenen vordringen. Nichtsdestotrotz solltet Ihr Euch nicht allzu sehr in Sicherheit wiegen, da die Sichtung Eurer dummen Kobolde alle möglichen anderen Möchtegerns angezogen hat, die die Vorgänge untersuchen wollen. 
+Gewicht: 12~
+@117 = ~Hick~
+@118 = ~Mein Diener Mulahey,
+
+Eure unbeschreibliche Nachlässigkeit hat D. veranlasst einzugreifen. Der Hauptmann von Nashkell hat nun eine nette Überraschung in Form eines neuen Schwerts erhalten, das etwas spezieller war, als er erwartet hatte. Die amnische Garde sollte nun zu geschwächt sein, um in die tieferen Minenebenen vordringen. Nichtsdestotrotz solltet Ihr Euch nicht allzu sehr in Sicherheit wiegen, da die Sichtung Eurer dummen Kobolde alle möglichen anderen Möchtegerns angezogen hat, die die Vorgänge untersuchen wollen. 
 Versagt nicht noch einmal.
 
 Tazok~
-@119  = ~Borda,
+@119 = ~Borda,
 
 es interessiert uns nicht, dass Ihr der Meinung seid, alles wie vereinbart erledigt zu haben. Es ist nicht unser Problem, dass der Hauptmann selbst den Vorfall untersuchen gegangen ist und daher das Schwert alleine auf der Straße und nicht umgeben von seinen Soldaten in der Garnison erhalten hat. Es ist Euch anzulasten, dass der ganze Plan beinahe geplatzt wäre. Euer Glück, dass der Narr überhaupt zurück nach Nashkell gegangen ist, und das Gold für das Schwert mit dem besonderen Fluch nicht gänzlich umsonst war! Nein, Ihr werdet den zweiten Teil des Goldes nicht erhalten. Wir haben Euch das Schwert gelassen, das Brage eigentlich erhalten sollte. Das ist genug Entschädigung! Seid froh, dass wir Euch nicht zur Strecke bringen.
 
 Tazok~
-@120  = ~Tazok,
+@120 = ~Tazok,
 
-ich verlange, dass mir die zweite Hälfte des vereinbarten Goldes ausgezahlt wird! Dass der Hauptmann nur seine Familie und nicht seine halbe Garnison gemetzelt hat ist nicht meine Schuld. Die Garde in Nashkell ist geschwächt, und darin bestand die Vereinbarung! Ihr könnt Antworten an mich zu meinem Kontakt beim Jahrmarkt schicken. Einer der Händler war verzweifelt genug, um einige meiner Tränke in sein Sortiment zu nehmen, er wird Briefe an mich weiterleiten.
+ich verlange, dass mir die zweite Hälfte des vereinbarten Goldes ausgezahlt wird! Dass der Hauptmann nur seine Familie und nicht seine halbe Garnison gemetzelt hat, ist nicht meine Schuld. Die Garde in Nashkell ist geschwächt, und darin bestand die Vereinbarung! Ihr könnt Antworten an mich zu meinem Kontakt beim Jahrmarkt schicken. Einer der Händler war verzweifelt genug, um einige meiner Tränke in sein Sortiment zu nehmen, er wird Briefe an mich weiterleiten.
 
 Borda~
-
-
-@125  =  ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
+@125 = ~Beim Zweihänder handelt es sich um eine Weiterentwicklung des Langschwertes. Waffenschmiede sind seit jeher daran interessiert, bereits existierende Waffen noch zu verbessern, was beim Langschwert dazu führte, dass die Klinge verlängert wurde. Schließlich musste auch der Griff verlängert werden und man brauchte nun beide Hände, um das Schwert richtig zu schwingen. Der Zweihänder dient hauptsächlich dazu, berittene Krieger schwer zu verletzen und die Stoßformation eines Heeres aufzubrechen. Dafür eignet sich dieses Schwert dank seiner Verzauberung besonders gut.
 
 Dies ist der Zweihänder, den Hauptmann Brage in Tiefwasser bestellt hatte.
 
 EIGENSCHAFTEN:
 
+ETW0-Bonus: –1
 Schaden: 1W10 +1 (Klinge)
-ETW0-Bonus: -1
-Gewicht: 12
 Initiativefaktor: 9
-Mindeststärke: 13
 Fertigkeit: Zweihänder
-Typ: 2-händig~
+Typ: 2-händig
+Mindeststärke: 13
 
-/* new for v8 */
-@126  = ~Bei den Göttern! Was war das? Der Junge hat sich in einen Dämon verwandelt!~
-@127  = ~Nalins Notizen~
-@128  = ~Nalin hat alles, was er über das verfluchte Schwert herausfinden konnte, in ordentlicher Handschrift aufgeschrieben. Maße und Gewicht des Schwertes sind ebenso vermerkt wie alle Vermutungen, die Nalin zur Natur des Fluches hatte. Eine Skizze von Schwertgriff und -knauf zieren die Unterlagen.
-Ihr solltet sicherstellen, dass Brage diese Notizen bei sich behält, so dass er für seine anstehenden Untersuchungen zur Herkunft des verfluchten Schwertes auf sie zurückgreifen kann.~
-
-
-
-/* SoD */
+Gewicht: 12~
+@126 = ~Bei den Göttern! Was war das? Der Junge hat sich in einen Dämon verwandelt!~
+@127 = ~Nalins Notizen~
+@128 = ~Nalin hat alles, was er über das verfluchte Schwert herausfinden konnte, in ordentlicher Handschrift aufgeschrieben. Maße und Gewicht des Schwertes sind ebenso vermerkt wie alle Vermutungen, die Nalin zur Natur des Fluches hatte. Eine Skizze von Schwertgriff und -knauf zieren die Unterlagen.
+Ihr solltet sicherstellen, dass Brage diese Notizen bei sich behält, sodass er für seine anstehenden Untersuchungen zur Herkunft des verfluchten Schwertes auf sie zurückgreifen kann.~
 @500 = ~Tilda~
 @501 = ~Herr Gulliam~
 @502 = ~Stimme eines Mädchens~
-
-
-/* brage_bd0103.baf */
 @1000 = ~Heute werden wir gegen diesen Kreuzzug marschieren. Ich hätte niemals geglaubt, überhaupt wieder Teil einer militärischen Aktion zu sein, und dann auch noch so bald.~
-@1001 = ~Dies ist eine beeindruckende Felsspalte. Ich hätte nicht gedacht, dass diese Crypta so weit in die Tiefen reicht.~
+@1001 = ~Dies ist eine beeindruckende Felsspalte. Ich hätte nicht gedacht, dass diese Krypta so weit in die Tiefen reicht.~
 @1002 = ~Solch Dummheit! Die zerstörte Brücke ist nicht nur schlecht für uns, sie schneidet auch den Weg für alle aus den nördlichen Gebieten ab!~
 @1003 = ~Caelar ist eine sehr charismatische Führerin. Ich verstehe, warum ihr so viele folgen.~
-@1004 = ~Um jemanden durch das Umlegen eines Schalters zu töten muss man besonders gestrickt sein. Es besorgt mich, dass es Euch so leicht gefallen ist.~
+@1004 = ~Um jemanden durch das Umlegen eines Schalters zu töten, muss man besonders gestrickt sein. Es besorgt mich, dass es Euch so leicht gefallen ist.~
 @1005 = ~Eure Entscheidung erspart uns den Kampf, aber es war ein Verrat an denen, die wir unsere Verbündeten nennen, <CHARNAME>.~
 @1006 = ~Seid wachsam, <CHARNAME>. Mir behagt diese Schlucht nicht. Sie bietet gute Möglichkeiten für einen Hinterhalt.~
-@1007 = ~Ich habe von Riesenkäfern gehört, aber noch nie einen gesehen.~
+@1007 = ~Ich habe von Nashornkäfern gehört, aber noch nie einen gesehen.~
 @1008 = ~Zu den Waffen!~
 @1009 = ~Wir wurden entdeck! Wir müssen gehen, und das schnell.~
-@1010 = ~Ein... ein Portal nach Avernus! Das ist Irrsinn!~
-@1011 = ~Uns bekämpfen zu wollen war ein fruchtloses Unterfangen.~
-@1012 = ~Wir haben keine andere Wahl, als zu versuchen, das Portal zu schließen - von der anderen Seite!~
+@1010 = ~Ein … ein Portal nach Avernus! Das ist Irrsinn!~
+@1011 = ~Uns bekämpfen zu wollen, war ein fruchtloses Unterfangen.~
+@1012 = ~Wir haben keine andere Wahl, als zu versuchen, das Portal zu schließen – von der anderen Seite!~
 @1013 = ~Dieser Irrsinn ist jetzt wenigstens vorbei.~
-@1014 = ~Die Hölle... ich war überzeugt davon, hierher zu gehören, aber nicht auf die Art, wie wir hergekommen sind.~
+@1014 = ~Die Hölle … Ich war überzeugt davon, hierher zu gehören. Aber nicht auf die Art, wie wir hergekommen sind.~
 @1015 = ~Wir müssen uns auf weitere Angriffe einstellen! Unsere Anwesenheit dürfte sich mittlerweile herumgesprochen haben.~
 @1016 = ~Auf in den Kampf!~
 @1017 = ~Ein sehr mächtiges Wesen ist hier gestorben. Ich kann nicht ansatzweise erfassen, was es bedurfte, um es zu besiegen.~
-@1018 = ~Diese Türen wirken einschüchternd - und doch kann ich nicht begründen, warum sie mir so unangenehme Gefühle bereiten.~
-
-/* brage_bd0101.baf */
-@1050 = ~Ich ziehe mit der Flammenden Faust...~
-@1051 = ~Ich freue mich, diesen Menschen helfen zu können - zumindest in gewisser Weise.~
+@1018 = ~Diese Türen wirken einschüchternd – und doch kann ich nicht begründen, warum sie mich so erschaudern lassen.~
+@1050 = ~Ich ziehe mit der Flammenden Faust …~
+@1051 = ~Ich freue mich, diesen Menschen helfen zu können – zumindest in gewisser Weise.~
 @1052 = ~Ja, das fühlt sich wie ein aufkommender Krieg an. (seufz)~
-
-/* quest bafs */
-@1100  = ~*schluchz*~
-@1101  = ~*gedämpfter Laut*~
-@1102  = ~*schnüff*~
-@1103  = ~Ihr könntet schwören können, Geräusche wie das Schluchzen eines Kindes aus der großen Tanne gehört zu haben. Um mehr herauszufinden müsst ihr genauer hinschauen.~
-@1104  = ~Ihr starrt in die Dunkelheit des Tannenbaums und seht endlich eine Bewegung in den Ästen.~
-@1105  = ~Ihr müsst näher herantreten, um hier etwas zu tun.~
-
-/* c#brages.baf */
-@1200  = ~[Brage]Seid Ihr sicher, diese Axt schwingen zu wollen? Die Chance für einen Berserkerrausch mag gering sein, aber wenn es passiert und ein geliebter Mensch neben Euch steht, könnte es sich zu einem Albtraum entwickeln.~
-@1201  = ~[Brage]Bitte, zwingt mich nicht, diese Axt zu schwingen. Die Chance für einen Berserkerrausch mag gering sein, aber wenn es passiert und eine Euch wichtige Person neben mir steht, könnte es sich zu einem Albtraum entwickeln.~
-
-/* new for v8 */
-/* lines used in several files */
+@1100 = ~(schluchz)~
+@1101 = ~(gedämpfter Laut)~
+@1102 = ~(schnüff)~
+@1103 = ~Ihr hättet schwören können, Geräusche wie das Schluchzen eines Kindes aus der großen Tanne gehört zu haben. Um mehr herauszufinden, müsst Ihr genauer hinschauen.~
+@1104 = ~Ihr starrt in die Dunkelheit des Tannenbaums und seht endlich eine Bewegung in den Ästen.~
+@1105 = ~Ihr müsst näher herantreten, um hier etwas zu tun.~
+@1200 = ~[Brage]Seid Ihr sicher, diese Axt schwingen zu wollen? Die Wahrscheinlichkeit eines Berserkerrauschs mag gering sein, aber wenn es passiert und ein geliebter Mensch neben Euch steht, könnte es sich zu einem Albtraum entwickeln.~
+@1201 = ~[Brage]Bitte, zwingt mich nicht, diese Axt zu schwingen. Die Wahrscheinlichkeit eines Berserkerrauschs mag gering sein, aber wenn es passiert und eine Euch wichtige Person neben mir steht, könnte es sich zu einem Albtraum entwickeln.~
 @200000 = ~Mein Kamerad Brage hier hat ein verfluchtes Schwert, das er Euch gerne zeigen würde. Bitte schaut es Euch an und sagt uns alles, was Ihr darüber wisst.~
-@200001   = ~Mein Kamerad Brage hier hat Informationen über ein verfluchtes Schwert, die er Euch gerne zeigen würde. Bitte schaut sie Euch an und sagt uns alles, was Ihr über das Schwert wisst.~
+@200001 = ~Mein Kamerad Brage hier hat Informationen über ein verfluchtes Schwert, die er Euch gerne zeigen würde. Bitte schaut sie Euch an und sagt uns alles, was Ihr über das Schwert wisst.~

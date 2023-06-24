@@ -1,28 +1,28 @@
-/* Ascalon's Questpack */
-/* Snakes of Abathor */
-@0  = ~[Emerson]Brage! Unser ehemaliger Kommandant. Fast hätte ich Euch für einen Eindringling gehalten.~
-@1  = ~[Brage]Die Minen sind noch einmal in Schwierigkeiten? <CHARNAME>, lasst uns der Stadt helfen. Die Minen sollen nicht schon wieder ein Brutplatz böser Unruhen sein!~
-@2  = ~[Emerson]Und ich erkenne auch, mit wem Ihr hier seid.~
-@3  = ~Bitte, <CHARNAME>. Die Wache ist immer noch ausgedünnt von dem, was mit den Banditen passiert ist. Lasst uns den Problemen in den Minen nicht den Rücken kehren - Nashkel braucht die Hilfe.~
-@4  = ~[Emerson]Brage, wir danken Euch auch sehr für Euer Engagement für diese Stadt. Obwohl sich viele in Eurer Trauer von Euch abwandten, ist es offenscihtlich, dass Euer Herz noch immer für Nashkell schlägt. Dafür können wir Ihnen nur danken.~ 
-@5  = ~[Brage]Vielen Dank, Emerson. Ich weiß das zu schätzen. Nashkell und seine Sicherheit sind in der Tat immer noch sehr wichtig für mich.~
-@6  = ~[Brage]Hier sind wir, bereit, die Minen von einer weiteren Manifestation des Bösen zu befreien. Ich danke dir, dass wir das tun, <CHARNAME>.~
-@7  = ~[Brage]Wir haben es geschafft. Ich danke Euch, <CHARNAME>. Ihr habt erneut die Nashkeller Minen von bösen Eindringlingen befreit. Ich bin froh, dass ich dabei sein konnte - zu wissen, dass die Minen und die Stadt sicher sind, ist wichtig für mich.~
-@8  = ~[Brage]Seid gegrüßt, Emerson.~
-@9  = ~[Brage]Wir hörten von Problemen in der Mine?~
-@10  = ~[Emerson]Da habt Ihr richtig gehört.~
-@11  = ~[Brage]Armer Aaron Brunnstein, seine Liebe an dem Tag zu verlieren, an dem er ihr einen Antrag machen wollte... (seufz) Warum ist die Jugend so leichtsinnig. Ungeschützt auf ein Picknick zu gehen - ach, ich sollte jetzt nicht mit Steinen werfen, ihr Kummer ist tief genug.~
-@12  = ~Nein, das solltet Ihr wirklich nicht noch reinreiben.~
-@13  = ~Aber ich verstehe das Gefühl. Es entspringt dem vergeblichen Wunsch, ihr Schicksal ändern zu können.~
-@14  = ~Arme Marina - an dem Tag zu sterben, an dem ihr Liebster ihr einen Heiratsantrag machen wollte.~
-@15  = ~Ihr habt aber schon irgendwie recht. In diesen Zeiten auf ein *Picknick* zu gehen, war, nun ja, eine schlechte Idee.~
-@16  = ~Aaron hat jedenfalls bewiesen, dass er nicht in der Lage ist, Marina zu beschützen. Das hätten sie sowieso irgendwann erfahren, also war es so vielleicht schneller und am Ende weniger schmerzhaft.~
-@17  = ~Ich musste daran denken, wie ich meiner Frau einen Heiratsantrag gemacht habe. Es war ein sonniger Tag, und wir waren draußen, genau wie dieses Paar, aber es war eindeutig viel sicherer... Oder vielleicht waren wir genauso leichtsinnig und haben einfach nicht gemerkt, wie viel Glück wir hatten.~
-@18  = ~Ich bin versucht, Euch für einen ziemlich gefühllosen Kommentar zu schelten, aber ich sehe, dass eine gewisse Weisheit darin steckt. (seufz) Ich möchte die Zeit, die ich mit Betty hatte, nicht missen...~
-@19  = ~...Und dass ihre Eltern sie so verlieren, da habt Ihr recht.~
-@20  = ~Obwohl ich die Brunnsteins nicht kannte, bin ich um Nashkells willen froh, dass wir helfen konnten, den jungen Mann sicher zurückzubringen. Zumindest ihn...~
-@21  = ~Sicherlich war das ein Scherz, wenn auch ein schlechter. Wir werden nichts dergleichen tun, nicht solange ich hier bin und wir uns innerhalb der Stadt befinden. Nehmt die Belohnung an und lasst uns gehen.~
-@22  = ~<CHARNAME>! War das wirklich nötig?~
-@23  = ~Wir-wir kommen sicher zurück, wenn wir die Gegend gesichert haben. Haltet noch etwas durch.~
-@24  = ~Euer... Euer Verlust tut mir so leid. Es gibt keine guten Worte hierfür...~
-@25  = ~[Brage]Besonders jetzt, da das Erz nicht mehr verdorben ist, wird es mehr denn je benötigt.~
+// File encoded in: cp1252
+
+@0 = ~[Emerson]Brage! Unser ehemaliger Kommandant. Fast hätte ich Euch für einen Eindringling gehalten.~
+@1 = ~[Brage]Die Minen sind noch einmal in Schwierigkeiten? <CHARNAME>, lasst uns der Stadt helfen. Die Minen sollen nicht schon wieder ein Brutplatz böser Unruhen sein!~
+@2 = ~[Emerson]Und ich erkenne auch, mit wem Ihr hier seid.~
+@3 = ~Bitte, <CHARNAME>. Die Wache ist immer noch ausgedünnt von dem, was mit den Banditen passiert ist. Lasst uns den Problemen in den Minen nicht den Rücken kehren – Nashkell braucht die Hilfe.~
+@4 = ~[Emerson]Brage, wir danken Euch auch sehr für Euer Engagement für diese Stadt. Obwohl sich viele in Eurer Trauer von Euch abwandten, ist es offensichtlich, dass Euer Herz noch immer für Nashkell schlägt. Dafür können wir Euch nur danken.~
+@5 = ~[Brage]Vielen Dank, Emerson. Ich weiß das zu schätzen. Nashkell und seine Sicherheit sind in der Tat immer noch sehr wichtig für mich.~
+@6 = ~[Brage]Hier sind wir, bereit, die Minen von einer weiteren Manifestation des Bösen zu befreien. Ich danke Euch, dass wir das tun, <CHARNAME>.~
+@7 = ~[Brage]Wir haben es geschafft. Ich danke Euch, <CHARNAME>. Ihr habt erneut die Nashkeller Minen von bösen Eindringlingen befreit. Ich bin froh, dass ich dabei sein konnte. Zu wissen, dass die Minen und die Stadt sicher sind, ist wichtig für mich.~
+@8 = ~[Brage]Seid gegrüßt, Emerson.~
+@9 = ~[Brage]Wir hörten von Problemen in der Mine.~
+@10 = ~[Emerson]Da habt Ihr richtig gehört.~
+@11 = ~[Brage]Armer Aaron Brunnstein, seine Liebe an dem Tag zu verlieren, an dem er ihr einen Antrag machen wollte … (seufz) Warum ist die Jugend so leichtsinnig? Ungeschützt auf ein Picknick zu gehen – ach, ich sollte jetzt nicht mit Steinen werfen, ihr Kummer ist tief genug.~
+@12 = ~Nein, das solltet Ihr wirklich nicht noch reinreiben.~
+@13 = ~Aber ich verstehe das Gefühl. Es entspringt dem vergeblichen Wunsch, ihr Schicksal ändern zu können.~
+@14 = ~Arme Marina – an dem Tag zu sterben, an dem ihr Liebster ihr einen Heiratsantrag machen wollte.~
+@15 = ~Ihr habt aber schon irgendwie recht. In diesen Zeiten auf ein PICKNICK zu gehen, war, nun ja, eine schlechte Idee.~
+@16 = ~Aaron hat jedenfalls bewiesen, dass er nicht in der Lage ist, Marina zu beschützen. Das hätten sie sowieso irgendwann erfahren, also war es so vielleicht schneller und am Ende weniger schmerzhaft.~
+@17 = ~Ich musste daran denken, wie ich meiner Frau einen Heiratsantrag gemacht habe. Es war ein sonniger Tag, und wir waren draußen, genau wie dieses Paar, aber es war eindeutig viel sicherer … Oder vielleicht waren wir genauso leichtsinnig und haben einfach nicht gemerkt, wie viel Glück wir hatten.~
+@18 = ~Ich bin versucht, Euch für einen ziemlich gefühllosen Kommentar zu schelten, aber ich sehe, dass eine gewisse Weisheit darin steckt. (seufz) Ich möchte die Zeit, die ich mit Betty hatte, nicht missen …~
+@19 = ~… Und dass ihre Eltern sie so verlieren, da habt Ihr recht.~
+@20 = ~Obwohl ich die Brunnsteins nicht kannte, bin ich um Nashkells willen froh, dass wir helfen konnten, den jungen Mann sicher zurückzubringen. Zumindest ihn …~
+@21 = ~Sicherlich war das ein Scherz, wenn auch ein schlechter. Wir werden nichts dergleichen tun, nicht solange ich hier bin und wir uns innerhalb der Stadt befinden. Nehmt die Belohnung an und lasst uns gehen.~
+@22 = ~<CHARNAME>! War das wirklich nötig?~
+@23 = ~Wir … wir kommen sicher zurück, wenn wir die Gegend gesichert haben. Haltet noch etwas durch.~
+@24 = ~Euer … Euer Verlust tut mir so leid. Es gibt keine guten Worte hierfür …~
+@25 = ~[Brage]Besonders jetzt, da das Erz nicht mehr verdorben ist, wird es mehr denn je benötigt.~

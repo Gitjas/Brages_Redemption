@@ -1,13 +1,15 @@
-@0    = ~Ein Kind... niedergestreckt in dem Glauben, es wäre ein Dämon... um dann zu verstehen, was man getan hat. Ich dachte, mein Schicksal wäre grausam, aber dies... dies ist schlimmer.~
-@1    = ~Ich wünsche Euch Erfolg, mein Freund. Wir hätten keine bessere Hilfe nach Luskan schicken können. Dieser Mann wird erst aufhören, wenn er den Dämon ausgetrieben und das Mädchen befreit hat!~
-@2    = ~Ein Kind niederzustrecken in dem Glauben, es wäre ein Dämon... Und ich dachte, Unschuldige in einer auferlegten Rage zu töten wäre das Schlimmste, das ich mir vorstellen kann.~
-@3    = ~Ja, das sagtet Ihr bereits.~
-@4    = ~Ja, der gefallene Paladin hat tatsächlich unter einer noch größeren Selbstverblendung gelitten.~
-@5    = ~Wenn mir das passieren würde, Ich würde mir das nie verzeihen.~
-@6    = ~Vielleicht, aber man könnte auch sagen, dass er ausgetrickst wurde zu glauben, dass das Mädchen ein Dämon war - während Ihr einfach ein Euch unbekanntes Schwert in die Hand nahmt.~
-@7    = ~Er ist ein Stümper, unfähig für seine Profession.~
-@8    = ~Harte Worte, aber ich verdiene sie.~
-@9    = ~Ich werde nicht schlecht über ihn sprechen - dazu habe ich kein Recht. Das Leben hat mir gezeigt, dass wir alle Fehler machen, und aus manchen von ihnen entwickeln sich Tragödien.~
-@10   = ~Ich muss immer noch daran denken.~
-@11   = ~<CHARNAME>, warum habt Ihr das getan? Anstatt der Mutter die Diskretion zu gewähren, um die sie gebeten hat, schickt Ihr die Meute direkt vor ihre Tür!~
-@12   = ~Ein Mädchen mit plötzlichen magischen Kräften? Ich hoffe stark, dass das nicht dieselben Gründe hat wie das, von dem der gefallene Paladin gesprochen hatte!~
+// File encoded in: cp1252
+
+@0 = ~Ein Kind … niedergestreckt in dem Glauben, es wäre ein Dämon … um dann zu verstehen, was man getan hat. Ich dachte, mein Schicksal wäre grausam, aber dies … dies ist schlimmer.~
+@1 = ~Ich wünsche Euch Erfolg, mein Freund. Wir hätten keine bessere Hilfe nach Luskan schicken können. Dieser Mann wird erst aufhören, wenn er den Dämon ausgetrieben und das Mädchen befreit hat!~
+@2 = ~Ein Kind niederzustrecken in dem Glauben, es wäre ein Dämon … Und ich dachte, Unschuldige in einer auferlegten Rage zu töten wäre das Schlimmste, das ich mir vorstellen kann.~
+@3 = ~Ja, das sagtet Ihr bereits.~
+@4 = ~Ja, der gefallene Paladin hat tatsächlich unter einer noch größeren Selbstverblendung gelitten.~
+@5 = ~Wenn mir das passieren würde, Ich würde mir das nie verzeihen.~
+@6 = ~Vielleicht, aber man könnte auch sagen, dass er ausgetrickst wurde zu glauben, dass das Mädchen ein Dämon war – während Ihr einfach ein Euch unbekanntes Schwert in die Hand nahmt.~
+@7 = ~Er ist ein Stümper, unfähig für seine Profession.~
+@8 = ~Harte Worte, aber ich verdiene sie.~
+@9 = ~Ich werde nicht schlecht über ihn sprechen – dazu habe ich kein Recht. Das Leben hat mir gezeigt, dass wir alle Fehler machen, und aus manchen von ihnen entwickeln sich Tragödien.~
+@10 = ~Ich muss immer noch daran denken.~
+@11 = ~<CHARNAME>, warum habt Ihr das getan? Anstatt der Mutter die Diskretion zu gewähren, um die sie gebeten hat, schickt Ihr die Meute direkt vor ihre Tür!~
+@12 = ~Ein Mädchen mit plötzlichen magischen Kräften? Ich hoffe stark, dass das nicht dieselben Gründe hat wie das, von dem der gefallene Paladin gesprochen hatte!~
