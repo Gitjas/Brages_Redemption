@@ -1,59 +1,61 @@
-@100000 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes~
-@100001 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+// File encoded in: cp1252
 
-Ich habe einen verzweifelten Onkel getroffen, der seine Nichte Tilda suchte. Sie wurden am Pass des toten Mannes von Wildschweinen gejagt, und Tilda ist weggelaufenÂ â€“ wer weiÃŸ, wohin. Wenn wir sie finden, sollten wir sie zu ihrem Onkel im Lager der Koalition bringen. Er sollte in der NÃ¤he der Heilerzelte sein.~
-@100002 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+@100000 = ~Vermisstes Mädchen am Pass des toten Mannes~
+@100001 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-Tilda sitzt in einer groÃŸen Tanne im Nordwesten des Pass des toten Mannes. Sie will nicht mit uns kommenÂ â€“ zumindest nicht, solange wir sie nur nett bitten kÃ¶nnen. Ich muss einen Weg finden, sie zu retten, ohne sie zu verÃ¤ngstigenÂ â€¦ etwas, um ihr Vertrauen zu gewinnen. Ihr Onkel sollte dabei helfen kÃ¶nnen. Wir sollten zum BÃ¼ndnislager zurÃ¼ckkehren und ihn fragen. Er sollte in der NÃ¤he der Zelte der Heiler sein. Oder wir sind einfach nicht nett und finden einen Weg, sie zu zwingenÂ â€¦~
-@100003 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+Ich habe einen verzweifelten Onkel getroffen, der seine Nichte Tilda suchte. Sie wurden am Pass des toten Mannes von Wildschweinen gejagt, und Tilda ist weggelaufen – wer weiß, wohin. Wenn wir sie finden, sollten wir sie zu ihrem Onkel im Lager der Koalition bringen. Er sollte in der Nähe der Heilerzelte sein.~
+@100002 = ~Vermisstes Mädchen am Pass des toten Mannes
+
+Tilda sitzt in einer großen Tanne im Nordwesten des Pass des toten Mannes. Sie will nicht mit uns kommen – zumindest nicht, solange wir sie nur nett bitten können. Ich muss einen Weg finden, sie zu retten, ohne sie zu verängstigen … etwas, um ihr Vertrauen zu gewinnen. Ihr Onkel sollte dabei helfen können. Wir sollten zum Bündnislager zurückkehren und ihn fragen. Er sollte in der Nähe der Zelte der Heiler sein. Oder wir sind einfach nicht nett und finden einen Weg, sie zu zwingen …~
+@100003 = ~Vermisstes Mädchen am Pass des toten Mannes
 
 Ich habe die Bitte des Onkels um Hilfe bei der Rettung seiner vermissten Nichte abgelehnt, aber Brage hat seine Hilfe angeboten. Er sagte, er werde es tun, ohne dass ich es merke, und der Onkel wird wahrscheinlich um Hilfe bei den Soldaten bitten, also ist die Sache wohl erledigt.~
-@100004 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+@100004 = ~Vermisstes Mädchen am Pass des toten Mannes
 
 Ich habe mich geweigert, dem Onkel weiterhin bei der Rettung seiner Nichte zu helfen, aber er wird wahrscheinlich um Hilfe mit den Soldaten bitten, also ist die Sache wohl erledigt.~
-@100005 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+@100005 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-Der Onkel schlug vor, Tilda ein amnisches Schlaflied vorzusingen. Brage meldete sich freiwilligÂ â€“ er kennt das Lied von seinen eigenen TÃ¶chtern.~
-@100006 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+Der Onkel schlug vor, Tilda ein amnisches Schlaflied vorzusingen. Brage meldete sich freiwillig – er kennt das Lied von seinen eigenen Töchtern.~
+@100006 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-Der Onkel schlug vor, Tilda ein amnisches Schlaflied vorzusingen. Ich kenne das Lied nicht, ich brÃ¤uchte also jemanden, der es kann. War Brage nicht aus AmnÂ â€“ und ein Vater?~
-@100007 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+Der Onkel schlug vor, Tilda ein amnisches Schlaflied vorzusingen. Ich kenne das Lied nicht, ich bräuchte also jemanden, der es kann. War Brage nicht aus Amn – und ein Vater?~
+@100007 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-Ich habe Brage aus der Gruppe entlassen, und er wird das vermisste MÃ¤dchen retten, solange er nicht bei mir ist, also ist die Sache wohl erledigt.~
-@100008 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+Ich habe Brage aus der Gruppe entlassen, und er wird das vermisste Mädchen retten, solange er nicht bei mir ist, also ist die Sache wohl erledigt.~
+@100008 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-Wir konnten Tilda dazu bringen, vom Baum herunterzuklettern, und sie schlug sich in die BÃ¼sche, um allein zu ihrem Onkel zurÃ¼ckzukehren! Ich hoffe sehr, dass sie den Weg unversehrt finden wird. Wir sollten nach ihr suchen, wenn wir das nÃ¤chste Mal zum BÃ¼ndnislager zurÃ¼ckkehren. Sie sollte bei ihrem Onkel in der NÃ¤he der Zelte der Heiler sein.~
-@100009 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+Wir konnten Tilda dazu bringen, vom Baum herunterzuklettern, und sie schlug sich in die Büsche, um allein zu ihrem Onkel zurückzukehren! Ich hoffe sehr, dass sie den Weg unversehrt finden wird. Wir sollten nach ihr suchen, wenn wir das nächste Mal zum Bündnislager zurückkehren. Sie sollte bei ihrem Onkel in der Nähe der Zelte der Heiler sein.~
+@100009 = ~Vermisstes Mädchen am Pass des toten Mannes
 
 Tilda ist wieder sicher bei ihrem Onkel.~
-@100010 = ~Vermisstes MÃ¤dchen am Pass des toten Mannes
+@100010 = ~Vermisstes Mädchen am Pass des toten Mannes
 
-Wir konnten Tilda dazu bringen, vom Baum herunterzuklettern. Gut, vielleicht war es ein bisschen gemein, sie so zu erschrecken, aber es hat funktioniert. Sie hat sich in die BÃ¼sche geschlagen, um allein zu ihrem Onkel zurÃ¼ckzukehren! Ich hoffe sehr, dass sie den Weg unbeschadet finden wird. Wir sollten nach ihr suchen, wenn wir das nÃ¤chste Mal ins BÃ¼ndnislager zurÃ¼ckkehren. Sie sollte bei ihrem Onkel in der NÃ¤he der Heilerzelte sein.~
-@100015 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert~
-@100016 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Wir konnten Tilda dazu bringen, vom Baum herunterzuklettern. Gut, vielleicht war es ein bisschen gemein, sie so zu erschrecken, aber es hat funktioniert. Sie hat sich in die Büsche geschlagen, um allein zu ihrem Onkel zurückzukehren! Ich hoffe sehr, dass sie den Weg unbeschadet finden wird. Wir sollten nach ihr suchen, wenn wir das nächste Mal ins Bündnislager zurückkehren. Sie sollte bei ihrem Onkel in der Nähe der Heilerzelte sein.~
+@100015 = ~Brages Nachforschungen über das verfluchte Schwert~
+@100016 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Brage will so viel wie mÃ¶glich Ã¼ber das verfluchte Schwert erfahren, in der Hoffnung, diejenigen zu finden, die es geschmiedet und ausgeliefert haben.~
-@100017 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Brage will so viel wie möglich über das verfluchte Schwert erfahren, in der Hoffnung, diejenigen zu finden, die es geschmiedet und ausgeliefert haben.~
+@100017 = ~Brages Nachforschungen über das verfluchte Schwert
 
-FÃ¼r seine Suche nach dem verfluchten Schwert will Brage Nalin, den Priester im Nashkeller Tempel, aufsuchen, um ihn nach den Aufzeichnungen zu fragen, die er Ã¼ber das verfluchte Berserkerschwert gemacht hat, als er es untersuchte.~
-@100018 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Für seine Suche nach dem verfluchten Schwert will Brage Nalin, den Priester im Nashkeller Tempel, aufsuchen, um ihn nach den Aufzeichnungen zu fragen, die er über das verfluchte Berserkerschwert gemacht hat, als er es untersuchte.~
+@100018 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Um so viel wie mÃ¶glich Ã¼ber das verfluchte Schwert zu erfahren, will Brage Experten fÃ¼r magische Waffen aufsuchen, wo immer wir sie antreffen. Ich wÃ¼rde annehmen, dass bekannte Magier, Schmiede, WaffenhÃ¤ndler und die Priester in grÃ¶ÃŸeren Tempeln als solche gelten sollten.~
-@100019 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Um so viel wie möglich über das verfluchte Schwert zu erfahren, will Brage Experten für magische Waffen aufsuchen, wo immer wir sie antreffen. Ich würde annehmen, dass bekannte Magier, Schmiede, Waffenhändler und die Priester in größeren Tempeln als solche gelten sollten.~
+@100019 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Das verfluchte Schwert ist nicht mehr in unserem Besitz, daher mÃ¶chte Brage unbedingt die Aufzeichnungen holen, die Nalin, der Priester im Nashkeller Tempel, darÃ¼ber gemacht hat.~
-@100020 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Das verfluchte Schwert ist nicht mehr in unserem Besitz, daher möchte Brage unbedingt die Aufzeichnungen holen, die Nalin, der Priester im Nashkeller Tempel, darüber gemacht hat.~
+@100020 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Brage hat beschlossen, die Suche nach dem Ursprung des verfluchten Schwertes nicht fortzusetzen, wÃ¤hrend wir gemeinsam die SchwertkÃ¼ste bereisen.~
-@100021 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Brage hat beschlossen, die Suche nach dem Ursprung des verfluchten Schwertes nicht fortzusetzen, während wir gemeinsam die Schwertküste bereisen.~
+@100021 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Brage ist nun im Besitz von Nalins Notizen Ã¼ber das verfluchte Schwert. Diese sollten unabhÃ¤ngig vom Schwert fÃ¼r Brages Suche recht hilfreich sein.~
-@100022 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Brage ist nun im Besitz von Nalins Notizen über das verfluchte Schwert. Diese sollten unabhängig vom Schwert für Brages Suche recht hilfreich sein.~
+@100022 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Brage sagte, er wÃ¤re mit unseren Nachforschungen Ã¼ber das verfluchte Schwert zufrieden und erwarte nicht, dass wir uns noch weiter umhÃ¶ren. Ich werde es trotzdem tunÂ â€“ vielleicht gibt es eine Quelle, die uns etwas sagen kann, was wir noch nicht gehÃ¶rt haben. Brage wird seine Suche nach Gerechtigkeit alleine fortsetzen, wenn unsere gemeinsame Zeit vorbei ist.~
-@100023 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Brage sagte, er wäre mit unseren Nachforschungen über das verfluchte Schwert zufrieden und erwarte nicht, dass wir uns noch weiter umhören. Ich werde es trotzdem tun – vielleicht gibt es eine Quelle, die uns etwas sagen kann, was wir noch nicht gehört haben. Brage wird seine Suche nach Gerechtigkeit alleine fortsetzen, wenn unsere gemeinsame Zeit vorbei ist.~
+@100023 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Brage war zufrieden mit unseren Nachforschungen Ã¼ber das verfluchte Schwert, also werde ich aufhÃ¶ren, weiter herumzufragen. Er wird seine Suche nach Gerechtigkeit alleine fortsetzen, wenn unsere gemeinsame Zeit vorbei ist.~
-@100024 = ~Brages Nachforschungen Ã¼ber das verfluchte Schwert
+Brage war zufrieden mit unseren Nachforschungen über das verfluchte Schwert, also werde ich aufhören, weiter herumzufragen. Er wird seine Suche nach Gerechtigkeit alleine fortsetzen, wenn unsere gemeinsame Zeit vorbei ist.~
+@100024 = ~Brages Nachforschungen über das verfluchte Schwert
 
-Brage hat eine Nachricht bezÃ¼glich seiner Suche nach denjenigen erhalten, die fÃ¼r das verfluchte Schwert verantwortlich sind. Er hat eine Ahnung, wo er seine Suche fortsetzen kann, aber er wird damit warten, bis Caelar und ihr Kreuzzug gestoppt sind.~
+Brage hat eine Nachricht bezüglich seiner Suche nach denjenigen erhalten, die für das verfluchte Schwert verantwortlich sind. Er hat eine Ahnung, wo er seine Suche fortsetzen kann, aber er wird damit warten, bis Caelar und ihr Kreuzzug gestoppt sind.~

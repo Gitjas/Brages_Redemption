@@ -1,12 +1,14 @@
-@0 = ~[Ajantis]Ich habe geschworen, die BedÃ¼rftigen zu schÃ¼tzen. Kommt jetzt herunter! Wir werden Euch nichts tun, ich gebe Euch mein Ehrenwort.~
-@1 = ~[Tilda]Das ist GENAU das, was die bÃ¶sen Menschen sagen wÃ¼rden. (schnief)~
+// File encoded in: cp1252
+
+@0 = ~[Ajantis]Ich habe geschworen, die Bedürftigen zu schützen. Kommt jetzt herunter! Wir werden Euch nichts tun, ich gebe Euch mein Ehrenwort.~
+@1 = ~[Tilda]Das ist GENAU das, was die bösen Menschen sagen würden. (schnief)~
 @2 = ~[Ajantis]Ich bin dagegen, das Kind so zu erschrecken, <CHARNAME>!~
-@3 = ~[Ajantis]Brage, konntet Ihr Eure Suche nach dem SchÃ¶pfer des verfluchten Schwertes erfolgreich fortsetzen?~
+@3 = ~[Ajantis]Brage, konntet Ihr Eure Suche nach dem Schöpfer des verfluchten Schwertes erfolgreich fortsetzen?~
 @4 = ~[Ajantis]Ich hoffe, es ist Euch gut ergangen, nachdem sich unsere Wege an den Stadttoren von Tiefwasser getrennt hatten.~
-@5 = ~[Brage]Ja, Ajantis, auch wenn es noch keine konkreten Ergebnisse gibt. Ich muss mich jetzt gedulden und hoffen, dass die BehÃ¶rden den VerrÃ¤ter in der Schmiede erfolgreich verfolgen kÃ¶nnen.~
-@6 = ~[Ajantis]Ich hoffe, Ihr werdet bald von ihnen hÃ¶ren, Brage. Der Gedanke, dass der Schuldige noch immer frei herumlÃ¤uft, ist unertrÃ¤glich.~
-@7 = ~[Brage]Ich hoffe, es erging Euch auch gut, wÃ¤hrend sich unsere Wege trennten, Ajantis. Ich weiÃŸ, dass Ihr unter groÃŸem Druck standet, rechtzeitig zu kommen.~
-@8 = ~[Ajantis]Leider war ich mit meinen BemÃ¼hungen nicht erfolgreich. Meine Eltern waren auf einer GeschÃ¤ftsreise, und Tiefwasser bereitete sich schon bald auf den Marsch gegen den Kreuzzug vor.~
-@9 = ~[Ajantis]Die Geschehnisse versetzten den Orden des Strahlenden Herzens in hÃ¶chste Alarmbereitschaft, und so wurden alle Ritter und Knappen in der Region eingesetzt, um die Lage zu stabilisieren. Meiner Bitte, von hier aus zu helfen, wurde aufgrund meiner jÃ¼ngsten Erfolge an der SchwertkÃ¼ste bereitwillig entsprochen. Ich machte mich so schnell wie mÃ¶glich auf den Weg zurÃ¼ck nach Baldurs Tor.~
-@10 = ~[Ajantis]Ich werde mich nicht darÃ¼ber beschweren, dass der Orden mich so schnell in Anspruch genommen und gegen Caelar geschickt hatÂ â€“ immerhin hat mich das wieder mit meiner Verlobten zusammengebracht. Aber es hat mich daran gehindert, mich mit meinen Eltern zu treffen, um eine private Angelegenheit zu regeln.~
+@5 = ~[Brage]Ja, Ajantis, auch wenn es noch keine konkreten Ergebnisse gibt. Ich muss mich jetzt gedulden und hoffen, dass die Behörden den Verräter in der Schmiede erfolgreich verfolgen können.~
+@6 = ~[Ajantis]Ich hoffe, Ihr werdet bald von ihnen hören, Brage. Der Gedanke, dass der Schuldige noch immer frei herumläuft, ist unerträglich.~
+@7 = ~[Brage]Ich hoffe, es erging Euch auch gut, während sich unsere Wege trennten, Ajantis. Ich weiß, dass Ihr unter großem Druck standet, rechtzeitig zu kommen.~
+@8 = ~[Ajantis]Leider war ich mit meinen Bemühungen nicht erfolgreich. Meine Eltern waren auf einer Geschäftsreise, und Tiefwasser bereitete sich schon bald auf den Marsch gegen den Kreuzzug vor.~
+@9 = ~[Ajantis]Die Geschehnisse versetzten den Orden des Strahlenden Herzens in höchste Alarmbereitschaft, und so wurden alle Ritter und Knappen in der Region eingesetzt, um die Lage zu stabilisieren. Meiner Bitte, von hier aus zu helfen, wurde aufgrund meiner jüngsten Erfolge an der Schwertküste bereitwillig entsprochen. Ich machte mich so schnell wie möglich auf den Weg zurück nach Baldurs Tor.~
+@10 = ~[Ajantis]Ich werde mich nicht darüber beschweren, dass der Orden mich so schnell in Anspruch genommen und gegen Caelar geschickt hat – immerhin hat mich das wieder mit meiner Verlobten zusammengebracht. Aber es hat mich daran gehindert, mich mit meinen Eltern zu treffen, um eine private Angelegenheit zu regeln.~
 @11 = ~[Brage]Es scheint, dass wir beide keine andere Chance haben, als geduldig zu sein, Ajantis. Lasst uns sicherstellen, dass wir die Zeit des Wartens gut nutzen.~

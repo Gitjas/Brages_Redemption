@@ -1,6 +1,8 @@
-@0 = ~[Brage]Nashkell steht in Eurer Schuld, Meister Taerom. Obwohl das Erz Ã¼berall gebraucht wird, IST es eine Mine auf amnischem Boden. Ich kann Euch gar nicht genug dafÃ¼r danken, dass Ihr Euch mit der LÃ¶sung dieses Problems beschÃ¤ftigt und die Spannungen zwischen Amn und der SchwertkÃ¼ste ignoriert.~
-@1 = ~[Taerom]Dieses Problem geht weit Ã¼ber Landesgrenzen hinaus. Das brÃ¼chige Erz beeintrÃ¤chtigt auch meine Profession in nicht unbedeutendem MaÃŸe.~
+// File encoded in: cp1252
+
+@0 = ~[Brage]Nashkell steht in Eurer Schuld, Meister Taerom. Obwohl das Erz überall gebraucht wird, IST es eine Mine auf amnischem Boden. Ich kann Euch gar nicht genug dafür danken, dass Ihr Euch mit der Lösung dieses Problems beschäftigt und die Spannungen zwischen Amn und der Schwertküste ignoriert.~
+@1 = ~[Taerom]Dieses Problem geht weit über Landesgrenzen hinaus. Das brüchige Erz beeinträchtigt auch meine Profession in nicht unbedeutendem Maße.~
 @2 = ~[Brage]Als ehemaliger Kommandant von Nashkell danke ich Euch von ganzem Herzen, dass Ihr die Sache untersucht habt, Meister Thalantyr.~
-@3 = ~[Thalantyr]Ich habe selbst ein gewisses Interesse daran, dass dieses Problem gelÃ¶st wird. Und sei es nur, um den Zustrom nicht nur von Abenteurern, sondern auch von zunehmend normalen Leuten zu stoppen, die auf der Suche nach magieverstÃ¤rkter AusrÃ¼stung vor meiner TÃ¼r stehen.~
-@349 = ~Das sind ja fantastische Neuigkeiten! Ich bin erleichtert, dass das so einfach mÃ¶glich war. Ich hatte befÃ¼rchtet, dass es eine Art magischeÂ â€¦ Reinigung braucht.~
+@3 = ~[Thalantyr]Ich habe selbst ein gewisses Interesse daran, dass dieses Problem gelöst wird. Und sei es nur, um den Zustrom nicht nur von Abenteurern, sondern auch von zunehmend normalen Leuten zu stoppen, die auf der Suche nach magieverstärkter Ausrüstung vor meiner Tür stehen.~
+@349 = ~Das sind ja fantastische Neuigkeiten! Ich bin erleichtert, dass das so einfach möglich war. Ich hatte befürchtet, dass es eine Art magische … Reinigung braucht.~
 @350 = ~Es war sozusagen ein Gift, also haben wir eine Art Gegengift entwickelt. Es sollte ohne weiteres arkanes Wissen funktionieren.~
