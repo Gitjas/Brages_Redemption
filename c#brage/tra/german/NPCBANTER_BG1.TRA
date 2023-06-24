@@ -1,5 +1,3 @@
-// File encoded in: cp1252
-
 @0 = ~Minsk, Ihr verfallt beim Kapmf in einen Berserkerrausch … Seid Ihr nicht in Sorge, dass sich Eure Rage gegen die falschen richten könnte? Gegen die, die Ihr schützen wollt?~
 @1 = ~Ohoho, unser Freund trifft falsche Annahmen, sagt Boo! Minsk verdrischt in seinem Rausch natürlich nur die Bösen! Minsk würde niemals Freunden weh tun.~
 @2 = ~Ich beneide Euch um Euer Selbstvertrauen … Ihr müsst auf alle Fälle sicher gehen, dass das nicht geschieht, Minsk. Ihr … Ihr würdet es bereuen.~
@@ -23,20 +21,20 @@
 @20 = ~Das ist es sicher, ich weiß jedoch nicht, wie ich davon profitieren sollte. Ich habe in allen von Helms wichtigsten Dogmen versagt. Ich bete jeden Tag, aber er hört mich sicher nicht mehr.~
 @21 = ~Betet weiter, Brage.~
 @22 = ~Das werde ich … das werde ich, Ajantis.~
-@23 = ~Imoen, du erinnerst mich an meine Töchter. Du bist so … verspielt und voller Ideen. Das Leben bietet dir noch aufregende Geheimnisse, die du erkunden möchtest … Entschuldige, ich habe wohl was im Auge …~
+@23 = ~Imoen, Ihr erinnert mich an meine Töchter. Ihr seid so … verspielt und voller Ideen. Das Leben bietet Euch noch aufregende Geheimnisse, die Ihr erkunden möchtet … Entschuldige, ich habe wohl was im Auge …~
 @24 = ~Oh, soll ich mal gucken?~
 @25 = ~Wie meine Töchter … wirklich wie meine Mädchen … Nein, schon gut, Imoen. Es ist nichts.~
-@26 = ~Oh! Jetzt verstehe ich – etwas im Auge haben … Aber Ihr müsst Euch doch nicht für Eure Tränen schämen, Brage. Das ist total traurig, was Euch passiert ist!~
-@27 = ~Das … das ist es wirklich. Ich danke dir, Imoen. Deine direkte Ehrlichkeit wärmt mir das Herz.~
-@28 = ~Imoen, du scheinst mit fast jedem das Spielchen zu treiben, dass du ihnen einen privaten Gegenstand entwendest, um dich dann darüber lustig zu machen. Nur bei mir hast du es unterlassen, und dafür bin ich dir ehrlich dankbar. Ich sehe es als Respekt gegenüber der Pein, in der ich mich befinde.~
+@26 = ~Oh! Jetzt verstehe ich, was Ihr im Auge hattet. Aber Ihr müsst Euch doch nicht für Eure Tränen schämen, Brage. Das ist total traurig, was Euch passiert ist!~
+@27 = ~Das … das ist es wirklich. Ich danke Euch, Imoen. Eure direkte Ehrlichkeit wärmt mir das Herz.~
+@28 = ~Imoen, Ihr scheint mit fast jedem das Spielchen zu treiben, dass Ihr ihnen einen privaten Gegenstand entwendet, um Euch dann darüber lustig zu machen. Nur bei mir habt Ihr es unterlassen, und dafür bin ich Euch ehrlich dankbar. Ich sehe es als Respekt gegenüber der Pein, in der ich mich befinde.~
 @29 = ~Na ja … also ehrlich gesagt, habt Ihr einfach so gut wie nichts, was man Euch entwenden kann.~
 @30 = ~Oh.~
 @31 = ~Und vor allem nichts, womit man Euch aufziehen kann. Ihr habt nur diesen Anhänger, und der wirkt so ernst und traurig mit den Bildern von Eurer Familie und der Gravur „In Liebe von Betty“, und …~
-@32 = ~Moment mal – woher weißt du von der Gravur? Das hatte ich niemandem erzählt!~
-@33 = ~Öh, na ja, weil … weil ich’s gelesen hab. Als ich ihn gemopst habe. Einmal. Und dann habe ich die Bilder gesehen und die Gravur, und … na ja, dann dachte ich, dass das nichts ist, worüber man sich lustig macht, also habe ich ihn wieder zurückgetan. Ähm … seid Ihr jetzt böse?~
-@34 = ~Du … Jetzt bin ich ehrlich überrascht. Ich hatte das gar nicht gemerkt!~
+@32 = ~Moment mal – woher wisst Ihr von der Gravur? Das hatte ich niemandem erzählt!~
+@33 = ~Öh, na ja, weil … weil ich’s gelesen hab. Als ich ihn gemopst habe. Einmal. Und dann habe ich die Bilder gesehen und die Gravur, und … na ja, dann dachte ich, dass das nichts ist, was man wegnimmt oder sich drüber lustig macht, also habe ich ihn wieder zurückgetan. Ähm … seid Ihr jetzt böse?~
+@34 = ~Ihr … Jetzt bin ich ehrlich überrascht. Ich hatte das gar nicht gemerkt!~
 @35 = ~Na-tür-lich nicht. Was wäre ich denn für eine Diebin, wenn Ihr das merken würdet? Echt mal …~
-@36 = ~Aber dann stimmt es ja, was ich gesagt habe, Imoen. Du hast mir die Pein erspart, Ziel eines solchen Späßchens zu werden, aus Rücksicht auf meine Trauer. Ich danke dir.~
+@36 = ~Aber dann stimmt es ja, was ich gesagt habe, Imoen. Ihr habt mir die Pein erspart, Ziel eines solchen Späßchens zu werden, aus Rücksicht auf meine Trauer. Ich danke Euch.~
 @37 = ~Brage, Ihr sagtet, dass Ihr betet, aber Ihr scheint nicht daran zu glauben, dass Helm Euch wieder hören wird. Ihr habt in Helms Dogmen versagt, aber er ist nicht unversöhnlich. Er wird Euch hören, wenn Ihr wirklich wieder auf den rechten Pfad zurückkehren wollt.~
 @38 = ~Glaubt Ihr das wirklich? Helm ist der Gott der Pflichterfüllung, der Wachsamkeit … und des Schutzes der Schwachen. Ich habe in allen Dogmen versagt!~
 @39 = ~Ihr habt Euch nicht dem Bösen aus freien Stücken hingegeben. Ihr habt Fehler gemacht und dadurch Schuld auf Euch geladen – sehr schwere Schuld, Unschuldige sind gestorben. Aber es war nicht Euer freier Willen, Brage. Wenn Ihr wahrlich Buße tut und treu zu Helms Dogmen seid, dann wird er Euch nicht für immer verstoßen! Das muss so sein!~
@@ -46,7 +44,7 @@
 @43 = ~Ja, ich habe dort eine Zeit lang gelebt, aber das ist eine Weile her. Selbst mein letzter Besuch liegt bereits länger zurück. Ist da immer noch ein Zirkus in der Promenande? Zu jeder Saison?~
 @44 = ~Ja, und mittlerweile sogar noch häufiger. Seit ein paar Jahren ist sofort der nächste da, wenn der vorherige seine Zelte abbaut.~
 @45 = ~Wir wollten immer mal als Familie eine Reise in die Hauptstadt machen – die Tempelbauten im Tempelbezirk bewundern, mit den Mädchen in den Zirkus gehen …~
-@46 = ~(traurig lächel) Welch naive Vorstellung. Im Endeffekt habe ich es gerade so geschafft, die Mädchen mal mit zum Nashkeller Jahrmarkt zu begleiten. All die Male, die ich dachte, die Arbeit eines Hauptmanns wäre wichtiger, als Zeit mit ihnen zu verbringen … Und nun habe ich sie alle verloren.~
+@46 = ~(Brage lächelt traurig.) Welch naive Vorstellung. Im Endeffekt habe ich es gerade so geschafft, die Mädchen mal mit zum Nashkeller Jahrmarkt zu begleiten. All die Male, die ich dachte, die Arbeit eines Hauptmanns wäre wichtiger, als Zeit mit ihnen zu verbringen … Und nun habe ich sie alle verloren.~
 @47 = ~Imoen, da ist etwas, um dass ich dich beneide.~
 @48 = ~Was? Sagt nichts. Ihr wolltet schon immer so gut im Stehlen sein wie ich!~
 @49 = ~… Nein.~
@@ -93,12 +91,12 @@
 @90 = ~Wie ich sagte, das würde ja alles keine Rolle mehr spielen! Aber man braucht dazu eine andere Lebensquelle, die man hierfür verwenden kann. Irgendwas wie … wie eine Nymphe, zum Beispiel.~
 @91 = ~Dryaden dagegen eignen sich nicht im Geringsten. Außerdem ist DAS DA MEINE DRYADE! HÄNDE WEG VON MEINER DRYADE!~
 @92 = ~Also, wir würden nur drei Nymphen brauchen und noch ein paar Allerweltszutaten, und wir könnten gleich anfangen!~
-@93 = ~(fauch) Ich werde dieses Gerede ertragen, aber sobald sich einmal die Gelegenheit bieten sollte, werde ich Euch das Maul stopfen!~
+@93 = ~(Brage spannt die Kiefermuskeln an.) Ich werde dieses Gerede ertragen, aber sobald sich einmal die Gelegenheit bieten sollte, werde ich Euch das Maul stopfen!~
 @94 = ~Eldoth, hört auf mit Euren Verhöhnungen mit Bezug auf die verfluchten Gegenstände! Es ist nicht witzig.~
 @95 = ~Im Gegenteil, es ist sehr lustig. Ihr könnt mir das Reden nicht verbieten, Brage. Ich bin Barde. Soll ich lieber noch ein paar Liedchen über Eure Inkompetenz anstimmen?~
 @96 = ~Ich wünschte, es gäbe einen verfluchten Knebel! Dann hätte ich endlich Ruhe vor Euch.~
 @97 = ~Ach, jetzt haben wir plötzlich Verwendung für einen verfluchten Gegenstand, ja? Und fühlen uns so ein bisschen mächtig, wenn wir darüber fantasieren, wie wir ihn einsetzen würden? Versteht Ihr jetzt, warum ich immer meine Scherze mache?~
-@98 = ~(Zähne fletsch)~
+@98 = ~(Brage spannt die Kiefermuskeln an.)~
 @99 = ~Brage, ich … (hüstel) ich habe einen Reim zu Eurer traurigen Geschichte geschrieben. Wollt Ihr ihn hören?~
 @100 = ~Ich … bin mir nicht sicher, Garrick.~
 @101 = ~Nun, er geht folgendermaßen:

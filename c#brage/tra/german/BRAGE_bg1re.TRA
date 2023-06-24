@@ -1,5 +1,3 @@
-// File encoded in: cp1252
-
 @0 = ~[Brage]Ihr … Ihr versuchtet, das Leben und die Gesundheit Eurer geliebten Frau wiederherzustellen, so wie Ihr es versprochen hattet. Ich … verstehe sehr gut, warum, Mann, aber … habt Ihr Euch mal hier umgesehen, in was Ihr Euer Zuhause verwandelt habt?!~
 @1 = ~[Necromancer]Ja, ich weiß, dass ich mich vornehmlich darauf konzentriert habe, wie ich sie wiederherstellen kann – die Mittel waren notwendig …~
 @2 = ~[Brage]Dieser Nekromant, <CHARNAME> – der Wunsch, der Drang, die geliebte Person wieder zum Leben zu erwecken, egal wie hoch die Kosten … Ich kann nachvollziehen, was ihn angetrieben hat.~
@@ -19,7 +17,7 @@
 @16 = ~[PC reply]Na, dann ists ja gut, dass Ihr die Mittel dazu nicht habt, nicht wahr.~
 @17 = ~[PC reply]Nun, es gibt durchaus Wege, dies mit Magie zu tun, aber ich sehe Euch diese nicht verfolgen.~
 @18 = ~[Brage]Wovon sprecht Ihr? Soll ich etwa alles Gold, das für eine solche Wiederbelebung nötig wäre, für mich selbst behalten, anstatt es den Angehörigen zu geben, die es zum Überleben brauchen? Wenn ich das täte, dann wäre ich genau wie der Nekromant, <CHARNAME>!~
-@19 = ~[Brage](stöhn) Ich hoffe bei den Göttern, dass ich mich niemals so weit wie dieser Nekromant in meinem Wunsch vergessen werde. Nicht nach dem, was meine Hände bereits taten. Ich HABE meinen Weg mit Leichen gepflastert – und sie waren noch nicht tot gewesen.~
+@19 = ~[Brage](Er stößt einen klagenden Laut aus.) Ich hoffe bei den Göttern, dass ich mich niemals so weit wie dieser Nekromant in meinem Wunsch vergessen werde. Nicht nach dem, was meine Hände bereits taten. Ich HABE meinen Weg mit Leichen gepflastert – und sie waren noch nicht tot gewesen.~
 @20 = ~[Brage]Ich danke Euch für die freundlichen Worte. Ich hoffe das sehr …~
 @21 = ~[Brage]Es ist die grausame Ironie des Lebens. Zum Leben wollte er seiner Liebsten wieder verhelfen – und doch war alles, was er tat, sich mit Tod und dunkler Nekromantie zu umgeben, versteckt in einer Höhle, in der er die besten Jahre seines Lebens verschwendete …~
 @22 = ~[Brage](seufz) Ja, es ist einfach, sich in seinem Tun zu verlieren, wenn das Ziel zu hoch gesteckt und die Willenskraft es zu erreichen zu stark sind. Ich fühle mich auf mehr als eine Art mit diesem Mann verbunden, <CHARNAME>.~

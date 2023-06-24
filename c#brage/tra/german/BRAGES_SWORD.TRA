@@ -44,6 +44,7 @@
 @41 = ~Nun … Es gibt noch immer viele Banditen da draußen, nicht wahr? Ich könnte … ich könnte die Reisenden auf den Straßen beschützen …~
 @42 = ~Nein, ich werde es nicht verkaufen. Ich werde von keinem Schwert profitieren. Ich gebe es Euch, <CHARNAME>, weil es bei Euch bessere Dienste verrichten wird.~
 @43 = ~Nun gut, wenn das Euer letztes Wort ist, dann behalte ich es.~
+
 @44 = ~Was für ein wunderbarer Gedanke, er elektrisiert mich geradezu … aber ich traue es mir nicht zu, meinen Mitmenschen so zu dienen – noch nicht. Ich werde … ich werde das Schwert an mich nehmen. Helm stehe mir bei! Ich weiß, dass Ihr wahre Worte sprecht, aber ich bin noch nicht bereit sie umzusetzen. Ich werde hier bleiben und so viel tun, wie ich kann … fürs Erste.~
 @45 = ~Ich danke Euch, <CHARNAME>.~
 @46 = ~Ihr habt also Brage eingefangen, und das lebendig. Ich gebe nichts auf das ganze Gerede davon, dass bei seiner Ehre und Rechtschaffenheit ein fauler Zauber für sein Verhalten verantwortlich sein muss. All die Tränen, die in der Stadt für diesen Mörder vergossen werden!~
@@ -142,6 +143,7 @@
 @139 = ~Ah, Ihr habt lange genug herumgeschnüffelt und Eure Nase in Angelegenheiten gesteckt, die Euch nichts angehen! Wollt mich aufspüren, indem Ihr meine ganzen Geschäftskontakte absucht, ja?! Herzlichen Glückwunsch, Ihr habt mich gefunden. Leider bin ich nicht komplett hilflos, müsst Ihr wissen!~
 @140 = ~Der Mann, der mir davon berichtete, hatte von ihm Waren gekauft, aber nur, weil er diesen Händler vorher auch auf dem Nashkeller Jahrmarkt gesehen hatte. Aber die Schriftrolle, die er ihm abgekauft hatte, ist verflucht! Und da Brages Schwert auch verflucht ist, finde ich diese Information nun doch sehr interessant. Ich werde versuchen ihn aufzuspüren. Aber es ist gut möglich, dass diese Spur uns nicht weiterbringt, also fahrt Ihr am besten unabhängig davon ebenfalls mit Euren Nachforschungen fort. In Brages Namen danke ich Euch für Eure Mühen!~
 @141 = ~… Hm, ich sehe nichts … Seid Ihr sicher, dass dies das Schwert ist, das Brage geführt hat, als er die ihm zu Last gelegten Taten beging?~
+
 @142 = ~Psst, <CHARNAME>, ich mag diese Spielchen nicht. Du weißt, dass du damit Brages Leben aufs Spiel setzt, ja?~
 @143 = ~Nein, Priester Nalin. Es ist nicht das richtige. <CHARNAME>, mit dem Leben eines Mannes werden wir nicht spielen.~
 @144 = ~Nein, Priester Nalin. Es ist nicht das richtige. <CHARNAME>, spielt nicht so mit dem Leben eines Mannes!~
@@ -153,6 +155,7 @@
 @150 = ~Ich habe mich mit Euch zusammengeschlossen, um Banditen zu jagen, und nicht, um mich selbst wie einer zu verhalten. Dies ist nicht das Schwert, das Brage benutzt hat.~
 @151 = ~Hört mal, aus welchen Gründen auch immer, aber ich werde Euch kein Schwert zeigen. Hört auf, danach zu fragen.~
 @152 = ~Ich verstehe. So sehr ich dies auch bedauere, so werden wir doch Eure Entscheidung akzeptieren.~
+
 @1000 = ~Hauptmann Brages Schuld
 
 Leutnant Bardolan hat erwähnt, dass der Hauptmann der Garnison namens Brage verschwunden ist. Die Straßen sind voll von dieser Neuigkeit – schlimme Dinge müssen geschehen sein.~

@@ -1,5 +1,3 @@
-// File encoded in: cp1252
-
 @0 = ~Brage! Wir sind alle erleichtert, Euch wohlauf zu sehen … So „wohlauf“, wie es eben möglich ist. Mein Beileid zum Verlust Eurer Familie … Es bekümmert mich sehr, was geschehen ist. Ihr habt Euch nun <CHARNAME> angeschlossen, um gegen die Banditenplage vorzugehen, und die zu stellen, die uns das angetan haben. Wir wünschen Euch alles Glück dieser Welt, und Erfolg obendrein!~
 @1 = ~Ich danke Euch, Bardolan. Ihr habt gute Arbeit geleistet.~
 @2 = ~Habt Dank, Hauptmann …~
@@ -64,7 +62,7 @@
 @61 = ~Brage, alles in Ordnung?~
 @62 = ~Ja, Ihr wart recht … gründlich.~
 @63 = ~Oh, schaut mal, eine zerstörte Karawane! Wer die wohl auf dem Gewissen hat?~
-@64 = ~(fauch) Lasst uns weitergehen, <CHARNAME>. Wir müssen noch eine Menge erledigen!~
+@64 = ~(Brage spannt seine Kiefermuskeln an.) Lasst uns weitergehen, <CHARNAME>. Wir müssen noch eine Menge erledigen!~
 @65 = ~Hier sind wir. Hier bin ich … Wie sehr hatte ich mir gewünscht, Zeit für die Untersuchung der Mine zu haben. Zu wissen, dass die Minenarbeiter und Soldaten hier in Schwierigkeiten sind, ohne helfen zu können, war unerträglich. Nun bin ich hier und wünschte … ich wünschte, mein Wunsch wäre nicht in Erfüllung gegangen, denn der Grund, warum ich nun hier sein kann, kam direkt aus den Neun Höllen!~
 @66 = ~Wir haben es geschafft, <CHARNAME>! Wir haben die Minen von dem Übel befreit, das sich hier eingenistet hat. Es ist … eine kleine Gutmachung für die Trauer, die ich über die Stadt gebracht habe.~
 @67 = ~Offensichtlich ist die Suche nach den eigentlichen Hintermännern noch nicht vorbei, wie es scheint. Wenn Ihr unsere Schritte weiter in Richtung der Drahtziehern lenkt, wäre ich davon sehr angetan, ich werde Euch aber genauso auf der Suche nach den Mördern Eures Ziehvaters unterstützen.~
@@ -77,7 +75,7 @@
 @74 = ~Was ist damit?~
 @75 = ~Ich kann mir nicht vorstellen, was das für Euch bedeuten muss.~
 @76 = ~Im Gegenteil!~
-@77 = ~Wisst, dass mich dieses Wissen nicht befremdet. Es kommt durchaus überraschend, aber nur, weil ich in Euch eine Kraft des Gesetzes sehe, <CHARNAME>. Ihr seid derjenige, der mich gerettet und auf den richtigen Pfad zurückgebracht hat. Nun zu hören, dass Ihr mit Euren eigenen Dämonen kämpft – die nach außen hin nicht sichtbar sind –, verstärkt nur mein Gefühl der Bewunderung für die Person, die Ihr seid.~ ~Wisst, dass mich dieses Wissen nicht befremdet. Es kommt durchaus überraschend, aber nur, weil ich in Euch eine Kraft des Gesetzes sehe, <CHARNAME>. Ihr seid diejenige, die mich gerettet und auf den richtigen Pfad zurückgebracht hat. Nun zu hören, dass Ihr mit Euren eigenen Dämonen kämpft – die nach außen hin nicht sichtbar sind –, verstärkt nur mein Gefühl der Bewunderung für die Person, die Ihr seid.~
+@77 = ~Wisst, dass mich dieses Wissen nicht befremdet. Es kommt durchaus überraschend, aber eben gerade deswegen, weil ich in Euch eine Kraft des Gesetzes sehe, <CHARNAME>. Ihr seid derjenige, der mich gerettet und auf den richtigen Pfad zurückgebracht hat. Nun zu hören, dass Ihr mit Euren eigenen Dämonen kämpft – die nach außen hin nicht sichtbar sind –, verstärkt nur mein Gefühl der Bewunderung für die Person, die Ihr seid.~ ~Wisst, dass mich dieses Wissen nicht befremdet. Es kommt durchaus überraschend, aber eben gerade deswegen, weil ich in Euch eine Kraft des Gesetzes sehe, <CHARNAME>. Ihr seid diejenige, die mich gerettet und auf den richtigen Pfad zurückgebracht hat. Nun zu hören, dass Ihr mit Euren eigenen Dämonen kämpft – die nach außen hin nicht sichtbar sind –, verstärkt nur mein Gefühl der Bewunderung für die Person, die Ihr seid.~
 @78 = ~Ich danke Euch, Brage. Das bedeutet mir viel.~
 @79 = ~Oh. Ich hatte jetzt was anderes erwartet.~
 @80 = ~Wir werden sehen, wo das hinführt. Vielleicht erwecke ich nun auch die dunkle Seite in mir.~
@@ -105,7 +103,7 @@
 @102 = ~Gute Nacht, <CHARNAME>. Ich wünsche Euch einen erholsamen Schlaf.~
 @103 = ~Hier … hier ist ein Bild drin, von meiner geliebten Frau und unseren zwei Töchtern.~
 @104 = ~Sie sind … waren schon viel älter als auf diesem Bild. Sie sind so schnell gewachsen … Wir wollten sie wieder portraitieren lassen, um neue Bilder zu haben. „Lass uns damit bis zum Sommer warten“, waren Bettys Worte. Es kostet Gold, und mein Lohn war durch die Krise reduziert worden. „Lass uns erst einmal Schuhe und Kleidung kaufen, das ist wichtiger.“~
-@105 = ~(Brage atmet hörbar aus) Wie sehr wünschte ich, ich hätte neuere Porträts … Nein, wie sehr wünschte ich mir, sie in Fleisch und Blut vor mir zu haben!~
+@105 = ~(Brage atmet hörbar aus.) Wie sehr wünschte ich, ich hätte neuere Porträts … Nein, wie sehr wünschte ich mir, sie in Fleisch und Blut vor mir zu haben!~
 @106 = ~Ich kann Euch nicht genug für die Hilfe danken, die Ihr mir habt zuteilwerden lassen. Was Ihr für mich getan habt, war treu dem Gesetz – geradeu rechtschaffen. Ihr habt keine Mühen gescheut um meine … meine „Unschuld“ zu beweisen. (seufz) Nicht, dass ich meine Handlungen selbst so nennen könnte …~
 @107 = ~Ich bin froh, dass ich Euch durch meinen Beistand bei Eurer Suche etwas zurückgeben kann. Zudem hoffe ich, dass ich mich dabei beweisen kann … dass ich Abbitte leisten kann für meine Taten, indem ich helfe, die zu stellen, die diese Falle für mich bereiteten. Sie zu stoppen, bevor sie noch weiteren Pesonen schaden können.~
 @108 = ~Ich habe Euch sehr gerne dabei, Brage.~

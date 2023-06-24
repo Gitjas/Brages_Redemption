@@ -1,5 +1,3 @@
-// File encoded in: cp1252
-
 @0 = ~Seid gegrüßt, Brage, ich bin sehr erleichtert, dass Ihr von den Vorwürfen freigesprochen wurdet. Es tut mir SO leid wegen Betty und Euren Mädchen. Wie kommt Ihr zurecht?~
 @1 = ~Ich danke Euch. Es … es geht. Weigert er sich noch immer, die Kinder zu sehen?~
 @2 = ~(seufz) Ja, das tut er.~
@@ -12,6 +10,7 @@
 @9 = ~Dafür haben wir jetzt keine Zeit.~
 @10 = ~Versteht mich nicht falsch, aber … ich glaube nicht, dass Euer Freund auf meine Kinder aufpassen möchte. Ich wünsche Euch einen schönen Tag.~
 @11 = ~Es tut mir leid, Frau Blackwood. Vielleicht schaffen wir es später. Lebt wohl.~
+/* @12   = */
 @13 = ~Auf Wiedersehen, Frau Blackwood. Bis dann, Sarah, Tom. Alles Gute!~
 @14 = ~Warum tun wir das? Warum schikanieren wir diese arme Mutter? <CHARNAME>, ich kenne diese Frau gut. Sie braucht Unterstützung, keine Feindseligkeit!~
 @15 = ~Komm mal her, Tom. Lass mich mal sehen … Ah, das ist nur Wasser, das trocknet gleich wieder.~

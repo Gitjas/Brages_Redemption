@@ -1,7 +1,6 @@
-// File encoded in: cp1252
-
 @0 = ~<CHARNAME>, Ihr habt Brage zurück zur Stadt gebracht und ihn den Stadtoberen übergeben. Jedoch, der ganze tragische Vorfall erweckt stark den Eindruck von böser Magie, die darin involviert sein musste. Ich bitte Euch, fragt bei Oublek an, welche weiteren Untersuchungen hierzu geplant sind. Es wäre ein Jammer, diesen aufrichtigen Mann als Mörder zu verurteilen, ohne seine eindeutige Schuld überprüft zu haben.~
 @1 = ~<CHARNAME>, dank Euch ist Brage nun erst einmal im Tempel in Sicherheit. Jedoch, der ganze tragische Vorfall erweckt stark den Eindruck von böser Magie, die darin involviert sein musste. Ich bitte Euch, fragt bei Oublek an, welche weiteren Untersuchungen hierzu geplant sind. Es wäre ein Jammer, diesen aufrichtigen Mann als Mörder zu verurteilen, ohne seine eindeutige Schuld überprüft zu haben.~
+
 @1021 = ~Hauptmann Brages Schuld~
 @1022 = ~Hauptmann Brages Schuld
 

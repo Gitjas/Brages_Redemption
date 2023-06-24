@@ -1,8 +1,8 @@
 // File encoded in: cp1252
 
 @0 = ~[Brage]Imoen, in Amn muss jeder Magieanwender mehrere Jahre lang bei einem Magier in die Lehre gehen, bevor er selbständig zaubern darf. Ihr wart einige Wochen bei Herzogin Jannath und habt dann beschlossen, dass Ihr lieber mit <CHARNAME> hinter Caelar her möchtet.~
-@1 = ~[Imoen]Natürlich schimpft Ihr, wenn ich die Übungen früher verlasse.~
-@2 = ~[Imoen]Ihr habt bereits deutlich gemacht, dass Ihr meine „Basteleien“ mit der Magie nicht gutheißt, solange ich mir keinen fähigen Lehrer suche.~
+@1 = ~[Imoen]Natürlich schimpft Ihr, weil ich die Übungen früher beendet habe.~
+@2 = ~[Imoen]Ihr habt bereits deutlich gemacht, dass Ihr meine „Spielereien“ mit der Magie nicht gutheißt, solange ich mir keinen fähigen Lehrer suche.~
 @3 = ~[Imoen]Ich verstehe Eure Sorge. Ich hatte eine gute Lehrerin – eine hervorragende Lehrerin, um genau zu sein. Eine, von der viele Magier nur zu gerne lernen würden. Und doch bin ich hier und ziehe es vor, mit meinem Freund zu reisen …~ ~[Imoen]Ich verstehe Eure Sorge. Ich hatte eine gute Lehrerin – eine hervorragende Lehrerin, um genau zu sein. Eine, von der viele Magier nur zu gerne lernen würden. Und doch bin ich hier und ziehe es vor, mit meiner Freundin zu reisen …~
 @4 = ~[Brage]… um die zu fassen, die Euch angegriffen haben. Imoen, ich verstehe sehr gut den Drang – den ZWANG –, diejenigen zu verfolgen, die Euch und Euren Liebsten Unrecht getan haben. Aber ich weiß auch, dass es wichtig ist, vorbereitet und bereit zu sein, sich ihnen zu stellen.~
 @5 = ~[Imoen]Oh, so habe ich das noch nie gesehen! Aber Ihr habt recht. Einer der Gründe, warum ich <CHARNAME> nicht ohne mich gegen Caelar vorgehen lassen konnte, war, dass es CAELAR und ihr Kreuzzug ist, gegen den <PRO_HESHE> vorgeht. Ja, ich glaube, ich wollte daran teilhaben.~
