@@ -45,11 +45,11 @@
 @44   = ~[Brage]Please, let us seek counsel from any wellversed smith, mage, or priest we might meet along the way, and revisit the ones we already met. I need to hear as many experts' opinions on the sword as possible.~
 @45   = ~[Brage]This includes Nalin - I recall he made extensive notes about the sword and its curse. I would like to collect them.~
 @46   = ~[Brage]I will only know if I'll succeed in my search.~
-@47   = ~[Brage]<CHARNAME>, I see the cursed sword is back in our posession - could I... keep it so I can show it to experts we might seek out if our time allows along the way?~
+@47   = ~<CHARNAME>, I see the cursed sword is back in our posession - could I... keep it so I can show it to experts we might seek out if our time allows along the way?~
 @48   = ~[PC Reply]I am sorry, Brage, but the sword will be gone again soon.~
 @49   = ~[Brage]I see. It will work out nevertheless, with Nalin's notes.~
-@50   = ~[Brage]<CHARNAME>, the cursed sword is no longer in our possession. I will focus on using Nalin's notes for my research about it - showing the sword would be advantageous, but it should work like this, too.~
-@51   = ~[Brage]<CHARNAME>, we lost Nalin's notes about the cursed sword. We could get another copy easily enough, but I realize now that - as good as the idea about pursuing my research about its origin was, it seems it's not feasible and too great a distraction while I am travelling with you. I will concentrate on our tasks for now, and will pursue my search regarding the cursed sword after we'll part ways.~
+@50   = ~<CHARNAME>, the cursed sword is no longer in our possession. I will focus on using Nalin's notes for my research about it - showing the sword would be advantageous, but it should work like this, too.~
+@51   = ~<CHARNAME>, we lost Nalin's notes about the cursed sword. We could get another copy easily enough, but I realize now that - as good as the idea about pursuing my research about its origin was, it seems it's not feasible and too great a distraction while I am travelling with you. I will concentrate on our tasks for now, and will pursue my search regarding the cursed sword after we'll part ways.~
 @52   = ~[Nalin]I will take notes about what I see in this sword, so I'll have all the details for later. Maybe they will also be of some use if we might come across a similar weapon in the future.~
 @53   = ~[Nalin]Brage! It is good to see you again. My senses tell me you are in higher spirit than when you left with <CHARNAME>.~
 @54   = ~[Brage]I am, Nalin. I have come to ask you about the notes you took when investigating the curse of the sword.~
@@ -57,7 +57,7 @@
 @56   = ~[Brage]My aim is to learn as much as possible about where the sword came from and make an end to it. Your notes would surely help me in this search.~
 @57   = ~[Nalin]Of course, this is an honorable quest. Here is a copy - I wrote everything down that I noticed.~
 @58   = ~[Brage]I thank you dearly, Nalin. I wish you well. <CHARNAME> - please, let us seek counsel from any wellversed smith, mage, or priest we might meet along the way, and revisit the ones we already met. I need to hear as many experts' opinions on the sword as possible.~
-@59   = ~[Brage]<CHARNAME> - please, let us seek counsel from any wellversed smith, mage, or priest we might meet along the way, and revisit the ones we already met. I need to hear as many experts' opinions on the sword as possible.~
+@59   = ~<CHARNAME> - please, let us seek counsel from any wellversed smith, mage, or priest we might meet along the way, and revisit the ones we already met. I need to hear as many experts' opinions on the sword as possible.~
 //@60   = 
 @61   = ~[Taerom]Hmm. This is a fine sword in terms of craftmansship. I would have said it shows signs of a style used in Tethyr, but I see some other styles in there, too. It was either forged by someone who assembled several forging styles, or someone tried to imitate a Tethyrian blade without knowing how.~
 @62   = ~[Taerom]It is a pity you don't have the original sword with you. These notes are extensive, but they are clearly made with focus on the enchantment and the sword's appearance, but not the craftmanship to forge it.~
@@ -165,7 +165,7 @@
 @164  = ~[female priest]I can't tell you anything ye don't probably know yourself already. Make sure this sword does not get into someone's hands who doesn't have divine help, is what I can tell ye.~
 @165  = ~[male shopkeep]Hmm, cursed, you say? No, I have never seen it before.~
 @166  = ~[PC Reply]I assume your organisation has a lot of resources? My comrade Brage here has questions to the origins of a cursed sword.~
-@167  = ~[Brage]<CHARNAME>, I will not ask the Shadow Thieves for help. You might not be aware, but they are a corrupt organisation of thieves and assassins, with a huge branch being seated in Athkatla, Amn's capital. I know them very well from the trouble they stir.~
+@167  = ~<CHARNAME>, I will not ask the Shadow Thieves for help. You might not be aware, but they are a corrupt organisation of thieves and assassins, with a huge branch being seated in Athkatla, Amn's capital. I know them very well from the trouble they stir.~
 @168  = ~[Husam]Which would make us the most capable source for any investigations about a cursed sword, I would say? I would be open to cut you a good deal for this.~
 @169  = ~[PC Reply]Shouldn't you use every possible source to get informations from, Brage? This one is an especially resourceful one, as it seems.~
 @170  = ~[PC Reply]See? This sounds good, I think.~
@@ -179,7 +179,7 @@
 @178  = ~[Husam]I could point out that your words hurt my Shadow Thief's pride, but I guess you wouldn't care about it, anyway. So - "suit yourself"?~
 @179  = ~[Brage]I am not desperate enough to go to the Shadow Thieves for help, my search only just started. No more word of this, let us move on, we have an important task to tackle.~
 @180  = ~[Husam]Well, I could have made you a very good deal, but it seems you know where to find us if you'd want to. Just make sure you'll have the gold my guild will charge you then.~
-@181  = ~[Brage]<CHARNAME>, we asked several experts about the cursed sword, and I think the information we gained is already very helpful. The smith seems to have used different style elements which makes it impossible to pin the blade to a certain geographic reason.~
+@181  = ~<CHARNAME>, we asked several experts about the cursed sword, and I think the information we gained is already very helpful. The smith seems to have used different style elements which makes it impossible to pin the blade to a certain geographic reason.~
 @182  = ~[Brage]The curse seems to be too well suited for such a purpose to assume it just happened as a failed attempt to make a magic weapon, and the enchantment is not a trivial one but would need rare ingredients and a well versed mage to complete. (clenches teeth) So it is well possible the curse was refined before sending it my way, at least - and by the use of expensive resources.~
 @183  = ~[PC Reply]We are still in pursuit of the whole conspiracy. Maybe we'll find more clues as to how the sword was ordered.~
 @184  = ~[PC Reply]We didn't find any more clues with the Iron Throne. I would have guessed Sarevok would have used the resources of his father's organisation.~
@@ -206,7 +206,7 @@
 /* swordpath_sod.d */
 @400  = ~[male messenger]Mister Brage? I have a letter for you, sir - from the Most Careful Order of Skilled Smiths and Metalforgers.~ [c#ablank]
 @401  = ~[Brage]From the Most Careful Order of... Good man, this is brilliant news. I thank you for delivering this to me.~
-@402  = ~[Brage]<CHARNAME>, this is a note about my search about the cursed sword in Waterdeep. The investigations brought some results, apparently.~
+@402  = ~<CHARNAME>, this is a note about my search about the cursed sword in Waterdeep. The investigations brought some results, apparently.~
 @403  = ~[PC reply]Read it now, Brage. I know you waited for this.~
 @404  = ~[PC reply]I need you here and focussed, Brage. There is a crusade to be stopped, it's not over yet.~
 @405  = ~[Brage]... - Alright, it says they could find irregularities in the smithy's books and know who did it, but the culprit could flee. They could follow his trail but lost it in - Amn!~

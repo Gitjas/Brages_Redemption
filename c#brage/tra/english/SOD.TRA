@@ -64,7 +64,7 @@ Brage seems to be back in Baldur's Gate. He was seen at the Sorcerous Sundries.~
 @51  = ~[PC reply]Brage, as a former commander, can give this private some advice?~
 @52  = ~[Brage]You are good. You need more sparring with skilled opponents. Let us spar so I can show you some techniques.~
 @53  = ~[Brage]This might be an old well, but if you want to wash the chicken, taking out the water for it surely would have been the better option instead of putting the chicken inside and befoul the water.~
-@54  = ~[Brage]<CHARNAME> - the catapult aims at the gates and that man is confused about his orders. You! Fire the catapult - now!~
+@54  = ~<CHARNAME> - the catapult aims at the gates and that man is confused about his orders. You! Fire the catapult - now!~
 @55  = ~[man at catapult]Yes, sir! Er... wait...~
 @56  = ~[Brage]There is no other way than facing it onwards - may Helm help us.~
 @57  = ~[Brage]We are back - and victorious! Never would I have believed it, had I heard this as a tale!~ 
@@ -77,7 +77,7 @@ Brage seems to be back in Baldur's Gate. He was seen at the Sorcerous Sundries.~
 /* new for v8 */
 @63  = ~[Brage]Then I will be quiet.~
 /* normal SoD -> BGII transition; messenger came */
-@64  = ~[Brage]<CHARNAME>, I will take this as my cue to leave. I need to pursue the hints I got from the smith, and I will start with it now. I thank you for our time together. If the gods will allow it, we will meet again. Farewell, and may the gods bless you.~ 
+@64  = ~<CHARNAME>, I will take this as my cue to leave. I need to pursue the hints I got from the smith, and I will start with it now. I thank you for our time together. If the gods will allow it, we will meet again. Farewell, and may the gods bless you.~ 
 @65  = ~[Brage]I humbly beg to differ, Duke Jannath. The Hero of Baldur's Gate dead, even just incapacitated would not only make <PRO_HIMHER> unable to fight, but would also lead to shaken morale in the Flaming Fist forces. Especially if attacked inside the guarded palace.~
 @66   = ~[Brage]There were no reports about Caelar forming a crusade, or trying to revive Dragonspear Castle before. She just started marching one day, with an army that gets bigger and bigger. I know what effort it is to raise and sustain such a large amount of infantry. This is a planned march. She is forming an army in preparation for a war.~
 @67   = ~[PC reply]But... why the numbers of untrained farmers and village folk - does she really think she could overthrow current authorities with this thrown together army of civilians?~

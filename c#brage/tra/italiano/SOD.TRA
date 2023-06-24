@@ -58,7 +58,7 @@ Brage sembra essere tornato a Baldur's Gate. È stato visto alle Chincaglierie Ma
 @51  = ~[PC reply]Brage, in qualità di ex comandante, può dare qualche consiglio a questo soldato?~
 @52  = ~[Brage]Sei bravo. Hai bisogno di più sparring con avversari abili. Alleniamoci così posso mostrarti qualche tecnica.~
 @53  = ~[Brage]Sarà anche un vecchio pozzo, ma se vuoi lavare il pollo, togliere l'acqua sarebbe stata sicuramente l'opzione migliore invece di mettere il pollo dentro e rovinare l'acqua.~
-@54  = ~[Brage]<CHARNAME> - la catapulta punta ai cancelli e quell'uomo è confuso sui suoi ordini. Tu! Aziona la catapulta - ora!...~
+@54  = ~<CHARNAME> - la catapulta punta ai cancelli e quell'uomo è confuso sui suoi ordini. Tu! Aziona la catapulta - ora!...~
 @55 = ~[man at catapult]Sissignore! Ehm... un momento...~
 @56  = ~[Brage]Non c'è altro modo che affrontarlo a viso aperto: che Helm ci aiuti.~
 @57  = ~[Brage]Siamo tornati - e vittoriosi! Non ci avrei mai creduto, se l'avessi sentito come racconto!~ 
@@ -71,7 +71,7 @@ Brage sembra essere tornato a Baldur's Gate. È stato visto alle Chincaglierie Ma
 /* new for v8 */
 @63  = ~[Brage]Then I will be quiet.~
 /* normal SoD -> BGII transition; messenger came */
-@64  = ~[Brage]<CHARNAME>, I will take this as my cue to leave. I need to pursue the hints I got from the smith, and I will start with it now. I thank you for our time together. If the gods will allow it, we will meet again. Farewell, and may the gods bless you.~ 
+@64  = ~<CHARNAME>, I will take this as my cue to leave. I need to pursue the hints I got from the smith, and I will start with it now. I thank you for our time together. If the gods will allow it, we will meet again. Farewell, and may the gods bless you.~ 
 @65  = ~[Brage]I humbly beg to differ, Duke Jannath. The Hero of Baldur's Gate dead, even just incapacitated would not only make <PRO_HIMHER> unable to fight, but would also lead to shaken morale in the Flaming Fist forces. Especially if attacked inside the guarded palace.~
 @66   = ~[Brage]There were no reports about Caelar forming a crusade, or trying to revive Dragonspear Castle before. She just started marching one day, with an army that gets bigger and bigger. I know what effort it is to raise and sustain such a large amount of infantry. This is a planned march. She is forming an army in preparation for a war.~
 @67   = ~[PC reply]But... why the numbers of untrained farmers and village folk - does she really think she could overthrow current authorities with this thrown together army of civilians?~

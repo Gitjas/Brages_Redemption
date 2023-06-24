@@ -329,7 +329,7 @@
 @322  = ~[DANDAL]Well, or maybe he won't, seeing that Brage is with you.~
 
 /* new for v8.0 */
-@323  = ~[Brage]<CHARNAME>, when I joined your cause, I felt like... like a monster. A murderer, the lowest kind. Now I undestand that I was an unfortunate plaything of the gods - a victim, too. I will never deny what my hands did, never shake the feeling of my guilt, never lose the pressure on my breast that makes it hard to breathe freely. But I will learn to be able to look me in the eye again, and it is thanks to you.~
+@323  = ~<CHARNAME>, when I joined your cause, I felt like... like a monster. A murderer, the lowest kind. Now I undestand that I was an unfortunate plaything of the gods - a victim, too. I will never deny what my hands did, never shake the feeling of my guilt, never lose the pressure on my breast that makes it hard to breathe freely. But I will learn to be able to look me in the eye again, and it is thanks to you.~
 @324  = ~[PC Reply]I thank you for the kind words, but all I did was solve a riddle and show a sword to Nalin.~
 @325  = ~[PC Reply]I didn't help you much with going through your emotions, all I did was listen.~
 @326  = ~[PC Reply]I am truly glad to hear this, Brage.~
@@ -355,7 +355,7 @@
 @346  = ~[Brage](sigh) It grieves my heart to know this boy lost - knowing he could have been saved so simple in a fashion, were his death been more recent. I am sorry for your loss.~
 @347  = ~[Brage]Man - take your son into your arms and praise your god who gave you the power to call him back in such simple a fasion! What would I give for talking to my family again. And here you are, not knowing the luck your Lady bestowed upon you.~
 @348  = ~[Tremain]Oh, I know very well the luck. And HE will know it, too! Up you go!~
-@349  = ~[Brage]<CHARNAME> - you really never know how your spells will turn out?~
+@349  = ~<CHARNAME> - you really never know how your spells will turn out?~
 @350  = ~[PC Reply]That's kind of the concept of handling wild magic, yes.~
 @351  = ~[PC Reply]Well, it's not that bad. Most of the times it works.~
 @352  = ~[PC Reply]Yes, I don't. Do you have a problem with that?~

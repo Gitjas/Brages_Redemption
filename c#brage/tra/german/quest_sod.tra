@@ -18,7 +18,7 @@
 @15 = ~[PC Reply]Nein, Brage. Wir werden das nicht tun. Ich habe nicht die Absicht, nach einem weggelaufenen Mädchen zu suchen.~
 @16 = ~[Uncle]Oh, habt vielen Dank! Ich bin einfach nur gerannt, ich weiß nicht mal mehr, in welche Richtung … Was für eine Tragödie. Erst verliert sie ihre Eltern, während diese mit einer Reisekaravane westlich der Wolkengipfel unterwegs sind, dann müssen wir unser Dorf wegen des Kreuzzugs verlassen, und nun wird sie womöglich im Wald von wilden Tieren gefressen!~
 @17 = ~[Brage]Sie verlor ihre Eltern durch … Macht Euch keine Sorgen, guter Mann. Wenn sie noch am Leben ist, werden wir sie finden und zu Euch bringen.~
-@18 = ~[Brage]<CHARNAME>, wir werden die Gegend sowieso auskundschaften. Vergebt mir, wenn ich eigenmächtig gehandelt habe. Aber – ich habe diesem Mann mein Wort gegeben, und ich bin entschlossen, es zu halten. Werdet Ihr dieser Rettungsmission nicht zustimmen?~
+@18 = ~<CHARNAME>, wir werden die Gegend sowieso auskundschaften. Vergebt mir, wenn ich eigenmächtig gehandelt habe. Aber – ich habe diesem Mann mein Wort gegeben, und ich bin entschlossen, es zu halten. Werdet Ihr dieser Rettungsmission nicht zustimmen?~
 @19 = ~[PC Reply]Natürlich tue ich das, wir lassen ein Mädchen nicht allein im Wald zurück. Ich war nur überrascht, dass Ihr das alleine entschieden habt.~
 @20 = ~[PC Reply]Na gut, ein Mädchen zu retten, solange wir in der Gegend sind, kann nicht schaden.~
 @21 = ~[PC Reply]Es tut mir leid, Brage. Wir haben Verpflichtungen gegenüber des Bündnisses, denen wir nachkommen müssen. Ich bin sicher, dass andere helfen können.~
@@ -73,7 +73,7 @@
 @70 = ~[PC Reply]Nun, Brage, es scheint, als hättet Ihr ein Engagement als Barde. Ich zähle darauf, dass Ihr dem Mädchen ihr Schlaflied singt.~
 @71 = ~[Uncle]Oh, das wäre wirklich großartig!~
 @72 = ~[Imoen]Heh, amnisches Schlaflied? Ich könnte mir vorstellen, dass Brage es singen kann. Wir sollten ihn fragen!~
-@73 = ~[Jaheira]<CHARNAME>, Brage war Vater von zwei kleinen Töchtern. Es ist gut möglich, dass er ihnen dieses Lied vorgesungen hat. Auch wenn es für ihn eine sehr schmerzhafte Erinnerung sein wird, bin ich sicher, dass er es versuchen würde.~
+@73 = ~<CHARNAME>, Brage war Vater von zwei kleinen Töchtern. Es ist gut möglich, dass er ihnen dieses Lied vorgesungen hat. Auch wenn es für ihn eine sehr schmerzhafte Erinnerung sein wird, bin ich sicher, dass er es versuchen würde.~
 @74 = ~[Uncle]Oh, das sind ja wunderbare Neuigkeiten! Ich meine … dass sie lebt. Aber … sie kommt nicht runter? Ja, das klingt nach ihr. Ich habe ihr eingebleut, nicht mit Fremden zu gehen …~
 @75 = ~[PC Reply]Und nun? Wie kriegen wir sie da runter, ohne ihr Angst zu machen?~
 @76 = ~[PC Reply]Ihr müsst uns helfen. Sie kann da nicht mehr lange so sitzen.~
@@ -127,8 +127,8 @@
 @124 = ~[Tilda]Ihr seid immer noch da! (schnüff)~
 @125 = ~[Tilda]Ich … (schnüff)~
 @126 = ~[Tilda]Was?! Ihr seid … Ihr seid so gemein! Das könnt Ihr nicht machen … (schluchz)~
-@127 = ~[Brage]<CHARNAME>! Wir sollten ihr nicht noch mehr Angst machen, als sie ohnehin schon hat. Lass mich für sie singen, wie ihr Onkel es vorgeschlagen hat.~
-@128 = ~[Brage]<CHARNAME>! Wir sollten ihr nicht noch mehr Angst machen, als sie ohnehin schon hat. Es muss einen anderen Weg geben.~
+@127 = ~<CHARNAME>! Wir sollten ihr nicht noch mehr Angst machen, als sie ohnehin schon hat. Lass mich für sie singen, wie ihr Onkel es vorgeschlagen hat.~
+@128 = ~<CHARNAME>! Wir sollten ihr nicht noch mehr Angst machen, als sie ohnehin schon hat. Es muss einen anderen Weg geben.~
 @129 = ~[Imoen]Och, <CHARNAME>, seid doch nicht so gemein! Jetzt ist sie wirklich verängstigt.~
 @130 = ~[Edwin]Kann ich einen Feuerball nutzen – bitte? (Vielleicht verstummt dann das Gejammer und Gekreische dieser Göre für immer. Unerträglich!)~
 @131 = ~[Minsc]Minsk bekommt Kopfschmerzen vom Weinen des Kindes! Boo sagt, die Drohung hat ihr Angst gemacht.~
@@ -170,9 +170,9 @@
 @167 = ~[Brage]Bitte, <CHARNAME>, lasst es mich machen.~
 @168 = ~[PC Reply]In Ordnung, singt ihr vor.~
 @169 = ~[PC Reply]Nein, wir werden das jetzt aussitzen, Brage. Sie wird runterkommen.~
-@170 = ~[Brage]<CHARNAME>, so sehr ich auch den Gedanken schätze, sie nicht alleinzulassen, so kann es doch nicht unser Ziel sein, sie vom Baum zu ängstigen. Lasst mich für sie singen, wie ihr Onkel es vorgeschlagen hat.~
+@170 = ~<CHARNAME>, so sehr ich auch den Gedanken schätze, sie nicht alleinzulassen, so kann es doch nicht unser Ziel sein, sie vom Baum zu ängstigen. Lasst mich für sie singen, wie ihr Onkel es vorgeschlagen hat.~
 @171 = ~[PC Reply]Einen Versuch war es wert.~
-@172 = ~[Brage]<CHARNAME>, so sehr ich auch den Gedanken schätze, sie nicht alleinzulassen, so kann es doch nicht unser Ziel sein, sie vom Baum zu ängstigen. Sie sollte da oben fürs Erste sicher sein. Lasst uns mit ihrem Onkel sprechen, vielleicht hat er eine bessere Idee.~
+@172 = ~<CHARNAME>, so sehr ich auch den Gedanken schätze, sie nicht alleinzulassen, so kann es doch nicht unser Ziel sein, sie vom Baum zu ängstigen. Sie sollte da oben fürs Erste sicher sein. Lasst uns mit ihrem Onkel sprechen, vielleicht hat er eine bessere Idee.~
 @173 = ~[Brage]Sie … sie ist weggerannt! In die Büsche, ich kann sie nicht mehr sehen.~
 @174 = ~[PC Reply]Sie ist wirklich schnell.~
 @175 = ~[PC Reply]Nun, ich denke wir wissen jetzt, wie ihr Onkel sie verlieren konnte.~

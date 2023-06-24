@@ -16,7 +16,7 @@
 @15   = ~[PC Reply]No, Brage. We will not do this. I have no intention to go looking for a runaway girl.~
 @16   = ~[Uncle]Oh, thank you so much! I just ran, I don't even know which direction anymore... What a tragedy. First she loses her parents while traveling on a caravan west of Cloud Peaks, then we have to leave our village because of the crusade, and now she may be eaten by wild animals in the forest!~
 @17   = ~[Brage]She lost her parents due to... Do not worry, good man. If she is still alive, we will find her and bring her to you.~
-@18   = ~[Brage]<CHARNAME>, we will be scouting the area anyway. Forgive me if I overstepped my bounds. But - I gave my word to this man, and I am determined to keep it. Will you not agree to this search and rescue mission?~
+@18   = ~<CHARNAME>, we will be scouting the area anyway. Forgive me if I overstepped my bounds. But - I gave my word to this man, and I am determined to keep it. Will you not agree to this search and rescue mission?~
 @19   = ~[PC Reply]Of course I do, we will not leave a girl alone in the woods. I was just surprised by you speaking up with the decision like this.~
 @20   = ~[PC Reply]Alright, I guess saving one girl while we are around the area will not hurt.~
 @21   = ~[PC Reply]I am sorry, Brage. We have obligations to the city authories we need to attend to. I am sure there will be someone else wo can help.~
@@ -71,7 +71,7 @@
 @70   = ~[PC Reply]Well, Brage, seems you have an engagement as a bard. I'll count on you to sing the girl her lullaby.~
 @71   = ~[Uncle]Oh, that would be wonderful!~
 @72   = ~[Imoen]Hey, Amnian lullaby? I would think that Brage could know it. We should ask him!~
-@73   = ~[Jaheira]<CHARNAME>, Brage was a father of two little daughters. There is a good chance he sang this song to them. Even if it will be a very painful memory to him, I am sure he will be willing to try.~
+@73   = ~<CHARNAME>, Brage was a father of two little daughters. There is a good chance he sang this song to them. Even if it will be a very painful memory to him, I am sure he will be willing to try.~
 @74   = ~[Uncle]Oh, that's wonderful news! I mean... that she's alive. But she's not coming down? Yes, that sounds like her. I told her not to go with strangers...~
 @75   = ~[PC Reply]So, what now? How do we get her down without scaring her?~
 @76   = ~[PC Reply]You have to help us. She can't sit there like that much longer.~
@@ -125,8 +125,8 @@
 @124  = ~[Tilda]You are still there! (sniff)~
 @125  = ~[Tilda]I... (sniff)~
 @126  = ~[Tilda]What?! You are... you are so mean! You can't do that... (sob)~
-@127  = ~[Brage]<CHARNAME>! Let us not frighten her any more as she already is. Let me sing to her like her uncle suggested!~
-@128  = ~[Brage]<CHARNAME>! Let us not frighten her any more as she already is. There must be another way!~
+@127  = ~<CHARNAME>! Let us not frighten her any more as she already is. Let me sing to her like her uncle suggested!~
+@128  = ~<CHARNAME>! Let us not frighten her any more as she already is. There must be another way!~
 @129  = ~[Imoen]Aw, <CHARNAME>, don't be so mean! She's really scared now.~
 @130  = ~[Edwin]Can I use a fireball - please? (Maybe the wailing and shrieking of that brat will be silenced then for good. Unbearable!)~
 @131  = ~[Minsc]Minsc gets a headache from the child's crying! Boo says the threat scared her.~
@@ -168,9 +168,9 @@
 @167  = ~[Brage]Please, <CHARNAME>. Let me?...~
 @168  = ~[PC Reply]Alright, sing to her.~
 @169  = ~[PC Reply]No, we will sit this one out, Brage. She'll come.~
-@170  = ~[Brage]<CHARNAME>, as much as I appreciate the thought not to let her alone, it can't be our goal to frighten her down the tree. Let me sing to her like her uncle suggested!~
+@170  = ~<CHARNAME>, as much as I appreciate the thought not to let her alone, it can't be our goal to frighten her down the tree. Let me sing to her like her uncle suggested!~
 @171  = ~[PC Reply]It was worth a try.~
-@172  = ~[Brage]<CHARNAME>, as much as I appreciate the thought not to let her alone, it can't be our goal to frighten her down the tree. She is safe up there for now. Let us talk to her uncle, maybe he has an idea.~
+@172  = ~<CHARNAME>, as much as I appreciate the thought not to let her alone, it can't be our goal to frighten her down the tree. She is safe up there for now. Let us talk to her uncle, maybe he has an idea.~
 @173  = ~[Brage]She... she is gone! Into the bushes, I can't see her anymore.~
 @174  = ~[PC Reply]She is really quick.~
 @175  = ~[PC Reply]Well, I guess now we know how her uncle lost her.~

@@ -47,11 +47,11 @@
 @44 = ~[Brage]Bitte lasst uns jeden versierten Schmied, Magier oder Priester, den wir unterwegs treffen, um Rat fragen und die, denen wir bereits begegnet sind, erneut befragen. Ich muss so viele Expertenmeinungen wie möglich über das Schwert hören.~
 @45 = ~[Brage]Dazu gehört auch Nalin – ich erinnere mich, dass er ausführliche Notizen über das Schwert und seinen Fluch gemacht hat. Ich würde sie gerne sammeln.~
 @46 = ~[Brage]Ich werde das nur herausbekommen, wenn ich bei meiner Suche Erfolg haben.~
-@47 = ~[Brage]<CHARNAME>, wie ich sehe, ist das verfluchte Schwert wieder in unserem Besitz. Könnte ich … es behalten, damit ich es Experten zeigen kann, die wir unterwegs aufsuchen könnten, wenn es unsere Zeit erlaubt?~
+@47 = ~<CHARNAME>, wie ich sehe, ist das verfluchte Schwert wieder in unserem Besitz. Könnte ich … es behalten, damit ich es Experten zeigen kann, die wir unterwegs aufsuchen könnten, wenn es unsere Zeit erlaubt?~
 @48 = ~[PC Reply]Es tut mir leid, Brage, aber das Schwert wird bald wieder weg sein.~
 @49 = ~[Brage]Ich verstehe. Mit Nalins Notizen wird es trotzdem klappen.~
-@50 = ~[Brage]<CHARNAME>, das verfluchte Schwert ist nicht mehr in unserem Besitz. Ich werde mich darauf konzentrieren, für meine Nachforschungen darüber Nalins Notizen zu verwenden. Das Schwert zu zeigen, wäre von Vorteil, aber es sollte auch so funktionieren.~
-@51 = ~[Brage]<CHARNAME>, wir haben Nalins Aufzeichnungen über das verfluchte Schwert verloren. Es wäre ein Leichtes, ein weiteres Exemplar zu beschaffen, aber mir ist jetzt klar, dass – so gut die Idee auch war, meine Nachforschungen über die Herkunft des Schwertes fortzusetzen – es nicht machbar und eine zu große Ablenkung ist, während ich mit Euch reise. Ich werde mich vorerst auf unsere Aufgaben konzentrieren und meine Suche nach dem verfluchten Schwert fortsetzen, nachdem sich unsere Wege getrennt haben.~
+@50 = ~<CHARNAME>, das verfluchte Schwert ist nicht mehr in unserem Besitz. Ich werde mich darauf konzentrieren, für meine Nachforschungen darüber Nalins Notizen zu verwenden. Das Schwert zu zeigen, wäre von Vorteil, aber es sollte auch so funktionieren.~
+@51 = ~<CHARNAME>, wir haben Nalins Aufzeichnungen über das verfluchte Schwert verloren. Es wäre ein Leichtes, ein weiteres Exemplar zu beschaffen, aber mir ist jetzt klar, dass – so gut die Idee auch war, meine Nachforschungen über die Herkunft des Schwertes fortzusetzen – es nicht machbar und eine zu große Ablenkung ist, während ich mit Euch reise. Ich werde mich vorerst auf unsere Aufgaben konzentrieren und meine Suche nach dem verfluchten Schwert fortsetzen, nachdem sich unsere Wege getrennt haben.~
 @52 = ~[Nalin]Ich werde mir Notizen darüber machen, was ich an diesem Schwert sehe, damit ich alle Details für später habe. Vielleicht werden sie auch von Nutzen sein, wenn wir in Zukunft auf eine ähnliche Waffe stoßen.~
 @53 = ~[Nalin]Brage! Es ist schön Euch wiederzusehen. Meine Sinne sagen mir, dass Ihr in besserer Stimmung seid als damals, als Ihr mit <CHARNAME> von hier weggegangen seid.~
 @54 = ~[Brage]Das bin ich, Nalin. Ich bin gekommen, um Euch nach den Aufzeichnungen zu fragen, die Ihr bei der Untersuchung des Fluchs des Schwertes gemacht habt.~
@@ -59,7 +59,7 @@
 @56 = ~[Brage]Mein Ziel ist es, so viel wie möglich darüber zu erfahren, woher das Schwert stammt, und ihm ein Ende zu bereiten. Eure Hinweise würden mir bei dieser Suche sicher helfen.~
 @57 = ~[Nalin]Natürlich, dies ist eine ehrenvolle Aufgabe. Hier ist eine Kopie. Ich habe alles aufgeschrieben, was mir aufgefallen ist.~
 @58 = ~[Brage]Ich danke Euch von Herzen, Nalin. Ich wünsche Euch alles Gute. <CHARNAME>, bitte, lasst uns jeden versierten Schmied, Magier oder Priester, den wir unterwegs treffen, um Rat fragen und die, die wir bereits getroffen haben, erneut aufsuchen. Ich muss so viele Expertenmeinungen zu dem Schwert hören wie möglich.~
-@59 = ~[Brage]<CHARNAME>, bitte, lasst uns jeden versierten Schmied, Magier oder Priester, den wir unterwegs treffen, um Rat fragen und die, die wir bereits getroffen haben, erneut aufsuchen. Ich muss so viele Expertenmeinungen über das Schwert hören wie möglich.~
+@59 = ~<CHARNAME>, bitte, lasst uns jeden versierten Schmied, Magier oder Priester, den wir unterwegs treffen, um Rat fragen und die, die wir bereits getroffen haben, erneut aufsuchen. Ich muss so viele Expertenmeinungen über das Schwert hören wie möglich.~
 @61 = ~[Taerom]Hmm. Das ist ein schönes Schwert, was die Handwerkskunst angeht. Ich würde sagen, es weist Anzeichen eines in Tethyr verwendeten Stils auf, aber ich sehe auch einige andere Einflüsse. Entweder wurde es von jemandem geschmiedet, der mehrere Schmiedestile kombiniert hat, oder jemand ohne Ahnung hat versucht, eine tethyrische Klinge zu imitieren.~
 @62 = ~[Taerom]Es ist schade, dass Ihr das Originalschwert nicht dabeihabt. Diese Notizen sind umfangreich, aber sie konzentrieren sich eindeutig auf die Verzauberung und das Aussehen des Schwertes, nicht aber auf die handwerklichen Schmiedearbeiten.~
 @63 = ~[PC Reply]Oh, wir haben das alte Schwert bei uns. Die Verzauberung wurde zwar geändert, aber das Schwert sollte noch genauso wie ursprünglich geschmiedet sein. Schaut mal hier.~
@@ -166,7 +166,7 @@
 @164 = ~[female priest]Ich kann Euch nichts sagen, was Ihr nicht wahrscheinlich schon selbst wisst. Passt auf, dass dieses Schwert nicht in die Hände von jemandem gerät, der keinen göttlichen Beistand hat. Das ist es, was ich Euch sagen kann.~
 @165 = ~[male shopkeep]Hmm, verflucht, sagt Ihr? Nein, ich habe es noch nie zuvor gesehen.~
 @166 = ~[PC Reply]Ich nehme an, Eure Organisation verfügt über viele Ressourcen? Mein Gefährte Brage hier hat Fragen zum Ursprung eines verfluchten Schwertes.~
-@167 = ~[Brage]<CHARNAME>, ich werde die Schattendiebe nicht um Hilfe bitten. Ihr wisst es vielleicht nicht, aber sie sind eine korrupte Organisation von Dieben und Meuchelmördern, mit einem großen Zweig, der in Athkatla ansässig ist, der Hauptstadt von Amn. Ich kenne sie sehr gut, denn sie sorgen immer wieder für Ärger.~
+@167 = ~<CHARNAME>, ich werde die Schattendiebe nicht um Hilfe bitten. Ihr wisst es vielleicht nicht, aber sie sind eine korrupte Organisation von Dieben und Meuchelmördern, mit einem großen Zweig, der in Athkatla ansässig ist, der Hauptstadt von Amn. Ich kenne sie sehr gut, denn sie sorgen immer wieder für Ärger.~
 @168 = ~[Husam]Damit wären wir die beste Quelle für Nachforschungen über ein verfluchtes Schwert, würde ich sagen. Ich wäre bereit, Euch dafür ein gutes Angebot zu machen.~
 @169 = ~[PC Reply]Solltet Ihr nicht jede mögliche Quelle nutzen, um an Informationen zu gelangen, Brage? Diese hier ist besonders ergiebig, wie mir scheint.~
 @170 = ~[PC Reply]Seht Ihr? Das klingt gut, finde ich.~
@@ -180,7 +180,7 @@
 @178 = ~[Husam]Ich könnte darauf hinweisen, dass Eure Worte meinen Schattendiebe-Ehre verletzen, aber ich nehme an, das wäre Euch sowieso egal. Also … wie Ihr wollt?~
 @179 = ~[Brage]Ich bin nicht verzweifelt genug, um die Schattendiebe um Hilfe zu bitten, meine Suche hat gerade erst begonnen. Kein Wort mehr darüber! Lasst uns weitergehen, wir haben eine wichtige Aufgabe zu bewältigen.~
 @180 = ~[Husam]Ich hätte Euch ein sehr gutes Angebot machen können, aber Ihr wisst ja, wo ihr uns finden könnt, wenn Ihr das wollt. Stellt nur sicher, dass Ihr das Gold habt, das meine Gilde Euch dann in Rechnung stellen wird.~
-@181 = ~[Brage]<CHARNAME>, wir haben mehrere Experten über das verfluchte Schwert befragt, und ich denke, die Informationen, die wir erhalten haben, sind schon sehr hilfreich. Der Schmied scheint verschiedene Stilelemente verwendet zu haben, was es unmöglich macht, die Klinge einer bestimmten geografischen Region zuzuordnen.~
+@181 = ~<CHARNAME>, wir haben mehrere Experten über das verfluchte Schwert befragt, und ich denke, die Informationen, die wir erhalten haben, sind schon sehr hilfreich. Der Schmied scheint verschiedene Stilelemente verwendet zu haben, was es unmöglich macht, die Klinge einer bestimmten geografischen Region zuzuordnen.~
 @182 = ~[Brage]Der Fluch scheint zu gut geeignet zu sein, um anzunehmen, dass es sich um einen fehlgeschlagenen Versuch handelt, eine magische Waffe herzustellen. Und die Verzauberung ist nicht trivial, sondern würde seltene Zutaten und einen versierten Magier erfordern, um sie zu vollenden. (fauch) Es ist also gut möglich, dass der Fluch zumindest verfeinert wurde, bevor er in meine Richtung geschickt wurde – und zwar durch den Einsatz teurer Ressourcen.~
 @183 = ~[PC Reply]Wir sind immer noch auf der Suche nach der ganzen Verschwörung. Vielleicht finden wir weitere Hinweise darauf, wie das Schwert bestellt wurde.~
 @184 = ~[PC Reply]Wir haben keine weiteren Hinweise auf den Eisenthron gefunden. Ich hätte gedacht, dass Sarevok die Ressourcen der Organisation seines Vaters nutzen würde.~
@@ -203,7 +203,7 @@
 @201 = ~[Brage]Ich kann Euch nicht genug dafür danken, wie gründlich Ihr diese Untersuchung betreibt, <CHARNAME>. Ich kann Euch dafür nur loben.~
 @400 = ~[male messenger]Herr Brage? Ich habe einen Brief für Euch, Herr, vom Sorgsamen Orden der Feinschmiede und Metallschmiede.~ [c#ablank]
 @401 = ~[Brage]Vom Sorgsamen Orden der Fei… Guter Mann, das sind brillante Neuigkeiten. Ich danke Euch, dass Ihr sie mir überbracht habt.~
-@402 = ~[Brage]<CHARNAME>, dies ist eine Notiz über meine Suche nach dem verfluchten Schwert in Tiefwasser. Die Nachforschungen haben anscheinend einige Ergebnisse gebracht.~
+@402 = ~<CHARNAME>, dies ist eine Notiz über meine Suche nach dem verfluchten Schwert in Tiefwasser. Die Nachforschungen haben anscheinend einige Ergebnisse gebracht.~
 @403 = ~[PC reply]Lest es jetzt, Brage. Ich weiß, dass du darauf gewartet hast.~
 @404 = ~[PC reply]Ich brauche Euch hier und konzentriert, Brage. Der Kreuzzug muss gestoppt werden, er ist noch nicht vorbei.~
 @405 = ~[Brage]Gut, mal sehen … Es heißt, sie konnten Unregelmäßigkeiten in den Büchern der Schmiede finden und wissen, wer es getan hat, aber der Schuldige konnte fliehen. Sie konnten seine Spur verfolgen, aber sie verlor sich in … Amn!~
