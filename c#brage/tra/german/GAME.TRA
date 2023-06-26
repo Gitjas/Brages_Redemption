@@ -1,7 +1,7 @@
 // File encoded in: cp1252
 
 @0 = ~Nein! NEIN! Nie wieder werde ich dieses verfluchte Schwert in die Hände nehmen, <CHARNAME> – zwingt mich nicht dazu!~
-@1 = ~Als Ihr BRAGE nach seiner Vergangenheit fragt, räuspert er sich und zögert einen kurzen Moment, bevor er seine Herkunft aus Atkatla erwähnt, die Hauptstadt Amns. Er erzählt über sein Leben in der amnischen Garde und seine Stationierung als Hauptmann in Nashkell. „Ich fand die liebste Frau und hatte zwei wunderbare Töchter – bis ich das verfluchte Schwert in die Hände nahm. Den Rest kennt Ihr, <CHARNAME>. Zwingt mich bitte nicht, es noch einmal zu erzählen.“~
+@1 = ~Als Ihr BRAGE nach seiner Vergangenheit fragt, räuspert er sich und zögert einen kurzen Moment, bevor er seine Herkunft aus Athkatla erwähnt, die Hauptstadt Amns. Er erzählt über sein Leben in der amnischen Garde und seine Stationierung als Hauptmann in Nashkell. „Ich fand die liebste Frau und hatte zwei wunderbare Töchter – bis ich das verfluchte Schwert in die Hände nahm. Den Rest kennt Ihr, <CHARNAME>. Zwingt mich bitte nicht, es noch einmal zu erzählen.“~
 @3 = ~Wenn wir hier fertig sind, dann werde ich mich auf die Suche nach dem Hersteller des verfluchten Schwertes begeben. Ich werde nach Tiefwasser reisen und meine Untersuchungen beim Schmied des eigentlichen Schwertes beginnen – die Fälschung trug immerhin sein Siegel. Nicht, dass ich wirklich erwarte, dort etwas zu finden, aber ich muss dieser Spur nachgehen.~
 @4 = ~Ajantis, wenn Euch Eure Schritte ebenfalls nach Tiefwasser führen, dann könnten wir zusammen reisen.~
 @5 = ~Das ist eine großartige Idee, Brage. Ich schätze Eure Gesellschaft auf dem Weg dorthin.~
