@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~8.3~ 
+VERSION ~9.0~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -232,7 +232,7 @@ ADD_JOURNAL TITLE (@100015) @100016 @100017 @100018 @100019 @100020 @100021 @100
 
 
 
-COPY ~c#brage/creatures/C#BRAGE0.cre~ ~override/C#BRAGE0.cre~
+COPY ~c#brage/creatures/C#BRAGE0.cre~ ~c#brage/install/C#BRAGE0.cre~
 SAY NAME1 #6225 // Brage
 SAY NAME2 #6225 // Brage
 SAY MORALE ~~ [c#brag30]   
@@ -298,7 +298,7 @@ COPY ~c#brage/spl/c#be1rcu.spl~ ~override~ //silent remove curse
 
 /* give items to cre */
 
-COPY_EXISTING ~C#BRAGE0.cre~ ~override/c#brage1.cre~
+COPY ~c#brage/install/C#BRAGE0.cre~ ~override/c#brage1.cre~
 SAY BIO @1
   ADD_CRE_ITEM ~CHAN01~ #0 #0 #0 ~IDENTIFIED~ ~ARMOR~
   ADD_CRE_ITEM ~SW2H02~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
@@ -558,7 +558,7 @@ END //BG1 content
 ACTION_IF GAME_INCLUDES ~sod~ THEN BEGIN
 
 /* for a new SoD game, we need better equipped cre */
-COPY_EXISTING ~C#BRAGE0.cre~ ~override/C#BRAGES.cre~
+COPY ~c#brage/install/C#BRAGE0.cre~ ~override/C#BRAGES.cre~
 SAY BIO @1
 WRITE_EVALUATED_ASCII 0x2cc ~C#BRAGES~ #8
 WRITE_EVALUATED_ASCII 0x248 ~C#BRAGES~ #8   // custom Override script
@@ -916,7 +916,7 @@ COMPILE EVALUATE_BUFFER ~c#brage/dialogue/npcbanter_bg2.d~
 
 
 /* for a new SoA game, we need better equipped cre */
-COPY_EXISTING ~C#BRAGE0.cre~ ~override/C#BRAGE2.cre~
+COPY ~c#brage/install/C#BRAGE0.cre~ ~override/C#BRAGE2.cre~
 SAY BIO ~##~
 WRITE_EVALUATED_ASCII 0x2cc ~c#brage2~ #8
 WRITE_EVALUATED_ASCII 0x248 ~c#brage2~ #8   // custom Override script
@@ -932,7 +932,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 /* ToB */
 /* for a new ToB game, we need even better equipped cre */
-COPY_EXISTING ~C#BRAGE0.cre~ ~override/C#BRAGET.cre~
+COPY ~c#brage/install/C#BRAGE0.cre~ ~override/C#BRAGET.cre~
 SAY BIO ~##~
 WRITE_EVALUATED_ASCII 0x2cc ~c#brag25~ #8
 WRITE_EVALUATED_ASCII 0x248 ~c#brag25~ #8   // custom Override script
@@ -1221,6 +1221,20 @@ SAY SELECT_RARE1 ~~ [c#brag31]
 SAY SELECT_RARE2 ~~ [c#brag32]   
 SAY REACT_TO_DIE_GENERAL ~~ [c#brag23] 
 
+////////////////////////////////////////////////////////
+/* Give Brage unique Two-Handed Sword +1 */
+////////////////////////////////////////////////////////
+
+BEGIN @9029 /* ~Give Brage unique Two-Handed Sword +1~ */ 
+DESIGNATED 5 
+LABEL BragesRedemption-UniqueSword
+REQUIRE_COMPONENT ~c#brage.tp2~ 0 @9002 /* ~Brage's Redemption mod main component needs to be installed.~ */
+REQUIRE_PREDICATE (GAME_IS ~bgt eet bgee~) @9006
+
+COPY_EXISTING ~c#brage1.cre~ ~override~ 
+  REMOVE_CRE_ITEM ~SW2H02~
+  ADD_CRE_ITEM ~c#q13swd~ #0 #0 #0 ~IDENTIFIED~ ~weapon1~ EQUIP
+
 
 
 
@@ -1448,6 +1462,7 @@ PRINT @9014 /* ~Northern Tales of the Sword Coast detected: Installing crossmod.
 END //ntotsc
 
 /* Thalantyr Item Upgrade */
+/* deprecated
 ACTION_IF MOD_IS_INSTALLED ~SETUP-thalan.tp2~ ~0~ THEN BEGIN 
 PRINT @9018 /* ~Thalantyr Item Upgrade mod detected.~ */
 /* @34   = ~Why, of course I can! I can remove the curse and make its fury more useful to you. I will need two Scrolls of Remove Curse and two Scrolls of Horror. As payment, I'll take only 3000 gold. Should I make this item for you?~ */
@@ -1455,6 +1470,10 @@ PRINT @9018 /* ~Thalantyr Item Upgrade mod detected.~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_thalantyritemupgrade.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_thalantyritemupgrade.baf~ EVALUATE_BUFFER
 END //Thalantyr Item Upgrade mod
+*/
+/* crossmod without detection - independent on install order */
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_thalantyritemupgrade.d~
+  EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_thalantyritemupgrade.baf~ EVALUATE_BUFFER
 
 
 /* Transitions */

@@ -35,3 +35,6 @@
 @9026  = ~bg1ub "The Mysterious Vial" detected: Installing crossmod...~
 @9027  = ~bg1re "The Honest Lies of Two Riversides" detected: Installing crossmod...~
 @9028  = ~Ascalon's Questpack "Feast for the Gnolls" detected: Installing crossmod...~
+
+/* new for v9 */
+@9029  = ~Give Brage unique Two-Handed Sword +1~

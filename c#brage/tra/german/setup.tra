@@ -35,3 +35,6 @@
 @9026 = ~bg1ub "The Mysterious Vial" entdeckt: Installiere Crossmod ...~
 @9027 = ~bg1re "The Honest Lies of Two Riversides" entdeckt: Installiere Crossmod ...~
 @9028 = ~Ascalons Questpack "Ein Fest fuer die Gnolle" entdeckt: Installiere Crossmod ...~
+
+/* new for v9 */
+@9029  = ~Brage hat seinen speziellen Zweihaender +1~

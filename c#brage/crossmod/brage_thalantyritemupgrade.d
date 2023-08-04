@@ -1,6 +1,3 @@
-/* set variable so Thalantyr remembers he saw the sword */
-ADD_TRANS_ACTION THALAN BEGIN %thalan_itemupgrade_thsw2h01% END BEGIN 1 END ~SetGlobal("C#BE_BG1_thsw2h01","GLOBAL",1)~
-
 APPEND C#BrageJ
 IF WEIGHT #-1
 ~Global("C#Brage_BG1_Hasthsw2h01","GLOBAL",1)~ THEN sword_reforged_tiu

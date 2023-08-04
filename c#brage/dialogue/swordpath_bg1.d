@@ -325,7 +325,7 @@ IF ~~ THEN THALAN sword_evaluation
 == C#BrageJ @69 /* It... is indeed this weapon. */
 == THALAN @70 /* [Thalantyr]Yes, I see. Very well versed enchantment spells are needed to create a curse like this - there was a mighty mage involved in creating this cursed weapon. This cannot be done by a smith alone. */ 
 == THALAN IF ~OR(2)
-PartyHasItem("thsw2h01") Global("C#BE_BG1_thsw2h01","GLOBAL",1)~ THEN @71 /* [Thalantyr]I remember the sword - and changing the curse to something useful, indeed. I was not aware it was the one that put you into such misery. */
+PartyHasItem("thsw2h01")~ THEN @71 /* [Thalantyr]I remember the sword - and changing the curse to something useful, indeed. I was not aware it was the one that put you into such misery. */
 == C#BrageJ @72 /* [Brage]I thank you dearly for the information, Master Thalantyr. */
 END
 IF ~~ THEN DO ~IncrementGlobal("C#BE_BG1SwordPathThanks","GLOBAL",1)
@@ -874,6 +874,7 @@ PartyHasItem("SW2H03")
 InParty("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID) Detect("C#Brage")~ THEN @139 /* [Shandalar]It is a cursed weapon, I can see that - very clearly, by the way, so stop waving it in my face! What else is there to it? What do you think I am, a weapon smith? Well, I am not. */
 == SHANDAL2 IF ~GlobalGT("C#BE_BG1SwordPath","GLOBAL",0) GlobalLT("C#BE_BG1SwordPath","GLOBAL",30)
 Global("C#BE_BG1SwordPathShandalar","GLOBAL",1)
+!PartyHasItem("SW2H03")
 PartyHasItem("c#be1sp1")
 InParty("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID) Detect("C#Brage")~ THEN @140 /* [Shandalar]Well, I see the priest already wrote everything down that there is to see about the curse. What else do you expect? What do you think I am, a weapon smith? Well, I am not. */
 END
