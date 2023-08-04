@@ -90,6 +90,8 @@ Lasst WeInstall c#brage in Euren Spielordner laufen, um die Modifikation zu inst
 <h1><a name="compat" id="compat">Kompatiblit&auml;t mit anderen Mods</a></h1>
 <div class="section">
 Brage's Redemption wurde mit WeiDU und mit dem Anspruch gr&ouml;&szlig;tm&ouml;glicher Kompatibilit&auml;t mit anderen Mods erstellt. Die Mod sollte jedoch vor dem BG1NPC Projekt installiert werden, damit die M&ouml;glichkeit, Brage auch Oublek auszuliefern, nicht &uuml;berschrieben wird. Dies kann auch erreicht werden, indem die Komponente "Brages Schwert" der <a href="https://www.baldurs-gate.de/index.php?resources/jasteys-baldurs-gate-mini-quests-and-begegnungen-modifikation.17/">Baldur's Gate Mini Quests and Encounters Mod (bgqe)</a> vor dem BG1NPC Project installiert wird. Wird der Quest durch bgqe installiert, wird er von der Mod Brage's Redemption entsprechend erkannt.<br />
+Die Crossmod-Komponente sollte nach allen anderen Mods installiert werden, damit der Crossmod-Inhalt installiert wird. Liste der Mods mit Crossmod f&uuml;r v9.0: AC_QUEST, AjantisBG1, AjantisBG2, BG1NPC, bg1re, bg1ub, bgqe, bst, c#sodboabri, c#endlessbg1, EET, FinchNPC, imoen4ever, ntotsc, transitions. Crossmod mit Thalantyr's Item Upgrade ist in der Crossmod-Komponente enthalten aber unabhängig von der Installationsreihenfolge.<br />
+Achtung: Die Syntax der Installationsreihenfolge für Project Infinity enthält nur die entscheidenden Abhängigkeiten für die Hauptmodkomponente. Die Crossmod-Komponente muss spät genug installiert werden, damit aller Crossmod enthalten ist.<br />
 Bitte beachten: damit Brage in SoD entsprechend auf die Spielereignisse reagiert, muss die Hauptkomponente (2. Komponente, das "Trackingsystem") der Mod "Road to Discovery" installiert sein.<br />
 </div>
 
@@ -101,6 +103,8 @@ Damit Brage in BG1 als NSC in die Gruppe aufgenommen werden kann, muss zuerst se
 Die Quest um seine Unschuld zu beweisen kann vor dem ersten Betreten der Minen von Nashkell erledigt werden. Siehe hierzu die Tipps in der Sektion Walkthrough/Spoilers.<br />
 <br />
 Als zweite, optionale Komponente gibt es die Möglichkeit, dem originalen Brage im Spiel auch das Mod-Potrait und Soundset zuzuweisen. Hiervon wird sein allererster Bebrüßungsdialog unter Einfluss des Fluches nicht verändert.<br />
+Die dritte, optionale Komponente gibt Brage seinen speziellen Zweihänder +1 statt des generischen. Dies ist dann von INteresse, wenn Ihr noch Tweakmods installiert, die die generellen Zweihänder im Spiel verändern (z.B. die Komponente von SCS, die auch +1-Waffen in BG1 brechen lässt). In diesem Fall ist Brages Schwert dann davon ausgenommen. HINWEIS: Dies ist nur der Fall, wenn die Tweaks NACH der Installation der Inhalte vom Quest "Barges Schwert" installiert werden.<br />
+Die vierte Komponente enthält die crossmodinhalte. Die Installationsreihenfolge in der c#brage.ini bezieht sich auf diese Komponente: installiert sie nach allen anderen Quest- und NPC-Mods.<br />
 <h2> <a name="quest" id="quest">Startquest: Brages Schwert (BG1-Inhalt)</a></h2>
 Durch die Mod kann man die Hintergr&uuml;nde um Brages verfluchten Zweihänder erkunden und nachweisen, dass Brage Opfer einer Intrige geworden ist und ihn so vor dem Galgen retten - wenn man das m&ouml;chte.<br />
 Voraussetzung ist, dass man Brage lebend nach Nashkell bringt. Hierzu f&uuml;gt die Mod die M&ouml;glichkeit ein, ihn auch an Oublek auszuliefern, wie es im Originalspiel urspr&uuml;nglich vorgesehen aber nicht spielbar war. (Hierzu die obige Warnung bzgl. der Installationsreihenfolge beachten.)<br />
@@ -165,7 +169,8 @@ Hinweis: Falls man Borda bei der Originalbegegnung beim Xvartdorf nicht get&ouml
 <strong>Acifer:</strong> Portrait, Promotion-Bild, Ideen, D&D-Wissen. Danke f&uuml;r die tollen Bilder, durch sie hat das Arbeiten an dieser Mod noch mehr Spa&szlig; gemacht!</br>
 <strong>Lumorus:</strong> Danke f&uuml;r die Idee, aus Brage einen NSC zu machen und den Hinweis, dass er ja aus Amn kommt und man ihn daher ohne Verrenkungen in BGII in Atkatla wiedertreffen kann. Ohne h&auml;tte ich an dieser Mod nicht gearbeitet!</br> 
 </br>
-Italienische Übersetzung von <strong>Coland</strong>, korrekturgelesen von <strong>Colmar</strong>. Vielen Dank!</br>
+<strong>Shai Hulud:</strong> &Uuml;bersetzer (deutsch).</br>
+Italienische Übersetzung von <strong>Coland</strong>, korrekturgelesen von <strong>Colmar</strong>.</br>
 </br>
 Danke an BioWare, Black Isle und Wizards of the Coast f&uuml;r Baldur's Gate 1, 2 und die Infinity Engine, und BeamDog f&uuml;r das Neuauflegen der Spiele.</br>
 Danke ans Kerzenburgforum f&uuml;r das Hosten der Mod und das Bereitstellen von Austauschm&ouml;glichkeiten mit anderen Moddern und Spielern.</br>
@@ -192,6 +197,7 @@ Danke an alle, die diese oder meine anderen Modifikationen spielen, und f&uuml;r
 <h2> <a name="links" id="links">Weitere Links</a></h2>
       <ul> 
 		<li><a href="https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game">DLC Merger</a></li>
+		<li><a href="https://forums.beamdog.com/discussion/74335/project-infinity-mod-manager-for-baldurs-gate-icewind-dale-planescape-torment-and-eet/p1">Project Infinity - mod manager for Baldur's Gate, Icewind Dale, Planescape Torment, and EET</a></li>
       </ul>
 </div>
 
@@ -204,8 +210,15 @@ This mod is also not developed, supported, or endorsed by BioWare, Black Isle St
 
 <h1><a name="version" id="version">Versionshistorie</a></h1>
 <div class="section">
-Version 8.3:</br>
+Version 9.0:</br>
+- German version completed, by Shai Hulud, proofread by jastey.</br>
+- New component: "Give Brage unique Two-Handed Sword +1" (for BG1 part only).</br>
 - Brage's comment on being arrested should fire not too early.</br>
+- "Brage's Sword": updated to version in bgqe 26.1 (Laryssa should spawn after showing the sword to Nalin if Borda is not dead, too.)</br>
+- Crossmod with Thanalntyr's Item Upgrade mod is now independent on install order.</br>
+- Install order syntax was nerfed in the .ini to lift restrictions for the main component. Make sure to install the crossmod component after all other relevant mods according to readme.</br>
+- the file c#brage0.cre will no longer clatter the override folder.</br>
+- small text correction.</br>
 </br>
 Version 8.2:</br>
 - Brage's comment on being arrested should fire and not loop.</br>
