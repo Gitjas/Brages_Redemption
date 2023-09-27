@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~9.0~ 
+VERSION ~9.1~ 
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -1245,6 +1245,7 @@ COPY_EXISTING ~c#brage1.cre~ ~override~
 BEGIN @9016 /* ~Brage's Redemption: Crossmod Content~ */ 
 DESIGNATED 10 
 LABEL BragesRedemption-Crossmod
+METADATA ~AFTER = AC_QUEST, AjantisBG1, AjantisBG2, BG1NPC, bg1re, bg1ub, bgqe, bst, c#sodboabri, c#endlessbg1, EET, FinchNPC, imoen4ever, ntotsc, sotsc, transitions~
 REQUIRE_COMPONENT ~c#brage.tp2~ 0 @9002 /* ~Brage's Redemption mod main component needs to be installed.~ */
 
 /* BG1 */
@@ -1460,6 +1461,12 @@ ACTION_IF FILE_EXISTS_IN_GAME ~NTHASDAR.dlg~ THEN BEGIN
 PRINT @9014 /* ~Northern Tales of the Sword Coast detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_ntotsc.d~
 END //ntotsc
+
+/* Shades of the Sword Coast */  
+ACTION_IF FILE_EXISTS_IN_GAME ~L#KOBWMN.dlg~ THEN BEGIN 
+PRINT @9030 /* ~Shades of the Sword Coast detected: Installing crossmod...~ */
+  COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_sotsc.d~
+END//SotSC
 
 /* Thalantyr Item Upgrade */
 /* deprecated
