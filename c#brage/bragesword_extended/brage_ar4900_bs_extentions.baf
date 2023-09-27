@@ -1,7 +1,7 @@
 IF
 	InMyArea(Player1)
 	Global("OublekBounty1","GLOBAL",1)
-	!Dead("Brage")
+	Dead("Brage")
 	PartyHasItem("c#q13swd")
 	PartyHasItem("c#q13le2")	
 	GlobalLT("C#BE_JournalEntries","MYAREA",0)
