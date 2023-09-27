@@ -124,7 +124,7 @@ IF ~~ THEN + joinbg2_08_b
 END
 
 IF ~~ THEN joinbg2_08_b
-SAY ~I have some savings... I will manage until then. So - I would join with you now?~
+SAY ~The churches still owe me some payment... I will manage until then. So - I would join with you now?~
 ++ ~Agreed. I would be grateful if you'd come along, Brage.~ + joinbg2_06
 ++ ~No, I don't have a use for you yet.~ + joinbg2_04
 END
