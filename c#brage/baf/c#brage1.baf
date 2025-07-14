@@ -275,7 +275,7 @@ IF
 	!Detect([EVILBUTBLUE])
 	CombatCounter(0)
 	Dead("Davaeorn")  // Davaeorn
-	AreaCheck("%CloakwoodMines_L4%")
+	//AreaCheck("%CloakwoodMines_L4%")
 	Global("C#BE_DefeatedDavaeorn","GLOBAL",0)
 THEN
 	RESPONSE #100

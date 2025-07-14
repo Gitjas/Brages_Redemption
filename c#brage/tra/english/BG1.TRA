@@ -283,7 +283,7 @@
 @282  = ~Probably. Make sure you give him my "greetings," when you meet him, will you?~
 @283  = ~Davaeorn! Long have we searched for you! In the name of my beloved wife and children, it was all your doing! You will pay for what you did!~
 @284  = ~And who would you be? It matters not. You will die today!~
-@285  = ~Dead! He is dead! The man who sent the cursed sword to me as a "diversion" for the Nashkel Guard! The man who regarded my life, and with it my family, my comrades... innocents... as disposable pawns in his game for power and riches.~
+@285  = ~Dead! He is dead! "D." - Davaeorn, the man who sent the cursed sword to me as a "diversion" for the Nashkel Guard! The man who regarded my life, and with it my family, my comrades, innocents as disposable pawns in his game for power and riches.~
 @286  = ~I will cherish this moment, <CHARNAME>. Just for a short moment... And then we will march on, to the next level of this conspiracy.~
 @287  = ~Mulahey, Tazok, Davaeorn, Sarevok - and now Rieltar... More names on our list, <CHARNAME>. (clenches his teeth) Let us continue on our pursuit!~
 @288  = ~Scar is... is murdered?~
@@ -363,3 +363,4 @@
 @354  = ~[PC Reply]If you can't handle it, leave.~
 @355  = ~[Brage]I admit I am... taken aback by the thought of it. And yet, you came this far, proved my innocence... and are still standing. I trust that you know what you are doing. I should give you credit for your achievements and not assume the worst. I *will* give you credit and trust in your abilities. Let us move on.~
 @356  = ~[Brage]That's not my intention.~
+@357  = ~[Brage]I thank you, <CHARNAME>, for taking care of this scoundrel. I will cherish this thought - even if it is only for a short moment.~

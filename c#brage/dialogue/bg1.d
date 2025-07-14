@@ -512,16 +512,19 @@ I_C_T DAVAEO 0 C#BE_DAVAEO_0
 @284 /* ~And who would be you? It matters not. You will die today!~ */
 END
 
-APPEND C#BrageJ
+
 
 /* Davaeorn defeated */
-IF ~Global("C#BE_DefeatedDavaeorn","GLOBAL",1)~ THEN davaeorn_dead
-SAY @285 /* ~Dead! He is dead! The man who sent the cursed sword to me as a "diversion" for the Nashkel Guard! The man who regarded my life, and with it my family, my comrades, innocents as disposable pawns in his game for power and riches.~ */
-= @286 /* ~I will cherish this moment, <CHARNAME>. Just for a short moment... And then we will march on, to the next level of this conspiracy.~ */
-IF ~~ THEN DO ~SetGlobal("C#BE_DefeatedDavaeorn","GLOBAL",2)~ EXIT
+CHAIN
+IF ~Global("C#BE_DefeatedDavaeorn","GLOBAL",1)~ THEN C#BrageJ davaeorn_dead
+@285 /* ~Dead! He is dead! "D." - Davaeorn, the man who sent the cursed sword to me as a "diversion" for the Nashkel Guard! The man who regarded my life, and with it my family, my comrades, innocents as disposable pawns in his game for power and riches.~ */
+== C#BrageJ IF ~AreaCheck("%CloakwoodMines_L4%")~ THEN @286 /* ~I will cherish this moment, <CHARNAME>. Just for a short moment... And then we will march on, to the next level of this conspiracy.~ */
+== C#BrageJ IF ~!AreaCheck("%CloakwoodMines_L4%")~ THEN @357 /* I thank you, <CHARNAME>, for taking care of this scoundrel. I will cherish this thought - even if it is only for a short moment.~ */
 END
+IF ~~ THEN DO ~SetGlobal("C#BE_DefeatedDavaeorn","GLOBAL",2)~ EXIT
 
 
+APPEND C#BrageJ
 /* learning the name Rieltar from various letters */
 /* "SCRLDRA" "SCRL2S" "SCRL2T" "SCRL2U" */
 
@@ -553,8 +556,10 @@ ADD_TRANS_ACTION ~KOLVAR~ BEGIN 6 10 END BEGIN END
 ADD_TRANS_ACTION ~NEB~ BEGIN 3 END BEGIN END
 ~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
 
+/*
 ADD_TRANS_ACTION ~TAMOKO~ BEGIN 3 6 7 END BEGIN END
 ~SetGlobal("C#BE_KnowScarMurder","GLOBAL",1)~
+*/
 
 CHAIN
 IF ~Global("C#BE_ScarMurderTalk","GLOBAL",1)~ THEN C#BrageJ scar_murder
