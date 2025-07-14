@@ -218,10 +218,11 @@ LANGUAGE ~Italiano~
          ~c#brage/tra/italiano/journal.tra~
 
 LANGUAGE ~Simplified Chinese(by Lzw104522773)~
-         ~schinese~   
+         ~schinese~
          ~c#brage/tra/schinese/setup.tra~
          ~c#brage/tra/schinese/game.tra~
          ~c#brage/tra/schinese/journal.tra~
+
 
 BEGIN @9000 /* ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga~ */
 DESIGNATED 0
@@ -495,8 +496,8 @@ COPY_EXISTING ~%ArchaeologicalSite%.are~ ~override~
     fj_type         = 0    //trap
     fj_box_left    = 3618  //kleinstes x
     fj_box_top     = 2087   //kleinstes y
-    fj_box_right   = 3827  //gr  tes x 
-    fj_box_bottom  = 2240 //gr  tes y
+    fj_box_right   = 3827  //groesstes x
+    fj_box_bottom  = 2240 //groesstes y
     fj_loc_x       = 3700
     fj_loc_y       = 2100
     fj_vertex_0    = 3690 + (2240 << 16) 
