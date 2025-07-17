@@ -41,3 +41,6 @@
 
 /* new for v9.1 */
 @9030  = ~检测到剑湾之影模组：正在安装跨模组内容……~
+
+/* new for v10.0 */
+@9031  = ~The quest "Brage's Sword" from bgqe needs to be installed.~
