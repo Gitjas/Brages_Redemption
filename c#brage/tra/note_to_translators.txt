@@ -1,37 +1,12 @@
-v##:
+v10:
 changed line:
-@58 in swordpath.tra
-
-v9.1 Still missing in Italian:
-
-changed lines:
--sod.tra: @2, @3
+@285 in bg1.tra
 
 new lines:
 
--BG1.tra: @321-@356
--brage_bg1re.tra: @26-@30
--brage_bst.tra: @9-@24
--game.tra: @126-@128; @500-@502; @1050-@1052; @1100-@1105; @1200-@1202; @200000-@200001
--joining.tra: @42-@47
--npcbanter_bg1.tra: @120-@153
--pid.tra: @15-@22
--sod.tra: @63-@470
--setup.tra: @9007 - @9030
+-BG1.tra: @357
 
-new files:
--brage_acquest.tra
--brage_ajantis_sod.tra
--BRAGE_bg1npc.TRA
--brage_bg1ub.tra
--brage_bgqe_bitchqueen.tra
--brage_bgqe_sylar.tra
--brage_finch.tra
--brage_i4e_sod.tra
--brage_sotsc.tra
--brage_thalantyritemupgrade.tra
--journal.tra
--npcbanter_sod.tra
--quest_sod.tra
--resurrection_pondering.tra
--swordpath.tra
+-brage_bgqe_bragessword.tra: @0
+
+
+
