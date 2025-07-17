@@ -22,7 +22,7 @@
   <p><strong><a href="https://www.baldurs-gate.de/index.php">A Kerzenburgforum Modification</a><br />  </strong>
     Author: jastey<br />
 	Portrait Artist: Acifer<br />
-    <strong> Languages:</strong> German, English, Italian<br />
+    <strong> Languages:</strong> German, English, Italian, Simplified Chinese<br />
     <strong>Platform: </strong>Windows, OSX, Linux</p> 
   <p>Brage's Redemption is a Quest Mod for BG1 and an NPC Mod for the whole Baldur's Gate Epic. It is natively compatible with BG:EE, SoD, BGII, BGT, BGII:EE, EET. No Tutu.</p>
     <img src="readme/bragepromo.png"><br /><br />
@@ -70,9 +70,8 @@ Make sure the game is not running while installing the mod.<br />
 When installing or uninstalling, do not close the DOS window by clicking on the X button! Instead, press the Enter key when instructed to do so.<br />
 
 <h2> <a name="eegames" id="quest">Notes to modding EE games</a></h2>
-If you use SoD from GOG or Steam, you need to prepare your game with DLC Merger or modmerge before installing any mods:<br />
+If you use SoD from GOG or Steam, you need to prepare your game with DLC Merger before installing any mods:<br />
 <a href="https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game">argent77's DLC Merger</a><br />
-<a href="https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1">modmerge</a>(if in doubt, use the DLC Merger instead)<br />
 For Enhanced Edition it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 <br />
 The EE games are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update as even after reinstalling the mods, you might not be able to continue with your old savegames. 
@@ -90,34 +89,41 @@ Run WeInstall c#brage in your game folder to install the mod. Then run wine BGMa
 
 <h1><a name="compat" id="compat">Compatibility with other mods</a></h1>
 <div class="section">
-Brage's Redemption was implemented with WeiDU with highest priority to compatibility with other mods. However, the BG1 quest should be installed before the BG1NPC Project so no added reply options will be overwritten. For this, either install the mod's main component before BG1NPC Project. You also have the possibility to install the beginnings quest via the <a href="https://www.gibberlings3.net/mods/quests/bgqe/">Baldur's Gate Mini Quests and Encounters Mod (bgqe, component "Brage's Sword")</a> If the quest was installed via bgqe, it will be detected accordingly when installing Brage's Redemption Mod.<br />
+Brage's Redemption was implemented with WeiDU with highest priority to compatibility with other mods.<br />
+Brage's Redemption needs the "Brage's Sword" component of <a href="https://www.gibberlings3.net/mods/quests/bgqe/">Baldur's Gate Mini Quests and Encounters Mod (bgqe)</a> as a prerequisite. Install this before Brage's Redemption.<br />
 The Crossmod component should be installed after all other mods so the crossmod content gets installed. List of mods with crossmod for v9.0: AC_QUEST, AjantisBG1, AjantisBG2, BG1NPC, bg1re, bg1ub, bgqe, bst, c#sodboabri, c#endlessbg1, EET, FinchNPC, imoen4ever, ntotsc, sotsc, transitions. Crossmod with Thalantyr's Item Upgrade is included into the Crossmod component but independent on install order.<br />
-Note that the install order syntax for Project Infinity only contains the crucial dependncies for the main mod component. Make sure to install the crossmod component late enough so all crossmod will be included.<br />
+Note that the install order syntax for Project Infinity only contains the crucial dependencies for the main mod component. Make sure to install the crossmod component late enough so all crossmod will be included.<br />
 Please note: For Brage to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be included in your install (independent of install order).<br />
 </div>
 
 <h1><a name="content" id="content">Description</a></h1>
 <div class="section">
 <h2> <a name="generalcontent" id="generalcontent">General Info</a></h2>
-The mod introduces a quest extention to the Brage quest in the game (BG1). Brage is the captain of the Nashkel guard and went missing after killing his family. The quest extention to prove his innocence is also published as the component "Brage's Sword" in the mod <a href="https://www.gibberlings3.net/mods/quests/bgqe/">bgqe</a>. Brage's Redemption inserts this quest in case bgqe is not installed as well, and will expand the quest "Brage's Sword" to make it more convenient (addd journal entries etc.)<br /> 
+The mod adds Brage as a joinable NPC after the quest "Brage's Sword" from <a href="https://www.gibberlings3.net/mods/quests/bgqe/">bgqe</a> is finished. Installing this component from bgqe before Brage's Redemption is a prerequisite. <br />
 To gain Brage as a joinable NPC, the PC needs to prove his innocence as well as give him back his real sword. After leaving the temple once after that, Brage can be visited inside the temple of Helm in Nashkel and will offer to join the PC.<br />
 The quest to make Brage a joinable NPC can be completed before clearing the Nashkel mines. See the spoiler section for information.<br />
 <br />
 As a second, optional component, the mod's portrait and soundset can be assigned to the original game Brage, as well. This will not change his very first line if met while he is still under the influence of the curse.<br />
-The third, optional component gives Brage his special two-handed sword +1 instead of the generic one. This is of interest if you also install tweak mods that change the general two-handed weapons in the game (e.g. the component from SCS that also makes +1 weapons in BG1 breakable). In this case, Brage's sword is then exempt from this. NOTE: Due to the unique sword being a copy of the generic one upon the time of install, this will only be the case if the tweaks are installed AFTER installing the content from the "Barge's Sword" quest AND if the tweak mod(s) do not alter unique mod items.<br />
-The fourth component contains the crossmod content. The installation order in c#brage.ini refers to this component: install it after all other quest and NPC mods.<br />
+<br />
+The third, optional component gives the joinable Brage his special two-handed sword +1 instead of the generic one. This is of interest if you also install item mods that use generic magic weapons for ingredients, the unique sword will no longer be recognized for these recipes.<br />
+<br />
+The fourth component contains the crossmod content. The installation order mentioned refers to this component: install it after all other quest and NPC mods.<br />
 <h2> <a name="quest" id="quest">Beginnings Quest: Brage's Sword (BG1)</a></h2>
 This content gives the player the possibility to prove that Brage fell victim to an intrigue and save him from a death by the gallows - if the PC wants to. There is an evil quest option, which will bring Brage to the gallows (i.e. he will be gone from the game). In this case, he will not be available as a joinable NPC.<br />
 Brage has to be brought to Nashkel alive. The mod also adds the possibility to bring him to Oublek (i.e. the Nashkel authorities) instead of to the temple. This was unfinished original game content. (For this possibility, please note the install order as mentioned above).<br />
 Please note: For Brage to react to game events in SoD accordingly, the main component (Tracking System, 2nd component) of "Road to Discovery" needs to be included in your install (independent of install order).<br />
 <h2> <a name="npc" id="npc">Brage as a Joinable NPC</a></h2>
 <strong>BG1:</strong><br /><br />
-After proving his innocence, bringing him his sword, and leaving the temple once - representing the time that passes so Brage can come to terms with what happened - Brage will ask to join the PC's group to both repay them and also to be part of bringing the culprits of the intrigue to justice. He doesn't have to be accepted right away but can also be recruited later.<br />
+After proving his innocence, bringing him his sword, and leaving the temple once - representing the time that passes so Brage can come to terms with what happened - Brage will ask to join the PC's group to both repay them and also to be part of bringing the culprits of the intrigue to justice. He doesn't have to be accepted right away but can also be recruited later. Please note, however, that the story content, i.e. his dialogue path and reactions to game events assumes that he is in the party for most of it, also because it is strongly linked to the HC's opponents. If you take him very late or only occasionally, it might be that you will not witness his full story path.<br />
 The BG1 part contains a friendship path with 11 dialogues, dealing with Brage's guilt and the loss of his family. The friendship path is best suited for a caring, friendly PC. Brage banters with some of the BioWare NPCs. As of version Beta 1, the mod includes banters for Brage with the following NPCs: Ajantis, Eldoth, Garrick, Imoen, Minsc & Dynaheir, Montaron, Viconia, Xzar, Yeslick. There are dialogues with interjections of Edwin, Jaheira, and Khalid, also. Brage reacts to the main game events. He has a lot of interjections in Nashkel as he is well-known in the town. As of version Beta 1, there are no other interjections to game events. Brage has s small player initiated dialogue (PID) which will not be updated throughout BG1.<br />
 To experience all banters with Eldoth and Viconia, most cursed items should be identified and placed in the group's inventory.<br />
-After 2/3 of the friendship path, Brage will tell that he wants to visit his family's grave in Nashkel. The PC does not have to be with him while it happens, but more content will be witnessed if they do (otherwise, Brage will talk about it upon rejoining).<br /><br />
+After 2/3 of the friendship path, Brage will tell that he wants to visit his family's grave in Nashkel. The PC does not have to be with him while it happens, but more content will be witnessed if they do (otherwise, Brage will talk about it upon rejoining).<br />
+After Davaeorn is defeated and the main mourning path is done, Brage will show interest in finding the people who made the cursed sword. For this, the group might need to revisit Nalin in the Temple of Helm and ask around at weapon smiths and mages to gain information on the cursed sword. The cursed sword does not need to be in the groups inventory for this.<br />
+<br />
 <strong>SoD:</strong><br /><br />
-As of version 9, SoD content is completed. Brage can be found in the Sorcerous Sundries either if he was in party in BG1 or if it is a new SoD game. <br /><br />
+As of version 9, SoD content is completed. Brage can be found in the Sorcerous Sundries either if he was in party in BG1 or if it is a new SoD game. <br />
+There is a quest about a missing refugee child. The child can be found in Dead Man's Pass (bd7300), at [994.142]. There is several possibilities to get her down from the tree. Brage can play a crucial role in this but he doesn't have to be in the group to solve the quest. (Quest will not start without him in party, though.)<br />
+<br />
 <strong>BGII:</strong><br /><br />
 There is no official BGII content yet. There exists some BGII content only available in English:<br />
 Brage will be inside the temple of Helm in the Temple's District after the PC received the quest for the Unseeing Eye from one of the temples. The quest has to be accepted for Brage to spawn. After that, he can be taken into the group.<br />
@@ -140,7 +146,7 @@ Brage uses the according language soundsets "HoW_Male_2" from IWD:TotLM, for bot
 Brage's portrait was generously created and provided by Acifer.<br /><br />
     <img src="readme/brage.png">
 <h2> <a name="spoiler" id="spoiler">Walkthrough / Spoilers</a></h2>	
-***** Spoiler for the BG1 Beginnings Quest *****<br />
+***** Spoiler for the BG1 Beginnings Quest ("Brage's Sword" from bgqe) *****<br />
 The merchant Borda (original game content) plays a role in this quest. Originally, he can be met in the area with the Xvart village. Depending on quest status the PC can confront him here. If he was already met, there will be a second meeting. <br />
 Brage's cursed sword plays a role, as well. It has to be presented to Nalin at some point. After that, it is no longer needed for this mod (and can e.g. be used for Thalantyr's Item Upgrade Mod).<br /> 
 The quest can be solved completely before clearing the Nashkel mines but it can also be solved later.<br />
@@ -169,7 +175,8 @@ Note: For the case that the merchant Borda was not killed upon the first meeting
 <strong>Lumorus:</strong> ideas. Thank you for the idea of making Brage an NPC and pointing out that he is from Amn (which makes meeting him in BGII so much more natural.) Without it I would not have started working on this mod!</br> 
 </br>
 <strong>Shai Hulud:</strong> German translator.</br>
-Italian Translation by <strong>Coland</strong>, proofread by <strong>Colmar</strong>.</br>
+Italian Translation by <strong>Coland</strong>, proofread by <strong>Colmar</strong>. Completed and revised by <strong>improb@bile</strong> (v9.1).</br>
+Simplified Chinese version by <strong>Lzw104522773</strong> (v9.1).</br>
 </br>
 Thanks to BioWare, Black Isle and Wizards of the Coast for Baldur's Gate 1, 2 and the Infinity Engine, and BeamDog for the revival of the games including the SoD campaign.</br>
 Thanks to Kerzenburgforum for hosting the mod and giving a place for exchange of ideas.</br>
@@ -210,6 +217,16 @@ This mod is also not developed, supported, or endorsed by BioWare, Black Isle St
 
 <h1><a name="version" id="version">Version History</a></h1>
 <div class="section">
+Version 10.0:</br>
+- Intro quest "Brage's Sword" is removed from this mod. bgqe component "Brage's Sword" is now a prerequisite for Brage's Redemption mod.</br>
+- Simplified Chinese version added (v9.1), by Lzw104522773.</br>
+- Italian version completed (v9.1), by improb@bile.</br>
+- In case Brage joins late or is not present if Davaeorn is defeated: open up trigger of his reaction to advance his story.</br>
+- Crossmod with bgqe "Babysitting Quest": correted mixup of Sarah's and Tom's lines.</br>
+- Install error if bgqe was installed to BG:EE in an EET install fixed. Some crossmod content will not be installed in this case.</br>
+- Typo corrections.</br>
+- Updated links and description in readme.</br>
+</br>
 Version 9.1:</br>
 - Journal entries when receiving the quest items from Borda should be written into journal.</br>
 - Crossmod with SotSC added: crying woman in Nashkel mine area.</br>
