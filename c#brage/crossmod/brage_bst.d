@@ -25,7 +25,7 @@ I_C_T ~BSSHUCK~ 27 C#BE_BSSHUCK_27
 END
 
 
-/* "sword path". ask about the sowrd's origins and special characteristic. */
+/* "sword path". ask about the sword's origins and special characteristic. */
 
 /* Master Shizell */
 EXTEND_BOTTOM bstrmage 6 //%open_shop%
