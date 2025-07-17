@@ -7,7 +7,7 @@
 @9004  = ~This mod needs to be installed before EET_End.~
 
 /* new for v6.2 */
-@9005  = ~You need to modmerge your SoD game before installing any mods.~
+@9005  = ~You need to install DLC Merger to your SoD game before installing any mods.~
 @9006  = ~This component makes only sense for BG1.~
 
 /* new for v7 */
@@ -41,3 +41,6 @@
 
 /* new for v9.1 */
 @9030  = ~Shades of the Sword Coast detected: Installing crossmod...~
+
+/* new for v10.0 */
+@9031  = ~The quest "Brage's Sword" from bgqe needs to be installed.~

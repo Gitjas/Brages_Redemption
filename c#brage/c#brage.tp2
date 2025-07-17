@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~9.1~ 
+VERSION ~10.0~
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -227,6 +227,7 @@ LANGUAGE ~Simplified Chinese(by Lzw104522773)~
 BEGIN @9000 /* ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga~ */
 DESIGNATED 0
 LABEL BragesRedemption-main
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~c#q13swd.itm~ @9031
 REQUIRE_PREDICATE GAME_IS ~tob bgt bgee bg2ee eet~ @9003
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9004
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9004
@@ -314,15 +315,7 @@ SAY BIO @1
   ADD_CRE_ITEM ~POTN08~ #3 #0 #0 ~IDENTIFIED~ ~qitem1~
 
 
-
-/* older bgqe installed? detect "Brage's Sword" quest */
-ACTION_IF NOT ((MOD_IS_INSTALLED ~setup-bgqe.tp2~ ~11~) OR (FILE_EXISTS_IN_GAME ~c#q13brn.dlg~)) THEN BEGIN
-
-/* bgqe not installed - install quest */
-  INCLUDE ~c#brage/tpa/brages_sword.tpa~
-END 
-
-/* Add needed variable */
+/* Add needed variable to kick of Barge as joinable NPC after sword quest */
 <<<<<<<< ...inlined/brage_bg1_add.d
 /* do not use REPLACE_ACTION_TEXT if you can help it */
 REPLACE_ACTION_TEXT BRAGE
@@ -331,57 +324,6 @@ REPLACE_ACTION_TEXT BRAGE
 
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~...inlined/brage_bg1_add.d~
-
-
-
-ACTION_IF NOT (FILE_EXISTS_IN_GAME ~c#bgqe_21.mrk~) THEN BEGIN
-
-
-/* some improvements to the bgqe quest */
-/* (I can't incorporate these because players might use older versions of bgqe's "Brage's Sword" quest) */
-
-ADD_JOURNAL TITLE (@1021) @1022 @1023 @1024 USING ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~
-
-
-/* Nalin gives a hint after Brage was brought in */
-COMPILE EVALUATE_BUFFER ~c#brage/bragesword_extended/bragesword_extentions.d~
-
-
-EXTEND_BOTTOM ~%Nashkel_TempleofHelm%.bcs~ ~c#brage/bragesword_extended/brage_ar4802_bs_extentions.baf~ EVALUATE_BUFFER
-
-/* remove journal entry from Nalin's hint after sword quest was received; let Oublek initiate dialogue after Brage was brought to him */
-EXTEND_BOTTOM ~%Nashkel%.bcs~ ~c#brage/bragesword_extended/brage_ar4800_bs_extentions.baf~ 
-EVALUATE_BUFFER
-USING ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~ 
-
-/* Hick won't be longer in the baracks after Brage was brought in */
-EXTEND_BOTTOM ~%Nashkel_Garrison%.bcs~ ~c#brage/bragesword_extended/brage_ar4810_bs_extentions.baf~ EVALUATE_BUFFER 
-
-
-
-/* add journal entries if quest items from Borda are picked up */
-EXTEND_BOTTOM ~%NashkelCarnival%.bcs~ ~c#brage/bragesword_extended/brage_ar4900_bs_extentions.baf~ 
-EVALUATE_BUFFER USING ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~ 
-EXTEND_BOTTOM ~%XvartVillage%.bcs~ ~c#brage/bragesword_extended/brage_ar4700_bs_extentions.baf~ 
-EVALUATE_BUFFER USING ~c#brage/tra/autotra/%LANGUAGE%/bragesword_extentions.tra~ 
-
-
-/* Patch Borda, the merchant for cursed items: mage faighting script, changed resistances, quest items */
-
-COMPILE ~c#brage/bragesword_extended/c#q13bor.baf~
-
-COPY ~c#brage/bragesword_extended/Borda.cre~ ~override/Borda.cre~
-
-/* custom Borda */
-COPY ~c#brage/bragesword_extended/Borda.cre~ ~override/c#q13bor.CRE~
-SAY INITIAL_MEETING ~~
-    WRITE_ASCII 0x280 ~c#q13bor~ #32 // set DV
-WRITE_EVALUATED_ASCII 0x2cc ~c#q13bor~ #8
-WRITE_EVALUATED_ASCII 0x248 ~c#q13bor~ #8   // custom Override script
-
-
-END /* -- end of bgqe quest improvements */
-
 
 /* Nalin will talk to the PC */
 EXTEND_BOTTOM ~%Nashkel_TempleofHelm%.bcs~ ~c#brage/baf/brage_ar4802.baf~ EVALUATE_BUFFER
@@ -518,17 +460,40 @@ BUT_ONLY
 /* quest path: "sword path" BG1 content */
 
 /* Nalin's Notes */
-
 COPY ~C#Brage/items/c#be1sp1.itm~ ~override~
 SAY NAME1 @127 /* ~Nalin's Notes~ */
 SAY NAME2 @127 /* ~Nalin's Notes~ */
 SAY UNIDENTIFIED_DESC @128 
 SAY IDENTIFIED_DESC @128 
 
-// Get state for NALIN %nalin_takes_notes% (in brages_sword.d)
-/* @74 /* ~A cursed sword was put into Commander Brage's trusting hands. This, my friend, changes everything. 'Twas not long years of fighting that turned a good man cruel and numb against the pain of others. Brage will have to atone for what he did, but not for why he did it, as long as if you succeed in proving this trickery!~ */
-*/
-OUTER_SET nalin_takes_notes = STATE_WHICH_SAYS 74 IN ~c#brage/tra/autotra/%s/BRAGES_SWORD.tra~ FROM ~%tutu_var%NALIN~
+/* only if Brage's Sword quest was installed onto the same game folder (not to BG:EE for EET) */
+ACTION_IF MOD_IS_INSTALLED ~bgqe.tp2~ ~11~ THEN BEGIN
+// Get state for NALIN %nalin_takes_notes% (in bgqe's brages_sword.d)
+/* @74 ~A cursed sword was put into Commander Brage's trusting hands. This, my friend, changes everything. 'Twas not long years of fighting that turned a good man cruel and numb against the pain of others. Brage will have to atone for what he did, but not for why he did it, as long as if you succeed in proving this trickery!~ */
+OUTER_SET nalin_takes_notes = STATE_WHICH_SAYS 74 IN ~bgqe/tra/%s/brages_sword.tra~ FROM ~%tutu_var%NALIN~
+<<<<<<<< ...inlined/nalin_mentions_notes.d
+/* Insert Nalin's taking notes into original dialogue of the Brage's Sword quest */
+I_C_T ~%tutu_var%NALIN~ %nalin_takes_notes% C#BE_NalinTakesNotes
+//I_C_T ~%tutu_var%NALIN~ 5 C#BE_NalinTakesNotes
+== ~%tutu_var%NALIN~ @52 /* ~[Nalin]I will take notes about what I see in this sword, so I'll have all the details for later. Maybe they will also be of some use if we might come across a similar weapon in the future.~ */
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/nalin_mentions_notes.d~ USING ~c#brage/tra/autotra/%s/swordpath.tra~
+
+/* @124  = ~Authorities need to know about these happenings. I would very much like to help you find the culprits behind this scheme, but I can't leave my post, and a Nashkel soldier investigating on the Sword Coast wouldn't be a good idea. All I can do is to wish you luck in tracking down who is behind all this.~ */
+OUTER_SET bardolan_thanks = STATE_WHICH_SAYS 124 IN ~bgqe/tra/%s/brages_sword.tra~ FROM ~%tutu_var%Bardol~
+<<<<<<<< ...inlined/bardolan_thanks.d
+/* Brage will react to Bardolan if he is already in party */
+I_C_T ~%tutu_var%Bardol~ %bardolan_thanks% C#BE_NalinTakesNotes
+//I_C_T ~%tutu_var%NALIN~ 5 C#BE_BardolanThanks
+== C#BrageJ IF ~InParty("C#Brage")
+InMyArea("C#Brage")
+!StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @0 /* ~Thank you, Acting Commander. You are doing enough here.~ */
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/bardolan_thanks.d~ USING ~c#brage/tra/autotra/%s/brage_bgqe_bragessword.tra~
+END //bgqe is installed here
+
 ACTION_IF GAME_IS ~bgt~ THEN BEGIN
   COMPILE EVALUATE_BUFFER ~c#brage/dialogue/swordpath_bg1_bgt.d~
 			~c#brage/dialogue/swordpath_bg1.d~
@@ -1316,28 +1281,25 @@ END //bg1ub - The Mysterious Vial
 
 
 /* bgqe - babysitting quest */
-ACTION_IF FILE_EXISTS_IN_GAME ~C#Q03008.dlg~ THEN BEGIN 
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q03008.dlg~ THEN BEGIN
 PRINT @9009 /* ~bgqe "babysitting quest" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_babysitting.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_babysitting.baf~ EVALUATE_BUFFER
 END //babysitting quest
 
 /* bgqe - Nashkell Monster */
-ACTION_IF FILE_EXISTS_IN_GAME ~C#Q04004.dlg~ THEN BEGIN 
-PRINT @9010 /* ~bgqe "Nashkell Monster" detected: Installing crossmod...~ */
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q04004.dlg~ THEN BEGIN
+  PRINT @9010 /* ~bgqe "Nashkell Monster" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_nashkelmonster.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_nashkelmonster.baf~ EVALUATE_BUFFER
-USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
+  USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
 
-  /* more content for bgqe v21 and higher */
-  ACTION_IF FILE_EXISTS_IN_GAME ~c#bgqe_21.mrk~ THEN BEGIN
-	<<<<<<<< ...inlined/brage_nashkelmonster_add.d
+  <<<<<<<< ...inlined/brage_nashkelmonster_add.d
 	I_C_T C#Q04007 3 C#BE_C#Q04007_3
 	== ~c#bragej~ IF ~InParty("C#Brage") InMyArea("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID)~ THEN @15 /* ~So it turns out to be an artefact of which we are warned that it could be dangerous... We should heed his warning and bring it to a magical skilled person.~ */
 	END
-	>>>>>>>>
-	COMPILE ~...inlined/brage_nashkelmonster_add.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
-  END
+  >>>>>>>>
+  COMPILE ~...inlined/brage_nashkelmonster_add.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/brage_bgqe_nashkelmonster.tra~
 END //Nashkell Monster
 
 /* bgqe - The House of the Lady and the Bitch Queen's Temple */
@@ -1351,21 +1313,21 @@ END
 
 
 /* bgqe - Warm place for Noober */
-ACTION_IF FILE_EXISTS_IN_GAME ~C#LCNOOB.dlg~ THEN BEGIN 
+ACTION_IF FILE_EXISTS_IN_GAME ~C#LCNOOB.dlg~ THEN BEGIN
 PRINT @9011 /* ~bgqe "Warm place for Noober" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_noober.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_noober.baf~ EVALUATE_BUFFER
 END //Warm place for Noober
 
 /* bgqe - Fallen Paladin */
-ACTION_IF FILE_EXISTS_IN_GAME ~C#Q05001.dlg~ THEN BEGIN  
+ACTION_IF FILE_EXISTS_IN_GAME ~C#Q05001.dlg~ THEN BEGIN
 PRINT @9012 /* ~bgqe "Fallen Paladin in Baldur's Gate" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_fallenpaladin.d~
   EXTEND_BOTTOM ~C#Brage1.bcs~ ~c#brage/crossmod/brage_bgqe_fallenpaladin.baf~ EVALUATE_BUFFER
 END //Fallen Paladin
 
 /* bgqe - Bodies for a Good Cause */
-ACTION_IF FILE_EXISTS_IN_GAME ~WASYLAR.dlg~ THEN BEGIN 
+ACTION_IF FILE_EXISTS_IN_GAME ~WASYLAR.dlg~ THEN BEGIN
 PRINT @9021 /* ~bgqe "Bodies for a Good Cause" detected: Installing crossmod...~ */
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bgqe_sylar.d~
 END //Bodies for a Good Cause
@@ -1373,14 +1335,6 @@ END //Bodies for a Good Cause
 /* bst */
 ACTION_IF FILE_EXISTS_IN_GAME ~bswellma.cre~ THEN BEGIN  
 PRINT @9013 /* ~Balduran's Seatower detected: Installing crossmod...~ */
-/*
-// Get state @# for bstrmage %open_shop% 
-/* ~Is there anything else you want?~ */
-  OUTER_SET open_shop = STATE_WHICH_SAYS ## IN ~bst/language/%s/bst_setup.TRA~ FROM ~bstrmage~
-// Get state @# for bssmgl02 %smuggler_37% 
-/* ~So, do you have any news for me?~ */
-  OUTER_SET smuggler_37 = STATE_WHICH_SAYS ## IN ~bst/language/%s/bst_setup.TRA~ FROM ~bssmgl02~
-*/
 /* @1  = ~Thank you for taking the time, <CHARNAME>. I appreciate it.~ */
 OUTER_SET brage_thanks_1 = STATE_WHICH_SAYS 1 IN ~c#brage/tra/autotra/%s/swordpath.tra~ FROM ~C#BrageJ~
 /* @2  = ~Thank you for repeatedly taking the time for this, <CHARNAME>. I really appreciate it.~ */

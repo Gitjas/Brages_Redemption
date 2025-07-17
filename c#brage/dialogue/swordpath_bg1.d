@@ -200,13 +200,6 @@ END
 
 END //APPEND
 
-/* Insert Nalin's taking notes into original dialogue of the Brage's Sword quest */
-
-I_C_T ~%tutu_var%NALIN~ %nalin_takes_notes% C#BE_NalinTakesNotes
-//I_C_T ~%tutu_var%NALIN~ 5 C#BE_NalinTakesNotes
-== ~%tutu_var%NALIN~ @52 /* ~[Nalin]I will take notes about what I see in this sword, so I'll have all the details for later. Maybe they will also be of some use if we might come across a similar weapon in the future.~ */
-END
-
 /* speak to Nalin about his notes on the sword */
 /* for both with sword or without; distiction is at the end for different journal entries */
 
