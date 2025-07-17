@@ -1,7 +1,7 @@
-@0  = ~[Brage]Imoen! That was a rather dangerous undertaking. Magic is not a toy! What were you thinking?~
-@1  = ~[Imoen]But... but I created this beautiful tome... Aw, your tone is killing the fun, Brage. Look at how shiny it looks!~
-@2  = ~[Brage]So you were considering nothing and just casting magic like you would throw a pebble into a pond? Just like a pebble stirs the waters, magic might stir *anything* - unwanted and dangerous - if you don't know what you are doing!~
-@3  = ~[Imoen]Aw... Why are you so agitated? I just played a little... - Are you scared? You were scared!~
-@4  = ~[Brage]Magic is dangerous if not handled reasonably, Imoen. I - I'm fond of your joyfulness, but *magic* is not the right place to "play a little". I fear for your safety. And ours, if I'm honest.~
-@5  = ~[Imoen]Alright, I won't be reckless with it. I promise! Yes, sir! Got 'cha. Little Imoen didn't plan on frightening anyone with her attempts in magic.~
-@6  = ~[Brage]I know you mean it - now, so I thank you. Please, stay away from it until you have a teacher who can restrain any unwanted effects in the future. Magic is *not* a toy... and it is never to be taken lightly.~
+@0 = ~[Brage]Imoen! È stata un'impresa piuttosto pericolosa. La magia non è un giocattolo! A cosa stavi pensando?~
+@1 = ~[Imoen]Ma... ma ho creato questo bellissimo tomo... Oh, il tuo tono sta rovinando il divertimento, Brage. Guarda quanto è scintillante!~
+@2 = ~[Brage]Quindi non stavi pensando a nulla e stavi solo lanciando la magia come se stessi lanciando un sassolino in uno stagno? Proprio come un sassolino agita le acque, la magia potrebbe agitare *qualsiasi cosa* - indesiderata e pericolosa - se non sai cosa stai facendo!~
+@3 = ~[Imoen]Aw... Perché sei così agitato? Ho solo giocato un po'... - Hai paura? Eri spaventato!~
+@4 = ~[Brage]La magia è pericolosa se non viene gestita con moderazione, Imoen. Io... io apprezzo la tua allegria, ma la *magia* non è il posto giusto per "giocare un po'". Temo per la tua sicurezza. E la nostra, a dire il vero.~
+@5 = ~[Imoen]Va bene, non sarò avventata. Lo prometto! Sì, signore! Capito. La piccola Imoen non aveva intenzione di spaventare nessuno con i suoi tentativi di magia.~
+@6 = ~[Brage]So che dici sul serio, quindi ti ringrazio. Per favore, sta' lontana da questa cosa finché non avrai un insegnante che possa limitare qualsiasi effetto indesiderato in futuro. La magia *non* è un giocattolo... e non va mai presa alla leggera.~

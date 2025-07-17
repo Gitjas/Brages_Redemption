@@ -9,7 +9,6 @@
 /* new for v7 */
 @7  = ~Hannah~
 
-
 @110  = ~La Spada di Brage~
 @111  = ~Spada a Due Mani di Brage +1~
 /* unidentified description bg1:totsc */
@@ -90,7 +89,7 @@ Non utilizzabile da:
  Ladro~
 /* identified description bgee / eet */
 @116  = ~La spada a due mani deriva dalla spada lunga. I fabbri hanno sempre cercato nuovi modi per migliorare le armi già esistenti. Nel tentativo di potenziare la spada lunga, la lama dell'arma venne allungata. Si rese così necessario rendere più grande l'impugnatura, e le due mani divennero indispensabili per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare coloro che combattono a dorso di un destriero e spezzare le formazioni armate di lance. 
-Questa fa paricolarmente bene il suo lavoro ed è stata incantata con alcune proprietà magiche.
+Questa fa particolarmente bene il suo lavoro ed è stata incantata con alcune proprietà magiche.
 
 Questa è la spada che Brage ha ordinato da Waterdeep.
 
@@ -101,7 +100,6 @@ Danno: 1d10+1 (tagliente)
 Fattore-velocità: 9
 Tipo di Competenza: Spada a Due Mani
 Tipo: A due mani
-
 Richiede:
 Forza 14
 
@@ -122,18 +120,7 @@ TAZOK~
 pretendo il pagamento della seconda metà di quanto concordato: che il Comandante abbia massacrato solo la sua famiglia e non metà della guarnigione non è colpa mia. Le forze di Nashkel sono indebolite e questo era quanto prevedeva il nostro accordo! Puoi inviare qualsiasi lettera per me al mio contatto al Carnevale di Nashkel. Ho trovato un mercante abbastanza disperato da comprare alcune delle mie pozioni speciali, e trasmetterà qualsiasi lettera.
 
 Borda~
-@121  = ~Lettera al Capitano Tollar Kieres~
-@122  = ~Questa lettera porta il sigillo ufficiale della Lega dei Mercanti di Baldur's Gate. Ti è stata consegnata da Aldeth Sashenstar ed è indirizzata al Capitano Kieres che attualmente risiede nella Casa dei Conti della Lega nella parte nord-orientale della città.~ 
 
-@123  =  ~Anello con Sigillo della Lega dei Mercanti~
-@124  =  ~Questi anelli vengono consegnati solo a persone che godono della piena fiducia della Lega dei Mercanti. Servono come identificazione e dovrebbero garantirti un accesso libero e completo alla Casa dei Conti. 
-Si dice che questi anelli siano una delle ragioni del successo della Lega, e che siano in qualche modo incantati.
-
-STATISTICHE:
-
-Abilità durante l'uso:
- - Fortuna 3 volte al giorno
- - Charmare Persone 3 volte al giorno~
 @125  = ~La spada a due mani deriva dalla spada lunga. I fabbri hanno sempre cercato nuovi modi per migliorare le armi già esistenti. Nel tentativo di potenziare la spada lunga, la lama dell'arma venne allungata. Si rese così necessario rendere più grande l'impugnatura, e le due mani divennero indispensabili per poter brandire l'arma agevolmente. La funzione principale di una spada a due mani è quella di disarcionare coloro che combattono a dorso di un destriero e spezzare le formazioni armate di lance. Questa fa particolarmente bene il suo lavoro ed è stata incantata con alcune proprietà magiche.
 
 Questa è la spada che Brage ha ordinato da Waterdeep.
@@ -145,18 +132,16 @@ Danno: 1d10+1 (tagliente)
 Fattore-velocità: 9
 Tipo di Competenza: Spada a Due Mani
 Tipo: A due mani
-
 Richiede:
 Forza 14
 
 Peso: 12~
 
 /* new for v8 */
-@126  = ~By the gods! What was that? The boy turned into a fiend!~
-@127  = ~Nalin's Notes~
-@128  = ~Nalin wrote down everything he could distinguish about the cursed sword in neat hand writing. The length and weight of the sword is mentioned as well as what Nalin suspects to be the nature of the curse. The notes are adorned by a rough drawing of the sword hilt and pommel.
-You should make sure Brage can hold on to these notes for his further investigations about the cursed sword's origins.~
-
+@126 = ~Per gli dèi! Cos'era quello? Il ragazzo si è trasformato in un demonio!~
+@127 = ~Appunti di Nalin~
+@128 = ~Nalin annotò tutto ciò che riuscì a distinguere sulla spada maledetta con una calligrafia precisa. Vengono menzionati la lunghezza e il peso della spada, nonché quella che Nalin sospetta essere la natura della maledizione. Gli appunti sono impreziositi da un disegno approssimativo dell'elsa e del pomo della spada.
+Dovresti assicurarti che Brage possa conservare questi appunti per le sue ulteriori indagini sulle origini della spada maledetta.~
 
 /* SoD */
 @500 = ~Tilda~
@@ -185,25 +170,24 @@ You should make sure Brage can hold on to these notes for his further investigat
 @1017 = ~Questa era una bestia potente che è morta qui. Non riesco a immaginare lo sforzo necessario per abbatterla.~
 @1018 = ~Quelle porte mi intimidiscono, anche se non saprei dire esattamente il perché.~
 
+
 /* brage_bd0101.baf */
-@1050 = ~I'll be marching with the Flaming Fist...~
-@1051 = ~I'm looking foreward to being able to help these people - in a way.~
-@1052 = ~Yes, this smells of war. (sigh)~
+@1050 = ~Marcerò con il Pugno Fiammeggiante...~
+@1051 = ~Non vedo l'ora di poter aiutare queste persone, in un certo senso.~
+@1052 = ~Sì, questo puzza di guerra. (sospiro)~
 
 /* quest bafs */
-@1100  = ~*sob*~
-@1101  = ~*muffled sound*~
-@1102  = ~*sniff*~
-@1103  = ~You could have sworn you heard sounds coming from the big fir, like sobbing of a child. If you want to know where it comes from, you will need to look closer.~
-@1104  = ~You stare into the dark of the fir tree, finally seeing some movement up in the branches.~
-@1105  = ~You need to come closer to do anything here.~
+@1100 = ~*sob*~
+@1101 = ~*suono soffocato*~
+@1102 = ~*sniff*~
+@1103 = ~Avresti giurato di aver sentito dei suoni provenire dal grande abete, come il singhiozzo di un bambino. Se vuoi sapere da dove provengono, devi guardare più da vicino.~
+@1104 = ~Fissi il buio dell'abete, vedendo finalmente un movimento tra i rami.~
+@1105 = ~Devi avvicinarti per fare qualcosa qui.~
 
 /* c#brages.baf */
-@1200  = ~[Brage]Are you sure you want to wield this axe? The chance of going berserk might sound slim, but when it happens and one who is dear to you will be standing next to you, you might wake up from a nightmare.~
-@1201  = ~[Brage]Please, do not make me wield this axe. The chance of going berserk might sound slim, but when it happens and one who is dear to you will be standing next to me - we might wake up from a nightmare.~
-@1202  = ~[Brage]I will not wear this for long, <CHARNAME>. This... "helmet" is a disgrace to any skillful warrior's pride.~
-
+@1200 = ~[Brage]Sei sicuro di voler impugnare quest'ascia? Le probabilità di impazzire potrebbero sembrare scarse, ma quando succederà e avrai accanto a te una persona a te cara, potresti svegliarti da un incubo.~
+@1201 = ~[Brage]Per favore, non farmi impugnare quest'ascia. Le probabilità di impazzire potrebbero sembrare scarse, ma quando succederà e avrai accanto a me una persona a te cara, potremmo svegliarci da un incubo.~
 
 /* lines used in several files */
-@200000 = ~My comrade Brage here has a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~
-@200001   = ~[PC Reply]My comrade Brage here has information about a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~
+@200000 = ~Il mio compagno Brage ha una spada maledetta che vorrebbe mostrarti. Potresti darle un'occhiata e dirci quello che sai al riguardo?~
+@200001 = ~[Risposta PC]Il mio compagno Brage ha informazioni su una spada maledetta che vorrebbe mostrarti. Potresti darle un'occhiata e dirci quello che sai al riguardo?~

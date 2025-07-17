@@ -3,7 +3,7 @@
 @9002  = ~Il componente principale della mod La Redenzione di Brage deve essere installato.~
 
 /* new for v6 */
-@9003  = ~Questa mod non è compatibile con questo gioco.~
+@9003  = ~Questa mod non e compatibile con questo gioco.~
 @9004  = ~Questa mod deve essere installata prima di EET_End nella tua installazione EET.~
 
 /* new for v7 */
@@ -35,9 +35,12 @@
 @9028  = ~Rilevato Ascalon's Questpack "Feast for the Gnolls": Installazione crossmod...~
 
 /* new for v9 */
-@9029  = ~Give Brage unique Two-Handed Sword +1~
+@9029  = ~Conferisci a Brage la sua esclusiva spada a due mani +1~
 
 /* new for v9.1 */
 @9030  = ~Rilevato "Shades of the Sword Coast": Installazione crossmod...~
+
+/* new for v10.0 */
+@9031  = ~The quest "Brage's Sword" from bgqe needs to be installed.~
 
 

@@ -46,9 +46,9 @@
 @41   = ~Ti coprirò le spalle, <CHARNAME>.~
 
 /* new for v8 */
-@42   = ~I see. You will find me in the Temple District in Athkatla. I will return to the Temple of Helm.~
-@43   = ~I thank you. I'll be where you'll expect me.~
-@44   = ~<CHARNAME>, I will finish the rescue of the missing girl while you don't need me, is that alright?~
-@45   = ~No, please just wait here. I'll be back in a moment and we can pursue the search together.~
-@46   = ~Yes, that sounds great. Do that.~
-@47   = ~That's fine by me, but I want you to return to the camp so I'll find you there.~
+@42 = ~Capisco. Mi troverai nel Distretto del Tempio di Athkatla. Tornerò al Tempio di Helm.~
+@43 = ~Ti ringrazio. Sarò dove mi aspetterai.~
+@44 = ~<CHARNAME>, finirò il salvataggio della ragazza scomparsa mentre non hai bisogno di me, va bene?~
+@45 = ~No, per favore aspetta qui. Torno tra un attimo e possiamo proseguire la ricerca insieme.~
+@46 = ~Sì, sembra fantastico. Fallo.~
+@47 = ~Per me va bene, ma voglio che tu torni all'accampamento così ti troverò lì.~
