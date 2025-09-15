@@ -8,5 +8,6 @@ new lines:
 
 -brage_bgqe_bragessword.tra: @0
 
+-setup.tra: @9031
 
 
