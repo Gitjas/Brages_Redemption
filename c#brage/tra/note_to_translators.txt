@@ -1,12 +1,14 @@
-v10:
-changed line:
-@285 in bg1.tra
+v10.1:
+changed lines to adjust the number of his daughters (three, not two). Please check for your language whether the number is specified elsewhere, too.
 
-new lines:
+bg1.tra:
+@103
 
--BG1.tra: @357
+GAME.TRA:
+@1
 
--brage_bgqe_bragessword.tra: @0
+quest_sod.tra:
+@73
 
 
 
