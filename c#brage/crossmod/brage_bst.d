@@ -28,7 +28,7 @@ END
 /* "sword path". ask about the sword's origins and special characteristic. */
 
 /* Master Shizell */
-EXTEND_BOTTOM bstrmage 6 //%open_shop%
+EXTEND_BOTTOM bstrmage %BSTRMAGE_ICT1% //%open_shop%
 + ~GlobalGT("C#BE_BG1SwordPath","GLOBAL",0) GlobalLT("C#BE_BG1SwordPath","GLOBAL",30)
 Global("C#BE_BG1SwordPathbstrmage","GLOBAL",0)
 PartyHasItem("SW2H03")
@@ -62,8 +62,21 @@ IF ~Global("C#BE_BG1SwordPathThanks","GLOBAL",0)~ THEN DO ~IncrementGlobal("C#BE
 SetGlobal("C#BE_BG1SwordPathbstrmage","GLOBAL",1)~ EXTERN C#BrageJ %brage_thanks_1% 
 
 /* smugglers: Holger bssmgl02 */
+%v1_only_slash%%v1_only_asteriks%
+/* ~Well then, ready for some more action?~ */
+EXTEND_BOTTOM bssmgl02 120
++ ~GlobalGT("C#BE_BG1SwordPath","GLOBAL",0) GlobalLT("C#BE_BG1SwordPath","GLOBAL",30)
+Global("C#BE_BG1SwordPathbssmgl02","GLOBAL",0)
+PartyHasItem("SW2H03")
+InParty("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID) Detect("C#Brage")~ + @200000 /* ~My comrade Brage here has a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~ */ + show_sword_01
++ ~GlobalGT("C#BE_BG1SwordPath","GLOBAL",0) GlobalLT("C#BE_BG1SwordPath","GLOBAL",30)
+Global("C#BE_BG1SwordPathbssmgl02","GLOBAL",0)
+PartyHasItem("c#be1sp1") !PartyHasItem("SW2H03")
+InParty("C#Brage") !StateCheck("C#Brage",CD_STATE_NOTVALID) Detect("C#Brage")~ + @200001 /* ~My comrade Brage here has information about a cursed sword he would like to show you. Would you have a look at it and tell us anything you would know about it?~ */ + show_sword_02
+END
+%v1_only_asteriks%%v1_only_slash%
 /* ~So, do you have any news for me?~ */
-EXTEND_BOTTOM bssmgl02 68 //%smuggler_37%
+EXTEND_BOTTOM bssmgl02 %bssmgl02_ICT1%
 + ~GlobalGT("C#BE_BG1SwordPath","GLOBAL",0) GlobalLT("C#BE_BG1SwordPath","GLOBAL",30)
 Global("C#BE_BG1SwordPathbssmgl02","GLOBAL",0)
 PartyHasItem("SW2H03")

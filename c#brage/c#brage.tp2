@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~10.0~
+VERSION ~10.1~ //pre
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -36,6 +36,7 @@ END
 
 
 /* reading in of variables */
+/* not bgt */
   ACTION_IF GAME_IS ~tob~ AND NOT GAME_IS ~bgt~ BEGIN
     OUTER_SPRINT ~IT_IS_BG2~ ~True()~
     OUTER_SPRINT ~BGT_VAR~ ~False()~
@@ -44,12 +45,14 @@ END
 
 /* this is valid for BGII and bgt */
   ACTION_IF GAME_IS ~tob~ THEN BEGIN
+    OUTER_SPRINT ~IT_IS_TOB~ ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)~
     OUTER_SPRINT ~IT_IS_SOD~ ~False()~
     OUTER_SPRINT ~IT_IS_NOT_SOD~ ~True()~
 /* NextTriggerObject not known in BGII */
     OUTER_SPRINT "NextTriggerObject_ff_camp" "False()"
   END
 
+/* only bgt */
   ACTION_IF GAME_IS ~bgt~ BEGIN
     INCLUDE ~c#brage/lib/g3_bgt_cpmvars.tpa~
     OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
@@ -94,6 +97,7 @@ END
   ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
     OUTER_SPRINT ~BGT_VAR~ ~False()~
     OUTER_SPRINT ~IT_IS_BG2~ ~~
+    OUTER_SPRINT ~IT_IS_TOB~ ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)~
     OUTER_SPRINT ~IT_IS_SOD~ ~False()~
     OUTER_SPRINT ~BG1_BEFORE_TRANSITION~ ~False()~
     OUTER_SPRINT ~IT_IS_NOT_SOD~ ~True()~
@@ -104,6 +108,7 @@ END
   ACTION_IF GAME_IS ~eet~ BEGIN
     INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
     OUTER_SPRINT ~IT_IS_BG2~ ~Global("endofbg1","GLOBAL",2)~
+    OUTER_SPRINT ~IT_IS_TOB~ ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)~
     OUTER_SPRINT ~2~ ~2~
     OUTER_SPRINT ~FIREBE_Bookqueststate~ ~3~
 
@@ -883,6 +888,7 @@ COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_bg2.d~ USING ~c#brage/tra/auto
 
 /* other dialogues */
 COMPILE EVALUATE_BUFFER ~c#brage/dialogue/bg2.d~
+COMPILE EVALUATE_BUFFER ~c#brage/dialogue/tob.d~
 COMPILE EVALUATE_BUFFER ~c#brage/dialogue/npcbanter_bg2.d~
 
 
@@ -929,11 +935,6 @@ ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
   EXTEND_BOTTOM ~C#Brage2.bcs~ ~c#brage/baf/c#brage_ee.baf~ EVALUATE_BUFFER 
 END
 
-/* ToB */
-/* spawn Brage via fate spirit */
-EXTEND_TOP ~ar4500.bcs~ ~c#brage/baf/brage_ar4500_bg2.baf~
-
-
 /* tob joining dialogue */
   COMPILE EVALUATE_BUFFER ~c#brage/dialogue/joining_tob.d~ USING ~c#brage/tra/autotra/%LANGUAGE%/JOINING.TRA~
 
@@ -966,6 +967,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
   END
 END ELSE BEGIN
   COMPILE ~c#brage/dialogue/fatesp.d~ 
+  EXTEND_TOP ~ar4500.bcs~ ~c#brage/baf/brage_ar4500_bg2.baf~
 END
 
 
@@ -1137,7 +1139,7 @@ UNLESS ~C#Brage~
 
 
 APPEND ~interdia.2da~
-~C#Brage 	C#BrageB      C#Bra25B~
+~C#Brage 	C#BrageB      C#BrageB~
 UNLESS ~C#Brage~
 
 END
@@ -1222,6 +1224,7 @@ REQUIRE_COMPONENT ~c#brage.tp2~ 0 @9002 /* ~Brage's Redemption mod main componen
 /* BG1 */
 
 ACTION_IF GAME_IS ~bgee bgt eet~ THEN BEGIN
+    PRINT @9034 /* ~Installing BG1 crossmod.~ */
 
 /* Ascalon's Questpack - Snakes of Abathor */
 ACTION_IF FILE_EXISTS_IN_GAME ~ACQEMERS.dlg~ THEN BEGIN 
@@ -1339,6 +1342,20 @@ PRINT @9013 /* ~Balduran's Seatower detected: Installing crossmod...~ */
 OUTER_SET brage_thanks_1 = STATE_WHICH_SAYS 1 IN ~c#brage/tra/autotra/%s/swordpath.tra~ FROM ~C#BrageJ~
 /* @2  = ~Thank you for repeatedly taking the time for this, <CHARNAME>. I really appreciate it.~ */
 OUTER_SET brage_thanks_2 = STATE_WHICH_SAYS 2 IN ~c#brage/tra/autotra/%s/swordpath.tra~ FROM ~C#BrageJ~
+/* make this compatible for the upcoming version 1, too. */
+/* v1+ */
+ ACTION_IF FILE_EXISTS_IN_GAME ~bsiprum1.dlg~ THEN BEGIN
+  OUTER_SPRINT ~BSTRMAGE_ICT1~ ~7~
+  OUTER_SPRINT ~bssmgl02_ICT1~ ~121~
+  OUTER_SPRINT ~v1_only_slash~ ~~
+  OUTER_SPRINT ~v1_only_asteriks~ ~~
+ END ELSE BEGIN
+/* eaob */
+  OUTER_SPRINT ~BSTRMAGE_ICT1~ ~6~
+  OUTER_SPRINT ~bssmgl02_ICT1~ ~68~
+  OUTER_SPRINT ~v1_only_slash~ ~/~
+  OUTER_SPRINT ~v1_only_asteriks~ ~*~
+ END
 
   COMPILE EVALUATE_BUFFER ~c#brage/crossmod/brage_bst.d~
 
@@ -1470,6 +1487,7 @@ END //BG1
 
 /* SoD */
 ACTION_IF GAME_INCLUDES ~sod~ THEN BEGIN
+    PRINT @9035 /* ~Installing SoD crossmod.~ */
 
 /* Ajantis SoD */
 ACTION_IF FILE_EXISTS_IN_GAME ~c#ajsq01.dlg~ THEN BEGIN
@@ -1500,3 +1518,41 @@ PRINT @9024 /* Imoen 4 Ever SoD component "Give Imoen dialogue content during ch
 END /* Imoen 4 Ever component "Give Imoen dialogue content during chapters 8 to 12" */
 
 END //SoD
+
+
+/* BGII */
+
+ACTION_IF GAME_IS ~tob bg2ee bgt eet~ THEN BEGIN
+    PRINT @9032 /* ~Installing BGII crossmod.~ */
+
+  /* Ajantis BGII */
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~C#AjanB.dlg~ THEN BEGIN
+    PRINT @9033 /* ~Sir Ajantis for BGII detected: installing crossmod...~ */
+
+    /* prevent stand alone remark from happening */
+COPY_EXISTING ~c#brag25.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(Global("C#BrgeToB_Saradush","GLOBAL",0))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1
+			OR(3) !InParty("C#Ajantis") !Detect("C#Ajantis") StateCheck("C#Ajantis",CD_STATE_NOTVALID)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+// Get state for c#aja25j %saradush_fallen_34%
+/* @34   = ~The city... the whole city destroyed. We were too late.~ */
+OUTER_SET ajantis_saradush_34 = STATE_WHICH_SAYS 34 IN ~ajantisbg2/tra/autotra/%s/TOB_AJANTIS_NPC.TRA~ FROM ~c#aja25j~
+// Get state for SAREV25J %saradush_fallen_35%
+/* @35   = ~Paladin, you have a remarkable talent for stating the obvious.~ */
+OUTER_SET ajantis_saradush_35 = STATE_WHICH_SAYS 35 IN ~ajantisbg2/tra/autotra/%s/TOB_AJANTIS_NPC.TRA~ FROM ~SAREV25J~
+    COMPILE EVALUATE_BUFFER ~c#brage/crossmod/ajantis_bg2.d~
+
+  END /* Ajantis BGII */
+
+  END //BGII
