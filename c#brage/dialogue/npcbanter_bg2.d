@@ -5,6 +5,7 @@
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 !StateCheck(Myself,CD_STATE_NOTVALID)
 InParty(Myself)
 CombatCounter(0)
@@ -26,6 +27,7 @@ EXIT
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 !StateCheck(Myself,CD_STATE_NOTVALID)
 InParty(Myself)
 CombatCounter(0)
@@ -49,6 +51,7 @@ EXIT
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 !StateCheck(Myself,CD_STATE_NOTVALID)
 InParty(Myself)
 CombatCounter(0)
@@ -88,7 +91,7 @@ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN anomenromance_reaction_04
-SAY ~You are both adults and I will respect the decision of you both. Still, I feel... protective, even if Anomen himself would reject my sentiment fiercely. I thank you. I will not speak of it, again.~
+SAY ~You are both adults and I will respect the decision of you both. Still, I feel... protective, even if Anomen himself would reject my sentiment fiercely. I thank you. I will not speak of it again.~
 IF ~~ THEN EXIT
 END
 
@@ -102,6 +105,7 @@ END //APPEND
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 InParty(Myself)
 CombatCounter(0)
 !See([ENEMY])
@@ -122,6 +126,7 @@ EXIT
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 InParty(Myself)
 CombatCounter(0)
 !See([ENEMY])
@@ -147,6 +152,7 @@ EXIT
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 InParty(Myself)
 CombatCounter(0)
 !See([ENEMY])
@@ -175,6 +181,7 @@ EXIT
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 InParty(Myself)
 CombatCounter(0)
 !See([ENEMY])
@@ -200,6 +207,7 @@ EXIT
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 !StateCheck(Myself,CD_STATE_NOTVALID)
 InParty(Myself)
 CombatCounter(0)
@@ -226,6 +234,7 @@ EXIT
 CHAIN
 IF WEIGHT #-1
 ~%IT_IS_BG2%
+!%IT_IS_TOB%
 InParty(Myself)
 CombatCounter(0)
 !See([ENEMY])

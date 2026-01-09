@@ -5,7 +5,7 @@ IF
 	Global("C#BrageSummoned","GLOBAL",0)
 THEN
 	RESPONSE #100
-		SetGlobal("C#BrageSummoned","GLOBAL",4)
+		SetGlobal("C#BrageSummoned","GLOBAL",2)
 		Continue()
 END
 
