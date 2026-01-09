@@ -31,7 +31,7 @@ Global("C#BrageFinch_BG1","GLOBAL",0)~ THEN C#BrageB bragefinch1
 DO ~SetGlobal("C#BrageFinch_BG1","GLOBAL",1)~
 == BSUFINCH @7 /* [Finch]Oh, but there are no bad times to open a library! Or was it that there are never good times for it? Anyway, if you can open a library and everyone is enthousiastic and thankful about it, then you probably wouldn't need it - not as much as if there is opposition and the attempts to repress it. */
 == C#BrageB @8 /* [Brage]I am glad Ghastkill saw the benefit of it. Nashkel will profit from your efforts, Finch. */
-== BSUFINCH @9 /* [Finch]I thank you, Brage! We both want only the best for the town, don't we? Naskel is such a beautiful place... Only thing missing is a library! */
+== BSUFINCH @9 /* [Finch]I thank you, Brage! We both want only the best for the town, don't we? Nashkel is such a beautiful place... Only thing missing is a library! */
 EXIT
 
 /* Brage - Finch 2 */
