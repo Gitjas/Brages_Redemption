@@ -1,4 +1,4 @@
-@9000 = ~Brage's Redemption – Brage NSC fuer Baldur's Gate~
+@9000 = ~Brage's Redemption - Brage NSC fuer Baldur's Gate~
 @9001 = ~Das Mod-Portraet und das Soundset auch dem originalen Brage im Spiel geben.~
 @9002 = ~Die Hauptkomponente der Brage’s-Redemption-Mod muss installiert sein.~
 
@@ -7,8 +7,8 @@
 @9004 = ~Die Mod muss vor EET_End installiert werden.~
 
 /* new for v6.2 */
-@9005 = ~Ihr müsst Euer SoD-Spiel modmergen, bevor Ihr irgendwelche Mods installiert.~
-@9006 = ~Diese Komponente ist nur für BG1 sinnvoll.~
+@9005 = ~Ihr muesst Euer SoD-Spiel modmergen, bevor Ihr irgendwelche Mods installiert.~
+@9006 = ~Diese Komponente ist nur fuer BG1 sinnvoll.~
 
 /* new for v7 */
 @9007 = ~EndlessBG1 entdeckt: Installiere Crossmod ...~
@@ -23,7 +23,7 @@
 @9016 = ~Brage's Redemption: Crossmod-Inhalte~
 
 /* new for v8 */
-@9017 = ~"Die Szene auf der Eberfellbrücke"-Mod entdeckt: Installiere Crossmod ...~
+@9017 = ~"Die Szene auf der Eberfellbruecke"-Mod entdeckt: Installiere Crossmod ...~
 @9018 = ~"Thalantyr Item Upgrade"-Mod entdeckt: Installiere Crossmod ...~
 @9019 = ~Ascalons Questpack "Die Schlangen des Abathor" entdeckt: Installiere Crossmod ...~
 @9020 = ~Fink NPC entdeckt: Installiere Crossmod ...~
@@ -44,3 +44,9 @@
 
 /* new for v10.0 */
 @9031  = ~The quest "Brage's Sword" from bgqe needs to be installed.~
+
+/* new for v10.1 */
+@9032  = ~Installiere Crossmod fuer BGII.~
+@9033  = ~Sir Ajantis fuer BGII entdeckt: Installiere Crossmod ...~
+@9034  = ~Installiere Crossmod fuer BG1.~
+@9035  = ~Installiere Crossmod fuer SoD.~

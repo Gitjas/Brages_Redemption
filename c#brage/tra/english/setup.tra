@@ -45,7 +45,7 @@
 /* new for v10.0 */
 @9031  = ~The quest "Brage's Sword" from bgqe needs to be installed.~
 
-/* new for v11 */
+/* new for v10.1 */
 @9032  = ~Installing BGII crossmod.~
 @9033  = ~Sir Ajantis for BGII detected: installing crossmod...~
 @9034  = ~Installing BG1 crossmod.~

@@ -43,4 +43,10 @@
 /* new for v10.0 */
 @9031  = ~La missione "Spada di Brage" di bgqe deve essere istallata.~
 
+/* new for v10.1 */
+@9032  = ~Installazione crossmod: BGII~
+@9033  = ~Rilevato "Sir Ajantis for BGII: Installazione crossmod...~
+@9034  = ~Installazione crossmod: BG1~
+@9035  = ~Installazione crossmod: SoD~
+
 

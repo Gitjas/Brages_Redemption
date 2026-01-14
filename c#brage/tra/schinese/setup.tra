@@ -44,3 +44,9 @@
 
 /* new for v10.0 */
 @9031  = ~需要安装Mod BGQE的组件“布雷吉的剑”~
+
+/* new for v10.1 */
+@9032  = ~Installing BGII crossmod.~
+@9033  = ~Sir Ajantis for BGII detected: installing crossmod...~
+@9034  = ~Installing BG1 crossmod.~
+@9035  = ~Installing SoD crossmod.~
