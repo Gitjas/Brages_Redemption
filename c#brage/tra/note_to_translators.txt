@@ -1,14 +1,5 @@
 v10.1:
-changed lines to adjust the number of his daughters (three, not two). Please check for your language whether the number is specified elsewhere, too.
-
-bg1.tra:
-@103
-
-GAME.TRA:
-@1
-
-quest_sod.tra:
-@73
+all translations up to date
 
 
 
