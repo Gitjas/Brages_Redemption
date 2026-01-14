@@ -6,7 +6,7 @@ BACKUP ~c#brage/backup~
 AUTHOR ~Please post at G3 or Kerzenburgforum, refer to readme.~  
 
 
-VERSION ~10.1~ //pre
+VERSION ~10.1~
 
 
 README ~c#brage/readme.brage.%LANGUAGE%.html~ ~c#brage/readme.brage.english.html~
@@ -1533,7 +1533,7 @@ ACTION_IF GAME_IS ~tob bg2ee bgt eet~ THEN BEGIN
     /* prevent stand alone remark from happening */
 COPY_EXISTING ~c#brag25.bcs~ ~override~
 	DECOMPILE_AND_PATCH BEGIN
-		SPRINT textToReplace ~\(Global("C#BrgeToB_Saradush","GLOBAL",0))\)~
+		SPRINT textToReplace ~\(Global("C#BrgeToB_Saradush","GLOBAL",0)\)~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
 			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1
