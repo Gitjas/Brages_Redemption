@@ -232,7 +232,7 @@ LANGUAGE ~Simplified Chinese(by Lzw104522773)~
 BEGIN @9000 /* ~Brage's Redemption - Brage Joinable NPC for Baldur's Gate Saga~ */
 DESIGNATED 0
 LABEL BragesRedemption-main
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~c#q13swd.itm~ @9031
+REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~c#q13swd.itm~ OR GAME_IS ~tob bg2ee~ AND NOT GAME_IS ~bgt~) @9031
 REQUIRE_PREDICATE GAME_IS ~tob bgt bgee bg2ee eet~ @9003
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @9004
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @9004
