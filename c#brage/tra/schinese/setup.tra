@@ -46,7 +46,7 @@
 @9031  = ~需要安装Mod BGQE的组件“布雷吉的剑”~
 
 /* new for v10.1 */
-@9032  = ~Installing BGII crossmod.~
-@9033  = ~Sir Ajantis for BGII detected: installing crossmod...~
-@9034  = ~Installing BG1 crossmod.~
-@9035  = ~Installing SoD crossmod.~
+@9032  = ~正在安装BG2跨模组内容。~
+@9033  = ~检测到BG2阿詹提斯爵士MOD：正在安装跨模组内容……~
+@9034  = ~正在安装BG1跨模组内容。~
+@9035  = ~正在安装SoD跨模组内容。~
